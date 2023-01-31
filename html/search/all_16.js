@@ -1,4 +1,0 @@
-var searchData=
-[
-  ['z_0',['z',['../struct_point3i8__t.html#a7b15de4dbdc20ab0c12b7c3ed6f3fb4c',1,'Point3i8_t::z()'],['../struct_point3i16__t.html#a2ad797285622696898818b7584294d92',1,'Point3i16_t::z()'],['../struct_point3i__t.html#a5848c81192151d65c6f65ecc8c77e439',1,'Point3i_t::z()'],['../struct_point3f__t.html#aedfbba24b4cb951b925a3086e1e9d1ea',1,'Point3f_t::z()'],['../struct_point3__t.html#aac73e844a4cdfe76b89ab25bf6b35e05',1,'Point3_t::z()'],['../struct_point4i8__t.html#a0eff25ad0232b288753d2a74c6dd2f63',1,'Point4i8_t::z()'],['../struct_point4i16__t.html#ab5c26ef9cc33e285ed92dfcaf7cfd8f1',1,'Point4i16_t::z()'],['../struct_point4i32__t.html#a37c167b4dcd4097cf9a2fd5c0b1b265b',1,'Point4i32_t::z()'],['../struct_point4f__t.html#ac243f4ed1651c9ada57686ad3dd0fe55',1,'Point4f_t::z()'],['../struct_point4__t.html#a41a18a8a5ae146eabd5dbad23b8a574a',1,'Point4_t::z()']]]
-];
