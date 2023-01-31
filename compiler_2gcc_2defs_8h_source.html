@@ -76,19 +76,21 @@ $(function() {
   <div class="headertitle"><div class="title">defs.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="compiler_2gcc_2defs_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __PCF_INCLUDE_PRIVATE_COMPILER_GCC_DEFS_H</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __PCF_INCLUDE_PRIVATE_COMPILER_GCC_DEFS_H</span></div>
+<a href="compiler_2gcc_2defs_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __PCF_INCLUDE_PRIVATE_COMPILER_GCC_DEFS_H__</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __PCF_INCLUDE_PRIVATE_COMPILER_GCC_DEFS_H__</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// GCC COMPILER FLAVOURS</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="compiler_2gcc_2defs_8h.html#ae8738da5734478ad3e1adaacb53acf6b">    5</a></span><span class="preprocessor">#define PCF_COMPILER_GCC_FLAVOUR_ARM            (1)</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="compiler_2gcc_2defs_8h.html#aba92f9d7136a8f88322ac55879870193">    6</a></span><span class="preprocessor">#define PCF_COMPILER_GCC_FLAVOUR_AVR            (PCF_COMPILER_GCC_FLAVOUR_ARM &lt;&lt; 1)</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="compiler_2gcc_2defs_8h.html#a6790fb00580d5390a5d1f8022ee4d129">    7</a></span><span class="preprocessor">#define PCF_COMPILER_GCC_FLAVOUR_CYGWIN         (PCF_COMPILER_GCC_FLAVOUR_AVR &lt;&lt; 1)</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="compiler_2gcc_2defs_8h.html#a68561cbbe88a52d0ae9f2eb300466cd2">    8</a></span><span class="preprocessor">#define PCF_COMPILER_GCC_FLAVOUR_MINGW32        (PCF_COMPILER_GCC_FLAVOUR_CYGWIN &lt;&lt; 1)</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="compiler_2gcc_2defs_8h.html#ab4d53c4e4098f79401a101b827e4367d">    9</a></span><span class="preprocessor">#define PCF_COMPILER_GCC_FLAVOUR_MINGW64        (PCF_COMPILER_GCC_FLAVOUR_MINGW32 &lt;&lt; 1)</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="compiler_2gcc_2defs_8h.html#a7832fd0249ddf8ca32e3ea9792c78eb9">   10</a></span><span class="preprocessor">#define PCF_COMPILER_GCC_FLAVOUR_PHIGCC         (PCF_COMPILER_GCC_FLAVOUR_MINGW64 &lt;&lt; 1)</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="compiler_2gcc_2defs_8h.html#ad91d1ce0e4e7086e466ebd2bb4b8b38b">   11</a></span><span class="preprocessor">#define PCF_COMPILER_GCC_FLAVOUR_GENERIC        (PCF_COMPILER_GCC_FLAVOUR_PHIGCC &lt;&lt; 1)</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#endif </span><span class="comment">//__PCF_INCLUDE_PRIVATE_COMPILER_GCC_DEFS_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">// GCC COMPILER FLAVOURS</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="group___g_c_c.html#gae8738da5734478ad3e1adaacb53acf6b">   12</a></span><span class="comment"></span><span class="preprocessor">#define PCF_COMPILER_GCC_FLAVOUR_ARM            (1)</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="group___g_c_c.html#gaba92f9d7136a8f88322ac55879870193">   16</a></span><span class="preprocessor">#define PCF_COMPILER_GCC_FLAVOUR_AVR            (PCF_COMPILER_GCC_FLAVOUR_ARM &lt;&lt; 1)</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="group___g_c_c.html#ga6790fb00580d5390a5d1f8022ee4d129">   20</a></span><span class="preprocessor">#define PCF_COMPILER_GCC_FLAVOUR_CYGWIN         (PCF_COMPILER_GCC_FLAVOUR_AVR &lt;&lt; 1)</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="group___g_c_c.html#ga68561cbbe88a52d0ae9f2eb300466cd2">   24</a></span><span class="preprocessor">#define PCF_COMPILER_GCC_FLAVOUR_MINGW32        (PCF_COMPILER_GCC_FLAVOUR_CYGWIN &lt;&lt; 1)</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="group___g_c_c.html#gab4d53c4e4098f79401a101b827e4367d">   28</a></span><span class="preprocessor">#define PCF_COMPILER_GCC_FLAVOUR_MINGW64        (PCF_COMPILER_GCC_FLAVOUR_MINGW32 &lt;&lt; 1)</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="group___g_c_c.html#ga7832fd0249ddf8ca32e3ea9792c78eb9">   32</a></span><span class="preprocessor">#define PCF_COMPILER_GCC_FLAVOUR_PHIGCC         (PCF_COMPILER_GCC_FLAVOUR_MINGW64 &lt;&lt; 1)</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="group___g_c_c.html#gad91d1ce0e4e7086e466ebd2bb4b8b38b">   36</a></span><span class="preprocessor">#define PCF_COMPILER_GCC_FLAVOUR_GENERIC        (PCF_COMPILER_GCC_FLAVOUR_PHIGCC &lt;&lt; 1)</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif </span><span class="comment">//__PCF_INCLUDE_PRIVATE_COMPILER_GCC_DEFS_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -79,20 +79,22 @@ $(function() {
 <a href="mingw64_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __PCF_INCLUDED_COMPILER_GCC_MINGW64_H__</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __PCF_INCLUDED_COMPILER_GCC_MINGW64_H__</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="mingw64_8h.html#a803a46f7a583d6b6e6d9441de3a04b1d">    7</a></span><span class="preprocessor">#define __PCF_FUNC__ __FUNCTION__</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">In C, __PRETTY_FUNCTION__ is yet another name for __func__, except that at file</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">(or, in C++, namespace scope), it evaluates to the string &quot;top level&quot;.</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">In addition, in C++, __PRETTY_FUNCTION__ contains the signature of the function as well as its bare name.</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">*/</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="mingw64_8h.html#ab840f447ee018d777f3c14054d37fe94">   17</a></span><span class="preprocessor">#define __PCF_DECORATED_FUNCTION__  __PRETTY_FUNCTION__</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="mingw64_8h.html#a539b239602982cce3b27b0791b72f66b">   22</a></span><span class="preprocessor">#define PCF_DLL_IMPORT_API              __attribute__((dllimport))</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="mingw64_8h.html#acc972b6c6d89f2c47b09f8b87e9ac52f">   26</a></span><span class="preprocessor">#define PCF_DLL_EXPORT_API              __attribute__((dllexport))</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="mingw64_8h.html#a356a0e9b5650e12d6e93b7e34c906c6a">   27</a></span><span class="preprocessor">#define PCF_DLL_LOCAL_API                              </span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#endif </span><span class="comment">//__PCF_INCLUDED_COMPILER_GCC_MINGW64_H__</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="group___m_i_n_g_w64.html#ga803a46f7a583d6b6e6d9441de3a04b1d">   15</a></span><span class="preprocessor">#define __PCF_FUNC__ __FUNCTION__</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">In C, __PRETTY_FUNCTION__ is yet another name for __func__, except that at file</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">(or, in C++, namespace scope), it evaluates to the string &quot;top level&quot;.</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">In addition, in C++, __PRETTY_FUNCTION__ contains the signature of the function as well as its bare name.</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="group___m_i_n_g_w64.html#gab840f447ee018d777f3c14054d37fe94">   25</a></span><span class="preprocessor">#define __PCF_DECORATED_FUNCTION__  __PRETTY_FUNCTION__</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="group___m_i_n_g_w64.html#ga539b239602982cce3b27b0791b72f66b">   30</a></span><span class="preprocessor">#define PCF_DLL_IMPORT_API              __attribute__((dllimport))</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="group___m_i_n_g_w64.html#gacc972b6c6d89f2c47b09f8b87e9ac52f">   34</a></span><span class="preprocessor">#define PCF_DLL_EXPORT_API              __attribute__((dllexport))</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="group___m_i_n_g_w64.html#ga356a0e9b5650e12d6e93b7e34c906c6a">   35</a></span><span class="preprocessor">#define PCF_DLL_LOCAL_API          </span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif </span><span class="comment">//__PCF_INCLUDED_COMPILER_GCC_MINGW64_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
