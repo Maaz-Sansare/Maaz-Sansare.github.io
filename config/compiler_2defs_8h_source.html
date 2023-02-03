@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('compiler_2defs_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,29 +88,27 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e3470cd7b363cf62c5671c03f5d194cf.html">pcf</a></li><li class="navelem"><a class="el" href="dir_a3d1dd1bdf7395ba0a93c1cc11b1c2a4.html">config</a></li><li class="navelem"><a class="el" href="dir_a7e1596fb4a909786bce7d31a6030be9.html">compiler</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">defs.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="compiler_2defs_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __PCF_INCLUDE_PCF_CONFIG_COMPILER_DEFS_H__</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __PCF_INCLUDE_PCF_CONFIG_COMPILER_DEFS_H__</span></div>
+<a href="compiler_2defs_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __PCF_INCLUDES_PCF_CONFIG_COMPILER_DEFS_H__</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __PCF_INCLUDES_PCF_CONFIG_COMPILER_DEFS_H__</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="group___compiler.html#ga1ec3f6420c4585356399d09fed5de2b8">   11</a></span><span class="preprocessor">#define PCF_COMPILER_GCC                (1)</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="group___compiler.html#gad939f0c70dbda7ef5b77469225ae72c1">   15</a></span><span class="preprocessor">#define PCF_COMPILER_MSVC               (PCF_COMPILER_GCC &lt;&lt; 1)</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="group___compiler.html#ga3b56347113a3d5a5c199e0dedfd0ab29">   19</a></span><span class="preprocessor">#define PCF_COMPILER_ARMCC              (PCF_COMPILER_MSVC &lt;&lt; 1)</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif </span><span class="comment">// __PCF_INCLUDE_PCF_CONFIG_COMPILER_DEFS_H__</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="group__pcf__config__compiler.html#ga1ec3f6420c4585356399d09fed5de2b8">   12</a></span><span class="preprocessor">#define PCF_COMPILER_GCC                (1)</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="group__pcf__config__compiler.html#gad939f0c70dbda7ef5b77469225ae72c1">   16</a></span><span class="preprocessor">#define PCF_COMPILER_MSVC               (PCF_COMPILER_GCC &lt;&lt; 1)</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif </span><span class="comment">// __PCF_INCLUDES_PCF_CONFIG_COMPILER_DEFS_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e3470cd7b363cf62c5671c03f5d194cf.html">pcf</a></li><li class="navelem"><a class="el" href="dir_a3d1dd1bdf7395ba0a93c1cc11b1c2a4.html">config</a></li><li class="navelem"><a class="el" href="dir_a7e1596fb4a909786bce7d31a6030be9.html">compiler</a></li><li class="navelem"><a class="el" href="compiler_2defs_8h.html">defs.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
 </body>
 </html>

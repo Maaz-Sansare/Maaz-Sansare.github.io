@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['enpcfboolean_5ffalse_0',['enPCFBoolean_False',['../types_8h.html#a8696a1be3c39db4bc0c2309907e7e5c2a37b7bb3827865ae2486b69b7851462f0',1,'types.h']]],
-  ['enpcfboolean_5finvalid_1',['enPCFBoolean_Invalid',['../types_8h.html#a8696a1be3c39db4bc0c2309907e7e5c2a3c836cf47503af4dd626722312dc65cc',1,'types.h']]],
-  ['enpcfboolean_5fmax_2',['enPCFBoolean_Max',['../types_8h.html#a8696a1be3c39db4bc0c2309907e7e5c2a82394de8ec8930781dbf86ae4b933eda',1,'types.h']]],
-  ['enpcfboolean_5ft_3',['EnPCFBoolean_t',['../types_8h.html#a8696a1be3c39db4bc0c2309907e7e5c2',1,'types.h']]],
-  ['enpcfboolean_5ftrue_4',['enPCFBoolean_True',['../types_8h.html#a8696a1be3c39db4bc0c2309907e7e5c2a107034e5aeae845400ce854976b22ee4',1,'types.h']]],
-  ['extract_5fpcf_5fstatus_5fmask_5fvalue_5f16_5',['EXTRACT_PCF_STATUS_MASK_VALUE_16',['../group___status.html#ga3a13f39146fdc1e62b48ee44f47386bd',1,'defs.h']]],
-  ['extract_5fpcf_5fstatus_5fmask_5fvalue_5f8_6',['EXTRACT_PCF_STATUS_MASK_VALUE_8',['../group___status.html#gaee7bda83a718699bb57949de13ecad81',1,'defs.h']]]
+  ['data_0',['data',['../struct_data__t.html#a3cef02525514032a5566f7c547463073',1,'Data_t']]],
+  ['data_5ft_1',['Data_t',['../struct_data__t.html',1,'']]],
+  ['define_5fpcf_5fstatus_5fbitmask_2',['DEFINE_PCF_STATUS_BITMASK',['../group___status.html#ga6e98a37e2cf47f75e0bec0374823a62d',1,'defs.h']]],
+  ['defs_2eh_3',['defs.h',['../arch_2arm_2defs_8h.html',1,'(Global Namespace)'],['../arch_2defs_8h.html',1,'(Global Namespace)'],['../compiler_2defs_8h.html',1,'(Global Namespace)'],['../compiler_2gcc_2defs_8h.html',1,'(Global Namespace)'],['../compiler_2msvc_2defs_8h.html',1,'(Global Namespace)'],['../defs_8h.html',1,'(Global Namespace)'],['../language_2c_2defs_8h.html',1,'(Global Namespace)'],['../language_2defs_8h.html',1,'(Global Namespace)'],['../os_2defs_8h.html',1,'(Global Namespace)'],['../status_2defs_8h.html',1,'(Global Namespace)']]]
 ];

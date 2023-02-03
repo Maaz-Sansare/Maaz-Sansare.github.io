@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('defs_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,11 +88,6 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e3470cd7b363cf62c5671c03f5d194cf.html">pcf</a></li><li class="navelem"><a class="el" href="dir_a3d1dd1bdf7395ba0a93c1cc11b1c2a4.html">config</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">defs.h</div></div>
 </div><!--header-->
@@ -81,63 +97,65 @@ $(function() {
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#if defined(PCF_UNKNOWN) || defined(PCF_NONE) || defined(PCF_GENERIC)</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">    #error &quot;Not meant to be defined by your code&quot;</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="group___config.html#gae8924bb318b7d453dc4b8c3c11fd80ff">   18</a></span><span class="preprocessor">    #define PCF_UNKNOWN      -1</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="group___config.html#gaa8ee6bad15065894e5883f3ea51c9125">   19</a></span><span class="preprocessor">    #define PCF_NONE         -1</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="group___config.html#ga8dfc9244db8f36d9e9d45dd047e7d1ce">   20</a></span><span class="preprocessor">    #define PCF_GENERIC       1</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#if defined(PCF_YES) || defined(PCF_TRUE) || defined(PCF_ENABLE) || defined(PCF_HAS)</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">    #error &quot;Not meant to be defined by your code&quot;</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="group___config.html#gab25250ab596a3b8181b9db30143258cf">   26</a></span><span class="preprocessor">    #define PCF_YES           1</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="group___config.html#gaa38b5391fa182c781defbe7c0947978f">   27</a></span><span class="preprocessor">    #define PCF_TRUE          PCF_YES  </span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="group___config.html#ga683d0aa43e2f2fb7fa73e14b5ced83e3">   28</a></span><span class="preprocessor">    #define PCF_ENABLE        PCF_YES</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="group___config.html#ga4a4e20dda7a83f95b8d07f203107035a">   29</a></span><span class="preprocessor">    #define PCF_HAS           PCF_YES</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#if defined(PCF_NO) || defined(PCF_FALSE) || defined(PCF_DISABLE) || defined(PCF_HAS_NOT)</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">    #error &quot;Not meant to be defined by your code&quot;</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="group___config.html#ga2115121486c90a800772048ca1ef002b">   35</a></span><span class="preprocessor">    #define PCF_NO            0</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="group___config.html#gac69e8856d2d5d6d3fc09cb55d9fd2261">   36</a></span><span class="preprocessor">    #define PCF_FALSE         PCF_NO</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="group___config.html#ga3da3d2af8512b2cd5f576e2f22734031">   37</a></span><span class="preprocessor">    #define PCF_DISABLE       PCF_NO</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="group___config.html#gab02c279971cb713a002c5b678a471ad5">   38</a></span><span class="preprocessor">    #define PCF_HAS_NOT       PCF_NO</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="group___config.html#gacb85b5c41e7b11209f0271b3a448c184">   57</a></span><span class="preprocessor">#define PCF_CONCAT_2(A,B)                      A##B </span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#if defined(PCF_UNKNOWN) || defined(PCF_NONE) || defined(PCF_GENERIC)</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">    #error &quot;Not meant to be defined by your code&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="group__pcf__config.html#gae8924bb318b7d453dc4b8c3c11fd80ff">   16</a></span><span class="preprocessor">    #define PCF_UNKNOWN      -1</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="group__pcf__config.html#gaa8ee6bad15065894e5883f3ea51c9125">   17</a></span><span class="preprocessor">    #define PCF_NONE         -1</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="group__pcf__config.html#ga8dfc9244db8f36d9e9d45dd047e7d1ce">   18</a></span><span class="preprocessor">    #define PCF_GENERIC       1</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#if defined(PCF_YES) || defined(PCF_TRUE) || defined(PCF_ENABLE) || defined(PCF_HAS)</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">    #error &quot;Not meant to be defined by your code&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="group__pcf__config.html#gab25250ab596a3b8181b9db30143258cf">   24</a></span><span class="preprocessor">    #define PCF_YES           1</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="group__pcf__config.html#gaa38b5391fa182c781defbe7c0947978f">   25</a></span><span class="preprocessor">    #define PCF_TRUE          PCF_YES  </span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="group__pcf__config.html#ga683d0aa43e2f2fb7fa73e14b5ced83e3">   26</a></span><span class="preprocessor">    #define PCF_ENABLE        PCF_YES</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="group__pcf__config.html#ga4a4e20dda7a83f95b8d07f203107035a">   27</a></span><span class="preprocessor">    #define PCF_HAS           PCF_YES</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#if defined(PCF_NO) || defined(PCF_FALSE) || defined(PCF_DISABLE) || defined(PCF_HAS_NOT)</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">    #error &quot;Not meant to be defined by your code&quot;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="group__pcf__config.html#ga2115121486c90a800772048ca1ef002b">   33</a></span><span class="preprocessor">    #define PCF_NO            0</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="group__pcf__config.html#gac69e8856d2d5d6d3fc09cb55d9fd2261">   34</a></span><span class="preprocessor">    #define PCF_FALSE         PCF_NO</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="group__pcf__config.html#ga3da3d2af8512b2cd5f576e2f22734031">   35</a></span><span class="preprocessor">    #define PCF_DISABLE       PCF_NO</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="group__pcf__config.html#gab02c279971cb713a002c5b678a471ad5">   36</a></span><span class="preprocessor">    #define PCF_HAS_NOT       PCF_NO</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="group__pcf__config.html#gacb85b5c41e7b11209f0271b3a448c184">   55</a></span><span class="preprocessor">#define PCF_CONCAT_2(A,B)                      A##B </span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="group__pcf__config.html#ga1587d23382081d50abb058df4fc4dd3e">   57</a></span><span class="preprocessor">#define PCF_IDENTITY(X)                        X</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="group___config.html#ga1587d23382081d50abb058df4fc4dd3e">   59</a></span><span class="preprocessor">#define PCF_IDENTITY(X)                        X</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="group___config.html#ga788814e6bbf97a9afbec32e3e350a372">   74</a></span><span class="preprocessor">#define PCF_STRINGIFY(X)                       __PCF_DIRECT_STRINGIFY(X)</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="group___config.html#ga60ba41011c4e82522c8b63c37a2bf21b">   75</a></span><span class="preprocessor">#define __PCF_DIRECT_STRINGIFY(X)                #X</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="group___config.html#ga53467be3969830bc9bd0e01e1aeffe6b">   76</a></span><span class="preprocessor">#define __PCF_USERS_DONT_USE_JOIN_4(W,X,Y,Z)   PCF_STRINGIFY(PCF_IDENTITY(W)PCF_IDENTITY(X)PCF_IDENTITY(Y)PCF_IDENTITY(Z))</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="group___config.html#gabfd9bd4aab4582e8ba112a6249ae1ebc">   77</a></span><span class="preprocessor">#define PCF_JOIN_W_X_Y_Z(W,X,Y,Z)              __PCF_USERS_DONT_USE_JOIN_4(W,X,Y,Z)</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="group___config.html#gaecf7e758b7912ba99d8a9d7227c00a7e">   98</a></span><span class="preprocessor">#define PCF_CONDITIONAL_INCLUDE_FILE(PATH, PACKAGE, MODULE, INCLUDE_NAME) \</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">                PCF_JOIN_W_X_Y_Z(PATH, PACKAGE, MODULE, INCLUDE_NAME)</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno"><a class="line" href="group__pcf__config.html#ga788814e6bbf97a9afbec32e3e350a372">   73</a></span><span class="preprocessor">#define PCF_STRINGIFY(X)                         __PCF_DIRECT_STRINGIFY(X)</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="group__pcf__config.html#ga60ba41011c4e82522c8b63c37a2bf21b">   74</a></span><span class="preprocessor">#define __PCF_DIRECT_STRINGIFY(X)                #X</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="group__pcf__config.html#ga2270f320a130acf3cd1b8cc69655c729">   75</a></span><span class="preprocessor">#define __PCF_USERS_DONT_USE_CONCAT_4(W,X,Y,Z)   PCF_STRINGIFY(PCF_IDENTITY(W)PCF_IDENTITY(X)PCF_IDENTITY(Y)PCF_IDENTITY(Z))</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="group__pcf__config.html#ga5a17310731c77d17dc33a8010bfc7ef2">   76</a></span><span class="preprocessor">#define PCF_CONCAT_4(W,X,Y,Z)                    __PCF_USERS_DONT_USE_CONCAT_4(W,X,Y,Z)</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno"><a class="line" href="group__pcf__config.html#gaecf7e758b7912ba99d8a9d7227c00a7e">   99</a></span><span class="preprocessor">#define PCF_CONDITIONAL_INCLUDE_FILE(PATH, PACKAGE, MODULE, INCLUDE_NAME) \</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">                PCF_CONCAT_4(PATH, PACKAGE, MODULE, INCLUDE_NAME)</span></div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span><span class="comment">// Package types</span></div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#if defined(PCF_PACKAGE_TYPE_LIBRARY) || defined(PCF_PACKAGE_TYPE_APPLICATION)</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">    #error &quot;Reserved macro. Not meant to be used in your code&quot;</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="group___config.html#ga1cb61ea6e58fb589e1f5668f6f7235ce">  108</a></span><span class="preprocessor">    #define PCF_PACKAGE_TYPE_LIBRARY        0</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="group___config.html#ga8ee2cbd0dfc25a40d8d1573464d52cb0">  109</a></span><span class="preprocessor">    #define PCF_PACKAGE_TYPE_APPLICATION    1</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="comment">// Package types</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">#if defined(PCF_PACKAGE_TYPE_LIBRARY) || defined(PCF_PACKAGE_TYPE_APPLICATION)</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">    #error &quot;Not meant to be defined by your code&quot;</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="group__pcf__config.html#ga1cb61ea6e58fb589e1f5668f6f7235ce">  109</a></span><span class="preprocessor">    #define PCF_PACKAGE_TYPE_LIBRARY        0</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="group__pcf__config.html#ga8ee2cbd0dfc25a40d8d1573464d52cb0">  110</a></span><span class="preprocessor">    #define PCF_PACKAGE_TYPE_APPLICATION    1</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">#endif </span><span class="comment">//__PCF_INCLUDES_PCF_CONFIG_DEFS_H__</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="preprocessor">#endif </span><span class="comment">//__PCF_INCLUDES_PCF_CONFIG_DEFS_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e3470cd7b363cf62c5671c03f5d194cf.html">pcf</a></li><li class="navelem"><a class="el" href="dir_a3d1dd1bdf7395ba0a93c1cc11b1c2a4.html">config</a></li><li class="navelem"><a class="el" href="defs_8h.html">defs.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
 </body>
 </html>

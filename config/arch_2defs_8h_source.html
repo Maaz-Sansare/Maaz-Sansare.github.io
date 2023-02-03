@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('arch_2defs_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,45 +88,44 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e3470cd7b363cf62c5671c03f5d194cf.html">pcf</a></li><li class="navelem"><a class="el" href="dir_a3d1dd1bdf7395ba0a93c1cc11b1c2a4.html">config</a></li><li class="navelem"><a class="el" href="dir_99aa87fe9cd3ca70fc6ea7d3219b0264.html">arch</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">defs.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="arch_2defs_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __PCF_INCLUDE_PCF_CONFIG_ARCH_DEFS_H__</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __PCF_INCLUDE_PCF_CONFIG_ARCH_DEFS_H__</span></div>
+<a href="arch_2defs_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __PCF_INCLUDES_PCF_CONFIG_ARCH_DEFS_H__</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __PCF_INCLUDES_PCF_CONFIG_ARCH_DEFS_H__</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="group___arch.html#ga98374c9787ccbdd47ecb3f778953fb13">   11</a></span><span class="preprocessor">#define PCF_ARCH_ARM              (1)</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="group__pcf__config__arch.html#ga98374c9787ccbdd47ecb3f778953fb13">   11</a></span><span class="preprocessor">#define PCF_ARCH_ARM              (1)</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="group___arch.html#ga098dbb97c4fca7a8193df0113a4bc8b2">   16</a></span><span class="preprocessor">#define PCF_ARCH_X86              (PCF_ARCH_ARM &lt;&lt; 1)</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="group__pcf__config__arch.html#ga098dbb97c4fca7a8193df0113a4bc8b2">   16</a></span><span class="preprocessor">#define PCF_ARCH_X86              (PCF_ARCH_ARM &lt;&lt; 1)</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="group___arch.html#gab306934de60f3dcff9a6bc50329a5892">   21</a></span><span class="preprocessor">#define PCF_ARCH_X86_64           (PCF_ARCH_X86 &lt;&lt; 1)</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="group__pcf__config__arch.html#gab306934de60f3dcff9a6bc50329a5892">   21</a></span><span class="preprocessor">#define PCF_ARCH_X86_64           (PCF_ARCH_X86 &lt;&lt; 1)</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="group___arch.html#ga3c4f6b9ac0b0e734ff71a19786700427">   26</a></span><span class="preprocessor">#define PCF_ARCH_AVR_8            (PCF_ARCH_X86_64 &lt;&lt; 1)</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="group__pcf__config__arch.html#ga3c4f6b9ac0b0e734ff71a19786700427">   26</a></span><span class="preprocessor">#define PCF_ARCH_AVR_8            (PCF_ARCH_X86_64 &lt;&lt; 1)</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="group___arch.html#ga87693c156a6867c2df7c84fcbf2e9070">   31</a></span><span class="preprocessor">#define PCF_ARCH_SIZE_8         (8)</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="group__pcf__config__arch.html#ga87693c156a6867c2df7c84fcbf2e9070">   31</a></span><span class="preprocessor">#define PCF_ARCH_SIZE_8         (8)</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="group___arch.html#gaa27193fb70ee163aec4ccd4b3aa9852e">   36</a></span><span class="preprocessor">#define PCF_ARCH_SIZE_16        (16)</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="group__pcf__config__arch.html#gaa27193fb70ee163aec4ccd4b3aa9852e">   36</a></span><span class="preprocessor">#define PCF_ARCH_SIZE_16        (16)</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="group___arch.html#ga5cc4bfe012746feebf69c11a583b9cc3">   41</a></span><span class="preprocessor">#define PCF_ARCH_SIZE_32        (32)</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="group__pcf__config__arch.html#ga5cc4bfe012746feebf69c11a583b9cc3">   41</a></span><span class="preprocessor">#define PCF_ARCH_SIZE_32        (32)</span></div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="group___arch.html#ga3156f3038cb9feabd7517a4913c79fbe">   46</a></span><span class="preprocessor">#define PCF_ARCH_SIZE_64        (64)</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="group__pcf__config__arch.html#ga3156f3038cb9feabd7517a4913c79fbe">   46</a></span><span class="preprocessor">#define PCF_ARCH_SIZE_64        (64)</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="group___arch.html#ga729e3fe6739de646265af052097b4557">   51</a></span><span class="preprocessor">#define PCF_ARCH_BIG_ENDIAN     (1)</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="group__pcf__config__arch.html#ga729e3fe6739de646265af052097b4557">   51</a></span><span class="preprocessor">#define PCF_ARCH_BIG_ENDIAN     (1)</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="group___arch.html#ga3d1ec5d63c5a7606131f5ba7df66a7d8">   56</a></span><span class="preprocessor">#define PCF_ARCH_LITTLE_ENDIAN  (2)</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="group__pcf__config__arch.html#ga3d1ec5d63c5a7606131f5ba7df66a7d8">   56</a></span><span class="preprocessor">#define PCF_ARCH_LITTLE_ENDIAN  (2)</span></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif </span><span class="comment">// __PCF_INCLUDE_PCF_CONFIG_ARCH_DEFS_H__</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif </span><span class="comment">// __PCF_INCLUDES_PCF_CONFIG_ARCH_DEFS_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e3470cd7b363cf62c5671c03f5d194cf.html">pcf</a></li><li class="navelem"><a class="el" href="dir_a3d1dd1bdf7395ba0a93c1cc11b1c2a4.html">config</a></li><li class="navelem"><a class="el" href="dir_99aa87fe9cd3ca70fc6ea7d3219b0264.html">arch</a></li><li class="navelem"><a class="el" href="arch_2defs_8h.html">defs.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
 </body>
 </html>

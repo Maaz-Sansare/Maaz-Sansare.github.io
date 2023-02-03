@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('gcc_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,74 +88,139 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e3470cd7b363cf62c5671c03f5d194cf.html">pcf</a></li><li class="navelem"><a class="el" href="dir_a3d1dd1bdf7395ba0a93c1cc11b1c2a4.html">config</a></li><li class="navelem"><a class="el" href="dir_a7e1596fb4a909786bce7d31a6030be9.html">compiler</a></li><li class="navelem"><a class="el" href="dir_e22344d4a36688faea3b639a2463febd.html">gcc</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a>  </div>
   <div class="headertitle"><div class="title">gcc.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="compiler_2gcc_2defs_8h_source.html">defs.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="compiler_2gcc_2defs_8h_source.html">pcf/config/compiler/gcc/defs.h</a>&gt;</code><br />
 <code>#include &lt;PCF_CONDITIONAL_INCLUDE_FILE(./,PCF_COMPILER_FLAVOUR/,,PCF_COMPILER_FLAVOUR.h)&gt;</code><br />
 </div>
 <p><a href="gcc_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga8070a103efb0eea8d6c5b454e72c5244"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_c_c.html#ga8070a103efb0eea8d6c5b454e72c5244">PCF_BEGIN_CDECL</a></td></tr>
-<tr class="memdesc:ga8070a103efb0eea8d6c5b454e72c5244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start declaration in C mode.  <br /></td></tr>
-<tr class="separator:ga8070a103efb0eea8d6c5b454e72c5244"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5f1cd9416f3e9d538046e40d728d2a15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_c_c.html#ga5f1cd9416f3e9d538046e40d728d2a15">PCF_END_CDECL</a></td></tr>
-<tr class="memdesc:ga5f1cd9416f3e9d538046e40d728d2a15"><td class="mdescLeft">&#160;</td><td class="mdescRight">End declaration in C mode.  <br /></td></tr>
-<tr class="separator:ga5f1cd9416f3e9d538046e40d728d2a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga08ebf58d22da216670332ec5bbecda99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_c_c.html#ga08ebf58d22da216670332ec5bbecda99">PCF_COMPILER_VERSION</a>&#160;&#160;&#160;((__GNUC__ * 10000) + (__GNUC_MINOR__ * 100) + (__GNUC_PATCHLEVEL__))</td></tr>
+<tr class="memitem:gaadc1999c48faa9f217bcf551c13db62e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#gaadc1999c48faa9f217bcf551c13db62e">PCF_NULL</a>&#160;&#160;&#160;NULL</td></tr>
+<tr class="separator:gaadc1999c48faa9f217bcf551c13db62e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a275ae9442b116997fa8cdb5336a1af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga5a275ae9442b116997fa8cdb5336a1af">__PCF_UNUSED_1</a>(x1)&#160;&#160;&#160;(void)(1 ? (void)0 : ((void)(x1)))</td></tr>
+<tr class="memdesc:ga5a275ae9442b116997fa8cdb5336a1af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevents warning about unused variable.  <br /></td></tr>
+<tr class="separator:ga5a275ae9442b116997fa8cdb5336a1af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae74595a197d5b6b6a389a6bf2b8f2262"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#gae74595a197d5b6b6a389a6bf2b8f2262">__PCF_UNUSED_2</a>(x1,  x2)&#160;&#160;&#160;<a class="el" href="group__pcf__config__compiler__gcc.html#ga5a275ae9442b116997fa8cdb5336a1af">__PCF_UNUSED_1</a>(x1); <a class="el" href="group__pcf__config__compiler__gcc.html#ga5a275ae9442b116997fa8cdb5336a1af">__PCF_UNUSED_1</a>(x2);</td></tr>
+<tr class="separator:gae74595a197d5b6b6a389a6bf2b8f2262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab5ae1d81af35c79c1ee224bf5bb5d8a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#gab5ae1d81af35c79c1ee224bf5bb5d8a7">__PCF_UNUSED_3</a>(x1,  x2,  x3)&#160;&#160;&#160;<a class="el" href="group__pcf__config__compiler__gcc.html#gae74595a197d5b6b6a389a6bf2b8f2262">__PCF_UNUSED_2</a>(x1, x2); <a class="el" href="group__pcf__config__compiler__gcc.html#ga5a275ae9442b116997fa8cdb5336a1af">__PCF_UNUSED_1</a>(x3);</td></tr>
+<tr class="separator:gab5ae1d81af35c79c1ee224bf5bb5d8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46871a2e1fdfb14aef543176bac76602"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga46871a2e1fdfb14aef543176bac76602">__PCF_UNUSED_4</a>(x1,  x2,  x3,  x4)&#160;&#160;&#160;<a class="el" href="group__pcf__config__compiler__gcc.html#gab5ae1d81af35c79c1ee224bf5bb5d8a7">__PCF_UNUSED_3</a>(x1, x2, x3); <a class="el" href="group__pcf__config__compiler__gcc.html#ga5a275ae9442b116997fa8cdb5336a1af">__PCF_UNUSED_1</a>(x4);</td></tr>
+<tr class="separator:ga46871a2e1fdfb14aef543176bac76602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4062ad1c05030a56dd81e7ad50c1b4b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga4062ad1c05030a56dd81e7ad50c1b4b4">__PCF_UNUSED_5</a>(x1,  x2,  x3,  x4,  x5)&#160;&#160;&#160;<a class="el" href="group__pcf__config__compiler__gcc.html#ga46871a2e1fdfb14aef543176bac76602">__PCF_UNUSED_4</a>(x1, x2, x3, x4); <a class="el" href="group__pcf__config__compiler__gcc.html#ga5a275ae9442b116997fa8cdb5336a1af">__PCF_UNUSED_1</a>(x5);</td></tr>
+<tr class="separator:ga4062ad1c05030a56dd81e7ad50c1b4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c2f91a8182c707d0c240528b3fde8fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga0c2f91a8182c707d0c240528b3fde8fc">__PCF_UNUSED_6</a>(x1,  x2,  x3,  x4,  x5,  x6)&#160;&#160;&#160;<a class="el" href="group__pcf__config__compiler__gcc.html#ga4062ad1c05030a56dd81e7ad50c1b4b4">__PCF_UNUSED_5</a>(x1, x2, x3, x4, x5); <a class="el" href="group__pcf__config__compiler__gcc.html#ga5a275ae9442b116997fa8cdb5336a1af">__PCF_UNUSED_1</a>(x6);</td></tr>
+<tr class="separator:ga0c2f91a8182c707d0c240528b3fde8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd1585cc1674e5fa2cf4806ebb5eceb4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#gafd1585cc1674e5fa2cf4806ebb5eceb4">__PCF_UNUSED_7</a>(x1,  x2,  x3,  x4,  x5,  x6,  x7)&#160;&#160;&#160;<a class="el" href="group__pcf__config__compiler__gcc.html#ga0c2f91a8182c707d0c240528b3fde8fc">__PCF_UNUSED_6</a>(x1, x2, x3, x4, x5, x6); <a class="el" href="group__pcf__config__compiler__gcc.html#ga5a275ae9442b116997fa8cdb5336a1af">__PCF_UNUSED_1</a>(x7);</td></tr>
+<tr class="separator:gafd1585cc1674e5fa2cf4806ebb5eceb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga25cf75957b114ba98923d2a4adc4a589"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga25cf75957b114ba98923d2a4adc4a589">__PCF_VA_NUM_ARGS_IMPL</a>(_1,  _2,  _3,  _4,  _5,  _6,  _7,  N, ...)&#160;&#160;&#160;N</td></tr>
+<tr class="separator:ga25cf75957b114ba98923d2a4adc4a589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3a37e8d7a52cf1e0c79d9c0ccce0571"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#gad3a37e8d7a52cf1e0c79d9c0ccce0571">__PCF_VA_NUM_ARGS</a>(...)&#160;&#160;&#160;<a class="el" href="group__pcf__config__compiler__gcc.html#ga25cf75957b114ba98923d2a4adc4a589">__PCF_VA_NUM_ARGS_IMPL</a>(__VA_ARGS__, 7, 6, 5, 4, 3, 2, 1)</td></tr>
+<tr class="separator:gad3a37e8d7a52cf1e0c79d9c0ccce0571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd2958ce654d34f7a110d6daa814b255"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#gafd2958ce654d34f7a110d6daa814b255">__PCF_UNUSED_IMPL_</a>(n)&#160;&#160;&#160;__PCF_UNUSED_##n</td></tr>
+<tr class="separator:gafd2958ce654d34f7a110d6daa814b255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga13a93728b7a2ce48ffb31524883122ec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga13a93728b7a2ce48ffb31524883122ec">__PCF_UNUSED_IMPL</a>(n)&#160;&#160;&#160;<a class="el" href="group__pcf__config__compiler__gcc.html#gafd2958ce654d34f7a110d6daa814b255">__PCF_UNUSED_IMPL_</a>(n)</td></tr>
+<tr class="separator:ga13a93728b7a2ce48ffb31524883122ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2e85559cec465b5f8350e5e77e90f6cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga2e85559cec465b5f8350e5e77e90f6cf">PCF_UNUSED</a>(...)&#160;&#160;&#160;<a class="el" href="group__pcf__config__compiler__gcc.html#ga13a93728b7a2ce48ffb31524883122ec">__PCF_UNUSED_IMPL</a>(<a class="el" href="group__pcf__config__compiler__gcc.html#gad3a37e8d7a52cf1e0c79d9c0ccce0571">__PCF_VA_NUM_ARGS</a>(__VA_ARGS__))(__VA_ARGS__)</td></tr>
+<tr class="separator:ga2e85559cec465b5f8350e5e77e90f6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08ebf58d22da216670332ec5bbecda99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga08ebf58d22da216670332ec5bbecda99">PCF_COMPILER_VERSION</a>&#160;&#160;&#160;((__GNUC__ * 10000) + (__GNUC_MINOR__ * 100) + (__GNUC_PATCHLEVEL__))</td></tr>
 <tr class="memdesc:ga08ebf58d22da216670332ec5bbecda99"><td class="mdescLeft">&#160;</td><td class="mdescRight">GCC compiler version.  <br /></td></tr>
 <tr class="separator:ga08ebf58d22da216670332ec5bbecda99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0c4d9a17818be27b2b67f05ce54ff8ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_c_c.html#ga0c4d9a17818be27b2b67f05ce54ff8ae">PCF_ENUM_MAXVALUE</a>&#160;&#160;&#160;0x7FFFFFFF</td></tr>
-<tr class="memdesc:ga0c4d9a17818be27b2b67f05ce54ff8ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum value for ENUM.  <br /></td></tr>
-<tr class="separator:ga0c4d9a17818be27b2b67f05ce54ff8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad163dca3bc74e24a708f1bbe671fecab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_c_c.html#gad163dca3bc74e24a708f1bbe671fecab">PCF_FORCE_INLINE</a>&#160;&#160;&#160;__attribute__((always_inline))</td></tr>
+<tr class="memitem:gad163dca3bc74e24a708f1bbe671fecab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#gad163dca3bc74e24a708f1bbe671fecab">PCF_FORCE_INLINE</a>&#160;&#160;&#160;__attribute__((always_inline))</td></tr>
 <tr class="separator:gad163dca3bc74e24a708f1bbe671fecab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5d021d94ea902592fa73b3867d215064"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_c_c.html#ga5d021d94ea902592fa73b3867d215064">PCF_NO_INLINE</a>&#160;&#160;&#160;__attribute__((noinline))</td></tr>
+<tr class="memitem:ga5d021d94ea902592fa73b3867d215064"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga5d021d94ea902592fa73b3867d215064">PCF_NO_INLINE</a>&#160;&#160;&#160;__attribute__((noinline))</td></tr>
 <tr class="memdesc:ga5d021d94ea902592fa73b3867d215064"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevents the compiler from making any use of a constant data value for optimization purposes, without affecting its placement in the object.  <br /></td></tr>
 <tr class="separator:ga5d021d94ea902592fa73b3867d215064"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3fede7bba0f459db05c8463c2f896ca6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_c_c.html#ga3fede7bba0f459db05c8463c2f896ca6">PCF_INLINE</a>&#160;&#160;&#160;inline</td></tr>
+<tr class="memitem:ga3fede7bba0f459db05c8463c2f896ca6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga3fede7bba0f459db05c8463c2f896ca6">PCF_INLINE</a>&#160;&#160;&#160;inline</td></tr>
 <tr class="memdesc:ga3fede7bba0f459db05c8463c2f896ca6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instruct the compiler to insert a copy of the function body into each place the function is called.  <br /></td></tr>
 <tr class="separator:ga3fede7bba0f459db05c8463c2f896ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0f21698f6ccd8700aa6e38e2342730bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_c_c.html#ga0f21698f6ccd8700aa6e38e2342730bb">PCF_NO_RETURN</a>&#160;&#160;&#160;__attribute__((__noreturn__))</td></tr>
+<tr class="memitem:gaf543d75a6c2923ae38fc74588b0978bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#gaf543d75a6c2923ae38fc74588b0978bc">PCF_STATIC_INLINE</a>&#160;&#160;&#160;static inline</td></tr>
+<tr class="separator:gaf543d75a6c2923ae38fc74588b0978bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f21698f6ccd8700aa6e38e2342730bb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga0f21698f6ccd8700aa6e38e2342730bb">PCF_NO_RETURN</a>&#160;&#160;&#160;__attribute__((__noreturn__))</td></tr>
 <tr class="memdesc:ga0f21698f6ccd8700aa6e38e2342730bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs the compiler that the function does not return.  <br /></td></tr>
 <tr class="separator:ga0f21698f6ccd8700aa6e38e2342730bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3fcbb7b16b1406d108dcfa72673286b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_c_c.html#ga3fcbb7b16b1406d108dcfa72673286b9">PCF_ASM</a>&#160;&#160;&#160;__asm</td></tr>
+<tr class="memitem:ga3fcbb7b16b1406d108dcfa72673286b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga3fcbb7b16b1406d108dcfa72673286b9">PCF_ASM</a>&#160;&#160;&#160;__asm</td></tr>
 <tr class="memdesc:ga3fcbb7b16b1406d108dcfa72673286b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invokes the inline assembler and can appear wherever a C or C++ statement is legal.  <br /></td></tr>
 <tr class="separator:ga3fcbb7b16b1406d108dcfa72673286b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2082271bac4f34e753487c2af11c5fd4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_c_c.html#ga2082271bac4f34e753487c2af11c5fd4">PCF_DEF_PACKED_STRUCT</a>(__struct_def_to_pack__)</td></tr>
+<tr class="memitem:ga2082271bac4f34e753487c2af11c5fd4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga2082271bac4f34e753487c2af11c5fd4">PCF_DEF_PACKED_STRUCT</a>(__struct_def_to_pack__)&#160;&#160;&#160;struct __attribute__((packed)) __struct_def_to_pack__</td></tr>
 <tr class="memdesc:ga2082271bac4f34e753487c2af11c5fd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove padding between members of struct.  <br /></td></tr>
 <tr class="separator:ga2082271bac4f34e753487c2af11c5fd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga86d25a9de132a667367b35d447d57b12"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_c_c.html#ga86d25a9de132a667367b35d447d57b12">PCF_DEF_ALIGNED_VAR</a>(size,  variable)&#160;&#160;&#160;variable __attribute__((aligned(size)));</td></tr>
+<tr class="memitem:ga86d25a9de132a667367b35d447d57b12"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga86d25a9de132a667367b35d447d57b12">PCF_DEF_ALIGNED_VAR</a>(size,  variable)&#160;&#160;&#160;variable __attribute__((aligned(size)));</td></tr>
 <tr class="memdesc:ga86d25a9de132a667367b35d447d57b12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies a minimum alignment for the function, measured in bytes.  <br /></td></tr>
 <tr class="separator:ga86d25a9de132a667367b35d447d57b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafc4639f4521a8fc88adc66eed4088656"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_c_c.html#gafc4639f4521a8fc88adc66eed4088656">PCF_DEPRECATED</a>&#160;&#160;&#160;__attribute__((deprecated))</td></tr>
+<tr class="memitem:gafc4639f4521a8fc88adc66eed4088656"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#gafc4639f4521a8fc88adc66eed4088656">PCF_DEPRECATED</a>&#160;&#160;&#160;__attribute__((deprecated))</td></tr>
 <tr class="memdesc:gafc4639f4521a8fc88adc66eed4088656"><td class="mdescLeft">&#160;</td><td class="mdescRight">Results in a warning if the function is used anywhere in the source file.  <br /></td></tr>
 <tr class="separator:gafc4639f4521a8fc88adc66eed4088656"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga38de787fd81c24498f2ad1634230a57d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_c_c.html#ga38de787fd81c24498f2ad1634230a57d">PCF_STATIC_ASSERT</a>(expression,  message)&#160;&#160;&#160;switch(0){case 0:case expression:;}</td></tr>
-<tr class="memdesc:ga38de787fd81c24498f2ad1634230a57d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs compile-time assertion checking.  <br /></td></tr>
-<tr class="separator:ga38de787fd81c24498f2ad1634230a57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaef1c3064e4c2576ae8ec24ffdf1821a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_c_c.html#gaef1c3064e4c2576ae8ec24ffdf1821a4">PCF_ALLOW_UNUSED_VAR</a>(x)&#160;&#160;&#160;(void)(x)</td></tr>
-<tr class="memdesc:gaef1c3064e4c2576ae8ec24ffdf1821a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevents warning about unused variable.  <br /></td></tr>
-<tr class="separator:gaef1c3064e4c2576ae8ec24ffdf1821a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6928266e978e0b06e0af6227018d4dec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_c_c.html#ga6928266e978e0b06e0af6227018d4dec">PCF_COMPILER_FLAVOUR_INCLUDE</a>&#160;&#160;&#160;<a class="el" href="group___config.html#gaecf7e758b7912ba99d8a9d7227c00a7e">PCF_CONDITIONAL_INCLUDE_FILE</a>(./,<a class="el" href="group___msvc13.html#gae9bdae96b27aa004816f9a4e3b433e5c">PCF_COMPILER_FLAVOUR</a>/,,PCF_COMPILER_FLAVOUR.h)</td></tr>
+<tr class="memitem:ga3aa6a70c23b09a69326b24cad63a916a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga3aa6a70c23b09a69326b24cad63a916a">PCF_BUILD_TIME</a>&#160;&#160;&#160;__TIME__ &quot; &quot; __DATE__</td></tr>
+<tr class="memdesc:ga3aa6a70c23b09a69326b24cad63a916a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs compile-time assertion checking.  <br /></td></tr>
+<tr class="separator:ga3aa6a70c23b09a69326b24cad63a916a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2dde5a7aa847d08092abce79a728f6a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga2dde5a7aa847d08092abce79a728f6a1">PCF_FILE_MODIFICATION_TIMESTAMP</a>&#160;&#160;&#160;__TIMESTAMP__</td></tr>
+<tr class="separator:ga2dde5a7aa847d08092abce79a728f6a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga387eb85ead8b978b32f23f24c9441bc9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga387eb85ead8b978b32f23f24c9441bc9">PCF_HAS_COUNTER</a></td></tr>
+<tr class="separator:ga387eb85ead8b978b32f23f24c9441bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1bc174d8e271cbcfe045da6bccdac017"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga1bc174d8e271cbcfe045da6bccdac017">PCF_COUNTER</a>&#160;&#160;&#160;__COUNTER__</td></tr>
+<tr class="separator:ga1bc174d8e271cbcfe045da6bccdac017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a1643ef0b3b83bb4da22c3b84ebc684"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga8a1643ef0b3b83bb4da22c3b84ebc684">PCF_CDECL_API</a>&#160;&#160;&#160;__attribute__((__cdecl))</td></tr>
+<tr class="separator:ga8a1643ef0b3b83bb4da22c3b84ebc684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59f2df734599f4f819a93a8e1c3edc41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga59f2df734599f4f819a93a8e1c3edc41">PCF_STDCALL_API</a>&#160;&#160;&#160;__attribute__((__stdcall))</td></tr>
+<tr class="separator:ga59f2df734599f4f819a93a8e1c3edc41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga137a5afdfd6c0f181ca8e469145d4d8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga137a5afdfd6c0f181ca8e469145d4d8f">PCF_MACRO_BEGIN</a>&#160;&#160;&#160;do {</td></tr>
+<tr class="separator:ga137a5afdfd6c0f181ca8e469145d4d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga88c52019b32f91db8174570fc2a0698e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga88c52019b32f91db8174570fc2a0698e">PCF_MACRO_END</a>&#160;&#160;&#160;} while(false);</td></tr>
+<tr class="separator:ga88c52019b32f91db8174570fc2a0698e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabf4d43b06a20bbccfa4a43bb0ac41543"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#gabf4d43b06a20bbccfa4a43bb0ac41543">PCF_BEGIN_COLD_REGION</a></td></tr>
+<tr class="separator:gabf4d43b06a20bbccfa4a43bb0ac41543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c73656249c1140432bad2fb271e46a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga5c73656249c1140432bad2fb271e46a8">PCF_END_COLD_REGION</a></td></tr>
+<tr class="separator:ga5c73656249c1140432bad2fb271e46a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53c02f0f7e914bfd43952872ad6b312e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga53c02f0f7e914bfd43952872ad6b312e">PCF_COLD_FUNC_ATTR</a>&#160;&#160;&#160;__attribute__((cold))</td></tr>
+<tr class="memdesc:ga53c02f0f7e914bfd43952872ad6b312e"><td class="mdescLeft">&#160;</td><td class="mdescRight">It is used to inform the compiler that a function is unlikely executed.  <br /></td></tr>
+<tr class="separator:ga53c02f0f7e914bfd43952872ad6b312e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga65c74c57fe81736e5099d66342647d2e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga65c74c57fe81736e5099d66342647d2e">PCF_UNICODE</a></td></tr>
+<tr class="separator:ga65c74c57fe81736e5099d66342647d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a7fa7772a1b9111d1fc03cc1078fc87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga3a7fa7772a1b9111d1fc03cc1078fc87">PCF_NOOP</a>&#160;&#160;&#160;(void)(sizeof(0))</td></tr>
+<tr class="separator:ga3a7fa7772a1b9111d1fc03cc1078fc87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2d04504aefd97e1ede02343a5e31e9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#gae2d04504aefd97e1ede02343a5e31e9f">PCF_UNUSED_FUNC</a>&#160;&#160;&#160;__attribute__ ((unused))</td></tr>
+<tr class="separator:gae2d04504aefd97e1ede02343a5e31e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb62c4ae5b67e5a348cabc6167c104b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#gaeb62c4ae5b67e5a348cabc6167c104b7">PCF_WARNING_PUSH</a>&#160;&#160;&#160;_Pragma(&quot;GCC diagnostic push&quot;)</td></tr>
+<tr class="separator:gaeb62c4ae5b67e5a348cabc6167c104b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b017a0bf562782745e2dc79e859d7a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga3b017a0bf562782745e2dc79e859d7a5">PCF_WARNING_POP</a>&#160;&#160;&#160;_Pragma(&quot;GCC diagnostic pop&quot;)</td></tr>
+<tr class="separator:ga3b017a0bf562782745e2dc79e859d7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2686f3525f3e0f1f68f26f32c1350463"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga2686f3525f3e0f1f68f26f32c1350463">PCF_WARNING_DISABLE</a>(x)&#160;&#160;&#160;_Pragma(<a class="el" href="group__pcf__config.html#ga788814e6bbf97a9afbec32e3e350a372">PCF_STRINGIFY</a>(GCC diagnostic ignored x))</td></tr>
+<tr class="separator:ga2686f3525f3e0f1f68f26f32c1350463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga932b9fff1167d741f0da76f4e3a9ff63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga932b9fff1167d741f0da76f4e3a9ff63">PCF_WARNING_SUPPRESS</a>(x)&#160;&#160;&#160;_Pragma(<a class="el" href="group__pcf__config.html#ga788814e6bbf97a9afbec32e3e350a372">PCF_STRINGIFY</a>(GCC diagnostic ignored x))</td></tr>
+<tr class="separator:ga932b9fff1167d741f0da76f4e3a9ff63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga447121dcab4275b7839a56082b7a1ab8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga447121dcab4275b7839a56082b7a1ab8">__has_builtin</a>(x)&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ga447121dcab4275b7839a56082b7a1ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd54d9496c6189b989b3a9f61a34d161"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#gadd54d9496c6189b989b3a9f61a34d161">PCF_HAS_WARNING</a>(x)&#160;&#160;&#160;0</td></tr>
+<tr class="separator:gadd54d9496c6189b989b3a9f61a34d161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga48589bc799ef0d010565962f2ceec954"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga48589bc799ef0d010565962f2ceec954">PCF_UNREACHABLE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ga48589bc799ef0d010565962f2ceec954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga56506b275839d393e47a297b36705bff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga56506b275839d393e47a297b36705bff">PCF_ASSUME</a>(cond)&#160;&#160;&#160;((cond) ? <a class="el" href="group__pcf__config__compiler__gcc.html#ga3a7fa7772a1b9111d1fc03cc1078fc87">PCF_NOOP</a> : <a class="el" href="group__pcf__config__compiler__gcc.html#ga48589bc799ef0d010565962f2ceec954">PCF_UNREACHABLE</a>)</td></tr>
+<tr class="separator:ga56506b275839d393e47a297b36705bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1404c3626e247e588721e06320e0b634"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga1404c3626e247e588721e06320e0b634">PCF_LIKELY</a>(x)&#160;&#160;&#160;x</td></tr>
+<tr class="separator:ga1404c3626e247e588721e06320e0b634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5bad5fc1ac08add92d5787355033e49e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga5bad5fc1ac08add92d5787355033e49e">PCF_UNLIKELY</a>(x)&#160;&#160;&#160;x</td></tr>
+<tr class="separator:ga5bad5fc1ac08add92d5787355033e49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae76247d57dc4c4a585e0f91aa31a1847"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#gae76247d57dc4c4a585e0f91aa31a1847">PCF_PRINTF_FORMAT_ATTR</a>(n)&#160;&#160;&#160;__attribute__ ((format (printf, n, n + 1)))</td></tr>
+<tr class="separator:gae76247d57dc4c4a585e0f91aa31a1847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c86f014253ec9847df5087645982452"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga0c86f014253ec9847df5087645982452">PCF_ALIGN_OF</a>(Type)&#160;&#160;&#160;__alignof(Type)</td></tr>
+<tr class="separator:ga0c86f014253ec9847df5087645982452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6928266e978e0b06e0af6227018d4dec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__compiler__gcc.html#ga6928266e978e0b06e0af6227018d4dec">PCF_COMPILER_FLAVOUR_INCLUDE</a>&#160;&#160;&#160;<a class="el" href="group__pcf__config.html#gaecf7e758b7912ba99d8a9d7227c00a7e">PCF_CONDITIONAL_INCLUDE_FILE</a>(./,<a class="el" href="group__pcf__config__compiler__msvc__2013.html#gae9bdae96b27aa004816f9a4e3b433e5c">PCF_COMPILER_FLAVOUR</a>/,,PCF_COMPILER_FLAVOUR.h)</td></tr>
 <tr class="separator:ga6928266e978e0b06e0af6227018d4dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e892f84039eeeb22987cd9877ae0912"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___g_c_c.html#ga5e892f84039eeeb22987cd9877ae0912">PCF_ENUM_SIZE</a>&#160;&#160;&#160;4</td></tr>
-<tr class="separator:ga5e892f84039eeeb22987cd9877ae0912"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e3470cd7b363cf62c5671c03f5d194cf.html">pcf</a></li><li class="navelem"><a class="el" href="dir_a3d1dd1bdf7395ba0a93c1cc11b1c2a4.html">config</a></li><li class="navelem"><a class="el" href="dir_a7e1596fb4a909786bce7d31a6030be9.html">compiler</a></li><li class="navelem"><a class="el" href="dir_e22344d4a36688faea3b639a2463febd.html">gcc</a></li><li class="navelem"><a class="el" href="gcc_8h.html">gcc.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
 </body>
 </html>

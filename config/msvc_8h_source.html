@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('msvc_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,11 +88,6 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e3470cd7b363cf62c5671c03f5d194cf.html">pcf</a></li><li class="navelem"><a class="el" href="dir_a3d1dd1bdf7395ba0a93c1cc11b1c2a4.html">config</a></li><li class="navelem"><a class="el" href="dir_a7e1596fb4a909786bce7d31a6030be9.html">compiler</a></li><li class="navelem"><a class="el" href="dir_940b723d3eb9fdfdf006e0cac8ae1d93.html">msvc</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">msvc.h</div></div>
 </div><!--header-->
@@ -79,148 +95,153 @@ $(function() {
 <a href="msvc_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __PCF_INCLUDE_PCF_CONFIG_COMPILER_MSVC_H__</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __PCF_INCLUDE_PCF_CONFIG_COMPILER_MSVC_H__</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="status_2defs_8h.html">defs.h</a>&quot;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#if (PCF_LANGUAGE == PCF_LANGUAGE_C)</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="comment">// We do not have a generic way to check the C standard while using msvc. </span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="comment">// msvc in general does not set __STDC_VERSION__.  </span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="comment">// Hence we are not doing any checks</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="comment">// There is an option to set compiler option /Za. Doing so defines __STDC__, </span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="comment">// However doing so causes issues in core windows library and has errors in windows.h.</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#   pragma message(&quot;In MSVC generally there is no way to figure out what C standard we are following. \</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">    The reason is msvc does not define __STDC_VERSION__ \</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">    There could be ways with specific versions of msvc. \</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">    Hence we could do standard related checks there.&quot;</span>)</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="group___msvc.html#ga8070a103efb0eea8d6c5b454e72c5244">   25</a></span><span class="preprocessor">#   define PCF_BEGIN_CDECL </span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="group___msvc.html#ga5f1cd9416f3e9d538046e40d728d2a15">   27</a></span><span class="preprocessor">#   define PCF_END_CDECL </span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">/*  #ifndef __STDC__</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">        // In case you are planning to configure MSVC as C compiler</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">        // read this https://msdn.microsoft.com/en-us/library/b0084kay.aspx</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">        // specially how to enable __STDC__ macro </span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">        #error &quot;We have configured to use the C language and msvc c compiler but we are not using C. \</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">        __STDC__ is Defined only when compiled as C and if the /Za compiler option is specified.&quot;</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">    #else</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">        // We do not have a generic way to check the C standard while using msvc. </span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">        // msvc in general does not set __STDC_VERSION__.  </span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">        // Hence we are not doing any checks</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">        #pragma message(&quot;In MSVC generally there is no way to figure out what C standard we are following. \</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">The reason is msvc does not define __STDC_VERSION__ \</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">There could be ways with specific versions of msvc. \</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">Hence we could do standard related checks there.&quot;)</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">        #define PCF_COMPILER  PCF_COMPILER_MSVC</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">        #define PCF_COMPILER_NAME msvc</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">    #endif*/</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#elif (PCF_LANGUAGE == PCF_LANGUAGE_CPP)    </span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#   ifndef __cplusplus</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">        #error &quot;We have configured to use the C++ language and msvc compiler but we are not using C++.&quot;</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#   else </span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="comment">// We do not have a generic way to set and check the CPP standard while using msvc. </span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="comment">// It seems msvc sets __cplusplus  to 199711L irrespective of the CPP standard being used.  </span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="comment">// Hence we are not doing any checks  </span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#       pragma message(&quot;In MSVC generally there is no way to figure out what C++ standard we are following. \</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">The reason is msvc does not conform to all the features of a standard \</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">There could be ways with specific versions of msvc. \</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">Hence we could do standard related checks there.&quot;</span>)</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#       define PCF_BEGIN_CDECL extern &quot;C&quot;</span> {</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#       define PCF_END_CDECL }</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#   endif</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#   error &quot;msvc does not support the language you have selected.&quot;</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="comment">// Defining macros common to all current MSVC flavours.</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">// Defining the Compiler Version No.</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="group___msvc.html#ga08ebf58d22da216670332ec5bbecda99">   69</a></span><span class="preprocessor">#define PCF_COMPILER_VERSION  _MSC_VER</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="preprocessor">#if defined(__FILE__)</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">    #define __PCF_FILE__ __FILE__</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#error &quot;We do not know how to set __PCF_FILE__. \</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">    Move this macro out and set it in each flavour.&quot;</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="preprocessor">#if defined(__LINE__)</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">    #define __PCF_LINE__ __LINE__</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">    #error &quot;We do not know how to set __PCF_LINE__. \</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">    Move this macro out and set it in each flavour.&quot;</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="preprocessor">#if defined (__func__)</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">    #define __PCF_FUNC__ __func__</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">#elif defined (__FUNCTION__)</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">    #define __PCF_FUNC__ __FUNCTION__</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">    #error &quot;We do not know how to set __PCF_FUNC__. \</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">    Move this macro out and set it in each flavour.&quot;</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#endif </span><span class="comment">//#if defined (__func__)       </span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="preprocessor">#if !defined(__PCF_DECORATED_FUNCTION__)</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">    #if defined (__FUNCSIG__)</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">        #define __PCF_DECORATED_FUNCTION__ __FUNCSIG__</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">    #else</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="group___msvc.html#gab840f447ee018d777f3c14054d37fe94">  110</a></span><span class="preprocessor">        #define __PCF_DECORATED_FUNCTION__ __PCF_FUNC__</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="preprocessor">    #endif </span><span class="comment">// #if defined (__FUNCSIG__)</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">#endif </span><span class="comment">// #if defined(__PCF_DECORATED_FUNCTION__)</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="comment">// Macros for inline</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="group___msvc.html#gad163dca3bc74e24a708f1bbe671fecab">  119</a></span><span class="preprocessor">#define PCF_FORCE_INLINE                __forceinline</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="group___msvc.html#ga5d021d94ea902592fa73b3867d215064">  124</a></span><span class="preprocessor">#define PCF_NO_INLINE                   __declspec(noinline)</span></div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno"><a class="line" href="group___msvc.html#ga3fede7bba0f459db05c8463c2f896ca6">  129</a></span><span class="preprocessor">#define PCF_INLINE                      __inline</span></div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="group___msvc.html#ga0f21698f6ccd8700aa6e38e2342730bb">  134</a></span><span class="preprocessor">#define PCF_NO_RETURN                   __declspec(noreturn)</span></div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno"><a class="line" href="group___msvc.html#ga3fcbb7b16b1406d108dcfa72673286b9">  139</a></span><span class="preprocessor">#define PCF_ASM                         __asm</span></div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="group___msvc.html#ga2082271bac4f34e753487c2af11c5fd4">  144</a></span><span class="preprocessor">#define PCF_DEF_PACKED_STRUCT(__struct_def_to_pack__)  \</span></div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="preprocessor">__pragma(pack(push, 1)) struct __struct_def_to_pack__\</span></div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="preprocessor">__pragma(pack(pop))</span></div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="group___msvc.html#ga86d25a9de132a667367b35d447d57b12">  151</a></span><span class="preprocessor">#define PCF_DEF_ALIGNED_VAR(size, variable)     __declspec(align(size)) variable</span></div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="group___msvc.html#ga539b239602982cce3b27b0791b72f66b">  156</a></span><span class="preprocessor">#define PCF_DLL_IMPORT_API              __declspec(dllimport)</span></div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="group___msvc.html#gacc972b6c6d89f2c47b09f8b87e9ac52f">  161</a></span><span class="preprocessor">#define PCF_DLL_EXPORT_API              __declspec(dllexport)</span></div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="group___msvc.html#ga356a0e9b5650e12d6e93b7e34c906c6a">  166</a></span><span class="preprocessor">#define PCF_DLL_LOCAL_API</span></div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno"><a class="line" href="group___msvc.html#gafc4639f4521a8fc88adc66eed4088656">  171</a></span><span class="preprocessor">#define PCF_DEPRECATED                  __declspec(deprecated)</span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="group___msvc.html#ga38de787fd81c24498f2ad1634230a57d">  176</a></span><span class="preprocessor">#define PCF_STATIC_ASSERT(expression, message)   static_assert(expression, message);  </span></div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno"><a class="line" href="group___msvc.html#gaef1c3064e4c2576ae8ec24ffdf1821a4">  181</a></span><span class="preprocessor">#define PCF_ALLOW_UNUSED_VAR(x)         (void)(x)</span></div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span> </div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span><span class="preprocessor">#if((_MSC_VER &lt; 1800) &amp;&amp; (_MSC_VER &gt;= 1900))</span></div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="preprocessor">#   define COMPILER_FLAVOUR 2013</span></div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="preprocessor">#elif((_MSC_VER &lt; 1900) &amp;&amp; (_MSC_VER &gt;= 2000))</span></div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="preprocessor">#   define COMPILER_FLAVOUR 2015</span></div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="preprocessor">#   error &quot;Compiler flavour is currently not supported by PCF&quot;</span></div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="group___msvc.html#ga6928266e978e0b06e0af6227018d4dec">  191</a></span><span class="preprocessor">#define PCF_COMPILER_FLAVOUR_INCLUDE    PCF_CONDITIONAL_INCLUDE_FILE(./,COMPILER_FLAVOUR/,,COMPILER_FLAVOUR.h)</span></div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="preprocessor">#include PCF_COMPILER_FLAVOUR_INCLUDE</span></div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="preprocessor">#undef PCF_COMPILER_FLAVOUR_INCLUDE</span></div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="preprocessor">#undef COMPILER_FLAVOUR</span></div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="comment">// The following macros should be defined by the flavour.</span></div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="preprocessor">#if !defined(PCF_COMPILER_FLAVOUR)</span></div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="preprocessor">    #error &quot;Included compiler doesn&#39;t define the required macro PCF_COMPILER_FLAVOUR.&quot;</span></div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="preprocessor">#endif </span><span class="comment">// #if !defined(PCF_COMPILER_FLAVOUR)</span></div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span> </div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="preprocessor">#endif  </span><span class="comment">//__PCF_INCLUDE_PCF_CONFIG_COMPILER_MSVC_H__</span></div>
-<div class="ttc" id="astatus_2defs_8h_html"><div class="ttname"><a href="status_2defs_8h.html">defs.h</a></div></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;<a class="code" href="compiler_2msvc_2defs_8h.html">pcf/config/compiler/msvc/defs.h</a>&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#if (PCF_LANGUAGE == PCF_LANGUAGE_C)</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="comment">// We do not have a generic way to check the C standard while using msvc. </span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="comment">// msvc in general does not set __STDC_VERSION__.  </span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="comment">// Hence we are not doing any checks</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="comment">// There is an option to set compiler option /Za. Doing so defines __STDC__, </span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="comment">// However doing so causes issues in core windows library and has errors in windows.h.</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#   pragma message(&quot;In MSVC generally there is no way to figure out what C standard we are following. \</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">    The reason is msvc does not define __STDC_VERSION__ \</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">    There could be ways with specific versions of msvc. \</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">    Hence we could do standard related checks there.&quot;</span>)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="group__pcf__config__compiler__msvc.html#ga8070a103efb0eea8d6c5b454e72c5244">   26</a></span><span class="preprocessor">#   define PCF_BEGIN_CDECL </span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="group__pcf__config__compiler__msvc.html#ga5f1cd9416f3e9d538046e40d728d2a15">   28</a></span><span class="preprocessor">#   define PCF_END_CDECL </span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">/*  #ifndef __STDC__</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">        // In case you are planning to configure MSVC as C compiler</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">        // read this https://msdn.microsoft.com/en-us/library/b0084kay.aspx</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">        // specially how to enable __STDC__ macro </span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">        #error &quot;We have configured to use the C language and msvc c compiler but we are not using C. \</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">        __STDC__ is Defined only when compiled as C and if the /Za compiler option is specified.&quot;</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">    #else</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">        // We do not have a generic way to check the C standard while using msvc. </span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">        // msvc in general does not set __STDC_VERSION__.  </span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">        // Hence we are not doing any checks</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="comment">        #pragma message(&quot;In MSVC generally there is no way to figure out what C standard we are following. \</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">The reason is msvc does not define __STDC_VERSION__ \</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">There could be ways with specific versions of msvc. \</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment">Hence we could do standard related checks there.&quot;)</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="comment">        #define PCF_COMPILER  PCF_COMPILER_MSVC</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">        #define PCF_COMPILER_NAME msvc</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">    #endif*/</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#elif (PCF_LANGUAGE == PCF_LANGUAGE_CPP)    </span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#   ifndef __cplusplus</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">        #error &quot;We have configured to use the C++ language and msvc compiler but we are not using C++.&quot;</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#   else </span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="comment">// We do not have a generic way to set and check the CPP standard while using msvc. </span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="comment">// It seems msvc sets __cplusplus  to 199711L irrespective of the CPP standard being used.  </span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="comment">// Hence we are not doing any checks  </span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#       pragma message(&quot;In MSVC generally there is no way to figure out what C++ standard we are following. \</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">The reason is msvc does not conform to all the features of a standard \</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">There could be ways with specific versions of msvc. \</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">Hence we could do standard related checks there.&quot;</span>)</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#       define PCF_BEGIN_CDECL extern &quot;C&quot;</span> {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#       define PCF_END_CDECL }</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#   endif</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#   error &quot;msvc does not support the language you have selected.&quot;</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">// Defining macros common to all current MSVC flavours.</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">// Defining the Compiler Version No.</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="group__pcf__config__compiler__msvc.html#ga08ebf58d22da216670332ec5bbecda99">   70</a></span><span class="preprocessor">#define PCF_COMPILER_VERSION  _MSC_VER</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#if defined(__FILE__)</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="preprocessor">    #define __PCF_FILE__ __FILE__</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#error &quot;We do not know how to set __PCF_FILE__. \</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">    Move this macro out and set it in each flavour.&quot;</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="preprocessor">#if defined(__LINE__)</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="preprocessor">    #define __PCF_LINE__ __LINE__</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">    #error &quot;We do not know how to set __PCF_LINE__. \</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="preprocessor">    Move this macro out and set it in each flavour.&quot;</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span><span class="preprocessor">#if defined (__func__)</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">    #define __PCF_FUNC__ __func__</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#elif defined (__FUNCTION__)</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">    #define __PCF_FUNC__ __FUNCTION__</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">    #error &quot;We do not know how to set __PCF_FUNC__. \</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">    Move this macro out and set it in each flavour.&quot;</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="preprocessor">#endif </span><span class="comment">//#if defined (__func__)       </span></div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="preprocessor">#if !defined(__PCF_DECORATED_FUNCTION__)</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="preprocessor">    #if defined (__FUNCSIG__)</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">        #define __PCF_DECORATED_FUNCTION__ __FUNCSIG__</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">    #else</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="group__pcf__config__compiler__msvc.html#gab840f447ee018d777f3c14054d37fe94">  111</a></span><span class="preprocessor">        #define __PCF_DECORATED_FUNCTION__ __PCF_FUNC__</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="preprocessor">    #endif </span><span class="comment">// #if defined (__FUNCSIG__)</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="preprocessor">#endif </span><span class="comment">// #if defined(__PCF_DECORATED_FUNCTION__)</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">// Macros for inline</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno"><a class="line" href="group__pcf__config__compiler__msvc.html#gad163dca3bc74e24a708f1bbe671fecab">  120</a></span><span class="preprocessor">#define PCF_FORCE_INLINE                __forceinline</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="group__pcf__config__compiler__msvc.html#ga5d021d94ea902592fa73b3867d215064">  125</a></span><span class="preprocessor">#define PCF_NO_INLINE                   __declspec(noinline)</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="group__pcf__config__compiler__msvc.html#ga3fede7bba0f459db05c8463c2f896ca6">  130</a></span><span class="preprocessor">#define PCF_INLINE                      __inline</span></div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno"><a class="line" href="group__pcf__config__compiler__msvc.html#ga0f21698f6ccd8700aa6e38e2342730bb">  135</a></span><span class="preprocessor">#define PCF_NO_RETURN                   __declspec(noreturn)</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="group__pcf__config__compiler__msvc.html#ga3fcbb7b16b1406d108dcfa72673286b9">  140</a></span><span class="preprocessor">#define PCF_ASM                         __asm</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno"><a class="line" href="group__pcf__config__compiler__msvc.html#ga2082271bac4f34e753487c2af11c5fd4">  145</a></span><span class="preprocessor">#define PCF_DEF_PACKED_STRUCT(__struct_def_to_pack__)  \</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span><span class="preprocessor">__pragma(pack(push, 1)) struct __struct_def_to_pack__\</span></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="preprocessor">__pragma(pack(pop))</span></div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno"><a class="line" href="group__pcf__config__compiler__msvc.html#ga86d25a9de132a667367b35d447d57b12">  152</a></span><span class="preprocessor">#define PCF_DEF_ALIGNED_VAR(size, variable)     __declspec(align(size)) variable</span></div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="group__pcf__config__compiler__msvc.html#ga539b239602982cce3b27b0791b72f66b">  157</a></span><span class="preprocessor">#define PCF_DLL_IMPORT_API              __declspec(dllimport)</span></div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="group__pcf__config__compiler__msvc.html#gacc972b6c6d89f2c47b09f8b87e9ac52f">  162</a></span><span class="preprocessor">#define PCF_DLL_EXPORT_API              __declspec(dllexport)</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="group__pcf__config__compiler__msvc.html#ga356a0e9b5650e12d6e93b7e34c906c6a">  167</a></span><span class="preprocessor">#define PCF_DLL_LOCAL_API</span></div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="group__pcf__config__compiler__msvc.html#gafc4639f4521a8fc88adc66eed4088656">  172</a></span><span class="preprocessor">#define PCF_DEPRECATED                  __declspec(deprecated)</span></div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span> </div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="group__pcf__config__compiler__msvc.html#ga38de787fd81c24498f2ad1634230a57d">  177</a></span><span class="preprocessor">#define PCF_STATIC_ASSERT(expression, message)   static_assert(expression, message);  </span></div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="group__pcf__config__compiler__msvc.html#gaef1c3064e4c2576ae8ec24ffdf1821a4">  182</a></span><span class="preprocessor">#define PCF_ALLOW_UNUSED_VAR(x)         (void)(x)</span></div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="preprocessor">#if((_MSC_VER &lt; 1800) &amp;&amp; (_MSC_VER &gt;= 1900))</span></div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span><span class="preprocessor">#   define COMPILER_FLAVOUR 2013</span></div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span><span class="preprocessor">#elif((_MSC_VER &lt; 1900) &amp;&amp; (_MSC_VER &gt;= 2000))</span></div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="preprocessor">#   define COMPILER_FLAVOUR 2015</span></div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="preprocessor">#   error &quot;Compiler flavour is currently not supported by PCF&quot;</span></div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="group__pcf__config__compiler__msvc.html#ga6928266e978e0b06e0af6227018d4dec">  192</a></span><span class="preprocessor">#define PCF_COMPILER_FLAVOUR_INCLUDE    PCF_CONDITIONAL_INCLUDE_FILE(./,COMPILER_FLAVOUR/,,COMPILER_FLAVOUR.h)</span></div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span><span class="preprocessor">#include PCF_COMPILER_FLAVOUR_INCLUDE</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="preprocessor">#undef PCF_COMPILER_FLAVOUR_INCLUDE</span></div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span><span class="preprocessor">#undef COMPILER_FLAVOUR</span></div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="comment">// The following macros should be defined by the flavour.</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="preprocessor">#if !defined(PCF_COMPILER_FLAVOUR)</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="preprocessor">    #error &quot;Included compiler doesn&#39;t define the required macro PCF_COMPILER_FLAVOUR.&quot;</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="preprocessor">#endif </span><span class="comment">// #if !defined(PCF_COMPILER_FLAVOUR)</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="preprocessor">#endif  </span><span class="comment">//__PCF_INCLUDE_PCF_CONFIG_COMPILER_MSVC_H__</span></div>
+<div class="ttc" id="acompiler_2msvc_2defs_8h_html"><div class="ttname"><a href="compiler_2msvc_2defs_8h.html">defs.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e3470cd7b363cf62c5671c03f5d194cf.html">pcf</a></li><li class="navelem"><a class="el" href="dir_a3d1dd1bdf7395ba0a93c1cc11b1c2a4.html">config</a></li><li class="navelem"><a class="el" href="dir_a7e1596fb4a909786bce7d31a6030be9.html">compiler</a></li><li class="navelem"><a class="el" href="dir_940b723d3eb9fdfdf006e0cac8ae1d93.html">msvc</a></li><li class="navelem"><a class="el" href="msvc_8h.html">msvc.h</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
 </body>
 </html>
