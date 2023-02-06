@@ -1,7 +1,8 @@
 var compiler_2msvc_2defs_8h =
 [
-    [ "PCF_COMPILER_MSVC_FLAVOUR_MSVC_2010", "group__pcf__config__compiler__msvc.html#ga1bd174fc9ec707699dfe2b8abf87d16b", null ],
-    [ "PCF_COMPILER_MSVC_FLAVOUR_MSVC_2013", "group__pcf__config__compiler__msvc.html#gaafb9458d5e5b786cd04cb40b101dc942", null ],
-    [ "PCF_COMPILER_MSVC_FLAVOUR_MSVC_2015", "group__pcf__config__compiler__msvc.html#ga6a89ed1090b6d8ec1d5e9e48b5e93135", null ],
-    [ "PCF_COMPILER_MSVC_FLAVOUR_MSVC_2017", "group__pcf__config__compiler__msvc.html#ga22e8ed0f9fe83d8f6f9d476218a14aa2", null ]
+    [ "PCF_COMPILER_MSVC_FLAVOUR_2013", "compiler_2msvc_2defs_8h.html#af7be530016381b9488a204f9cf38f2f4", null ],
+    [ "PCF_COMPILER_MSVC_FLAVOUR_2015", "compiler_2msvc_2defs_8h.html#a41d64bcdd616d922dd25f8c4304266ee", null ],
+    [ "PCF_COMPILER_MSVC_FLAVOUR_2017", "compiler_2msvc_2defs_8h.html#a87faf9e179ce335027f17c3440541889", null ],
+    [ "PCF_COMPILER_MSVC_FLAVOUR_2019", "compiler_2msvc_2defs_8h.html#a3c3d853ef268883747cf9fc51523b3cf", null ],
+    [ "PCF_COMPILER_MSVC_FLAVOUR_2022", "compiler_2msvc_2defs_8h.html#abda4fb64763bd387be2bba70774a0867", null ]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>config: include/pcf/config/os/defs.h Source File</title>
+<title>Config: include/pcf/config/os/defs.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">config
+   <div id="projectname">Config
    </div>
   </td>
  </tr>
@@ -95,20 +95,14 @@ $(document).ready(function(){initNavTree('os_2defs_8h_source.html',''); initResi
 <a href="os_2defs_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __PCF_INCLUDES_PCF_CONFIG_OS_DEFS_H__</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __PCF_INCLUDES_PCF_CONFIG_OS_DEFS_H__</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">// OS</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="group__pcf__config__os.html#ga1a768a7fea4a7e2d17c64b903510966a">   13</a></span><span class="comment"></span><span class="preprocessor">#define PCF_OS_BAREMETAL                 (1)</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="group__pcf__config__os.html#gad1b4c1d013b62fe317e9ecf73df460cb">   18</a></span><span class="preprocessor">#define PCF_OS_LINUX32              (PCF_OS_BAREMETAL &lt;&lt; 1)</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="group__pcf__config__os.html#gaa786dce50fe44bebaadae732d72703b8">   23</a></span><span class="preprocessor">#define PCF_OS_LINUX64              (PCF_OS_LINUX32 &lt;&lt; 1)</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="group__pcf__config__os.html#ga1050f4589de580f7d1ac38cbc2890efb">   28</a></span><span class="preprocessor">#define PCF_OS_WIN32                (PCF_OS_LINUX64 &lt;&lt; 1)</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="group__pcf__config__os.html#ga3c7d8341d6fc02b5e7fb7508e9914006">   33</a></span><span class="preprocessor">#define PCF_OS_WIN64                (PCF_OS_WIN32 &lt;&lt; 1)</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#endif </span><span class="comment">//__PCF_INCLUDES_PCF_CONFIG_OS_DEFS_H__</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="os_2defs_8h.html#a1a768a7fea4a7e2d17c64b903510966a">   23</a></span><span class="preprocessor">#define PCF_OS_BAREMETAL                (1)</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="os_2defs_8h.html#ad1b4c1d013b62fe317e9ecf73df460cb">   24</a></span><span class="preprocessor">#define PCF_OS_LINUX32                  (PCF_OS_BAREMETAL &lt;&lt; 1)</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="os_2defs_8h.html#aa786dce50fe44bebaadae732d72703b8">   25</a></span><span class="preprocessor">#define PCF_OS_LINUX64                  (PCF_OS_LINUX32 &lt;&lt; 1)</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="os_2defs_8h.html#a1050f4589de580f7d1ac38cbc2890efb">   26</a></span><span class="preprocessor">#define PCF_OS_WIN32                    (PCF_OS_LINUX64 &lt;&lt; 1)</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="os_2defs_8h.html#a3c7d8341d6fc02b5e7fb7508e9914006">   27</a></span><span class="preprocessor">#define PCF_OS_WIN64                    (PCF_OS_WIN32 &lt;&lt; 1)</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#endif </span><span class="comment">//__PCF_INCLUDES_PCF_CONFIG_OS_DEFS_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

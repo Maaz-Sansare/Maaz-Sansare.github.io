@@ -24,19 +24,25 @@
 */
 var NAVTREE =
 [
-  [ "config", "index.html", [
-    [ "Modules", "modules.html", "modules" ],
-    [ "Classes", "annotated.html", [
-      [ "Class List", "annotated.html", "annotated_dup" ],
-      [ "Class Index", "classes.html", null ],
-      [ "Class Members", "functions.html", [
+  [ "Config", "index.html", [
+    [ "Functionality MACROS", "pcf_config.html", null ],
+    [ "Language", "language.html", null ],
+    [ "Compiler", "compiler.html", null ],
+    [ "Architecture", "arch.html", null ],
+    [ "Status", "status.html", null ],
+    [ "OS", "os.html", null ],
+    [ "Data Structures", "annotated.html", [
+      [ "Predefined Configuration MACROS", "index.html#macro", null ],
+      [ "Data Structures", "annotated.html", "annotated_dup" ],
+      [ "Data Structure Index", "classes.html", null ],
+      [ "Data Fields", "functions.html", [
         [ "All", "functions.html", null ],
         [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
-      [ "File Members", "globals.html", [
+      [ "Globals", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
@@ -50,8 +56,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "2013_8h.html",
-"group__pcf__config.html#ga2115121486c90a800772048ca1ef002b",
-"status_2types_8h_source.html"
+"gcc_8h.html#a5d021d94ea902592fa73b3867d215064",
+"status_2defs_8h.html#a140e5296e06f311f8f0b719221e18fad",
+"win64_8h.html#afbe93a035c899b2904b3faf02c90f3d2"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>config: include/pcf/config/os/defs.h File Reference</title>
+<title>Config: include/pcf/config/os/defs.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">config
+   <div id="projectname">Config
    </div>
   </td>
  </tr>
@@ -99,22 +99,88 @@ $(document).ready(function(){initNavTree('os_2defs_8h.html',''); initResizable()
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga1a768a7fea4a7e2d17c64b903510966a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__os.html#ga1a768a7fea4a7e2d17c64b903510966a">PCF_OS_BAREMETAL</a>&#160;&#160;&#160;(1)</td></tr>
-<tr class="memdesc:ga1a768a7fea4a7e2d17c64b903510966a"><td class="mdescLeft">&#160;</td><td class="mdescRight">No operating system.  <br /></td></tr>
-<tr class="separator:ga1a768a7fea4a7e2d17c64b903510966a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad1b4c1d013b62fe317e9ecf73df460cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__os.html#gad1b4c1d013b62fe317e9ecf73df460cb">PCF_OS_LINUX32</a>&#160;&#160;&#160;(<a class="el" href="group__pcf__config__os.html#ga1a768a7fea4a7e2d17c64b903510966a">PCF_OS_BAREMETAL</a> &lt;&lt; 1)</td></tr>
-<tr class="memdesc:gad1b4c1d013b62fe317e9ecf73df460cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linux 32-bit operating system.  <br /></td></tr>
-<tr class="separator:gad1b4c1d013b62fe317e9ecf73df460cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa786dce50fe44bebaadae732d72703b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__os.html#gaa786dce50fe44bebaadae732d72703b8">PCF_OS_LINUX64</a>&#160;&#160;&#160;(<a class="el" href="group__pcf__config__os.html#gad1b4c1d013b62fe317e9ecf73df460cb">PCF_OS_LINUX32</a> &lt;&lt; 1)</td></tr>
-<tr class="memdesc:gaa786dce50fe44bebaadae732d72703b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linux 64-bit operating system.  <br /></td></tr>
-<tr class="separator:gaa786dce50fe44bebaadae732d72703b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1050f4589de580f7d1ac38cbc2890efb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__os.html#ga1050f4589de580f7d1ac38cbc2890efb">PCF_OS_WIN32</a>&#160;&#160;&#160;(<a class="el" href="group__pcf__config__os.html#gaa786dce50fe44bebaadae732d72703b8">PCF_OS_LINUX64</a> &lt;&lt; 1)</td></tr>
-<tr class="memdesc:ga1050f4589de580f7d1ac38cbc2890efb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Windows operating system 32-bit.  <br /></td></tr>
-<tr class="separator:ga1050f4589de580f7d1ac38cbc2890efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3c7d8341d6fc02b5e7fb7508e9914006"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config__os.html#ga3c7d8341d6fc02b5e7fb7508e9914006">PCF_OS_WIN64</a>&#160;&#160;&#160;(<a class="el" href="group__pcf__config__os.html#ga1050f4589de580f7d1ac38cbc2890efb">PCF_OS_WIN32</a> &lt;&lt; 1)</td></tr>
-<tr class="memdesc:ga3c7d8341d6fc02b5e7fb7508e9914006"><td class="mdescLeft">&#160;</td><td class="mdescRight">Windows operating system 64-bit.  <br /></td></tr>
-<tr class="separator:ga3c7d8341d6fc02b5e7fb7508e9914006"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a768a7fea4a7e2d17c64b903510966a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os_2defs_8h.html#a1a768a7fea4a7e2d17c64b903510966a">PCF_OS_BAREMETAL</a>&#160;&#160;&#160;(1)</td></tr>
+<tr class="separator:a1a768a7fea4a7e2d17c64b903510966a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1b4c1d013b62fe317e9ecf73df460cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os_2defs_8h.html#ad1b4c1d013b62fe317e9ecf73df460cb">PCF_OS_LINUX32</a>&#160;&#160;&#160;(<a class="el" href="os_2defs_8h.html#a1a768a7fea4a7e2d17c64b903510966a">PCF_OS_BAREMETAL</a> &lt;&lt; 1)</td></tr>
+<tr class="separator:ad1b4c1d013b62fe317e9ecf73df460cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa786dce50fe44bebaadae732d72703b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os_2defs_8h.html#aa786dce50fe44bebaadae732d72703b8">PCF_OS_LINUX64</a>&#160;&#160;&#160;(<a class="el" href="os_2defs_8h.html#ad1b4c1d013b62fe317e9ecf73df460cb">PCF_OS_LINUX32</a> &lt;&lt; 1)</td></tr>
+<tr class="separator:aa786dce50fe44bebaadae732d72703b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1050f4589de580f7d1ac38cbc2890efb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os_2defs_8h.html#a1050f4589de580f7d1ac38cbc2890efb">PCF_OS_WIN32</a>&#160;&#160;&#160;(<a class="el" href="os_2defs_8h.html#aa786dce50fe44bebaadae732d72703b8">PCF_OS_LINUX64</a> &lt;&lt; 1)</td></tr>
+<tr class="separator:a1050f4589de580f7d1ac38cbc2890efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c7d8341d6fc02b5e7fb7508e9914006"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="os_2defs_8h.html#a3c7d8341d6fc02b5e7fb7508e9914006">PCF_OS_WIN64</a>&#160;&#160;&#160;(<a class="el" href="os_2defs_8h.html#a1050f4589de580f7d1ac38cbc2890efb">PCF_OS_WIN32</a> &lt;&lt; 1)</td></tr>
+<tr class="separator:a3c7d8341d6fc02b5e7fb7508e9914006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a1a768a7fea4a7e2d17c64b903510966a" name="a1a768a7fea4a7e2d17c64b903510966a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a768a7fea4a7e2d17c64b903510966a">&#9670;&#160;</a></span>PCF_OS_BAREMETAL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCF_OS_BAREMETAL&#160;&#160;&#160;(1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1b4c1d013b62fe317e9ecf73df460cb" name="ad1b4c1d013b62fe317e9ecf73df460cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1b4c1d013b62fe317e9ecf73df460cb">&#9670;&#160;</a></span>PCF_OS_LINUX32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCF_OS_LINUX32&#160;&#160;&#160;(<a class="el" href="os_2defs_8h.html#a1a768a7fea4a7e2d17c64b903510966a">PCF_OS_BAREMETAL</a> &lt;&lt; 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa786dce50fe44bebaadae732d72703b8" name="aa786dce50fe44bebaadae732d72703b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa786dce50fe44bebaadae732d72703b8">&#9670;&#160;</a></span>PCF_OS_LINUX64</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCF_OS_LINUX64&#160;&#160;&#160;(<a class="el" href="os_2defs_8h.html#ad1b4c1d013b62fe317e9ecf73df460cb">PCF_OS_LINUX32</a> &lt;&lt; 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1050f4589de580f7d1ac38cbc2890efb" name="a1050f4589de580f7d1ac38cbc2890efb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1050f4589de580f7d1ac38cbc2890efb">&#9670;&#160;</a></span>PCF_OS_WIN32</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCF_OS_WIN32&#160;&#160;&#160;(<a class="el" href="os_2defs_8h.html#aa786dce50fe44bebaadae732d72703b8">PCF_OS_LINUX64</a> &lt;&lt; 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c7d8341d6fc02b5e7fb7508e9914006" name="a3c7d8341d6fc02b5e7fb7508e9914006"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c7d8341d6fc02b5e7fb7508e9914006">&#9670;&#160;</a></span>PCF_OS_WIN64</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCF_OS_WIN64&#160;&#160;&#160;(<a class="el" href="os_2defs_8h.html#a1050f4589de580f7d1ac38cbc2890efb">PCF_OS_WIN32</a> &lt;&lt; 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

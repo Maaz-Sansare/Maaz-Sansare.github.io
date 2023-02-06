@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>config: include/pcf/config/types.h File Reference</title>
+<title>Config: include/pcf/config/types.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,7 +25,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">config
+   <div id="projectname">Config
    </div>
   </td>
  </tr>
@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('types_8h.html',''); initResizable(); }
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">types.h File Reference</div></div>
@@ -99,11 +99,12 @@ $(document).ready(function(){initNavTree('types_8h.html',''); initResizable(); }
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
 <code>#include &lt;float.h&gt;</code><br />
+<code>#include &lt;limits.h&gt;</code><br />
 </div>
 <p><a href="types_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
+Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_data__t.html">Data_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data struct <br  />
   <a href="struct_data__t.html#details">More...</a><br /></td></tr>
@@ -111,39 +112,191 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gaa5c07d2cfb793b920422ec4b240b6c26"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config.html#gaa5c07d2cfb793b920422ec4b240b6c26">pcf_timeStamp_t</a></td></tr>
-<tr class="memdesc:gaa5c07d2cfb793b920422ec4b240b6c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record of the time of occurrence of particular event.  <br /></td></tr>
-<tr class="separator:gaa5c07d2cfb793b920422ec4b240b6c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7604049bdc9fd07b28d0ec6e907fcafc"><td class="memItemLeft" align="right" valign="top">typedef size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config.html#ga7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a></td></tr>
-<tr class="memdesc:ga7604049bdc9fd07b28d0ec6e907fcafc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represent the size of objects in bytes.  <br /></td></tr>
-<tr class="separator:ga7604049bdc9fd07b28d0ec6e907fcafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac9d04f99fb25ea885f5ee3cc754c5e05"><td class="memItemLeft" align="right" valign="top">typedef char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config.html#gac9d04f99fb25ea885f5ee3cc754c5e05">pcf_string_t</a></td></tr>
-<tr class="memdesc:gac9d04f99fb25ea885f5ee3cc754c5e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data type of string literal.  <br /></td></tr>
-<tr class="separator:gac9d04f99fb25ea885f5ee3cc754c5e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafb11352594938a2038de606fb9e8e766"><td class="memItemLeft" align="right" valign="top">typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config.html#gafb11352594938a2038de606fb9e8e766">pcf_cstring_t</a></td></tr>
-<tr class="memdesc:gafb11352594938a2038de606fb9e8e766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data type of constant string literal.  <br /></td></tr>
-<tr class="separator:gafb11352594938a2038de606fb9e8e766"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga30ee6362d7b648532f468a9c796bcf49"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config.html#ga30ee6362d7b648532f468a9c796bcf49">pcf_byte_t</a></td></tr>
-<tr class="memdesc:ga30ee6362d7b648532f468a9c796bcf49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data byte of unsigned integer.  <br /></td></tr>
-<tr class="separator:ga30ee6362d7b648532f468a9c796bcf49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4d36378a2f8e7a48a06ada7b8989a66a"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config.html#ga4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a></td></tr>
-<tr class="memdesc:ga4d36378a2f8e7a48a06ada7b8989a66a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data of generic type.  <br /></td></tr>
-<tr class="separator:ga4d36378a2f8e7a48a06ada7b8989a66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7dc306f8548da5744c0ae719a11d1ff6"><td class="memItemLeft" align="right" valign="top">typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config.html#ga7dc306f8548da5744c0ae719a11d1ff6">pcf_percentagei16_t</a></td></tr>
-<tr class="memdesc:ga7dc306f8548da5744c0ae719a11d1ff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Percentage value upto 2 decimal places represented as 16 bit integer.  <br /></td></tr>
-<tr class="separator:ga7dc306f8548da5744c0ae719a11d1ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga458aafd0eb86f7b2e9ba1dd092623ed0"><td class="memItemLeft" align="right" valign="top">typedef float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config.html#ga458aafd0eb86f7b2e9ba1dd092623ed0">pcf_percentagef_t</a></td></tr>
-<tr class="memdesc:ga458aafd0eb86f7b2e9ba1dd092623ed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Percentage value as a floating point number 0.0 represents 0%, 0.35 represents 35%, 1.0 represents 100%.  <br /></td></tr>
-<tr class="separator:ga458aafd0eb86f7b2e9ba1dd092623ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5c07d2cfb793b920422ec4b240b6c26"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#aa5c07d2cfb793b920422ec4b240b6c26">pcf_timeStamp_t</a></td></tr>
+<tr class="memdesc:aa5c07d2cfb793b920422ec4b240b6c26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record of the time of occurrence of particular event.  <br /></td></tr>
+<tr class="separator:aa5c07d2cfb793b920422ec4b240b6c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7604049bdc9fd07b28d0ec6e907fcafc"><td class="memItemLeft" align="right" valign="top">typedef size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a></td></tr>
+<tr class="memdesc:a7604049bdc9fd07b28d0ec6e907fcafc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represent the size of objects in bytes.  <br /></td></tr>
+<tr class="separator:a7604049bdc9fd07b28d0ec6e907fcafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9d04f99fb25ea885f5ee3cc754c5e05"><td class="memItemLeft" align="right" valign="top">typedef char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ac9d04f99fb25ea885f5ee3cc754c5e05">pcf_string_t</a></td></tr>
+<tr class="memdesc:ac9d04f99fb25ea885f5ee3cc754c5e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data type of string literal.  <br /></td></tr>
+<tr class="separator:ac9d04f99fb25ea885f5ee3cc754c5e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb11352594938a2038de606fb9e8e766"><td class="memItemLeft" align="right" valign="top">typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#afb11352594938a2038de606fb9e8e766">pcf_cstring_t</a></td></tr>
+<tr class="memdesc:afb11352594938a2038de606fb9e8e766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data type of constant string literal.  <br /></td></tr>
+<tr class="separator:afb11352594938a2038de606fb9e8e766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30ee6362d7b648532f468a9c796bcf49"><td class="memItemLeft" align="right" valign="top">typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a30ee6362d7b648532f468a9c796bcf49">pcf_byte_t</a></td></tr>
+<tr class="memdesc:a30ee6362d7b648532f468a9c796bcf49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data byte of unsigned integer.  <br /></td></tr>
+<tr class="separator:a30ee6362d7b648532f468a9c796bcf49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d36378a2f8e7a48a06ada7b8989a66a"><td class="memItemLeft" align="right" valign="top">typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a></td></tr>
+<tr class="memdesc:a4d36378a2f8e7a48a06ada7b8989a66a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data of generic type.  <br /></td></tr>
+<tr class="separator:a4d36378a2f8e7a48a06ada7b8989a66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dc306f8548da5744c0ae719a11d1ff6"><td class="memItemLeft" align="right" valign="top">typedef uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a7dc306f8548da5744c0ae719a11d1ff6">pcf_percentagei16_t</a></td></tr>
+<tr class="memdesc:a7dc306f8548da5744c0ae719a11d1ff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Percentage value upto 2 decimal places represented as 16 bit integer.  <br /></td></tr>
+<tr class="separator:a7dc306f8548da5744c0ae719a11d1ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a458aafd0eb86f7b2e9ba1dd092623ed0"><td class="memItemLeft" align="right" valign="top">typedef float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a458aafd0eb86f7b2e9ba1dd092623ed0">pcf_percentagef_t</a></td></tr>
+<tr class="memdesc:a458aafd0eb86f7b2e9ba1dd092623ed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Percentage value as a floating point number 0.0 represents 0%, 0.35 represents 35%, 1.0 represents 100%.  <br /></td></tr>
+<tr class="separator:a458aafd0eb86f7b2e9ba1dd092623ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga8696a1be3c39db4bc0c2309907e7e5c2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__config.html#ga8696a1be3c39db4bc0c2309907e7e5c2">EnPCFBoolean_t</a> { <a class="el" href="group__pcf__config.html#gga8696a1be3c39db4bc0c2309907e7e5c2a37b7bb3827865ae2486b69b7851462f0">enPCFBoolean_False</a> = 0
-, <a class="el" href="group__pcf__config.html#gga8696a1be3c39db4bc0c2309907e7e5c2a107034e5aeae845400ce854976b22ee4">enPCFBoolean_True</a> = 1
+<tr class="memitem:a8696a1be3c39db4bc0c2309907e7e5c2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a8696a1be3c39db4bc0c2309907e7e5c2">EnPCFBoolean_t</a> { <a class="el" href="types_8h.html#a8696a1be3c39db4bc0c2309907e7e5c2a37b7bb3827865ae2486b69b7851462f0">enPCFBoolean_False</a> = 0
+, <a class="el" href="types_8h.html#a8696a1be3c39db4bc0c2309907e7e5c2a107034e5aeae845400ce854976b22ee4">enPCFBoolean_True</a> = 1
  }</td></tr>
-<tr class="memdesc:ga8696a1be3c39db4bc0c2309907e7e5c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean.  <a href="group__pcf__config.html#ga8696a1be3c39db4bc0c2309907e7e5c2">More...</a><br /></td></tr>
-<tr class="separator:ga8696a1be3c39db4bc0c2309907e7e5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a8696a1be3c39db4bc0c2309907e7e5c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean.  <a href="types_8h.html#a8696a1be3c39db4bc0c2309907e7e5c2">More...</a><br /></td></tr>
+<tr class="separator:a8696a1be3c39db4bc0c2309907e7e5c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="aa5c07d2cfb793b920422ec4b240b6c26" name="aa5c07d2cfb793b920422ec4b240b6c26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5c07d2cfb793b920422ec4b240b6c26">&#9670;&#160;</a></span>pcf_timeStamp_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint32_t <a class="el" href="types_8h.html#aa5c07d2cfb793b920422ec4b240b6c26">pcf_timeStamp_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Record of the time of occurrence of particular event. </p>
+
+</div>
+</div>
+<a id="a7604049bdc9fd07b28d0ec6e907fcafc" name="a7604049bdc9fd07b28d0ec6e907fcafc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7604049bdc9fd07b28d0ec6e907fcafc">&#9670;&#160;</a></span>pcf_size_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef size_t <a class="el" href="types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Represent the size of objects in bytes. </p>
+
+</div>
+</div>
+<a id="ac9d04f99fb25ea885f5ee3cc754c5e05" name="ac9d04f99fb25ea885f5ee3cc754c5e05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9d04f99fb25ea885f5ee3cc754c5e05">&#9670;&#160;</a></span>pcf_string_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef char* <a class="el" href="types_8h.html#ac9d04f99fb25ea885f5ee3cc754c5e05">pcf_string_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data type of string literal. </p>
+
+</div>
+</div>
+<a id="afb11352594938a2038de606fb9e8e766" name="afb11352594938a2038de606fb9e8e766"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb11352594938a2038de606fb9e8e766">&#9670;&#160;</a></span>pcf_cstring_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef const char* <a class="el" href="types_8h.html#afb11352594938a2038de606fb9e8e766">pcf_cstring_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data type of constant string literal. </p>
+
+</div>
+</div>
+<a id="a30ee6362d7b648532f468a9c796bcf49" name="a30ee6362d7b648532f468a9c796bcf49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30ee6362d7b648532f468a9c796bcf49">&#9670;&#160;</a></span>pcf_byte_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint8_t <a class="el" href="types_8h.html#a30ee6362d7b648532f468a9c796bcf49">pcf_byte_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data byte of unsigned integer. </p>
+
+</div>
+</div>
+<a id="a4d36378a2f8e7a48a06ada7b8989a66a" name="a4d36378a2f8e7a48a06ada7b8989a66a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d36378a2f8e7a48a06ada7b8989a66a">&#9670;&#160;</a></span>pcf_generic_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void* <a class="el" href="types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Data of generic type. </p>
+
+</div>
+</div>
+<a id="a7dc306f8548da5744c0ae719a11d1ff6" name="a7dc306f8548da5744c0ae719a11d1ff6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dc306f8548da5744c0ae719a11d1ff6">&#9670;&#160;</a></span>pcf_percentagei16_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef uint16_t <a class="el" href="types_8h.html#a7dc306f8548da5744c0ae719a11d1ff6">pcf_percentagei16_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Percentage value upto 2 decimal places represented as 16 bit integer. </p>
+
+</div>
+</div>
+<a id="a458aafd0eb86f7b2e9ba1dd092623ed0" name="a458aafd0eb86f7b2e9ba1dd092623ed0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a458aafd0eb86f7b2e9ba1dd092623ed0">&#9670;&#160;</a></span>pcf_percentagef_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef float <a class="el" href="types_8h.html#a458aafd0eb86f7b2e9ba1dd092623ed0">pcf_percentagef_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Percentage value as a floating point number 0.0 represents 0%, 0.35 represents 35%, 1.0 represents 100%. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a8696a1be3c39db4bc0c2309907e7e5c2" name="a8696a1be3c39db4bc0c2309907e7e5c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8696a1be3c39db4bc0c2309907e7e5c2">&#9670;&#160;</a></span>EnPCFBoolean_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="types_8h.html#a8696a1be3c39db4bc0c2309907e7e5c2">EnPCFBoolean_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Boolean. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8696a1be3c39db4bc0c2309907e7e5c2a37b7bb3827865ae2486b69b7851462f0" name="a8696a1be3c39db4bc0c2309907e7e5c2a37b7bb3827865ae2486b69b7851462f0"></a>enPCFBoolean_False&#160;</td><td class="fielddoc"><p>0 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a8696a1be3c39db4bc0c2309907e7e5c2a107034e5aeae845400ce854976b22ee4" name="a8696a1be3c39db4bc0c2309907e7e5c2a107034e5aeae845400ce854976b22ee4"></a>enPCFBoolean_True&#160;</td><td class="fielddoc"><p>1 </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
