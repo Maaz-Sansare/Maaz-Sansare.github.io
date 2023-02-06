@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['architecture_0',['Architecture',['../arch.html',1,'index']]]
+  ['architecture_0',['Architecture',['../pcf_config_arch.html',1,'index']]]
 ];

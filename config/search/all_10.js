@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['status_0',['Status',['../status.html',1,'index']]],
+  ['status_0',['Status',['../pcf_config_status.html',1,'index']]],
   ['status_2eh_1',['status.h',['../status_8h.html',1,'']]],
   ['stm_2eh_2',['stm.h',['../stm_8h.html',1,'']]],
   ['stm32f3_2eh_3',['stm32f3.h',['../stm32f3_8h.html',1,'']]],

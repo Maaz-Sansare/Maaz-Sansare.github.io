@@ -26,13 +26,13 @@ var NAVTREE =
 [
   [ "Config", "index.html", [
     [ "Functionality MACROS", "pcf_config.html", null ],
-    [ "Language", "language.html", null ],
-    [ "Compiler", "compiler.html", null ],
-    [ "Architecture", "arch.html", null ],
-    [ "Status", "status.html", null ],
-    [ "OS", "os.html", null ],
+    [ "Language", "pcf_config_language.html", null ],
+    [ "Compiler", "pcf_config_compiler.html", null ],
+    [ "Architecture", "pcf_config_arch.html", null ],
+    [ "Status", "pcf_config_status.html", null ],
+    [ "OS", "pcf_config_os.html", null ],
     [ "Data Structures", "annotated.html", [
-      [ "Predefined Configuration MACROS", "index.html#macro", null ],
+      [ "Config MACROS", "index.html#macro", null ],
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
       [ "Data Fields", "functions.html", [
@@ -56,7 +56,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "2013_8h.html",
-"gcc_8h.html#a5d021d94ea902592fa73b3867d215064",
+"gcc_8h.html#a6928266e978e0b06e0af6227018d4dec",
 "status_2defs_8h.html#a140e5296e06f311f8f0b719221e18fad",
 "win64_8h.html#afbe93a035c899b2904b3faf02c90f3d2"
 ];
