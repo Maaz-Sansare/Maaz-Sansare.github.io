@@ -141,7 +141,6 @@ Macros</h2></td></tr>
 <tr class="memdesc:aecf7e758b7912ba99d8a9d7227c00a7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Concatenates the arguments passed to create a file path that conforms to the path format used in C for include files.  <br /></td></tr>
 <tr class="separator:aecf7e758b7912ba99d8a9d7227c00a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cb61ea6e58fb589e1f5668f6f7235ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#a1cb61ea6e58fb589e1f5668f6f7235ce">PCF_PACKAGE_TYPE_LIBRARY</a>&#160;&#160;&#160;0</td></tr>
-<tr class="memdesc:a1cb61ea6e58fb589e1f5668f6f7235ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">While setting up the package the user will define the type of package.  <br /></td></tr>
 <tr class="separator:a1cb61ea6e58fb589e1f5668f6f7235ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ee2cbd0dfc25a40d8d1573464d52cb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#a8ee2cbd0dfc25a40d8d1573464d52cb0">PCF_PACKAGE_TYPE_APPLICATION</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a8ee2cbd0dfc25a40d8d1573464d52cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -330,7 +329,7 @@ Macros</h2></td></tr>
 <p>Concatenates 2 arguments, Arg1 with Arg2. </p>
 <p>For example: </p><div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span>* var = <a class="code hl_define" href="defs_8h.html#acb85b5c41e7b11209f0271b3a448c184">PCF_CONCAT_2</a>(XZ,Y)</div>
 <div class="line">printf(<span class="stringliteral">&quot;var = %s&quot;</span>, var);</div>
-<div class="ttc" id="adefs_8h_html_acb85b5c41e7b11209f0271b3a448c184"><div class="ttname"><a href="defs_8h.html#acb85b5c41e7b11209f0271b3a448c184">PCF_CONCAT_2</a></div><div class="ttdeci">#define PCF_CONCAT_2(A, B)</div><div class="ttdoc">Concatenates 2 arguments, Arg1 with Arg2.</div><div class="ttdef"><b>Definition:</b> defs.h:73</div></div>
+<div class="ttc" id="adefs_8h_html_acb85b5c41e7b11209f0271b3a448c184"><div class="ttname"><a href="defs_8h.html#acb85b5c41e7b11209f0271b3a448c184">PCF_CONCAT_2</a></div><div class="ttdeci">#define PCF_CONCAT_2(A, B)</div><div class="ttdoc">Concatenates 2 arguments, Arg1 with Arg2.</div><div class="ttdef"><b>Definition:</b> defs.h:70</div></div>
 </div><!-- fragment --><p> Output: <code>var</code> = XZY. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -379,7 +378,7 @@ Macros</h2></td></tr>
 
 <p>Convering the var X into a string. </p>
 <p>For example: </p><div class="fragment"><div class="line">printf(<span class="stringliteral">&quot;Hello %s&quot;</span>,<a class="code hl_define" href="defs_8h.html#afb66fb0d14880635e35a55c95224cf0e">PCF_TOSTRING</a>(world));</div>
-<div class="ttc" id="adefs_8h_html_afb66fb0d14880635e35a55c95224cf0e"><div class="ttname"><a href="defs_8h.html#afb66fb0d14880635e35a55c95224cf0e">PCF_TOSTRING</a></div><div class="ttdeci">#define PCF_TOSTRING(X)</div><div class="ttdoc">Convering the var X into a string.</div><div class="ttdef"><b>Definition:</b> defs.h:91</div></div>
+<div class="ttc" id="adefs_8h_html_afb66fb0d14880635e35a55c95224cf0e"><div class="ttname"><a href="defs_8h.html#afb66fb0d14880635e35a55c95224cf0e">PCF_TOSTRING</a></div><div class="ttdeci">#define PCF_TOSTRING(X)</div><div class="ttdoc">Convering the var X into a string.</div><div class="ttdef"><b>Definition:</b> defs.h:88</div></div>
 </div><!-- fragment --><p> Output: Hello world </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -575,8 +574,6 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>While setting up the package the user will define the type of package. </p>
 
 </div>
 </div>

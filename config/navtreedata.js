@@ -25,15 +25,15 @@
 var NAVTREE =
 [
   [ "Config", "index.html", [
-    [ "Functionality MACROS", "pcf_config.html", null ],
+    [ "Utility macros", "pcf_config.html", null ],
     [ "Language", "pcf_config_language.html", null ],
     [ "Compiler", "pcf_config_compiler.html", null ],
     [ "Architecture", "pcf_config_arch.html", null ],
-    [ "Status", "pcf_config_status.html", null ],
     [ "OS", "pcf_config_os.html", null ],
+    [ "Status", "pcf_config_status.html", null ],
     [ "Types", "pcf_config_type.html", null ],
     [ "Data Structures", "annotated.html", [
-      [ "Config MACROS", "index.html#macro", null ],
+      [ "Config Macros", "index.html#macro", null ],
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
       [ "Data Fields", "functions.html", [
