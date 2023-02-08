@@ -1,4 +1,0 @@
-var c17_8h =
-[
-    [ "PCF_LANGUAGE_VERSION", "c17_8h.html#a3ab90d2e05283016e1b30e25402c12a8", null ]
-];
