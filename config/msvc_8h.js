@@ -55,5 +55,6 @@ var msvc_8h =
     [ "PCF_UNREACHABLE", "msvc_8h.html#a48589bc799ef0d010565962f2ceec954", null ],
     [ "PCF_PRINTF_FORMAT_ATTR", "msvc_8h.html#ae76247d57dc4c4a585e0f91aa31a1847", null ],
     [ "PCF_ALIGN_OF", "msvc_8h.html#a0c86f014253ec9847df5087645982452", null ],
+    [ "PCF_DEBUG", "msvc_8h.html#a6a8c7bf4c5245a678af3ceeb011eae82", null ],
     [ "PCF_COMPILER_FLAVOUR_INCLUDE", "msvc_8h.html#a6928266e978e0b06e0af6227018d4dec", null ]
 ];

@@ -133,7 +133,7 @@ Macros</h2></td></tr>
 <tr class="separator:a3684936d036d2458ee29315e1c26c0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60ba41011c4e82522c8b63c37a2bf21b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#a60ba41011c4e82522c8b63c37a2bf21b">__PCF_DIRECT_STRINGIFY</a>(X)&#160;&#160;&#160;#X</td></tr>
 <tr class="separator:a60ba41011c4e82522c8b63c37a2bf21b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2270f320a130acf3cd1b8cc69655c729"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#a2270f320a130acf3cd1b8cc69655c729">__PCF_USERS_DONT_USE_CONCAT_4</a>(W,  X,  Y,  Z)&#160;&#160;&#160;PCF_STRINGIFY(<a class="el" href="defs_8h.html#a1587d23382081d50abb058df4fc4dd3e">PCF_IDENTITY</a>(W)<a class="el" href="defs_8h.html#a1587d23382081d50abb058df4fc4dd3e">PCF_IDENTITY</a>(X)<a class="el" href="defs_8h.html#a1587d23382081d50abb058df4fc4dd3e">PCF_IDENTITY</a>(Y)<a class="el" href="defs_8h.html#a1587d23382081d50abb058df4fc4dd3e">PCF_IDENTITY</a>(Z))</td></tr>
+<tr class="memitem:a2270f320a130acf3cd1b8cc69655c729"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#a2270f320a130acf3cd1b8cc69655c729">__PCF_USERS_DONT_USE_CONCAT_4</a>(W,  X,  Y,  Z)&#160;&#160;&#160;<a class="el" href="defs_8h.html#a3684936d036d2458ee29315e1c26c0f2">__PCF_STRINGIFY</a>(<a class="el" href="defs_8h.html#a1587d23382081d50abb058df4fc4dd3e">PCF_IDENTITY</a>(W)<a class="el" href="defs_8h.html#a1587d23382081d50abb058df4fc4dd3e">PCF_IDENTITY</a>(X)<a class="el" href="defs_8h.html#a1587d23382081d50abb058df4fc4dd3e">PCF_IDENTITY</a>(Y)<a class="el" href="defs_8h.html#a1587d23382081d50abb058df4fc4dd3e">PCF_IDENTITY</a>(Z))</td></tr>
 <tr class="separator:a2270f320a130acf3cd1b8cc69655c729"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a17310731c77d17dc33a8010bfc7ef2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="defs_8h.html#a5a17310731c77d17dc33a8010bfc7ef2">PCF_CONCAT_4</a>(W,  X,  Y,  Z)&#160;&#160;&#160;<a class="el" href="defs_8h.html#a2270f320a130acf3cd1b8cc69655c729">__PCF_USERS_DONT_USE_CONCAT_4</a>(W,X,Y,Z)</td></tr>
 <tr class="separator:a5a17310731c77d17dc33a8010bfc7ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -329,7 +329,7 @@ Macros</h2></td></tr>
 <p>Concatenates 2 arguments, Arg1 with Arg2. </p>
 <p>For example: </p><div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span>* var = <a class="code hl_define" href="defs_8h.html#acb85b5c41e7b11209f0271b3a448c184">PCF_CONCAT_2</a>(XZ,Y)</div>
 <div class="line">printf(<span class="stringliteral">&quot;var = %s&quot;</span>, var);</div>
-<div class="ttc" id="adefs_8h_html_acb85b5c41e7b11209f0271b3a448c184"><div class="ttname"><a href="defs_8h.html#acb85b5c41e7b11209f0271b3a448c184">PCF_CONCAT_2</a></div><div class="ttdeci">#define PCF_CONCAT_2(A, B)</div><div class="ttdoc">Concatenates 2 arguments, Arg1 with Arg2.</div><div class="ttdef"><b>Definition:</b> defs.h:70</div></div>
+<div class="ttc" id="adefs_8h_html_acb85b5c41e7b11209f0271b3a448c184"><div class="ttname"><a href="defs_8h.html#acb85b5c41e7b11209f0271b3a448c184">PCF_CONCAT_2</a></div><div class="ttdeci">#define PCF_CONCAT_2(A, B)</div><div class="ttdoc">Concatenates 2 arguments, Arg1 with Arg2.</div><div class="ttdef"><b>Definition:</b> defs.h:66</div></div>
 </div><!-- fragment --><p> Output: <code>var</code> = XZY. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -378,7 +378,7 @@ Macros</h2></td></tr>
 
 <p>Convering the var X into a string. </p>
 <p>For example: </p><div class="fragment"><div class="line">printf(<span class="stringliteral">&quot;Hello %s&quot;</span>,<a class="code hl_define" href="defs_8h.html#afb66fb0d14880635e35a55c95224cf0e">PCF_TOSTRING</a>(world));</div>
-<div class="ttc" id="adefs_8h_html_afb66fb0d14880635e35a55c95224cf0e"><div class="ttname"><a href="defs_8h.html#afb66fb0d14880635e35a55c95224cf0e">PCF_TOSTRING</a></div><div class="ttdeci">#define PCF_TOSTRING(X)</div><div class="ttdoc">Convering the var X into a string.</div><div class="ttdef"><b>Definition:</b> defs.h:88</div></div>
+<div class="ttc" id="adefs_8h_html_afb66fb0d14880635e35a55c95224cf0e"><div class="ttname"><a href="defs_8h.html#afb66fb0d14880635e35a55c95224cf0e">PCF_TOSTRING</a></div><div class="ttdeci">#define PCF_TOSTRING(X)</div><div class="ttdoc">Convering the var X into a string.</div><div class="ttdef"><b>Definition:</b> defs.h:84</div></div>
 </div><!-- fragment --><p> Output: Hello world </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -459,7 +459,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;PCF_STRINGIFY(<a class="el" href="defs_8h.html#a1587d23382081d50abb058df4fc4dd3e">PCF_IDENTITY</a>(W)<a class="el" href="defs_8h.html#a1587d23382081d50abb058df4fc4dd3e">PCF_IDENTITY</a>(X)<a class="el" href="defs_8h.html#a1587d23382081d50abb058df4fc4dd3e">PCF_IDENTITY</a>(Y)<a class="el" href="defs_8h.html#a1587d23382081d50abb058df4fc4dd3e">PCF_IDENTITY</a>(Z))</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="defs_8h.html#a3684936d036d2458ee29315e1c26c0f2">__PCF_STRINGIFY</a>(<a class="el" href="defs_8h.html#a1587d23382081d50abb058df4fc4dd3e">PCF_IDENTITY</a>(W)<a class="el" href="defs_8h.html#a1587d23382081d50abb058df4fc4dd3e">PCF_IDENTITY</a>(X)<a class="el" href="defs_8h.html#a1587d23382081d50abb058df4fc4dd3e">PCF_IDENTITY</a>(Y)<a class="el" href="defs_8h.html#a1587d23382081d50abb058df4fc4dd3e">PCF_IDENTITY</a>(Z))</td>
         </tr>
       </table>
 </div><div class="memdoc">

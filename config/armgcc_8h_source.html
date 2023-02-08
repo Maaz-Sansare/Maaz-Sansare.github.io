@@ -108,12 +108,30 @@ $(document).ready(function(){initNavTree('armgcc_8h_source.html',''); initResiza
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif </span><span class="comment">//#if defined(__LINE__)</span></div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="armgcc_8h.html#a803a46f7a583d6b6e6d9441de3a04b1d">   24</a></span><span class="comment"></span>#define __PCF_FUNC__ __PRETTY_FUNCTION__</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="armgcc_8h.html#ab840f447ee018d777f3c14054d37fe94">   28</a></span><span class="preprocessor">#define __PCF_DECORATED_FUNCTION__  __PCF_FUNC__</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="armgcc_8h.html#a5e8bc47dd6a107aca926c32618c48361">   32</a></span><span class="preprocessor">#define PCF_IMPORT_API              __attribute__((dllimport))</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="armgcc_8h.html#a2b2ba72a16b7be1a3968d572e234aa8f">   36</a></span><span class="preprocessor">#define PCF_EXPORT_API              __attribute__((dllexport))</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="armgcc_8h.html#a6161d848668579992840e41bc2e1d256">   38</a></span><span class="preprocessor">#define PCF_LOCAL_API </span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif </span><span class="comment">//__PCF_INCLUDES_PCF_CONFIG_COMPILER_GCC_ARMGCC_H__</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#if __has_attribute (dllimport)</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#   define PCF_IMPORT_API              __attribute__((dllimport))</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="armgcc_8h.html#a5e8bc47dd6a107aca926c32618c48361">   36</a></span><span class="preprocessor">#   define PCF_IMPORT_API</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#if __has_attribute (dllexport)</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="preprocessor">#   define PCF_EXPORT_API              __attribute__((dllexport))</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="armgcc_8h.html#a2b2ba72a16b7be1a3968d572e234aa8f">   45</a></span><span class="preprocessor">#   define PCF_EXPORT_API</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#if __has_attribute (visibility)</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#   define PCF_LOCAL_API                  __attribute__ ((visibility (&quot;hidden&quot;</span>)))</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="armgcc_8h.html#a6161d848668579992840e41bc2e1d256">   53</a></span><span class="preprocessor">#   define PCF_LOCAL_API</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#if PCF_DEBUG</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#   define PCF_HAS_DEBUGBREAK 1</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#   define PCF_DEBUG_BREAK __builtin_trap()</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif </span><span class="comment">//__PCF_INCLUDES_PCF_CONFIG_COMPILER_GCC_ARMGCC_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

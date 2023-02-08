@@ -25,15 +25,8 @@
 var NAVTREE =
 [
   [ "Config", "index.html", [
-    [ "Utility macros", "pcf_config.html", null ],
-    [ "Language", "pcf_config_language.html", null ],
-    [ "Compiler", "pcf_config_compiler.html", null ],
-    [ "Architecture", "pcf_config_arch.html", null ],
-    [ "OS", "pcf_config_os.html", null ],
-    [ "Status", "pcf_config_status.html", null ],
-    [ "Types", "pcf_config_type.html", null ],
+    [ "Introduction", "index.html", "index" ],
     [ "Data Structures", "annotated.html", [
-      [ "Config Macros", "index.html#macro", null ],
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
       [ "Data Fields", "functions.html", [
@@ -57,9 +50,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "2013_8h.html",
-"gcc_8h.html#a6928266e978e0b06e0af6227018d4dec",
-"status_2defs_8h.html#a118c15a6503df5cd469c7f53a4757915",
-"win64_8h.html"
+"gcc_8h.html#a5a275ae9442b116997fa8cdb5336a1af",
+"status_2config_8h.html",
+"types_8h.html#ac9d04f99fb25ea885f5ee3cc754c5e05"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

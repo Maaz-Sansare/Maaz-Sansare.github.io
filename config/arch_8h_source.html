@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('arch_8h_source.html',''); initResizabl
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#   define PCF_ARCH PCF_ARCH_X86_64</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#   define PCF_ARCH_NAME x86_64</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#   error &quot;Architecture is not supported by PCF.&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#   error &quot;PCF: Architecture is not supported.&quot;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="arch_8h.html#a0604dd8cad48179c8e9c70fbb2afa961">   19</a></span><span class="preprocessor">#define PCF_ARCH_INCLUDE PCF_CONDITIONAL_INCLUDE_FILE(, PCF_ARCH_NAME/,,PCF_ARCH_NAME.h)</span></div>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('arch_8h_source.html',''); initResizabl
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">#if !defined(PCF_ARCH_DEVICE_FLASH_SIZE)</span></div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="preprocessor">#   error &quot;PCF_ARCH_DEVICE_FLASH_SIZE must be defined. This error is because of bad implementation of \</span></div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="preprocessor">           PhiRobotics&#39; developer or someone who has added new architecture support.&quot;</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="preprocessor">#endif </span><span class="comment">// !defined(PCF_ARCH_DEVICE_FLASH)</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="preprocessor">#endif </span><span class="comment">// !defined(PCF_ARCH_DEVICE_FLASH_SIZE)</span></div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="preprocessor">#if !defined(PCF_ARCH_DEVICE_FLASH_START_ADDRESS)</span></div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="preprocessor">#   error &quot;PCF_ARCH_DEVICE_FLASH_START_ADDRESS must be defined. This error is because of bad implementation of \</span></div>

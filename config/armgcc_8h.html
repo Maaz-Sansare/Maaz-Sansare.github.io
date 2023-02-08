@@ -100,18 +100,17 @@ $(document).ready(function(){initNavTree('armgcc_8h.html',''); initResizable(); 
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a803a46f7a583d6b6e6d9441de3a04b1d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="armgcc_8h.html#a803a46f7a583d6b6e6d9441de3a04b1d">__PCF_FUNC__</a>&#160;&#160;&#160;__PRETTY_FUNCTION__</td></tr>
-<tr class="memdesc:a803a46f7a583d6b6e6d9441de3a04b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the name of the current function.  <br /></td></tr>
+<tr class="memdesc:a803a46f7a583d6b6e6d9441de3a04b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the name of the current function as a string.  <br /></td></tr>
 <tr class="separator:a803a46f7a583d6b6e6d9441de3a04b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab840f447ee018d777f3c14054d37fe94"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="armgcc_8h.html#ab840f447ee018d777f3c14054d37fe94">__PCF_DECORATED_FUNCTION__</a>&#160;&#160;&#160;<a class="el" href="armgcc_8h.html#a803a46f7a583d6b6e6d9441de3a04b1d">__PCF_FUNC__</a></td></tr>
 <tr class="memdesc:ab840f447ee018d777f3c14054d37fe94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redefined identifiers that contain the name of the lexically-enclosing function.  <br /></td></tr>
 <tr class="separator:ab840f447ee018d777f3c14054d37fe94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e8bc47dd6a107aca926c32618c48361"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="armgcc_8h.html#a5e8bc47dd6a107aca926c32618c48361">PCF_IMPORT_API</a>&#160;&#160;&#160;__attribute__((dllimport))</td></tr>
-<tr class="memdesc:a5e8bc47dd6a107aca926c32618c48361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Import functions, data, and objects to a DLL.  <br /></td></tr>
+<tr class="memitem:a5e8bc47dd6a107aca926c32618c48361"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="armgcc_8h.html#a5e8bc47dd6a107aca926c32618c48361">PCF_IMPORT_API</a></td></tr>
 <tr class="separator:a5e8bc47dd6a107aca926c32618c48361"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b2ba72a16b7be1a3968d572e234aa8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="armgcc_8h.html#a2b2ba72a16b7be1a3968d572e234aa8f">PCF_EXPORT_API</a>&#160;&#160;&#160;__attribute__((dllexport))</td></tr>
-<tr class="memdesc:a2b2ba72a16b7be1a3968d572e234aa8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export directive to the object file.  <br /></td></tr>
+<tr class="memitem:a2b2ba72a16b7be1a3968d572e234aa8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="armgcc_8h.html#a2b2ba72a16b7be1a3968d572e234aa8f">PCF_EXPORT_API</a></td></tr>
 <tr class="separator:a2b2ba72a16b7be1a3968d572e234aa8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6161d848668579992840e41bc2e1d256"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="armgcc_8h.html#a6161d848668579992840e41bc2e1d256">PCF_LOCAL_API</a></td></tr>
+<tr class="memdesc:a6161d848668579992840e41bc2e1d256"><td class="mdescLeft">&#160;</td><td class="mdescRight">No other module (executable or shared library) can reference it directly.  <br /></td></tr>
 <tr class="separator:a6161d848668579992840e41bc2e1d256"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -127,7 +126,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Represents the name of the current function. </p>
+<p>Holds the name of the current function as a string. </p>
 
 </div>
 </div>
@@ -154,12 +153,10 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PCF_IMPORT_API&#160;&#160;&#160;__attribute__((dllimport))</td>
+          <td class="memname">#define PCF_IMPORT_API</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Import functions, data, and objects to a DLL. </p>
 
 </div>
 </div>
@@ -170,12 +167,10 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PCF_EXPORT_API&#160;&#160;&#160;__attribute__((dllexport))</td>
+          <td class="memname">#define PCF_EXPORT_API</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Export directive to the object file. </p>
 
 </div>
 </div>
@@ -190,6 +185,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>No other module (executable or shared library) can reference it directly. </p>
 
 </div>
 </div>

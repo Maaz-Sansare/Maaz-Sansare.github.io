@@ -236,60 +236,68 @@ $(document).ready(function(){initNavTree('msvc_8h_source.html',''); initResizabl
 <div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="msvc_8h.html#ae76247d57dc4c4a585e0f91aa31a1847">  195</a></span><span class="preprocessor">#define PCF_PRINTF_FORMAT_ATTR(n)</span></div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="msvc_8h.html#a0c86f014253ec9847df5087645982452">  196</a></span><span class="preprocessor">#define PCF_ALIGN_OF(Type)   __alignof(Type)</span></div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span> </div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="preprocessor">#if((_MSC_VER &gt; 1800) &amp;&amp; (_MSC_VER &lt;= 1900))</span></div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="preprocessor">#   define PCF_COMPILER_FLAVOUR  PCF_COMPILER_MSVC_FLAVOUR_2013</span></div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="preprocessor">#   define PCF_COMPILER_FLAVOUR_NAME 2013</span></div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="preprocessor">#elif((_MSC_VER &gt; 1900) &amp;&amp; (_MSC_VER &lt;= 1910))</span></div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="preprocessor">#   define PCF_COMPILER_FLAVOUR  PCF_COMPILER_MSVC_FLAVOUR_2015</span></div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="preprocessor">#   define PCF_COMPILER_FLAVOUR_NAME 2015</span></div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="preprocessor">#elif((_MSC_VER &gt; 1910) &amp;&amp; (_MSC_VER &lt;= 1916))</span></div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="preprocessor">#   define PCF_COMPILER_FLAVOUR  PCF_COMPILER_MSVC_FLAVOUR_2017</span></div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="preprocessor">#   define PCF_COMPILER_FLAVOUR_NAME 2017</span></div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="preprocessor">#elif((_MSC_VER &gt; 1920) &amp;&amp; (_MSC_VER &lt;= 1929))</span></div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="preprocessor">#   define PCF_COMPILER_FLAVOUR  PCF_COMPILER_MSVC_FLAVOUR_2019</span></div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="preprocessor">#   define PCF_COMPILER_FLAVOUR_NAME 2019</span></div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="preprocessor">#elif((_MSC_VER &gt; 1930) &amp;&amp; (_MSC_VER &lt;= 1934))</span></div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="preprocessor">#   define PCF_COMPILER_FLAVOUR  PCF_COMPILER_MSVC_FLAVOUR_2022</span></div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="preprocessor">#   define PCF_COMPILER_FLAVOUR_NAME 2022</span></div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="preprocessor">#   error &quot;Compiler flavour for MSVC is currently not supported by PCF&quot;</span></div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span> </div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno"><a class="line" href="msvc_8h.html#a6928266e978e0b06e0af6227018d4dec">  217</a></span><span class="preprocessor">#define PCF_COMPILER_FLAVOUR_INCLUDE    PCF_CONDITIONAL_INCLUDE_FILE(./,PCF_COMPILER_FLAVOUR_NAME/,,PCF_COMPILER_FLAVOUR_NAME.h)</span></div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="preprocessor">#include PCF_COMPILER_FLAVOUR_INCLUDE</span></div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="preprocessor">#undef PCF_COMPILER_FLAVOUR_INCLUDE</span></div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment">// The following macros should be defined by the flavour.</span></div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="preprocessor">#if !defined(PCF_COMPILER_FLAVOUR)</span></div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="preprocessor">    #error &quot;Included compiler doesn&#39;t define the required macro PCF_COMPILER_FLAVOUR.&quot;</span></div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="preprocessor">#endif </span><span class="comment">// #if !defined(PCF_COMPILER_FLAVOUR)</span></div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="comment">// The following macros should be defined by the flavour.</span></div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="preprocessor">#if !defined(PCF_COMPILER_FLAVOUR_NAME)</span></div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span><span class="preprocessor">    #error &quot;Included compiler doesn&#39;t define the required macro PCF_COMPILER_FLAVOUR_NAME.&quot;</span></div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="preprocessor">#endif </span><span class="comment">// #if !defined(PCF_COMPILER_FLAVOUR_NAME)</span></div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span> </div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="preprocessor">#if !defined(__PCF_FUNC__)</span></div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="preprocessor">#   error &quot;Included compiler flavour doesn&#39;t define the required macro __PCF_FUNC__.&quot;</span></div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="preprocessor">#endif </span><span class="comment">// #if !defined(__PCF_FUNC__)</span></div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span> </div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="preprocessor">#if !defined(__PCF_DECORATED_FUNCTION__)</span></div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="preprocessor">#   error &quot;Included compiler flavour doesn&#39;t define the required macro __PCF_DECORATED_FUNCTION__.&quot;</span></div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="preprocessor">#endif </span><span class="comment">// #if !defined(__PCF_DECORATED_FUNCTION__)</span></div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span><span class="preprocessor">#if defined (_DEBUG)</span></div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="preprocessor">#   define PCF_DEBUG 1</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="preprocessor">#   define PCF_DEBUG_HAS_BREAK 1</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="preprocessor">#   define PCF_DEBUG_BREAK() __debugbreak()</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno"><a class="line" href="msvc_8h.html#a6a8c7bf4c5245a678af3ceeb011eae82">  203</a></span><span class="preprocessor">#   define PCF_DEBUG 0</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="preprocessor">#if((_MSC_VER &gt; 1800) &amp;&amp; (_MSC_VER &lt;= 1900))</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span><span class="preprocessor">#   define PCF_COMPILER_FLAVOUR  PCF_COMPILER_MSVC_FLAVOUR_2013</span></div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="preprocessor">#   define PCF_COMPILER_FLAVOUR_NAME 2013</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="preprocessor">#elif((_MSC_VER &gt; 1900) &amp;&amp; (_MSC_VER &lt;= 1910))</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="preprocessor">#   define PCF_COMPILER_FLAVOUR  PCF_COMPILER_MSVC_FLAVOUR_2015</span></div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="preprocessor">#   define PCF_COMPILER_FLAVOUR_NAME 2015</span></div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span><span class="preprocessor">#elif((_MSC_VER &gt; 1910) &amp;&amp; (_MSC_VER &lt;= 1916))</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="preprocessor">#   define PCF_COMPILER_FLAVOUR  PCF_COMPILER_MSVC_FLAVOUR_2017</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="preprocessor">#   define PCF_COMPILER_FLAVOUR_NAME 2017</span></div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="preprocessor">#elif((_MSC_VER &gt; 1920) &amp;&amp; (_MSC_VER &lt;= 1929))</span></div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="preprocessor">#   define PCF_COMPILER_FLAVOUR  PCF_COMPILER_MSVC_FLAVOUR_2019</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="preprocessor">#   define PCF_COMPILER_FLAVOUR_NAME 2019</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="preprocessor">#elif((_MSC_VER &gt; 1930) &amp;&amp; (_MSC_VER &lt;= 1934))</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="preprocessor">#   define PCF_COMPILER_FLAVOUR  PCF_COMPILER_MSVC_FLAVOUR_2022</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="preprocessor">#   define PCF_COMPILER_FLAVOUR_NAME 2022</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="preprocessor">#   error &quot;Compiler flavour for MSVC is currently not supported by PCF&quot;</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span> </div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno"><a class="line" href="msvc_8h.html#a6928266e978e0b06e0af6227018d4dec">  225</a></span><span class="preprocessor">#define PCF_COMPILER_FLAVOUR_INCLUDE    PCF_CONDITIONAL_INCLUDE_FILE(./,PCF_COMPILER_FLAVOUR_NAME/,,PCF_COMPILER_FLAVOUR_NAME.h)</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="preprocessor">#include PCF_COMPILER_FLAVOUR_INCLUDE</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="preprocessor">#undef PCF_COMPILER_FLAVOUR_INCLUDE</span></div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span><span class="comment">// The following macros should be defined by the flavour.</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="preprocessor">#if !defined(PCF_COMPILER_FLAVOUR)</span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span><span class="preprocessor">    #error &quot;Included compiler doesn&#39;t define the required macro PCF_COMPILER_FLAVOUR.&quot;</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="preprocessor">#endif </span><span class="comment">// #if !defined(PCF_COMPILER_FLAVOUR)</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment">// The following macros should be defined by the flavour.</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span><span class="preprocessor">#if !defined(PCF_COMPILER_FLAVOUR_NAME)</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span><span class="preprocessor">    #error &quot;Included compiler doesn&#39;t define the required macro PCF_COMPILER_FLAVOUR_NAME.&quot;</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="preprocessor">#endif </span><span class="comment">// #if !defined(PCF_COMPILER_FLAVOUR_NAME)</span></div>
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="preprocessor">#if !defined(PCF_EXPORT_API)</span></div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="preprocessor">#   error &quot;Included compiler flavour doesn&#39;t define the required macro PCF_DLL_EXPORT_API.&quot;</span></div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="preprocessor">#endif </span><span class="comment">// #if !defined(PCF_EXPORT_API)</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="preprocessor">#if !defined(__PCF_FUNC__)</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span><span class="preprocessor">#   error &quot;Included compiler flavour doesn&#39;t define the required macro __PCF_FUNC__.&quot;</span></div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span><span class="preprocessor">#endif </span><span class="comment">// #if !defined(__PCF_FUNC__)</span></div>
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="preprocessor">#if !defined(PCF_IMPORT_API)</span></div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="preprocessor">#   error &quot;Included compiler flavour doesn&#39;t define the required macro PCF_DLL_IMPORT_API.&quot;</span></div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="preprocessor">#endif </span><span class="comment">// #if !defined(PCF_IMPORT_API)</span></div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="preprocessor">#if !defined(__PCF_DECORATED_FUNCTION__)</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span><span class="preprocessor">#   error &quot;Included compiler flavour doesn&#39;t define the required macro __PCF_DECORATED_FUNCTION__.&quot;</span></div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="preprocessor">#endif </span><span class="comment">// #if !defined(__PCF_DECORATED_FUNCTION__)</span></div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="preprocessor">#if !defined(PCF_LOCAL_API)</span></div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="preprocessor">#   error &quot;Included compiler flavour doesn&#39;t define the required macro PCF_DLL_LOCAL_API.&quot;</span></div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="preprocessor">#endif </span><span class="comment">// #if !defined(PCF_LOCAL_API)</span></div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span><span class="preprocessor">#if !defined(PCF_EXPORT_API)</span></div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span><span class="preprocessor">#   error &quot;Included compiler flavour doesn&#39;t define the required macro PCF_DLL_EXPORT_API.&quot;</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span><span class="preprocessor">#endif </span><span class="comment">// #if !defined(PCF_EXPORT_API)</span></div>
 <div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="preprocessor">#endif  </span><span class="comment">//__PCF_INCLUDES_PCF_CONFIG_COMPILER_MSVC_H__</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="preprocessor">#if !defined(PCF_IMPORT_API)</span></div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span><span class="preprocessor">#   error &quot;Included compiler flavour doesn&#39;t define the required macro PCF_DLL_IMPORT_API.&quot;</span></div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="preprocessor">#endif </span><span class="comment">// #if !defined(PCF_IMPORT_API)</span></div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span><span class="preprocessor">#if !defined(PCF_LOCAL_API)</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span><span class="preprocessor">#   error &quot;Included compiler flavour doesn&#39;t define the required macro PCF_DLL_LOCAL_API.&quot;</span></div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span><span class="preprocessor">#endif </span><span class="comment">// #if !defined(PCF_LOCAL_API)</span></div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span><span class="preprocessor">#endif  </span><span class="comment">//__PCF_INCLUDES_PCF_CONFIG_COMPILER_MSVC_H__</span></div>
 <div class="ttc" id="acompiler_2msvc_2defs_8h_html"><div class="ttname"><a href="compiler_2msvc_2defs_8h.html">defs.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

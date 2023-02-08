@@ -107,10 +107,10 @@ $(document).ready(function(){initNavTree('arm_8h_source.html',''); initResizable
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#      define PCF_ARCH_VARIANT      PCF_ARCH_ARM_VARIANT_CM4</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#      define PCF_ARCH_VARIANT_NAME cm4</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#   else</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#      error &quot;Architecture ARM variant not supported by PCF.&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#      error &quot;PCF: Architecture ARM variant not supported.&quot;</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#   endif</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#else </span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#   error &quot;Architecture ARM variant with used compiler is not supported by PCF.&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#   error &quot;PCF: Architecture ARM variant with used compiler is not supported.&quot;</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="arm_8h.html#a0bc1b0c817ea720494a93ff4436c8764">   22</a></span><span class="preprocessor">#define PCF_ARM_32_VARIANT_INCLUDE  PCF_CONDITIONAL_INCLUDE_FILE(,PCF_ARCH_VARIANT_NAME/,,PCF_ARCH_VARIANT_NAME.h)</span></div>
@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('arm_8h_source.html',''); initResizable
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="preprocessor">#if !defined(PCF_ARCH_DEVICE_FLASH_SIZE)</span></div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#   error &quot;PCF_ARCH_DEVICE_FLASH_SIZE must be defined. \</span></div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">           We should set the device flash memory size in the specific header files.&quot;</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#endif </span><span class="comment">// !defined(PCF_ARCH_DEVICE_FLASH)</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="preprocessor">#endif </span><span class="comment">// !defined(PCF_ARCH_DEVICE_FLASH_SIZE)</span></div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
 <div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="preprocessor">#endif </span><span class="comment">//__PCF_INCLUDES_PCF_CONFIG_ARCH_ARM_ARM_H__</span></div>
 <div class="ttc" id="aarch_2arm_2defs_8h_html"><div class="ttname"><a href="arch_2arm_2defs_8h.html">defs.h</a></div></div>

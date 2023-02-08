@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['status_0',['Status',['../pcf_config_status.html',1,'index']]]
+  ['os_0',['OS',['../pcf_config_os.html',1,'index']]]
 ];

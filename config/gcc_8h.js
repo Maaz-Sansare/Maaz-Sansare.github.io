@@ -35,6 +35,10 @@ var gcc_8h =
     [ "PCF_BEGIN_COLD_REGION", "gcc_8h.html#abf4d43b06a20bbccfa4a43bb0ac41543", null ],
     [ "PCF_END_COLD_REGION", "gcc_8h.html#a5c73656249c1140432bad2fb271e46a8", null ],
     [ "PCF_COLD_FUNC_ATTR", "gcc_8h.html#a53c02f0f7e914bfd43952872ad6b312e", null ],
+    [ "PCF_BUILTIN_WCHAR", "gcc_8h.html#a885ad01192016f3f58425f80582f00b6", null ],
+    [ "PCF_WCHAR_MAX", "gcc_8h.html#a1ab1ba009a22e28a83a98a85b867ea6f", null ],
+    [ "PCF_WCHAR_MIN", "gcc_8h.html#ac9cbad3c65f73733181138796adcbc05", null ],
+    [ "PCF_WCHAR_WIDTH", "gcc_8h.html#a234c8d7856ce288d2c7b6b3f583c26b3", null ],
     [ "PCF_UNICODE", "gcc_8h.html#a65c74c57fe81736e5099d66342647d2e", null ],
     [ "PCF_NOOP", "gcc_8h.html#a3a7fa7772a1b9111d1fc03cc1078fc87", null ],
     [ "PCF_UNUSED_FUNC", "gcc_8h.html#ae2d04504aefd97e1ede02343a5e31e9f", null ],
@@ -50,5 +54,6 @@ var gcc_8h =
     [ "PCF_UNLIKELY", "gcc_8h.html#a5bad5fc1ac08add92d5787355033e49e", null ],
     [ "PCF_PRINTF_FORMAT_ATTR", "gcc_8h.html#ae76247d57dc4c4a585e0f91aa31a1847", null ],
     [ "PCF_ALIGN_OF", "gcc_8h.html#a0c86f014253ec9847df5087645982452", null ],
+    [ "PCF_DEBUG", "gcc_8h.html#a6a8c7bf4c5245a678af3ceeb011eae82", null ],
     [ "PCF_COMPILER_FLAVOUR_INCLUDE", "gcc_8h.html#a6928266e978e0b06e0af6227018d4dec", null ]
 ];

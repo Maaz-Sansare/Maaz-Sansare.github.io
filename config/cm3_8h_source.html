@@ -92,11 +92,11 @@ $(document).ready(function(){initNavTree('cm3_8h_source.html',''); initResizable
   <div class="headertitle"><div class="title">cm3.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="cm3_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __PCF_INCLUDES_PCF_CONFIG_ARCH_ARM_CM3_CM3_H__</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __PCF_INCLUDES_PCF_CONFIG_ARCH_ARM_CM3_CM3_H__</span></div>
+<a href="cm3_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __PCF_INCLUDES_PCF_CONFIG_ARCH_ARM_CM3_H__</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __PCF_INCLUDES_PCF_CONFIG_ARCH_ARM_CM3_H__</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#if !defined(PCF_CONF_ARCH_DEVICE_VENDOR)</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">    #error &quot;Bad configuration, PCF_CONF_ARCH_DEVICE_VENDOR must be defined.&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#   error &quot;Bad configuration, PCF_CONF_ARCH_DEVICE_VENDOR must be defined.&quot;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="cm3_8h.html#a4157c9819824ff3dc967b2d2eb9de061">    8</a></span><span class="preprocessor">#define __PCF_CM3_VENDOR_INCLUDE  PCF_CONDITIONAL_INCLUDE_FILE(,PCF_CONF_ARCH_DEVICE_VENDOR/,,PCF_CONF_ARCH_DEVICE_VENDOR.h)</span></div>
@@ -151,12 +151,12 @@ $(document).ready(function(){initNavTree('cm3_8h_source.html',''); initResizable
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">           We should set the device in the specific series/device header files.&quot;</span></div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif </span><span class="comment">// !defined(PCF_ARCH_DEVICE_RAM)</span></div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#if !defined(PCF_ARCH_DEVICE_FLASH)</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#   error &quot;PCF_ARCH_DEVICE_FLASH must be defined. \</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#if !defined(PCF_ARCH_DEVICE_FLASH_SIZE)</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#   error &quot;PCF_ARCH_DEVICE_FLASH_SIZE must be defined. \</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">           We should set the device in the specific series/device header files.&quot;</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#endif </span><span class="comment">// !defined(PCF_ARCH_DEVICE_FLASH)</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#endif </span><span class="comment">// !defined(PCF_ARCH_DEVICE_FLASH_SIZE)</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#endif </span><span class="comment">//__PCF_INCLUDES_PCF_CONFIG_ARCH_ARM_CM3_CM3_H__</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#endif </span><span class="comment">//__PCF_INCLUDES_PCF_CONFIG_ARCH_ARM_CM3_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

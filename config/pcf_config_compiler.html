@@ -94,9 +94,9 @@ $(document).ready(function(){initNavTree('pcf_config_compiler.html',''); initRes
 <div class="contents">
 <div class="textblock"><a class="anchor" id="compiler"></a>
 <table class="doxtable">
-<caption>Compiler Configuration macros and it's possible Values</caption>
+<caption>Compiler configuration macros</caption>
 <tr>
-<th>MACRO </th><th>DESCRIPTION </th><th>VALUES </th></tr>
+<th>MACRO </th><th>DESCRIPTION </th><th>POSSIBLE VALUES </th></tr>
 <tr>
 <td rowspan="2">PCF_COMPILER </td><td rowspan="2">Compiler supported by PCF </td><td><a class="el" href="compiler_2defs_8h.html#a1ec3f6420c4585356399d09fed5de2b8">PCF_COMPILER_GCC</a> </td></tr>
 <tr>
@@ -130,44 +130,112 @@ $(document).ready(function(){initNavTree('pcf_config_compiler.html',''); initRes
 <tr>
 <td><a class="el" href="compiler_2msvc_2defs_8h.html#abda4fb64763bd387be2bba70774a0867">PCF_COMPILER_MSVC_FLAVOUR_2022</a> </td></tr>
 <tr>
-<td><a class="el" href="gcc_8h.html#a08ebf58d22da216670332ec5bbecda99">PCF_COMPILER_VERSION</a> </td><td colspan="2">Compiler version <br  />
+<td><a class="el" href="gcc_8h.html#a08ebf58d22da216670332ec5bbecda99">PCF_COMPILER_VERSION</a> </td><td colspan="2">Current compiler version  </td></tr>
+</table>
+<a class="anchor" id="compiler_utility"></a>
+<table class="doxtable">
+<caption>Function macros</caption>
+<tr>
+<th>MACRO </th><th>DESCRIPTION <br  />
+ </th></tr>
+<tr>
+<td><a class="el" href="armgcc_8h.html#a803a46f7a583d6b6e6d9441de3a04b1d">__PCF_FUNC__</a> </td><td>Holds the name of the current function as a string. <br  />
  </td></tr>
 <tr>
-<td><a class="el" href="armgcc_8h.html#a803a46f7a583d6b6e6d9441de3a04b1d">__PCF_FUNC__</a> </td><td colspan="2">Function name <br  />
+<td><a class="el" href="genericgcc_8h.html#ad83f66847f78185e71269909c7e0793d">__PCF_LINE__</a> </td><td>Holds the current input line number, in the form of a decimal integer constant. <br  />
  </td></tr>
 <tr>
-<td><a class="el" href="genericgcc_8h.html#ad83f66847f78185e71269909c7e0793d">__PCF_LINE__</a> </td><td colspan="2">Line number <br  />
+<td><a class="el" href="genericgcc_8h.html#ac024c72e43ab07fbd89c729ae6804651">__PCF_FILE__</a> </td><td>Holds the name of the current input file. <br  />
  </td></tr>
 <tr>
-<td><a class="el" href="genericgcc_8h.html#ac024c72e43ab07fbd89c729ae6804651">__PCF_FILE__</a> </td><td colspan="2">File name of the function <br  />
+<td><a class="el" href="armgcc_8h.html#ab840f447ee018d777f3c14054d37fe94">__PCF_DECORATED_FUNCTION__</a> </td><td>Redefined identifiers that contain the name of the lexically-enclosing function. <br  />
  </td></tr>
 <tr>
-<td><a class="el" href="armgcc_8h.html#ab840f447ee018d777f3c14054d37fe94">__PCF_DECORATED_FUNCTION__</a> </td><td colspan="2">Decorated function name <br  />
- </td></tr>
+<td><a class="el" href="gcc_8h.html#ad163dca3bc74e24a708f1bbe671fecab">PCF_FORCE_INLINE</a> </td><td>Indicates that a function must be inlined </td></tr>
 <tr>
-<td><a class="el" href="gcc_8h.html#ad163dca3bc74e24a708f1bbe671fecab">PCF_FORCE_INLINE</a> </td><td colspan="2">Indicates that a function must be inlined </td></tr>
+<td><a class="el" href="gcc_8h.html#a5d021d94ea902592fa73b3867d215064">PCF_NO_INLINE</a> </td><td>Prevents the compiler from making any use of a constant data value for optimization purposes, without affecting its placement in the object </td></tr>
 <tr>
-<td><a class="el" href="gcc_8h.html#a5d021d94ea902592fa73b3867d215064">PCF_NO_INLINE</a> </td><td colspan="2">Prevents the compiler from making any use of a constant data value for optimization purposes, without affecting its placement in the object </td></tr>
+<td><a class="el" href="gcc_8h.html#a3fede7bba0f459db05c8463c2f896ca6">PCF_INLINE</a> </td><td>Instruct the compiler to insert a copy of the function body into each place the function is called </td></tr>
 <tr>
-<td><a class="el" href="gcc_8h.html#a3fede7bba0f459db05c8463c2f896ca6">PCF_INLINE</a> </td><td colspan="2">Instruct the compiler to insert a copy of the function body into each place the function is called </td></tr>
+<td><a class="el" href="gcc_8h.html#af543d75a6c2923ae38fc74588b0978bc">PCF_STATIC_INLINE</a> </td><td>The inline function which can be used in this file only. </td></tr>
 <tr>
-<td><a class="el" href="gcc_8h.html#a0f21698f6ccd8700aa6e38e2342730bb">PCF_NO_RETURN</a> </td><td colspan="2">Informs the compiler that the function does not return </td></tr>
+<td><a class="el" href="gcc_8h.html#a0f21698f6ccd8700aa6e38e2342730bb">PCF_NO_RETURN</a> </td><td>Informs the compiler that the function does not return </td></tr>
 <tr>
-<td><a class="el" href="gcc_8h.html#a3fcbb7b16b1406d108dcfa72673286b9">PCF_ASM</a> </td><td colspan="2">Invokes the inline assembler and can appear wherever a C or C++ statement is legal </td></tr>
+<td><a class="el" href="gcc_8h.html#a3fcbb7b16b1406d108dcfa72673286b9">PCF_ASM</a> </td><td>Invokes the inline assembler and can appear wherever a C or C++ statement is legal </td></tr>
 <tr>
-<td><a class="el" href="gcc_8h.html#a2082271bac4f34e753487c2af11c5fd4">PCF_DEF_PACKED_STRUCT</a> </td><td colspan="2">Remove padding between members of struct </td></tr>
+<td><a class="el" href="gcc_8h.html#a2082271bac4f34e753487c2af11c5fd4">PCF_DEF_PACKED_STRUCT</a> </td><td>Remove padding between members of struct </td></tr>
 <tr>
-<td><a class="el" href="gcc_8h.html#a86d25a9de132a667367b35d447d57b12">PCF_DEF_ALIGNED_VAR</a> </td><td colspan="2">Specifies a minimum alignment for the function, measured in bytes </td></tr>
+<td><a class="el" href="gcc_8h.html#a86d25a9de132a667367b35d447d57b12">PCF_DEF_ALIGNED_VAR</a> </td><td>Specifies a minimum alignment for the function, measured in bytes </td></tr>
 <tr>
-<td><a class="el" href="armgcc_8h.html#a2b2ba72a16b7be1a3968d572e234aa8f">PCF_EXPORT_API</a> </td><td colspan="2">Export directive to the object file </td></tr>
+<td><a class="el" href="armgcc_8h.html#a2b2ba72a16b7be1a3968d572e234aa8f">PCF_EXPORT_API</a> </td><td>Export directive to the object file </td></tr>
 <tr>
-<td><a class="el" href="armgcc_8h.html#a5e8bc47dd6a107aca926c32618c48361">PCF_IMPORT_API</a> </td><td colspan="2">Import functions, data, and objects to a DLL </td></tr>
+<td><a class="el" href="armgcc_8h.html#a5e8bc47dd6a107aca926c32618c48361">PCF_IMPORT_API</a> </td><td>Import functions, data, and objects to a DLL </td></tr>
 <tr>
-<td><a class="el" href="armgcc_8h.html#a6161d848668579992840e41bc2e1d256">PCF_LOCAL_API</a> </td><td colspan="2"></td></tr>
+<td><a class="el" href="armgcc_8h.html#a6161d848668579992840e41bc2e1d256">PCF_LOCAL_API</a> </td><td>No other module (executable or shared library) can reference it directly. </td></tr>
 <tr>
-<td><a class="el" href="gcc_8h.html#afc4639f4521a8fc88adc66eed4088656">PCF_DEPRECATED</a> </td><td colspan="2">Results in a warning if the function is used anywhere in the source file </td></tr>
+<td><a class="el" href="gcc_8h.html#afc4639f4521a8fc88adc66eed4088656">PCF_DEPRECATED</a> </td><td>Results in a warning if the function is used anywhere in the source file </td></tr>
 <tr>
-<td><a class="el" href="gcc_8h.html#a38de787fd81c24498f2ad1634230a57d">PCF_STATIC_ASSERT</a> </td><td colspan="2">Performs compile-time assertion checking  </td></tr>
+<td><a class="el" href="gcc_8h.html#a38de787fd81c24498f2ad1634230a57d">PCF_STATIC_ASSERT</a> </td><td>Performs compile-time assertion checking </td></tr>
+<tr>
+<td><a class="el" href="msvc_8h.html#add38607a4effa243bc7e58d10521ff8c">PCF_BEGIN_EXTERN</a> </td><td>Start declaration in header file for building library in C. </td></tr>
+<tr>
+<td><a class="el" href="msvc_8h.html#ad12d15fcd8901b7b89b9be2e05274e0d">PCF_END_EXTERN</a> </td><td>End declaration in header file for building library in C. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#aadc1999c48faa9f217bcf551c13db62e">PCF_NULL</a> </td><td>A single character that compares equal to 0. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#a2e85559cec465b5f8350e5e77e90f6cf">PCF_UNUSED</a> </td><td>Suppresses unused variable compiler warning. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#a3aa6a70c23b09a69326b24cad63a916a">PCF_BUILD_TIME</a> </td><td>Holds the compilation time and date as a string. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#a2dde5a7aa847d08092abce79a728f6a1">PCF_FILE_MODIFICATION_TIMESTAMP</a> </td><td>Holds the file modification time,date and year as a string. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#a1bc174d8e271cbcfe045da6bccdac017">PCF_COUNTER</a> </td><td>Holds sequential integral values starting from 0. In conjunction with the ## operator, this provides a convenient means to generate unique identifiers. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#a8a1643ef0b3b83bb4da22c3b84ebc684">PCF_CDECL_API</a> </td><td>Causes the compiler to assume that the calling function will pop off the stack space used to pass arguments. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#a59f2df734599f4f819a93a8e1c3edc41">PCF_STDCALL_API</a> </td><td>Causes the compiler to assume that the called function will pop off the stack space used to pass arguments, unless it takes a variable number of arguments. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#a137a5afdfd6c0f181ca8e469145d4d8f">PCF_MACRO_BEGIN</a> </td><td>Beginning of construct that is use to define a multistatement operation. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#a88c52019b32f91db8174570fc2a0698e">PCF_MACRO_END</a> </td><td>End of construct that is use to define a multistatement operation. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#a53c02f0f7e914bfd43952872ad6b312e">PCF_COLD_FUNC_ATTR</a> </td><td>Informs the compiler that a function is unlikely executed. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#a885ad01192016f3f58425f80582f00b6">PCF_BUILTIN_WCHAR</a> </td><td>Defined if wchar_t type is present. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#a1ab1ba009a22e28a83a98a85b867ea6f">PCF_WCHAR_MAX</a> </td><td>Defined to the maximum value of the wchar_t type. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#ac9cbad3c65f73733181138796adcbc05">PCF_WCHAR_MIN</a> </td><td>Defined to the minimum value of the wchar_t type. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#a234c8d7856ce288d2c7b6b3f583c26b3">PCF_WCHAR_WIDTH</a> </td><td>Defined to the bit widths of the wchar_t types. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#a3a7fa7772a1b9111d1fc03cc1078fc87">PCF_NOOP</a> </td><td>Instruction to do nothing. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#ae2d04504aefd97e1ede02343a5e31e9f">PCF_UNUSED_FUNC</a> </td><td>When attached to a variable, means that the variable is meant to be possibly unused. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#aeb62c4ae5b67e5a348cabc6167c104b7">PCF_WARNING_PUSH</a> </td><td>Saves diagnostic state. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#a3b017a0bf562782745e2dc79e859d7a5">PCF_WARNING_POP</a> </td><td>Restore diagnostic state to the last PCF_WARNING_PUSH </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#a2686f3525f3e0f1f68f26f32c1350463">PCF_WARNING_DISABLE</a> </td><td>Ignores the diagnostic. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#a932b9fff1167d741f0da76f4e3a9ff63">PCF_WARNING_SUPPRESS</a> </td><td>Suppresses any warning by the diagnostic. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#add54d9496c6189b989b3a9f61a34d161">PCF_HAS_WARNING</a> </td><td>Checks for the given warning. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#a48589bc799ef0d010565962f2ceec954">PCF_UNREACHABLE</a> </td><td>Indicates the compiler optimizer that a certain section of the code would never be reachable. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#a56506b275839d393e47a297b36705bff">PCF_ASSUME</a> </td><td>Informs the compiler that a particular condition can be assumed to be true. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#a1404c3626e247e588721e06320e0b634">PCF_LIKELY</a> </td><td>Informs the compiler that the given code is most probably executed. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#a5bad5fc1ac08add92d5787355033e49e">PCF_UNLIKELY</a> </td><td>Informs the compiler that the given code is least probably executed. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#ae76247d57dc4c4a585e0f91aa31a1847">PCF_PRINTF_FORMAT_ATTR</a> </td><td>Specifies that a function takes printf style arguments which should be type-checked against a format string. </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#a0c86f014253ec9847df5087645982452">PCF_ALIGN_OF</a> </td><td>Returns the alignment of the given type, in bytes </td></tr>
+<tr>
+<td><a class="el" href="gcc_8h.html#a6a8c7bf4c5245a678af3ceeb011eae82">PCF_DEBUG</a> </td><td>Sets in debug mode.  </td></tr>
 </table>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
@@ -175,7 +243,7 @@ $(document).ready(function(){initNavTree('pcf_config_compiler.html',''); initRes
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Config</a></li>
+    <li class="navelem"><a class="el" href="index.html">Introduction</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>

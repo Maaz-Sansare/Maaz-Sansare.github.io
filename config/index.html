@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Config: Config</title>
+<title>Config: Introduction</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -89,20 +89,33 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Config </div></div>
+  <div class="headertitle"><div class="title">Introduction </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_README"></a> Configuration package to be used by other PCF C packages and applications using PCF C packages. This package sets up the build configurations and common types depending on the platform, i.e. architecture, OS, language and compiler detected. The configuration of the package is done by the user by selecting the supported configuration such as language name, version and device architecture detail.</p>
-<dl class="section note"><dt>Note</dt><dd>This is a required package for all PCF C packages and applications using PCF C packages. For using the @pcf/config package you should include “pcf/config/config.h” in your package and/or application. Macros which start with "__" or "_" and doesn't end with "__" are reserved to support internal infrastructure and not meant to be used in your code.</dd></dl>
+<div class="textblock"><p><a class="anchor" id="md_README"></a> Configuration package @pcf/config is a required package to be used by other PCF C packages and applications using PCF C packages.</p>
+<p>This package defines build configuration macros and common types depending on the platform, i.e. architecture, OS, language and compiler detected.</p>
+<h2><a class="anchor" id="autotoc_md1"></a>
+How to use</h2>
+<p>To use the package include the <a class="el" href="config_8h.html">pcf/config/config.h</a> in your application or package. To configure the package you need to define the following compile macros while building your application/package</p>
+<p>PCF_CONF_LANGUAGE - Valid values c or cpp <br  />
+ PCF_CONF_LANGUAGE_VERSION - Valid values c11, c89, c99 or c17 <br  />
+ PCF_CONF_ARCH_DEVICE_VENDOR - Valid values stm, nxp or infineon <br  />
+ PCF_CONF_ARCH_DEVICE_SERIES - Valid values stm32f3, stm32f4, lpc1700 or xmc4000 <br  />
+ PCF_CONF_ARCH_DEVICE - Valid values stm32f302r8, stm32f405rg, lpc1768 or xmc4700 <br  />
+</p>
+<dl class="section note"><dt>Note</dt><dd>Macros which start with "__" or "_" and doesn't end with "__" are reserved to support internal infrastructure and not meant to be used in your code.</dd></dl>
 <h2><a class="anchor" id="macro"></a>
-Config Macros</h2>
-<p>-&gt; <a class="el" href="pcf_config.html">Utility macros</a> <br  />
- -&gt; <a class="el" href="pcf_config_language.html">Language</a> <br  />
+Config macros</h2>
+<p>-&gt; <a class="el" href="pcf_config_language.html">Language</a> <br  />
  -&gt; <a class="el" href="pcf_config_compiler.html">Compiler</a> <br  />
  -&gt; <a class="el" href="pcf_config_arch.html">Architecture</a> <br  />
  -&gt; <a class="el" href="pcf_config_os.html">OS</a> <br  />
- -&gt; <a class="el" href="pcf_config_status.html">Status</a> <br  />
+</p>
+<h2><a class="anchor" id="utility"></a>
+Utility macros</h2>
+<p>-&gt; <a class="el" href="pcf_config.html">Common macros</a> <br  />
  -&gt; <a class="el" href="pcf_config_type.html">Types</a> <br  />
+ -&gt; <a class="el" href="pcf_config_status.html">Status</a> <br  />
  </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->

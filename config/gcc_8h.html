@@ -165,35 +165,54 @@ Macros</h2></td></tr>
 <tr class="memitem:a387eb85ead8b978b32f23f24c9441bc9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#a387eb85ead8b978b32f23f24c9441bc9">PCF_HAS_COUNTER</a></td></tr>
 <tr class="separator:a387eb85ead8b978b32f23f24c9441bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bc174d8e271cbcfe045da6bccdac017"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#a1bc174d8e271cbcfe045da6bccdac017">PCF_COUNTER</a>&#160;&#160;&#160;__COUNTER__</td></tr>
+<tr class="memdesc:a1bc174d8e271cbcfe045da6bccdac017"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds sequential integral values starting from 0.  <br /></td></tr>
 <tr class="separator:a1bc174d8e271cbcfe045da6bccdac017"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a1643ef0b3b83bb4da22c3b84ebc684"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#a8a1643ef0b3b83bb4da22c3b84ebc684">PCF_CDECL_API</a>&#160;&#160;&#160;__attribute__((__cdecl))</td></tr>
+<tr class="memdesc:a8a1643ef0b3b83bb4da22c3b84ebc684"><td class="mdescLeft">&#160;</td><td class="mdescRight">Causes the compiler to assume that the calling function will pop off the stack space used to pass arguments.  <br /></td></tr>
 <tr class="separator:a8a1643ef0b3b83bb4da22c3b84ebc684"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59f2df734599f4f819a93a8e1c3edc41"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#a59f2df734599f4f819a93a8e1c3edc41">PCF_STDCALL_API</a>&#160;&#160;&#160;__attribute__((__stdcall))</td></tr>
+<tr class="memdesc:a59f2df734599f4f819a93a8e1c3edc41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Causes the compiler to assume that the called function will pop off the stack space used to pass arguments, unless it takes a variable number of arguments.  <br /></td></tr>
 <tr class="separator:a59f2df734599f4f819a93a8e1c3edc41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a137a5afdfd6c0f181ca8e469145d4d8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#a137a5afdfd6c0f181ca8e469145d4d8f">PCF_MACRO_BEGIN</a>&#160;&#160;&#160;do {</td></tr>
+<tr class="memdesc:a137a5afdfd6c0f181ca8e469145d4d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Beginning of construct that is use to define a multistatement operation.  <br /></td></tr>
 <tr class="separator:a137a5afdfd6c0f181ca8e469145d4d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88c52019b32f91db8174570fc2a0698e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#a88c52019b32f91db8174570fc2a0698e">PCF_MACRO_END</a>&#160;&#160;&#160;} while(false);</td></tr>
+<tr class="memdesc:a88c52019b32f91db8174570fc2a0698e"><td class="mdescLeft">&#160;</td><td class="mdescRight">End of construct that is use to define a multistatement operation.  <br /></td></tr>
 <tr class="separator:a88c52019b32f91db8174570fc2a0698e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf4d43b06a20bbccfa4a43bb0ac41543"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#abf4d43b06a20bbccfa4a43bb0ac41543">PCF_BEGIN_COLD_REGION</a></td></tr>
 <tr class="separator:abf4d43b06a20bbccfa4a43bb0ac41543"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c73656249c1140432bad2fb271e46a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#a5c73656249c1140432bad2fb271e46a8">PCF_END_COLD_REGION</a></td></tr>
 <tr class="separator:a5c73656249c1140432bad2fb271e46a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53c02f0f7e914bfd43952872ad6b312e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#a53c02f0f7e914bfd43952872ad6b312e">PCF_COLD_FUNC_ATTR</a>&#160;&#160;&#160;__attribute__((cold))</td></tr>
-<tr class="memdesc:a53c02f0f7e914bfd43952872ad6b312e"><td class="mdescLeft">&#160;</td><td class="mdescRight">It is used to inform the compiler that a function is unlikely executed.  <br /></td></tr>
+<tr class="memdesc:a53c02f0f7e914bfd43952872ad6b312e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs the compiler that a function is unlikely executed.  <br /></td></tr>
 <tr class="separator:a53c02f0f7e914bfd43952872ad6b312e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a885ad01192016f3f58425f80582f00b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#a885ad01192016f3f58425f80582f00b6">PCF_BUILTIN_WCHAR</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a885ad01192016f3f58425f80582f00b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ab1ba009a22e28a83a98a85b867ea6f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#a1ab1ba009a22e28a83a98a85b867ea6f">PCF_WCHAR_MAX</a></td></tr>
+<tr class="separator:a1ab1ba009a22e28a83a98a85b867ea6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9cbad3c65f73733181138796adcbc05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#ac9cbad3c65f73733181138796adcbc05">PCF_WCHAR_MIN</a></td></tr>
+<tr class="separator:ac9cbad3c65f73733181138796adcbc05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a234c8d7856ce288d2c7b6b3f583c26b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#a234c8d7856ce288d2c7b6b3f583c26b3">PCF_WCHAR_WIDTH</a></td></tr>
+<tr class="separator:a234c8d7856ce288d2c7b6b3f583c26b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65c74c57fe81736e5099d66342647d2e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#a65c74c57fe81736e5099d66342647d2e">PCF_UNICODE</a></td></tr>
 <tr class="separator:a65c74c57fe81736e5099d66342647d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a7fa7772a1b9111d1fc03cc1078fc87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#a3a7fa7772a1b9111d1fc03cc1078fc87">PCF_NOOP</a>&#160;&#160;&#160;(void)(sizeof(0))</td></tr>
+<tr class="memdesc:a3a7fa7772a1b9111d1fc03cc1078fc87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instruction to do nothing.  <br /></td></tr>
 <tr class="separator:a3a7fa7772a1b9111d1fc03cc1078fc87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2d04504aefd97e1ede02343a5e31e9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#ae2d04504aefd97e1ede02343a5e31e9f">PCF_UNUSED_FUNC</a>&#160;&#160;&#160;__attribute__ ((unused))</td></tr>
+<tr class="memdesc:ae2d04504aefd97e1ede02343a5e31e9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">When attached to a variable, means that the variable is meant to be possibly unused.  <br /></td></tr>
 <tr class="separator:ae2d04504aefd97e1ede02343a5e31e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb62c4ae5b67e5a348cabc6167c104b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#aeb62c4ae5b67e5a348cabc6167c104b7">PCF_WARNING_PUSH</a>&#160;&#160;&#160;_Pragma(&quot;GCC diagnostic push&quot;)</td></tr>
+<tr class="memdesc:aeb62c4ae5b67e5a348cabc6167c104b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves diagnostic state.  <br /></td></tr>
 <tr class="separator:aeb62c4ae5b67e5a348cabc6167c104b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b017a0bf562782745e2dc79e859d7a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#a3b017a0bf562782745e2dc79e859d7a5">PCF_WARNING_POP</a>&#160;&#160;&#160;_Pragma(&quot;GCC diagnostic pop&quot;)</td></tr>
+<tr class="memdesc:a3b017a0bf562782745e2dc79e859d7a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restore diagnostic state to the last PCF_WARNING_PUSH.  <br /></td></tr>
 <tr class="separator:a3b017a0bf562782745e2dc79e859d7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2686f3525f3e0f1f68f26f32c1350463"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#a2686f3525f3e0f1f68f26f32c1350463">PCF_WARNING_DISABLE</a>(x)&#160;&#160;&#160;_Pragma(PCF_STRINGIFY(GCC diagnostic ignored x))</td></tr>
+<tr class="memdesc:a2686f3525f3e0f1f68f26f32c1350463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ignores the diagnostic.  <br /></td></tr>
 <tr class="separator:a2686f3525f3e0f1f68f26f32c1350463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a932b9fff1167d741f0da76f4e3a9ff63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#a932b9fff1167d741f0da76f4e3a9ff63">PCF_WARNING_SUPPRESS</a>(x)&#160;&#160;&#160;_Pragma(PCF_STRINGIFY(GCC diagnostic ignored x))</td></tr>
+<tr class="memdesc:a932b9fff1167d741f0da76f4e3a9ff63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suppresses any warning by the diagnostic.  <br /></td></tr>
 <tr class="separator:a932b9fff1167d741f0da76f4e3a9ff63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a447121dcab4275b7839a56082b7a1ab8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#a447121dcab4275b7839a56082b7a1ab8">__has_builtin</a>(x)&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a447121dcab4275b7839a56082b7a1ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,9 +227,14 @@ Macros</h2></td></tr>
 <tr class="memitem:a5bad5fc1ac08add92d5787355033e49e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#a5bad5fc1ac08add92d5787355033e49e">PCF_UNLIKELY</a>(x)&#160;&#160;&#160;(x)</td></tr>
 <tr class="separator:a5bad5fc1ac08add92d5787355033e49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae76247d57dc4c4a585e0f91aa31a1847"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#ae76247d57dc4c4a585e0f91aa31a1847">PCF_PRINTF_FORMAT_ATTR</a>(n)&#160;&#160;&#160;__attribute__ ((format (printf, n, n + 1)))</td></tr>
+<tr class="memdesc:ae76247d57dc4c4a585e0f91aa31a1847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies that a function takes printf style arguments which should be type-checked against a format string.  <br /></td></tr>
 <tr class="separator:ae76247d57dc4c4a585e0f91aa31a1847"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c86f014253ec9847df5087645982452"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#a0c86f014253ec9847df5087645982452">PCF_ALIGN_OF</a>(Type)&#160;&#160;&#160;__alignof(Type)</td></tr>
+<tr class="memdesc:a0c86f014253ec9847df5087645982452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the alignment of the given type, in bytes.  <br /></td></tr>
 <tr class="separator:a0c86f014253ec9847df5087645982452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a8c7bf4c5245a678af3ceeb011eae82"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#a6a8c7bf4c5245a678af3ceeb011eae82">PCF_DEBUG</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a6a8c7bf4c5245a678af3ceeb011eae82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets in debugmode.  <br /></td></tr>
+<tr class="separator:a6a8c7bf4c5245a678af3ceeb011eae82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6928266e978e0b06e0af6227018d4dec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gcc_8h.html#a6928266e978e0b06e0af6227018d4dec">PCF_COMPILER_FLAVOUR_INCLUDE</a>&#160;&#160;&#160;<a class="el" href="defs_8h.html#aecf7e758b7912ba99d8a9d7227c00a7e">PCF_CONDITIONAL_INCLUDE_FILE</a>(./,PCF_COMPILER_FLAVOUR_NAME/,,PCF_COMPILER_FLAVOUR_NAME.h)</td></tr>
 <tr class="separator:a6928266e978e0b06e0af6227018d4dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -908,6 +932,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Holds sequential integral values starting from 0. </p>
+<p>In conjunction with the ## operator, this provides a convenient means to generate unique identifiers. </p>
+
 </div>
 </div>
 <a id="a8a1643ef0b3b83bb4da22c3b84ebc684" name="a8a1643ef0b3b83bb4da22c3b84ebc684"></a>
@@ -921,6 +948,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Causes the compiler to assume that the calling function will pop off the stack space used to pass arguments. </p>
 
 </div>
 </div>
@@ -936,6 +965,8 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Causes the compiler to assume that the called function will pop off the stack space used to pass arguments, unless it takes a variable number of arguments. </p>
+
 </div>
 </div>
 <a id="a137a5afdfd6c0f181ca8e469145d4d8f" name="a137a5afdfd6c0f181ca8e469145d4d8f"></a>
@@ -950,6 +981,8 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Beginning of construct that is use to define a multistatement operation. </p>
+
 </div>
 </div>
 <a id="a88c52019b32f91db8174570fc2a0698e" name="a88c52019b32f91db8174570fc2a0698e"></a>
@@ -963,6 +996,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>End of construct that is use to define a multistatement operation. </p>
 
 </div>
 </div>
@@ -1006,7 +1041,63 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>It is used to inform the compiler that a function is unlikely executed. </p>
+<p>Informs the compiler that a function is unlikely executed. </p>
+
+</div>
+</div>
+<a id="a885ad01192016f3f58425f80582f00b6" name="a885ad01192016f3f58425f80582f00b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a885ad01192016f3f58425f80582f00b6">&#9670;&#160;</a></span>PCF_BUILTIN_WCHAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCF_BUILTIN_WCHAR&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ab1ba009a22e28a83a98a85b867ea6f" name="a1ab1ba009a22e28a83a98a85b867ea6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ab1ba009a22e28a83a98a85b867ea6f">&#9670;&#160;</a></span>PCF_WCHAR_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCF_WCHAR_MAX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9cbad3c65f73733181138796adcbc05" name="ac9cbad3c65f73733181138796adcbc05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9cbad3c65f73733181138796adcbc05">&#9670;&#160;</a></span>PCF_WCHAR_MIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCF_WCHAR_MIN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a234c8d7856ce288d2c7b6b3f583c26b3" name="a234c8d7856ce288d2c7b6b3f583c26b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a234c8d7856ce288d2c7b6b3f583c26b3">&#9670;&#160;</a></span>PCF_WCHAR_WIDTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCF_WCHAR_WIDTH</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1036,6 +1127,8 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Instruction to do nothing. </p>
+
 </div>
 </div>
 <a id="ae2d04504aefd97e1ede02343a5e31e9f" name="ae2d04504aefd97e1ede02343a5e31e9f"></a>
@@ -1049,6 +1142,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>When attached to a variable, means that the variable is meant to be possibly unused. </p>
 
 </div>
 </div>
@@ -1064,6 +1159,8 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Saves diagnostic state. </p>
+
 </div>
 </div>
 <a id="a3b017a0bf562782745e2dc79e859d7a5" name="a3b017a0bf562782745e2dc79e859d7a5"></a>
@@ -1077,6 +1174,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Restore diagnostic state to the last PCF_WARNING_PUSH. </p>
 
 </div>
 </div>
@@ -1096,6 +1195,8 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Ignores the diagnostic. </p>
+
 </div>
 </div>
 <a id="a932b9fff1167d741f0da76f4e3a9ff63" name="a932b9fff1167d741f0da76f4e3a9ff63"></a>
@@ -1113,6 +1214,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Suppresses any warning by the diagnostic. </p>
 
 </div>
 </div>
@@ -1236,6 +1339,8 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Specifies that a function takes printf style arguments which should be type-checked against a format string. </p>
+
 </div>
 </div>
 <a id="a0c86f014253ec9847df5087645982452" name="a0c86f014253ec9847df5087645982452"></a>
@@ -1253,6 +1358,24 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the alignment of the given type, in bytes. </p>
+
+</div>
+</div>
+<a id="a6a8c7bf4c5245a678af3ceeb011eae82" name="a6a8c7bf4c5245a678af3ceeb011eae82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a8c7bf4c5245a678af3ceeb011eae82">&#9670;&#160;</a></span>PCF_DEBUG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCF_DEBUG&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets in debugmode. </p>
 
 </div>
 </div>

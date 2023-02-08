@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('cm3_2nxp_2nxp_8h_source.html',''); ini
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//Device Series will get handled from here.</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#if !defined(PCF_CONF_ARCH_DEVICE_SERIES)</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">    #error &quot;bad configuration, you must define PCF_CONF_ARCH_DEVICE_SERIES in   \</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#   error &quot;bad configuration, you must define PCF_CONF_ARCH_DEVICE_SERIES in    \</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">            the pcf_app_config.h. Define the macro PCF_CONF_ARCH_DEVICE_SERIES, to \</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">            a proper value for including the right device.&quot;</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#endif</span></div>
@@ -145,9 +145,9 @@ $(document).ready(function(){initNavTree('cm3_2nxp_2nxp_8h_source.html',''); ini
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif </span><span class="comment">// !defined(PCF_ARCH_DEVICE_RAM)</span></div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#if !defined(PCF_ARCH_DEVICE_FLASH_SIZE)</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#error &quot;PCF_ARCH_DEVICE_FLASH must be defined. \</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#error &quot;PCF_ARCH_DEVICE_FLASH_SIZE must be defined. \</span></div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">We should set this field in the specific series/device header files.&quot;</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif </span><span class="comment">// !defined(PCF_ARCH_DEVICE_FLASH)</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif </span><span class="comment">// !defined(PCF_ARCH_DEVICE_FLASH_SIZE)</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#if !defined(PCF_ARCH_DEVICE_FLASH_START_ADDRESS)</span></div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#error &quot;PCF_ARCH_DEVICE_FLASH_START_ADDRESS must be defined. \</span></div>

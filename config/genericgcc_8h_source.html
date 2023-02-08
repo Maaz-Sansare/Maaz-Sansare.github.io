@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('genericgcc_8h_source.html',''); initRe
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="genericgcc_8h.html#ab840f447ee018d777f3c14054d37fe94">   24</a></span><span class="preprocessor">#define __PCF_DECORATED_FUNCTION__  __PRETTY_FUNCTION__</span></div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#if __GNUC__ &gt;= 4</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#if __has_attribute (visibility)</span></div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#   define PCF_IMPORT_API              __attribute__ ((visibility (&quot;default&quot;</span>)))</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#   define PCF_EXPORT_API              __attribute__ ((visibility (&quot;default&quot;</span>)))</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#   define PCF_LOCAL_API               __attribute__ ((visibility (&quot;hidden&quot;</span>)))</div>
@@ -118,7 +118,21 @@ $(document).ready(function(){initNavTree('genericgcc_8h_source.html',''); initRe
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="genericgcc_8h.html#a6161d848668579992840e41bc2e1d256">   45</a></span><span class="preprocessor">#   define PCF_LOCAL_API             </span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif </span><span class="comment">//__PCF_INCLUDES_PCF_CONFIG_COMPILER_GCC_GENERICGCC_H__</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#if PCF_DEBUG</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#   include &lt;unistd.h&gt;</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#   include &lt;signal.h&gt;</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#   define PCF_HAS_DEBUGBREAK 1</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#   define PCF_DEBUG_BREAK \</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">        __asm__ __volatile__ ( \</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">        &quot;mov r0, %0\n&quot;</span> \</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        &quot;mov r1, %1\n&quot; \</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        &quot;mov r12, #37\n&quot; \</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        &quot;swi 128\n&quot; \</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        : : &quot;r&quot; (getpid()), &quot;r&quot; (SIGINT) : &quot;r12&quot;, &quot;r0&quot;, &quot;r1&quot;, &quot;cc&quot; \</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    )</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#endif </span><span class="comment">//__PCF_INCLUDES_PCF_CONFIG_COMPILER_GCC_GENERICGCC_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
