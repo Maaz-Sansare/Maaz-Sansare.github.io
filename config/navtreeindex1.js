@@ -54,8 +54,12 @@ var NAVTREEINDEX1 =
 "globals_g.html":[2,1,0,4],
 "globals_p.html":[2,1,0,5],
 "globals_type.html":[2,1,1],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
+"index.html#autotoc_md1":[0],
+"index.html#autotoc_md2":[0,0],
+"index.html#macro":[1],
+"index.html#types":[2],
 "infineon_8h.html":[2,0,0,0,0,0,0,2,0,2],
 "infineon_8h.html#a43b13a208ab06ae31d460b94a62b0634":[2,0,0,0,0,0,0,2,0,2,1],
 "infineon_8h.html#aa139e8c1479aa594c88ba9b3dd1ab050":[2,0,0,0,0,0,0,2,0,2,0],
@@ -243,11 +247,7 @@ var NAVTREEINDEX1 =
 "os_8h.html#acd51b76d773d7e12d52b2d0aa71d8d54":[2,0,0,0,0,3,6,2],
 "os_8h_source.html":[2,0,0,0,0,3,6],
 "pages.html":[],
-"pcf_config.html":[0,4],
+"pcf_config.html":[0,5],
 "pcf_config_arch.html":[0,2],
-"pcf_config_compiler.html":[0,1],
-"pcf_config_language.html":[0,0],
-"pcf_config_os.html":[0,3],
-"pcf_config_status.html":[0,6],
-"pcf_config_type.html":[0,5]
+"pcf_config_compiler.html":[0,1]
 };

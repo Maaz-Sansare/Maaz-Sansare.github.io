@@ -92,28 +92,75 @@ $(document).ready(function(){initNavTree('pcf_config_status.html',''); initResiz
   <div class="headertitle"><div class="title">Status </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>The return status of the API is a 32 bit data consisting of error if any, the status code, the package id and item id to differentiate between different status of package item.</p>
-<p>The following is the structure which informs the bit indication of the return status </p><a class="anchor" id="status"></a>
+<div class="textblock"><p>The status for any function is a 32 bit integer that gives information regarding error, the package id, item id and status code.</p>
+<p>The following is the structure of status value </p><a class="anchor" id="status"></a>
 <table class="doxtable">
-<caption>Status data frame</caption>
+<caption>Status bit indication.</caption>
 <tr>
 <th>Description </th><th>Error </th><th>PACKAGE ID </th><th>ITEM ID </th><th>STATUS CODE </th></tr>
 <tr>
-<td>Data width </td><td>2 </td><td>8 </td><td>8 </td><td>14 </td></tr>
+<td>Data width(bit) </td><td>2 </td><td>8 </td><td>8 </td><td>14 </td></tr>
 <tr>
 <td>Position </td><td>31|30 </td><td>29|28|27|26|25|24|23|22 </td><td>21|20|19|18|17|16|15|14 </td><td>13|12|11|10|9|8|7|6|5|4|3|2|1|0  </td></tr>
 </table>
-<p>Status utility macros : <br  />
- <a class="el" href="status_2defs_8h.html#a6e98a37e2cf47f75e0bec0374823a62d">DEFINE_PCF_STATUS_BITMASK</a> : Defining the status values. <br  />
- <a class="el" href="status_2defs_8h.html#a7548f1d0ad084c7e291f6979a7e9715b">PCF_STATUS_BITS_UTIL_SET_BIT</a> : Setting a certain status bit. <br  />
- <a class="el" href="status_2defs_8h.html#accd598678f146b1c52bc9b2a84a6d97a">PCF_STATUS_BITS_UTIL_CLEAR_BIT</a> : Clearing a certain status bit. <br  />
- <a class="el" href="status_2defs_8h.html#a4e125319556dab214a4117ea7dfcb9e2">ASSERT_DEFINE_PCF_STATUS_CODE</a> : To check whether the status code is defined correctly or not. <br  />
- <a class="el" href="status_2defs_8h.html#a3f1ccb166b5342bf518e53a7d85efb2f">GENERATE_PCF_ERROR_TEXT</a> : Generate error text. <br  />
+<h2><a class="anchor" id="status_success"></a>
+Success status macros :</h2>
+<p><a class="el" href="status_2defs_8h.html#a2074293436e51c467c2e63d8c4b55314">PCF_S_SUCCESS</a> : Indicates success. <br  />
+ <a class="el" href="status_2defs_8h.html#a5e18e0170ec3bf10f61d6d6ad46f9c60">PCF_S_IS_SUCCESS</a> : To check if the given status has success value. <br  />
+ <a class="el" href="status_2defs_8h.html#a5101b8a9f51cc3412f94ae1cfd661bd0">PCF_S_YES</a> : Indicates the given condition is true. <br  />
+ <a class="el" href="status_2defs_8h.html#a67fedf52ce047d03d088d4a42294bedb">PCF_S_IS_YES</a> : To check if the given status has true value. <br  />
+ <a class="el" href="status_2defs_8h.html#acd149143df1ba0d1e1ee980117abe882">PCF_S_NO</a> : Indicates the given condition is false. <br  />
+ <a class="el" href="status_2defs_8h.html#a382aebe353552fd3bb368c073f37879c">PCF_S_IS_NO</a> : To check if the given status has false value. <br  />
+</p>
+<h2><a class="anchor" id="status_warning"></a>
+Warning status macros :</h2>
+<p><a class="el" href="status_2defs_8h.html#a28e0b19b847ea2d3aa82f76b56c1cc85">PCF_S_WARN</a> : Indicates warining. <br  />
+ <a class="el" href="status_2defs_8h.html#a58fd880eb8b2a9f9a2887bc465ee8079">PCF_S_IS_WARN</a> : To check if the given status has warning values. <br  />
+</p>
+<h2><a class="anchor" id="status_error"></a>
+Error status macros :</h2>
+<p><a class="el" href="status_2defs_8h.html#a0d6b2fdf08c7f0eac0610a9917ec2d4d">PCF_S_FATAL</a> : Indicates fatal error. <br  />
+ <a class="el" href="status_2defs_8h.html#acd061e88631852178fe467812cc7f8cf">PCF_S_IS_FATAL</a> : To check if the given status has any fatal error values. <br  />
+ <a class="el" href="status_2defs_8h.html#a9d7fba85f2c6d678b015f60e54eea0d8">PCF_S_INTERNAL_ERROR</a> : Indicates internal error. <br  />
+ <a class="el" href="status_2defs_8h.html#a5520134b1c466f5c7f9de72b5212abd5">PCF_S_IS_INTERNAL_ERROR</a> : To check if the given status has any internal error values. <br  />
+ <a class="el" href="status_2defs_8h.html#a347e9065eb1de38064e4c4ebdf3af9f3">PCF_S_NOT_SUPPORTED</a> : Indicates that the following is not supported. <br  />
+ <a class="el" href="status_2defs_8h.html#a36aa365f228a1b03007a1f316a69bbb7">PCF_S_IS_NOT_SUPPORTED</a> : To check if the given status has any not supported error values. <br  />
+ <a class="el" href="status_2defs_8h.html#a98a9f23d405a31a1ab1f5721aed9961a">PCF_S_NOT_IMPLEMENTED</a> : Indicates that the following is not implemented. <br  />
+ <a class="el" href="status_2defs_8h.html#ade46ce0f676cf7092f86505386467722">PCF_S_IS_NOT_IMPLEMENTED</a> : To check if the given status has any not implemented error values. <br  />
+ <a class="el" href="status_2defs_8h.html#a9e767275e32fe10cfe110d367a91aabe">PCF_S_NULL_ARG</a> : Indicates NULL status. <br  />
+ <a class="el" href="status_2defs_8h.html#a68a2aab74043e07288434e24ee4c3b96">PCF_S_IS_NULL_ARG</a> : To check if the given status has any null arg error values. <br  />
+ <a class="el" href="status_2defs_8h.html#ae0eec005037a89e5fba98877e669bec0">PCF_S_INVALID_ARG</a> : Indicates invalid argument status. <br  />
+ <a class="el" href="status_2defs_8h.html#a2c3165081661d793b0264bc50c361b0e">PCF_S_IS_INVALID_ARG</a> : To check if the given status has any invalid error values. <br  />
+ <a class="el" href="status_2defs_8h.html#a155bd8075fd01383d7974eeb9781bb05">PCF_S_INVALID_OPERATION</a> : Indicates invalid opeation status. <br  />
+ <a class="el" href="status_2defs_8h.html#a4fe93ba3b006777c7964edf7844bac0b">PCF_S_IS_INVALID_OPERATION</a> : To check if the given status has any invalid operation error values. <br  />
+ <a class="el" href="status_2defs_8h.html#a5a6bb6941e491cb583d0ec282631cdd8">PCF_S_NOT_ENOUGH_MEMORY</a> : Indicates not enough memory status. <br  />
+ <a class="el" href="status_2defs_8h.html#a3ecd6de27c453a284d8ce9c13fa4c34b">PCF_S_IS_NOT_ENOUGH_MEMORY</a> : To check if the given status has enough memory error values. <br  />
+ <a class="el" href="status_2defs_8h.html#a01e49b7058715524c62fe742e37f1922">PCF_S_ALREADY_IN_USE</a> : Indicates the entity is already in use status. <br  />
+ <a class="el" href="status_2defs_8h.html#a5f46aa2cbb4a463fb9f4c3a9e5b92a21">PCF_S_IS_ALREADY_IN_USE</a> : To check if the given status has already in use error values. <br  />
+ <a class="el" href="status_2defs_8h.html#a592c6fc4b0963f6eac5878251f3a806e">PCF_S_OUT_OF_RANGE</a> : Indicates out of range status. <br  />
+ <a class="el" href="status_2defs_8h.html#a9ed7d1cb99d352fe51cde92afcfe21b6">PCF_S_IS_OUT_OF_RANGE</a> : To check if the given status has out of range error values. <br  />
+ <a class="el" href="status_2defs_8h.html#a267ca7bde7d3f508927e7d7240cddc95">PCF_S_NOT_CONFIGURED</a> : Indicates the object is not configured status. <br  />
+ <a class="el" href="status_2defs_8h.html#a02307f3a2a5b17413a7f46604d679252">PCF_S_IS_NOT_CONFIGURED</a> : To check if the given status has not been configured error values. <br  />
+ <a class="el" href="status_2defs_8h.html#a938a35fc747c4c127efa5e08a4f3c221">PCF_S_ALREADY_CONFIGURED</a> : Indicates the object is already configured status. <br  />
+ <a class="el" href="status_2defs_8h.html#a2bce80354fddc45aa3b53626a6ed5fce">PCF_S_IS_ALREADY_CONFIGURED</a> : To check if the given status has already configured values. <br  />
+ <a class="el" href="status_2defs_8h.html#a361ab96e1c358b2b52d94c388c2926e0">PCF_S_DATA_NOT_FOUND</a> : Indicates data not found status. <br  />
+ <a class="el" href="status_2defs_8h.html#a896547f81cfb29a168eb23dbed9d4020">PCF_S_IS_DATA_NOT_FOUND</a> : To check if the given status has data not found error values. <br  />
+ <a class="el" href="status_2defs_8h.html#aea4b455231df80552274f14de68dfe8b">PCF_S_NO_SPACE</a> : Indicates no space status. <br  />
+ <a class="el" href="status_2defs_8h.html#a1ebc85f6172daf3d7a6d341f0c1c0da0">PCF_S_IS_NO_SPACE</a> : To check if the given status has no space error values. <br  />
+ <a class="el" href="status_2defs_8h.html#ad4e521d204a59237091602b6e531c1c3">PCF_S_EMPTY</a> : Indicates the object is empty status. <br  />
+ <a class="el" href="status_2defs_8h.html#a9b54985bc7416c712df9ec01681dc4d3">PCF_S_IS_EMPTY</a> : To check if the given status has any empty error values. <br  />
+ <a class="el" href="status_2defs_8h.html#a6d1388fc8fde11d5e4ff33239c6a8465">PCF_S_BUSY</a> : Indicates busy status. <br  />
+ <a class="el" href="status_2defs_8h.html#ae0e2886f1915776e2a71b7e54dfdb926">PCF_S_IS_BUSY</a> : To check if the given status has any busy error values. <br  />
+ <a class="el" href="status_2defs_8h.html#aabee90d661a2ad576e27deb42b39a42b">PCF_S_TIMEOUT</a> : Indicates timeout status. <br  />
+ <a class="el" href="status_2defs_8h.html#abbc991736cf3e18b04ee181b60d6c90a">PCF_S_IS_TIMEOUT</a> : To check if the given status has any timeout error values. <br  />
+ <a class="el" href="status_2defs_8h.html#a97f869504743bbb2a0c025c8ecaf0ae4">PCF_S_ERROR_BASE_UCODE</a> : Indicates ucode status. <br  />
+ <a class="el" href="status_2defs_8h.html#a2045be3e16a02c24ad905a03ae1e985e">PCF_S_IS_ERROR_BASE_UCODE</a> : To check if the given status has any base ucode error values. <br  />
+</p>
+<h2><a class="anchor" id="status_utility"></a>
+Status utility macros:</h2>
+<p><a class="el" href="status_2defs_8h.html#a3f1ccb166b5342bf518e53a7d85efb2f">GENERATE_PCF_ERROR_TEXT</a> : Generate error text. <br  />
  <a class="el" href="status_2defs_8h.html#a3c95c78fe2264a22a28debe8cdca3a08">GENERATE_PCF_WARNING_TEXT</a> : Generate warning text. <br  />
  <a class="el" href="status_2defs_8h.html#a19d4d3eafc0382eb326cc9a468f1dd15">GENERATE_PCF_NOERROR_TEXT</a> : Generate no-error text. <br  />
- <a class="el" href="status_2defs_8h.html#acbdcfaf041e8bc728635ef93c33355e8">ASSERT_DEFINE_PCF_PACKAGE_ID</a> : To check whether the package id is defined correctly or not. <br  />
- <a class="el" href="status_2defs_8h.html#af2934820e068d93e8404c80c01cd532c">ASSERT_DEFINE_PCF_PACKAGE_ITEM_ID</a> : To check whether the package item id is defined correctly or not. <br  />
- <a class="el" href="status_2defs_8h.html#a2e17e256fdd7b344bba12d74cfa3b797">GENERATE_PACKAGE_ITEM_MASK</a> : Generates item id according to package and item passed. <br  />
  <a class="el" href="status_2defs_8h.html#ab974e905ad1221d9c40cb99f3860ac44">PCF_S_IS_ERROR</a> : To check if the given status has any error values. <br  />
  <a class="el" href="status_2defs_8h.html#a60725008e2d37201cd55051e79a69571">PCF_S_IS_WARNING</a> : To check if the given status has any warning values. <br  />
  <a class="el" href="status_2defs_8h.html#a271ee4367aad5c3f0a245c82b0e8df5e">PCF_S_IS_NOERROR</a> : To check if the given status has any no-error values. <br  />
@@ -123,80 +170,58 @@ $(document).ready(function(){initNavTree('pcf_config_status.html',''); initResiz
  <a class="el" href="status_2defs_8h.html#a7caf01b49a65173ad2748f209e2b9c18">PCF_GET_STATUS_TYPE</a> : Sets to the status type. <br  />
  <a class="el" href="status_2defs_8h.html#a849df8717e0b40cab7134fd284a5fcd6">PCF_GET_STATUS_PACKAGE</a> : Sets to the package type. <br  />
  <a class="el" href="status_2defs_8h.html#a2ceb13435331cd9c152523168c1bb418">PCF_GET_STATUS_ITEM</a> : Sets to the item type. <br  />
- <a class="el" href="status_2defs_8h.html#a00fc7a0c7483c422d6a831a2c948523a">PCF_GET_STATUS_CODE</a> : Sets to the code type. <br  />
-</p>
-<p>Success status macros : <br  />
- <a class="el" href="status_2defs_8h.html#a2074293436e51c467c2e63d8c4b55314">PCF_S_SUCCESS</a> : Indicates success. <br  />
- <a class="el" href="status_2defs_8h.html#a5e18e0170ec3bf10f61d6d6ad46f9c60">PCF_S_IS_SUCCESS</a> : To check if the given status has success value. <br  />
+ <a class="el" href="status_2defs_8h.html#a00fc7a0c7483c422d6a831a2c948523a">PCF_GET_STATUS_CODE</a> : Sets to the status code type. <br  />
  <a class="el" href="status_2defs_8h.html#a9a923438c9fb0f755f1e669d5cf8466f">GENERATE_PCF_STATUS_SUCCESS</a> : Generate SUCCESS status for given package and item. <br  />
- <a class="el" href="status_2defs_8h.html#a5101b8a9f51cc3412f94ae1cfd661bd0">PCF_S_YES</a> : Indicates the given condition is true. <br  />
- <a class="el" href="status_2defs_8h.html#a67fedf52ce047d03d088d4a42294bedb">PCF_S_IS_YES</a> : To check if the given status has true value. <br  />
  <a class="el" href="status_2defs_8h.html#aacbd14e3d52a85753781f4536cd3475e">GENERATE_PCF_STATUS_YES</a> : Generate YES status for given package and item. <br  />
- <a class="el" href="status_2defs_8h.html#acd149143df1ba0d1e1ee980117abe882">PCF_S_NO</a> : Indicates the given condition is false. <br  />
- <a class="el" href="status_2defs_8h.html#a382aebe353552fd3bb368c073f37879c">PCF_S_IS_NO</a> : To check if the given status has false value. <br  />
  <a class="el" href="status_2defs_8h.html#a79386ef759484cb03475f0661e2788f8">GENERATE_PCF_STATUS_NO</a> : Generate NO status for given package and item. <br  />
-</p>
-<p>Warning status macros : <br  />
- <a class="el" href="status_2defs_8h.html#a28e0b19b847ea2d3aa82f76b56c1cc85">PCF_S_WARN</a> : Indicates warining. <br  />
- <a class="el" href="status_2defs_8h.html#a58fd880eb8b2a9f9a2887bc465ee8079">PCF_S_IS_WARN</a> : To check if the given status has warning values. <br  />
  <a class="el" href="status_2defs_8h.html#ae630eb3bd7c37b1785fd8218d1eea1ba">GENERATE_PCF_STATUS_WARN</a> : Generate warning status for given package and item. <br  />
-</p>
-<p>Error status macros : <br  />
- <a class="el" href="status_2defs_8h.html#a0d6b2fdf08c7f0eac0610a9917ec2d4d">PCF_S_FATAL</a> : Indicates fatal error. <br  />
- <a class="el" href="status_2defs_8h.html#acd061e88631852178fe467812cc7f8cf">PCF_S_IS_FATAL</a> : To check if the given status has any fatal error values. <br  />
  <a class="el" href="status_2defs_8h.html#ae98101f27bc6b647017142acf2635076">GENERATE_PCF_ERROR_FATAL</a> : Generate a fatal error status for given package and item. <br  />
- <a class="el" href="status_2defs_8h.html#a9d7fba85f2c6d678b015f60e54eea0d8">PCF_S_INTERNAL_ERROR</a> : Indicates internal error. <br  />
- <a class="el" href="status_2defs_8h.html#a5520134b1c466f5c7f9de72b5212abd5">PCF_S_IS_INTERNAL_ERROR</a> : To check if the given status has any internal error values. <br  />
  <a class="el" href="status_2defs_8h.html#a7ce7e8538227b0dfb346a7cfc74cf26a">GENERATE_PCF_ERROR_INTERNAL_ERROR</a> : Generate a internal error status for given package and item. <br  />
- <a class="el" href="status_2defs_8h.html#a347e9065eb1de38064e4c4ebdf3af9f3">PCF_S_NOT_SUPPORTED</a> : Indicates that the following is not supported. <br  />
- <a class="el" href="status_2defs_8h.html#a36aa365f228a1b03007a1f316a69bbb7">PCF_S_IS_NOT_SUPPORTED</a> : To check if the given status has any not supported error values. <br  />
  <a class="el" href="status_2defs_8h.html#a2c40d5fdbde250d15d0dc8c1c4cb66ce">GENERATE_PCF_ERROR_NOT_SUPPORTED</a> : Generate a not supported error status for given package and item. <br  />
- <a class="el" href="status_2defs_8h.html#a98a9f23d405a31a1ab1f5721aed9961a">PCF_S_NOT_IMPLEMENTED</a> : Indicates that the following is not implemented. <br  />
- <a class="el" href="status_2defs_8h.html#ade46ce0f676cf7092f86505386467722">PCF_S_IS_NOT_IMPLEMENTED</a> : To check if the given status has any not implemented error values. <br  />
  <a class="el" href="status_2defs_8h.html#a4a4c36511d38c2b58dd121a50844cdc4">GENERATE_PCF_ERROR_NOT_IMPLEMENTED</a> : Generate a not implemented error status for given package and item. <br  />
- <a class="el" href="status_2defs_8h.html#a9e767275e32fe10cfe110d367a91aabe">PCF_S_NULL_ARG</a> : Indicates NULL status. <br  />
- <a class="el" href="status_2defs_8h.html#a68a2aab74043e07288434e24ee4c3b96">PCF_S_IS_NULL_ARG</a> : To check if the given status has any null arg error values. <br  />
  <a class="el" href="status_2defs_8h.html#a68010829e6ac2594e97ed4a4ddceecec">GENERATE_PCF_ERROR_NULL_ARG</a> : Generate null arg error status for given package and item. <br  />
- <a class="el" href="status_2defs_8h.html#ae0eec005037a89e5fba98877e669bec0">PCF_S_INVALID_ARG</a> : Indicates invalid argument status. <br  />
- <a class="el" href="status_2defs_8h.html#a2c3165081661d793b0264bc50c361b0e">PCF_S_IS_INVALID_ARG</a> : To check if the given status has any invalid error values. <br  />
  <a class="el" href="status_2defs_8h.html#a40aae15a61f2f6be94601f46747b9141">GENERATE_PCF_ERROR_INVALID_ARG</a> : Generate invalid arg error status for given package and item. <br  />
- <a class="el" href="status_2defs_8h.html#a155bd8075fd01383d7974eeb9781bb05">PCF_S_INVALID_OPERATION</a> : Indicates invalid opeation status. <br  />
- <a class="el" href="status_2defs_8h.html#a4fe93ba3b006777c7964edf7844bac0b">PCF_S_IS_INVALID_OPERATION</a> : To check if the given status has any invalid operation error values. <br  />
  <a class="el" href="status_2defs_8h.html#abd7eb387fef5ac53400c3d130980056d">GENERATE_PCF_ERROR_INVALID_OPERATION</a> : Generate invalid operation error status for given package and item. <br  />
- <a class="el" href="status_2defs_8h.html#a5a6bb6941e491cb583d0ec282631cdd8">PCF_S_NOT_ENOUGH_MEMORY</a> : Indicates not enough memory status. <br  />
- <a class="el" href="status_2defs_8h.html#a3ecd6de27c453a284d8ce9c13fa4c34b">PCF_S_IS_NOT_ENOUGH_MEMORY</a> : To check if the given status has enough memory error values. <br  />
  <a class="el" href="status_2defs_8h.html#a118c15a6503df5cd469c7f53a4757915">GENERATE_PCF_ERROR_NOT_ENOUGH_MEMORY</a> : Generate not enough memory error status for given package and item. <br  />
- <a class="el" href="status_2defs_8h.html#a01e49b7058715524c62fe742e37f1922">PCF_S_ALREADY_IN_USE</a> : Indicates the entity is already in use status. <br  />
- <a class="el" href="status_2defs_8h.html#a5f46aa2cbb4a463fb9f4c3a9e5b92a21">PCF_S_IS_ALREADY_IN_USE</a> : To check if the given status has already in use error values. <br  />
  <a class="el" href="status_2defs_8h.html#a03d622d0b8b879bb226dd9a97ce95ed8">GENERATE_PCF_ERROR_ALREADY_IN_USE</a> : Generate already in use error status for given package and item. <br  />
- <a class="el" href="status_2defs_8h.html#a592c6fc4b0963f6eac5878251f3a806e">PCF_S_OUT_OF_RANGE</a> : Indicates out of range status. <br  />
- <a class="el" href="status_2defs_8h.html#a9ed7d1cb99d352fe51cde92afcfe21b6">PCF_S_IS_OUT_OF_RANGE</a> : To check if the given status has out of range error values. <br  />
  <a class="el" href="status_2defs_8h.html#a6ce0109bc2bd3d379b1eda1b7a7ec5f2">GENERATE_PCF_ERROR_OUT_OF_RANGE</a> : Generate out of range error status for given package and item. <br  />
- <a class="el" href="status_2defs_8h.html#a267ca7bde7d3f508927e7d7240cddc95">PCF_S_NOT_CONFIGURED</a> : Indicates the object is not configured status. <br  />
- <a class="el" href="status_2defs_8h.html#a02307f3a2a5b17413a7f46604d679252">PCF_S_IS_NOT_CONFIGURED</a> : To check if the given status has not been configured error values. <br  />
  <a class="el" href="status_2defs_8h.html#a802937e7349ff7ffce8fcec5579d1848">GENERATE_PCF_ERROR_NOT_CONFIGURED</a> : Generate not configured error status for given package and item. <br  />
- <a class="el" href="status_2defs_8h.html#a938a35fc747c4c127efa5e08a4f3c221">PCF_S_ALREADY_CONFIGURED</a> : Indicates the object is already configured status. <br  />
- <a class="el" href="status_2defs_8h.html#a2bce80354fddc45aa3b53626a6ed5fce">PCF_S_IS_ALREADY_CONFIGURED</a> : To check if the given status has already configured values. <br  />
  <a class="el" href="status_2defs_8h.html#a8b0e3996baa65b76094d2000d3b905d9">GENERATE_PCF_ERROR_ALREADY_CONFIGURED</a> : Generate already configured error status for given package and item. <br  />
- <a class="el" href="status_2defs_8h.html#a361ab96e1c358b2b52d94c388c2926e0">PCF_S_DATA_NOT_FOUND</a> : Indicates data not found status. <br  />
- <a class="el" href="status_2defs_8h.html#a896547f81cfb29a168eb23dbed9d4020">PCF_S_IS_DATA_NOT_FOUND</a> : To check if the given status has data not found error values. <br  />
  <a class="el" href="status_2defs_8h.html#ac9ffaf478da805e07dbe4b70f869b3ec">GENERATE_PCF_ERROR_DATA_NOT_FOUND</a> : Generate data not found error status for given package and item. <br  />
- <a class="el" href="status_2defs_8h.html#aea4b455231df80552274f14de68dfe8b">PCF_S_NO_SPACE</a> : Indicates no space status. <br  />
- <a class="el" href="status_2defs_8h.html#a1ebc85f6172daf3d7a6d341f0c1c0da0">PCF_S_IS_NO_SPACE</a> : To check if the given status has no space error values. <br  />
  <a class="el" href="status_2defs_8h.html#a4cdb9e2c54bcd6f3f7040a27510afa6d">GENERATE_PCF_ERROR_NO_SPACE</a> : Generate no space error status for given package and item. <br  />
- <a class="el" href="status_2defs_8h.html#ad4e521d204a59237091602b6e531c1c3">PCF_S_EMPTY</a> : Indicates the object is empty status. <br  />
- <a class="el" href="status_2defs_8h.html#a9b54985bc7416c712df9ec01681dc4d3">PCF_S_IS_EMPTY</a> : To check if the given status has any empty error values. <br  />
  <a class="el" href="status_2defs_8h.html#ab3e775f4198ea73be76000b7b78dfbf9">GENERATE_PCF_ERROR_EMPTY</a> : Generate empty error status for given package and item. <br  />
- <a class="el" href="status_2defs_8h.html#a6d1388fc8fde11d5e4ff33239c6a8465">PCF_S_BUSY</a> : Indicates busy status. <br  />
- <a class="el" href="status_2defs_8h.html#ae0e2886f1915776e2a71b7e54dfdb926">PCF_S_IS_BUSY</a> : To check if the given status has any busy error values. <br  />
  <a class="el" href="status_2defs_8h.html#a1f5b5e7119ba74315c6538d8a1469d25">GENERATE_PCF_ERROR_BUSY</a> : Generate busy error status for given package and item. <br  />
- <a class="el" href="status_2defs_8h.html#aabee90d661a2ad576e27deb42b39a42b">PCF_S_TIMEOUT</a> : Indicates timeout status. <br  />
- <a class="el" href="status_2defs_8h.html#abbc991736cf3e18b04ee181b60d6c90a">PCF_S_IS_TIMEOUT</a> : To check if the given status has any timeout error values. <br  />
  <a class="el" href="status_2defs_8h.html#a0896cb0aa55ba058e5b3a55894cf03c3">GENERATE_PCF_ERROR_TIMEOUT</a> : Generate timeout error status for given package and item. <br  />
- <a class="el" href="status_2defs_8h.html#a97f869504743bbb2a0c025c8ecaf0ae4">PCF_S_ERROR_BASE_UCODE</a> : Indicates ucode status. <br  />
- <a class="el" href="status_2defs_8h.html#a2045be3e16a02c24ad905a03ae1e985e">PCF_S_IS_ERROR_BASE_UCODE</a> : To check if the given status has any base ucode error values. <br  />
  <a class="el" href="status_2defs_8h.html#a97ddb15745544e4e4354587b692442c7">GENERATE_PCF_ERROR_BASE_UCODE</a> : Generate base ucode error status for given package and item. <br  />
- </p>
+</p>
+<h2><a class="anchor" id="status_example"></a>
+Example:</h2>
+<p>Generating status for "my_item" in "my_package" under scope "team" </p><div class="fragment"><div class="line"><span class="preprocessor">#define MY_PKG_ID  2</span></div>
+<div class="line"><span class="preprocessor">#define MY_ITEM_ID 15</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#define TEAM_MY_ITEM_S_SUCCESS GENERATE_PCF_STATUS_SUCCESS(MY_PKG_ID, MY_ITEM_ID)</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#define TEAM_MY_ITEM_S_FATAL             GENERATE_PCF_ERROR_FATAL(MY_PKG_ID, MY_ITEM_ID)</span></div>
+<div class="line"><span class="preprocessor">#define TEAM_MY_ITEM_S_NULL_ARG          GENERATE_PCF_ERROR_NULL_ARG(MY_PKG_ID, MY_ITEM_ID)</span></div>
+<div class="line"><span class="preprocessor">#define TEAM_MY_ITEM_S_INVALID_ARG       GENERATE_PCF_ERROR_INVALID_ARG(MY_PKG_ID, MY_ITEM_ID)</span></div>
+<div class="line"><span class="preprocessor">#define TEAM_MY_ITEM_S_INVALID_OPERATION GENERATE_PCF_ERROR_INVALID_OPERATION(MY_PKG_ID, MY_ITEM_ID)</span></div>
+</div><!-- fragment --><p> Representation of status error "TEAM_MY_ITEM_S_INVALID_ARG" will be as follows <br  />
+ Value of status will be: <br  />
+ In decimels: 2156118021 <br  />
+ In binary: 10 00000010 00001111 00000000000101 <br  />
+ </p><a class="anchor" id="example"></a>
+<table class="doxtable">
+<caption>Bit representation of TEAM_MY_ITEM_S_INVALID_ARG indication.</caption>
+<tr>
+<th>Description </th><th>Error </th><th>PACKAGE ID </th><th>ITEM ID </th><th>STATUS CODE <br  />
+ </th></tr>
+<tr>
+<td>Decimal value </td><td>2 </td><td>2 </td><td>15 </td><td>5 <br  />
+ </td></tr>
+<tr>
+<td>Binary value </td><td>10 </td><td>00000010 </td><td>00001111 </td><td>00000000000101 <br  />
+ </td></tr>
+</table>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
