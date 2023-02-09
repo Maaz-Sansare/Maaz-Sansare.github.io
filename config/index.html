@@ -97,11 +97,14 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <h2><a class="anchor" id="autotoc_md1"></a>
 How to use</h2>
 <p>To use the package include the <a class="el" href="config_8h.html">pcf/config/config.h</a> in your application or package. To configure the package you need to define the following compile macros while building your application/package</p>
-<p>PCF_CONF_LANGUAGE - Valid values c or cpp <br  />
- PCF_CONF_LANGUAGE_VERSION - Valid values c11, c89, c99 or c17 <br  />
- PCF_CONF_ARCH_DEVICE_VENDOR - Valid values stm, nxp or infineon <br  />
- PCF_CONF_ARCH_DEVICE_SERIES - Valid values stm32f3, stm32f4, lpc1700 or xmc4000 <br  />
- PCF_CONF_ARCH_DEVICE - Valid values stm32f302r8, stm32f405rg, lpc1768 or xmc4700 <br  />
+<p><b>Programming language:</b> <br  />
+ <b>PCF_CONF_LANGUAGE</b> - Valid values c or cpp <br  />
+ <b>PCF_CONF_LANGUAGE_VERSION</b> - Valid values c11, c89, c99 or c17 <br  />
+ <b>Device details:</b> <br  />
+ Only applicable while building for microcontroller. <br  />
+ <b>PCF_CONF_ARCH_DEVICE_VENDOR</b> - Valid values stm, nxp or infineon <br  />
+ <b>PCF_CONF_ARCH_DEVICE_SERIES</b> - Valid values stm32f3, stm32f4, lpc1700 or xmc4000 <br  />
+ <b>PCF_CONF_ARCH_DEVICE</b> - Valid values stm32f302r8, stm32f405rg, lpc1768 or xmc4700 <br  />
 </p>
 <dl class="section note"><dt>Note</dt><dd>Macros which start with "__" or "_" and doesn't end with "__" are reserved to support internal infrastructure and not meant to be used in your code.</dd></dl>
 <h2><a class="anchor" id="macro"></a>

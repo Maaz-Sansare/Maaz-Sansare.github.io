@@ -9,5 +9,5 @@ var searchData=
   ['cm3_2eh_6',['cm3.h',['../cm3_8h.html',1,'']]],
   ['cm4_2eh_7',['cm4.h',['../cm4_8h.html',1,'']]],
   ['compiler_2eh_8',['compiler.h',['../compiler_8h.html',1,'']]],
-  ['config_2eh_9',['config.h',['../config_8h.html',1,'(Global Namespace)'],['../status_2config_8h.html',1,'(Global Namespace)']]]
+  ['config_2eh_9',['config.h',['../config_8h.html',1,'']]]
 ];

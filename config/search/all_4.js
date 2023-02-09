@@ -11,5 +11,5 @@ var searchData=
   ['common_20macros_8',['Common macros',['../pcf_config.html',1,'index']]],
   ['compiler_9',['Compiler',['../pcf_config_compiler.html',1,'index']]],
   ['compiler_2eh_10',['compiler.h',['../compiler_8h.html',1,'']]],
-  ['config_2eh_11',['config.h',['../config_8h.html',1,'(Global Namespace)'],['../status_2config_8h.html',1,'(Global Namespace)']]]
+  ['config_2eh_11',['config.h',['../config_8h.html',1,'']]]
 ];
