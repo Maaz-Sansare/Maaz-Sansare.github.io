@@ -92,8 +92,8 @@ $(document).ready(function(){initNavTree('pcf_config_status.html',''); initResiz
   <div class="headertitle"><div class="title">Status </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>The status for any function is a 32 bit integer that gives information regarding error, the package id, item id and status code.</p>
-<p>The following is the structure of status value </p><a class="anchor" id="status"></a>
+<div class="textblock"><p>In PCF it is expected that all API functions report success, warning, error codes as a 32 bit unsigned integer.</p>
+<p>The status code can provide information about package and package item along with status code. </p><a class="anchor" id="status"></a>
 <table class="doxtable">
 <caption>Status bit indication.</caption>
 <tr>

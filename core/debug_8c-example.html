@@ -93,11 +93,10 @@ $(document).ready(function(){initNavTree('debug_8c-example.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="debug_8h.html">pcf/debug/debug.h</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="assert_8h.html">pcf/assert/assert.h</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
-<div class="line"> </div>
-<div class="line"><a class="code hl_typedefRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> app_putchar(uint8_t ch);</div>
-<div class="line"><a class="code hl_typedefRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> app_getchar(uint8_t *ch);</div>
+<div class="line"><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_typedefRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> app_putchar(uint8_t ch){</div>
 <div class="line">    <span class="keywordflow">if</span>(putchar(ch) == EOF){</div>
@@ -115,18 +114,23 @@ $(document).ready(function(){initNavTree('debug_8c-example.html',''); initResiza
 <div class="line">    <span class="keywordflow">return</span> <a class="code hl_defineRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2defs_8h.html#a2074293436e51c467c2e63d8c4b55314">PCF_S_SUCCESS</a>;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> test_func(){</div>
-<div class="line">    PCF_ASSERT_RETURN(1==0, -1);</div>
-<div class="line">    <span class="keywordflow">return</span> 0;</div>
-<div class="line">}</div>
-<div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> main(){</div>
-<div class="line">    <a id="a2" name="a2"></a><a class="code hl_function" href="group__pcf__core__debug.html#ga5b6f9dbc6aadcdb97c08225a96dfc15c">pcf_Debug_init</a>(app_putchar, app_getchar);</div>
+<div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div>
+<div class="line">{   </div>
+<div class="line">    <a id="a2" name="a2"></a><a class="code hl_function" href="group__pcf__core__debug.html#ga5b6f9dbc6aadcdb97c08225a96dfc15c">pcf_Debug_init</a>(app_putchar,app_getchar);</div>
 <div class="line">    PCF_TRACE(<span class="stringliteral">&quot;This is a test message\n&quot;</span>);</div>
-<div class="line">    PCF_ASSERT(test_func() == 0);</div>
-<div class="line">}</div>
+<div class="line">    </div>
+<div class="line">    pcf_int64_t delta = 2;</div>
+<div class="line">    pcf_int64_t expected = 14;</div>
+<div class="line">    pcf_int64_t actual = 18;</div>
+<div class="line">    <a id="a3" name="a3"></a><a class="code hl_define" href="group__pcf__core__assert.html#ga61731ab0b939089c0d727933c42d9ff5">PCF_ASSERT_INT64_WITHIN</a>(delta,expected,actual);</div>
 <div class="line"> </div>
+<div class="line">    PCF_TRACE(<span class="stringliteral">&quot;End\n&quot;</span>);</div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line"> </div>
+<div class="line">}</div>
+<div class="ttc" id="aassert_8h_html"><div class="ttname"><a href="assert_8h.html">assert.h</a></div></div>
 <div class="ttc" id="adebug_8h_html"><div class="ttname"><a href="debug_8h.html">debug.h</a></div></div>
+<div class="ttc" id="agroup__pcf__core__assert_html_ga61731ab0b939089c0d727933c42d9ff5"><div class="ttname"><a href="group__pcf__core__assert.html#ga61731ab0b939089c0d727933c42d9ff5">PCF_ASSERT_INT64_WITHIN</a></div><div class="ttdeci">#define PCF_ASSERT_INT64_WITHIN(delta, expected, actual)</div><div class="ttdef"><b>Definition:</b> defs.h:173</div></div>
 <div class="ttc" id="agroup__pcf__core__debug_html_ga5b6f9dbc6aadcdb97c08225a96dfc15c"><div class="ttname"><a href="group__pcf__core__debug.html#ga5b6f9dbc6aadcdb97c08225a96dfc15c">pcf_Debug_init</a></div><div class="ttdeci">PCF_CORE_API pcf_status_t pcf_Debug_init(DebugPutchar_fp putchar, DebugGetchar_fp getchar)</div><div class="ttdoc">Initialize the debug entity object.</div></div>
 <div class="ttc" id="astatus_2defs_8h_html_a0d6b2fdf08c7f0eac0610a9917ec2d4d"><div class="ttname"><a href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2defs_8h.html#a0d6b2fdf08c7f0eac0610a9917ec2d4d">PCF_S_FATAL</a></div><div class="ttdeci">#define PCF_S_FATAL</div></div>
 <div class="ttc" id="astatus_2defs_8h_html_a2074293436e51c467c2e63d8c4b55314"><div class="ttname"><a href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2defs_8h.html#a2074293436e51c467c2e63d8c4b55314">PCF_S_SUCCESS</a></div><div class="ttdeci">#define PCF_S_SUCCESS</div></div>

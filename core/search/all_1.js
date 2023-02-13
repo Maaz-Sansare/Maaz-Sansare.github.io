@@ -1,13 +1,7 @@
 var searchData=
 [
-  ['allocatorconfig_0',['allocatorConfig',['../struct_array_config__t.html#a6ab2f62a26097f142438dd05fe922dc7',1,'ArrayConfig_t']]],
-  ['arch_2eh_1',['arch.h',['https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/arch_8h.html',1,'']]],
-  ['architecture_2',['Architecture',['https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/pcf_config_arch.html',1,'']]],
-  ['arm_2eh_3',['arm.h',['https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/arm_8h.html',1,'']]],
-  ['armgcc_2eh_4',['armgcc.h',['https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/armgcc_8h.html',1,'']]],
-  ['array_5',['Array',['../group__pcf__core__collections__array.html',1,'']]],
-  ['array_2eh_6',['array.h',['../array_8h.html',1,'']]],
-  ['array_5ft_7',['Array_t',['../group__pcf__core__collections__array.html#gae6beb731efa2e3194790711a4e744384',1,'types.h']]],
-  ['arrayconfig_5ft_8',['ArrayConfig_t',['../struct_array_config__t.html',1,'']]],
-  ['atomic_2eh_9',['atomic.h',['../atomic_8h.html',1,'']]]
+  ['_5f_5fpcf_5fassert_5fempty_0',['__PCF_ASSERT_EMPTY',['../group__pcf__core__assert.html#gaf8296a5b63fb27a9bed5844d8acde44b',1,'defs.h']]],
+  ['_5f_5fpcf_5fassert_5fnot_5fempty_1',['__PCF_ASSERT_NOT_EMPTY',['../group__pcf__core__assert.html#ga0c1ca49fa2072e49f155578d982c1d0d',1,'defs.h']]],
+  ['_5f_5fpcf_5fassert_5fnot_5fnull_2',['__PCF_ASSERT_NOT_NULL',['../group__pcf__core__assert.html#gabbfb3c68b3cda4334506dfc5c51b4ea7',1,'defs.h']]],
+  ['_5f_5fpcf_5fassert_5fnull_3',['__PCF_ASSERT_NULL',['../group__pcf__core__assert.html#ga0739d0be89807f60b9114a37dad8c53e',1,'defs.h']]]
 ];

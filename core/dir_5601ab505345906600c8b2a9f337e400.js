@@ -4,5 +4,5 @@ var dir_5601ab505345906600c8b2a9f337e400 =
     [ "config.h", "utils_2config_8h.html", null ],
     [ "defs.h", "utils_2defs_8h.html", null ],
     [ "types.h", "utils_2types_8h.html", null ],
-    [ "utils.h", "utils_8h.html", null ]
+    [ "utils.h", "utils_8h.html", "utils_8h" ]
 ];

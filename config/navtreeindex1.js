@@ -52,10 +52,11 @@ var NAVTREEINDEX1 =
 "globals_enum.html":[2,1,2],
 "globals_eval.html":[2,1,3],
 "globals_g.html":[2,1,0,4],
-"globals_p.html":[2,1,0,5],
+"globals_m.html":[2,1,0,5],
+"globals_p.html":[2,1,0,6],
 "globals_type.html":[2,1,1],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "index.html#autotoc_md1":[0],
 "index.html#autotoc_md2":[0,0],
 "index.html#macro":[1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "os_8h_source.html":[2,0,0,0,0,3,6],
 "pages.html":[],
 "pcf_config.html":[0,5],
-"pcf_config_arch.html":[0,2],
-"pcf_config_compiler.html":[0,1]
+"pcf_config_arch.html":[0,2]
 };

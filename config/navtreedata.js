@@ -51,8 +51,8 @@ var NAVTREEINDEX =
 [
 "2013_8h.html",
 "gcc_8h.html#a5a275ae9442b116997fa8cdb5336a1af",
-"pcf_config_language.html",
-"types_8h.html#a7dc306f8548da5744c0ae719a11d1ff6"
+"pcf_config_compiler.html",
+"types_8h.html#a0aff5df074c5cc9d1aa3eafef5cfd771"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

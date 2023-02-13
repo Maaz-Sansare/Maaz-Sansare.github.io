@@ -39,6 +39,7 @@ var menudata={children:[
 {text:"d",url:"globals_d.html#index_d"},
 {text:"e",url:"globals_e.html#index_e"},
 {text:"g",url:"globals_g.html#index_g"},
+{text:"m",url:"globals_m.html#index_m"},
 {text:"p",url:"globals_p.html#index_p"}]},
 {text:"Typedefs",url:"globals_type.html"},
 {text:"Enumerations",url:"globals_enum.html"},
