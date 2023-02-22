@@ -90,30 +90,36 @@ $(document).ready(function(){initNavTree('group__pcf__core__debug.html',''); ini
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Debug<div class="ingroups"><a class="el" href="group__pcf__core.html">Core</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_debug_config__t.html">DebugConfig_t</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga5b6f9dbc6aadcdb97c08225a96dfc15c"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga5b6f9dbc6aadcdb97c08225a96dfc15c">pcf_Debug_init</a> (<a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100">DebugPutchar_fp</a> putchar, <a class="el" href="group__pcf__core__debug.html#ga94bb41b5967d548aeb223c45f68ec859">DebugGetchar_fp</a> getchar)</td></tr>
-<tr class="memdesc:ga5b6f9dbc6aadcdb97c08225a96dfc15c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the debug entity object.  <br /></td></tr>
-<tr class="separator:ga5b6f9dbc6aadcdb97c08225a96dfc15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1380fb80a443b030459b788536c594fc"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga1380fb80a443b030459b788536c594fc">pcf_Debug_init</a> (const <a class="el" href="struct_debug_config__t.html">DebugConfig_t</a> *config)</td></tr>
+<tr class="memdesc:ga1380fb80a443b030459b788536c594fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the debug entity object.  <br /></td></tr>
+<tr class="separator:ga1380fb80a443b030459b788536c594fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadc6f4acb94891380c96b01e75a6c3e9c"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#gadc6f4acb94891380c96b01e75a6c3e9c">pcf_Debug_write</a> (<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#afb11352594938a2038de606fb9e8e766">pcf_cstring_t</a> message)</td></tr>
-<tr class="memdesc:gadc6f4acb94891380c96b01e75a6c3e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a null terminated (\0) string on <a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100">DebugPutchar_fp</a> <br /></td></tr>
+<tr class="memdesc:gadc6f4acb94891380c96b01e75a6c3e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a null terminated (\0) string using <a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100">which was configured during initialization. </a> <br /></td></tr>
 <tr class="separator:gadc6f4acb94891380c96b01e75a6c3e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga41e8dbaa71166b2c5014a615a917fc3e"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga41e8dbaa71166b2c5014a615a917fc3e">pcf_Debug_assert</a> (<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#afb11352594938a2038de606fb9e8e766">pcf_cstring_t</a> message, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#afb11352594938a2038de606fb9e8e766">pcf_cstring_t</a> file, uint32_t line)</td></tr>
-<tr class="memdesc:ga41e8dbaa71166b2c5014a615a917fc3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs a specified message and displays file name + line number on initialize <a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100">DebugPutchar_fp</a> <br /></td></tr>
-<tr class="separator:ga41e8dbaa71166b2c5014a615a917fc3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga032555e112725926dd638194139503b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100">DebugPutchar_fp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga032555e112725926dd638194139503b8">DebugConfig_t::putchar</a></td></tr>
+<tr class="separator:ga032555e112725926dd638194139503b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Types</h2></td></tr>
-<tr class="memitem:ga4da2c905a9d3c81e8c8257c33bee3100"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100">DebugPutchar_fp</a>) (uint8_t)</td></tr>
-<tr class="memdesc:ga4da2c905a9d3c81e8c8257c33bee3100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put character callback function.  <br /></td></tr>
+<tr class="memitem:ga4da2c905a9d3c81e8c8257c33bee3100"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100">DebugPutchar_fp</a>) (uint8_t)</td></tr>
+<tr class="memdesc:ga4da2c905a9d3c81e8c8257c33bee3100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put character function pointer.  <br /></td></tr>
 <tr class="separator:ga4da2c905a9d3c81e8c8257c33bee3100"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga94bb41b5967d548aeb223c45f68ec859"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga94bb41b5967d548aeb223c45f68ec859">DebugGetchar_fp</a>) (uint8_t *)</td></tr>
-<tr class="memdesc:ga94bb41b5967d548aeb223c45f68ec859"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get character callback function.  <br /></td></tr>
-<tr class="separator:ga94bb41b5967d548aeb223c45f68ec859"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -124,54 +130,28 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>(* DebugPutchar_fp) (uint8_t)</td>
+          <td class="memname">typedef <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>(* DebugPutchar_fp) (uint8_t)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Put character callback function. </p>
-
-</div>
-</div>
-<a id="ga94bb41b5967d548aeb223c45f68ec859" name="ga94bb41b5967d548aeb223c45f68ec859"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga94bb41b5967d548aeb223c45f68ec859">&#9670;&#160;</a></span>DebugGetchar_fp</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>(* DebugGetchar_fp) (uint8_t *)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get character callback function. </p>
+<p>Put character function pointer. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga5b6f9dbc6aadcdb97c08225a96dfc15c" name="ga5b6f9dbc6aadcdb97c08225a96dfc15c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5b6f9dbc6aadcdb97c08225a96dfc15c">&#9670;&#160;</a></span>pcf_Debug_init()</h2>
+<a id="ga1380fb80a443b030459b788536c594fc" name="ga1380fb80a443b030459b788536c594fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1380fb80a443b030459b788536c594fc">&#9670;&#160;</a></span>pcf_Debug_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Debug_init </td>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Debug_init </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100">DebugPutchar_fp</a>&#160;</td>
-          <td class="paramname"><em>putchar</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="struct_debug_config__t.html">DebugConfig_t</a> *&#160;</td>
+          <td class="paramname"><em>config</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__pcf__core__debug.html#ga94bb41b5967d548aeb223c45f68ec859">DebugGetchar_fp</a>&#160;</td>
-          <td class="paramname"><em>getchar</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -179,12 +159,11 @@ Functions</h2></td></tr>
 <p>Initialize the debug entity object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">putchar</td><td>- Callback function to put a character via <a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100" title="Put character callback function.">DebugPutchar_fp</a> </td></tr>
-    <tr><td class="paramname">getchar</td><td>- Callback function to get a character via <a class="el" href="group__pcf__core__debug.html#ga94bb41b5967d548aeb223c45f68ec859" title="Get character callback function.">DebugGetchar_fp</a> </td></tr>
+    <tr><td class="paramname">config</td><td>- Debug configuration. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> valid values : <ul>
 <li>
 <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2defs_8h.html#a2074293436e51c467c2e63d8c4b55314">PCF_S_SUCCESS</a>  </li>
 <li>
@@ -212,7 +191,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Write a null terminated (\0) string on <a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100">DebugPutchar_fp</a></p>
+<p>Write a null terminated (\0) string using <a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100">which was configured during initialization. </a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">message</td><td>- String to be transmitted of type <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#afb11352594938a2038de606fb9e8e766">pcf_cstring_t</a> </td></tr>
@@ -222,47 +201,18 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga41e8dbaa71166b2c5014a615a917fc3e" name="ga41e8dbaa71166b2c5014a615a917fc3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga41e8dbaa71166b2c5014a615a917fc3e">&#9670;&#160;</a></span>pcf_Debug_assert()</h2>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga032555e112725926dd638194139503b8" name="ga032555e112725926dd638194139503b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga032555e112725926dd638194139503b8">&#9670;&#160;</a></span>putchar</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_CORE_API void pcf_Debug_assert </td>
-          <td>(</td>
-          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#afb11352594938a2038de606fb9e8e766">pcf_cstring_t</a>&#160;</td>
-          <td class="paramname"><em>message</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#afb11352594938a2038de606fb9e8e766">pcf_cstring_t</a>&#160;</td>
-          <td class="paramname"><em>file</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>line</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname"><a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100">DebugPutchar_fp</a> DebugConfig_t::putchar</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Outputs a specified message and displays file name + line number on initialize <a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100">DebugPutchar_fp</a></p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">message</td><td>- String to be transmitted of type <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#afb11352594938a2038de606fb9e8e766">pcf_cstring_t</a> </td></tr>
-    <tr><td class="paramname">file</td><td>- File name of type <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#afb11352594938a2038de606fb9e8e766">pcf_cstring_t</a> </td></tr>
-    <tr><td class="paramname">line</td><td>- Line number of type uint32_t </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

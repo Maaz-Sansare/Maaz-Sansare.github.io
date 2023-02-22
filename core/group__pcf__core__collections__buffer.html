@@ -101,26 +101,12 @@ $(document).ready(function(){initNavTree('group__pcf__core__collections__buffer.
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structphi__numerator__t.html">phi_numerator_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Numerator type.  <a href="structphi__numerator__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_buffer_config__t.html">BufferConfig_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer configuration entity object.  <a href="struct_buffer_config__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gade5435986d3373af3eef158304c1c00e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#gade5435986d3373af3eef158304c1c00e">PHI_NUM_INVALID</a>&#160;&#160;&#160;(-1)</td></tr>
-<tr class="separator:gade5435986d3373af3eef158304c1c00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac31350c3b160f4927d0e6bf17026276b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#gac31350c3b160f4927d0e6bf17026276b">PHI_NUMERATOR_INIT</a>(mask,  disp)</td></tr>
-<tr class="memdesc:gac31350c3b160f4927d0e6bf17026276b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The numerator initialization value.  <br /></td></tr>
-<tr class="separator:gac31350c3b160f4927d0e6bf17026276b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4be18ef03413227ddffc04808011dd84"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#ga4be18ef03413227ddffc04808011dd84">phi_numerator_create</a>(pnum,  vmask,  vdisp)</td></tr>
-<tr class="memdesc:ga4be18ef03413227ddffc04808011dd84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates numerator.  <br /></td></tr>
-<tr class="separator:ga4be18ef03413227ddffc04808011dd84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa2c3655cc532147a63df80cfc78eda24"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#gaa2c3655cc532147a63df80cfc78eda24">phi_numerator_get</a>(pnum)&#160;&#160;&#160;        (int)(((unsigned int)phi_atomic_int_inc(&amp;(pnum)-&gt;cnt) &amp; (pnum)-&gt;mask) + (pnum)-&gt;disp)</td></tr>
-<tr class="memdesc:gaa2c3655cc532147a63df80cfc78eda24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets numerator value and updates numerator to the next value.  <br /></td></tr>
-<tr class="separator:gaa2c3655cc532147a63df80cfc78eda24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4af01b870a3331665ba5e6630ebcf69f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#ga4af01b870a3331665ba5e6630ebcf69f">ITEM_ID_BUFFER</a>&#160;&#160;&#160;3</td></tr>
 <tr class="memdesc:ga4af01b870a3331665ba5e6630ebcf69f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer item ID.  <br /></td></tr>
 <tr class="separator:ga4af01b870a3331665ba5e6630ebcf69f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,188 +152,57 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gabbf0a26eac74836781f3d72e04d01368"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#gabbf0a26eac74836781f3d72e04d01368">pcf_Buffer_new</a> (const <a class="el" href="struct_buffer_config__t.html">BufferConfig_t</a> *config, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> *status)</td></tr>
+<tr class="memitem:gabbf0a26eac74836781f3d72e04d01368"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#gabbf0a26eac74836781f3d72e04d01368">pcf_Buffer_new</a> (const <a class="el" href="struct_buffer_config__t.html">BufferConfig_t</a> *config, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> *status)</td></tr>
 <tr class="memdesc:gabbf0a26eac74836781f3d72e04d01368"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes Buffer entity object.  <br /></td></tr>
 <tr class="separator:gabbf0a26eac74836781f3d72e04d01368"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab53535d2ba3a390fcec7efeb2cc5b9ee"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#gab53535d2ba3a390fcec7efeb2cc5b9ee">pcf_Buffer_delete</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> **buffer)</td></tr>
+<tr class="memitem:gab53535d2ba3a390fcec7efeb2cc5b9ee"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#gab53535d2ba3a390fcec7efeb2cc5b9ee">pcf_Buffer_delete</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> **buffer)</td></tr>
 <tr class="memdesc:gab53535d2ba3a390fcec7efeb2cc5b9ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete/Destroy Buffer entity object.  <br /></td></tr>
 <tr class="separator:gab53535d2ba3a390fcec7efeb2cc5b9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8356f8654e5cf584105c137fce601f38"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#ga8356f8654e5cf584105c137fce601f38">pcf_Buffer_getSize</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> *size)</td></tr>
+<tr class="memitem:ga8356f8654e5cf584105c137fce601f38"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#ga8356f8654e5cf584105c137fce601f38">pcf_Buffer_getSize</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> *size)</td></tr>
 <tr class="memdesc:ga8356f8654e5cf584105c137fce601f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets ringBuffer size.  <br /></td></tr>
 <tr class="separator:ga8356f8654e5cf584105c137fce601f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga79dcd07c048c0b50e584533f827d9802"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#ga79dcd07c048c0b50e584533f827d9802">pcf_Buffer_write</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer, const <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a30ee6362d7b648532f468a9c796bcf49">pcf_byte_t</a> *data, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> size, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> *actual)</td></tr>
-<tr class="memdesc:ga79dcd07c048c0b50e584533f827d9802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes data to the buffer for a given size.  <br /></td></tr>
-<tr class="separator:ga79dcd07c048c0b50e584533f827d9802"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaee16da5eb8b72abeac1ea1755f711cd9"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#gaee16da5eb8b72abeac1ea1755f711cd9">pcf_Buffer_read</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a30ee6362d7b648532f468a9c796bcf49">pcf_byte_t</a> *data, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> size, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> *actual)</td></tr>
-<tr class="memdesc:gaee16da5eb8b72abeac1ea1755f711cd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from the buffer of a given size.  <br /></td></tr>
-<tr class="separator:gaee16da5eb8b72abeac1ea1755f711cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga89381022d71281a5888ed1f1b21819fd"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#ga89381022d71281a5888ed1f1b21819fd">pcf_Buffer_peek</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a30ee6362d7b648532f468a9c796bcf49">pcf_byte_t</a> *data, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> size, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> *actual)</td></tr>
-<tr class="memdesc:ga89381022d71281a5888ed1f1b21819fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peeks element from the buffer.  <br /></td></tr>
-<tr class="separator:ga89381022d71281a5888ed1f1b21819fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga86915234bc27d5a481078816136a3d16"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#ga86915234bc27d5a481078816136a3d16">pcf_Buffer_flush</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer)</td></tr>
-<tr class="memdesc:ga86915234bc27d5a481078816136a3d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empties the Buffer.  <br /></td></tr>
-<tr class="separator:ga86915234bc27d5a481078816136a3d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae4821d5626455e42970079b8b2ba9712"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#gae4821d5626455e42970079b8b2ba9712">pcf_Buffer_isEmpty</a> (const <a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer)</td></tr>
-<tr class="memdesc:gae4821d5626455e42970079b8b2ba9712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the Buffer is empty.  <br /></td></tr>
-<tr class="separator:gae4821d5626455e42970079b8b2ba9712"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga84c606832bbce72dcafe8e004cb475ae"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#ga84c606832bbce72dcafe8e004cb475ae">pcf_Buffer_isFull</a> (const <a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer)</td></tr>
-<tr class="memdesc:ga84c606832bbce72dcafe8e004cb475ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the Buffer is full.  <br /></td></tr>
-<tr class="separator:ga84c606832bbce72dcafe8e004cb475ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae3709fbe11092082637dc289f5d9dd8e"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#gae3709fbe11092082637dc289f5d9dd8e">pcf_Buffer_getFullCount</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> *count)</td></tr>
+<tr class="memitem:gae3709fbe11092082637dc289f5d9dd8e"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#gae3709fbe11092082637dc289f5d9dd8e">pcf_Buffer_getFullCount</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> *count)</td></tr>
 <tr class="memdesc:gae3709fbe11092082637dc289f5d9dd8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets to the number of elements present in the buffer.  <br /></td></tr>
 <tr class="separator:gae3709fbe11092082637dc289f5d9dd8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga82d9c4617e9ae97a9c5cd3438feabdae"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#ga82d9c4617e9ae97a9c5cd3438feabdae">pcf_Buffer_getFreeCount</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> *count)</td></tr>
+<tr class="memitem:ga82d9c4617e9ae97a9c5cd3438feabdae"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#ga82d9c4617e9ae97a9c5cd3438feabdae">pcf_Buffer_getFreeCount</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> *count)</td></tr>
 <tr class="memdesc:ga82d9c4617e9ae97a9c5cd3438feabdae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets to the total free space present in the buffer.  <br /></td></tr>
 <tr class="separator:ga82d9c4617e9ae97a9c5cd3438feabdae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga17d79a29ab31401b6aa06ba8a3aad64a"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#ga17d79a29ab31401b6aa06ba8a3aad64a">pcf_Buffer_skip</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> len, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> *actual_len)</td></tr>
-<tr class="memdesc:ga17d79a29ab31401b6aa06ba8a3aad64a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skips element and also advances the read pointer of the buffer.  <br /></td></tr>
-<tr class="separator:ga17d79a29ab31401b6aa06ba8a3aad64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga81426de584962daf1f0c03335a080bc2"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#ga81426de584962daf1f0c03335a080bc2">pcf_Buffer_advance</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> len, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> *actual_len)</td></tr>
-<tr class="memdesc:ga81426de584962daf1f0c03335a080bc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advances write pointer of the buffer.  <br /></td></tr>
-<tr class="separator:ga81426de584962daf1f0c03335a080bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaabf4304322d4cd43ee19d727fad91f64"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#gaabf4304322d4cd43ee19d727fad91f64">pcf_Buffer_getBaseAddress</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> *address)</td></tr>
+<tr class="memitem:ga79dcd07c048c0b50e584533f827d9802"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#ga79dcd07c048c0b50e584533f827d9802">pcf_Buffer_write</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer, const <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a30ee6362d7b648532f468a9c796bcf49">pcf_byte_t</a> *data, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> size, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> *actual)</td></tr>
+<tr class="memdesc:ga79dcd07c048c0b50e584533f827d9802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes data to the buffer for a given size.  <br /></td></tr>
+<tr class="separator:ga79dcd07c048c0b50e584533f827d9802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaee16da5eb8b72abeac1ea1755f711cd9"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#gaee16da5eb8b72abeac1ea1755f711cd9">pcf_Buffer_read</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a30ee6362d7b648532f468a9c796bcf49">pcf_byte_t</a> *data, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> size, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> *actual)</td></tr>
+<tr class="memdesc:gaee16da5eb8b72abeac1ea1755f711cd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from the buffer of a given size.  <br /></td></tr>
+<tr class="separator:gaee16da5eb8b72abeac1ea1755f711cd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga89381022d71281a5888ed1f1b21819fd"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#ga89381022d71281a5888ed1f1b21819fd">pcf_Buffer_peek</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a30ee6362d7b648532f468a9c796bcf49">pcf_byte_t</a> *data, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> size, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> *actual)</td></tr>
+<tr class="memdesc:ga89381022d71281a5888ed1f1b21819fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peeks element from the buffer.  <br /></td></tr>
+<tr class="separator:ga89381022d71281a5888ed1f1b21819fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86915234bc27d5a481078816136a3d16"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#ga86915234bc27d5a481078816136a3d16">pcf_Buffer_flush</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer)</td></tr>
+<tr class="memdesc:ga86915234bc27d5a481078816136a3d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empties the Buffer.  <br /></td></tr>
+<tr class="separator:ga86915234bc27d5a481078816136a3d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae4821d5626455e42970079b8b2ba9712"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#gae4821d5626455e42970079b8b2ba9712">pcf_Buffer_isEmpty</a> (const <a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer)</td></tr>
+<tr class="memdesc:gae4821d5626455e42970079b8b2ba9712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the Buffer is empty.  <br /></td></tr>
+<tr class="separator:gae4821d5626455e42970079b8b2ba9712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga84c606832bbce72dcafe8e004cb475ae"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#ga84c606832bbce72dcafe8e004cb475ae">pcf_Buffer_isFull</a> (const <a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer)</td></tr>
+<tr class="memdesc:ga84c606832bbce72dcafe8e004cb475ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the Buffer is full.  <br /></td></tr>
+<tr class="separator:ga84c606832bbce72dcafe8e004cb475ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaabf4304322d4cd43ee19d727fad91f64"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#gaabf4304322d4cd43ee19d727fad91f64">pcf_Buffer_getBaseAddress</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> *address)</td></tr>
 <tr class="memdesc:gaabf4304322d4cd43ee19d727fad91f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets to the current base address of the buffer.  <br /></td></tr>
 <tr class="separator:gaabf4304322d4cd43ee19d727fad91f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3ed09588451850ad2eefd4270353e6c6"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#ga3ed09588451850ad2eefd4270353e6c6">pcf_Buffer_getReadAddress</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> *address)</td></tr>
+<tr class="memitem:ga3ed09588451850ad2eefd4270353e6c6"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#ga3ed09588451850ad2eefd4270353e6c6">pcf_Buffer_getReadAddress</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> *address)</td></tr>
 <tr class="memdesc:ga3ed09588451850ad2eefd4270353e6c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets to the current read pointer of the buffer.  <br /></td></tr>
 <tr class="separator:ga3ed09588451850ad2eefd4270353e6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac80dfc7130aee3f484ac05f094a446f9"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#gac80dfc7130aee3f484ac05f094a446f9">pcf_Buffer_getWriteAddress</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> *address)</td></tr>
+<tr class="memitem:gac80dfc7130aee3f484ac05f094a446f9"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#gac80dfc7130aee3f484ac05f094a446f9">pcf_Buffer_getWriteAddress</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> *address)</td></tr>
 <tr class="memdesc:gac80dfc7130aee3f484ac05f094a446f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns the current write pointer of th buffer.  <br /></td></tr>
 <tr class="separator:gac80dfc7130aee3f484ac05f094a446f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga17d79a29ab31401b6aa06ba8a3aad64a"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#ga17d79a29ab31401b6aa06ba8a3aad64a">pcf_Buffer_skip</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> len, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> *actual_len)</td></tr>
+<tr class="memdesc:ga17d79a29ab31401b6aa06ba8a3aad64a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skips element and also advances the read pointer of the buffer.  <br /></td></tr>
+<tr class="separator:ga17d79a29ab31401b6aa06ba8a3aad64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga81426de584962daf1f0c03335a080bc2"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#ga81426de584962daf1f0c03335a080bc2">pcf_Buffer_advance</a> (<a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *buffer, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> len, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> *actual_len)</td></tr>
+<tr class="memdesc:ga81426de584962daf1f0c03335a080bc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advances write pointer of the buffer.  <br /></td></tr>
+<tr class="separator:ga81426de584962daf1f0c03335a080bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="gade5435986d3373af3eef158304c1c00e" name="gade5435986d3373af3eef158304c1c00e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gade5435986d3373af3eef158304c1c00e">&#9670;&#160;</a></span>PHI_NUM_INVALID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PHI_NUM_INVALID&#160;&#160;&#160;(-1)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gac31350c3b160f4927d0e6bf17026276b" name="gac31350c3b160f4927d0e6bf17026276b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac31350c3b160f4927d0e6bf17026276b">&#9670;&#160;</a></span>PHI_NUMERATOR_INIT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PHI_NUMERATOR_INIT</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">mask, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">disp&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">        { \</div>
-<div class="line">        .cnt = 0, \</div>
-<div class="line">        .mask = (mask), \</div>
-<div class="line">        .disp = (disp) \</div>
-<div class="line">    }</div>
-</div><!-- fragment -->
-<p>The numerator initialization value. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mask</td><td>- the numerator mask. </td></tr>
-    <tr><td class="paramname">disp</td><td>- the numerator start displacement. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ga4be18ef03413227ddffc04808011dd84" name="ga4be18ef03413227ddffc04808011dd84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4be18ef03413227ddffc04808011dd84">&#9670;&#160;</a></span>phi_numerator_create</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define phi_numerator_create</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">pnum, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">vmask, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">vdisp&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">        (void)( \</div>
-<div class="line">        (pnum)-&gt;cnt = 0, (pnum)-&gt;mask = (vmask), (pnum)-&gt;disp = (vdisp), \</div>
-<div class="line">        0 )</div>
-</div><!-- fragment -->
-<p>Creates numerator. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pnum</td><td>- the pointer to numerator. </td></tr>
-    <tr><td class="paramname">vmask</td><td>- the numerator mask. </td></tr>
-    <tr><td class="paramname">vdisp</td><td>- the numerator start displacement. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>None. </dd></dl>
-
-</div>
-</div>
-<a id="gaa2c3655cc532147a63df80cfc78eda24" name="gaa2c3655cc532147a63df80cfc78eda24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa2c3655cc532147a63df80cfc78eda24">&#9670;&#160;</a></span>phi_numerator_get</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define phi_numerator_get</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">pnum</td><td>)</td>
-          <td>&#160;&#160;&#160;        (int)(((unsigned int)phi_atomic_int_inc(&amp;(pnum)-&gt;cnt) &amp; (pnum)-&gt;mask) + (pnum)-&gt;disp)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets numerator value and updates numerator to the next value. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pnum</td><td>- the pointer to iterator. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The numerator value. </dd></dl>
-
-</div>
-</div>
 <a id="ga4af01b870a3331665ba5e6630ebcf69f" name="ga4af01b870a3331665ba5e6630ebcf69f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4af01b870a3331665ba5e6630ebcf69f">&#9670;&#160;</a></span>ITEM_ID_BUFFER</h2>
 
@@ -587,7 +442,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> *&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> *&#160;</td>
           <td class="paramname"><em>status</em>&#160;</td>
         </tr>
         <tr>
@@ -601,8 +456,8 @@ Functions</h2></td></tr>
 <p>Initializes Buffer entity object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">config</td><td>- Buffer configuartion. </td></tr>
-    <tr><td class="paramname">status</td><td>- Pointer to <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
+    <tr><td class="paramname">config</td><td>- Buffer configuration. </td></tr>
+    <tr><td class="paramname">status</td><td>- Pointer to <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
 <li>
 <a class="el" href="group__pcf__core__collections__buffer.html#gacf248ae4080f383febcc8e179cfa269c">PCF_BUFFER_S_SUCCESS</a>  </li>
 <li>
@@ -627,7 +482,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_delete </td>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_delete </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> **&#160;</td>
           <td class="paramname"><em>buffer</em></td><td>)</td>
@@ -643,7 +498,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
 <li>
 <a class="el" href="group__pcf__core__collections__buffer.html#gacf248ae4080f383febcc8e179cfa269c">PCF_BUFFER_S_SUCCESS</a>  </li>
 <li>
@@ -660,7 +515,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_getSize </td>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_getSize </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
@@ -687,7 +542,93 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
+<li>
+<a class="el" href="group__pcf__core__collections__buffer.html#gacf248ae4080f383febcc8e179cfa269c">PCF_BUFFER_S_SUCCESS</a>  </li>
+<li>
+<a class="el" href="group__pcf__core__collections__buffer.html#gacfbddea2adb5129504d8e843c747dafb">PCF_BUFFER_S_NULL_ARG</a>  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="gae3709fbe11092082637dc289f5d9dd8e" name="gae3709fbe11092082637dc289f5d9dd8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae3709fbe11092082637dc289f5d9dd8e">&#9670;&#160;</a></span>pcf_Buffer_getFullCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_getFullCount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> *&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets to the number of elements present in the buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>- Buffer entity object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
+<li>
+<a class="el" href="group__pcf__core__collections__buffer.html#gacf248ae4080f383febcc8e179cfa269c">PCF_BUFFER_S_SUCCESS</a>  </li>
+<li>
+<a class="el" href="group__pcf__core__collections__buffer.html#gacfbddea2adb5129504d8e843c747dafb">PCF_BUFFER_S_NULL_ARG</a>  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ga82d9c4617e9ae97a9c5cd3438feabdae" name="ga82d9c4617e9ae97a9c5cd3438feabdae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga82d9c4617e9ae97a9c5cd3438feabdae">&#9670;&#160;</a></span>pcf_Buffer_getFreeCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_getFreeCount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> *&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets to the total free space present in the buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>- Buffer entity object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
 <li>
 <a class="el" href="group__pcf__core__collections__buffer.html#gacf248ae4080f383febcc8e179cfa269c">PCF_BUFFER_S_SUCCESS</a>  </li>
 <li>
@@ -704,7 +645,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_write </td>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_write </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
@@ -745,7 +686,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
 <li>
 <a class="el" href="group__pcf__core__collections__buffer.html#gacf248ae4080f383febcc8e179cfa269c">PCF_BUFFER_S_SUCCESS</a>  </li>
 <li>
@@ -764,7 +705,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_read </td>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_read </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
@@ -805,7 +746,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
 <li>
 <a class="el" href="group__pcf__core__collections__buffer.html#gacf248ae4080f383febcc8e179cfa269c">PCF_BUFFER_S_SUCCESS</a>  </li>
 <li>
@@ -826,7 +767,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_peek </td>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_peek </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
@@ -869,7 +810,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
 <li>
 <a class="el" href="group__pcf__core__collections__buffer.html#gacf248ae4080f383febcc8e179cfa269c">PCF_BUFFER_S_SUCCESS</a>  </li>
 <li>
@@ -890,7 +831,7 @@ PCF_BUFFER_S_NOT_IMPLEMENTED  </li>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_flush </td>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_flush </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *&#160;</td>
           <td class="paramname"><em>buffer</em></td><td>)</td>
@@ -906,7 +847,7 @@ PCF_BUFFER_S_NOT_IMPLEMENTED  </li>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
 <li>
 <a class="el" href="group__pcf__core__collections__buffer.html#gacf248ae4080f383febcc8e179cfa269c">PCF_BUFFER_S_SUCCESS</a>  </li>
 <li>
@@ -923,7 +864,7 @@ PCF_BUFFER_S_NOT_IMPLEMENTED  </li>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_isEmpty </td>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_isEmpty </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *&#160;</td>
           <td class="paramname"><em>buffer</em></td><td>)</td>
@@ -939,7 +880,7 @@ PCF_BUFFER_S_NOT_IMPLEMENTED  </li>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
 <li>
 <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2defs_8h.html#a5101b8a9f51cc3412f94ae1cfd661bd0">PCF_S_YES</a>  </li>
 <li>
@@ -958,7 +899,7 @@ PCF_BUFFER_S_NOT_IMPLEMENTED  </li>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_isFull </td>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_isFull </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *&#160;</td>
           <td class="paramname"><em>buffer</em></td><td>)</td>
@@ -974,7 +915,7 @@ PCF_BUFFER_S_NOT_IMPLEMENTED  </li>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
 <li>
 <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2defs_8h.html#a5101b8a9f51cc3412f94ae1cfd661bd0">PCF_S_YES</a>  </li>
 <li>
@@ -986,14 +927,14 @@ PCF_BUFFER_S_NOT_IMPLEMENTED  </li>
 
 </div>
 </div>
-<a id="gae3709fbe11092082637dc289f5d9dd8e" name="gae3709fbe11092082637dc289f5d9dd8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae3709fbe11092082637dc289f5d9dd8e">&#9670;&#160;</a></span>pcf_Buffer_getFullCount()</h2>
+<a id="gaabf4304322d4cd43ee19d727fad91f64" name="gaabf4304322d4cd43ee19d727fad91f64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaabf4304322d4cd43ee19d727fad91f64">&#9670;&#160;</a></span>pcf_Buffer_getBaseAddress()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_getFullCount </td>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_getBaseAddress </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
@@ -1001,8 +942,8 @@ PCF_BUFFER_S_NOT_IMPLEMENTED  </li>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> *&#160;</td>
-          <td class="paramname"><em>count</em>&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> *&#160;</td>
+          <td class="paramname"><em>address</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1012,14 +953,15 @@ PCF_BUFFER_S_NOT_IMPLEMENTED  </li>
       </table>
 </div><div class="memdoc">
 
-<p>Sets to the number of elements present in the buffer. </p>
+<p>Sets to the current base address of the buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffer</td><td>- Buffer entity object. </td></tr>
+    <tr><td class="paramname">address</td><td>- Address of the underlying byte buffer. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
 <li>
 <a class="el" href="group__pcf__core__collections__buffer.html#gacf248ae4080f383febcc8e179cfa269c">PCF_BUFFER_S_SUCCESS</a>  </li>
 <li>
@@ -1029,14 +971,14 @@ PCF_BUFFER_S_NOT_IMPLEMENTED  </li>
 
 </div>
 </div>
-<a id="ga82d9c4617e9ae97a9c5cd3438feabdae" name="ga82d9c4617e9ae97a9c5cd3438feabdae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga82d9c4617e9ae97a9c5cd3438feabdae">&#9670;&#160;</a></span>pcf_Buffer_getFreeCount()</h2>
+<a id="ga3ed09588451850ad2eefd4270353e6c6" name="ga3ed09588451850ad2eefd4270353e6c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3ed09588451850ad2eefd4270353e6c6">&#9670;&#160;</a></span>pcf_Buffer_getReadAddress()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_getFreeCount </td>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_getReadAddress </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
@@ -1044,8 +986,8 @@ PCF_BUFFER_S_NOT_IMPLEMENTED  </li>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> *&#160;</td>
-          <td class="paramname"><em>count</em>&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> *&#160;</td>
+          <td class="paramname"><em>address</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1055,14 +997,61 @@ PCF_BUFFER_S_NOT_IMPLEMENTED  </li>
       </table>
 </div><div class="memdoc">
 
-<p>Sets to the total free space present in the buffer. </p>
+<p>Sets to the current read pointer of the buffer. </p>
+<p>The address from where read will start.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffer</td><td>- Buffer entity object. </td></tr>
+    <tr><td class="paramname">address</td><td>- Read pointer of the underlying byte buffer. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
+<li>
+<a class="el" href="group__pcf__core__collections__buffer.html#gacf248ae4080f383febcc8e179cfa269c">PCF_BUFFER_S_SUCCESS</a>  </li>
+<li>
+<a class="el" href="group__pcf__core__collections__buffer.html#gacfbddea2adb5129504d8e843c747dafb">PCF_BUFFER_S_NULL_ARG</a>  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="gac80dfc7130aee3f484ac05f094a446f9" name="gac80dfc7130aee3f484ac05f094a446f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac80dfc7130aee3f484ac05f094a446f9">&#9670;&#160;</a></span>pcf_Buffer_getWriteAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_getWriteAddress </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> *&#160;</td>
+          <td class="paramname"><em>address</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function returns the current write pointer of th buffer. </p>
+<p>The address from where write will start.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>- Buffer entity object. </td></tr>
+    <tr><td class="paramname">address</td><td>- Write pointer of the underlying byte buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
 <li>
 <a class="el" href="group__pcf__core__collections__buffer.html#gacf248ae4080f383febcc8e179cfa269c">PCF_BUFFER_S_SUCCESS</a>  </li>
 <li>
@@ -1079,7 +1068,7 @@ PCF_BUFFER_S_NOT_IMPLEMENTED  </li>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_skip </td>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_skip </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
@@ -1113,7 +1102,7 @@ PCF_BUFFER_S_NOT_IMPLEMENTED  </li>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
 <li>
 <a class="el" href="group__pcf__core__collections__buffer.html#gacf248ae4080f383febcc8e179cfa269c">PCF_BUFFER_S_SUCCESS</a>  </li>
 <li>
@@ -1134,7 +1123,7 @@ PCF_BUFFER_S_NOT_IMPLEMENTED  </li>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_advance </td>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_advance </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
@@ -1168,7 +1157,7 @@ PCF_BUFFER_S_NOT_IMPLEMENTED  </li>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
 <li>
 <a class="el" href="group__pcf__core__collections__buffer.html#gacf248ae4080f383febcc8e179cfa269c">PCF_BUFFER_S_SUCCESS</a>  </li>
 <li>
@@ -1177,140 +1166,6 @@ PCF_BUFFER_S_NOT_IMPLEMENTED  </li>
 <a class="el" href="group__pcf__core__collections__buffer.html#ga8d1048bae83bca78b12865d74fa8024c">PCF_BUFFER_S_INVALID_ARG</a>  </li>
 <li>
 <a class="el" href="group__pcf__core__collections__buffer.html#gad378574d23093887d9531acb037a325b">PCF_BUFFER_S_NO_SPACE</a>  </li>
-</ul>
-</dd></dl>
-
-</div>
-</div>
-<a id="gaabf4304322d4cd43ee19d727fad91f64" name="gaabf4304322d4cd43ee19d727fad91f64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaabf4304322d4cd43ee19d727fad91f64">&#9670;&#160;</a></span>pcf_Buffer_getBaseAddress()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_getBaseAddress </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> *&#160;</td>
-          <td class="paramname"><em>address</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets to the current base address of the buffer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buffer</td><td>- Buffer entity object. </td></tr>
-    <tr><td class="paramname">address</td><td>- Address of the underlying byte buffer. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
-<li>
-<a class="el" href="group__pcf__core__collections__buffer.html#gacf248ae4080f383febcc8e179cfa269c">PCF_BUFFER_S_SUCCESS</a>  </li>
-<li>
-<a class="el" href="group__pcf__core__collections__buffer.html#gacfbddea2adb5129504d8e843c747dafb">PCF_BUFFER_S_NULL_ARG</a>  </li>
-</ul>
-</dd></dl>
-
-</div>
-</div>
-<a id="ga3ed09588451850ad2eefd4270353e6c6" name="ga3ed09588451850ad2eefd4270353e6c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3ed09588451850ad2eefd4270353e6c6">&#9670;&#160;</a></span>pcf_Buffer_getReadAddress()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_getReadAddress </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> *&#160;</td>
-          <td class="paramname"><em>address</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets to the current read pointer of the buffer. </p>
-<p>The address from where read will start.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buffer</td><td>- Buffer entity object. </td></tr>
-    <tr><td class="paramname">address</td><td>- Read pointer of the underlying byte buffer. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
-<li>
-<a class="el" href="group__pcf__core__collections__buffer.html#gacf248ae4080f383febcc8e179cfa269c">PCF_BUFFER_S_SUCCESS</a>  </li>
-<li>
-<a class="el" href="group__pcf__core__collections__buffer.html#gacfbddea2adb5129504d8e843c747dafb">PCF_BUFFER_S_NULL_ARG</a>  </li>
-</ul>
-</dd></dl>
-
-</div>
-</div>
-<a id="gac80dfc7130aee3f484ac05f094a446f9" name="gac80dfc7130aee3f484ac05f094a446f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac80dfc7130aee3f484ac05f094a446f9">&#9670;&#160;</a></span>pcf_Buffer_getWriteAddress()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Buffer_getWriteAddress </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a> *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> *&#160;</td>
-          <td class="paramname"><em>address</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This function returns the current write pointer of th buffer. </p>
-<p>The address from where write will start.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buffer</td><td>- Buffer entity object. </td></tr>
-    <tr><td class="paramname">address</td><td>- Write pointer of the underlying byte buffer. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
-<li>
-<a class="el" href="group__pcf__core__collections__buffer.html#gacf248ae4080f383febcc8e179cfa269c">PCF_BUFFER_S_SUCCESS</a>  </li>
-<li>
-<a class="el" href="group__pcf__core__collections__buffer.html#gacfbddea2adb5129504d8e843c747dafb">PCF_BUFFER_S_NULL_ARG</a>  </li>
 </ul>
 </dd></dl>
 

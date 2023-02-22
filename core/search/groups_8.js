@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['utils_0',['Utils',['../group__pcf__core__utils.html',1,'']]]
+  ['string_0',['String',['../group__pcf__core__string.html',1,'']]]
 ];

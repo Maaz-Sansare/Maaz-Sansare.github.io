@@ -97,38 +97,38 @@ $(document).ready(function(){initNavTree('group__pcf__core__utils__bit__operatio
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga132305aab060cd6dfb36ffcbc96aba96"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils__bit__operation.html#ga132305aab060cd6dfb36ffcbc96aba96">PCF_CLEAR_BIT</a>(REG,  POSITION)&#160;&#160;&#160;((REG) &amp;= ~((0x1UL) &lt;&lt; POSITION))</td></tr>
-<tr class="memdesc:ga132305aab060cd6dfb36ffcbc96aba96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear a bit for a given position.  <br /></td></tr>
+<tr class="memitem:ga132305aab060cd6dfb36ffcbc96aba96"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils__bit__operation.html#ga132305aab060cd6dfb36ffcbc96aba96">PCF_CLEAR_BIT</a>(REG,  POSITION)&#160;&#160;&#160;((REG) &amp;= ~((0x1UL) &lt;&lt; (POSITION)))</td></tr>
+<tr class="memdesc:ga132305aab060cd6dfb36ffcbc96aba96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear a bit at a given position.  <br /></td></tr>
 <tr class="separator:ga132305aab060cd6dfb36ffcbc96aba96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad1cdf40e58b8e48dad29170fe3e8b2b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils__bit__operation.html#gad1cdf40e58b8e48dad29170fe3e8b2b5">PCF_CLEAR_CONTINUOUS_BITS</a>(REG,  START,  LENGTH)&#160;&#160;&#160;((REG) &amp;= ~((((0x1UL) &lt;&lt; LENGTH) - 1) &lt;&lt; START))</td></tr>
-<tr class="memdesc:gad1cdf40e58b8e48dad29170fe3e8b2b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear bits for a given length from a given position.  <br /></td></tr>
+<tr class="memitem:gad1cdf40e58b8e48dad29170fe3e8b2b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils__bit__operation.html#gad1cdf40e58b8e48dad29170fe3e8b2b5">PCF_CLEAR_CONTINUOUS_BITS</a>(REG,  START,  LENGTH)&#160;&#160;&#160;((REG) &amp;= ~((((0x1UL) &lt;&lt; (LENGTH)) - 1) &lt;&lt; (START)))</td></tr>
+<tr class="memdesc:gad1cdf40e58b8e48dad29170fe3e8b2b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear bits at a given length from a given position.  <br /></td></tr>
 <tr class="separator:gad1cdf40e58b8e48dad29170fe3e8b2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadfe0f2974e5233363d1961a901b08283"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils__bit__operation.html#gadfe0f2974e5233363d1961a901b08283">PCF_CLEAR_BITS</a>(REG,  MASK)&#160;&#160;&#160;((REG) &amp;= ~(MASK))</td></tr>
-<tr class="memdesc:gadfe0f2974e5233363d1961a901b08283"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear bits for a given mask.  <br /></td></tr>
+<tr class="memdesc:gadfe0f2974e5233363d1961a901b08283"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear bits at a given mask.  <br /></td></tr>
 <tr class="separator:gadfe0f2974e5233363d1961a901b08283"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaadae89e8c897e7e54a9288c186893d61"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils__bit__operation.html#gaadae89e8c897e7e54a9288c186893d61">PCF_CLEAR_REG</a>(REG)&#160;&#160;&#160;((REG) = (0x0UL))</td></tr>
 <tr class="memdesc:gaadae89e8c897e7e54a9288c186893d61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear whole reg.  <br /></td></tr>
 <tr class="separator:gaadae89e8c897e7e54a9288c186893d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae4083e995b4a9dd80cdc3fb1645b6e5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils__bit__operation.html#gae4083e995b4a9dd80cdc3fb1645b6e5d">PCF_SET_BIT</a>(REG,  POSITION)&#160;&#160;&#160;((REG) |= ((0x1UL) &lt;&lt; POSITION))</td></tr>
-<tr class="memdesc:gae4083e995b4a9dd80cdc3fb1645b6e5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a bit for a given position.  <br /></td></tr>
+<tr class="memitem:gae4083e995b4a9dd80cdc3fb1645b6e5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils__bit__operation.html#gae4083e995b4a9dd80cdc3fb1645b6e5d">PCF_SET_BIT</a>(REG,  POSITION)&#160;&#160;&#160;((REG) |= ((0x1UL) &lt;&lt; (POSITION)))</td></tr>
+<tr class="memdesc:gae4083e995b4a9dd80cdc3fb1645b6e5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a bit at a given position.  <br /></td></tr>
 <tr class="separator:gae4083e995b4a9dd80cdc3fb1645b6e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac148952f3e0e71fb6e14a3f89f587b19"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils__bit__operation.html#gac148952f3e0e71fb6e14a3f89f587b19">PCF_SET_CONTINUOUS_BITS</a>(REG,  START,  LENGTH)&#160;&#160;&#160;((REG) |= ((((0x1UL) &lt;&lt; LENGTH) - 1) &lt;&lt; START))</td></tr>
-<tr class="memdesc:gac148952f3e0e71fb6e14a3f89f587b19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set bits for a given length from a given position.  <br /></td></tr>
+<tr class="memitem:gac148952f3e0e71fb6e14a3f89f587b19"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils__bit__operation.html#gac148952f3e0e71fb6e14a3f89f587b19">PCF_SET_CONTINUOUS_BITS</a>(REG,  START,  LENGTH)&#160;&#160;&#160;((REG) |= ((((0x1UL) &lt;&lt; (LENGTH)) - 1) &lt;&lt; (START)))</td></tr>
+<tr class="memdesc:gac148952f3e0e71fb6e14a3f89f587b19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set bits at a given length from a given position.  <br /></td></tr>
 <tr class="separator:gac148952f3e0e71fb6e14a3f89f587b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7aa836b0c5f68650af8b721a4ff3b685"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils__bit__operation.html#ga7aa836b0c5f68650af8b721a4ff3b685">PCF_SET_BITS</a>(REG,  MASK)&#160;&#160;&#160;((REG) |= (MASK))</td></tr>
-<tr class="memdesc:ga7aa836b0c5f68650af8b721a4ff3b685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set bits for a given mask.  <br /></td></tr>
+<tr class="memdesc:ga7aa836b0c5f68650af8b721a4ff3b685"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set bits at a given mask.  <br /></td></tr>
 <tr class="separator:ga7aa836b0c5f68650af8b721a4ff3b685"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0a1f97a5ee11325e3dc9a31439375308"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils__bit__operation.html#ga0a1f97a5ee11325e3dc9a31439375308">PCF_WRITE_REG</a>(REG,  VALUE)&#160;&#160;&#160;((REG) = (VALUE))</td></tr>
 <tr class="memdesc:ga0a1f97a5ee11325e3dc9a31439375308"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write value to a reg.  <br /></td></tr>
 <tr class="separator:ga0a1f97a5ee11325e3dc9a31439375308"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae20712af3dcf53907b1f99288d851499"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils__bit__operation.html#gae20712af3dcf53907b1f99288d851499">PCF_READ_BIT</a>(REG,  POSITION)&#160;&#160;&#160;(((REG) &amp; ((0x1UL) &lt;&lt; POSITION)) &gt;&gt; POSITION)</td></tr>
-<tr class="memdesc:gae20712af3dcf53907b1f99288d851499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a bit for a given position.  <br /></td></tr>
+<tr class="memitem:gae20712af3dcf53907b1f99288d851499"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils__bit__operation.html#gae20712af3dcf53907b1f99288d851499">PCF_READ_BIT</a>(REG,  POSITION)&#160;&#160;&#160;(((REG) &amp; ((0x1UL) &lt;&lt; (POSITION))) &gt;&gt; (POSITION))</td></tr>
+<tr class="memdesc:gae20712af3dcf53907b1f99288d851499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a bit at a given position.  <br /></td></tr>
 <tr class="separator:gae20712af3dcf53907b1f99288d851499"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga88090c4df24f3748e4d16b781ea21676"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils__bit__operation.html#ga88090c4df24f3748e4d16b781ea21676">PCF_READ_BITS</a>(REG,  MSK)&#160;&#160;&#160;((REG) &amp; (MSK))</td></tr>
-<tr class="memdesc:ga88090c4df24f3748e4d16b781ea21676"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read bits for a given mask.  <br /></td></tr>
+<tr class="memdesc:ga88090c4df24f3748e4d16b781ea21676"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read bits at a given mask.  <br /></td></tr>
 <tr class="separator:ga88090c4df24f3748e4d16b781ea21676"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6737604da97fa09dbd48a6ff00701bdf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils__bit__operation.html#ga6737604da97fa09dbd48a6ff00701bdf">PCF_READ_CONTINUOUS_BITS</a>(REG,  START,  LENGTH)&#160;&#160;&#160;(((REG) &amp; ((((0x1UL) &lt;&lt; LENGTH) - 1) &lt;&lt; START)) &gt;&gt; START)</td></tr>
-<tr class="memdesc:ga6737604da97fa09dbd48a6ff00701bdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read bits for a given length from a given position.  <br /></td></tr>
+<tr class="memitem:ga6737604da97fa09dbd48a6ff00701bdf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils__bit__operation.html#ga6737604da97fa09dbd48a6ff00701bdf">PCF_READ_CONTINUOUS_BITS</a>(REG,  START,  LENGTH)&#160;&#160;&#160;(((REG) &amp; ((((0x1UL) &lt;&lt; (LENGTH)) - 1) &lt;&lt; (START))) &gt;&gt; (START))</td></tr>
+<tr class="memdesc:ga6737604da97fa09dbd48a6ff00701bdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read bits at a given length from a given position.  <br /></td></tr>
 <tr class="separator:ga6737604da97fa09dbd48a6ff00701bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae959089d3aedb19e78dd50d6e05b1b96"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils__bit__operation.html#gae959089d3aedb19e78dd50d6e05b1b96">PCF_READ_REG</a>(REG)&#160;&#160;&#160;(REG)</td></tr>
 <tr class="memdesc:gae959089d3aedb19e78dd50d6e05b1b96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read reg value.  <br /></td></tr>
@@ -160,12 +160,12 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((REG) &amp;= ~((0x1UL) &lt;&lt; POSITION))</td>
+          <td></td><td>&#160;&#160;&#160;((REG) &amp;= ~((0x1UL) &lt;&lt; (POSITION)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Clear a bit for a given position. </p>
+<p>Clear a bit at a given position. </p>
 
 </div>
 </div>
@@ -196,12 +196,12 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((REG) &amp;= ~((((0x1UL) &lt;&lt; LENGTH) - 1) &lt;&lt; START))</td>
+          <td></td><td>&#160;&#160;&#160;((REG) &amp;= ~((((0x1UL) &lt;&lt; (LENGTH)) - 1) &lt;&lt; (START)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Clear bits for a given length from a given position. </p>
+<p>Clear bits at a given length from a given position. </p>
 
 </div>
 </div>
@@ -231,7 +231,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Clear bits for a given mask. </p>
+<p>Clear bits at a given mask. </p>
 
 </div>
 </div>
@@ -276,12 +276,12 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((REG) |= ((0x1UL) &lt;&lt; POSITION))</td>
+          <td></td><td>&#160;&#160;&#160;((REG) |= ((0x1UL) &lt;&lt; (POSITION)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set a bit for a given position. </p>
+<p>Set a bit at a given position. </p>
 
 </div>
 </div>
@@ -312,12 +312,12 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;((REG) |= ((((0x1UL) &lt;&lt; LENGTH) - 1) &lt;&lt; START))</td>
+          <td></td><td>&#160;&#160;&#160;((REG) |= ((((0x1UL) &lt;&lt; (LENGTH)) - 1) &lt;&lt; (START)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set bits for a given length from a given position. </p>
+<p>Set bits at a given length from a given position. </p>
 
 </div>
 </div>
@@ -347,7 +347,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set bits for a given mask. </p>
+<p>Set bits at a given mask. </p>
 
 </div>
 </div>
@@ -402,12 +402,12 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(((REG) &amp; ((0x1UL) &lt;&lt; POSITION)) &gt;&gt; POSITION)</td>
+          <td></td><td>&#160;&#160;&#160;(((REG) &amp; ((0x1UL) &lt;&lt; (POSITION))) &gt;&gt; (POSITION))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Read a bit for a given position. </p>
+<p>Read a bit at a given position. </p>
 
 </div>
 </div>
@@ -437,7 +437,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Read bits for a given mask. </p>
+<p>Read bits at a given mask. </p>
 
 </div>
 </div>
@@ -468,12 +468,12 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(((REG) &amp; ((((0x1UL) &lt;&lt; LENGTH) - 1) &lt;&lt; START)) &gt;&gt; START)</td>
+          <td></td><td>&#160;&#160;&#160;(((REG) &amp; ((((0x1UL) &lt;&lt; (LENGTH)) - 1) &lt;&lt; (START))) &gt;&gt; (START))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Read bits for a given length from a given position. </p>
+<p>Read bits at a given length from a given position. </p>
 
 </div>
 </div>

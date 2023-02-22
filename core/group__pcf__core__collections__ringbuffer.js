@@ -2,7 +2,8 @@ var group__pcf__core__collections__ringbuffer =
 [
     [ "RingBufferConfig_t", "struct_ring_buffer_config__t.html", [
       [ "size", "struct_ring_buffer_config__t.html#a4f0beb666687bf8fd89694254c44a54f", null ],
-      [ "elementSize", "struct_ring_buffer_config__t.html#a1b78bfc54d29302b4c013441f179489c", null ]
+      [ "elementSize", "struct_ring_buffer_config__t.html#a1b78bfc54d29302b4c013441f179489c", null ],
+      [ "memoryConfig", "struct_ring_buffer_config__t.html#a9d5d49631029e3464ee325b7611ee9f9", null ]
     ] ],
     [ "ITEM_ID_RING_BUFFER", "group__pcf__core__collections__ringbuffer.html#gacfa4b1176604336fab61d957525700f4", null ],
     [ "PCF_RING_BUFFER_S_SUCCESS", "group__pcf__core__collections__ringbuffer.html#gabb5e6996fe457c1a18b6bafe1b51a1dc", null ],

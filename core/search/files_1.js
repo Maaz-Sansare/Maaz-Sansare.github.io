@@ -4,6 +4,5 @@ var searchData=
   ['arm_2eh_1',['arm.h',['https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/arm_8h.html',1,'']]],
   ['armgcc_2eh_2',['armgcc.h',['https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/armgcc_8h.html',1,'']]],
   ['array_2eh_3',['array.h',['../array_8h.html',1,'']]],
-  ['assert_2eh_4',['assert.h',['../assert_8h.html',1,'']]],
-  ['atomic_2eh_5',['atomic.h',['../atomic_8h.html',1,'']]]
+  ['assert_2eh_4',['assert.h',['../assert_8h.html',1,'']]]
 ];

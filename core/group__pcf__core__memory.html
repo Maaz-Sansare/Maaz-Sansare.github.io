@@ -97,29 +97,214 @@ $(document).ready(function(){initNavTree('group__pcf__core__memory.html',''); in
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gae2a29faa8f4a449c08c35a6520bb7b4c"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#gae2a29faa8f4a449c08c35a6520bb7b4c">pcf_Memory_copy</a> (<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> dest, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> src, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> size)</td></tr>
-<tr class="memdesc:gae2a29faa8f4a449c08c35a6520bb7b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies size bytes from the location pointed by src directly to the memory block pointed by dest.  <br /></td></tr>
-<tr class="separator:gae2a29faa8f4a449c08c35a6520bb7b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa94fe8601d8130b55aeabbb3e0e263a9"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#gaa94fe8601d8130b55aeabbb3e0e263a9">pcf_Memory_move</a> (<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> dest, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> src, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> size)</td></tr>
-<tr class="memdesc:gaa94fe8601d8130b55aeabbb3e0e263a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies size bytes from the location pointed by src to the memory block pointed by dest.  <br /></td></tr>
-<tr class="separator:gaa94fe8601d8130b55aeabbb3e0e263a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga536d6272645603d3ff647d40e82cbf89"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#ga536d6272645603d3ff647d40e82cbf89">pcf_Memory_set</a> (<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> memory, uint8_t value, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> size)</td></tr>
+<tr class="memitem:ga8e933f28b8a5e97c8e63ed3a50794c74"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#ga8e933f28b8a5e97c8e63ed3a50794c74">pcf_Memory_allocate</a> (<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> size, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> *status)</td></tr>
+<tr class="memdesc:ga8e933f28b8a5e97c8e63ed3a50794c74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamically allocate the memory.  <br /></td></tr>
+<tr class="separator:ga8e933f28b8a5e97c8e63ed3a50794c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b2072dc11c9de05291f9806755bc4a0"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#ga9b2072dc11c9de05291f9806755bc4a0">pcf_Memory_calloc</a> (int n, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> size)</td></tr>
+<tr class="memdesc:ga9b2072dc11c9de05291f9806755bc4a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamically allocate the memory and initializes the memory block to zero.  <br /></td></tr>
+<tr class="separator:ga9b2072dc11c9de05291f9806755bc4a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga25739031b5e50fc227bce8201bce3cde"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#ga25739031b5e50fc227bce8201bce3cde">pcf_Memory_reallocate</a> (<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> memory, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> size, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> *status)</td></tr>
+<tr class="memdesc:ga25739031b5e50fc227bce8201bce3cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamically re-allocate the memory.  <br /></td></tr>
+<tr class="separator:ga25739031b5e50fc227bce8201bce3cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f32b27765bd5253ea005b433a7e8ca9"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#ga4f32b27765bd5253ea005b433a7e8ca9">pcf_Memory_free</a> (<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> memory)</td></tr>
+<tr class="memdesc:ga4f32b27765bd5253ea005b433a7e8ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamically de-allocate the memory.  <br /></td></tr>
+<tr class="separator:ga4f32b27765bd5253ea005b433a7e8ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae5791e9f54812097a2e2cd55cf126bf2"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#gae5791e9f54812097a2e2cd55cf126bf2">pcf_Memory_copy</a> (<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> dest, const <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> src, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> size)</td></tr>
+<tr class="memdesc:gae5791e9f54812097a2e2cd55cf126bf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies size bytes from the location pointed by src directly to the memory block pointed by dest.  <br /></td></tr>
+<tr class="separator:gae5791e9f54812097a2e2cd55cf126bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46fb48d6eaa7d69773675b78a1b97420"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#ga46fb48d6eaa7d69773675b78a1b97420">pcf_Memory_move</a> (<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> dest, const <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> src, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> size)</td></tr>
+<tr class="memdesc:ga46fb48d6eaa7d69773675b78a1b97420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies size bytes from the location pointed by src to the memory block pointed by dest.  <br /></td></tr>
+<tr class="separator:ga46fb48d6eaa7d69773675b78a1b97420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga536d6272645603d3ff647d40e82cbf89"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#ga536d6272645603d3ff647d40e82cbf89">pcf_Memory_set</a> (<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> memory, uint8_t value, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> size)</td></tr>
 <tr class="memdesc:ga536d6272645603d3ff647d40e82cbf89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the first size bytes of the block of memory pointed by memory to the specified value.  <br /></td></tr>
 <tr class="separator:ga536d6272645603d3ff647d40e82cbf89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga674df23d9ee9fe0f1153c792648ea7ae"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#ga674df23d9ee9fe0f1153c792648ea7ae">pcf_Memory_compare</a> (<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> mem1, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> mem2, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> size)</td></tr>
-<tr class="memdesc:ga674df23d9ee9fe0f1153c792648ea7ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the first size bytes of the block of memory pointed by mem1 to the first size bytes.  <br /></td></tr>
-<tr class="separator:ga674df23d9ee9fe0f1153c792648ea7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga73139976ebad5898b8a5ef46a8126ea8"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#ga73139976ebad5898b8a5ef46a8126ea8">pcf_Memory_compare</a> (const <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> mem1, const <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> mem2, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> size)</td></tr>
+<tr class="memdesc:ga73139976ebad5898b8a5ef46a8126ea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the first size bytes of the block of memory pointed by mem1 to the first size bytes.  <br /></td></tr>
+<tr class="separator:ga73139976ebad5898b8a5ef46a8126ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaadae2b221dfa53c8f8494e9746957082"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#gaadae2b221dfa53c8f8494e9746957082">pcf_Memory_chr</a> (const <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> memory, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a30ee6362d7b648532f468a9c796bcf49">pcf_byte_t</a> value, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> size)</td></tr>
+<tr class="memdesc:gaadae2b221dfa53c8f8494e9746957082"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for the first occurrence of the character value in the size bytes.  <br /></td></tr>
+<tr class="separator:gaadae2b221dfa53c8f8494e9746957082"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gae2a29faa8f4a449c08c35a6520bb7b4c" name="gae2a29faa8f4a449c08c35a6520bb7b4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae2a29faa8f4a449c08c35a6520bb7b4c">&#9670;&#160;</a></span>pcf_Memory_copy()</h2>
+<a id="ga8e933f28b8a5e97c8e63ed3a50794c74" name="ga8e933f28b8a5e97c8e63ed3a50794c74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e933f28b8a5e97c8e63ed3a50794c74">&#9670;&#160;</a></span>pcf_Memory_allocate()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Memory_copy </td>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> pcf_Memory_allocate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dynamically allocate the memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>- Size of the memory to be allocated. </td></tr>
+    <tr><td class="paramname">status</td><td>- Pointer to <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
+<li>
+<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2defs_8h.html#a2074293436e51c467c2e63d8c4b55314">PCF_S_SUCCESS</a>  </li>
+<li>
+<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2defs_8h.html#ae0eec005037a89e5fba98877e669bec0">PCF_S_INVALID_ARG</a>  </li>
+<li>
+<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2defs_8h.html#a5a6bb6941e491cb583d0ec282631cdd8">PCF_S_NOT_ENOUGH_MEMORY</a>  </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The pointer to the allocated memory. </dd></dl>
+
+</div>
+</div>
+<a id="ga9b2072dc11c9de05291f9806755bc4a0" name="ga9b2072dc11c9de05291f9806755bc4a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9b2072dc11c9de05291f9806755bc4a0">&#9670;&#160;</a></span>pcf_Memory_calloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> pcf_Memory_calloc </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dynamically allocate the memory and initializes the memory block to zero. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>- The number of elements to allocate. </td></tr>
+    <tr><td class="paramname">size</td><td>- the size of each element in bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The pointer to the allocated memory. </dd></dl>
+
+</div>
+</div>
+<a id="ga25739031b5e50fc227bce8201bce3cde" name="ga25739031b5e50fc227bce8201bce3cde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga25739031b5e50fc227bce8201bce3cde">&#9670;&#160;</a></span>pcf_Memory_reallocate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> pcf_Memory_reallocate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a>&#160;</td>
+          <td class="paramname"><em>memory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dynamically re-allocate the memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ptr</td><td>- Pointer to memory which has to be re-allocated. </td></tr>
+    <tr><td class="paramname">size</td><td>- Size of the memory. </td></tr>
+    <tr><td class="paramname"> status</td><td>- Pointer to <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
+<li>
+<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2defs_8h.html#a2074293436e51c467c2e63d8c4b55314">PCF_S_SUCCESS</a>  </li>
+<li>
+<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2defs_8h.html#ae0eec005037a89e5fba98877e669bec0">PCF_S_INVALID_ARG</a>  </li>
+<li>
+<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2defs_8h.html#a5a6bb6941e491cb583d0ec282631cdd8">PCF_S_NOT_ENOUGH_MEMORY</a>  </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The pointer to the re-allocated memory. </dd></dl>
+
+</div>
+</div>
+<a id="ga4f32b27765bd5253ea005b433a7e8ca9" name="ga4f32b27765bd5253ea005b433a7e8ca9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4f32b27765bd5253ea005b433a7e8ca9">&#9670;&#160;</a></span>pcf_Memory_free()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Memory_free </td>
+          <td>(</td>
+          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a>&#160;</td>
+          <td class="paramname"><em>memory</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dynamically de-allocate the memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">memory</td><td>- Memory pointer which has to be de-allocated. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> Valid values : <ul>
+<li>
+<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2defs_8h.html#a2074293436e51c467c2e63d8c4b55314">PCF_S_SUCCESS</a>  </li>
+<li>
+<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2defs_8h.html#a9e767275e32fe10cfe110d367a91aabe">PCF_S_NULL_ARG</a>  </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="gae5791e9f54812097a2e2cd55cf126bf2" name="gae5791e9f54812097a2e2cd55cf126bf2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae5791e9f54812097a2e2cd55cf126bf2">&#9670;&#160;</a></span>pcf_Memory_copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Memory_copy </td>
           <td>(</td>
           <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a>&#160;</td>
           <td class="paramname"><em>dest</em>, </td>
@@ -127,7 +312,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a>&#160;</td>
+          <td class="paramtype">const <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -153,7 +338,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> valid values : <ul>
 <li>
 <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2defs_8h.html#a2074293436e51c467c2e63d8c4b55314">PCF_S_SUCCESS</a>  </li>
 <li>
@@ -165,14 +350,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaa94fe8601d8130b55aeabbb3e0e263a9" name="gaa94fe8601d8130b55aeabbb3e0e263a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa94fe8601d8130b55aeabbb3e0e263a9">&#9670;&#160;</a></span>pcf_Memory_move()</h2>
+<a id="ga46fb48d6eaa7d69773675b78a1b97420" name="ga46fb48d6eaa7d69773675b78a1b97420"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga46fb48d6eaa7d69773675b78a1b97420">&#9670;&#160;</a></span>pcf_Memory_move()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Memory_move </td>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Memory_move </td>
           <td>(</td>
           <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a>&#160;</td>
           <td class="paramname"><em>dest</em>, </td>
@@ -180,7 +365,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a>&#160;</td>
+          <td class="paramtype">const <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -207,7 +392,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> valid values : <ul>
 <li>
 <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2defs_8h.html#a2074293436e51c467c2e63d8c4b55314">PCF_S_SUCCESS</a>  </li>
 <li>
@@ -226,7 +411,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Memory_set </td>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Memory_set </td>
           <td>(</td>
           <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a>&#160;</td>
           <td class="paramname"><em>memory</em>, </td>
@@ -260,7 +445,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> valid values : <ul>
 <li>
 <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2defs_8h.html#a2074293436e51c467c2e63d8c4b55314">PCF_S_SUCCESS</a>  </li>
 <li>
@@ -272,22 +457,22 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga674df23d9ee9fe0f1153c792648ea7ae" name="ga674df23d9ee9fe0f1153c792648ea7ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga674df23d9ee9fe0f1153c792648ea7ae">&#9670;&#160;</a></span>pcf_Memory_compare()</h2>
+<a id="ga73139976ebad5898b8a5ef46a8126ea8" name="ga73139976ebad5898b8a5ef46a8126ea8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga73139976ebad5898b8a5ef46a8126ea8">&#9670;&#160;</a></span>pcf_Memory_compare()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Memory_compare </td>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Memory_compare </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a>&#160;</td>
+          <td class="paramtype">const <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a>&#160;</td>
           <td class="paramname"><em>mem1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a>&#160;</td>
+          <td class="paramtype">const <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a>&#160;</td>
           <td class="paramname"><em>mem2</em>, </td>
         </tr>
         <tr>
@@ -313,13 +498,58 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> valid values : <ul>
 <li>
 <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2defs_8h.html#a5101b8a9f51cc3412f94ae1cfd661bd0">PCF_S_YES</a>  </li>
 <li>
 <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2defs_8h.html#acd149143df1ba0d1e1ee980117abe882">PCF_S_NO</a>  </li>
 </ul>
 </dd></dl>
+
+</div>
+</div>
+<a id="gaadae2b221dfa53c8f8494e9746957082" name="gaadae2b221dfa53c8f8494e9746957082"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaadae2b221dfa53c8f8494e9746957082">&#9670;&#160;</a></span>pcf_Memory_chr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a> pcf_Memory_chr </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a4d36378a2f8e7a48a06ada7b8989a66a">pcf_generic_t</a>&#160;</td>
+          <td class="paramname"><em>memory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a30ee6362d7b648532f468a9c796bcf49">pcf_byte_t</a>&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Searches for the first occurrence of the character value in the size bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">memory</td><td>- Pointer to block of memory. </td></tr>
+    <tr><td class="paramname">value</td><td>- Character value. </td></tr>
+    <tr><td class="paramname">size</td><td>- Number of bytes to analyzed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the matching byte or PCF_NULL if the character does not occur. </dd></dl>
 
 </div>
 </div>

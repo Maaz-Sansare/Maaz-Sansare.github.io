@@ -89,51 +89,34 @@ $(document).ready(function(){initNavTree('collections_2types_8h.html',''); initR
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Data Structures</a>  </div>
   <div class="headertitle"><div class="title">types.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="collections_2defs_8h_source.html">pcf/collections/defs.h</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="core_8h_source.html">pcf/core/core.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="core_2types_8h_source.html">pcf/core/types.h</a>&gt;</code><br />
 </div>
 <p><a href="collections_2types_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_collection_mem_config__t.html">CollectionMemConfig_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection memory config entity object.  <a href="struct_collection_mem_config__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Type</div></td></tr>
-<tr class="memitem:gabc12ffdba0ec165e9f8818821fd96dcb"><td class="memItemLeft" align="right" valign="top">typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections.html#gabc12ffdba0ec165e9f8818821fd96dcb">CollectionMemReAlloc_fp</a>) (void *memPtr, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> elementSize, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> elementCount)</td></tr>
-<tr class="memdesc:gabc12ffdba0ec165e9f8818821fd96dcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection memory realloc callback function.  <br /></td></tr>
-<tr class="separator:gabc12ffdba0ec165e9f8818821fd96dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae41ee98c7d5183aaeb1ab03a985711e6"><td class="memItemLeft" align="right" valign="top">typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections.html#gae41ee98c7d5183aaeb1ab03a985711e6">CollectionMemCaAlloc_fp</a>) (<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> elementCount, <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a> elementSize)</td></tr>
-<tr class="memdesc:gae41ee98c7d5183aaeb1ab03a985711e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection memory calloc callback function.  <br /></td></tr>
-<tr class="separator:gae41ee98c7d5183aaeb1ab03a985711e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab302066bc663d2a8bc706fbdfb13caaa"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections.html#gab302066bc663d2a8bc706fbdfb13caaa">CollectionMemFree_fp</a>) (void *memPtr)</td></tr>
-<tr class="memdesc:gab302066bc663d2a8bc706fbdfb13caaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection memory free callback function.  <br /></td></tr>
-<tr class="separator:gab302066bc663d2a8bc706fbdfb13caaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7791e057dba7f7d3161d05170a2ddf6c"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections.html#ga7791e057dba7f7d3161d05170a2ddf6c">CollectionStrComparer_fp</a>) (const char *key1, const char *key2)</td></tr>
-<tr class="memdesc:ga7791e057dba7f7d3161d05170a2ddf6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection string compare callback function.  <br /></td></tr>
+<tr class="memdesc:ga7791e057dba7f7d3161d05170a2ddf6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection string compare function pointer.  <br /></td></tr>
 <tr class="separator:ga7791e057dba7f7d3161d05170a2ddf6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafc2e3ccb5188fcba4820e311d9d37586"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections.html#gafc2e3ccb5188fcba4820e311d9d37586">CollectionPtrComparer_fp</a>) (const void *key1, const void *key2)</td></tr>
-<tr class="memdesc:gafc2e3ccb5188fcba4820e311d9d37586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection pointer compare callback function.  <br /></td></tr>
+<tr class="memdesc:gafc2e3ccb5188fcba4820e311d9d37586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection pointer compare function pointer.  <br /></td></tr>
 <tr class="separator:gafc2e3ccb5188fcba4820e311d9d37586"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8acf96004e2c298d8b4b9c1e4c5b4ced"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a8696a1be3c39db4bc0c2309907e7e5c2">EnPCFBoolean_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections.html#ga8acf96004e2c298d8b4b9c1e4c5b4ced">CollectionStrEqualityComparer_fp</a>) (const char *key1, const char *key2)</td></tr>
-<tr class="memdesc:ga8acf96004e2c298d8b4b9c1e4c5b4ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection string equality compare callback function.  <br /></td></tr>
+<tr class="memdesc:ga8acf96004e2c298d8b4b9c1e4c5b4ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection string equality compare function pointer.  <br /></td></tr>
 <tr class="separator:ga8acf96004e2c298d8b4b9c1e4c5b4ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3d20b94f6415ea3819c22dc91641dcc3"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections.html#ga3d20b94f6415ea3819c22dc91641dcc3">CollectionElementDestroyer_fp</a>) (void *element)</td></tr>
-<tr class="memdesc:ga3d20b94f6415ea3819c22dc91641dcc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection element destroyer callback function.  <br /></td></tr>
+<tr class="memdesc:ga3d20b94f6415ea3819c22dc91641dcc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection element destroyer function pointer.  <br /></td></tr>
 <tr class="separator:ga3d20b94f6415ea3819c22dc91641dcc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3495e90f632529be956e16487eef8155"><td class="memItemLeft" align="right" valign="top">typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections.html#ga3495e90f632529be956e16487eef8155">CollectionElementCloning_fp</a>) (void *element)</td></tr>
-<tr class="memdesc:ga3495e90f632529be956e16487eef8155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection element cloning callback function.  <br /></td></tr>
+<tr class="memdesc:ga3495e90f632529be956e16487eef8155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection element cloning function pointer.  <br /></td></tr>
 <tr class="separator:ga3495e90f632529be956e16487eef8155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0816bb0a982ff4272ab55c062a638f5a"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a8696a1be3c39db4bc0c2309907e7e5c2">EnPCFBoolean_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections.html#ga0816bb0a982ff4272ab55c062a638f5a">CollectionCondition_fp</a>) (void *element)</td></tr>
-<tr class="memdesc:ga0816bb0a982ff4272ab55c062a638f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection condition callback function.  <br /></td></tr>
+<tr class="memdesc:ga0816bb0a982ff4272ab55c062a638f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection condition function pointer.  <br /></td></tr>
 <tr class="separator:ga0816bb0a982ff4272ab55c062a638f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

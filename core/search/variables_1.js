@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['capacity_0',['capacity',['../struct_array_config__t.html#acbc12081eb7a4db34b6919d008f05297',1,'ArrayConfig_t']]],
-  ['cnt_1',['cnt',['../structphi__numerator__t.html#acadb8f5124b19d0ed8c2589eb3513659',1,'phi_numerator_t']]],
-  ['command_2',['command',['../group__pcf__core__entity.html#ga1e3c2596ccbb1d0cf0148f9f59e82211',1,'EntityPropertyCommand_t']]]
+  ['data_0',['data',['https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/struct_data__t.html#a3cef02525514032a5566f7c547463073',1,'Data_t::data()'],['../group__pcf__core__entity.html#ga244383f10c8251f3e4df834d8b64b4cb',1,'EntityProperty_t::data()'],['../group__pcf__core__entity.html#gaece364004c86008913c14c9f44bda131',1,'EntityCommand_t::data()']]],
+  ['details_1',['details',['../group__pcf__core__command.html#gaeac3640d23d51061b023605bd64b61aa',1,'CommandOwner_t']]]
 ];
