@@ -1,5 +1,8 @@
 var group__pcf__core__collections =
 [
+    [ "Array", "group__pcf__core__collections__array.html", "group__pcf__core__collections__array" ],
+    [ "Buffer", "group__pcf__core__collections__buffer.html", "group__pcf__core__collections__buffer" ],
+    [ "Ring Buffer", "group__pcf__core__collections__ring_buffer.html", "group__pcf__core__collections__ring_buffer" ],
     [ "PCF_COLLECTION_MAX_ELEMENTS", "group__pcf__core__collections.html#ga8259c0a912afa8354d6462fb2a0bd07a", null ],
     [ "CollectionStrComparer_fp", "group__pcf__core__collections.html#ga7791e057dba7f7d3161d05170a2ddf6c", null ],
     [ "CollectionPtrComparer_fp", "group__pcf__core__collections.html#gafc2e3ccb5188fcba4820e311d9d37586", null ],
