@@ -1,6 +1,7 @@
 var annotated_dup =
 [
     [ "ArrayConfig_t", "struct_array_config__t.html", "struct_array_config__t" ],
+    [ "AssertConfig_t", "struct_assert_config__t.html", "struct_assert_config__t" ],
     [ "BufferConfig_t", "struct_buffer_config__t.html", "struct_buffer_config__t" ],
     [ "CommandOwner_t", "struct_command_owner__t.html", "struct_command_owner__t" ],
     [ "DebugConfig_t", "struct_debug_config__t.html", "struct_debug_config__t" ],

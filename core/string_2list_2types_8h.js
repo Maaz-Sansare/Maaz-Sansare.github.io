@@ -1,4 +1,4 @@
 var string_2list_2types_8h =
 [
-    [ "List_t", "group__pcf__core__string__list.html#ga9bb1b5961472c320554463f4289fbb54", null ]
+    [ "StringList_t", "group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2", null ]
 ];

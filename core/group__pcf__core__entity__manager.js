@@ -1,5 +1,9 @@
 var group__pcf__core__entity__manager =
 [
+    [ "EntityManagerConfig_t", "struct_entity_manager_config__t.html", [
+      [ "memoryConfig", "struct_entity_manager_config__t.html#a24f82dd24a8a05073db850032dc0da57", null ],
+      [ "max_entities", "struct_entity_manager_config__t.html#a166ecb67a24d57bb2059da8d96e9f853", null ]
+    ] ],
     [ "pcf_EntityManager_init", "group__pcf__core__entity__manager.html#ga56d523ef4b2220b1ec53568176984123", null ],
     [ "pcf_EntityManager_addEntity", "group__pcf__core__entity__manager.html#ga322c3fa5e8d57412ca31f0be988d526d", null ],
     [ "pcf_EntityManager_removeEntity", "group__pcf__core__entity__manager.html#ga1762465bbf628f2ff536dce6bb9744e8", null ],

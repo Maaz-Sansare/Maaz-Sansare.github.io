@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['readme_2emd_0',['README.md',['../_r_e_a_d_m_e_8md.html',1,'(Global Namespace)'],['https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/_r_e_a_d_m_e_8md.html',1,'(Global Namespace)']]],
-  ['ring_20buffer_1',['Ring Buffer',['../group__pcf__core__collections__ringbuffer.html',1,'']]],
-  ['ring_5fbuffer_2eh_2',['ring_buffer.h',['../ring__buffer_8h.html',1,'']]],
-  ['ringbuffer_5ft_3',['RingBuffer_t',['../group__pcf__core__collections__ringbuffer.html#gaff52f5eaf6651f69e69f0a24ca10857c',1,'types.h']]],
-  ['ringbufferconfig_5ft_4',['RingBufferConfig_t',['../struct_ring_buffer_config__t.html',1,'']]]
+  ['size_0',['size',['../struct_buffer_config__t.html#a74351c76911a42fcdce3ca7a85951b50',1,'BufferConfig_t::size()'],['../struct_ring_buffer_config__t.html#a4f0beb666687bf8fd89694254c44a54f',1,'RingBufferConfig_t::size()']]],
+  ['string_1',['String',['../group__pcf__core__string.html',1,'']]],
+  ['string_2eh_2',['string.h',['../string_8h.html',1,'']]],
+  ['string_5ft_3',['String_t',['../string_2types_8h.html#ae1103fbc61e8cd85c6f7dcab694e89b9',1,'types.h']]],
+  ['stringconfig_5ft_4',['StringConfig_t',['../struct_string_config__t.html',1,'']]],
+  ['stringlist_5ft_5',['StringList_t',['../group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2',1,'types.h']]]
 ];

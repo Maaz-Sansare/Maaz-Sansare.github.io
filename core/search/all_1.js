@@ -1,13 +1,8 @@
 var searchData=
 [
-  ['arch_2eh_0',['arch.h',['https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/arch_8h.html',1,'']]],
-  ['architecture_1',['Architecture',['https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/pcf_config_arch.html',1,'']]],
-  ['arm_2eh_2',['arm.h',['https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/arm_8h.html',1,'']]],
-  ['armgcc_2eh_3',['armgcc.h',['https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/armgcc_8h.html',1,'']]],
-  ['array_4',['Array',['../group__pcf__core__collections__array.html',1,'']]],
-  ['array_2eh_5',['array.h',['../array_8h.html',1,'']]],
-  ['array_5ft_6',['Array_t',['../group__pcf__core__collections__array.html#gae6beb731efa2e3194790711a4e744384',1,'types.h']]],
-  ['arrayconfig_5ft_7',['ArrayConfig_t',['../struct_array_config__t.html',1,'']]],
-  ['assert_8',['Assert',['../group__pcf__core__assert.html',1,'']]],
-  ['assert_2eh_9',['assert.h',['../assert_8h.html',1,'']]]
+  ['bit_20operation_0',['Bit operation',['../group__pcf__core__utils__bit__operation.html',1,'']]],
+  ['buffer_1',['Buffer',['../group__pcf__core__collections__buffer.html',1,'']]],
+  ['buffer_2eh_2',['buffer.h',['../buffer_8h.html',1,'']]],
+  ['buffer_5ft_3',['Buffer_t',['../group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892',1,'types.h']]],
+  ['bufferconfig_5ft_4',['BufferConfig_t',['../struct_buffer_config__t.html',1,'']]]
 ];

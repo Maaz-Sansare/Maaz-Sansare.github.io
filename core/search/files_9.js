@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['memory_2eh_0',['memory.h',['../memory_8h.html',1,'']]],
-  ['mingw32_2eh_1',['mingw32.h',['https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/mingw32_8h.html',1,'']]],
-  ['mingw64_2eh_2',['mingw64.h',['https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/mingw64_8h.html',1,'']]],
-  ['msvc_2eh_3',['msvc.h',['https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/msvc_8h.html',1,'']]]
+  ['types_2eh_0',['types.h',['../assert_2types_8h.html',1,'(Global Namespace)'],['../collections_2array_2types_8h.html',1,'(Global Namespace)'],['../collections_2buffer_2types_8h.html',1,'(Global Namespace)'],['../collections_2ring__buffer_2types_8h.html',1,'(Global Namespace)'],['../collections_2types_8h.html',1,'(Global Namespace)'],['../command_2types_8h.html',1,'(Global Namespace)'],['../core_2types_8h.html',1,'(Global Namespace)'],['../debug_2types_8h.html',1,'(Global Namespace)'],['../entity_2types_8h.html',1,'(Global Namespace)'],['../entity__manager_2types_8h.html',1,'(Global Namespace)'],['../memory_2types_8h.html',1,'(Global Namespace)'],['../string_2list_2types_8h.html',1,'(Global Namespace)'],['../string_2types_8h.html',1,'(Global Namespace)'],['../utils_2bit__operation_2types_8h.html',1,'(Global Namespace)'],['../utils_2types_8h.html',1,'(Global Namespace)']]]
 ];

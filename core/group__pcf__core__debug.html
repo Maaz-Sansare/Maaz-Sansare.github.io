@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('group__pcf__core__debug.html',''); ini
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Debug<div class="ingroups"><a class="el" href="group__pcf__core.html">Core</a></div></div></div>
@@ -102,14 +103,28 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_debug_config__t.html">DebugConfig_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga807b157db74fbb41eb866b98ce6efd6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga807b157db74fbb41eb866b98ce6efd6d">ITEM_ID_DEBUG</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ga807b157db74fbb41eb866b98ce6efd6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69a7e9fdf1d3053314b1b7cb6d6e22ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga69a7e9fdf1d3053314b1b7cb6d6e22ce">PCF_DEBUG_S_SUCCESS</a>&#160;&#160;&#160;GENERATE_PCF_STATUS_SUCCESS(<a class="el" href="group__pcf__core.html#ga880ffcc1a33a50a689ef8819eb8e4f42">PKG_ID_CORE</a>, <a class="el" href="group__pcf__core__debug.html#ga807b157db74fbb41eb866b98ce6efd6d">ITEM_ID_DEBUG</a>)</td></tr>
+<tr class="separator:ga69a7e9fdf1d3053314b1b7cb6d6e22ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf2b9991ec374e1cb04a45bad7a1fad1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#gacf2b9991ec374e1cb04a45bad7a1fad1">PCF_DEBUG_S_NULL_ARG</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NULL_ARG(<a class="el" href="group__pcf__core.html#ga880ffcc1a33a50a689ef8819eb8e4f42">PKG_ID_CORE</a>, <a class="el" href="group__pcf__core__debug.html#ga807b157db74fbb41eb866b98ce6efd6d">ITEM_ID_DEBUG</a>)</td></tr>
+<tr class="separator:gacf2b9991ec374e1cb04a45bad7a1fad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2e63cb25d7ee2be6a3ae57cd39bd206"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#gae2e63cb25d7ee2be6a3ae57cd39bd206">PCF_DEBUG_S_NOT_CONFIGURED</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_CONFIGURED(<a class="el" href="group__pcf__core.html#ga880ffcc1a33a50a689ef8819eb8e4f42">PKG_ID_CORE</a>, <a class="el" href="group__pcf__core__debug.html#ga807b157db74fbb41eb866b98ce6efd6d">ITEM_ID_DEBUG</a>)</td></tr>
+<tr class="separator:gae2e63cb25d7ee2be6a3ae57cd39bd206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga1380fb80a443b030459b788536c594fc"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga1380fb80a443b030459b788536c594fc">pcf_Debug_init</a> (const <a class="el" href="struct_debug_config__t.html">DebugConfig_t</a> *config)</td></tr>
+<tr class="memitem:ga1380fb80a443b030459b788536c594fc"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga1380fb80a443b030459b788536c594fc">pcf_Debug_init</a> (const <a class="el" href="struct_debug_config__t.html">DebugConfig_t</a> *config)</td></tr>
 <tr class="memdesc:ga1380fb80a443b030459b788536c594fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the debug entity object.  <br /></td></tr>
 <tr class="separator:ga1380fb80a443b030459b788536c594fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadc6f4acb94891380c96b01e75a6c3e9c"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#gadc6f4acb94891380c96b01e75a6c3e9c">pcf_Debug_write</a> (<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#afb11352594938a2038de606fb9e8e766">pcf_cstring_t</a> message)</td></tr>
-<tr class="memdesc:gadc6f4acb94891380c96b01e75a6c3e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a null terminated (\0) string using <a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100">which was configured during initialization. </a> <br /></td></tr>
-<tr class="separator:gadc6f4acb94891380c96b01e75a6c3e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97e74217af33652a9aef8f61f53cc5e9"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga97e74217af33652a9aef8f61f53cc5e9">pcf_Debug_write</a> (pcf_cstring_t message)</td></tr>
+<tr class="memdesc:ga97e74217af33652a9aef8f61f53cc5e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a null terminated (\0) string using <a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100" title="Put character function pointer.">DebugPutchar_fp</a> which was configured during initialization.  <br /></td></tr>
+<tr class="separator:ga97e74217af33652a9aef8f61f53cc5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e60e8eb885a3b3bf15d6cda5b42abad"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga0e60e8eb885a3b3bf15d6cda5b42abad">pcf_Debug_deinit</a> ()</td></tr>
+<tr class="memdesc:ga0e60e8eb885a3b3bf15d6cda5b42abad"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-Initialize the debug entity object.  <br /></td></tr>
+<tr class="separator:ga0e60e8eb885a3b3bf15d6cda5b42abad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -117,11 +132,68 @@ Variables</h2></td></tr>
 <tr class="separator:ga032555e112725926dd638194139503b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Types</h2></td></tr>
-<tr class="memitem:ga4da2c905a9d3c81e8c8257c33bee3100"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100">DebugPutchar_fp</a>) (uint8_t)</td></tr>
+<tr class="memitem:ga4da2c905a9d3c81e8c8257c33bee3100"><td class="memItemLeft" align="right" valign="top">typedef pcf_status_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100">DebugPutchar_fp</a>) (uint8_t)</td></tr>
 <tr class="memdesc:ga4da2c905a9d3c81e8c8257c33bee3100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put character function pointer.  <br /></td></tr>
 <tr class="separator:ga4da2c905a9d3c81e8c8257c33bee3100"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga807b157db74fbb41eb866b98ce6efd6d" name="ga807b157db74fbb41eb866b98ce6efd6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga807b157db74fbb41eb866b98ce6efd6d">&#9670;&#160;</a></span>ITEM_ID_DEBUG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ITEM_ID_DEBUG&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga69a7e9fdf1d3053314b1b7cb6d6e22ce" name="ga69a7e9fdf1d3053314b1b7cb6d6e22ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga69a7e9fdf1d3053314b1b7cb6d6e22ce">&#9670;&#160;</a></span>PCF_DEBUG_S_SUCCESS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCF_DEBUG_S_SUCCESS&#160;&#160;&#160;GENERATE_PCF_STATUS_SUCCESS(<a class="el" href="group__pcf__core.html#ga880ffcc1a33a50a689ef8819eb8e4f42">PKG_ID_CORE</a>, <a class="el" href="group__pcf__core__debug.html#ga807b157db74fbb41eb866b98ce6efd6d">ITEM_ID_DEBUG</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gacf2b9991ec374e1cb04a45bad7a1fad1" name="gacf2b9991ec374e1cb04a45bad7a1fad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacf2b9991ec374e1cb04a45bad7a1fad1">&#9670;&#160;</a></span>PCF_DEBUG_S_NULL_ARG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCF_DEBUG_S_NULL_ARG&#160;&#160;&#160;GENERATE_PCF_ERROR_NULL_ARG(<a class="el" href="group__pcf__core.html#ga880ffcc1a33a50a689ef8819eb8e4f42">PKG_ID_CORE</a>, <a class="el" href="group__pcf__core__debug.html#ga807b157db74fbb41eb866b98ce6efd6d">ITEM_ID_DEBUG</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae2e63cb25d7ee2be6a3ae57cd39bd206" name="gae2e63cb25d7ee2be6a3ae57cd39bd206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae2e63cb25d7ee2be6a3ae57cd39bd206">&#9670;&#160;</a></span>PCF_DEBUG_S_NOT_CONFIGURED</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCF_DEBUG_S_NOT_CONFIGURED&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_CONFIGURED(<a class="el" href="group__pcf__core.html#ga880ffcc1a33a50a689ef8819eb8e4f42">PKG_ID_CORE</a>, <a class="el" href="group__pcf__core__debug.html#ga807b157db74fbb41eb866b98ce6efd6d">ITEM_ID_DEBUG</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga4da2c905a9d3c81e8c8257c33bee3100" name="ga4da2c905a9d3c81e8c8257c33bee3100"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4da2c905a9d3c81e8c8257c33bee3100">&#9670;&#160;</a></span>DebugPutchar_fp</h2>
@@ -130,7 +202,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a>(* DebugPutchar_fp) (uint8_t)</td>
+          <td class="memname">typedef pcf_status_t(* DebugPutchar_fp) (uint8_t)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -147,7 +219,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_CORE_API <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> pcf_Debug_init </td>
+          <td class="memname">PCF_CORE_API pcf_status_t pcf_Debug_init </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_debug_config__t.html">DebugConfig_t</a> *&#160;</td>
           <td class="paramname"><em>config</em></td><td>)</td>
@@ -159,45 +231,82 @@ Variables</h2></td></tr>
 <p>Initialize the debug entity object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">config</td><td>- Debug configuration. </td></tr>
+    <tr><td class="paramname">config</td><td>[IN] - Debug configuration. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#abf240a4a3faade668d94bbd1788b24b0">pcf_status_t</a> valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t valid values : <ul>
 <li>
-<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2defs_8h.html#a2074293436e51c467c2e63d8c4b55314">PCF_S_SUCCESS</a>  </li>
+<a class="el" href="group__pcf__core__debug.html#ga69a7e9fdf1d3053314b1b7cb6d6e22ce">PCF_DEBUG_S_SUCCESS</a>  : Successful operation. </li>
 <li>
-<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/status_2defs_8h.html#a9e767275e32fe10cfe110d367a91aabe">PCF_S_NULL_ARG</a>  </li>
+<a class="el" href="group__pcf__core__debug.html#gacf2b9991ec374e1cb04a45bad7a1fad1">PCF_DEBUG_S_NULL_ARG</a>  : The config parameter was PCF_NULL or contained PCF_NULL values. </li>
 </ul>
 </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="debug_8c-example.html#a2">debug.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="assert_example_8c-example.html#a2">assert_example.c</a>, and <a class="el" href="debug_example_8c-example.html#a2">debug_example.c</a>.</dd>
 </dl>
 
 </div>
 </div>
-<a id="gadc6f4acb94891380c96b01e75a6c3e9c" name="gadc6f4acb94891380c96b01e75a6c3e9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadc6f4acb94891380c96b01e75a6c3e9c">&#9670;&#160;</a></span>pcf_Debug_write()</h2>
+<a id="ga97e74217af33652a9aef8f61f53cc5e9" name="ga97e74217af33652a9aef8f61f53cc5e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97e74217af33652a9aef8f61f53cc5e9">&#9670;&#160;</a></span>pcf_Debug_write()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_CORE_API void pcf_Debug_write </td>
+          <td class="memname">PCF_CORE_API pcf_status_t pcf_Debug_write </td>
           <td>(</td>
-          <td class="paramtype"><a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#afb11352594938a2038de606fb9e8e766">pcf_cstring_t</a>&#160;</td>
+          <td class="paramtype">pcf_cstring_t&#160;</td>
           <td class="paramname"><em>message</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Write a null terminated (\0) string using <a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100">which was configured during initialization. </a></p>
+<p>Write a null terminated (\0) string using <a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100" title="Put character function pointer.">DebugPutchar_fp</a> which was configured during initialization. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">message</td><td>- String to be transmitted of type <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#afb11352594938a2038de606fb9e8e766">pcf_cstring_t</a> </td></tr>
+    <tr><td class="paramname">message</td><td>[IN] - pcf_cstring_t String to write. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t valid values : <ul>
+<li>
+<a class="el" href="group__pcf__core__debug.html#ga69a7e9fdf1d3053314b1b7cb6d6e22ce">PCF_DEBUG_S_SUCCESS</a>  : Successful operation. </li>
+<li>
+<a class="el" href="group__pcf__core__debug.html#gae2e63cb25d7ee2be6a3ae57cd39bd206">PCF_DEBUG_S_NOT_CONFIGURED</a>  : Debug was not configured. </li>
+<li>
+<a class="el" href="group__pcf__core__debug.html#gacf2b9991ec374e1cb04a45bad7a1fad1">PCF_DEBUG_S_NULL_ARG</a>  : Null argument was passed. </li>
+</ul>
+</dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="debug_example_8c-example.html#a3">debug_example.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ga0e60e8eb885a3b3bf15d6cda5b42abad" name="ga0e60e8eb885a3b3bf15d6cda5b42abad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0e60e8eb885a3b3bf15d6cda5b42abad">&#9670;&#160;</a></span>pcf_Debug_deinit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PCF_CORE_API pcf_status_t pcf_Debug_deinit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>De-Initialize the debug entity object. </p>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t valid values : <ul>
+<li>
+<a class="el" href="group__pcf__core__debug.html#ga69a7e9fdf1d3053314b1b7cb6d6e22ce">PCF_DEBUG_S_SUCCESS</a>  : Successful operation. </li>
+<li>
+<a class="el" href="group__pcf__core__debug.html#gae2e63cb25d7ee2be6a3ae57cd39bd206">PCF_DEBUG_S_NOT_CONFIGURED</a>  : Debug was not configured. </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
@@ -213,6 +322,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="assert_example_8c-example.html#a1">assert_example.c</a>, and <a class="el" href="debug_example_8c-example.html#a1">debug_example.c</a>.</dd>
+</dl>
 
 </div>
 </div>

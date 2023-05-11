@@ -1,11 +1,23 @@
 var group__pcf__core__assert =
 [
+    [ "AssertConfig_t", "struct_assert_config__t.html", [
+      [ "faultHandler", "group__pcf__core__assert.html#ga8086d91c805a2ed2c7e9f69a0174e2f2", null ]
+    ] ],
+    [ "ITEM_ID_ASSERT", "group__pcf__core__assert.html#ga13f475d7a0300e4f64c6f3e4d8d4b15a", null ],
+    [ "PCF_ASSERT_S_SUCCESS", "group__pcf__core__assert.html#ga3d7e12700d0a98c2ef3adc842f98b3b1", null ],
+    [ "PCF_ASSERT_S_NULL_ARG", "group__pcf__core__assert.html#gade2643106030a1ab11a0eb11af71fbfc", null ],
+    [ "PCF_ASSERT_S_INTERNAL_ERROR", "group__pcf__core__assert.html#ga9218c5a68b7a1812c753f65fe622bad0", null ],
     [ "PCF_ASSERT_TRUE", "group__pcf__core__assert.html#gabe16b09c70487d944b51fd5d54d2fce5", null ],
     [ "PCF_ASSERT_FALSE", "group__pcf__core__assert.html#gaaa987c7a6d683b1adafa0ecd245b536a", null ],
     [ "PCF_ASSERT_NULL", "group__pcf__core__assert.html#ga0781a5b5edcf65eb700f2ec6d3bbfa7b", null ],
     [ "PCF_ASSERT_NOT_NULL", "group__pcf__core__assert.html#gadba52534407b31f9a11c5d4a7e726cb6", null ],
     [ "PCF_ASSERT_EMPTY", "group__pcf__core__assert.html#ga55dd1a055895b2c79854030fea7a7b1e", null ],
     [ "PCF_ASSERT_NOT_EMPTY", "group__pcf__core__assert.html#ga49fc46a08c056649c30f6d4a10185d58", null ],
+    [ "PCF_ASSERT_BITS", "group__pcf__core__assert.html#ga8b202cae90efae786ff27c9656621d88", null ],
+    [ "PCF_ASSERT_BITS_HIGH", "group__pcf__core__assert.html#ga919540d08fb50de8b16c6689f6300db8", null ],
+    [ "PCF_ASSERT_BITS_LOW", "group__pcf__core__assert.html#ga09e6d5b96031a4c6f45444b19530b62f", null ],
+    [ "PCF_ASSERT_BIT_HIGH", "group__pcf__core__assert.html#ga670b2f21be4047ca8442559d58d54494", null ],
+    [ "PCF_ASSERT_BIT_LOW", "group__pcf__core__assert.html#gacdfc2576395b69876eb203a9b61937b7", null ],
     [ "PCF_ASSERT_EQUAL", "group__pcf__core__assert.html#ga9ab1637e62749233acc0a01ff36203b2", null ],
     [ "PCF_ASSERT_EQUAL_INT8", "group__pcf__core__assert.html#ga2a31fa01e20e7ca01653424b4346335b", null ],
     [ "PCF_ASSERT_EQUAL_INT16", "group__pcf__core__assert.html#ga4e3d437ba0c7fcd1175e64e8abb913bc", null ],
@@ -21,11 +33,6 @@ var group__pcf__core__assert =
     [ "PCF_ASSERT_EQUAL_HEX64", "group__pcf__core__assert.html#ga473fe1d90f169a5117ef236385a93735", null ],
     [ "PCF_ASSERT_EQUAL_SIZE_OF", "group__pcf__core__assert.html#ga51f6ad06326b3170f341acda5527fff9", null ],
     [ "PCF_ASSERT_EQUAL_CHAR", "group__pcf__core__assert.html#ga3a3402a632f1170fe30433cbf23ca9ff", null ],
-    [ "PCF_ASSERT_BITS", "group__pcf__core__assert.html#ga8b202cae90efae786ff27c9656621d88", null ],
-    [ "PCF_ASSERT_BITS_HIGH", "group__pcf__core__assert.html#ga919540d08fb50de8b16c6689f6300db8", null ],
-    [ "PCF_ASSERT_BITS_LOW", "group__pcf__core__assert.html#ga09e6d5b96031a4c6f45444b19530b62f", null ],
-    [ "PCF_ASSERT_BIT_HIGH", "group__pcf__core__assert.html#ga670b2f21be4047ca8442559d58d54494", null ],
-    [ "PCF_ASSERT_BIT_LOW", "group__pcf__core__assert.html#gacdfc2576395b69876eb203a9b61937b7", null ],
     [ "PCF_ASSERT_NOT_EQUAL", "group__pcf__core__assert.html#gae3263c1ce958488cf645ccb34a015a11", null ],
     [ "PCF_ASSERT_NOT_EQUAL_INT8", "group__pcf__core__assert.html#gae2dd878b7522d562dfaf1b05b3f71fee", null ],
     [ "PCF_ASSERT_NOT_EQUAL_INT16", "group__pcf__core__assert.html#ga8912e3e7d55c5a760a2d87972cd75b85", null ],
@@ -116,6 +123,10 @@ var group__pcf__core__assert =
     [ "PCF_ASSERT_HEX32_WITHIN", "group__pcf__core__assert.html#gae634c5d71405a2a1cba1e4a56ed5466e", null ],
     [ "PCF_ASSERT_HEX64_WITHIN", "group__pcf__core__assert.html#gab9d02b6f0790594901cc55dbf38936ae", null ],
     [ "PCF_ASSERT_CHAR_WITHIN", "group__pcf__core__assert.html#ga1de277e22c3c8055760b09ef02ee8bfd", null ],
-    [ "pcf_Assert_write", "group__pcf__core__assert.html#ga61904f20f031188d0928d2df347258d4", null ],
-    [ "pcf_Assert_withIn", "group__pcf__core__assert.html#ga6f7394d688b1d20245cf986966945074", null ]
+    [ "AssertFaultHandler_fp", "group__pcf__core__assert.html#ga34e227753a3c1e139710f2eace737990", null ],
+    [ "pcf_Assert_init", "group__pcf__core__assert.html#gabdee962712fb7ac63bb49a1cc0b35e3c", null ],
+    [ "pcf_Assert_faultHandler", "group__pcf__core__assert.html#ga9e29f84ad3f3fc787a9a19cca2d59ae4", null ],
+    [ "pcf_Assert_write", "group__pcf__core__assert.html#gaaed6e42b8dc43dfb2ebf58018ed5e46b", null ],
+    [ "pcf_Assert_withIn", "group__pcf__core__assert.html#gaa64bb9cd0303eafcf497b642597fdf23", null ],
+    [ "AssertConfig_t::faultHandler", "group__pcf__core__assert.html#ga8086d91c805a2ed2c7e9f69a0174e2f2", null ]
 ];

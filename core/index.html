@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Core: pcf_core</title>
+<title>Core: Introduction</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -89,10 +89,43 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">pcf_core </div></div>
+  <div class="headertitle"><div class="title">Introduction </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_README"></a> The pcf core package. </p>
+<div class="textblock"><p><a class="anchor" id="md_docs_MAINPAGE"></a> @pcf/core library package provides core functionality for the following: <br  />
+</p><ul>
+<li>Debug <br  />
+</li>
+<li>Assert <br  />
+</li>
+<li>strings manipulation <br  />
+</li>
+<li>memory manipulation <br  />
+</li>
+<li>collections <br  />
+</li>
+<li>utils <br  />
+</li>
+<li>bit operation <br  />
+</li>
+<li>entity <br  />
+</li>
+<li>entity manager <br  />
+</li>
+<li>command <br  />
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md1"></a>
+How to use</h2>
+<p>To use the package item include the pcf/&lt;package_item_name&gt;.h in your application. <br  />
+ Eg.: #include &lt;pcf/assert.h&gt;</p>
+<h3><a class="anchor" id="autotoc_md2"></a>
+Required compile macros:</h3>
+<p><b>Following macros are only required while building for arm with no operating system:</b> <br  />
+ <b>PCF_CONF_ARCH_DEVICE_VENDOR</b> - Valid values stm, nxp or infineon <br  />
+ <b>PCF_CONF_ARCH_DEVICE_SERIES</b> - Valid values stm32f3, stm32f4, lpc1700 or xmc4000 <br  />
+ <b>PCF_CONF_ARCH_DEVICE</b> - Valid values stm32f302r8, stm32f405rg, lpc1768 or xmc4700 <br  />
+ </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->

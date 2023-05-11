@@ -1,8 +1,8 @@
 var array_8h =
 [
     [ "pcf_Array_new", "group__pcf__core__collections__array.html#ga7018a7de8fcc3fe2e01aa89066a40ee3", null ],
-    [ "pcf_Array_delete", "group__pcf__core__collections__array.html#ga95bad8e6f542df07edae85a75d830fc4", null ],
-    [ "pcf_Array_delete2", "group__pcf__core__collections__array.html#gaeb164bcd12c26fc6214161e75f11daf8", null ],
+    [ "pcf_Array_delete", "group__pcf__core__collections__array.html#ga505f0e3996ad6683a343b7318ae5dd45", null ],
+    [ "pcf_Array_delete2", "group__pcf__core__collections__array.html#ga47ed64cb3a30e61ed8091602c3e352b5", null ],
     [ "pcf_Array_size", "group__pcf__core__collections__array.html#ga333bd7a89736126b477f0d85da5df2eb", null ],
     [ "pcf_Array_capacity", "group__pcf__core__collections__array.html#ga9b6002bd33ee14cb2269da30ec68a63e", null ],
     [ "pcf_Array_buffer", "group__pcf__core__collections__array.html#ga736c85196f0e9bf51f96575a68998452", null ],

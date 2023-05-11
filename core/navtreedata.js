@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Core", "index.html", [
-    [ "pcf_core", "index.html", null ],
+    [ "Introduction", "index.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -53,8 +53,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"group__pcf__core__collections.html#ga7791e057dba7f7d3161d05170a2ddf6c",
-"group__pcf__core__string__list.html#ga8e7875d3d6e49a3012f3522fd7f1d385"
+"group__pcf__core__assert.html#gaefce8580f0a5e549ca9ef19c13a9fbac",
+"group__pcf__core__string.html#gaeec731d82cb848e1902069c241266985"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

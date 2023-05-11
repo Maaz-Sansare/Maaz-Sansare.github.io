@@ -90,24 +90,14 @@ $(document).ready(function(){initNavTree('group__pcf__core__collections.html',''
 
 <div class="header">
   <div class="summary">
-<a href="#groups">Modules</a> &#124;
 <a href="#define-members">Macros</a>  </div>
-  <div class="headertitle"><div class="title">Collections<div class="ingroups"><a class="el" href="group__pcf__core.html">Core</a></div></div></div>
+  <div class="headertitle"><div class="title">Collections</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
-Modules</h2></td></tr>
-<tr class="memitem:group__pcf__core__collections__array"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__array.html">Array</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__pcf__core__collections__buffer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html">Buffer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__pcf__core__collections__ringbuffer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ringbuffer.html">Ring Buffer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga8259c0a912afa8354d6462fb2a0bd07a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections.html#ga8259c0a912afa8354d6462fb2a0bd07a">PCF_COLLECTION_MAX_ELEMENTS</a>&#160;&#160;&#160;((<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a>) -3)</td></tr>
+<tr class="memitem:ga8259c0a912afa8354d6462fb2a0bd07a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections.html#ga8259c0a912afa8354d6462fb2a0bd07a">PCF_COLLECTION_MAX_ELEMENTS</a>&#160;&#160;&#160;((pcf_size_t) -3)</td></tr>
 <tr class="separator:ga8259c0a912afa8354d6462fb2a0bd07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Type</h2></td></tr>
@@ -117,7 +107,7 @@ Macros</h2></td></tr>
 <tr class="memitem:gafc2e3ccb5188fcba4820e311d9d37586"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections.html#gafc2e3ccb5188fcba4820e311d9d37586">CollectionPtrComparer_fp</a>) (const void *key1, const void *key2)</td></tr>
 <tr class="memdesc:gafc2e3ccb5188fcba4820e311d9d37586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection pointer compare function pointer.  <br /></td></tr>
 <tr class="separator:gafc2e3ccb5188fcba4820e311d9d37586"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8acf96004e2c298d8b4b9c1e4c5b4ced"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a8696a1be3c39db4bc0c2309907e7e5c2">EnPCFBoolean_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections.html#ga8acf96004e2c298d8b4b9c1e4c5b4ced">CollectionStrEqualityComparer_fp</a>) (const char *key1, const char *key2)</td></tr>
+<tr class="memitem:ga8acf96004e2c298d8b4b9c1e4c5b4ced"><td class="memItemLeft" align="right" valign="top">typedef EnPCFBoolean_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections.html#ga8acf96004e2c298d8b4b9c1e4c5b4ced">CollectionStrEqualityComparer_fp</a>) (const char *key1, const char *key2)</td></tr>
 <tr class="memdesc:ga8acf96004e2c298d8b4b9c1e4c5b4ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection string equality compare function pointer.  <br /></td></tr>
 <tr class="separator:ga8acf96004e2c298d8b4b9c1e4c5b4ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3d20b94f6415ea3819c22dc91641dcc3"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections.html#ga3d20b94f6415ea3819c22dc91641dcc3">CollectionElementDestroyer_fp</a>) (void *element)</td></tr>
@@ -126,7 +116,7 @@ Macros</h2></td></tr>
 <tr class="memitem:ga3495e90f632529be956e16487eef8155"><td class="memItemLeft" align="right" valign="top">typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections.html#ga3495e90f632529be956e16487eef8155">CollectionElementCloning_fp</a>) (void *element)</td></tr>
 <tr class="memdesc:ga3495e90f632529be956e16487eef8155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection element cloning function pointer.  <br /></td></tr>
 <tr class="separator:ga3495e90f632529be956e16487eef8155"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0816bb0a982ff4272ab55c062a638f5a"><td class="memItemLeft" align="right" valign="top">typedef <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a8696a1be3c39db4bc0c2309907e7e5c2">EnPCFBoolean_t</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections.html#ga0816bb0a982ff4272ab55c062a638f5a">CollectionCondition_fp</a>) (void *element)</td></tr>
+<tr class="memitem:ga0816bb0a982ff4272ab55c062a638f5a"><td class="memItemLeft" align="right" valign="top">typedef EnPCFBoolean_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections.html#ga0816bb0a982ff4272ab55c062a638f5a">CollectionCondition_fp</a>) (void *element)</td></tr>
 <tr class="memdesc:ga0816bb0a982ff4272ab55c062a638f5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collection condition function pointer.  <br /></td></tr>
 <tr class="separator:ga0816bb0a982ff4272ab55c062a638f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -139,7 +129,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PCF_COLLECTION_MAX_ELEMENTS&#160;&#160;&#160;((<a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a7604049bdc9fd07b28d0ec6e907fcafc">pcf_size_t</a>) -3)</td>
+          <td class="memname">#define PCF_COLLECTION_MAX_ELEMENTS&#160;&#160;&#160;((pcf_size_t) -3)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -176,6 +166,8 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Collection pointer compare function pointer. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="array_example_8c-example.html#a0">array_example.c</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -186,7 +178,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a8696a1be3c39db4bc0c2309907e7e5c2">EnPCFBoolean_t</a>(* CollectionStrEqualityComparer_fp) (const char *key1, const char *key2)</td>
+          <td class="memname">typedef EnPCFBoolean_t(* CollectionStrEqualityComparer_fp) (const char *key1, const char *key2)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -234,7 +226,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="elRef" href="https://docs.phi-robotics.com/pcf/packages/<package-type>/<scope-name>/<package-name>/types_8h.html#a8696a1be3c39db4bc0c2309907e7e5c2">EnPCFBoolean_t</a>(* CollectionCondition_fp) (void *element)</td>
+          <td class="memname">typedef EnPCFBoolean_t(* CollectionCondition_fp) (void *element)</td>
         </tr>
       </table>
 </div><div class="memdoc">
