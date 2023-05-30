@@ -90,8 +90,7 @@ $(document).ready(function(){initNavTree('string_2types_8h.html',''); initResiza
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#nested-classes">Data Structures</a>  </div>
   <div class="headertitle"><div class="title">types.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -102,34 +101,15 @@ $(document).ready(function(){initNavTree('string_2types_8h.html',''); initResiza
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_string_config__t.html">StringConfig_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">String config struct.  <a href="struct_string_config__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">String types</div></td></tr>
 <tr class="memitem:ae1103fbc61e8cd85c6f7dcab694e89b9"><td class="memItemLeft" align="right" valign="top">typedef struct _pcf_core_string_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_2types_8h.html#ae1103fbc61e8cd85c6f7dcab694e89b9">String_t</a></td></tr>
+<tr class="memdesc:ae1103fbc61e8cd85c6f7dcab694e89b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">String Entity object.  <br /></td></tr>
 <tr class="separator:ae1103fbc61e8cd85c6f7dcab694e89b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">Type</div></td></tr>
-<tr class="memitem:aadf0243f35f6993077e2d525c9371931"><td class="memItemLeft" align="right" valign="top">typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_2types_8h.html#aadf0243f35f6993077e2d525c9371931">IoMemReAlloc_fp</a>) (void *memPtr, pcf_size_t newSize)</td></tr>
-<tr class="memdesc:aadf0243f35f6993077e2d525c9371931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory re-allocation function pointer.  <br /></td></tr>
-<tr class="separator:aadf0243f35f6993077e2d525c9371931"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a653fc6332ef350e5db309569ff74e6e3"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_2types_8h.html#a653fc6332ef350e5db309569ff74e6e3">IoMemFree_fp</a>) (void *memPtr)</td></tr>
-<tr class="memdesc:a653fc6332ef350e5db309569ff74e6e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory free function pointer.  <br /></td></tr>
-<tr class="separator:a653fc6332ef350e5db309569ff74e6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9061f75e3fe589c5a9721cff7c965ea"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_2types_8h.html#aa9061f75e3fe589c5a9721cff7c965ea">IoMemCmp_fp</a>) (const void *ptr1, const void *ptr2, pcf_size_t num)</td></tr>
-<tr class="memdesc:aa9061f75e3fe589c5a9721cff7c965ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory compare function pointer.  <br /></td></tr>
-<tr class="separator:aa9061f75e3fe589c5a9721cff7c965ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84047a6fc676549a444e8f62fde5bbce"><td class="memItemLeft" align="right" valign="top">typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_2types_8h.html#a84047a6fc676549a444e8f62fde5bbce">IoMemChr_fp</a>) (const void *ptr, int value, pcf_size_t num)</td></tr>
-<tr class="memdesc:a84047a6fc676549a444e8f62fde5bbce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory find value function pointer.  <br /></td></tr>
-<tr class="separator:a84047a6fc676549a444e8f62fde5bbce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26c386f9994ff78f26715980e36c827f"><td class="memItemLeft" align="right" valign="top">typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_2types_8h.html#a26c386f9994ff78f26715980e36c827f">IoMemCpy_fp</a>) (void *destination, const void *source, pcf_size_t num)</td></tr>
-<tr class="memdesc:a26c386f9994ff78f26715980e36c827f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory copy function pointer.  <br /></td></tr>
-<tr class="separator:a26c386f9994ff78f26715980e36c827f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cdfabf5aa1c0d834cf31b917f0670b8"><td class="memItemLeft" align="right" valign="top">typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_2types_8h.html#a4cdfabf5aa1c0d834cf31b917f0670b8">IoMemMove_fp</a>) (void *destination, const void *source, pcf_size_t num)</td></tr>
-<tr class="memdesc:a4cdfabf5aa1c0d834cf31b917f0670b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory move function pointer.  <br /></td></tr>
-<tr class="separator:a4cdfabf5aa1c0d834cf31b917f0670b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27e109adac0c182d7eb60f7fc99389d7"><td class="memItemLeft" align="right" valign="top">typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="string_2types_8h.html#a27e109adac0c182d7eb60f7fc99389d7">IoMemSet_fp</a>) (void *ptr, int value, pcf_size_t num)</td></tr>
-<tr class="memdesc:a27e109adac0c182d7eb60f7fc99389d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory set function pointer.  <br /></td></tr>
-<tr class="separator:a27e109adac0c182d7eb60f7fc99389d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ae1103fbc61e8cd85c6f7dcab694e89b9" name="ae1103fbc61e8cd85c6f7dcab694e89b9"></a>
@@ -144,117 +124,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="aadf0243f35f6993077e2d525c9371931" name="aadf0243f35f6993077e2d525c9371931"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadf0243f35f6993077e2d525c9371931">&#9670;&#160;</a></span>IoMemReAlloc_fp</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void *(* IoMemReAlloc_fp) (void *memPtr, pcf_size_t newSize)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Memory re-allocation function pointer. </p>
-
-</div>
-</div>
-<a id="a653fc6332ef350e5db309569ff74e6e3" name="a653fc6332ef350e5db309569ff74e6e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a653fc6332ef350e5db309569ff74e6e3">&#9670;&#160;</a></span>IoMemFree_fp</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void(* IoMemFree_fp) (void *memPtr)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Memory free function pointer. </p>
-
-</div>
-</div>
-<a id="aa9061f75e3fe589c5a9721cff7c965ea" name="aa9061f75e3fe589c5a9721cff7c965ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9061f75e3fe589c5a9721cff7c965ea">&#9670;&#160;</a></span>IoMemCmp_fp</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef int(* IoMemCmp_fp) (const void *ptr1, const void *ptr2, pcf_size_t num)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Memory compare function pointer. </p>
-
-</div>
-</div>
-<a id="a84047a6fc676549a444e8f62fde5bbce" name="a84047a6fc676549a444e8f62fde5bbce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84047a6fc676549a444e8f62fde5bbce">&#9670;&#160;</a></span>IoMemChr_fp</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void *(* IoMemChr_fp) (const void *ptr, int value, pcf_size_t num)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Memory find value function pointer. </p>
-
-</div>
-</div>
-<a id="a26c386f9994ff78f26715980e36c827f" name="a26c386f9994ff78f26715980e36c827f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26c386f9994ff78f26715980e36c827f">&#9670;&#160;</a></span>IoMemCpy_fp</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void *(* IoMemCpy_fp) (void *destination, const void *source, pcf_size_t num)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Memory copy function pointer. </p>
-
-</div>
-</div>
-<a id="a4cdfabf5aa1c0d834cf31b917f0670b8" name="a4cdfabf5aa1c0d834cf31b917f0670b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cdfabf5aa1c0d834cf31b917f0670b8">&#9670;&#160;</a></span>IoMemMove_fp</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void *(* IoMemMove_fp) (void *destination, const void *source, pcf_size_t num)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Memory move function pointer. </p>
-
-</div>
-</div>
-<a id="a27e109adac0c182d7eb60f7fc99389d7" name="a27e109adac0c182d7eb60f7fc99389d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27e109adac0c182d7eb60f7fc99389d7">&#9670;&#160;</a></span>IoMemSet_fp</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef void *(* IoMemSet_fp) (void *ptr, int value, pcf_size_t num)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Memory set function pointer. </p>
+<p>String Entity object. </p>
 
 </div>
 </div>

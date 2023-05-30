@@ -99,21 +99,22 @@ $(document).ready(function(){initNavTree('group__pcf__core__entity__manager.html
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_entity_manager_config__t.html">EntityManagerConfig_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entity manager config struct.  <a href="struct_entity_manager_config__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga56d523ef4b2220b1ec53568176984123"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__entity__manager.html#ga56d523ef4b2220b1ec53568176984123">pcf_EntityManager_init</a> (const <a class="el" href="struct_entity_manager_config__t.html">EntityManagerConfig_t</a> *config)</td></tr>
-<tr class="memdesc:ga56d523ef4b2220b1ec53568176984123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialises the entity manager object.  <br /></td></tr>
+<tr class="memdesc:ga56d523ef4b2220b1ec53568176984123"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the entity manager object according to config structure <a class="el" href="struct_entity_manager_config__t.html" title="Entity manager config struct.">EntityManagerConfig_t</a>.  <br /></td></tr>
 <tr class="separator:ga56d523ef4b2220b1ec53568176984123"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga322c3fa5e8d57412ca31f0be988d526d"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__entity__manager.html#ga322c3fa5e8d57412ca31f0be988d526d">pcf_EntityManager_addEntity</a> (pcf_generic_t entity, <a class="el" href="union_entity_type__t.html">EntityType_t</a> type, <a class="el" href="group__pcf__core__entity.html#gab7beef4f8e61c56fd3c40d5933f13203">pcf_entityId_t</a> id)</td></tr>
 <tr class="memdesc:ga322c3fa5e8d57412ca31f0be988d526d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new entity into the manager.  <br /></td></tr>
 <tr class="separator:ga322c3fa5e8d57412ca31f0be988d526d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1762465bbf628f2ff536dce6bb9744e8"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_generic_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__entity__manager.html#ga1762465bbf628f2ff536dce6bb9744e8">pcf_EntityManager_removeEntity</a> (<a class="el" href="union_entity_type__t.html">EntityType_t</a> type, <a class="el" href="group__pcf__core__entity.html#gab7beef4f8e61c56fd3c40d5933f13203">pcf_entityId_t</a> id, pcf_status_t *status)</td></tr>
-<tr class="memdesc:ga1762465bbf628f2ff536dce6bb9744e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an entity from the manager based on type and id.  <br /></td></tr>
+<tr class="memdesc:ga1762465bbf628f2ff536dce6bb9744e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an entity from the manager based on <em>type</em>  and <em>id</em> .  <br /></td></tr>
 <tr class="separator:ga1762465bbf628f2ff536dce6bb9744e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae43ceaafdc7320179408724ec9f0b78f"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_generic_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__entity__manager.html#gae43ceaafdc7320179408724ec9f0b78f">pcf_EntityManager_getEntity</a> (<a class="el" href="union_entity_type__t.html">EntityType_t</a> type, <a class="el" href="group__pcf__core__entity.html#gab7beef4f8e61c56fd3c40d5933f13203">pcf_entityId_t</a> id, pcf_status_t *status)</td></tr>
-<tr class="memdesc:gae43ceaafdc7320179408724ec9f0b78f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get entity based on type and id.  <br /></td></tr>
+<tr class="memdesc:gae43ceaafdc7320179408724ec9f0b78f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get entity based on <em>type</em>  and <em>id</em> .  <br /></td></tr>
 <tr class="separator:gae43ceaafdc7320179408724ec9f0b78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7ed11a7a007a7cc9b2428babb850d65f"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__entity__manager.html#ga7ed11a7a007a7cc9b2428babb850d65f">pcf_EntityManager_setEntityEMPMessageHandler</a> (<a class="el" href="union_entity_type__t.html">EntityType_t</a> type, <a class="el" href="group__pcf__core__entity.html#gab7beef4f8e61c56fd3c40d5933f13203">pcf_entityId_t</a> id, <a class="el" href="group__pcf__core__entity.html#gaa5b31b8db8bf043af26cc0a179ed8aec">EMPMessageHandler_fp</a> handler)</td></tr>
 <tr class="memdesc:ga7ed11a7a007a7cc9b2428babb850d65f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set EMP message handler for the given entity.  <br /></td></tr>
@@ -138,7 +139,7 @@ Functions</h2></td></tr>
 <tr class="separator:gaa0410bd002590a0d172009d935a329d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<dl class="section note"><dt>Note</dt><dd>: Input validation is done only when package is built in debug mode. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Input validation is done only when package is built in debug mode. </dd></dl>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga56d523ef4b2220b1ec53568176984123" name="ga56d523ef4b2220b1ec53568176984123"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga56d523ef4b2220b1ec53568176984123">&#9670;&#160;</a></span>pcf_EntityManager_init()</h2>
@@ -156,24 +157,24 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialises the entity manager object. </p>
+<p>Initialize the entity manager object according to config structure <a class="el" href="struct_entity_manager_config__t.html" title="Entity manager config struct.">EntityManagerConfig_t</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">config</td><td>[IN] - Pointer to <a class="el" href="struct_entity_manager_config__t.html">EntityManagerConfig_t</a> to set array configurations. </td></tr>
+    <tr><td class="paramname">config</td><td>[IN] - Pointer to <a class="el" href="struct_entity_manager_config__t.html" title="Entity manager config struct.">EntityManagerConfig_t</a> to set array configurations. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a538e4e1fb7bbb6a1b2049c123098fce6" title="Successful operation.">PCF_ENTITYMANAGER_S_SUCCESS</a> : Successful operation </li>
+<a class="el" href="entity__manager_2defs_8h.html#a538e4e1fb7bbb6a1b2049c123098fce6">PCF_ENTITYMANAGER_S_SUCCESS</a> : Successful operation </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a32cc629c9bd165ddde06bddfbade2e87" title="Null argument passed.">PCF_ENTITYMANAGER_S_NULL_ARG</a> : Null config or config member is passed (Checked only in debug mode) </li>
+<a class="el" href="entity__manager_2defs_8h.html#a32cc629c9bd165ddde06bddfbade2e87">PCF_ENTITYMANAGER_S_NULL_ARG</a> : Null config or config member is passed (Checked only in debug mode) </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a2a6dc7198d94368df119756bde5d90a3" title="Invalid argument passed.">PCF_ENTITYMANAGER_S_INVALID_ARG</a> : Invalid number of maximum entities is passed (Checked only in debug mode) </li>
+<a class="el" href="entity__manager_2defs_8h.html#a2a6dc7198d94368df119756bde5d90a3">PCF_ENTITYMANAGER_S_INVALID_ARG</a> : Invalid number of maximum entities is passed (Checked only in debug mode) </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a5ede5ed97f1ac87d4fefefbff54b933d" title="Memory allocation failure.">PCF_ENTITYMANAGER_S_ALLOCATION_FAILED</a> : Memory allocation failure </li>
+<a class="el" href="entity__manager_2defs_8h.html#a5ede5ed97f1ac87d4fefefbff54b933d">PCF_ENTITYMANAGER_S_ALLOCATION_FAILED</a> : Memory allocation failure. </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a6aeb07a3163802b1b8f1c4e9c2053799" title="Entity manager already configured.">PCF_ENTITYMANAGER_S_ALREADY_CONFIGURED</a> : Entity manager is already configured </li>
+<a class="el" href="entity__manager_2defs_8h.html#a6aeb07a3163802b1b8f1c4e9c2053799">PCF_ENTITYMANAGER_S_ALREADY_CONFIGURED</a> : Entity manager was already configured. </li>
 </ul>
 </dd></dl>
 
@@ -214,21 +215,21 @@ Functions</h2></td></tr>
 <p>Add a new entity into the manager. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">entity</td><td>[IN] - Entity to be set </td></tr>
-    <tr><td class="paramname">type</td><td>[IN] - Type of entity to be set </td></tr>
-    <tr><td class="paramname">id</td><td>[IN] - Id to be set for the entity </td></tr>
+    <tr><td class="paramname">entity</td><td>[IN] - Entity to be set. </td></tr>
+    <tr><td class="paramname">type</td><td>[IN] - Type of entity to be set. </td></tr>
+    <tr><td class="paramname">id</td><td>[IN] - Id to be set for the entity. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a538e4e1fb7bbb6a1b2049c123098fce6" title="Successful operation.">PCF_ENTITYMANAGER_S_SUCCESS</a> : Successful operation </li>
+<a class="el" href="entity__manager_2defs_8h.html#a538e4e1fb7bbb6a1b2049c123098fce6">PCF_ENTITYMANAGER_S_SUCCESS</a> : Successful operation </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a32cc629c9bd165ddde06bddfbade2e87" title="Null argument passed.">PCF_ENTITYMANAGER_S_NULL_ARG</a> : Null entity is passed (Checked only in debug mode) </li>
+<a class="el" href="entity__manager_2defs_8h.html#a32cc629c9bd165ddde06bddfbade2e87">PCF_ENTITYMANAGER_S_NULL_ARG</a> : Null entity is passed (Checked only in debug mode) </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a0856e9bbd8049b27ad926930e91951bc" title="Entity manager is not configured.">PCF_ENTITYMANAGER_S_NOT_CONFIGURED</a> : Entity manager is not configured (Checked only in debug mode) </li>
+<a class="el" href="entity__manager_2defs_8h.html#a0856e9bbd8049b27ad926930e91951bc">PCF_ENTITYMANAGER_S_NOT_CONFIGURED</a> : Entity manager is not configured (Checked only in debug mode) </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a21031f42cc72af582f3aa115ce4280d5" title="Entity manager reached maximum capacity.">PCF_ENTITYMANAGER_S_NO_SPACE</a> : Entity manager full </li>
+<a class="el" href="entity__manager_2defs_8h.html#a21031f42cc72af582f3aa115ce4280d5">PCF_ENTITYMANAGER_S_NO_SPACE</a> : Entity manager full. </li>
 </ul>
 </dd></dl>
 
@@ -266,21 +267,22 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Removes an entity from the manager based on type and id. </p>
+<p>Removes an entity from the manager based on <em>type</em>  and <em>id</em> . </p>
 <p>Returns the entity which has been removed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>[IN] - Type of entity to be remove </td></tr>
     <tr><td class="paramname">id</td><td>[IN] - Id of the entity </td></tr>
-    <tr><td class="paramname">status</td><td>[OUT] - Pointer to pcf_status_t Valid values : <ul>
+    <tr><td class="paramname">status</td><td>[OUT] - Pointer to pcf_status_t (Optional parameter, pass PCF_NULL if not required.) <br  />
+ Valid values: <ul>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a538e4e1fb7bbb6a1b2049c123098fce6" title="Successful operation.">PCF_ENTITYMANAGER_S_SUCCESS</a> : Successful operation </li>
+<a class="el" href="entity__manager_2defs_8h.html#a538e4e1fb7bbb6a1b2049c123098fce6">PCF_ENTITYMANAGER_S_SUCCESS</a> : Successful operation </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#aa55e5d848272a186a0d354515532b4a9" title="Entity manager is empty.">PCF_ENTITYMANAGER_S_EMPTY</a> : Entity manager is empty </li>
+<a class="el" href="entity__manager_2defs_8h.html#aa55e5d848272a186a0d354515532b4a9">PCF_ENTITYMANAGER_S_EMPTY</a> : Entity manager is empty </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a6e21d131bd5ee23cb0f5644270652491" title="Entity not found.">PCF_ENTITYMANAGER_S_DATA_NOT_FOUND</a> : Entity not found </li>
+<a class="el" href="entity__manager_2defs_8h.html#a6e21d131bd5ee23cb0f5644270652491">PCF_ENTITYMANAGER_S_DATA_NOT_FOUND</a> : Entity not found </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a0856e9bbd8049b27ad926930e91951bc" title="Entity manager is not configured.">PCF_ENTITYMANAGER_S_NOT_CONFIGURED</a> : Entity manager is not configured (Checked only in debug mode) </li>
+<a class="el" href="entity__manager_2defs_8h.html#a0856e9bbd8049b27ad926930e91951bc">PCF_ENTITYMANAGER_S_NOT_CONFIGURED</a> : Entity manager is not configured (Checked only in debug mode) </li>
 </ul>
 </td></tr>
   </table>
@@ -322,20 +324,21 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get entity based on type and id. </p>
+<p>Get entity based on <em>type</em>  and <em>id</em> . </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>[IN] - Type of entity </td></tr>
     <tr><td class="paramname">id</td><td>[IN] - Id of the entity </td></tr>
-    <tr><td class="paramname">status</td><td>[OUT] - Pointer to pcf_status_t Valid values : <ul>
+    <tr><td class="paramname">status</td><td>[OUT] - Pointer to pcf_status_t (Optional parameter, pass PCF_NULL if not required.) <br  />
+ Valid values: <ul>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a538e4e1fb7bbb6a1b2049c123098fce6" title="Successful operation.">PCF_ENTITYMANAGER_S_SUCCESS</a> : Successful operation </li>
+<a class="el" href="entity__manager_2defs_8h.html#a538e4e1fb7bbb6a1b2049c123098fce6">PCF_ENTITYMANAGER_S_SUCCESS</a> : Successful operation </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#aa55e5d848272a186a0d354515532b4a9" title="Entity manager is empty.">PCF_ENTITYMANAGER_S_EMPTY</a> : Entity manager is empty </li>
+<a class="el" href="entity__manager_2defs_8h.html#aa55e5d848272a186a0d354515532b4a9">PCF_ENTITYMANAGER_S_EMPTY</a> : Entity manager is empty </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a6e21d131bd5ee23cb0f5644270652491" title="Entity not found.">PCF_ENTITYMANAGER_S_DATA_NOT_FOUND</a> : Entity not found </li>
+<a class="el" href="entity__manager_2defs_8h.html#a6e21d131bd5ee23cb0f5644270652491">PCF_ENTITYMANAGER_S_DATA_NOT_FOUND</a> : Entity not found </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a0856e9bbd8049b27ad926930e91951bc" title="Entity manager is not configured.">PCF_ENTITYMANAGER_S_NOT_CONFIGURED</a> : Entity manager is not configured (Checked only in debug mode) </li>
+<a class="el" href="entity__manager_2defs_8h.html#a0856e9bbd8049b27ad926930e91951bc">PCF_ENTITYMANAGER_S_NOT_CONFIGURED</a> : Entity manager is not configured (Checked only in debug mode) </li>
 </ul>
 </td></tr>
   </table>
@@ -382,19 +385,19 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">type</td><td>[IN] - Type of entity </td></tr>
     <tr><td class="paramname">id</td><td>[IN] - Id of the entity </td></tr>
-    <tr><td class="paramname">handler</td><td>[IN] - Callback function of type <a class="el" href="group__pcf__core__entity.html#gaa5b31b8db8bf043af26cc0a179ed8aec" title="Entity Manager protocol message handler.">EMPMessageHandler_fp</a> </td></tr>
+    <tr><td class="paramname">handler</td><td>[IN] - Callback function of type <a class="el" href="group__pcf__core__entity.html#gaa5b31b8db8bf043af26cc0a179ed8aec" title="Entity Management Protocol.">EMPMessageHandler_fp</a> </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a538e4e1fb7bbb6a1b2049c123098fce6" title="Successful operation.">PCF_ENTITYMANAGER_S_SUCCESS</a> : Successful operation </li>
+<a class="el" href="entity__manager_2defs_8h.html#a538e4e1fb7bbb6a1b2049c123098fce6">PCF_ENTITYMANAGER_S_SUCCESS</a> : Successful operation </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#aa55e5d848272a186a0d354515532b4a9" title="Entity manager is empty.">PCF_ENTITYMANAGER_S_EMPTY</a> : Entity manager is empty </li>
+<a class="el" href="entity__manager_2defs_8h.html#aa55e5d848272a186a0d354515532b4a9">PCF_ENTITYMANAGER_S_EMPTY</a> : Entity manager is empty </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a6e21d131bd5ee23cb0f5644270652491" title="Entity not found.">PCF_ENTITYMANAGER_S_DATA_NOT_FOUND</a> : Entity not found </li>
+<a class="el" href="entity__manager_2defs_8h.html#a6e21d131bd5ee23cb0f5644270652491">PCF_ENTITYMANAGER_S_DATA_NOT_FOUND</a> : Entity not found </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a0856e9bbd8049b27ad926930e91951bc" title="Entity manager is not configured.">PCF_ENTITYMANAGER_S_NOT_CONFIGURED</a> : Entity manager is not configured (Checked only in debug mode) </li>
+<a class="el" href="entity__manager_2defs_8h.html#a0856e9bbd8049b27ad926930e91951bc">PCF_ENTITYMANAGER_S_NOT_CONFIGURED</a> : Entity manager is not configured (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
@@ -437,15 +440,16 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">type</td><td>[IN] - Type of entity </td></tr>
     <tr><td class="paramname">id</td><td>[IN] - Id of the entity </td></tr>
-    <tr><td class="paramname">status</td><td>[OUT] - Pointer to pcf_status_t Valid values : <ul>
+    <tr><td class="paramname">status</td><td>[OUT] - Pointer to pcf_status_t (Optional parameter, pass PCF_NULL if not required.) <br  />
+ Valid values: <ul>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a538e4e1fb7bbb6a1b2049c123098fce6" title="Successful operation.">PCF_ENTITYMANAGER_S_SUCCESS</a> : Successful operation </li>
+<a class="el" href="entity__manager_2defs_8h.html#a538e4e1fb7bbb6a1b2049c123098fce6">PCF_ENTITYMANAGER_S_SUCCESS</a> : Successful operation </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#aa55e5d848272a186a0d354515532b4a9" title="Entity manager is empty.">PCF_ENTITYMANAGER_S_EMPTY</a> : Entity manager is empty </li>
+<a class="el" href="entity__manager_2defs_8h.html#aa55e5d848272a186a0d354515532b4a9">PCF_ENTITYMANAGER_S_EMPTY</a> : Entity manager is empty </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a6e21d131bd5ee23cb0f5644270652491" title="Entity not found.">PCF_ENTITYMANAGER_S_DATA_NOT_FOUND</a> : Entity not found </li>
+<a class="el" href="entity__manager_2defs_8h.html#a6e21d131bd5ee23cb0f5644270652491">PCF_ENTITYMANAGER_S_DATA_NOT_FOUND</a> : Entity not found </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a0856e9bbd8049b27ad926930e91951bc" title="Entity manager is not configured.">PCF_ENTITYMANAGER_S_NOT_CONFIGURED</a> : Entity manager is not configured (Checked only in debug mode) </li>
+<a class="el" href="entity__manager_2defs_8h.html#a0856e9bbd8049b27ad926930e91951bc">PCF_ENTITYMANAGER_S_NOT_CONFIGURED</a> : Entity manager is not configured (Checked only in debug mode) </li>
 </ul>
 </td></tr>
   </table>
@@ -480,13 +484,13 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t[OUT] Valid values : <ul>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a538e4e1fb7bbb6a1b2049c123098fce6" title="Successful operation.">PCF_ENTITYMANAGER_S_SUCCESS</a> : Successful operation </li>
+<a class="el" href="entity__manager_2defs_8h.html#a538e4e1fb7bbb6a1b2049c123098fce6">PCF_ENTITYMANAGER_S_SUCCESS</a> : Successful operation </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a5ede5ed97f1ac87d4fefefbff54b933d" title="Memory allocation failure.">PCF_ENTITYMANAGER_S_ALLOCATION_FAILED</a> : Memory allocation failure </li>
+<a class="el" href="entity__manager_2defs_8h.html#a5ede5ed97f1ac87d4fefefbff54b933d">PCF_ENTITYMANAGER_S_ALLOCATION_FAILED</a> : Memory allocation failure </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a2a6dc7198d94368df119756bde5d90a3" title="Invalid argument passed.">PCF_ENTITYMANAGER_S_INVALID_ARG</a> : Invalid number is passed (Checked only in debug mode) </li>
+<a class="el" href="entity__manager_2defs_8h.html#a2a6dc7198d94368df119756bde5d90a3">PCF_ENTITYMANAGER_S_INVALID_ARG</a> : Invalid number is passed (Checked only in debug mode) </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a0856e9bbd8049b27ad926930e91951bc" title="Entity manager is not configured.">PCF_ENTITYMANAGER_S_NOT_CONFIGURED</a> : Entity manager is not configured (Checked only in debug mode) </li>
+<a class="el" href="entity__manager_2defs_8h.html#a0856e9bbd8049b27ad926930e91951bc">PCF_ENTITYMANAGER_S_NOT_CONFIGURED</a> : Entity manager is not configured (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
@@ -517,11 +521,11 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a538e4e1fb7bbb6a1b2049c123098fce6" title="Successful operation.">PCF_ENTITYMANAGER_S_SUCCESS</a> : Successful operation </li>
+<a class="el" href="entity__manager_2defs_8h.html#a538e4e1fb7bbb6a1b2049c123098fce6">PCF_ENTITYMANAGER_S_SUCCESS</a> : Successful operation </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a32cc629c9bd165ddde06bddfbade2e87" title="Null argument passed.">PCF_ENTITYMANAGER_S_NULL_ARG</a> : Null argument is passed (Checked only in debug mode) </li>
+<a class="el" href="entity__manager_2defs_8h.html#a32cc629c9bd165ddde06bddfbade2e87">PCF_ENTITYMANAGER_S_NULL_ARG</a> : Null argument is passed (Checked only in debug mode) </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a0856e9bbd8049b27ad926930e91951bc" title="Entity manager is not configured.">PCF_ENTITYMANAGER_S_NOT_CONFIGURED</a> : Entity manager is not configured (Checked only in debug mode) </li>
+<a class="el" href="entity__manager_2defs_8h.html#a0856e9bbd8049b27ad926930e91951bc">PCF_ENTITYMANAGER_S_NOT_CONFIGURED</a> : Entity manager is not configured (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
@@ -552,11 +556,11 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a538e4e1fb7bbb6a1b2049c123098fce6" title="Successful operation.">PCF_ENTITYMANAGER_S_SUCCESS</a> : Successful operation </li>
+<a class="el" href="entity__manager_2defs_8h.html#a538e4e1fb7bbb6a1b2049c123098fce6">PCF_ENTITYMANAGER_S_SUCCESS</a> : Successful operation </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a32cc629c9bd165ddde06bddfbade2e87" title="Null argument passed.">PCF_ENTITYMANAGER_S_NULL_ARG</a> : Null argument is passed (Checked only in debug mode) </li>
+<a class="el" href="entity__manager_2defs_8h.html#a32cc629c9bd165ddde06bddfbade2e87">PCF_ENTITYMANAGER_S_NULL_ARG</a> : Null argument is passed (Checked only in debug mode) </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a0856e9bbd8049b27ad926930e91951bc" title="Entity manager is not configured.">PCF_ENTITYMANAGER_S_NOT_CONFIGURED</a> : Entity manager is not configured (Checked only in debug mode) </li>
+<a class="el" href="entity__manager_2defs_8h.html#a0856e9bbd8049b27ad926930e91951bc">PCF_ENTITYMANAGER_S_NOT_CONFIGURED</a> : Entity manager is not configured (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
@@ -598,11 +602,11 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a538e4e1fb7bbb6a1b2049c123098fce6" title="Successful operation.">PCF_ENTITYMANAGER_S_SUCCESS</a> : Successful operation </li>
+<a class="el" href="entity__manager_2defs_8h.html#a538e4e1fb7bbb6a1b2049c123098fce6">PCF_ENTITYMANAGER_S_SUCCESS</a> : Successful operation </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a32cc629c9bd165ddde06bddfbade2e87" title="Null argument passed.">PCF_ENTITYMANAGER_S_NULL_ARG</a> : Null argument is passed (Checked only in debug mode) </li>
+<a class="el" href="entity__manager_2defs_8h.html#a32cc629c9bd165ddde06bddfbade2e87">PCF_ENTITYMANAGER_S_NULL_ARG</a> : Null argument is passed (Checked only in debug mode) </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a0856e9bbd8049b27ad926930e91951bc" title="Entity manager is not configured.">PCF_ENTITYMANAGER_S_NOT_CONFIGURED</a> : Entity manager is not configured (Checked only in debug mode) </li>
+<a class="el" href="entity__manager_2defs_8h.html#a0856e9bbd8049b27ad926930e91951bc">PCF_ENTITYMANAGER_S_NOT_CONFIGURED</a> : Entity manager is not configured (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
@@ -626,9 +630,9 @@ Functions</h2></td></tr>
 <p>De-initialises the entity manager. </p>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a538e4e1fb7bbb6a1b2049c123098fce6" title="Successful operation.">PCF_ENTITYMANAGER_S_SUCCESS</a> : Successful operation </li>
+<a class="el" href="entity__manager_2defs_8h.html#a538e4e1fb7bbb6a1b2049c123098fce6">PCF_ENTITYMANAGER_S_SUCCESS</a> : Successful operation </li>
 <li>
-<a class="el" href="entity__manager_2defs_8h.html#a0856e9bbd8049b27ad926930e91951bc" title="Entity manager is not configured.">PCF_ENTITYMANAGER_S_NOT_CONFIGURED</a> : Entity manager is not configured (Checked only in debug mode) </li>
+<a class="el" href="entity__manager_2defs_8h.html#a0856e9bbd8049b27ad926930e91951bc">PCF_ENTITYMANAGER_S_NOT_CONFIGURED</a> : Entity manager is not configured (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 

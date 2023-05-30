@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('utils_example_8c-example.html',''); in
 <div class="line">    <span class="keywordtype">char</span> str[15];</div>
 <div class="line">    </div>
 <div class="line">    <span class="comment">// Converting &#39;num&#39; signed integer value into string.</span></div>
-<div class="line">    <span class="keywordflow">if</span>(<a id="a0" name="a0"></a><a class="code hl_function" href="group__pcf__core__utils.html#ga0a925745fcd743abe95bb7876b7752ec">pcf_Utils_iToA</a>(num,str,8) &gt; 0){</div>
+<div class="line">    <span class="keywordflow">if</span>(<a id="a0" name="a0"></a><a class="code hl_function" href="group__pcf__core__utils.html#ga0020c8da1a8ce6ce8309592f30872a45">pcf_Utils_iToA</a>(num,str,8) &gt; 0){</div>
 <div class="line">        printf(<span class="stringliteral">&quot;iToA output : &#39;%s&#39;\n&quot;</span>,str); <span class="comment">// Printing converted &#39;num&#39; integer value.</span></div>
 <div class="line">    }<span class="keywordflow">else</span>{</div>
 <div class="line">        printf(<span class="stringliteral">&quot;Signed integer value to string coversion failed.\n&quot;</span>); <span class="comment">// Printing error message.</span></div>
@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('utils_example_8c-example.html',''); in
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">float</span> fvalue = 1.23456e+10f;</div>
 <div class="line">    <span class="comment">// Converting &#39;fvalue&#39; float value into string.</span></div>
-<div class="line">    <span class="keywordflow">if</span>(<a id="a1" name="a1"></a><a class="code hl_function" href="group__pcf__core__utils.html#gab4ee960ce2e7ab375cd9cecaab195a88">pcf_Utils_fToA_exp</a>(fvalue, str, 6, enPCFBoolean_True, enPCFBoolean_True) &gt; 0){</div>
+<div class="line">    <span class="keywordflow">if</span>(<a id="a1" name="a1"></a><a class="code hl_function" href="group__pcf__core__utils.html#ga5cf878b1d1beb4ec5d8131058b73a09a">pcf_Utils_fToA_exp</a>(fvalue, str, 6, enPCFBoolean_True, enPCFBoolean_True) &gt; 0){</div>
 <div class="line">        printf(<span class="stringliteral">&quot;fToA output : &#39;%s&#39;\n&quot;</span>,str);</div>
 <div class="line">    }<span class="keywordflow">else</span>{</div>
 <div class="line">        printf(<span class="stringliteral">&quot;Float value to string coversion failed.\n&quot;</span>); <span class="comment">// Printing error message.</span></div>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('utils_example_8c-example.html',''); in
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">double</span> dvalue = -1.23456e-10;</div>
 <div class="line">    <span class="comment">// Converting &#39;dvalue&#39; double value into string.</span></div>
-<div class="line">    <span class="keywordflow">if</span>(<a id="a2" name="a2"></a><a class="code hl_function" href="group__pcf__core__utils.html#ga549c1c6ae23ed3363ef55171599080dd">pcf_Utils_dToA_exp</a>(dvalue, str, 0, enPCFBoolean_False, enPCFBoolean_True) &gt; 0){</div>
+<div class="line">    <span class="keywordflow">if</span>(<a id="a2" name="a2"></a><a class="code hl_function" href="group__pcf__core__utils.html#gad396dc2b4f3b0e3ade8cbff4aa025353">pcf_Utils_dToA_exp</a>(dvalue, str, 0, enPCFBoolean_False, enPCFBoolean_True) &gt; 0){</div>
 <div class="line">        printf(<span class="stringliteral">&quot;dToA output : &#39;%s&#39;\n&quot;</span>,str);</div>
 <div class="line">    }<span class="keywordflow">else</span>{</div>
 <div class="line">        printf(<span class="stringliteral">&quot;Double value to string coversion failed.\n&quot;</span>); <span class="comment">// Printing error message.</span></div>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('utils_example_8c-example.html',''); in
 <div class="line"> </div>
 <div class="line">    <span class="keywordtype">unsigned</span> uvalue = 0xAB;</div>
 <div class="line">    <span class="comment">// Converting &#39;uvalue&#39; unsigned integer value into string.</span></div>
-<div class="line">    <span class="keywordflow">if</span>(<a id="a3" name="a3"></a><a class="code hl_function" href="group__pcf__core__utils.html#ga3603b68925e0fc5d229d3c489a84388f">pcf_Utils_uToA</a>(uvalue,str, <span class="keyword">sizeof</span>(str), 16, enPCFBoolean_True) &gt; 0){</div>
+<div class="line">    <span class="keywordflow">if</span>(<a id="a3" name="a3"></a><a class="code hl_function" href="group__pcf__core__utils.html#gab5ebbce6674224227f3399847cac50da">pcf_Utils_uToA</a>(uvalue,str, <span class="keyword">sizeof</span>(str), 16, enPCFBoolean_True) &gt; 0){</div>
 <div class="line">        printf(<span class="stringliteral">&quot;uToA output : &#39;%s&#39;\n&quot;</span>,str);</div>
 <div class="line">    }<span class="keywordflow">else</span>{</div>
 <div class="line">        printf(<span class="stringliteral">&quot;Unsigned integer value to string coversion failed.\n&quot;</span>); <span class="comment">// Printing error message.</span></div>
@@ -138,10 +138,10 @@ $(document).ready(function(){initNavTree('utils_example_8c-example.html',''); in
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__pcf__core__utils_html_ga0a925745fcd743abe95bb7876b7752ec"><div class="ttname"><a href="group__pcf__core__utils.html#ga0a925745fcd743abe95bb7876b7752ec">pcf_Utils_iToA</a></div><div class="ttdeci">PCF_CORE_API int pcf_Utils_iToA(int64_t num, pcf_string_t str, int64_t digits)</div><div class="ttdoc">Converts the integer value to string.</div></div>
-<div class="ttc" id="agroup__pcf__core__utils_html_ga3603b68925e0fc5d229d3c489a84388f"><div class="ttname"><a href="group__pcf__core__utils.html#ga3603b68925e0fc5d229d3c489a84388f">pcf_Utils_uToA</a></div><div class="ttdeci">PCF_CORE_API int pcf_Utils_uToA(uint64_t value, pcf_string_t buffer, int buffer_size, int base, EnPCFBoolean_t ptr)</div><div class="ttdoc">Converts an unsigned 64-bit integer value to a string representation.</div></div>
-<div class="ttc" id="agroup__pcf__core__utils_html_ga549c1c6ae23ed3363ef55171599080dd"><div class="ttname"><a href="group__pcf__core__utils.html#ga549c1c6ae23ed3363ef55171599080dd">pcf_Utils_dToA_exp</a></div><div class="ttdeci">PCF_CORE_API int pcf_Utils_dToA_exp(double value, pcf_string_t buffer, int prec, EnPCFBoolean_t upperExp, EnPCFBoolean_t explicit_exp_sign)</div><div class="ttdoc">Converts the double exponent value to string.</div></div>
-<div class="ttc" id="agroup__pcf__core__utils_html_gab4ee960ce2e7ab375cd9cecaab195a88"><div class="ttname"><a href="group__pcf__core__utils.html#gab4ee960ce2e7ab375cd9cecaab195a88">pcf_Utils_fToA_exp</a></div><div class="ttdeci">PCF_CORE_API int pcf_Utils_fToA_exp(float value, pcf_string_t buffer, int prec, EnPCFBoolean_t upperExp, EnPCFBoolean_t explicit_exp_sign)</div><div class="ttdoc">Convert float value to a string with given precision.</div></div>
+<div class="ttc" id="agroup__pcf__core__utils_html_ga0020c8da1a8ce6ce8309592f30872a45"><div class="ttname"><a href="group__pcf__core__utils.html#ga0020c8da1a8ce6ce8309592f30872a45">pcf_Utils_iToA</a></div><div class="ttdeci">PCF_CORE_API int pcf_Utils_iToA(const int64_t num, pcf_string_t const str, const int64_t digits)</div><div class="ttdoc">Converts the integer value to string.</div></div>
+<div class="ttc" id="agroup__pcf__core__utils_html_ga5cf878b1d1beb4ec5d8131058b73a09a"><div class="ttname"><a href="group__pcf__core__utils.html#ga5cf878b1d1beb4ec5d8131058b73a09a">pcf_Utils_fToA_exp</a></div><div class="ttdeci">PCF_CORE_API int pcf_Utils_fToA_exp(float value, pcf_string_t buffer, int prec, const EnPCFBoolean_t upperExp, const EnPCFBoolean_t explicit_exp_sign)</div><div class="ttdoc">Converts float value to a string with the given precision.</div></div>
+<div class="ttc" id="agroup__pcf__core__utils_html_gab5ebbce6674224227f3399847cac50da"><div class="ttname"><a href="group__pcf__core__utils.html#gab5ebbce6674224227f3399847cac50da">pcf_Utils_uToA</a></div><div class="ttdeci">PCF_CORE_API int pcf_Utils_uToA(uint64_t value, pcf_string_t buffer, const int buffer_size, int base, const EnPCFBoolean_t ptr)</div><div class="ttdoc">Converts an unsigned 64-bit integer value to a string representation.</div></div>
+<div class="ttc" id="agroup__pcf__core__utils_html_gad396dc2b4f3b0e3ade8cbff4aa025353"><div class="ttname"><a href="group__pcf__core__utils.html#gad396dc2b4f3b0e3ade8cbff4aa025353">pcf_Utils_dToA_exp</a></div><div class="ttdeci">PCF_CORE_API int pcf_Utils_dToA_exp(double value, pcf_string_t buffer, int prec, const EnPCFBoolean_t upperExp, const EnPCFBoolean_t explicit_exp_sign)</div><div class="ttdoc">Converts the double exponent value to string.</div></div>
 <div class="ttc" id="autils_8h_html"><div class="ttname"><a href="utils_8h.html">utils.h</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->

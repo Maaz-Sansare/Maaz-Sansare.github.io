@@ -100,24 +100,24 @@ $(document).ready(function(){initNavTree('command_2types_8h_source.html',''); in
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>PCF_BEGIN_EXTERN</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="struct_command_owner__t.html">   16</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="group__pcf__core__command.html#gaeac3640d23d51061b023605bd64b61aa">   17</a></span>    <span class="keywordtype">void</span>* <a class="code hl_variable" href="group__pcf__core__command.html#gaeac3640d23d51061b023605bd64b61aa">details</a>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>} <a class="code hl_struct" href="struct_command_owner__t.html">CommandOwner_t</a>; </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="struct_command_owner__t.html">   18</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="group__pcf__core__command.html#gad23fc5b62ba4112f36b9307ed6398cdf">   19</a></span>    pcf_generic_t <a class="code hl_variable" href="group__pcf__core__command.html#gad23fc5b62ba4112f36b9307ed6398cdf">details</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>} <a class="code hl_struct" href="struct_command_owner__t.html">CommandOwner_t</a>; </div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="group__pcf__core__command.html#gaf450682fb9e5f558afa9fa457da78a14">   25</a></span><span class="keyword">typedef</span> uint32_t <a class="code hl_typedef" href="group__pcf__core__command.html#gaf450682fb9e5f558afa9fa457da78a14">pcf_command_t</a>;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="group__pcf__core__command.html#ga92729f3f2522605cf43ac961670d3375">   30</a></span><span class="keyword">typedef</span> pcf_status_t (*<a class="code hl_typedef" href="group__pcf__core__command.html#ga92729f3f2522605cf43ac961670d3375">CommandIO_fp</a>)(<a class="code hl_struct" href="struct_command_owner__t.html">CommandOwner_t</a> *owner, <a class="code hl_typedef" href="group__pcf__core__command.html#gaf450682fb9e5f558afa9fa457da78a14">pcf_command_t</a> command, pcf_generic_t data);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>PCF_END_EXTERN</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#endif </span><span class="comment">//__PCF_INCLUDES_PCF_COMMAND_TYPE_H__</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="group__pcf__core__command.html#gae07e139c8b26e41dbeb3a7d6476ceaff">   38</a></span><span class="keyword">typedef</span> pcf_status_t (*<a class="code hl_typedef" href="group__pcf__core__command.html#gae07e139c8b26e41dbeb3a7d6476ceaff">CommandIO_fp</a>)(<a class="code hl_struct" href="struct_command_owner__t.html">CommandOwner_t</a>* owner, <span class="keyword">const</span> <a class="code hl_typedef" href="group__pcf__core__command.html#gaf450682fb9e5f558afa9fa457da78a14">pcf_command_t</a> command, pcf_generic_t data);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>PCF_END_EXTERN</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif </span><span class="comment">//__PCF_INCLUDES_PCF_COMMAND_TYPE_H__</span></div>
 <div class="ttc" id="acommand_2defs_8h_html"><div class="ttname"><a href="command_2defs_8h.html">defs.h</a></div></div>
-<div class="ttc" id="agroup__pcf__core__command_html_ga92729f3f2522605cf43ac961670d3375"><div class="ttname"><a href="group__pcf__core__command.html#ga92729f3f2522605cf43ac961670d3375">CommandIO_fp</a></div><div class="ttdeci">pcf_status_t(* CommandIO_fp)(CommandOwner_t *owner, pcf_command_t command, pcf_generic_t data)</div><div class="ttdoc">Command IO function pointer.</div><div class="ttdef"><b>Definition:</b> types.h:30</div></div>
-<div class="ttc" id="agroup__pcf__core__command_html_gaeac3640d23d51061b023605bd64b61aa"><div class="ttname"><a href="group__pcf__core__command.html#gaeac3640d23d51061b023605bd64b61aa">CommandOwner_t::details</a></div><div class="ttdeci">void * details</div><div class="ttdef"><b>Definition:</b> types.h:17</div></div>
+<div class="ttc" id="agroup__pcf__core__command_html_gad23fc5b62ba4112f36b9307ed6398cdf"><div class="ttname"><a href="group__pcf__core__command.html#gad23fc5b62ba4112f36b9307ed6398cdf">CommandOwner_t::details</a></div><div class="ttdeci">pcf_generic_t details</div><div class="ttdef"><b>Definition:</b> types.h:19</div></div>
+<div class="ttc" id="agroup__pcf__core__command_html_gae07e139c8b26e41dbeb3a7d6476ceaff"><div class="ttname"><a href="group__pcf__core__command.html#gae07e139c8b26e41dbeb3a7d6476ceaff">CommandIO_fp</a></div><div class="ttdeci">pcf_status_t(* CommandIO_fp)(CommandOwner_t *owner, const pcf_command_t command, pcf_generic_t data)</div><div class="ttdoc">Command IO function pointer.</div><div class="ttdef"><b>Definition:</b> types.h:38</div></div>
 <div class="ttc" id="agroup__pcf__core__command_html_gaf450682fb9e5f558afa9fa457da78a14"><div class="ttname"><a href="group__pcf__core__command.html#gaf450682fb9e5f558afa9fa457da78a14">pcf_command_t</a></div><div class="ttdeci">uint32_t pcf_command_t</div><div class="ttdoc">Command type.</div><div class="ttdef"><b>Definition:</b> types.h:25</div></div>
-<div class="ttc" id="astruct_command_owner__t_html"><div class="ttname"><a href="struct_command_owner__t.html">CommandOwner_t</a></div><div class="ttdoc">Command owner struct.</div><div class="ttdef"><b>Definition:</b> types.h:16</div></div>
+<div class="ttc" id="astruct_command_owner__t_html"><div class="ttname"><a href="struct_command_owner__t.html">CommandOwner_t</a></div><div class="ttdoc">Command owner struct.</div><div class="ttdef"><b>Definition:</b> types.h:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

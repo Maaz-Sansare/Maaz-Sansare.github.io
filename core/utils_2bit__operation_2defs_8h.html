@@ -89,8 +89,6 @@ $(document).ready(function(){initNavTree('utils_2bit__operation_2defs_8h.html','
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#define-members">Macros</a>  </div>
   <div class="headertitle"><div class="title">defs.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -100,8 +98,10 @@ $(document).ready(function(){initNavTree('utils_2bit__operation_2defs_8h.html','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
+<tr><td colspan="2"><div class="groupHeader">Bit operation</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Clear a bit at a given position </p>
+</div></td></tr>
 <tr class="memitem:ga132305aab060cd6dfb36ffcbc96aba96"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils__bit__operation.html#ga132305aab060cd6dfb36ffcbc96aba96">PCF_CLEAR_BIT</a>(REG,  POSITION)&#160;&#160;&#160;((REG) &amp;= ~((0x1UL) &lt;&lt; (POSITION)))</td></tr>
-<tr class="memdesc:ga132305aab060cd6dfb36ffcbc96aba96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear a bit at a given position.  <br /></td></tr>
 <tr class="separator:ga132305aab060cd6dfb36ffcbc96aba96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad1cdf40e58b8e48dad29170fe3e8b2b5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils__bit__operation.html#gad1cdf40e58b8e48dad29170fe3e8b2b5">PCF_CLEAR_CONTINUOUS_BITS</a>(REG,  START,  LENGTH)&#160;&#160;&#160;((REG) &amp;= ~((((0x1UL) &lt;&lt; (LENGTH)) - 1) &lt;&lt; (START)))</td></tr>
 <tr class="memdesc:gad1cdf40e58b8e48dad29170fe3e8b2b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear bits at a given length from a given position.  <br /></td></tr>

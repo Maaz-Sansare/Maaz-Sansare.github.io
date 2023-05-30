@@ -104,16 +104,16 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:gaeac3640d23d51061b023605bd64b61aa"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__command.html#gaeac3640d23d51061b023605bd64b61aa">CommandOwner_t::details</a></td></tr>
-<tr class="separator:gaeac3640d23d51061b023605bd64b61aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad23fc5b62ba4112f36b9307ed6398cdf"><td class="memItemLeft" align="right" valign="top">pcf_generic_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__command.html#gad23fc5b62ba4112f36b9307ed6398cdf">CommandOwner_t::details</a></td></tr>
+<tr class="separator:gad23fc5b62ba4112f36b9307ed6398cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Types</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Command types</h2></td></tr>
 <tr class="memitem:gaf450682fb9e5f558afa9fa457da78a14"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__command.html#gaf450682fb9e5f558afa9fa457da78a14">pcf_command_t</a></td></tr>
 <tr class="memdesc:gaf450682fb9e5f558afa9fa457da78a14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command type.  <br /></td></tr>
 <tr class="separator:gaf450682fb9e5f558afa9fa457da78a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga92729f3f2522605cf43ac961670d3375"><td class="memItemLeft" align="right" valign="top">typedef pcf_status_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__command.html#ga92729f3f2522605cf43ac961670d3375">CommandIO_fp</a>) (<a class="el" href="struct_command_owner__t.html">CommandOwner_t</a> *owner, <a class="el" href="group__pcf__core__command.html#gaf450682fb9e5f558afa9fa457da78a14">pcf_command_t</a> command, pcf_generic_t data)</td></tr>
-<tr class="memdesc:ga92729f3f2522605cf43ac961670d3375"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command IO function pointer.  <br /></td></tr>
-<tr class="separator:ga92729f3f2522605cf43ac961670d3375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae07e139c8b26e41dbeb3a7d6476ceaff"><td class="memItemLeft" align="right" valign="top">typedef pcf_status_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__command.html#gae07e139c8b26e41dbeb3a7d6476ceaff">CommandIO_fp</a>) (<a class="el" href="struct_command_owner__t.html">CommandOwner_t</a> *owner, const <a class="el" href="group__pcf__core__command.html#gaf450682fb9e5f558afa9fa457da78a14">pcf_command_t</a> command, pcf_generic_t data)</td></tr>
+<tr class="memdesc:gae07e139c8b26e41dbeb3a7d6476ceaff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Command IO function pointer.  <br /></td></tr>
+<tr class="separator:gae07e139c8b26e41dbeb3a7d6476ceaff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Typedef Documentation</h2>
@@ -133,31 +133,40 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ga92729f3f2522605cf43ac961670d3375" name="ga92729f3f2522605cf43ac961670d3375"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga92729f3f2522605cf43ac961670d3375">&#9670;&#160;</a></span>CommandIO_fp</h2>
+<a id="gae07e139c8b26e41dbeb3a7d6476ceaff" name="gae07e139c8b26e41dbeb3a7d6476ceaff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae07e139c8b26e41dbeb3a7d6476ceaff">&#9670;&#160;</a></span>CommandIO_fp</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef pcf_status_t(* CommandIO_fp) (<a class="el" href="struct_command_owner__t.html">CommandOwner_t</a> *owner, <a class="el" href="group__pcf__core__command.html#gaf450682fb9e5f558afa9fa457da78a14">pcf_command_t</a> command, pcf_generic_t data)</td>
+          <td class="memname">typedef pcf_status_t(* CommandIO_fp) (<a class="el" href="struct_command_owner__t.html">CommandOwner_t</a> *owner, const <a class="el" href="group__pcf__core__command.html#gaf450682fb9e5f558afa9fa457da78a14">pcf_command_t</a> command, pcf_generic_t data)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Command IO function pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="struct_command_owner__t.html" title="Command owner struct.">CommandOwner_t</a></td><td>[IN] - Pointer to owner entity. </td></tr>
+    <tr><td class="paramname">pcf_command_t</td><td>[IN] - Represents the command/function to be executed. </td></tr>
+    <tr><td class="paramname">pcf_generic_t</td><td>[IN/OUT] - A generic pointer to hold the Input and/or Output data related to the command/function. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t having status code of the operation. </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="gaeac3640d23d51061b023605bd64b61aa" name="gaeac3640d23d51061b023605bd64b61aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeac3640d23d51061b023605bd64b61aa">&#9670;&#160;</a></span>details</h2>
+<a id="gad23fc5b62ba4112f36b9307ed6398cdf" name="gad23fc5b62ba4112f36b9307ed6398cdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad23fc5b62ba4112f36b9307ed6398cdf">&#9670;&#160;</a></span>details</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void* CommandOwner_t::details</td>
+          <td class="memname">pcf_generic_t CommandOwner_t::details</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -91,33 +91,25 @@ $(document).ready(function(){initNavTree('group__pcf__core__debug.html',''); ini
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Debug<div class="ingroups"><a class="el" href="group__pcf__core.html">Core</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The "debug" entity allows for debugging functionality in an application.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_debug_config__t.html">DebugConfig_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug config struct.  <a href="struct_debug_config__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ga807b157db74fbb41eb866b98ce6efd6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga807b157db74fbb41eb866b98ce6efd6d">ITEM_ID_DEBUG</a>&#160;&#160;&#160;1</td></tr>
-<tr class="separator:ga807b157db74fbb41eb866b98ce6efd6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga69a7e9fdf1d3053314b1b7cb6d6e22ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga69a7e9fdf1d3053314b1b7cb6d6e22ce">PCF_DEBUG_S_SUCCESS</a>&#160;&#160;&#160;GENERATE_PCF_STATUS_SUCCESS(<a class="el" href="group__pcf__core.html#ga880ffcc1a33a50a689ef8819eb8e4f42">PKG_ID_CORE</a>, <a class="el" href="group__pcf__core__debug.html#ga807b157db74fbb41eb866b98ce6efd6d">ITEM_ID_DEBUG</a>)</td></tr>
-<tr class="separator:ga69a7e9fdf1d3053314b1b7cb6d6e22ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacf2b9991ec374e1cb04a45bad7a1fad1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#gacf2b9991ec374e1cb04a45bad7a1fad1">PCF_DEBUG_S_NULL_ARG</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NULL_ARG(<a class="el" href="group__pcf__core.html#ga880ffcc1a33a50a689ef8819eb8e4f42">PKG_ID_CORE</a>, <a class="el" href="group__pcf__core__debug.html#ga807b157db74fbb41eb866b98ce6efd6d">ITEM_ID_DEBUG</a>)</td></tr>
-<tr class="separator:gacf2b9991ec374e1cb04a45bad7a1fad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae2e63cb25d7ee2be6a3ae57cd39bd206"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#gae2e63cb25d7ee2be6a3ae57cd39bd206">PCF_DEBUG_S_NOT_CONFIGURED</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_CONFIGURED(<a class="el" href="group__pcf__core.html#ga880ffcc1a33a50a689ef8819eb8e4f42">PKG_ID_CORE</a>, <a class="el" href="group__pcf__core__debug.html#ga807b157db74fbb41eb866b98ce6efd6d">ITEM_ID_DEBUG</a>)</td></tr>
-<tr class="separator:gae2e63cb25d7ee2be6a3ae57cd39bd206"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga1380fb80a443b030459b788536c594fc"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga1380fb80a443b030459b788536c594fc">pcf_Debug_init</a> (const <a class="el" href="struct_debug_config__t.html">DebugConfig_t</a> *config)</td></tr>
-<tr class="memdesc:ga1380fb80a443b030459b788536c594fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the debug entity object.  <br /></td></tr>
+<tr class="memdesc:ga1380fb80a443b030459b788536c594fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the debug entity object according to config structure <a class="el" href="struct_debug_config__t.html" title="Debug config struct.">DebugConfig_t</a>.  <br /></td></tr>
 <tr class="separator:ga1380fb80a443b030459b788536c594fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga97e74217af33652a9aef8f61f53cc5e9"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga97e74217af33652a9aef8f61f53cc5e9">pcf_Debug_write</a> (pcf_cstring_t message)</td></tr>
 <tr class="memdesc:ga97e74217af33652a9aef8f61f53cc5e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a null terminated (\0) string using <a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100" title="Put character function pointer.">DebugPutchar_fp</a> which was configured during initialization.  <br /></td></tr>
@@ -131,12 +123,27 @@ Variables</h2></td></tr>
 <tr class="memitem:ga032555e112725926dd638194139503b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100">DebugPutchar_fp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga032555e112725926dd638194139503b8">DebugConfig_t::putchar</a></td></tr>
 <tr class="separator:ga032555e112725926dd638194139503b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Types</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Debug types</h2></td></tr>
 <tr class="memitem:ga4da2c905a9d3c81e8c8257c33bee3100"><td class="memItemLeft" align="right" valign="top">typedef pcf_status_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100">DebugPutchar_fp</a>) (uint8_t)</td></tr>
 <tr class="memdesc:ga4da2c905a9d3c81e8c8257c33bee3100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put character function pointer.  <br /></td></tr>
 <tr class="separator:ga4da2c905a9d3c81e8c8257c33bee3100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Debug item ID</h2></td></tr>
+<tr class="memitem:ga807b157db74fbb41eb866b98ce6efd6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga807b157db74fbb41eb866b98ce6efd6d">ITEM_ID_DEBUG</a>&#160;&#160;&#160;(1)</td></tr>
+<tr class="memdesc:ga807b157db74fbb41eb866b98ce6efd6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Item ID of Debug Entity within Core Package.  <br /></td></tr>
+<tr class="separator:ga807b157db74fbb41eb866b98ce6efd6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Debug status code</h2></td></tr>
+<tr class="memitem:ga69a7e9fdf1d3053314b1b7cb6d6e22ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga69a7e9fdf1d3053314b1b7cb6d6e22ce">PCF_DEBUG_S_SUCCESS</a>&#160;&#160;&#160;GENERATE_PCF_STATUS_SUCCESS(<a class="el" href="group__pcf__core.html#ga880ffcc1a33a50a689ef8819eb8e4f42">PKG_ID_CORE</a>, <a class="el" href="group__pcf__core__debug.html#ga807b157db74fbb41eb866b98ce6efd6d">ITEM_ID_DEBUG</a>)</td></tr>
+<tr class="separator:ga69a7e9fdf1d3053314b1b7cb6d6e22ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf2b9991ec374e1cb04a45bad7a1fad1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#gacf2b9991ec374e1cb04a45bad7a1fad1">PCF_DEBUG_S_NULL_ARG</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NULL_ARG(<a class="el" href="group__pcf__core.html#ga880ffcc1a33a50a689ef8819eb8e4f42">PKG_ID_CORE</a>, <a class="el" href="group__pcf__core__debug.html#ga807b157db74fbb41eb866b98ce6efd6d">ITEM_ID_DEBUG</a>)</td></tr>
+<tr class="separator:gacf2b9991ec374e1cb04a45bad7a1fad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2e63cb25d7ee2be6a3ae57cd39bd206"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#gae2e63cb25d7ee2be6a3ae57cd39bd206">PCF_DEBUG_S_NOT_CONFIGURED</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_CONFIGURED(<a class="el" href="group__pcf__core.html#ga880ffcc1a33a50a689ef8819eb8e4f42">PKG_ID_CORE</a>, <a class="el" href="group__pcf__core__debug.html#ga807b157db74fbb41eb866b98ce6efd6d">ITEM_ID_DEBUG</a>)</td></tr>
+<tr class="separator:gae2e63cb25d7ee2be6a3ae57cd39bd206"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>The "debug" entity allows for debugging functionality in an application. </p>
+<p>It allows user to output debug information during program execution, aiding in the identification and resolution of issues. It includes functions such as initializing the debug entity, writing debug messages, and de-initializing the debug entity. It utilizes a configured character output function to write debug messages. The entity returns status codes indicating the success or failure of the operations. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga807b157db74fbb41eb866b98ce6efd6d" name="ga807b157db74fbb41eb866b98ce6efd6d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga807b157db74fbb41eb866b98ce6efd6d">&#9670;&#160;</a></span>ITEM_ID_DEBUG</h2>
@@ -145,10 +152,12 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ITEM_ID_DEBUG&#160;&#160;&#160;1</td>
+          <td class="memname">#define ITEM_ID_DEBUG&#160;&#160;&#160;(1)</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Item ID of Debug Entity within Core Package. </p>
 
 </div>
 </div>
@@ -228,14 +237,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize the debug entity object. </p>
+<p>Initialize the debug entity object according to config structure <a class="el" href="struct_debug_config__t.html" title="Debug config struct.">DebugConfig_t</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">config</td><td>[IN] - Debug configuration. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>pcf_status_t valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values: <ul>
 <li>
 <a class="el" href="group__pcf__core__debug.html#ga69a7e9fdf1d3053314b1b7cb6d6e22ce">PCF_DEBUG_S_SUCCESS</a>  : Successful operation. </li>
 <li>
@@ -270,7 +279,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>pcf_status_t valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values: <ul>
 <li>
 <a class="el" href="group__pcf__core__debug.html#ga69a7e9fdf1d3053314b1b7cb6d6e22ce">PCF_DEBUG_S_SUCCESS</a>  : Successful operation. </li>
 <li>
@@ -300,7 +309,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>De-Initialize the debug entity object. </p>
-<dl class="section return"><dt>Returns</dt><dd>pcf_status_t valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values: <ul>
 <li>
 <a class="el" href="group__pcf__core__debug.html#ga69a7e9fdf1d3053314b1b7cb6d6e22ce">PCF_DEBUG_S_SUCCESS</a>  : Successful operation. </li>
 <li>

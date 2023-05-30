@@ -112,19 +112,19 @@ $(document).ready(function(){initNavTree('array_example_8c-example.html',''); in
 <div class="line"> </div>
 <div class="line">    <span class="comment">//Memory configuratons</span></div>
 <div class="line">    MemoryConfig_t memoryConfig;</div>
-<div class="line">    memoryConfig.memCalloc  = <a id="a1" name="a1"></a><a class="code hl_function" href="group__pcf__core__memory.html#ga9173230662161b56f011ad4ea3855291">pcf_Memory_calloc</a>;</div>
-<div class="line">    memoryConfig.memFree    = <a id="a2" name="a2"></a><a class="code hl_function" href="group__pcf__core__memory.html#gaa31bde95db6c9d7ed3f42b38c89139d1">pcf_Memory_free</a>;</div>
-<div class="line">    memoryConfig.memCopy    = <a id="a3" name="a3"></a><a class="code hl_function" href="group__pcf__core__memory.html#ga2bb3f700342a9f076c785acf31b77767">pcf_Memory_copy</a>;</div>
-<div class="line">    memoryConfig.memMove    = <a id="a4" name="a4"></a><a class="code hl_function" href="group__pcf__core__memory.html#gacda0912c9201ea79606f3496145b70a1">pcf_Memory_move</a>;</div>
+<div class="line">    memoryConfig.memCalloc  = pcf_Memory_calloc;</div>
+<div class="line">    memoryConfig.memFree    = <a id="a1" name="a1"></a><a class="code hl_function" href="group__pcf__core__memory.html#gaa31bde95db6c9d7ed3f42b38c89139d1">pcf_Memory_free</a>;</div>
+<div class="line">    memoryConfig.memCopy    = <a id="a2" name="a2"></a><a class="code hl_function" href="group__pcf__core__memory.html#ga2bb3f700342a9f076c785acf31b77767">pcf_Memory_copy</a>;</div>
+<div class="line">    memoryConfig.memMove    = <a id="a3" name="a3"></a><a class="code hl_function" href="group__pcf__core__memory.html#gacda0912c9201ea79606f3496145b70a1">pcf_Memory_move</a>;</div>
 <div class="line"> </div>
-<div class="line">    <a id="_a5" name="_a5"></a><a class="code hl_struct" href="struct_array_config__t.html">ArrayConfig_t</a> config;</div>
-<div class="line">    config.<a id="a6" name="a6"></a><a class="code hl_variable" href="struct_array_config__t.html#acbc12081eb7a4db34b6919d008f05297">capacity</a> = 10;           <span class="comment">//The current capacity of the array</span></div>
-<div class="line">    config.<a id="a7" name="a7"></a><a class="code hl_variable" href="struct_array_config__t.html#a8ed5b157c90d3d2cd3d4f2e6b4ef26d8">maxElementCount</a> = 17;    <span class="comment">//Maximum capacity of the array</span></div>
-<div class="line">    config.<a id="a8" name="a8"></a><a class="code hl_variable" href="struct_array_config__t.html#a78bc0e2bec4cca88b5fef9bbf17ccb75">growthFactor</a> = 2;        <span class="comment">//Capacity will increase in multiple of 2</span></div>
-<div class="line">    config.<a id="a9" name="a9"></a><a class="code hl_variable" href="struct_array_config__t.html#a4aa7b5c76338c51c54c5400d572214b4">memoryConfig</a> = &amp;memoryConfig;</div>
+<div class="line">    <a id="_a4" name="_a4"></a><a class="code hl_struct" href="struct_array_config__t.html">ArrayConfig_t</a> config;</div>
+<div class="line">    config.<a id="a5" name="a5"></a><a class="code hl_variable" href="struct_array_config__t.html#acbc12081eb7a4db34b6919d008f05297">capacity</a> = 10;           <span class="comment">//The current capacity of the array</span></div>
+<div class="line">    config.<a id="a6" name="a6"></a><a class="code hl_variable" href="struct_array_config__t.html#a8ed5b157c90d3d2cd3d4f2e6b4ef26d8">maxElementCount</a> = 17;    <span class="comment">//Maximum capacity of the array</span></div>
+<div class="line">    config.<a id="a7" name="a7"></a><a class="code hl_variable" href="struct_array_config__t.html#a78bc0e2bec4cca88b5fef9bbf17ccb75">growthFactor</a> = 2;        <span class="comment">//Capacity will increase in multiple of 2</span></div>
+<div class="line">    config.<a id="a8" name="a8"></a><a class="code hl_variable" href="struct_array_config__t.html#a4aa7b5c76338c51c54c5400d572214b4">memoryConfig</a> = &amp;memoryConfig;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">//Creating a new array with the configurations</span></div>
-<div class="line">    <a class="code hl_typedef" href="group__pcf__core__collections__array.html#gae6beb731efa2e3194790711a4e744384">Array_t</a>* arr = <a id="a10" name="a10"></a><a class="code hl_function" href="group__pcf__core__collections__array.html#ga7018a7de8fcc3fe2e01aa89066a40ee3">pcf_Array_new</a>(&amp;config, &amp;status);</div>
+<div class="line">    <a class="code hl_typedef" href="group__pcf__core__collections__array.html#gae6beb731efa2e3194790711a4e744384">Array_t</a>* arr = <a id="a9" name="a9"></a><a class="code hl_function" href="group__pcf__core__collections__array.html#ga7018a7de8fcc3fe2e01aa89066a40ee3">pcf_Array_new</a>(&amp;config, &amp;status);</div>
 <div class="line">    <span class="keywordflow">if</span>(!PCF_S_IS_SUCCESS(status)){</div>
 <div class="line">        printf(<span class="stringliteral">&quot;Creating array object failed..&quot;</span>);</div>
 <div class="line">        <span class="keywordflow">while</span>(1);</div>
@@ -135,7 +135,7 @@ $(document).ready(function(){initNavTree('array_example_8c-example.html',''); in
 <div class="line">    <span class="keywordtype">int</span> d = 16;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">//Adding element at the end of array</span></div>
-<div class="line">    status = <a id="a11" name="a11"></a><a class="code hl_function" href="group__pcf__core__collections__array.html#ga8d432cfd215a4e02548d3b5768121fff">pcf_Array_insertAtEnd</a>(arr, (<span class="keywordtype">void</span>*)a);</div>
+<div class="line">    status = <a id="a10" name="a10"></a><a class="code hl_function" href="group__pcf__core__collections__array.html#ga8d432cfd215a4e02548d3b5768121fff">pcf_Array_insertAtEnd</a>(arr, (<span class="keywordtype">void</span>*)a);</div>
 <div class="line">    <span class="keywordflow">if</span>(!PCF_S_IS_SUCCESS(status)){</div>
 <div class="line">        printf(<span class="stringliteral">&quot;Inserting element at end failed..&quot;</span>);</div>
 <div class="line">        <span class="keywordflow">while</span>(1);</div>
@@ -154,21 +154,21 @@ $(document).ready(function(){initNavTree('array_example_8c-example.html',''); in
 <div class="line">    }</div>
 <div class="line">        </div>
 <div class="line">    <span class="comment">//Getting number of elements present in the array</span></div>
-<div class="line">    status = <a id="a12" name="a12"></a><a class="code hl_function" href="group__pcf__core__collections__array.html#ga333bd7a89736126b477f0d85da5df2eb">pcf_Array_size</a>(arr, &amp;size);</div>
+<div class="line">    status = <a id="a11" name="a11"></a><a class="code hl_function" href="group__pcf__core__collections__array.html#ga333bd7a89736126b477f0d85da5df2eb">pcf_Array_size</a>(arr, &amp;size);</div>
 <div class="line">    <span class="keywordflow">if</span>(!PCF_S_IS_SUCCESS(status)){</div>
 <div class="line">        printf(<span class="stringliteral">&quot;Getting array size failed..&quot;</span>);</div>
 <div class="line">        <span class="keywordflow">while</span>(1);</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">//Getting array and printing it</span></div>
-<div class="line">    <span class="keyword">const</span> <span class="keywordtype">void</span>* <span class="keyword">const</span>* buffer = <a id="a13" name="a13"></a><a class="code hl_function" href="group__pcf__core__collections__array.html#ga736c85196f0e9bf51f96575a68998452">pcf_Array_buffer</a>(arr);</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">void</span>* <span class="keyword">const</span>* buffer = <a id="a12" name="a12"></a><a class="code hl_function" href="group__pcf__core__collections__array.html#ga736c85196f0e9bf51f96575a68998452">pcf_Array_buffer</a>(arr);</div>
 <div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; size; i++) {</div>
 <div class="line">        printf(<span class="stringliteral">&quot;unsortedbuffer[%d] = %d\n&quot;</span>, i, (<span class="keywordtype">int</span>)buffer[i]);</div>
 <div class="line">    }</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">//Sorting the array using helper function compare</span></div>
-<div class="line">    status = <a id="a14" name="a14"></a><a class="code hl_function" href="group__pcf__core__collections__array.html#gab7c9180630b7ad942b6f571ce2dd2c99">pcf_Array_sort</a>(arr, compare);</div>
+<div class="line">    status = <a id="a13" name="a13"></a><a class="code hl_function" href="group__pcf__core__collections__array.html#gab7c9180630b7ad942b6f571ce2dd2c99">pcf_Array_sort</a>(arr, compare);</div>
 <div class="line">    <span class="keywordflow">if</span>(!PCF_S_IS_SUCCESS(status)){</div>
 <div class="line">        printf(<span class="stringliteral">&quot;Sorting array failed..&quot;</span>);</div>
 <div class="line">        <span class="keywordflow">while</span>(1);</div>
@@ -189,10 +189,9 @@ $(document).ready(function(){initNavTree('array_example_8c-example.html',''); in
 <div class="ttc" id="agroup__pcf__core__collections__array_html_gab7c9180630b7ad942b6f571ce2dd2c99"><div class="ttname"><a href="group__pcf__core__collections__array.html#gab7c9180630b7ad942b6f571ce2dd2c99">pcf_Array_sort</a></div><div class="ttdeci">PCF_CORE_API pcf_status_t pcf_Array_sort(Array_t *arr, CollectionPtrComparer_fp comparer)</div><div class="ttdoc">Sorts the array.</div></div>
 <div class="ttc" id="agroup__pcf__core__collections__array_html_gae6beb731efa2e3194790711a4e744384"><div class="ttname"><a href="group__pcf__core__collections__array.html#gae6beb731efa2e3194790711a4e744384">Array_t</a></div><div class="ttdeci">struct _pcf_colllections_array_t Array_t</div><div class="ttdef"><b>Definition:</b> types.h:13</div></div>
 <div class="ttc" id="agroup__pcf__core__collections_html_gafc2e3ccb5188fcba4820e311d9d37586"><div class="ttname"><a href="group__pcf__core__collections.html#gafc2e3ccb5188fcba4820e311d9d37586">CollectionPtrComparer_fp</a></div><div class="ttdeci">int(* CollectionPtrComparer_fp)(const void *key1, const void *key2)</div><div class="ttdoc">Collection pointer compare function pointer.</div><div class="ttdef"><b>Definition:</b> types.h:23</div></div>
-<div class="ttc" id="agroup__pcf__core__memory_html_ga2bb3f700342a9f076c785acf31b77767"><div class="ttname"><a href="group__pcf__core__memory.html#ga2bb3f700342a9f076c785acf31b77767">pcf_Memory_copy</a></div><div class="ttdeci">PCF_CORE_API pcf_status_t pcf_Memory_copy(pcf_generic_t dest, const pcf_generic_t src, const pcf_size_t size)</div><div class="ttdoc">Copies size bytes from the location pointed by src directly to the memory block pointed by dest.</div></div>
-<div class="ttc" id="agroup__pcf__core__memory_html_ga9173230662161b56f011ad4ea3855291"><div class="ttname"><a href="group__pcf__core__memory.html#ga9173230662161b56f011ad4ea3855291">pcf_Memory_calloc</a></div><div class="ttdeci">pcf_generic_t pcf_Memory_calloc(const pcf_size_t n, const pcf_size_t size, pcf_status_t *status)</div><div class="ttdoc">Dynamically allocate the memory and initializes the memory block to zero.</div></div>
+<div class="ttc" id="agroup__pcf__core__memory_html_ga2bb3f700342a9f076c785acf31b77767"><div class="ttname"><a href="group__pcf__core__memory.html#ga2bb3f700342a9f076c785acf31b77767">pcf_Memory_copy</a></div><div class="ttdeci">PCF_CORE_API pcf_status_t pcf_Memory_copy(pcf_generic_t dest, const pcf_generic_t src, const pcf_size_t size)</div><div class="ttdoc">Copies size  bytes from memory area src  to memory area dest .</div></div>
 <div class="ttc" id="agroup__pcf__core__memory_html_gaa31bde95db6c9d7ed3f42b38c89139d1"><div class="ttname"><a href="group__pcf__core__memory.html#gaa31bde95db6c9d7ed3f42b38c89139d1">pcf_Memory_free</a></div><div class="ttdeci">PCF_CORE_API pcf_status_t pcf_Memory_free(const pcf_generic_t memory)</div><div class="ttdoc">Dynamically de-allocate the memory.</div></div>
-<div class="ttc" id="agroup__pcf__core__memory_html_gacda0912c9201ea79606f3496145b70a1"><div class="ttname"><a href="group__pcf__core__memory.html#gacda0912c9201ea79606f3496145b70a1">pcf_Memory_move</a></div><div class="ttdeci">PCF_CORE_API pcf_status_t pcf_Memory_move(pcf_generic_t dest, pcf_generic_t src, const pcf_size_t size)</div><div class="ttdoc">Copies size bytes from the location pointed by src to the memory block pointed by dest.</div></div>
+<div class="ttc" id="agroup__pcf__core__memory_html_gacda0912c9201ea79606f3496145b70a1"><div class="ttname"><a href="group__pcf__core__memory.html#gacda0912c9201ea79606f3496145b70a1">pcf_Memory_move</a></div><div class="ttdeci">PCF_CORE_API pcf_status_t pcf_Memory_move(pcf_generic_t dest, pcf_generic_t src, const pcf_size_t size)</div><div class="ttdoc">Copies size  bytes from the location pointed by src  to the memory block pointed by dest .</div></div>
 <div class="ttc" id="amemory_8h_html"><div class="ttname"><a href="memory_8h.html">memory.h</a></div></div>
 <div class="ttc" id="astruct_array_config__t_html"><div class="ttname"><a href="struct_array_config__t.html">ArrayConfig_t</a></div><div class="ttdef"><b>Definition:</b> types.h:15</div></div>
 <div class="ttc" id="astruct_array_config__t_html_a4aa7b5c76338c51c54c5400d572214b4"><div class="ttname"><a href="struct_array_config__t.html#a4aa7b5c76338c51c54c5400d572214b4">ArrayConfig_t::memoryConfig</a></div><div class="ttdeci">MemoryConfig_t * memoryConfig</div><div class="ttdoc">Memoery configurations</div><div class="ttdef"><b>Definition:</b> types.h:19</div></div>

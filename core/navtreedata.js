@@ -54,7 +54,7 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "group__pcf__core__assert.html#gaefce8580f0a5e549ca9ef19c13a9fbac",
-"group__pcf__core__string.html#gaeec731d82cb848e1902069c241266985"
+"group__pcf__core__string__list.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

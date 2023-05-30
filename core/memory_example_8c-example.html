@@ -101,76 +101,56 @@ $(document).ready(function(){initNavTree('memory_example_8c-example.html',''); i
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="assert_8h.html">pcf/assert/assert.h</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
 <div class="line"> </div>
+<div class="line"><span class="preprocessor">#define BUFFER_SIZE 40</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main(){</div>
 <div class="line">    pcf_status_t status;</div>
-<div class="line">    pcf_size_t buf_size = 40; <span class="comment">// Buffer size set to 40</span></div>
 <div class="line">    </div>
 <div class="line">    printf(<span class="stringliteral">&quot;Memory manipulation example using @pcf/core memory.\n&quot;</span>);</div>
 <div class="line"> </div>
-<div class="line">    <span class="comment">// Allocating memory using @pcf/core memory of size &#39;buf_size&#39;.</span></div>
-<div class="line">    pcf_byte_t * buffer = (pcf_byte_t*)<a id="a0" name="a0"></a><a class="code hl_function" href="group__pcf__core__memory.html#ga9d8b493917bf48e51ca6939b854fb38f">pcf_Memory_allocate</a>(buf_size,&amp;status);</div>
-<div class="line"><span class="preprocessor">    #if(PCF_DEBUG == PCF_YES)</span></div>
-<div class="line">        <a id="a1" name="a1"></a><a class="code hl_define" href="group__pcf__core__assert.html#gadba52534407b31f9a11c5d4a7e726cb6">PCF_ASSERT_NOT_NULL</a>(buffer); <span class="comment">// Halt if assertion failed</span></div>
-<div class="line">        <a id="a2" name="a2"></a><a class="code hl_define" href="group__pcf__core__assert.html#gabe16b09c70487d944b51fd5d54d2fce5">PCF_ASSERT_TRUE</a>(PCF_S_IS_SUCCESS(status)); <span class="comment">// Halt if assertion failed</span></div>
-<div class="line"><span class="preprocessor">    #else</span></div>
-<div class="line">        <span class="keywordflow">if</span>(buffer == PCF_NULL || !PCF_S_IS_SUCCESS(status)){</div>
-<div class="line">            printf(<span class="stringliteral">&quot;Allocation for buffer failed of size %d.\n&quot;</span>,buf_size);</div>
-<div class="line">            <span class="keywordflow">while</span>(1);</div>
-<div class="line">        }</div>
-<div class="line"><span class="preprocessor">    #endif</span></div>
-<div class="line">    printf(<span class="stringliteral">&quot;Allocated buffer of size %d.\n&quot;</span>,buf_size);</div>
+<div class="line">    <span class="comment">// Allocating memory using @pcf/core memory of size &#39;BUFFER_SIZE&#39;.</span></div>
+<div class="line">    pcf_byte_t * buffer = (pcf_byte_t*)pcf_Memory_allocate(BUFFER_SIZE,&amp;status);</div>
+<div class="line">    <span class="keywordflow">if</span>(buffer == PCF_NULL || !PCF_S_IS_SUCCESS(status)){</div>
+<div class="line">        printf(<span class="stringliteral">&quot;Allocation for buffer failed of size %d.\n&quot;</span>,BUFFER_SIZE);</div>
+<div class="line">        <span class="keywordflow">return</span> -1;</div>
+<div class="line">    }</div>
+<div class="line">    printf(<span class="stringliteral">&quot;Allocated buffer of size %d.\n&quot;</span>,BUFFER_SIZE);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Setting allocated memory to &#39;0xAA&#39;.</span></div>
-<div class="line">    status = <a id="a3" name="a3"></a><a class="code hl_function" href="group__pcf__core__memory.html#gaa22b25578bbbd29628146b8e5ba26284">pcf_Memory_set</a>(buffer,0xAA,buf_size);</div>
-<div class="line"><span class="preprocessor">    #if(PCF_DEBUG == PCF_YES)</span></div>
-<div class="line">        <a class="code hl_define" href="group__pcf__core__assert.html#gabe16b09c70487d944b51fd5d54d2fce5">PCF_ASSERT_TRUE</a>(PCF_S_IS_SUCCESS(status)); <span class="comment">// Halt if assertion failed</span></div>
-<div class="line"><span class="preprocessor">    #else</span></div>
-<div class="line">        <span class="keywordflow">if</span>(!PCF_S_IS_SUCCESS(status)){</div>
-<div class="line">            printf(<span class="stringliteral">&quot;Failed to set allocated buffer value to &#39;0xAA&#39;.&quot;</span>);</div>
-<div class="line">            <span class="keywordflow">while</span>(1);</div>
-<div class="line">        }</div>
-<div class="line"><span class="preprocessor">    #endif</span></div>
-<div class="line">    printf(<span class="stringliteral">&quot;Allocated buffer value has been set to &#39;0XAA&#39;.\n&quot;</span>);</div>
-<div class="line"> </div>
-<div class="line">    <span class="comment">// Creating local buffer of size &#39;buf_size&#39; and setting it to &#39;0xAA&#39;.</span></div>
-<div class="line">    pcf_byte_t localBuffer[buf_size];</div>
-<div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; buf_size ; i++){</div>
+<div class="line">    status = <a id="a0" name="a0"></a><a class="code hl_function" href="group__pcf__core__memory.html#gaa22b25578bbbd29628146b8e5ba26284">pcf_Memory_set</a>(buffer,0xAA,BUFFER_SIZE);</div>
+<div class="line">    <span class="keywordflow">if</span>(!PCF_S_IS_SUCCESS(status)){</div>
+<div class="line">        printf(<span class="stringliteral">&quot;Failed to set allocated buffer value to &#39;0xAA&#39;.&quot;</span>);</div>
+<div class="line">    }<span class="keywordflow">else</span>{</div>
+<div class="line">        printf(<span class="stringliteral">&quot;Allocated buffer value has been set to &#39;0XAA&#39;.\n&quot;</span>);</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    <span class="comment">// Creating local buffer of size &#39;BUFFER_SIZE&#39; and setting it to &#39;0xAA&#39;.</span></div>
+<div class="line">    pcf_byte_t localBuffer[BUFFER_SIZE];</div>
+<div class="line">    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; BUFFER_SIZE ; i++){</div>
 <div class="line">        localBuffer[i] = 0xAA;</div>
 <div class="line">    }</div>
-<div class="line">    printf(<span class="stringliteral">&quot;local buffer of size %d has been set to &#39;0xAA&#39;.\n&quot;</span>,buf_size);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;local buffer of size %d has been set to &#39;0xAA&#39;.\n&quot;</span>,BUFFER_SIZE);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Comparing values of allocated and local buffer</span></div>
-<div class="line">    status = <a id="a4" name="a4"></a><a class="code hl_function" href="group__pcf__core__memory.html#ga8d6ac5a225620c01d8ec1bc07d281897">pcf_Memory_compare</a>(buffer,localBuffer,buf_size);</div>
-<div class="line"><span class="preprocessor">    #if(PCF_DEBUG == PCF_YES)</span></div>
-<div class="line">        <a class="code hl_define" href="group__pcf__core__assert.html#gabe16b09c70487d944b51fd5d54d2fce5">PCF_ASSERT_TRUE</a>(PCF_S_IS_YES(status)); <span class="comment">// Halt if assertion failed</span></div>
-<div class="line"><span class="preprocessor">    #else</span></div>
-<div class="line">        <span class="keywordflow">if</span>(!PCF_S_IS_YES(status)){</div>
-<div class="line">            printf(<span class="stringliteral">&quot;local and allocated buffer value is not equal.\n&quot;</span>);</div>
-<div class="line">            <span class="keywordflow">while</span>(1);</div>
-<div class="line">        }</div>
-<div class="line"><span class="preprocessor">    #endif</span></div>
-<div class="line">    printf(<span class="stringliteral">&quot;local and allocated buffer value is equal.\n&quot;</span>);</div>
+<div class="line">    status = <a id="a1" name="a1"></a><a class="code hl_function" href="group__pcf__core__memory.html#ga8d6ac5a225620c01d8ec1bc07d281897">pcf_Memory_compare</a>(buffer,localBuffer,BUFFER_SIZE);</div>
+<div class="line">    <span class="keywordflow">if</span>(!PCF_S_IS_YES(status)){</div>
+<div class="line">        printf(<span class="stringliteral">&quot;local and allocated buffer value is not equal.\n&quot;</span>);</div>
+<div class="line">    }<span class="keywordflow">else</span>{</div>
+<div class="line">        printf(<span class="stringliteral">&quot;local and allocated buffer value is equal.\n&quot;</span>);</div>
+<div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// Freeing allocated memory</span></div>
-<div class="line">    status = <a id="a5" name="a5"></a><a class="code hl_function" href="group__pcf__core__memory.html#gaa31bde95db6c9d7ed3f42b38c89139d1">pcf_Memory_free</a>(buffer);</div>
-<div class="line"><span class="preprocessor">    #if(PCF_DEBUG == PCF_YES)</span></div>
-<div class="line">        <a class="code hl_define" href="group__pcf__core__assert.html#gabe16b09c70487d944b51fd5d54d2fce5">PCF_ASSERT_TRUE</a>(PCF_S_IS_SUCCESS(status)); <span class="comment">// Halt if assertion failed</span></div>
-<div class="line"><span class="preprocessor">    #else</span></div>
-<div class="line">        <span class="keywordflow">if</span>(!PCF_S_IS_SUCCESS(status)){</div>
-<div class="line">            <span class="keywordflow">while</span>(1);</div>
-<div class="line">        }</div>
-<div class="line"><span class="preprocessor">    #endif</span></div>
+<div class="line">    status = <a id="a2" name="a2"></a><a class="code hl_function" href="group__pcf__core__memory.html#gaa31bde95db6c9d7ed3f42b38c89139d1">pcf_Memory_free</a>(buffer);</div>
+<div class="line">    <span class="keywordflow">if</span>(!PCF_S_IS_SUCCESS(status)){</div>
+<div class="line">        <span class="keywordflow">return</span> -1;</div>
+<div class="line">    }</div>
 <div class="line">    printf(<span class="stringliteral">&quot;Allocated buffer memory has been freed.\n&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="aassert_8h_html"><div class="ttname"><a href="assert_8h.html">assert.h</a></div></div>
-<div class="ttc" id="agroup__pcf__core__assert_html_gabe16b09c70487d944b51fd5d54d2fce5"><div class="ttname"><a href="group__pcf__core__assert.html#gabe16b09c70487d944b51fd5d54d2fce5">PCF_ASSERT_TRUE</a></div><div class="ttdeci">#define PCF_ASSERT_TRUE(condition)</div><div class="ttdef"><b>Definition:</b> defs.h:60</div></div>
-<div class="ttc" id="agroup__pcf__core__assert_html_gadba52534407b31f9a11c5d4a7e726cb6"><div class="ttname"><a href="group__pcf__core__assert.html#gadba52534407b31f9a11c5d4a7e726cb6">PCF_ASSERT_NOT_NULL</a></div><div class="ttdeci">#define PCF_ASSERT_NOT_NULL(pointer)</div><div class="ttdef"><b>Definition:</b> defs.h:63</div></div>
-<div class="ttc" id="agroup__pcf__core__memory_html_ga8d6ac5a225620c01d8ec1bc07d281897"><div class="ttname"><a href="group__pcf__core__memory.html#ga8d6ac5a225620c01d8ec1bc07d281897">pcf_Memory_compare</a></div><div class="ttdeci">PCF_CORE_API pcf_status_t pcf_Memory_compare(const pcf_generic_t mem1, const pcf_generic_t mem2, const pcf_size_t size)</div><div class="ttdoc">Compares the first size bytes of the block of memory pointed by mem1 to the first size bytes.</div></div>
-<div class="ttc" id="agroup__pcf__core__memory_html_ga9d8b493917bf48e51ca6939b854fb38f"><div class="ttname"><a href="group__pcf__core__memory.html#ga9d8b493917bf48e51ca6939b854fb38f">pcf_Memory_allocate</a></div><div class="ttdeci">PCF_CORE_API pcf_generic_t pcf_Memory_allocate(const pcf_size_t size, pcf_status_t *status)</div><div class="ttdoc">Dynamically allocate the memory.</div></div>
-<div class="ttc" id="agroup__pcf__core__memory_html_gaa22b25578bbbd29628146b8e5ba26284"><div class="ttname"><a href="group__pcf__core__memory.html#gaa22b25578bbbd29628146b8e5ba26284">pcf_Memory_set</a></div><div class="ttdeci">PCF_CORE_API pcf_status_t pcf_Memory_set(pcf_generic_t memory, const pcf_byte_t value, const pcf_size_t size)</div><div class="ttdoc">Sets the first size bytes of the block of memory pointed by memory to the specified value.</div></div>
+<div class="ttc" id="agroup__pcf__core__memory_html_ga8d6ac5a225620c01d8ec1bc07d281897"><div class="ttname"><a href="group__pcf__core__memory.html#ga8d6ac5a225620c01d8ec1bc07d281897">pcf_Memory_compare</a></div><div class="ttdeci">PCF_CORE_API pcf_status_t pcf_Memory_compare(const pcf_generic_t mem1, const pcf_generic_t mem2, const pcf_size_t size)</div><div class="ttdoc">Compares the first size  bytes of the memory area mem1  and mem2 .</div></div>
+<div class="ttc" id="agroup__pcf__core__memory_html_gaa22b25578bbbd29628146b8e5ba26284"><div class="ttname"><a href="group__pcf__core__memory.html#gaa22b25578bbbd29628146b8e5ba26284">pcf_Memory_set</a></div><div class="ttdeci">PCF_CORE_API pcf_status_t pcf_Memory_set(pcf_generic_t memory, const pcf_byte_t value, const pcf_size_t size)</div><div class="ttdoc">Fills the first size  bytes of the memory area pointed to by memory  with the constant byte value .</div></div>
 <div class="ttc" id="agroup__pcf__core__memory_html_gaa31bde95db6c9d7ed3f42b38c89139d1"><div class="ttname"><a href="group__pcf__core__memory.html#gaa31bde95db6c9d7ed3f42b38c89139d1">pcf_Memory_free</a></div><div class="ttdeci">PCF_CORE_API pcf_status_t pcf_Memory_free(const pcf_generic_t memory)</div><div class="ttdoc">Dynamically de-allocate the memory.</div></div>
 <div class="ttc" id="amemory_8h_html"><div class="ttname"><a href="memory_8h.html">memory.h</a></div></div>
 </div><!-- fragment --> </div><!-- contents -->
