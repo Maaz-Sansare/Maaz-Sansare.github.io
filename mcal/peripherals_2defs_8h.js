@@ -66,13 +66,5 @@ var peripherals_2defs_8h =
     [ "PCF_PORTPIN_AF12", "peripherals_2defs_8h.html#ad97a897d798c32ff225a4c0062b1333e", null ],
     [ "PCF_PORTPIN_AF13", "peripherals_2defs_8h.html#a39a3bac025a3a4d527cacbd2359700ec", null ],
     [ "PCF_PORTPIN_AF14", "peripherals_2defs_8h.html#a2624d5d987a01e0485e7d84cbda0c805", null ],
-    [ "PCF_PORTPIN_AF15", "peripherals_2defs_8h.html#a3dbb09a6a983022d50d3e08f548178d9", null ],
-    [ "PCF_PERIPHERAL_S_SUCCESS", "peripherals_2defs_8h.html#af5e2992027e011b0acca4e89d74d2c91", null ],
-    [ "PCF_PERIPHERAL_S_YES", "peripherals_2defs_8h.html#aa96a78006f12059c274fa104bd2e1416", null ],
-    [ "PCF_PERIPHERAL_S_NO", "peripherals_2defs_8h.html#a003866959829aa60aec51626d6745a22", null ],
-    [ "PCF_PERIPHERAL_S_INVALID_ARG", "peripherals_2defs_8h.html#a763592a1b317b31ca384d3479d374d96", null ],
-    [ "PCF_PERIPHERAL_S_NOT_IMPLEMENTED", "peripherals_2defs_8h.html#a705f1e5f1ddacfd1e9b3237ffcc8fc24", null ],
-    [ "PCF_PERIPHERAL_S_NOT_CONFIGURED", "peripherals_2defs_8h.html#ac0748e5ca033d71bf4953ea4baec9b4b", null ],
-    [ "PCF_PERIPHERAL_S_ALREADY_IN_USE", "peripherals_2defs_8h.html#a882319f690ee93ab0385f430c72e3e78", null ],
-    [ "PCF_PERIPHERAL_S_ERROR", "peripherals_2defs_8h.html#ac11dcc79d15e484ade6cbc595e1c31fb", null ]
+    [ "PCF_PORTPIN_AF15", "peripherals_2defs_8h.html#a3dbb09a6a983022d50d3e08f548178d9", null ]
 ];

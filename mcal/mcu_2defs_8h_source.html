@@ -92,27 +92,14 @@ $(document).ready(function(){initNavTree('mcu_2defs_8h_source.html',''); initRes
   <div class="headertitle"><div class="title">defs.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="mcu_2defs_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __PCF_INCLUDES_MCU_DEFS_H__</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __PCF_INCLUDES_MCU_DEFS_H__</span></div>
+<a href="mcu_2defs_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __PCF_INCLUDES_PCF_MCU_DEFS_H__</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __PCF_INCLUDES_PCF_MCU_DEFS_H__</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;<a class="code" href="mcu_2config_8h.html">pcf/mcu/config.h</a>&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="group__pcf__mcal__mcu.html#ga81b9a4f823241d97aa3afde7e35c8135">   14</a></span><span class="preprocessor">#define ITEM_ID_MCU (1)</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// Status codes that can be returned by functions of MCU package item</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="group__pcf__mcal__mcu.html#ga96b9c660a0006695599b6d3a36303ea9">   17</a></span><span class="preprocessor">#define PCF_MCU_S_SUCCESS                GENERATE_PCF_STATUS_SUCCESS(PKG_ID_MCAL, ITEM_ID_MCU)</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="group__pcf__mcal__mcu.html#gadc381dcd599ea2f4d681327b2eac16f9">   18</a></span><span class="preprocessor">#define PCF_MCU_S_NULL_ARG               GENERATE_PCF_ERROR_NULL_ARG(PKG_ID_MCAL, ITEM_ID_MCU)</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="group__pcf__mcal__mcu.html#gaced610afb2fafc579968f7e4f63212fd">   19</a></span><span class="preprocessor">#define PCF_MCU_S_INVALID_ARG            GENERATE_PCF_ERROR_INVALID_ARG(PKG_ID_MCAL, ITEM_ID_MCU)</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="group__pcf__mcal__mcu.html#ga3122413965f818f551d2c1590e43133e">   20</a></span><span class="preprocessor">#define PCF_MCU_S_NOT_ENOUGH_MEMORY      GENERATE_PCF_ERROR_NOT_ENOUGH_MEMORY(PKG_ID_MCAL, ITEM_ID_MCU)</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="group__pcf__mcal__mcu.html#gac38283adafb941eaa524f1bed2038fbd">   21</a></span><span class="preprocessor">#define PCF_MCU_S_FATAL                  GENERATE_PCF_ERROR_FATAL(PKG_ID_MCAL, ITEM_ID_MCU)</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="group__pcf__mcal__mcu.html#ga537b2f2c124929b259b57e1083730243">   22</a></span><span class="preprocessor">#define PCF_MCU_S_NOT_CONFIGURED         GENERATE_PCF_ERROR_NOT_CONFIGURED(PKG_ID_MCAL, ITEM_ID_MCU)</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="group__pcf__mcal__mcu.html#ga9240e5f306f4dd0ac092807fd09c3d0e">   23</a></span><span class="preprocessor">#define PCF_MCU_S_INTERNAL_ERROR         GENERATE_PCF_ERROR_INTERNAL_ERROR(PKG_ID_MCAL, ITEM_ID_MCU)</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="group__pcf__mcal__mcu.html#ga34c92adcc6fbc6929277512fffc85814">   24</a></span><span class="preprocessor">#define PCF_MCU_S_NOT_IMPLEMENTED        GENERATE_PCF_ERROR_NOT_IMPLEMENTED(PKG_ID_MCAL, ITEM_ID_MCU)</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="group__pcf__mcal__mcu.html#ga78d4f309734e0a5da570a95799632b3d">   25</a></span><span class="preprocessor">#define PCF_MCU_S_NOT_SUPPORTED          GENERATE_PCF_ERROR_NOT_SUPPORTED(PKG_ID_MCAL, ITEM_ID_MCU)</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#endif </span><span class="comment">//__PCF_INCLUDES_MCU_DEFS_H__</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#endif </span><span class="comment">//__PCF_INCLUDES_MCU_DEFS_H__</span></div>
 <div class="ttc" id="amcu_2config_8h_html"><div class="ttname"><a href="mcu_2config_8h.html">config.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

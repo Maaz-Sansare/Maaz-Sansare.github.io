@@ -91,11 +91,11 @@ $(document).ready(function(){initNavTree('struct_can_config__t.html',''); initRe
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
-  <div class="headertitle"><div class="title">CanConfig_t Struct Reference</div></div>
+  <div class="headertitle"><div class="title">CanConfig_t Struct Reference<div class="ingroups"><a class="el" href="group__pcf__mcal.html">Mcal</a> &raquo; <a class="el" href="group__pcf__mcal__peripherals.html">Peripherals</a> &raquo; <a class="el" href="group__pcf__mcal__peripherals__can.html">CAN</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>CAN configuration structure ///.  
+<p>Can configuration structure.  
  <a href="struct_can_config__t.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="peripherals_2can_2types_8h_source.html">types.h</a>&gt;</code></p>
@@ -103,33 +103,52 @@ $(document).ready(function(){initNavTree('struct_can_config__t.html',''); initRe
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a3f550a67883b60b0541077f53c6c2419"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_config__t.html#a3f550a67883b60b0541077f53c6c2419">id</a></td></tr>
-<tr class="memdesc:a3f550a67883b60b0541077f53c6c2419"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAN Id. Refer to native defs.h file for appropriate CAN id ///.  <br /></td></tr>
 <tr class="separator:a3f550a67883b60b0541077f53c6c2419"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a051cb4eaab18bfd4d616caadc1636dc9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_config__t.html#a051cb4eaab18bfd4d616caadc1636dc9">baudrate</a></td></tr>
-<tr class="memdesc:a051cb4eaab18bfd4d616caadc1636dc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Baudrate for CAN communication in bits per second. ///.  <br /></td></tr>
 <tr class="separator:a051cb4eaab18bfd4d616caadc1636dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75c86271c0250dca72758d3622bee149"><td class="memItemLeft" align="right" valign="top">pcf_size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_config__t.html#a75c86271c0250dca72758d3622bee149">txBufferSize</a></td></tr>
-<tr class="memdesc:a75c86271c0250dca72758d3622bee149"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the size of the transmission buffer.  <br /></td></tr>
 <tr class="separator:a75c86271c0250dca72758d3622bee149"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae42dfdce229d712d91e66e716c33b7a9"><td class="memItemLeft" align="right" valign="top">The size is specified in number of messages not in number of bytes pcf_size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_config__t.html#ae42dfdce229d712d91e66e716c33b7a9">rxBufferSize</a></td></tr>
-<tr class="memdesc:ae42dfdce229d712d91e66e716c33b7a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the size of the receive buffer.  <br /></td></tr>
-<tr class="separator:ae42dfdce229d712d91e66e716c33b7a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa997be3d94fcd27b3e4dc9f5dced203c"><td class="memItemLeft" align="right" valign="top">The size is specified in number of messages not in number of bytes EnPCFBoolean_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_config__t.html#aa997be3d94fcd27b3e4dc9f5dced203c">handleErrors</a></td></tr>
-<tr class="memdesc:aa997be3d94fcd27b3e4dc9f5dced203c"><td class="mdescLeft">&#160;</td><td class="mdescRight">True or False. If False the driver will not handle Transmit warning, error and Bus off states.  <br /></td></tr>
-<tr class="separator:aa997be3d94fcd27b3e4dc9f5dced203c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13220c447d560b8d54ba24d5f817c4b9"><td class="memItemLeft" align="right" valign="top">It is expected the same will be handled by the user EnPCFBoolean_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_config__t.html#a13220c447d560b8d54ba24d5f817c4b9">disableAutoReTx</a></td></tr>
-<tr class="memdesc:a13220c447d560b8d54ba24d5f817c4b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">True or False. If True the driver will not auto re-transmit the message on error.  <br /></td></tr>
-<tr class="separator:a13220c447d560b8d54ba24d5f817c4b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8299c933787a8242835590c05fb92fa5"><td class="memItemLeft" align="right" valign="top">It is expected the same will be handled by the user <a class="el" href="peripherals_2can_2types_8h.html#a9f346b1218640dee71bfdf7f70f07cae">CanErrorCallback_fp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_config__t.html#a8299c933787a8242835590c05fb92fa5">ErrorHandler</a></td></tr>
-<tr class="memdesc:a8299c933787a8242835590c05fb92fa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The user callback which will be called when the transmit warning, transmit error and Bus off states occur*&zwj;/.  <br /></td></tr>
-<tr class="separator:a8299c933787a8242835590c05fb92fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a450f0c64ecafc2229da75ef1ff48b63d"><td class="memItemLeft" align="right" valign="top">pcf_size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_config__t.html#a450f0c64ecafc2229da75ef1ff48b63d">rxBufferSize</a></td></tr>
+<tr class="separator:a450f0c64ecafc2229da75ef1ff48b63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30d6675142a7d3593969090ac77dbcf6"><td class="memItemLeft" align="right" valign="top">EnPCFBoolean_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_config__t.html#a30d6675142a7d3593969090ac77dbcf6">handleErrors</a></td></tr>
+<tr class="separator:a30d6675142a7d3593969090ac77dbcf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfa54cc375c53430b5b3761ffca812e2"><td class="memItemLeft" align="right" valign="top">EnPCFBoolean_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_config__t.html#adfa54cc375c53430b5b3761ffca812e2">disableAutoReTx</a></td></tr>
+<tr class="separator:adfa54cc375c53430b5b3761ffca812e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c5bf6361252ddece39706bcf94f0f38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__pcf__mcal__peripherals__can.html#ga9f346b1218640dee71bfdf7f70f07cae">CanErrorCallback_fp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_config__t.html#a8c5bf6361252ddece39706bcf94f0f38">ErrorHandler</a></td></tr>
+<tr class="separator:a8c5bf6361252ddece39706bcf94f0f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95bd34386b16d7e7b6ba03daba5738e6"><td class="memItemLeft" align="right" valign="top">pcf_generic_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_config__t.html#a95bd34386b16d7e7b6ba03daba5738e6">hardwareCfg</a></td></tr>
-<tr class="memdesc:a95bd34386b16d7e7b6ba03daba5738e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardware platform specific configuration. Refer to native types.h file. ///.  <br /></td></tr>
 <tr class="separator:a95bd34386b16d7e7b6ba03daba5738e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>CAN configuration structure ///. </p>
-</div><h2 class="groupheader">Field Documentation</h2>
+<div class="textblock"><p>Can configuration structure. </p>
+<p>Example to configure CAN: </p><div class="fragment"><div class="line">CanHWConfig_t hw_config = {0};</div>
+<div class="line">hw_config.tx.port  = <a class="code hl_define" href="peripherals_2defs_8h.html#aee71a6e3866c50ce2535d2fc44318b8b">PCF_PORT_0</a>;</div>
+<div class="line">hw_config.tx.pin   = <a class="code hl_define" href="peripherals_2defs_8h.html#a0d56d8036c84dc645acd6a8c528348d4">PCF_PIN_1</a>;</div>
+<div class="line">hw_config.rx.port  = <a class="code hl_define" href="peripherals_2defs_8h.html#aee71a6e3866c50ce2535d2fc44318b8b">PCF_PORT_0</a>;</div>
+<div class="line">hw_config.rx.pin   = <a class="code hl_define" href="peripherals_2defs_8h.html#a5655d46bc6eb6b268c8099a23d1c03bf">PCF_PIN_0</a>;</div>
+<div class="line"> </div>
+<div class="line"><a class="code hl_struct" href="struct_can_config__t.html">CanConfig_t</a> config = {0};</div>
+<div class="line">config.<a class="code hl_variable" href="struct_can_config__t.html#a3f550a67883b60b0541077f53c6c2419">id</a>                       = PCF_CAN4_ID;</div>
+<div class="line">config.<a class="code hl_variable" href="struct_can_config__t.html#a051cb4eaab18bfd4d616caadc1636dc9">baudrate</a>                 = 500000;</div>
+<div class="line">config.<a class="code hl_variable" href="struct_can_config__t.html#a75c86271c0250dca72758d3622bee149">txBufferSize</a>             = 16; <span class="comment">// Tx buffer size 16 (Non-Blocking mode)</span></div>
+<div class="line">config.<a class="code hl_variable" href="struct_can_config__t.html#a450f0c64ecafc2229da75ef1ff48b63d">rxBufferSize</a>             = 16; <span class="comment">// Rx buffer size 16 (Non-Blocking mode)</span></div>
+<div class="line">config.<a class="code hl_variable" href="struct_can_config__t.html#a30d6675142a7d3593969090ac77dbcf6">handleErrors</a>             = enPCFBoolean_True;</div>
+<div class="line">config.<a class="code hl_variable" href="struct_can_config__t.html#adfa54cc375c53430b5b3761ffca812e2">disableAutoReTx</a>          = enPCFBoolean_True;</div>
+<div class="line">config.<a class="code hl_variable" href="struct_can_config__t.html#a8c5bf6361252ddece39706bcf94f0f38">ErrorHandler</a>             = __errorHandler;</div>
+<div class="line">config.<a class="code hl_variable" href="struct_can_config__t.html#a95bd34386b16d7e7b6ba03daba5738e6">hardwareCfg</a>              = &amp;hw_config;</div>
+<div class="ttc" id="aperipherals_2defs_8h_html_a0d56d8036c84dc645acd6a8c528348d4"><div class="ttname"><a href="peripherals_2defs_8h.html#a0d56d8036c84dc645acd6a8c528348d4">PCF_PIN_1</a></div><div class="ttdeci">#define PCF_PIN_1</div><div class="ttdef"><b>Definition:</b> defs.h:29</div></div>
+<div class="ttc" id="aperipherals_2defs_8h_html_a5655d46bc6eb6b268c8099a23d1c03bf"><div class="ttname"><a href="peripherals_2defs_8h.html#a5655d46bc6eb6b268c8099a23d1c03bf">PCF_PIN_0</a></div><div class="ttdeci">#define PCF_PIN_0</div><div class="ttdef"><b>Definition:</b> defs.h:28</div></div>
+<div class="ttc" id="aperipherals_2defs_8h_html_aee71a6e3866c50ce2535d2fc44318b8b"><div class="ttname"><a href="peripherals_2defs_8h.html#aee71a6e3866c50ce2535d2fc44318b8b">PCF_PORT_0</a></div><div class="ttdeci">#define PCF_PORT_0</div><div class="ttdef"><b>Definition:</b> defs.h:9</div></div>
+<div class="ttc" id="astruct_can_config__t_html"><div class="ttname"><a href="struct_can_config__t.html">CanConfig_t</a></div><div class="ttdoc">Can configuration structure.</div><div class="ttdef"><b>Definition:</b> types.h:157</div></div>
+<div class="ttc" id="astruct_can_config__t_html_a051cb4eaab18bfd4d616caadc1636dc9"><div class="ttname"><a href="struct_can_config__t.html#a051cb4eaab18bfd4d616caadc1636dc9">CanConfig_t::baudrate</a></div><div class="ttdeci">uint32_t baudrate</div><div class="ttdef"><b>Definition:</b> types.h:159</div></div>
+<div class="ttc" id="astruct_can_config__t_html_a30d6675142a7d3593969090ac77dbcf6"><div class="ttname"><a href="struct_can_config__t.html#a30d6675142a7d3593969090ac77dbcf6">CanConfig_t::handleErrors</a></div><div class="ttdeci">EnPCFBoolean_t handleErrors</div><div class="ttdef"><b>Definition:</b> types.h:165</div></div>
+<div class="ttc" id="astruct_can_config__t_html_a3f550a67883b60b0541077f53c6c2419"><div class="ttname"><a href="struct_can_config__t.html#a3f550a67883b60b0541077f53c6c2419">CanConfig_t::id</a></div><div class="ttdeci">uint8_t id</div><div class="ttdef"><b>Definition:</b> types.h:158</div></div>
+<div class="ttc" id="astruct_can_config__t_html_a450f0c64ecafc2229da75ef1ff48b63d"><div class="ttname"><a href="struct_can_config__t.html#a450f0c64ecafc2229da75ef1ff48b63d">CanConfig_t::rxBufferSize</a></div><div class="ttdeci">pcf_size_t rxBufferSize</div><div class="ttdef"><b>Definition:</b> types.h:163</div></div>
+<div class="ttc" id="astruct_can_config__t_html_a75c86271c0250dca72758d3622bee149"><div class="ttname"><a href="struct_can_config__t.html#a75c86271c0250dca72758d3622bee149">CanConfig_t::txBufferSize</a></div><div class="ttdeci">pcf_size_t txBufferSize</div><div class="ttdef"><b>Definition:</b> types.h:161</div></div>
+<div class="ttc" id="astruct_can_config__t_html_a8c5bf6361252ddece39706bcf94f0f38"><div class="ttname"><a href="struct_can_config__t.html#a8c5bf6361252ddece39706bcf94f0f38">CanConfig_t::ErrorHandler</a></div><div class="ttdeci">CanErrorCallback_fp ErrorHandler</div><div class="ttdef"><b>Definition:</b> types.h:169</div></div>
+<div class="ttc" id="astruct_can_config__t_html_a95bd34386b16d7e7b6ba03daba5738e6"><div class="ttname"><a href="struct_can_config__t.html#a95bd34386b16d7e7b6ba03daba5738e6">CanConfig_t::hardwareCfg</a></div><div class="ttdeci">pcf_generic_t hardwareCfg</div><div class="ttdef"><b>Definition:</b> types.h:170</div></div>
+<div class="ttc" id="astruct_can_config__t_html_adfa54cc375c53430b5b3761ffca812e2"><div class="ttname"><a href="struct_can_config__t.html#adfa54cc375c53430b5b3761ffca812e2">CanConfig_t::disableAutoReTx</a></div><div class="ttdeci">EnPCFBoolean_t disableAutoReTx</div><div class="ttdef"><b>Definition:</b> types.h:167</div></div>
+</div><!-- fragment --> </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a3f550a67883b60b0541077f53c6c2419" name="a3f550a67883b60b0541077f53c6c2419"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f550a67883b60b0541077f53c6c2419">&#9670;&#160;</a></span>id</h2>
 
@@ -141,8 +160,8 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>CAN Id. Refer to native defs.h file for appropriate CAN id ///. </p>
+<p>CAN Id. Refer to native defs.h file for appropriate CAN id <br  />
+ </p>
 
 </div>
 </div>
@@ -157,8 +176,9 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Baudrate for CAN communication in bits per second. ///. </p>
+<p>Baudrate for CAN communication in bits per second. <br  />
+ The actual value set may be different from the value provided by user <br  />
+ </p>
 
 </div>
 </div>
@@ -173,72 +193,69 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Specifies the size of the transmission buffer. </p>
+<p>Specifies the size of the transmission buffer. The size is specified in number of messages not in number of bytes <br  />
+ </p>
 
 </div>
 </div>
-<a id="ae42dfdce229d712d91e66e716c33b7a9" name="ae42dfdce229d712d91e66e716c33b7a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae42dfdce229d712d91e66e716c33b7a9">&#9670;&#160;</a></span>rxBufferSize</h2>
+<a id="a450f0c64ecafc2229da75ef1ff48b63d" name="a450f0c64ecafc2229da75ef1ff48b63d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a450f0c64ecafc2229da75ef1ff48b63d">&#9670;&#160;</a></span>rxBufferSize</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">The size is specified in number of messages not in number of bytes pcf_size_t CanConfig_t::rxBufferSize</td>
+          <td class="memname">pcf_size_t CanConfig_t::rxBufferSize</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Specifies the size of the receive buffer. </p>
+<p>Specifies the size of the receive buffer. The size is specified in number of messages not in number of bytes <br  />
+ </p>
 
 </div>
 </div>
-<a id="aa997be3d94fcd27b3e4dc9f5dced203c" name="aa997be3d94fcd27b3e4dc9f5dced203c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa997be3d94fcd27b3e4dc9f5dced203c">&#9670;&#160;</a></span>handleErrors</h2>
+<a id="a30d6675142a7d3593969090ac77dbcf6" name="a30d6675142a7d3593969090ac77dbcf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30d6675142a7d3593969090ac77dbcf6">&#9670;&#160;</a></span>handleErrors</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">The size is specified in number of messages not in number of bytes EnPCFBoolean_t CanConfig_t::handleErrors</td>
+          <td class="memname">EnPCFBoolean_t CanConfig_t::handleErrors</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>True or False. If False the driver will not handle Transmit warning, error and Bus off states. </p>
+<p>enPCFBoolean_True or enPCFBoolean_False. If enPCFBoolean_False the driver will not handle Transmit warning, error and Bus off states. It is expected the same will be handled by the user. </p>
 
 </div>
 </div>
-<a id="a13220c447d560b8d54ba24d5f817c4b9" name="a13220c447d560b8d54ba24d5f817c4b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13220c447d560b8d54ba24d5f817c4b9">&#9670;&#160;</a></span>disableAutoReTx</h2>
+<a id="adfa54cc375c53430b5b3761ffca812e2" name="adfa54cc375c53430b5b3761ffca812e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfa54cc375c53430b5b3761ffca812e2">&#9670;&#160;</a></span>disableAutoReTx</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">It is expected the same will be handled by the user EnPCFBoolean_t CanConfig_t::disableAutoReTx</td>
+          <td class="memname">EnPCFBoolean_t CanConfig_t::disableAutoReTx</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>True or False. If True the driver will not auto re-transmit the message on error. </p>
+<p>enPCFBoolean_True or enPCFBoolean_False. If enPCFBoolean_True the driver will not auto re-transmit the message on error. It is expected the same will be handled by the user. </p>
 
 </div>
 </div>
-<a id="a8299c933787a8242835590c05fb92fa5" name="a8299c933787a8242835590c05fb92fa5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8299c933787a8242835590c05fb92fa5">&#9670;&#160;</a></span>ErrorHandler</h2>
+<a id="a8c5bf6361252ddece39706bcf94f0f38" name="a8c5bf6361252ddece39706bcf94f0f38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c5bf6361252ddece39706bcf94f0f38">&#9670;&#160;</a></span>ErrorHandler</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">It is expected the same will be handled by the user <a class="el" href="peripherals_2can_2types_8h.html#a9f346b1218640dee71bfdf7f70f07cae">CanErrorCallback_fp</a> CanConfig_t::ErrorHandler</td>
+          <td class="memname"><a class="el" href="group__pcf__mcal__peripherals__can.html#ga9f346b1218640dee71bfdf7f70f07cae">CanErrorCallback_fp</a> CanConfig_t::ErrorHandler</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>The user callback which will be called when the transmit warning, transmit error and Bus off states occur*&zwj;/. </p>
+<p>The user callback which will be called when the transmit warning, transmit error and Bus off states occur </p>
 
 </div>
 </div>
@@ -253,8 +270,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Hardware platform specific configuration. Refer to native types.h file. ///. </p>
+<p>Hardware specific configuration structure. Refer to native specific header file (if they exists) under pcf/peripherals/can/&lt;native specific folder&gt; for details. Set to PCF_NULL if native specific file does not exist </p>
 
 </div>
 </div>

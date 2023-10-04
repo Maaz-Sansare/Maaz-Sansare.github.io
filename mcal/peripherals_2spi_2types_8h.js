@@ -1,6 +1,6 @@
 var peripherals_2spi_2types_8h =
 [
-    [ "Spi_t", "group__pcf__mcal__peripherals__spi.html#ga15afdb4cfb77570bcf3ad39d68d72354", null ],
+    [ "Spi_t", "group__pcf__mcal__peripherals__spi.html#gade996080fc5c4af803481e646255f694", null ],
     [ "EnSpiMode_t", "group__pcf__mcal__peripherals__spi.html#gae2b9ef4ecc8a88114675735f310d54f4", [
       [ "enSpiMode_Master", "group__pcf__mcal__peripherals__spi.html#ggae2b9ef4ecc8a88114675735f310d54f4a059557dabd07c4a466cde6dd41ca4259", null ],
       [ "enSpiMode_Slave", "group__pcf__mcal__peripherals__spi.html#ggae2b9ef4ecc8a88114675735f310d54f4ac1a825250d6a14ed53286ace521442b1", null ]

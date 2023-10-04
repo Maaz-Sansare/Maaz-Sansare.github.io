@@ -1,7 +1,13 @@
 var searchData=
 [
-  ['mask_0',['mask',['../struct_can_filter_config__t.html#a985ed0ebf49a6b9f7a0ac44ee6999555',1,'CanFilterConfig_t']]],
-  ['maxslaves_1',['maxSlaves',['../struct_spi_config__t.html#ab71a9e9380ac3ad2d730973bbe1790da',1,'SpiConfig_t']]],
-  ['memoryconfig_2',['memoryConfig',['../struct_adc_config__t.html#ae9087118249050d426a27959c321fbd7',1,'AdcConfig_t::memoryConfig()'],['../struct_dac_config__t.html#a8d053165db84ebbaa033928e889a158f',1,'DacConfig_t::memoryConfig()'],['../struct_gpio_config__t.html#a95efa70a8c5aeab9959e0c2c6eb6b10a',1,'GpioConfig_t::memoryConfig()'],['../struct_gpio_bank_config__t.html#ac7bbc84dac856ee52b1ced9d0a0ef4f7',1,'GpioBankConfig_t::memoryConfig()'],['../struct_periodic_timer_config__t.html#aa600faa2f5eb282ce9471a5619abb340',1,'PeriodicTimerConfig_t::memoryConfig()'],['../struct_pwm_config__t.html#a5f8366bbeb207241fa0fa28d6b5470f2',1,'PwmConfig_t::memoryConfig()'],['../struct_qei_config__t.html#ac9fcc89eeb187dc89f825191ec2af739',1,'QeiConfig_t::memoryConfig()'],['../struct_spi_config__t.html#abfdab1dba6965243f273be33c9f88189',1,'SpiConfig_t::memoryConfig()'],['../struct_uart_config__t.html#a456c76825e415602f24cd04ec8dac303',1,'UartConfig_t::memoryConfig()']]],
-  ['mode_3',['mode',['../struct_can_filter_config__t.html#a40996f334d6be26323e13ee1721695e5',1,'CanFilterConfig_t::mode()'],['../struct_spi_config__t.html#a7971e5d2963347042ef24cac7b038e99',1,'SpiConfig_t::mode()'],['../struct_uart_config__t.html#a5e7b0ae524539102fb186a5fb8f96883',1,'UartConfig_t::mode()']]]
+  ['mask_0',['mask',['../struct_can_filter_config__t.html#a075b86ee601947f16f13199ae11f5567',1,'CanFilterConfig_t']]],
+  ['maxslaves_1',['maxSlaves',['../group__pcf__mcal__peripherals__spi.html#gab71a9e9380ac3ad2d730973bbe1790da',1,'SpiConfig_t']]],
+  ['memalloc_2',['memAlloc',['../struct_peripheral_config__t.html#a8b9be696903879741420ad2c288318cf',1,'PeripheralConfig_t']]],
+  ['memfree_3',['memFree',['../struct_peripheral_config__t.html#a71718ea197ebdff94161d9999d052908',1,'PeripheralConfig_t']]],
+  ['memoryconfig_4',['memoryConfig',['../struct_qei_config__t.html#ac9fcc89eeb187dc89f825191ec2af739',1,'QeiConfig_t']]],
+  ['memrealloc_5',['memRealloc',['../struct_peripheral_config__t.html#aa8756429cd2fe5d0ebb5a8c34bf5b1c7',1,'PeripheralConfig_t']]],
+  ['min_6',['min',['../group__pcf__mcal__peripherals__rtc.html#gab03fb7fb121b8daf7b841a2944a04ad3',1,'RtcDateTime_t']]],
+  ['mode_7',['mode',['../struct_can_filter_config__t.html#a40996f334d6be26323e13ee1721695e5',1,'CanFilterConfig_t::mode()'],['../group__pcf__mcal__peripherals__spi.html#ga7971e5d2963347042ef24cac7b038e99',1,'SpiConfig_t::mode()'],['../group__pcf__mcal__peripherals__uart.html#ga5e7b0ae524539102fb186a5fb8f96883',1,'UartConfig_t::mode()']]],
+  ['month_8',['month',['../group__pcf__mcal__peripherals__rtc.html#gaa1d9dc1ada83f8ebe2b57a745c874818',1,'RtcDateTime_t']]],
+  ['msec_9',['msec',['../group__pcf__mcal__peripherals__rtc.html#ga39f2c9bad5dbe5ac81316d9b2c05d715',1,'RtcDateTime_t']]]
 ];

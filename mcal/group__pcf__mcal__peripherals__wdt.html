@@ -97,6 +97,9 @@ $(document).ready(function(){initNavTree('group__pcf__mcal__peripherals__wdt.htm
   <div class="headertitle"><div class="title">WDT<div class="ingroups"><a class="el" href="group__pcf__mcal.html">Mcal</a> &raquo; <a class="el" href="group__pcf__mcal__peripherals.html">Peripherals</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A watchdog timer is a hardware timer that automatically generates a system reset if the main program neglects to periodically service it.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -106,30 +109,9 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga1cffaf060bb8dca483fbdc2546ee8f8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga1cffaf060bb8dca483fbdc2546ee8f8b">ITEM_ID_WDT</a>&#160;&#160;&#160;(12)</td></tr>
-<tr class="memdesc:ga1cffaf060bb8dca483fbdc2546ee8f8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Item ID of WDT Entity within Mcal Package.  <br /></td></tr>
-<tr class="separator:ga1cffaf060bb8dca483fbdc2546ee8f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3b3476732a4d59ed042cf0bdff6652aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga3b3476732a4d59ed042cf0bdff6652aa">PCF_ENTITY_TYPE_WDT</a>&#160;&#160;&#160;(0x84688780)</td></tr>
-<tr class="memdesc:ga3b3476732a4d59ed042cf0bdff6652aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The following defines the EntityType_t.id for WDT Entities.  <br /></td></tr>
+<tr class="memdesc:ga3b3476732a4d59ed042cf0bdff6652aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">The following defines the EntityType_t.id for Peripheral watchdog timer Entities.  <br /></td></tr>
 <tr class="separator:ga3b3476732a4d59ed042cf0bdff6652aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab6c8907d3f71da963109e0910f05ea2f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#gab6c8907d3f71da963109e0910f05ea2f">PCF_WDT_S_SUCCESS</a>&#160;&#160;&#160;GENERATE_PCF_STATUS_SUCCESS(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga1cffaf060bb8dca483fbdc2546ee8f8b">ITEM_ID_WDT</a>)</td></tr>
-<tr class="separator:gab6c8907d3f71da963109e0910f05ea2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf0690de0dd49f2a8f5b68c8308f0acea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#gaf0690de0dd49f2a8f5b68c8308f0acea">PCF_WDT_S_FATAL_ERROR</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_FATAL(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga1cffaf060bb8dca483fbdc2546ee8f8b">ITEM_ID_WDT</a>)</td></tr>
-<tr class="separator:gaf0690de0dd49f2a8f5b68c8308f0acea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3eb8b5901350b1746de3850ec9c034e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga3eb8b5901350b1746de3850ec9c034e8">PCF_WDT_S_INTERNAL_ERROR</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_INTERNAL_ERROR(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga1cffaf060bb8dca483fbdc2546ee8f8b">ITEM_ID_WDT</a>)</td></tr>
-<tr class="separator:ga3eb8b5901350b1746de3850ec9c034e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4129d873d7e232fbb5c4351ba75ac0ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga4129d873d7e232fbb5c4351ba75ac0ba">PCF_WDT_S_INVALID_ARG</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_INVALID_ARG(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga1cffaf060bb8dca483fbdc2546ee8f8b">ITEM_ID_WDT</a>)</td></tr>
-<tr class="separator:ga4129d873d7e232fbb5c4351ba75ac0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab04c93bc6cd5dd07398b304fa8b05592"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#gab04c93bc6cd5dd07398b304fa8b05592">PCF_WDT_S_NULL_ARG</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NULL_ARG(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga1cffaf060bb8dca483fbdc2546ee8f8b">ITEM_ID_WDT</a>)</td></tr>
-<tr class="separator:gab04c93bc6cd5dd07398b304fa8b05592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab17f2c4496cb9b717c06f1c0c41d9f28"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#gab17f2c4496cb9b717c06f1c0c41d9f28">PCF_WDT_S_NOT_IMPLEMENTED</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_IMPLEMENTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga1cffaf060bb8dca483fbdc2546ee8f8b">ITEM_ID_WDT</a>)</td></tr>
-<tr class="separator:gab17f2c4496cb9b717c06f1c0c41d9f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9ed157f8b6943bbbf8ef6bd094c91be2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga9ed157f8b6943bbbf8ef6bd094c91be2">PCF_WDT_S_NOT_SUPPORTED</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_SUPPORTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga1cffaf060bb8dca483fbdc2546ee8f8b">ITEM_ID_WDT</a>)</td></tr>
-<tr class="separator:ga9ed157f8b6943bbbf8ef6bd094c91be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab034e04a650994ea37963c1c844a6e65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#gab034e04a650994ea37963c1c844a6e65">PCF_WDT_S_NOT_CONFIGURED</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_CONFIGURED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga1cffaf060bb8dca483fbdc2546ee8f8b">ITEM_ID_WDT</a>)</td></tr>
-<tr class="separator:gab034e04a650994ea37963c1c844a6e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaded90b0fd7bf55e4fb9e119788fff263"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#gaded90b0fd7bf55e4fb9e119788fff263">PCF_WDT_S_ERROR</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_BASE_UCODE(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga1cffaf060bb8dca483fbdc2546ee8f8b">ITEM_ID_WDT</a>)</td></tr>
-<tr class="separator:gaded90b0fd7bf55e4fb9e119788fff263"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -142,60 +124,46 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gae01dc9214d39b2a69bef185e213f4d4b"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#gae01dc9214d39b2a69bef185e213f4d4b">pcf_Wdt_init</a> (const <a class="el" href="struct_wdt_config__t.html">WdtConfig_t</a> *config)</td></tr>
-<tr class="memdesc:gae01dc9214d39b2a69bef185e213f4d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the watchdog timer.  <br /></td></tr>
-<tr class="separator:gae01dc9214d39b2a69bef185e213f4d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga918ba2a9a73c4e838d5ea2216826fc4d"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga918ba2a9a73c4e838d5ea2216826fc4d">pcf_Wdt_init</a> (const <a class="el" href="struct_wdt_config__t.html">WdtConfig_t</a> *const config)</td></tr>
+<tr class="memdesc:ga918ba2a9a73c4e838d5ea2216826fc4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the watchdog timer.  <br /></td></tr>
+<tr class="separator:ga918ba2a9a73c4e838d5ea2216826fc4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf655b0917fc032ef4896e07314184276"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#gaf655b0917fc032ef4896e07314184276">pcf_Wdt_deinit</a> (void)</td></tr>
-<tr class="memdesc:gaf655b0917fc032ef4896e07314184276"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-initialize the wdt.  <br /></td></tr>
+<tr class="memdesc:gaf655b0917fc032ef4896e07314184276"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-initialize the watchdog timer.  <br /></td></tr>
 <tr class="separator:gaf655b0917fc032ef4896e07314184276"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2f51a2da3145cc417674db97b2f50254"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga2f51a2da3145cc417674db97b2f50254">pcf_Wdt_isInitialized</a> (void)</td></tr>
 <tr class="memdesc:ga2f51a2da3145cc417674db97b2f50254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if watchdog timer is initialized.  <br /></td></tr>
 <tr class="separator:ga2f51a2da3145cc417674db97b2f50254"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga40f96315914e7c2e32f699f4c168a8a3"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga40f96315914e7c2e32f699f4c168a8a3">pcf_Wdt_getState</a> (<a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga41b3401224533b5a09c392185f279681">EnWdtState_t</a> *state)</td></tr>
-<tr class="memdesc:ga40f96315914e7c2e32f699f4c168a8a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current state of the watchdog timer.  <br /></td></tr>
-<tr class="separator:ga40f96315914e7c2e32f699f4c168a8a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga13aad66475a85563beaa2b03b6b29183"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga13aad66475a85563beaa2b03b6b29183">pcf_Wdt_getTimeout</a> (<a class="el" href="struct_time_interval__t.html">TimeInterval_t</a> *timeout)</td></tr>
-<tr class="memdesc:ga13aad66475a85563beaa2b03b6b29183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the timeout time of the watchdog timer.  <br /></td></tr>
-<tr class="separator:ga13aad66475a85563beaa2b03b6b29183"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaea0b5ab8e8c4d3b97b5cfc6f4728226a"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#gaea0b5ab8e8c4d3b97b5cfc6f4728226a">pcf_Wdt_getMaxTimeout</a> (<a class="el" href="struct_time_interval__t.html">TimeInterval_t</a> *timeout)</td></tr>
-<tr class="memdesc:gaea0b5ab8e8c4d3b97b5cfc6f4728226a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the max timeout time that is supported by the Watchdog Timer.  <br /></td></tr>
-<tr class="separator:gaea0b5ab8e8c4d3b97b5cfc6f4728226a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga65e0b3d8b4493879801b52ffafd9a069"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga65e0b3d8b4493879801b52ffafd9a069">pcf_Wdt_start</a> ()</td></tr>
-<tr class="memdesc:ga65e0b3d8b4493879801b52ffafd9a069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start watchdog timer.  <br /></td></tr>
-<tr class="separator:ga65e0b3d8b4493879801b52ffafd9a069"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4c1a57dca2c4e797d4b810701ee3936f"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga4c1a57dca2c4e797d4b810701ee3936f">pcf_Wdt_stop</a> ()</td></tr>
-<tr class="memdesc:ga4c1a57dca2c4e797d4b810701ee3936f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop watchdog timer.  <br /></td></tr>
-<tr class="separator:ga4c1a57dca2c4e797d4b810701ee3936f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab083e15f2ba323a563d443b0d935806a"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#gab083e15f2ba323a563d443b0d935806a">pcf_Wdt_pause</a> (<a class="el" href="struct_time_interval__t.html">TimeInterval_t</a> *time)</td></tr>
-<tr class="memdesc:gab083e15f2ba323a563d443b0d935806a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause the watchdog timer for the time specified by user.  <br /></td></tr>
-<tr class="separator:gab083e15f2ba323a563d443b0d935806a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9416076192dd5ee3cf749fb11c251cbd"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga9416076192dd5ee3cf749fb11c251cbd">pcf_Wdt_refresh</a> ()</td></tr>
-<tr class="memdesc:ga9416076192dd5ee3cf749fb11c251cbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">User has to call this function periodically to refresh/reload the counter before the WDT expires, else the system will reset.  <br /></td></tr>
-<tr class="separator:ga9416076192dd5ee3cf749fb11c251cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad002b702fe0655d082de7398bad4b87e"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#gad002b702fe0655d082de7398bad4b87e">pcf_Wdt_getState</a> (<a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga41b3401224533b5a09c392185f279681">EnWdtState_t</a> *const state)</td></tr>
+<tr class="memdesc:gad002b702fe0655d082de7398bad4b87e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current state of the watchdog timer.  <br /></td></tr>
+<tr class="separator:gad002b702fe0655d082de7398bad4b87e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacffa723100fcf7e3534da7f24966e2e3"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#gacffa723100fcf7e3534da7f24966e2e3">pcf_Wdt_getTimeout</a> (<a class="el" href="struct_time_interval__t.html">TimeInterval_t</a> *const timeout)</td></tr>
+<tr class="memdesc:gacffa723100fcf7e3534da7f24966e2e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the configured timeout time of the watchdog timer.  <br /></td></tr>
+<tr class="separator:gacffa723100fcf7e3534da7f24966e2e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ffdbe580e95828bc5062c022baf9bc9"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga2ffdbe580e95828bc5062c022baf9bc9">pcf_Wdt_getMaxTimeout</a> (<a class="el" href="struct_time_interval__t.html">TimeInterval_t</a> *const timeout)</td></tr>
+<tr class="memdesc:ga2ffdbe580e95828bc5062c022baf9bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the max timeout time that is supported by the watchdog Timer.  <br /></td></tr>
+<tr class="separator:ga2ffdbe580e95828bc5062c022baf9bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabe8b5f2549eb378a0a89a8ec545d12d6"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#gabe8b5f2549eb378a0a89a8ec545d12d6">pcf_Wdt_start</a> (void)</td></tr>
+<tr class="memdesc:gabe8b5f2549eb378a0a89a8ec545d12d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start watchdog timer.  <br /></td></tr>
+<tr class="separator:gabe8b5f2549eb378a0a89a8ec545d12d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5ecda7985241b0d95e30e3821a7b282"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#gaa5ecda7985241b0d95e30e3821a7b282">pcf_Wdt_stop</a> (void)</td></tr>
+<tr class="memdesc:gaa5ecda7985241b0d95e30e3821a7b282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop watchdog timer.  <br /></td></tr>
+<tr class="separator:gaa5ecda7985241b0d95e30e3821a7b282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f9103da30aeb7b095d02f537928bd29"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga9f9103da30aeb7b095d02f537928bd29">pcf_Wdt_pause</a> (<a class="el" href="struct_time_interval__t.html">TimeInterval_t</a> *const time)</td></tr>
+<tr class="memdesc:ga9f9103da30aeb7b095d02f537928bd29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause the watchdog timer for the time specified by <em>time</em> .  <br /></td></tr>
+<tr class="separator:ga9f9103da30aeb7b095d02f537928bd29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46eb19cfe6c67fe38a2c492759043594"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga46eb19cfe6c67fe38a2c492759043594">pcf_Wdt_refresh</a> (void)</td></tr>
+<tr class="memdesc:ga46eb19cfe6c67fe38a2c492759043594"><td class="mdescLeft">&#160;</td><td class="mdescRight">User has to call this function periodically to refresh/reload the counter before the watchdog timer expires, else the system will reset.  <br /></td></tr>
+<tr class="separator:ga46eb19cfe6c67fe38a2c492759043594"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf0dd91214555e09fedc4720038c907f9"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#gaf0dd91214555e09fedc4720038c907f9">pcf_Wdt_customCommand</a> (pcf_command_t command, pcf_generic_t data)</td></tr>
-<tr class="memdesc:gaf0dd91214555e09fedc4720038c907f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to extend the functionality of the wdt entity.  <br /></td></tr>
+<tr class="memdesc:gaf0dd91214555e09fedc4720038c907f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can be used to extend the functionality provided by the watchdog timerpackage item.  <br /></td></tr>
 <tr class="separator:gaf0dd91214555e09fedc4720038c907f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>A watchdog timer is a hardware timer that automatically generates a system reset if the main program neglects to periodically service it. </p>
+<p>It is often used to automatically reset an embedded device that hangs because of a software or hardware fault.</p>
 <dl class="section note"><dt>Note</dt><dd>Input validation is done only when package is built in debug mode. <br  />
  </dd></dl>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ga1cffaf060bb8dca483fbdc2546ee8f8b" name="ga1cffaf060bb8dca483fbdc2546ee8f8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1cffaf060bb8dca483fbdc2546ee8f8b">&#9670;&#160;</a></span>ITEM_ID_WDT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ITEM_ID_WDT&#160;&#160;&#160;(12)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Item ID of WDT Entity within Mcal Package. </p>
-
-</div>
-</div>
 <a id="ga3b3476732a4d59ed042cf0bdff6652aa" name="ga3b3476732a4d59ed042cf0bdff6652aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3b3476732a4d59ed042cf0bdff6652aa">&#9670;&#160;</a></span>PCF_ENTITY_TYPE_WDT</h2>
 
@@ -208,133 +176,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The following defines the EntityType_t.id for WDT Entities. </p>
-
-</div>
-</div>
-<a id="gab6c8907d3f71da963109e0910f05ea2f" name="gab6c8907d3f71da963109e0910f05ea2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab6c8907d3f71da963109e0910f05ea2f">&#9670;&#160;</a></span>PCF_WDT_S_SUCCESS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_WDT_S_SUCCESS&#160;&#160;&#160;GENERATE_PCF_STATUS_SUCCESS(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga1cffaf060bb8dca483fbdc2546ee8f8b">ITEM_ID_WDT</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaf0690de0dd49f2a8f5b68c8308f0acea" name="gaf0690de0dd49f2a8f5b68c8308f0acea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf0690de0dd49f2a8f5b68c8308f0acea">&#9670;&#160;</a></span>PCF_WDT_S_FATAL_ERROR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_WDT_S_FATAL_ERROR&#160;&#160;&#160;GENERATE_PCF_ERROR_FATAL(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga1cffaf060bb8dca483fbdc2546ee8f8b">ITEM_ID_WDT</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga3eb8b5901350b1746de3850ec9c034e8" name="ga3eb8b5901350b1746de3850ec9c034e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3eb8b5901350b1746de3850ec9c034e8">&#9670;&#160;</a></span>PCF_WDT_S_INTERNAL_ERROR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_WDT_S_INTERNAL_ERROR&#160;&#160;&#160;GENERATE_PCF_ERROR_INTERNAL_ERROR(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga1cffaf060bb8dca483fbdc2546ee8f8b">ITEM_ID_WDT</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga4129d873d7e232fbb5c4351ba75ac0ba" name="ga4129d873d7e232fbb5c4351ba75ac0ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4129d873d7e232fbb5c4351ba75ac0ba">&#9670;&#160;</a></span>PCF_WDT_S_INVALID_ARG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_WDT_S_INVALID_ARG&#160;&#160;&#160;GENERATE_PCF_ERROR_INVALID_ARG(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga1cffaf060bb8dca483fbdc2546ee8f8b">ITEM_ID_WDT</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gab04c93bc6cd5dd07398b304fa8b05592" name="gab04c93bc6cd5dd07398b304fa8b05592"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab04c93bc6cd5dd07398b304fa8b05592">&#9670;&#160;</a></span>PCF_WDT_S_NULL_ARG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_WDT_S_NULL_ARG&#160;&#160;&#160;GENERATE_PCF_ERROR_NULL_ARG(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga1cffaf060bb8dca483fbdc2546ee8f8b">ITEM_ID_WDT</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gab17f2c4496cb9b717c06f1c0c41d9f28" name="gab17f2c4496cb9b717c06f1c0c41d9f28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab17f2c4496cb9b717c06f1c0c41d9f28">&#9670;&#160;</a></span>PCF_WDT_S_NOT_IMPLEMENTED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_WDT_S_NOT_IMPLEMENTED&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_IMPLEMENTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga1cffaf060bb8dca483fbdc2546ee8f8b">ITEM_ID_WDT</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga9ed157f8b6943bbbf8ef6bd094c91be2" name="ga9ed157f8b6943bbbf8ef6bd094c91be2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9ed157f8b6943bbbf8ef6bd094c91be2">&#9670;&#160;</a></span>PCF_WDT_S_NOT_SUPPORTED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_WDT_S_NOT_SUPPORTED&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_SUPPORTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga1cffaf060bb8dca483fbdc2546ee8f8b">ITEM_ID_WDT</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gab034e04a650994ea37963c1c844a6e65" name="gab034e04a650994ea37963c1c844a6e65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab034e04a650994ea37963c1c844a6e65">&#9670;&#160;</a></span>PCF_WDT_S_NOT_CONFIGURED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_WDT_S_NOT_CONFIGURED&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_CONFIGURED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga1cffaf060bb8dca483fbdc2546ee8f8b">ITEM_ID_WDT</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaded90b0fd7bf55e4fb9e119788fff263" name="gaded90b0fd7bf55e4fb9e119788fff263"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaded90b0fd7bf55e4fb9e119788fff263">&#9670;&#160;</a></span>PCF_WDT_S_ERROR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_WDT_S_ERROR&#160;&#160;&#160;GENERATE_PCF_ERROR_BASE_UCODE(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga1cffaf060bb8dca483fbdc2546ee8f8b">ITEM_ID_WDT</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>The following defines the EntityType_t.id for Peripheral watchdog timer Entities. </p>
 
 </div>
 </div>
@@ -369,8 +211,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gae01dc9214d39b2a69bef185e213f4d4b" name="gae01dc9214d39b2a69bef185e213f4d4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae01dc9214d39b2a69bef185e213f4d4b">&#9670;&#160;</a></span>pcf_Wdt_init()</h2>
+<a id="ga918ba2a9a73c4e838d5ea2216826fc4d" name="ga918ba2a9a73c4e838d5ea2216826fc4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga918ba2a9a73c4e838d5ea2216826fc4d">&#9670;&#160;</a></span>pcf_Wdt_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -378,7 +220,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Wdt_init </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_wdt_config__t.html">WdtConfig_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_wdt_config__t.html">WdtConfig_t</a> *const&#160;</td>
           <td class="paramname"><em>config</em></td><td>)</td>
           <td></td>
         </tr>
@@ -386,20 +228,22 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialize the watchdog timer. </p>
-<p>Other wdt API functions will return error if init is not called. </p><dl class="section note"><dt>Note</dt><dd>Watchdog timer is a singleton. Hence, there is no constructor (new) and destructor (delete).</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Other watchdog timer API functions will return error if init is not called. </dd>
+<dd>
+Watchdog timer is a singleton. Hence, there is no constructor (new) and destructor (delete).</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">config</td><td>[IN] - Pointer to the wdt configuration structure. </td></tr>
+    <tr><td class="paramname">config</td><td>[IN] - Pointer to the <a class="el" href="struct_wdt_config__t.html" title="Wdt configuration structure.">WdtConfig_t</a> configuration structure. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__wdt.html#gab6c8907d3f71da963109e0910f05ea2f">PCF_WDT_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__wdt.html#gab04c93bc6cd5dd07398b304fa8b05592">PCF_WDT_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>config</em>  or config members is PCF_NULL.(Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga4129d873d7e232fbb5c4351ba75ac0ba">PCF_WDT_S_INVALID_ARG</a>  : Timeout value or timeout unit was invalid. </li>
+PCF_S_INVALID_ARG  : config.timeout value or config.timeout unit is invalid. </li>
 </ul>
 </dd></dl>
 
@@ -421,11 +265,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>De-initialize the wdt. </p>
+<p>De-initialize the watchdog timer. </p>
 <dl class="section note"><dt>Note</dt><dd>This function may not be implemented for all platforms</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__wdt.html#gab6c8907d3f71da963109e0910f05ea2f">PCF_WDT_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
+<li>
+PCF_S_NOT_IMPLEMENTED  : Not implemented. </li>
 </ul>
 </dd></dl>
 
@@ -450,16 +296,16 @@ Functions</h2></td></tr>
 <p>Check if watchdog timer is initialized. </p>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-PCF_WDT_S_YES  : Has been initialized. </li>
+PCF_S_YES  : Has been initialized. </li>
 <li>
-PCF_WDT_S_NO  : Has not been initialized. </li>
+PCF_S_NO  : Has not been initialized. </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga40f96315914e7c2e32f699f4c168a8a3" name="ga40f96315914e7c2e32f699f4c168a8a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga40f96315914e7c2e32f699f4c168a8a3">&#9670;&#160;</a></span>pcf_Wdt_getState()</h2>
+<a id="gad002b702fe0655d082de7398bad4b87e" name="gad002b702fe0655d082de7398bad4b87e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad002b702fe0655d082de7398bad4b87e">&#9670;&#160;</a></span>pcf_Wdt_getState()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -467,19 +313,19 @@ PCF_WDT_S_NO  : Has not been initialized. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Wdt_getState </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga41b3401224533b5a09c392185f279681">EnWdtState_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga41b3401224533b5a09c392185f279681">EnWdtState_t</a> *const&#160;</td>
           <td class="paramname"><em>state</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the current state of the watchdog timer. </p>
+<p>Gets the current state of the watchdog timer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">state</td><td>[OUT] - Pointer to <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">EnWdtState_t</td><td>. Set to the current WDT state. </td></tr>
+    <tr><td class="paramname">EnWdtState_t</td><td>. Set to the current watchdog timerstate. </td></tr>
   </table>
   </dd>
 </dl>
@@ -489,16 +335,16 @@ PCF_WDT_S_NO  : Has not been initialized. </li>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__wdt.html#gab6c8907d3f71da963109e0910f05ea2f">PCF_WDT_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__wdt.html#gab04c93bc6cd5dd07398b304fa8b05592">PCF_WDT_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : &lt;paranref name="state"&gt; is PCF_NULL.(Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga13aad66475a85563beaa2b03b6b29183" name="ga13aad66475a85563beaa2b03b6b29183"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga13aad66475a85563beaa2b03b6b29183">&#9670;&#160;</a></span>pcf_Wdt_getTimeout()</h2>
+<a id="gacffa723100fcf7e3534da7f24966e2e3" name="gacffa723100fcf7e3534da7f24966e2e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacffa723100fcf7e3534da7f24966e2e3">&#9670;&#160;</a></span>pcf_Wdt_getTimeout()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -506,32 +352,32 @@ PCF_WDT_S_NO  : Has not been initialized. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Wdt_getTimeout </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_time_interval__t.html">TimeInterval_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_time_interval__t.html">TimeInterval_t</a> *const&#160;</td>
           <td class="paramname"><em>timeout</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the timeout time of the watchdog timer. </p>
+<p>Gets the configured timeout time of the watchdog timer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">timeout</td><td>[OUT] - Pointer to <a class="el" href="struct_time_interval__t.html" title="Time value.">TimeInterval_t</a>. Set this variable with the timeout value </td></tr>
+    <tr><td class="paramname">timeout</td><td>[OUT] - Pointer to <a class="el" href="struct_time_interval__t.html" title="Time value.">TimeInterval_t</a>, stores the timeout value. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__wdt.html#gab6c8907d3f71da963109e0910f05ea2f">PCF_WDT_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__wdt.html#gab04c93bc6cd5dd07398b304fa8b05592">PCF_WDT_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : &lt;paranref name="timeout"&gt; is PCF_NULL.(Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="gaea0b5ab8e8c4d3b97b5cfc6f4728226a" name="gaea0b5ab8e8c4d3b97b5cfc6f4728226a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaea0b5ab8e8c4d3b97b5cfc6f4728226a">&#9670;&#160;</a></span>pcf_Wdt_getMaxTimeout()</h2>
+<a id="ga2ffdbe580e95828bc5062c022baf9bc9" name="ga2ffdbe580e95828bc5062c022baf9bc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2ffdbe580e95828bc5062c022baf9bc9">&#9670;&#160;</a></span>pcf_Wdt_getMaxTimeout()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -539,32 +385,32 @@ PCF_WDT_S_NO  : Has not been initialized. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Wdt_getMaxTimeout </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_time_interval__t.html">TimeInterval_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_time_interval__t.html">TimeInterval_t</a> *const&#160;</td>
           <td class="paramname"><em>timeout</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the max timeout time that is supported by the Watchdog Timer. </p>
+<p>Gets the max timeout time that is supported by the watchdog Timer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">- timeout</td><td>[IN] - Pointer to <a class="el" href="struct_time_interval__t.html" title="Time value.">TimeInterval_t</a>. Set this variable with the max timeout value </td></tr>
+    <tr><td class="paramname">- timeout</td><td>[OUT] - Pointer to <a class="el" href="struct_time_interval__t.html" title="Time value.">TimeInterval_t</a>, stores the max timeout value. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__wdt.html#gab6c8907d3f71da963109e0910f05ea2f">PCF_WDT_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__wdt.html#gab04c93bc6cd5dd07398b304fa8b05592">PCF_WDT_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : &lt;paranref name="timeout"&gt; is PCF_NULL.(Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga65e0b3d8b4493879801b52ffafd9a069" name="ga65e0b3d8b4493879801b52ffafd9a069"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga65e0b3d8b4493879801b52ffafd9a069">&#9670;&#160;</a></span>pcf_Wdt_start()</h2>
+<a id="gabe8b5f2549eb378a0a89a8ec545d12d6" name="gabe8b5f2549eb378a0a89a8ec545d12d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabe8b5f2549eb378a0a89a8ec545d12d6">&#9670;&#160;</a></span>pcf_Wdt_start()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -572,6 +418,7 @@ PCF_WDT_S_NO  : Has not been initialized. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Wdt_start </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -579,17 +426,17 @@ PCF_WDT_S_NO  : Has not been initialized. </li>
 </div><div class="memdoc">
 
 <p>Start watchdog timer. </p>
-<p>After the timeout specified during initialization a wdt timeout event will occur and the microcontroller will be reset.</p>
+<p>After the timeout specified during initialization a watchdog timertimeout event will occur and the microcontroller will be reset.</p>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__wdt.html#gab6c8907d3f71da963109e0910f05ea2f">PCF_WDT_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga4c1a57dca2c4e797d4b810701ee3936f" name="ga4c1a57dca2c4e797d4b810701ee3936f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4c1a57dca2c4e797d4b810701ee3936f">&#9670;&#160;</a></span>pcf_Wdt_stop()</h2>
+<a id="gaa5ecda7985241b0d95e30e3821a7b282" name="gaa5ecda7985241b0d95e30e3821a7b282"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa5ecda7985241b0d95e30e3821a7b282">&#9670;&#160;</a></span>pcf_Wdt_stop()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -597,6 +444,7 @@ PCF_WDT_S_NO  : Has not been initialized. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Wdt_stop </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -604,17 +452,17 @@ PCF_WDT_S_NO  : Has not been initialized. </li>
 </div><div class="memdoc">
 
 <p>Stop watchdog timer. </p>
-<p>It may be started again by a call to the function pcf_Wdt_start. </p><dl class="section note"><dt>Note</dt><dd>This function is an optional function. It will be implemented if the platform supports the same.</dd></dl>
+<p>It may be started again by a call to the function PCF_Start. </p><dl class="section note"><dt>Note</dt><dd>This function is an optional function. It will be implemented if the platform supports the same.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__wdt.html#gab6c8907d3f71da963109e0910f05ea2f">PCF_WDT_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="gab083e15f2ba323a563d443b0d935806a" name="gab083e15f2ba323a563d443b0d935806a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab083e15f2ba323a563d443b0d935806a">&#9670;&#160;</a></span>pcf_Wdt_pause()</h2>
+<a id="ga9f9103da30aeb7b095d02f537928bd29" name="ga9f9103da30aeb7b095d02f537928bd29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9f9103da30aeb7b095d02f537928bd29">&#9670;&#160;</a></span>pcf_Wdt_pause()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -622,33 +470,33 @@ PCF_WDT_S_NO  : Has not been initialized. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Wdt_pause </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_time_interval__t.html">TimeInterval_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_time_interval__t.html">TimeInterval_t</a> *const&#160;</td>
           <td class="paramname"><em>time</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Pause the watchdog timer for the time specified by user. </p>
+<p>Pause the watchdog timer for the time specified by <em>time</em> . </p>
 <p>The timer will resume again after the time has elapsed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">*time</td><td>[IN] - The time interval for which wdt should be paused. </td></tr>
+    <tr><td class="paramname">*time</td><td>[IN] - The time interval for which watchdog timer should be paused. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__wdt.html#gab6c8907d3f71da963109e0910f05ea2f">PCF_WDT_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__wdt.html#gab04c93bc6cd5dd07398b304fa8b05592">PCF_WDT_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>time</em>  is PCF_NULL.(Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga9416076192dd5ee3cf749fb11c251cbd" name="ga9416076192dd5ee3cf749fb11c251cbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9416076192dd5ee3cf749fb11c251cbd">&#9670;&#160;</a></span>pcf_Wdt_refresh()</h2>
+<a id="ga46eb19cfe6c67fe38a2c492759043594" name="ga46eb19cfe6c67fe38a2c492759043594"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga46eb19cfe6c67fe38a2c492759043594">&#9670;&#160;</a></span>pcf_Wdt_refresh()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -656,16 +504,17 @@ PCF_WDT_S_NO  : Has not been initialized. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Wdt_refresh </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>User has to call this function periodically to refresh/reload the counter before the WDT expires, else the system will reset. </p>
+<p>User has to call this function periodically to refresh/reload the counter before the watchdog timer expires, else the system will reset. </p>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__wdt.html#gab6c8907d3f71da963109e0910f05ea2f">PCF_WDT_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 </ul>
 </dd></dl>
 
@@ -697,10 +546,10 @@ PCF_WDT_S_NO  : Has not been initialized. </li>
       </table>
 </div><div class="memdoc">
 
-<p>Used to extend the functionality of the wdt entity. </p>
+<p>Can be used to extend the functionality provided by the watchdog timerpackage item. </p>
+<dl class="section note"><dt>Note</dt><dd>Refer to platform specific implementation header file (if they exists) under pcf/peripherals/wdt/&lt;platform specific path&gt;/commands for more details.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">wdt</td><td>[IN] - Pointer to Wdt_t. </td></tr>
     <tr><td class="paramname">command</td><td>[IN] - Represents the command/function to be executed. </td></tr>
     <tr><td class="paramname">data</td><td>[IN/OUT] - A generic pointer to hold the Input and/or Output data related to the command/function. </td></tr>
   </table>
@@ -708,13 +557,13 @@ PCF_WDT_S_NO  : Has not been initialized. </li>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__wdt.html#gab6c8907d3f71da963109e0910f05ea2f">PCF_WDT_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__wdt.html#gab04c93bc6cd5dd07398b304fa8b05592">PCF_WDT_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : Null argument was passed.(Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__wdt.html#gab17f2c4496cb9b717c06f1c0c41d9f28">PCF_WDT_S_NOT_IMPLEMENTED</a>  : Not implemented. </li>
+PCF_S_NOT_IMPLEMENTED  : Not implemented. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__wdt.html#ga9ed157f8b6943bbbf8ef6bd094c91be2">PCF_WDT_S_NOT_SUPPORTED</a>  : Specified command not supported. </li>
+PCF_S_NOT_SUPPORTED  : Specified command not supported. </li>
 </ul>
 </dd></dl>
 

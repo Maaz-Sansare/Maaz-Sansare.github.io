@@ -92,86 +92,56 @@ $(document).ready(function(){initNavTree('group__pcf__mcal__efmi.html',''); init
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#enumval-members">Enumerator</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">EFMI<div class="ingroups"><a class="el" href="group__pcf__mcal.html">Mcal</a> &raquo; <a class="el" href="group__pcf__mcal__mcu.html">Mcu</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>EFMI refers to Embedded Flash Memory Interface, is the interface used to write, erase, and manage the embedded flash memory.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_efmi_erase_config__t.html">EfmiEraseConfig_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration structure passed to <a class="el" href="group__pcf__mcal__efmi.html#ga879ee9e588128e6d6bb21c2057f01e69" title="Perform an erase on the flash memory based on the configuration provided.">pcf_Efmi_erase()</a> to initialize and execute the erase.  <a href="struct_efmi_erase_config__t.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration structure passed to <a class="el" href="group__pcf__mcal__efmi.html#gaf6667f0a5a2e69fc182c1e5fff938988" title="Perform an erase on the flash memory based on the configuration provided.">pcf_Efmi_erase()</a> to initialize and execute the erase.  <a href="struct_efmi_erase_config__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga4c96c8d7d13d62aff65c32be0f1d6cbf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga4c96c8d7d13d62aff65c32be0f1d6cbf">ITEM_ID_EFMI</a>&#160;&#160;&#160;(3)</td></tr>
-<tr class="memdesc:ga4c96c8d7d13d62aff65c32be0f1d6cbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Item ID of EFMI Entity within Mcal Package.  <br /></td></tr>
-<tr class="separator:ga4c96c8d7d13d62aff65c32be0f1d6cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga17a2a65a3d2bca97e034489df9cbd393"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga17a2a65a3d2bca97e034489df9cbd393">PCF_EFMI_S_SUCCESS</a>&#160;&#160;&#160;GENERATE_PCF_STATUS_SUCCESS(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__efmi.html#ga4c96c8d7d13d62aff65c32be0f1d6cbf">ITEM_ID_EFMI</a>)</td></tr>
-<tr class="separator:ga17a2a65a3d2bca97e034489df9cbd393"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7ac95554087fe269ba82b701516b97f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga7ac95554087fe269ba82b701516b97f7">PCF_EFMI_S_NULL_ARG</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NULL_ARG(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__efmi.html#ga4c96c8d7d13d62aff65c32be0f1d6cbf">ITEM_ID_EFMI</a>)</td></tr>
-<tr class="separator:ga7ac95554087fe269ba82b701516b97f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6e43503c5993940a4575c17cf51c5863"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga6e43503c5993940a4575c17cf51c5863">PCF_EFMI_S_INVALID_ARG</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_INVALID_ARG(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__efmi.html#ga4c96c8d7d13d62aff65c32be0f1d6cbf">ITEM_ID_EFMI</a>)</td></tr>
-<tr class="separator:ga6e43503c5993940a4575c17cf51c5863"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac9f21987870cf1df35af3985f486f8ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#gac9f21987870cf1df35af3985f486f8ae">PCF_EFMI_S_BUSY</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_BUSY(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__efmi.html#ga4c96c8d7d13d62aff65c32be0f1d6cbf">ITEM_ID_EFMI</a>)</td></tr>
-<tr class="separator:gac9f21987870cf1df35af3985f486f8ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3c207ff0c2f99bf4c1dbb95c465cbcb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga3c207ff0c2f99bf4c1dbb95c465cbcb9">PCF_EFMI_S_INVALID_OPERATION</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_INVALID_OPERATION(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__efmi.html#ga4c96c8d7d13d62aff65c32be0f1d6cbf">ITEM_ID_EFMI</a>)</td></tr>
-<tr class="separator:ga3c207ff0c2f99bf4c1dbb95c465cbcb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae8e959f68359a6d4b5695f77caa0bf9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#gae8e959f68359a6d4b5695f77caa0bf9c">PCF_EFMI_S_NOT_CONFIGURED</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_CONFIGURED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__efmi.html#ga4c96c8d7d13d62aff65c32be0f1d6cbf">ITEM_ID_EFMI</a>)</td></tr>
-<tr class="separator:gae8e959f68359a6d4b5695f77caa0bf9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga56a8c637dfbec8c1949c44e0f54ff919"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga56a8c637dfbec8c1949c44e0f54ff919">PCF_EFMI_S_YES</a>&#160;&#160;&#160;GENERATE_PCF_STATUS_YES(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__efmi.html#ga4c96c8d7d13d62aff65c32be0f1d6cbf">ITEM_ID_EFMI</a>)</td></tr>
-<tr class="separator:ga56a8c637dfbec8c1949c44e0f54ff919"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga07aa1c55773d865412f97ac5660ea747"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga07aa1c55773d865412f97ac5660ea747">PCF_EFMI_S_NO</a>&#160;&#160;&#160;GENERATE_PCF_STATUS_NO(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__efmi.html#ga4c96c8d7d13d62aff65c32be0f1d6cbf">ITEM_ID_EFMI</a>)</td></tr>
-<tr class="separator:ga07aa1c55773d865412f97ac5660ea747"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad4543ff81473c56c74d8870dc1c556f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#gad4543ff81473c56c74d8870dc1c556f1">PCF_EFMI_S_NOT_IMPLEMENTED</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_IMPLEMENTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__efmi.html#ga4c96c8d7d13d62aff65c32be0f1d6cbf">ITEM_ID_EFMI</a>)</td></tr>
-<tr class="separator:gad4543ff81473c56c74d8870dc1c556f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad1ae4bbeb4c19c530be2c4bcbb2bef5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#gad1ae4bbeb4c19c530be2c4bcbb2bef5a">PCF_EFMI_S_NOT_SUPPORTED</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_SUPPORTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__efmi.html#ga4c96c8d7d13d62aff65c32be0f1d6cbf">ITEM_ID_EFMI</a>)</td></tr>
-<tr class="separator:gad1ae4bbeb4c19c530be2c4bcbb2bef5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabb216fa8da6008c02f92a73c19aa128b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#gabb216fa8da6008c02f92a73c19aa128b">PCF_EFMI_S_VERIFICATION_FAILED</a>&#160;&#160;&#160;(PCF_S_ERROR_BASE_UCODE + 1)</td></tr>
-<tr class="separator:gabb216fa8da6008c02f92a73c19aa128b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ga59c2a73141d81f1b633bd7db7da79373"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga59c2a73141d81f1b633bd7db7da79373">EnEfmiEraseType_t</a> { <a class="el" href="group__pcf__mcal__efmi.html#gga59c2a73141d81f1b633bd7db7da79373aad0f5fe1faf3c629eb3064ecd79acc79">enEfmiEraseType_Mass</a> = 0
-, <a class="el" href="group__pcf__mcal__efmi.html#gga59c2a73141d81f1b633bd7db7da79373a7c5f5a4a7b9249496530f85db43e81d5">enEfmiEraseType_Bank</a>
-, <a class="el" href="group__pcf__mcal__efmi.html#gga59c2a73141d81f1b633bd7db7da79373a3097947b50ee817775f5a23c90b1dc90">enEfmiEraseType_Sector</a>
- }</td></tr>
-<tr class="memdesc:ga59c2a73141d81f1b633bd7db7da79373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Types of erase.  <a href="group__pcf__mcal__efmi.html#ga59c2a73141d81f1b633bd7db7da79373">More...</a><br /></td></tr>
-<tr class="separator:ga59c2a73141d81f1b633bd7db7da79373"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga097d182d2b248744ffe3d4dc02d93524"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga097d182d2b248744ffe3d4dc02d93524">EnEfmiPSize_t</a> { <a class="el" href="group__pcf__mcal__efmi.html#gga097d182d2b248744ffe3d4dc02d93524a9aefea1d1f282d18bf48233b40b72270">enEfmiPsize_Byte</a> = 0
-, <a class="el" href="group__pcf__mcal__efmi.html#gga097d182d2b248744ffe3d4dc02d93524aa1162cdb40589a32a41ee667f4a2e8b0">enEfmiPsize_HalfWord</a>
-, <a class="el" href="group__pcf__mcal__efmi.html#gga097d182d2b248744ffe3d4dc02d93524a163ec3ee98af540880d8dbd9a9f974ae">enEfmiPsize_Word</a>
-, <a class="el" href="group__pcf__mcal__efmi.html#gga097d182d2b248744ffe3d4dc02d93524ab1e59ff25f11681a9479933c873a207a">enEfmiPsize_DoubleWord</a>
- }</td></tr>
-<tr class="memdesc:ga097d182d2b248744ffe3d4dc02d93524"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
- Enumeration to define the parallelism size of Programming(write) and erasing the flash It represents the number of bytes to be programmed or erased when a write or erase operation occurs to the Flash memory.  <a href="group__pcf__mcal__efmi.html#ga097d182d2b248744ffe3d4dc02d93524">More...</a><br /></td></tr>
-<tr class="separator:ga097d182d2b248744ffe3d4dc02d93524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4482f93a7d649236f5688fda04e71ee9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga4482f93a7d649236f5688fda04e71ee9">PCF_S_VERIFICATION_FAILED</a>&#160;&#160;&#160;(PCF_S_ERROR_BASE_UCODE + 1)</td></tr>
+<tr class="separator:ga4482f93a7d649236f5688fda04e71ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga62d120126a8ba60543046d2a40329876"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga62d120126a8ba60543046d2a40329876">pcf_Efmi_getSize</a> (pcf_size_t *size)</td></tr>
-<tr class="memdesc:ga62d120126a8ba60543046d2a40329876"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total size of the flash memory in bytes.  <br /></td></tr>
-<tr class="separator:ga62d120126a8ba60543046d2a40329876"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6f4bbb22a6ab819f50c0f38ba717abbd"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga6f4bbb22a6ab819f50c0f38ba717abbd">pcf_Efmi_getBankCount</a> (uint8_t *count)</td></tr>
-<tr class="memdesc:ga6f4bbb22a6ab819f50c0f38ba717abbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of memory banks present in the microntrollers.  <br /></td></tr>
-<tr class="separator:ga6f4bbb22a6ab819f50c0f38ba717abbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad16098d0c061b2c5804ff8b94db966dc"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#gad16098d0c061b2c5804ff8b94db966dc">pcf_Efmi_getBankSize</a> (const uint8_t bank, pcf_size_t *size)</td></tr>
-<tr class="memdesc:gad16098d0c061b2c5804ff8b94db966dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of the bank in bytes.  <br /></td></tr>
-<tr class="separator:gad16098d0c061b2c5804ff8b94db966dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga30c0af57a7d370fa4453be2877a86ac0"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga30c0af57a7d370fa4453be2877a86ac0">pcf_Efmi_getSectorCount</a> (const uint8_t bank, uint8_t *count)</td></tr>
-<tr class="memdesc:ga30c0af57a7d370fa4453be2877a86ac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of sectors in a particular memory bank.  <br /></td></tr>
-<tr class="separator:ga30c0af57a7d370fa4453be2877a86ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6738efa156aacf4a9a509e5e888db948"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga6738efa156aacf4a9a509e5e888db948">pcf_Efmi_getSectorSize</a> (const uint8_t bank, const uint8_t sector, pcf_size_t *size)</td></tr>
-<tr class="memdesc:ga6738efa156aacf4a9a509e5e888db948"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of a sector in bytes.  <br /></td></tr>
-<tr class="separator:ga6738efa156aacf4a9a509e5e888db948"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga879ee9e588128e6d6bb21c2057f01e69"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga879ee9e588128e6d6bb21c2057f01e69">pcf_Efmi_erase</a> (const <a class="el" href="struct_efmi_erase_config__t.html">EfmiEraseConfig_t</a> *config)</td></tr>
-<tr class="memdesc:ga879ee9e588128e6d6bb21c2057f01e69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform an erase on the flash memory based on the configuration provided.  <br /></td></tr>
-<tr class="separator:ga879ee9e588128e6d6bb21c2057f01e69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga38d7349031c8b5f1a6e61248e97b11d8"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga38d7349031c8b5f1a6e61248e97b11d8">pcf_Efmi_write</a> (const uint32_t address, const pcf_byte_t *data, const pcf_size_t size, const <a class="el" href="group__pcf__mcal__efmi.html#ga097d182d2b248744ffe3d4dc02d93524">EnEfmiPSize_t</a> psize, const EnPCFBoolean_t verifyWrite)</td></tr>
-<tr class="memdesc:ga38d7349031c8b5f1a6e61248e97b11d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write/program data to the address.  <br /></td></tr>
-<tr class="separator:ga38d7349031c8b5f1a6e61248e97b11d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga734c1f59dad0f4aced00597c13fdc734"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga734c1f59dad0f4aced00597c13fdc734">pcf_Efmi_getSize</a> (pcf_size_t *const size)</td></tr>
+<tr class="memdesc:ga734c1f59dad0f4aced00597c13fdc734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the total size of the flash memory in bytes.  <br /></td></tr>
+<tr class="separator:ga734c1f59dad0f4aced00597c13fdc734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1241f2ee01fa0c101ead147f1e6ab1c5"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga1241f2ee01fa0c101ead147f1e6ab1c5">pcf_Efmi_getBankCount</a> (uint8_t *const count)</td></tr>
+<tr class="memdesc:ga1241f2ee01fa0c101ead147f1e6ab1c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of memory banks present in the microntroller's embedded flash memory.  <br /></td></tr>
+<tr class="separator:ga1241f2ee01fa0c101ead147f1e6ab1c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga28948138b9a46b5fbf0b735b8fd57be1"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga28948138b9a46b5fbf0b735b8fd57be1">pcf_Efmi_getBankSize</a> (const uint8_t bank, pcf_size_t *const size)</td></tr>
+<tr class="memdesc:ga28948138b9a46b5fbf0b735b8fd57be1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the size of the bank in bytes.  <br /></td></tr>
+<tr class="separator:ga28948138b9a46b5fbf0b735b8fd57be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2524757dc1ff425b3cb20141748fb8bd"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga2524757dc1ff425b3cb20141748fb8bd">pcf_Efmi_getSectorCount</a> (const uint8_t bank, uint8_t *const count)</td></tr>
+<tr class="memdesc:ga2524757dc1ff425b3cb20141748fb8bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of sectors in a particular memory bank.  <br /></td></tr>
+<tr class="separator:ga2524757dc1ff425b3cb20141748fb8bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f044ae23d89c7571544a56a641c857c"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga7f044ae23d89c7571544a56a641c857c">pcf_Efmi_getSectorSize</a> (const uint8_t bank, const uint8_t sector, pcf_size_t *const size)</td></tr>
+<tr class="memdesc:ga7f044ae23d89c7571544a56a641c857c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the size of a particular sector in bytes.  <br /></td></tr>
+<tr class="separator:ga7f044ae23d89c7571544a56a641c857c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18725492a92f80543cea3026c5d6aa41"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga18725492a92f80543cea3026c5d6aa41">pcf_Efmi_getEraseAlignment</a> (pcf_size_t *const alignment)</td></tr>
+<tr class="memdesc:ga18725492a92f80543cea3026c5d6aa41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the erase alignment size in bytes.  <br /></td></tr>
+<tr class="separator:ga18725492a92f80543cea3026c5d6aa41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c41273f14efde546233126c31262e2e"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga4c41273f14efde546233126c31262e2e">pcf_Efmi_getWriteAlignment</a> (pcf_size_t *const alignment)</td></tr>
+<tr class="memdesc:ga4c41273f14efde546233126c31262e2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the write alignment size in bytes.  <br /></td></tr>
+<tr class="separator:ga4c41273f14efde546233126c31262e2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf6667f0a5a2e69fc182c1e5fff938988"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#gaf6667f0a5a2e69fc182c1e5fff938988">pcf_Efmi_erase</a> (const <a class="el" href="struct_efmi_erase_config__t.html">EfmiEraseConfig_t</a> *const config)</td></tr>
+<tr class="memdesc:gaf6667f0a5a2e69fc182c1e5fff938988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform an erase on the flash memory based on the configuration provided.  <br /></td></tr>
+<tr class="separator:gaf6667f0a5a2e69fc182c1e5fff938988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa28b51542ff7607b62c26ac8df0fa89e"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#gaa28b51542ff7607b62c26ac8df0fa89e">pcf_Efmi_write</a> (const uint32_t address, const Buffer_t *const data, const <a class="el" href="group__pcf__mcal__efmi.html#ga097d182d2b248744ffe3d4dc02d93524">EnEfmiPSize_t</a> psize, const EnPCFBoolean_t verifyWrite)</td></tr>
+<tr class="memdesc:gaa28b51542ff7607b62c26ac8df0fa89e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write/program data to the given address.  <br /></td></tr>
+<tr class="separator:gaa28b51542ff7607b62c26ac8df0fa89e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8c30a37719ad494a0d6802ba3a36e3c7"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga8c30a37719ad494a0d6802ba3a36e3c7">pcf_Efmi_enableWriteProtection</a> (const uint8_t bank, const uint8_t sector)</td></tr>
 <tr class="memdesc:ga8c30a37719ad494a0d6802ba3a36e3c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable write protection on a particular sector.  <br /></td></tr>
 <tr class="separator:ga8c30a37719ad494a0d6802ba3a36e3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,8 +152,41 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga55722a8b07d434f8be0e13b5e5f42923"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a particular sector is write protected.  <br /></td></tr>
 <tr class="separator:ga55722a8b07d434f8be0e13b5e5f42923"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga11656d82d8d1aec2b1e10180f442138a"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga11656d82d8d1aec2b1e10180f442138a">pcf_Efmi_customCommand</a> (pcf_command_t command, pcf_generic_t data)</td></tr>
-<tr class="memdesc:ga11656d82d8d1aec2b1e10180f442138a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extend the functionality provided by the EFMI package item.  <br /></td></tr>
+<tr class="memdesc:ga11656d82d8d1aec2b1e10180f442138a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can be used to extend the functionality provided by the EFMI package item.  <br /></td></tr>
 <tr class="separator:ga11656d82d8d1aec2b1e10180f442138a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gad68d3a886932bfbebf37fc1722f043e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__pcf__mcal__efmi.html#ga59c2a73141d81f1b633bd7db7da79373">EnEfmiEraseType_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#gad68d3a886932bfbebf37fc1722f043e5">EfmiEraseConfig_t::eraseType</a></td></tr>
+<tr class="separator:gad68d3a886932bfbebf37fc1722f043e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3d84b8f0eeaf7891684f8421f3177f17"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga3d84b8f0eeaf7891684f8421f3177f17">EfmiEraseConfig_t::bank</a></td></tr>
+<tr class="separator:ga3d84b8f0eeaf7891684f8421f3177f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b401da5432f313aed84ae4b85fca1c0"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga8b401da5432f313aed84ae4b85fca1c0">EfmiEraseConfig_t::sector</a></td></tr>
+<tr class="separator:ga8b401da5432f313aed84ae4b85fca1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67f81196b0328e78f23e3513881440ba"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga67f81196b0328e78f23e3513881440ba">EfmiEraseConfig_t::numOfSectors</a></td></tr>
+<tr class="separator:ga67f81196b0328e78f23e3513881440ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8573fde8bc71606b9c237ded5b83891"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__pcf__mcal__efmi.html#ga097d182d2b248744ffe3d4dc02d93524">EnEfmiPSize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#gac8573fde8bc71606b9c237ded5b83891">EfmiEraseConfig_t::psize</a></td></tr>
+<tr class="separator:gac8573fde8bc71606b9c237ded5b83891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6833e2ed596a6dc523354a60c10e525"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#gae6833e2ed596a6dc523354a60c10e525">EfmiEraseConfig_t::timeout</a></td></tr>
+<tr class="separator:gae6833e2ed596a6dc523354a60c10e525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43b3cbfd8ea9968493eb08feaa4e9c40"><td class="memItemLeft" align="right" valign="top">pcf_generic_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga43b3cbfd8ea9968493eb08feaa4e9c40">EfmiEraseConfig_t::hardwareCfg</a></td></tr>
+<tr class="separator:ga43b3cbfd8ea9968493eb08feaa4e9c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">EFMI types</h2></td></tr>
+<tr class="memitem:ga59c2a73141d81f1b633bd7db7da79373"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga59c2a73141d81f1b633bd7db7da79373">EnEfmiEraseType_t</a> { <a class="el" href="group__pcf__mcal__efmi.html#gga59c2a73141d81f1b633bd7db7da79373aad0f5fe1faf3c629eb3064ecd79acc79">enEfmiEraseType_Mass</a> = 0
+, <a class="el" href="group__pcf__mcal__efmi.html#gga59c2a73141d81f1b633bd7db7da79373a7c5f5a4a7b9249496530f85db43e81d5">enEfmiEraseType_Bank</a>
+, <a class="el" href="group__pcf__mcal__efmi.html#gga59c2a73141d81f1b633bd7db7da79373a3097947b50ee817775f5a23c90b1dc90">enEfmiEraseType_Sector</a>
+ }</td></tr>
+<tr class="memdesc:ga59c2a73141d81f1b633bd7db7da79373"><td class="mdescLeft">&#160;</td><td class="mdescRight">EFMI Erase type.  <a href="group__pcf__mcal__efmi.html#ga59c2a73141d81f1b633bd7db7da79373">More...</a><br /></td></tr>
+<tr class="separator:ga59c2a73141d81f1b633bd7db7da79373"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga097d182d2b248744ffe3d4dc02d93524"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#ga097d182d2b248744ffe3d4dc02d93524">EnEfmiPSize_t</a> { <a class="el" href="group__pcf__mcal__efmi.html#gga097d182d2b248744ffe3d4dc02d93524a9aefea1d1f282d18bf48233b40b72270">enEfmiPsize_Byte</a> = 0
+, <a class="el" href="group__pcf__mcal__efmi.html#gga097d182d2b248744ffe3d4dc02d93524aa1162cdb40589a32a41ee667f4a2e8b0">enEfmiPsize_HalfWord</a>
+, <a class="el" href="group__pcf__mcal__efmi.html#gga097d182d2b248744ffe3d4dc02d93524a163ec3ee98af540880d8dbd9a9f974ae">enEfmiPsize_Word</a>
+, <a class="el" href="group__pcf__mcal__efmi.html#gga097d182d2b248744ffe3d4dc02d93524ab1e59ff25f11681a9479933c873a207a">enEfmiPsize_DoubleWord</a>
+ }</td></tr>
+<tr class="memdesc:ga097d182d2b248744ffe3d4dc02d93524"><td class="mdescLeft">&#160;</td><td class="mdescRight"><br  />
+ Enumeration to define the parallelism size of Programming(write) and erasing the flash It represents the number of bytes to be programmed or erased when a write or erase operation occurs to the Flash memory.  <a href="group__pcf__mcal__efmi.html#ga097d182d2b248744ffe3d4dc02d93524">More...</a><br /></td></tr>
+<tr class="separator:ga097d182d2b248744ffe3d4dc02d93524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Efmi banks</h2></td></tr>
 <tr class="memitem:gaea5b9853a802464e64221e903ae91a5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__efmi.html#gaea5b9853a802464e64221e903ae91a5a">PCF_EFMI_BANK_1</a>&#160;&#160;&#160;(1U)</td></tr>
@@ -218,173 +221,18 @@ Functions</h2></td></tr>
 <tr class="separator:ga2844f810514b40a07d0bce52a435300a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>EFMI refers to Embedded Flash Memory Interface, is the interface used to write, erase, and manage the embedded flash memory. </p>
 <dl class="section note"><dt>Note</dt><dd>Input validation is done only when package is built in debug mode. <br  />
  </dd></dl>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ga4c96c8d7d13d62aff65c32be0f1d6cbf" name="ga4c96c8d7d13d62aff65c32be0f1d6cbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4c96c8d7d13d62aff65c32be0f1d6cbf">&#9670;&#160;</a></span>ITEM_ID_EFMI</h2>
+<a id="ga4482f93a7d649236f5688fda04e71ee9" name="ga4482f93a7d649236f5688fda04e71ee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4482f93a7d649236f5688fda04e71ee9">&#9670;&#160;</a></span>PCF_S_VERIFICATION_FAILED</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ITEM_ID_EFMI&#160;&#160;&#160;(3)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Item ID of EFMI Entity within Mcal Package. </p>
-
-</div>
-</div>
-<a id="ga17a2a65a3d2bca97e034489df9cbd393" name="ga17a2a65a3d2bca97e034489df9cbd393"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga17a2a65a3d2bca97e034489df9cbd393">&#9670;&#160;</a></span>PCF_EFMI_S_SUCCESS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_EFMI_S_SUCCESS&#160;&#160;&#160;GENERATE_PCF_STATUS_SUCCESS(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__efmi.html#ga4c96c8d7d13d62aff65c32be0f1d6cbf">ITEM_ID_EFMI</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga7ac95554087fe269ba82b701516b97f7" name="ga7ac95554087fe269ba82b701516b97f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7ac95554087fe269ba82b701516b97f7">&#9670;&#160;</a></span>PCF_EFMI_S_NULL_ARG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_EFMI_S_NULL_ARG&#160;&#160;&#160;GENERATE_PCF_ERROR_NULL_ARG(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__efmi.html#ga4c96c8d7d13d62aff65c32be0f1d6cbf">ITEM_ID_EFMI</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga6e43503c5993940a4575c17cf51c5863" name="ga6e43503c5993940a4575c17cf51c5863"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6e43503c5993940a4575c17cf51c5863">&#9670;&#160;</a></span>PCF_EFMI_S_INVALID_ARG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_EFMI_S_INVALID_ARG&#160;&#160;&#160;GENERATE_PCF_ERROR_INVALID_ARG(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__efmi.html#ga4c96c8d7d13d62aff65c32be0f1d6cbf">ITEM_ID_EFMI</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gac9f21987870cf1df35af3985f486f8ae" name="gac9f21987870cf1df35af3985f486f8ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac9f21987870cf1df35af3985f486f8ae">&#9670;&#160;</a></span>PCF_EFMI_S_BUSY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_EFMI_S_BUSY&#160;&#160;&#160;GENERATE_PCF_ERROR_BUSY(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__efmi.html#ga4c96c8d7d13d62aff65c32be0f1d6cbf">ITEM_ID_EFMI</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga3c207ff0c2f99bf4c1dbb95c465cbcb9" name="ga3c207ff0c2f99bf4c1dbb95c465cbcb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3c207ff0c2f99bf4c1dbb95c465cbcb9">&#9670;&#160;</a></span>PCF_EFMI_S_INVALID_OPERATION</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_EFMI_S_INVALID_OPERATION&#160;&#160;&#160;GENERATE_PCF_ERROR_INVALID_OPERATION(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__efmi.html#ga4c96c8d7d13d62aff65c32be0f1d6cbf">ITEM_ID_EFMI</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gae8e959f68359a6d4b5695f77caa0bf9c" name="gae8e959f68359a6d4b5695f77caa0bf9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae8e959f68359a6d4b5695f77caa0bf9c">&#9670;&#160;</a></span>PCF_EFMI_S_NOT_CONFIGURED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_EFMI_S_NOT_CONFIGURED&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_CONFIGURED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__efmi.html#ga4c96c8d7d13d62aff65c32be0f1d6cbf">ITEM_ID_EFMI</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga56a8c637dfbec8c1949c44e0f54ff919" name="ga56a8c637dfbec8c1949c44e0f54ff919"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga56a8c637dfbec8c1949c44e0f54ff919">&#9670;&#160;</a></span>PCF_EFMI_S_YES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_EFMI_S_YES&#160;&#160;&#160;GENERATE_PCF_STATUS_YES(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__efmi.html#ga4c96c8d7d13d62aff65c32be0f1d6cbf">ITEM_ID_EFMI</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga07aa1c55773d865412f97ac5660ea747" name="ga07aa1c55773d865412f97ac5660ea747"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga07aa1c55773d865412f97ac5660ea747">&#9670;&#160;</a></span>PCF_EFMI_S_NO</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_EFMI_S_NO&#160;&#160;&#160;GENERATE_PCF_STATUS_NO(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__efmi.html#ga4c96c8d7d13d62aff65c32be0f1d6cbf">ITEM_ID_EFMI</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gad4543ff81473c56c74d8870dc1c556f1" name="gad4543ff81473c56c74d8870dc1c556f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad4543ff81473c56c74d8870dc1c556f1">&#9670;&#160;</a></span>PCF_EFMI_S_NOT_IMPLEMENTED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_EFMI_S_NOT_IMPLEMENTED&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_IMPLEMENTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__efmi.html#ga4c96c8d7d13d62aff65c32be0f1d6cbf">ITEM_ID_EFMI</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gad1ae4bbeb4c19c530be2c4bcbb2bef5a" name="gad1ae4bbeb4c19c530be2c4bcbb2bef5a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad1ae4bbeb4c19c530be2c4bcbb2bef5a">&#9670;&#160;</a></span>PCF_EFMI_S_NOT_SUPPORTED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_EFMI_S_NOT_SUPPORTED&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_SUPPORTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__efmi.html#ga4c96c8d7d13d62aff65c32be0f1d6cbf">ITEM_ID_EFMI</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gabb216fa8da6008c02f92a73c19aa128b" name="gabb216fa8da6008c02f92a73c19aa128b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabb216fa8da6008c02f92a73c19aa128b">&#9670;&#160;</a></span>PCF_EFMI_S_VERIFICATION_FAILED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_EFMI_S_VERIFICATION_FAILED&#160;&#160;&#160;(PCF_S_ERROR_BASE_UCODE + 1)</td>
+          <td class="memname">#define PCF_S_VERIFICATION_FAILED&#160;&#160;&#160;(PCF_S_ERROR_BASE_UCODE + 1)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -600,7 +448,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Types of erase. </p>
+<p>EFMI Erase type. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga59c2a73141d81f1b633bd7db7da79373aad0f5fe1faf3c629eb3064ecd79acc79" name="gga59c2a73141d81f1b633bd7db7da79373aad0f5fe1faf3c629eb3064ecd79acc79"></a>enEfmiEraseType_Mass&#160;</td><td class="fielddoc"><p>Erase the entire flash memory, i.e. all memory banks </p>
 </td></tr>
@@ -641,8 +489,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga62d120126a8ba60543046d2a40329876" name="ga62d120126a8ba60543046d2a40329876"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga62d120126a8ba60543046d2a40329876">&#9670;&#160;</a></span>pcf_Efmi_getSize()</h2>
+<a id="ga734c1f59dad0f4aced00597c13fdc734" name="ga734c1f59dad0f4aced00597c13fdc734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga734c1f59dad0f4aced00597c13fdc734">&#9670;&#160;</a></span>pcf_Efmi_getSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -650,32 +498,32 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Efmi_getSize </td>
           <td>(</td>
-          <td class="paramtype">pcf_size_t *&#160;</td>
+          <td class="paramtype">pcf_size_t *const&#160;</td>
           <td class="paramname"><em>size</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the total size of the flash memory in bytes. </p>
+<p>Gets the total size of the flash memory in bytes. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>[IN] - Pointer to pcf_size_t. Set to the total size of the flash memory. </td></tr>
+    <tr><td class="paramname">size</td><td>[OUT] - Pointer to pcf_size_t, stores the total size of the flash memory. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#ga17a2a65a3d2bca97e034489df9cbd393">PCF_EFMI_S_SUCCESS</a>  : Successful operation. </li>
+PCF_EFMI_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#ga7ac95554087fe269ba82b701516b97f7">PCF_EFMI_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
+PCF_EFMI_S_NULL_ARG  : <em>size</em>  is PCF_NULL.(Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga6f4bbb22a6ab819f50c0f38ba717abbd" name="ga6f4bbb22a6ab819f50c0f38ba717abbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6f4bbb22a6ab819f50c0f38ba717abbd">&#9670;&#160;</a></span>pcf_Efmi_getBankCount()</h2>
+<a id="ga1241f2ee01fa0c101ead147f1e6ab1c5" name="ga1241f2ee01fa0c101ead147f1e6ab1c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1241f2ee01fa0c101ead147f1e6ab1c5">&#9670;&#160;</a></span>pcf_Efmi_getBankCount()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -683,33 +531,32 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Efmi_getBankCount </td>
           <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramtype">uint8_t *const&#160;</td>
           <td class="paramname"><em>count</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the number of memory banks present in the microntrollers. </p>
-<p>embedded flash memory</p>
+<p>Gets the number of memory banks present in the microntroller's embedded flash memory. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">count</td><td>[IN] - Pointer to uint8_t. Set to the total number of memory banks present. </td></tr>
+    <tr><td class="paramname">count</td><td>[OUT] - Pointer to uint8_t, stores the total number of memory banks present. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#ga17a2a65a3d2bca97e034489df9cbd393">PCF_EFMI_S_SUCCESS</a>  : Successful operation. </li>
+PCF_EFMI_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#ga7ac95554087fe269ba82b701516b97f7">PCF_EFMI_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
+PCF_EFMI_S_NULL_ARG  : <em>count</em>  is PCF_NULL.(Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="gad16098d0c061b2c5804ff8b94db966dc" name="gad16098d0c061b2c5804ff8b94db966dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad16098d0c061b2c5804ff8b94db966dc">&#9670;&#160;</a></span>pcf_Efmi_getBankSize()</h2>
+<a id="ga28948138b9a46b5fbf0b735b8fd57be1" name="ga28948138b9a46b5fbf0b735b8fd57be1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga28948138b9a46b5fbf0b735b8fd57be1">&#9670;&#160;</a></span>pcf_Efmi_getBankSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -723,7 +570,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">pcf_size_t *&#160;</td>
+          <td class="paramtype">pcf_size_t *const&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
@@ -734,28 +581,28 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the size of the bank in bytes. </p>
+<p>Gets the size of the bank in bytes. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bank</td><td>[IN] - The id of the memory bank </td></tr>
-    <tr><td class="paramname">size</td><td>[IN] - Pointer to pcf_size_t. Set to the size of the memory bank. </td></tr>
+    <tr><td class="paramname">size</td><td>[OUT] - Pointer to pcf_size_t, stores the size of the memory bank. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#ga17a2a65a3d2bca97e034489df9cbd393">PCF_EFMI_S_SUCCESS</a>  : Successful operation. </li>
+PCF_EFMI_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#ga7ac95554087fe269ba82b701516b97f7">PCF_EFMI_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
+PCF_EFMI_S_NULL_ARG  : <em>size</em>  is PCF_NULL.(Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#ga6e43503c5993940a4575c17cf51c5863">PCF_EFMI_S_INVALID_ARG</a>  : Specified bank value is invalid.(Checked only in debug mode) </li>
+PCF_EFMI_S_INVALID_ARG  : Specified <em>bank</em>  value is invalid.(Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga30c0af57a7d370fa4453be2877a86ac0" name="ga30c0af57a7d370fa4453be2877a86ac0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga30c0af57a7d370fa4453be2877a86ac0">&#9670;&#160;</a></span>pcf_Efmi_getSectorCount()</h2>
+<a id="ga2524757dc1ff425b3cb20141748fb8bd" name="ga2524757dc1ff425b3cb20141748fb8bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2524757dc1ff425b3cb20141748fb8bd">&#9670;&#160;</a></span>pcf_Efmi_getSectorCount()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -769,7 +616,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramtype">uint8_t *const&#160;</td>
           <td class="paramname"><em>count</em>&#160;</td>
         </tr>
         <tr>
@@ -780,28 +627,28 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the number of sectors in a particular memory bank. </p>
+<p>Gets the number of sectors in a particular memory bank. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bank</td><td>[IN] - The id of the memory bank </td></tr>
-    <tr><td class="paramname">count</td><td>[IN] - Pointer to uint8_t. Set to the total number of sectors in a memory bank. </td></tr>
+    <tr><td class="paramname">count</td><td>[OUT] - Pointer to uint8_t, stores the total number of sectors in a memory bank. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#ga17a2a65a3d2bca97e034489df9cbd393">PCF_EFMI_S_SUCCESS</a>  : Successful operation. </li>
+PCF_EFMI_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#ga7ac95554087fe269ba82b701516b97f7">PCF_EFMI_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
+PCF_EFMI_S_NULL_ARG  : <em>count</em>  is PCF_NULL.(Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#ga6e43503c5993940a4575c17cf51c5863">PCF_EFMI_S_INVALID_ARG</a>  : Specified bank value is invalid.(Checked only in debug mode) </li>
+PCF_EFMI_S_INVALID_ARG  : Specified <em>bank</em>  value is invalid.(Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga6738efa156aacf4a9a509e5e888db948" name="ga6738efa156aacf4a9a509e5e888db948"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6738efa156aacf4a9a509e5e888db948">&#9670;&#160;</a></span>pcf_Efmi_getSectorSize()</h2>
+<a id="ga7f044ae23d89c7571544a56a641c857c" name="ga7f044ae23d89c7571544a56a641c857c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7f044ae23d89c7571544a56a641c857c">&#9670;&#160;</a></span>pcf_Efmi_getSectorSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -821,7 +668,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">pcf_size_t *&#160;</td>
+          <td class="paramtype">pcf_size_t *const&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
@@ -832,29 +679,95 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the size of a sector in bytes. </p>
+<p>Gets the size of a particular sector in bytes. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bank</td><td>[IN] - The id of the memory bank </td></tr>
     <tr><td class="paramname">sector</td><td>[IN] - The id of the sector </td></tr>
-    <tr><td class="paramname">size</td><td>[IN] - Pointer to pcf_size_t. Set to the size of the sector. </td></tr>
+    <tr><td class="paramname">size</td><td>[OUT] - Pointer to uint8_t, stores the size of the sector. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#ga17a2a65a3d2bca97e034489df9cbd393">PCF_EFMI_S_SUCCESS</a>  : Successful operation. </li>
+PCF_EFMI_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#ga7ac95554087fe269ba82b701516b97f7">PCF_EFMI_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
+PCF_EFMI_S_NULL_ARG  : <em>size</em>  is PCF_NULL.(Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#ga6e43503c5993940a4575c17cf51c5863">PCF_EFMI_S_INVALID_ARG</a>  : Specified bank value is invalid.(Checked only in debug mode) </li>
+PCF_EFMI_S_INVALID_ARG  : Specified <em>bank</em>  or <em>sector</em>  value is invalid.(Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga879ee9e588128e6d6bb21c2057f01e69" name="ga879ee9e588128e6d6bb21c2057f01e69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga879ee9e588128e6d6bb21c2057f01e69">&#9670;&#160;</a></span>pcf_Efmi_erase()</h2>
+<a id="ga18725492a92f80543cea3026c5d6aa41" name="ga18725492a92f80543cea3026c5d6aa41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga18725492a92f80543cea3026c5d6aa41">&#9670;&#160;</a></span>pcf_Efmi_getEraseAlignment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PCF_MCAL_API pcf_status_t pcf_Efmi_getEraseAlignment </td>
+          <td>(</td>
+          <td class="paramtype">pcf_size_t *const&#160;</td>
+          <td class="paramname"><em>alignment</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the erase alignment size in bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alignment</td><td>[OUT] - Pointer to pcf_size_t, stores the alignment size. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
+<li>
+PCF_EFMI_S_SUCCESS  : On success. </li>
+<li>
+PCF_EFMI_S_NULL_ARG  : <em>alignment</em>  is PCF_NULL.(Checked only in debug mode) </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ga4c41273f14efde546233126c31262e2e" name="ga4c41273f14efde546233126c31262e2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c41273f14efde546233126c31262e2e">&#9670;&#160;</a></span>pcf_Efmi_getWriteAlignment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PCF_MCAL_API pcf_status_t pcf_Efmi_getWriteAlignment </td>
+          <td>(</td>
+          <td class="paramtype">pcf_size_t *const&#160;</td>
+          <td class="paramname"><em>alignment</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the write alignment size in bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alignment</td><td>[OUT] - Pointer to pcf_size_t, stores the alignment size. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
+<li>
+PCF_EFMI_S_SUCCESS  : On success. </li>
+<li>
+PCF_EFMI_S_NULL_ARG  : <em>alignment</em>  is PCF_NULL.(Checked only in debug mode) </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="gaf6667f0a5a2e69fc182c1e5fff938988" name="gaf6667f0a5a2e69fc182c1e5fff938988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf6667f0a5a2e69fc182c1e5fff938988">&#9670;&#160;</a></span>pcf_Efmi_erase()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -862,7 +775,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Efmi_erase </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_efmi_erase_config__t.html">EfmiEraseConfig_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_efmi_erase_config__t.html">EfmiEraseConfig_t</a> *const&#160;</td>
           <td class="paramname"><em>config</em></td><td>)</td>
           <td></td>
         </tr>
@@ -880,18 +793,18 @@ Functions</h2></td></tr>
 </ul>
 <ul>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#ga17a2a65a3d2bca97e034489df9cbd393">PCF_EFMI_S_SUCCESS</a>  : Successful operation. </li>
+PCF_EFMI_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#gac9f21987870cf1df35af3985f486f8ae">PCF_EFMI_S_BUSY</a>  : Memory operation is in progress. </li>
+PCF_EFMI_S_BUSY  : Memory operation is in progress. </li>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#ga3c207ff0c2f99bf4c1dbb95c465cbcb9">PCF_EFMI_S_INVALID_OPERATION</a>  : Specified sector is write protected. </li>
+PCF_EFMI_S_ACCESS_DENIED  : Specified config.sector is protected. </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga38d7349031c8b5f1a6e61248e97b11d8" name="ga38d7349031c8b5f1a6e61248e97b11d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga38d7349031c8b5f1a6e61248e97b11d8">&#9670;&#160;</a></span>pcf_Efmi_write()</h2>
+<a id="gaa28b51542ff7607b62c26ac8df0fa89e" name="gaa28b51542ff7607b62c26ac8df0fa89e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa28b51542ff7607b62c26ac8df0fa89e">&#9670;&#160;</a></span>pcf_Efmi_write()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -905,14 +818,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const pcf_byte_t *&#160;</td>
+          <td class="paramtype">const Buffer_t *const&#160;</td>
           <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const pcf_size_t&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -934,25 +841,28 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Write/program data to the address. </p>
+<p>Write/program data to the given address. </p>
 <p>The data is written using the parallelism represented by psize.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">address</td><td>[IN] - The address to be programmed. </td></tr>
-    <tr><td class="paramname">data</td><td>[IN] - Pointer to data to be programmed </td></tr>
-    <tr><td class="paramname">size</td><td>[IN] - The size, in bytes, of data to be programmed </td></tr>
+    <tr><td class="paramname">data</td><td>[IN] - Pointer to Buffer_t to be programmed. </td></tr>
     <tr><td class="paramname">psize</td><td>[IN] - The parallelism size. It represents the number of bytes to be written in a single write operation to the Flash memory </td></tr>
-    <tr><td class="paramname">verifyWrite</td><td>[IN] - If enPCFoolean_True verify the data write was successful. </td></tr>
+    <tr><td class="paramname">verifyWrite</td><td>[IN] - If enPCFoolean_True the written data will be verified. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#ga17a2a65a3d2bca97e034489df9cbd393">PCF_EFMI_S_SUCCESS</a>  : Successful operation. </li>
+PCF_EFMI_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#gac9f21987870cf1df35af3985f486f8ae">PCF_EFMI_S_BUSY</a>  : Memory operation is in progress. </li>
+PCF_EFMI_S_BUSY  : Memory operation is in progress. </li>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#ga3c207ff0c2f99bf4c1dbb95c465cbcb9">PCF_EFMI_S_INVALID_OPERATION</a>  : Specified sector is write protected. </li>
+PCF_EFMI_S_ACCESS_DENIED  : <em>address</em>  is write protected. </li>
+<li>
+PCF_EFMI_S_BAD_ALIGNMENT  : <em>address</em>  was not aligned. </li>
+<li>
+PCF_EFMI_S_VERIFICATION_FAILED  : Written data does not match input data. </li>
 </ul>
 </dd></dl>
 
@@ -987,18 +897,16 @@ Functions</h2></td></tr>
 <p>Enable write protection on a particular sector. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bank</td><td>[IN] - The id of the memory bank </td></tr>
-    <tr><td class="paramname">sector</td><td>[IN] - The id of the sector </td></tr>
+    <tr><td class="paramname">bank</td><td>[IN] - The id of the memory bank. </td></tr>
+    <tr><td class="paramname">sector</td><td>[IN] - The id of the sector. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#ga17a2a65a3d2bca97e034489df9cbd393">PCF_EFMI_S_SUCCESS</a>  : Successful operation. </li>
+PCF_EFMI_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#ga7ac95554087fe269ba82b701516b97f7">PCF_EFMI_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
-<li>
-<a class="el" href="group__pcf__mcal__efmi.html#ga6e43503c5993940a4575c17cf51c5863">PCF_EFMI_S_INVALID_ARG</a>  : Specified value is invalid.(Checked only in debug mode) </li>
+PCF_EFMI_S_INVALID_ARG  : <em>bank</em>  or <em>sector</em>  value is invalid.(Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
@@ -1033,16 +941,16 @@ Functions</h2></td></tr>
 <p>Disable write protection on a particular sector. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bank</td><td>[IN] - The id of the memory bank </td></tr>
-    <tr><td class="paramname">sector</td><td>[IN] - The id of the sector </td></tr>
+    <tr><td class="paramname">bank</td><td>[IN] - The id of the memory bank. </td></tr>
+    <tr><td class="paramname">sector</td><td>[IN] - The id of the sector. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#ga17a2a65a3d2bca97e034489df9cbd393">PCF_EFMI_S_SUCCESS</a>  : Successful operation. </li>
+PCF_EFMI_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#ga6e43503c5993940a4575c17cf51c5863">PCF_EFMI_S_INVALID_ARG</a>  : Specified value is invalid.(Checked only in debug mode) </li>
+PCF_EFMI_S_INVALID_ARG  : <em>bank</em>  or <em>sector</em>  value is invalid.(Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
@@ -1082,7 +990,15 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values :  <a class="el" href="group__pcf__mcal__efmi.html#ga6e43503c5993940a4575c17cf51c5863">PCF_EFMI_S_INVALID_ARG</a>  : Specified value is invalid.(Checked only in debug mode)  <a class="el" href="group__pcf__mcal__efmi.html#ga56a8c637dfbec8c1949c44e0f54ff919">PCF_EFMI_S_YES</a>  : If sector is write protected.  <a class="el" href="group__pcf__mcal__efmi.html#ga07aa1c55773d865412f97ac5660ea747">PCF_EFMI_S_NO</a>  : If sector is not write protected. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
+<li>
+PCF_EFMI_S_INVALID_ARG  : <em>bank</em>  or <em>sector</em>  value is invalid.(Checked only in debug mode) </li>
+<li>
+PCF_EFMI_S_YES  : If sector is write protected. </li>
+<li>
+PCF_EFMI_S_NO  : If sector is not write protected. </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
@@ -1112,7 +1028,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Extend the functionality provided by the EFMI package item. </p>
+<p>Can be used to extend the functionality provided by the EFMI package item. </p>
+<dl class="section note"><dt>Note</dt><dd>Refer to platform specific implementation header file (if they exists) under pcf/mcu/efmi/&lt;platform specific folder&gt; for more details.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">command</td><td>[IN] - Represents the command/function to be executed </td></tr>
@@ -1120,15 +1037,121 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>pcf_status_t <ul>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#ga17a2a65a3d2bca97e034489df9cbd393">PCF_EFMI_S_SUCCESS</a>  : Successful operation. </li>
+PCF_EFMI_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#gad4543ff81473c56c74d8870dc1c556f1">PCF_EFMI_S_NOT_IMPLEMENTED</a>  : Not implemented for the selected architecture. </li>
+PCF_EFMI_S_NOT_IMPLEMENTED  : Not implemented for the selected architecture. </li>
 <li>
-<a class="el" href="group__pcf__mcal__efmi.html#gad1ae4bbeb4c19c530be2c4bcbb2bef5a">PCF_EFMI_S_NOT_SUPPORTED</a>  : Does not support specified operation. </li>
+PCF_EFMI_S_NOT_SUPPORTED  : Does not support specified operation. </li>
 </ul>
 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="gad68d3a886932bfbebf37fc1722f043e5" name="gad68d3a886932bfbebf37fc1722f043e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad68d3a886932bfbebf37fc1722f043e5">&#9670;&#160;</a></span>eraseType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__pcf__mcal__efmi.html#ga59c2a73141d81f1b633bd7db7da79373">EnEfmiEraseType_t</a> EfmiEraseConfig_t::eraseType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The type of erase. Mass erase, Bank Erase, Sector Erase </p>
+
+</div>
+</div>
+<a id="ga3d84b8f0eeaf7891684f8421f3177f17" name="ga3d84b8f0eeaf7891684f8421f3177f17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3d84b8f0eeaf7891684f8421f3177f17">&#9670;&#160;</a></span>bank</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t EfmiEraseConfig_t::bank</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The id of the bank. Applicable when eraseType is set to Bank or Sector </p>
+
+</div>
+</div>
+<a id="ga8b401da5432f313aed84ae4b85fca1c0" name="ga8b401da5432f313aed84ae4b85fca1c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8b401da5432f313aed84ae4b85fca1c0">&#9670;&#160;</a></span>sector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t EfmiEraseConfig_t::sector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The first/initial sector in a bank to erase. Applicable when eraseType is Sector </p>
+
+</div>
+</div>
+<a id="ga67f81196b0328e78f23e3513881440ba" name="ga67f81196b0328e78f23e3513881440ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga67f81196b0328e78f23e3513881440ba">&#9670;&#160;</a></span>numOfSectors</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t EfmiEraseConfig_t::numOfSectors</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The number of sectors to erase. Applicable on when eraseType is Sector This parameter must be a value between 1 and (max number of sectors - value of first sector) </p>
+
+</div>
+</div>
+<a id="gac8573fde8bc71606b9c237ded5b83891" name="gac8573fde8bc71606b9c237ded5b83891"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac8573fde8bc71606b9c237ded5b83891">&#9670;&#160;</a></span>psize</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__pcf__mcal__efmi.html#ga097d182d2b248744ffe3d4dc02d93524">EnEfmiPSize_t</a> EfmiEraseConfig_t::psize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Represents the number of bytes to be erased on every erase operation on the flash memory. The time taken to perform erase will depend on psize. </p>
+
+</div>
+</div>
+<a id="gae6833e2ed596a6dc523354a60c10e525" name="gae6833e2ed596a6dc523354a60c10e525"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae6833e2ed596a6dc523354a60c10e525">&#9670;&#160;</a></span>timeout</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t EfmiEraseConfig_t::timeout</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Time to wait in ms while trying to perform an erase, before the erase is abandonned. </p>
+
+</div>
+</div>
+<a id="ga43b3cbfd8ea9968493eb08feaa4e9c40" name="ga43b3cbfd8ea9968493eb08feaa4e9c40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga43b3cbfd8ea9968493eb08feaa4e9c40">&#9670;&#160;</a></span>hardwareCfg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcf_generic_t EfmiEraseConfig_t::hardwareCfg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Hardware specific configuration structure. Refer to platform specific header file (if they exists) under pcf/cpu/efmi/&lt;platform specific folder&gt; for details. Set to PCF_NULL if platform specific file does not exist </p>
 
 </div>
 </div>

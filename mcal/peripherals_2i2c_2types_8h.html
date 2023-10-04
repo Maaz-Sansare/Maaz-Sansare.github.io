@@ -90,18 +90,14 @@ $(document).ready(function(){initNavTree('peripherals_2i2c_2types_8h.html',''); 
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#nested-classes">Data Structures</a>  </div>
   <div class="headertitle"><div class="title">types.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;pcf/communication/i2c/defs.h&gt;</code><br />
-<code>#include &lt;pcf/communication/types.h&gt;</code><br />
-<code>#include &lt;pcf/data/primitives/types.h&gt;</code><br />
-<code>#include &lt;pcf/data/time/types.h&gt;</code><br />
-<code>#include &lt;pcf/core/status/types.h&gt;</code><br />
-<code>#include &lt;pcf/core/command/types.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="peripherals_2i2c_2defs_8h_source.html">pcf/peripherals/i2c/defs.h</a>&gt;</code><br />
+<code>#include &lt;pcf/command/types.h&gt;</code><br />
+<code>#include &lt;pcf/entity/types.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="mcal_2types_8h_source.html">pcf/mcal/types.h</a>&gt;</code><br />
 </div>
 <p><a href="peripherals_2i2c_2types_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -110,95 +106,23 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i2c_config__t.html">I2cConfig_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a9302594429bc68cb05efef4b9602f4be"><td class="memItemLeft" align="right" valign="top">typedef typedef *file types h *brief struct _pcf_communication_i2c&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="peripherals_2i2c_2types_8h.html#a9302594429bc68cb05efef4b9602f4be">I2c_t</a></td></tr>
-<tr class="memdesc:a9302594429bc68cb05efef4b9602f4be"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2c device ///.  <br /></td></tr>
-<tr class="separator:a9302594429bc68cb05efef4b9602f4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a4dc94555d8d00ba1f70bc4caeec91d88"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="peripherals_2i2c_2types_8h.html#a4dc94555d8d00ba1f70bc4caeec91d88">EnI2cAddressType_t</a> { <a class="el" href="peripherals_2i2c_2types_8h.html#a4dc94555d8d00ba1f70bc4caeec91d88ad8cb2df8f2b6ac5df2cbc1a5d912cb89">enI2cAddress_7bit</a>
-, <a class="el" href="peripherals_2i2c_2types_8h.html#a4dc94555d8d00ba1f70bc4caeec91d88afe615a9575e7f206c9f73b692026667d">enI2cAddress_10bit</a>
-, <a class="el" href="peripherals_2i2c_2types_8h.html#a4dc94555d8d00ba1f70bc4caeec91d88a10b2cc0b9cc8c3c50cbefbfb0e30ea47">enI2cAddress_BoundSize</a> = PCF_ENUM_MAXVALUE
+<tr class="heading"><td colspan="2"><h2 class="groupheader">I2C types</h2></td></tr>
+<tr class="memitem:ga4dc94555d8d00ba1f70bc4caeec91d88"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__i2c.html#ga4dc94555d8d00ba1f70bc4caeec91d88">EnI2cAddressType_t</a> { <a class="el" href="group__pcf__mcal__peripherals__i2c.html#gga4dc94555d8d00ba1f70bc4caeec91d88ad8cb2df8f2b6ac5df2cbc1a5d912cb89">enI2cAddress_7bit</a>
+, <a class="el" href="group__pcf__mcal__peripherals__i2c.html#gga4dc94555d8d00ba1f70bc4caeec91d88afe615a9575e7f206c9f73b692026667d">enI2cAddress_10bit</a>
  }</td></tr>
-<tr class="memdesc:a4dc94555d8d00ba1f70bc4caeec91d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2c address type///.  <a href="peripherals_2i2c_2types_8h.html#a4dc94555d8d00ba1f70bc4caeec91d88">More...</a><br /></td></tr>
-<tr class="separator:a4dc94555d8d00ba1f70bc4caeec91d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac449d24faad23209d50113c27a6e01e1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="peripherals_2i2c_2types_8h.html#ac449d24faad23209d50113c27a6e01e1">EnI2cSlaveRequestType_t</a> { <br />
-&#160;&#160;<a class="el" href="peripherals_2i2c_2types_8h.html#ac449d24faad23209d50113c27a6e01e1a6ec7b0ecb7a85445c2cdb1fe526a4a94">enI2cSlaveRequestType_None</a> = 0
-, <a class="el" href="peripherals_2i2c_2types_8h.html#ac449d24faad23209d50113c27a6e01e1a9847936c9ab2786b558131e7886f5c35">enI2cSlaveRequestType_Write</a>
-, <a class="el" href="peripherals_2i2c_2types_8h.html#ac449d24faad23209d50113c27a6e01e1aca3f1ed9991e10234f6d97cbb0111f58">enI2cSlaveRequestType_Read</a>
-, <a class="el" href="peripherals_2i2c_2types_8h.html#ac449d24faad23209d50113c27a6e01e1af9c7452bb8aac3aa7258664917e7447d">enI2cSlaveRequestType_ReadGeneral</a>
-, <br />
-&#160;&#160;<a class="el" href="peripherals_2i2c_2types_8h.html#ac449d24faad23209d50113c27a6e01e1a4e3efd25678b73284720fc2a8a2ddd93">enI2cSlaveRequestType_BoundSize</a> = PCF_ENUM_MAXVALUE
-<br />
+<tr class="memdesc:ga4dc94555d8d00ba1f70bc4caeec91d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C address type.  <a href="group__pcf__mcal__peripherals__i2c.html#ga4dc94555d8d00ba1f70bc4caeec91d88">More...</a><br /></td></tr>
+<tr class="separator:ga4dc94555d8d00ba1f70bc4caeec91d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac449d24faad23209d50113c27a6e01e1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__i2c.html#gac449d24faad23209d50113c27a6e01e1">EnI2cSlaveRequestType_t</a> { <a class="el" href="group__pcf__mcal__peripherals__i2c.html#ggac449d24faad23209d50113c27a6e01e1a6ec7b0ecb7a85445c2cdb1fe526a4a94">enI2cSlaveRequestType_None</a> = 0
+, <a class="el" href="group__pcf__mcal__peripherals__i2c.html#ggac449d24faad23209d50113c27a6e01e1a9847936c9ab2786b558131e7886f5c35">enI2cSlaveRequestType_Write</a>
+, <a class="el" href="group__pcf__mcal__peripherals__i2c.html#ggac449d24faad23209d50113c27a6e01e1aca3f1ed9991e10234f6d97cbb0111f58">enI2cSlaveRequestType_Read</a>
+, <a class="el" href="group__pcf__mcal__peripherals__i2c.html#ggac449d24faad23209d50113c27a6e01e1af9c7452bb8aac3aa7258664917e7447d">enI2cSlaveRequestType_ReadGeneral</a>
  }</td></tr>
-<tr class="separator:ac449d24faad23209d50113c27a6e01e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:gac449d24faad23209d50113c27a6e01e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C slave request type.  <a href="group__pcf__mcal__peripherals__i2c.html#gac449d24faad23209d50113c27a6e01e1">More...</a><br /></td></tr>
+<tr class="separator:gac449d24faad23209d50113c27a6e01e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8fd8e4fab7d6b537d91df518e7d3aeea"><td class="memItemLeft" align="right" valign="top">typedef struct _pcf_communication_i2c_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__i2c.html#ga8fd8e4fab7d6b537d91df518e7d3aeea">I2c_t</a></td></tr>
+<tr class="memdesc:ga8fd8e4fab7d6b537d91df518e7d3aeea"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C Entity object.  <br /></td></tr>
+<tr class="separator:ga8fd8e4fab7d6b537d91df518e7d3aeea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="a9302594429bc68cb05efef4b9602f4be" name="a9302594429bc68cb05efef4b9602f4be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9302594429bc68cb05efef4b9602f4be">&#9670;&#160;</a></span>I2c_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef typedef* file types h* brief struct _pcf_communication_i2c <a class="el" href="peripherals_2i2c_2types_8h.html#a9302594429bc68cb05efef4b9602f4be">I2c_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>I2c device ///. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a4dc94555d8d00ba1f70bc4caeec91d88" name="a4dc94555d8d00ba1f70bc4caeec91d88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4dc94555d8d00ba1f70bc4caeec91d88">&#9670;&#160;</a></span>EnI2cAddressType_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="peripherals_2i2c_2types_8h.html#a4dc94555d8d00ba1f70bc4caeec91d88">EnI2cAddressType_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>I2c address type///. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4dc94555d8d00ba1f70bc4caeec91d88ad8cb2df8f2b6ac5df2cbc1a5d912cb89" name="a4dc94555d8d00ba1f70bc4caeec91d88ad8cb2df8f2b6ac5df2cbc1a5d912cb89"></a>enI2cAddress_7bit&#160;</td><td class="fielddoc"><p>7bit address type /// </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a4dc94555d8d00ba1f70bc4caeec91d88afe615a9575e7f206c9f73b692026667d" name="a4dc94555d8d00ba1f70bc4caeec91d88afe615a9575e7f206c9f73b692026667d"></a>enI2cAddress_10bit&#160;</td><td class="fielddoc"><p>10bit address type /// </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a4dc94555d8d00ba1f70bc4caeec91d88a10b2cc0b9cc8c3c50cbefbfb0e30ea47" name="a4dc94555d8d00ba1f70bc4caeec91d88a10b2cc0b9cc8c3c50cbefbfb0e30ea47"></a>enI2cAddress_BoundSize&#160;</td><td class="fielddoc"><p>To ensure that enum is of 4 bytes///. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<a id="ac449d24faad23209d50113c27a6e01e1" name="ac449d24faad23209d50113c27a6e01e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac449d24faad23209d50113c27a6e01e1">&#9670;&#160;</a></span>EnI2cSlaveRequestType_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="peripherals_2i2c_2types_8h.html#ac449d24faad23209d50113c27a6e01e1">EnI2cSlaveRequestType_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac449d24faad23209d50113c27a6e01e1a6ec7b0ecb7a85445c2cdb1fe526a4a94" name="ac449d24faad23209d50113c27a6e01e1a6ec7b0ecb7a85445c2cdb1fe526a4a94"></a>enI2cSlaveRequestType_None&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac449d24faad23209d50113c27a6e01e1a9847936c9ab2786b558131e7886f5c35" name="ac449d24faad23209d50113c27a6e01e1a9847936c9ab2786b558131e7886f5c35"></a>enI2cSlaveRequestType_Write&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac449d24faad23209d50113c27a6e01e1aca3f1ed9991e10234f6d97cbb0111f58" name="ac449d24faad23209d50113c27a6e01e1aca3f1ed9991e10234f6d97cbb0111f58"></a>enI2cSlaveRequestType_Read&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac449d24faad23209d50113c27a6e01e1af9c7452bb8aac3aa7258664917e7447d" name="ac449d24faad23209d50113c27a6e01e1af9c7452bb8aac3aa7258664917e7447d"></a>enI2cSlaveRequestType_ReadGeneral&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac449d24faad23209d50113c27a6e01e1a4e3efd25678b73284720fc2a8a2ddd93" name="ac449d24faad23209d50113c27a6e01e1a4e3efd25678b73284720fc2a8a2ddd93"></a>enI2cSlaveRequestType_BoundSize&#160;</td><td class="fielddoc"><p>To ensure that enum is of 4 bytes///. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

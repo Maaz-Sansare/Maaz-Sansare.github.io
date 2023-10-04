@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['gpio_0',['GPIO',['../group__pcf__mcal__peripherals__gpio.html',1,'']]],
-  ['gpio_20bank_1',['GPIO Bank',['../group__pcf__mcal__peripherals__gpio__bank.html',1,'']]]
+  ['efmi_0',['EFMI',['../group__pcf__mcal__efmi.html',1,'']]],
+  ['external_20interrupt_1',['External Interrupt',['../group__pcf__mcal__peripherals__ext__int.html',1,'']]]
 ];

@@ -89,9 +89,6 @@ $(document).ready(function(){initNavTree('mcu_2types_8h.html',''); initResizable
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">types.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -100,24 +97,23 @@ $(document).ready(function(){initNavTree('mcu_2types_8h.html',''); initResizable
 </div>
 <p><a href="mcu_2types_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_frequency__t.html">Frequency_t</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ga8113bc5673a34eb212104582dd203846"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__mcu.html#ga8113bc5673a34eb212104582dd203846">EnFrequencyUnit_t</a> { <a class="el" href="group__pcf__mcal__mcu.html#gga8113bc5673a34eb212104582dd203846aa47b752a492bf3ebd20b1c632c1e8056">enFrequencyUnit_Hz</a>
-, <a class="el" href="group__pcf__mcal__mcu.html#gga8113bc5673a34eb212104582dd203846aba0308ecc3b9b29e44bd1adc1f1d9a2b">enFrequencyUnit_KHz</a>
-, <a class="el" href="group__pcf__mcal__mcu.html#gga8113bc5673a34eb212104582dd203846a7da22597d08717e80c569fd9e1d0c922">enFrequencyUnit_MHz</a>
-, <a class="el" href="group__pcf__mcal__mcu.html#gga8113bc5673a34eb212104582dd203846a0ed220b79416ae678b27498ab448d45a">enFrequencyUnit_GHz</a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader">MCU types</h2></td></tr>
+<tr class="memitem:ga800e3854b73ffe026d1d3376deae428d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__mcu.html#ga800e3854b73ffe026d1d3376deae428d">EnMcuPowerMode_t</a> { <a class="el" href="group__pcf__mcal__mcu.html#gga800e3854b73ffe026d1d3376deae428da14a36d31199f959ddb1261a2e4674dce">enMcuPowerMode_Sleep</a> = 0
+, <a class="el" href="group__pcf__mcal__mcu.html#gga800e3854b73ffe026d1d3376deae428da779db8c69b5e8ad84c94b6c379849bd6">enMcuPowerMode_DeepSleep</a>
+, <a class="el" href="group__pcf__mcal__mcu.html#gga800e3854b73ffe026d1d3376deae428da2b23adea7681abfc5bad89f76265bd9c">enMcuPowerMode_StandBy</a>
  }</td></tr>
-<tr class="separator:ga8113bc5673a34eb212104582dd203846"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:ga800e3854b73ffe026d1d3376deae428d"><td class="mdescLeft">&#160;</td><td class="mdescRight">MCU power mode enum.  <a href="group__pcf__mcal__mcu.html#ga800e3854b73ffe026d1d3376deae428d">More...</a><br /></td></tr>
+<tr class="separator:ga800e3854b73ffe026d1d3376deae428d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19b3ba1caedf7343bd7a30f0ae8bf592"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__mcu.html#ga19b3ba1caedf7343bd7a30f0ae8bf592">EnMcuWaitFor_t</a> { <a class="el" href="group__pcf__mcal__mcu.html#gga19b3ba1caedf7343bd7a30f0ae8bf592a4488ecd7e948de24774b4361824dfc65">EnMcuWaitFor_Event</a> = 0
+, <a class="el" href="group__pcf__mcal__mcu.html#gga19b3ba1caedf7343bd7a30f0ae8bf592a36a6e49dadc3a77cbc10f3365aae7adb">EnMcuWaitFor_Interrupt</a>
+ }</td></tr>
+<tr class="memdesc:ga19b3ba1caedf7343bd7a30f0ae8bf592"><td class="mdescLeft">&#160;</td><td class="mdescRight">MCU low power enum.  <a href="group__pcf__mcal__mcu.html#ga19b3ba1caedf7343bd7a30f0ae8bf592">More...</a><br /></td></tr>
+<tr class="separator:ga19b3ba1caedf7343bd7a30f0ae8bf592"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad2e9518488912c3373654ad2a5d97529"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__mcu.html#gad2e9518488912c3373654ad2a5d97529">EnMcuClkSource_t</a> { <a class="el" href="group__pcf__mcal__mcu.html#ggad2e9518488912c3373654ad2a5d97529a64ea533ddbbfa8747bcf8583b7f5da75">enMcuClkSource_Internal</a> = 0
 , <a class="el" href="group__pcf__mcal__mcu.html#ggad2e9518488912c3373654ad2a5d97529a98d63715522de5e56139f0a40963089b">enMcuClkSource_External</a>
 , <a class="el" href="group__pcf__mcal__mcu.html#ggad2e9518488912c3373654ad2a5d97529a313f31d9651265bbe183896e70727a88">enMcuClkSource_PLL</a>
  }</td></tr>
-<tr class="memdesc:gad2e9518488912c3373654ad2a5d97529"><td class="mdescLeft">&#160;</td><td class="mdescRight">MCU core clock source.  <a href="group__pcf__mcal__mcu.html#gad2e9518488912c3373654ad2a5d97529">More...</a><br /></td></tr>
+<tr class="memdesc:gad2e9518488912c3373654ad2a5d97529"><td class="mdescLeft">&#160;</td><td class="mdescRight">MCU frequency unit enum.  <a href="group__pcf__mcal__mcu.html#gad2e9518488912c3373654ad2a5d97529">More...</a><br /></td></tr>
 <tr class="separator:gad2e9518488912c3373654ad2a5d97529"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga48b69c7f67ee1a25434c58b263992506"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__mcu.html#ga48b69c7f67ee1a25434c58b263992506">EnMcuResetReason_t</a> { <br />
 &#160;&#160;<a class="el" href="group__pcf__mcal__mcu.html#gga48b69c7f67ee1a25434c58b263992506ac2416fa41380f27060a4017c63ec78aa">enMcuResetReason_PowerOn</a> = 0
@@ -135,6 +131,9 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ga48b69c7f67ee1a25434c58b263992506"><td class="mdescLeft">&#160;</td><td class="mdescRight">MCU last reset reason.  <a href="group__pcf__mcal__mcu.html#ga48b69c7f67ee1a25434c58b263992506">More...</a><br /></td></tr>
 <tr class="separator:ga48b69c7f67ee1a25434c58b263992506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga57976ad1c4d7cc739dbfa87a4b35c02b"><td class="memItemLeft" align="right" valign="top">typedef pcf_status_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__mcu.html#ga57976ad1c4d7cc739dbfa87a4b35c02b">McuCallback_fp</a>) (pcf_generic_t)</td></tr>
+<tr class="memdesc:ga57976ad1c4d7cc739dbfa87a4b35c02b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mcu callback function pointer.  <br /></td></tr>
+<tr class="separator:ga57976ad1c4d7cc739dbfa87a4b35c02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

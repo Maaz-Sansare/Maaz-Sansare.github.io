@@ -92,20 +92,19 @@ $(document).ready(function(){initNavTree('peripherals_2i2c_2config_8h_source.htm
   <div class="headertitle"><div class="title">config.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="peripherals_2i2c_2config_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> * \file  config.h</div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> * \brief This file is used to configure an i2c device</div>
+<a href="peripherals_2i2c_2config_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __PCF_INCLUDES_PCF_PERIPHERALS_I2C_CONFIG_H__</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __PCF_INCLUDES_PCF_PERIPHERALS_I2C_CONFIG_H__</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;<a class="code" href="mcu_2config_8h.html">pcf/mcu/config.h</a>&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef __PCF_INCLUDES_PCF_PERIPHERALS_I2C_CONFIG_H__</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define __PCF_INCLUDES_PCF_PERIPHERALS_I2C_CONFIG_H__</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;pcf/communication/config.h&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="peripherals_2i2c_2config_8h.html#ad05751abd0cf4228cb8a50c507be563b">   11</a></span><span class="preprocessor">#define __PCF_I2C_INCLUDE PCF_CONDITIONAL_INCLUDE_FILE(pcf/communication/,i2c/,PCF_ARCH_NAME/PCF_ARCH_VARIANT_NAME/PCF_ARCH_DEVICE_VENDOR_NAME/PCF_ARCH_DEVICE_SERIES_NAME,/PCF_ARCH_DEVICE_SERIES_NAME.h)</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include __PCF_I2C_INCLUDE</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#undef __PCF_I2C_INCLUDE</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#endif  </span><span class="comment">//__PCF_INCLUDES_PCF_PERIPHERALS_I2C_CONFIG_H__</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#if PCF_HAS_INCLUDE(PCF_CONDITIONAL_INCLUDE_FILE(pcf/peripherals/,i2c/,PCF_ARCH_NAME/PCF_ARCH_VARIANT_NAME/PCF_ARCH_DEVICE_VENDOR_NAME/PCF_ARCH_DEVICE_SERIES_NAME,/PCF_ARCH_DEVICE_SERIES_NAME.h))</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#   define __PCF_I2C_INCLUDE PCF_CONDITIONAL_INCLUDE_FILE(pcf/peripherals/,i2c/,PCF_ARCH_NAME/PCF_ARCH_VARIANT_NAME/PCF_ARCH_DEVICE_VENDOR_NAME/PCF_ARCH_DEVICE_SERIES_NAME,/PCF_ARCH_DEVICE_SERIES_NAME.h)</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#   include __PCF_I2C_INCLUDE</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#   undef __PCF_I2C_INCLUDE</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#endif  </span><span class="comment">//__PCF_INCLUDES_PCF_PERIPHERALS_I2C_CONFIG_H__</span></div>
+<div class="ttc" id="amcu_2config_8h_html"><div class="ttname"><a href="mcu_2config_8h.html">config.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -1,17 +1,6 @@
 var mcu_2efmi_2defs_8h =
 [
-    [ "ITEM_ID_EFMI", "group__pcf__mcal__efmi.html#ga4c96c8d7d13d62aff65c32be0f1d6cbf", null ],
-    [ "PCF_EFMI_S_SUCCESS", "group__pcf__mcal__efmi.html#ga17a2a65a3d2bca97e034489df9cbd393", null ],
-    [ "PCF_EFMI_S_NULL_ARG", "group__pcf__mcal__efmi.html#ga7ac95554087fe269ba82b701516b97f7", null ],
-    [ "PCF_EFMI_S_INVALID_ARG", "group__pcf__mcal__efmi.html#ga6e43503c5993940a4575c17cf51c5863", null ],
-    [ "PCF_EFMI_S_BUSY", "group__pcf__mcal__efmi.html#gac9f21987870cf1df35af3985f486f8ae", null ],
-    [ "PCF_EFMI_S_INVALID_OPERATION", "group__pcf__mcal__efmi.html#ga3c207ff0c2f99bf4c1dbb95c465cbcb9", null ],
-    [ "PCF_EFMI_S_NOT_CONFIGURED", "group__pcf__mcal__efmi.html#gae8e959f68359a6d4b5695f77caa0bf9c", null ],
-    [ "PCF_EFMI_S_YES", "group__pcf__mcal__efmi.html#ga56a8c637dfbec8c1949c44e0f54ff919", null ],
-    [ "PCF_EFMI_S_NO", "group__pcf__mcal__efmi.html#ga07aa1c55773d865412f97ac5660ea747", null ],
-    [ "PCF_EFMI_S_NOT_IMPLEMENTED", "group__pcf__mcal__efmi.html#gad4543ff81473c56c74d8870dc1c556f1", null ],
-    [ "PCF_EFMI_S_NOT_SUPPORTED", "group__pcf__mcal__efmi.html#gad1ae4bbeb4c19c530be2c4bcbb2bef5a", null ],
-    [ "PCF_EFMI_S_VERIFICATION_FAILED", "group__pcf__mcal__efmi.html#gabb216fa8da6008c02f92a73c19aa128b", null ],
+    [ "PCF_S_VERIFICATION_FAILED", "group__pcf__mcal__efmi.html#ga4482f93a7d649236f5688fda04e71ee9", null ],
     [ "PCF_EFMI_BANK_1", "group__pcf__mcal__efmi.html#gaea5b9853a802464e64221e903ae91a5a", null ],
     [ "PCF_EFMI_BANK_2", "group__pcf__mcal__efmi.html#ga99422ede11d906fed1a818d29eaa900c", null ],
     [ "PCF_EFMI_SECTOR_0", "group__pcf__mcal__efmi.html#gaa377acce252e8ab8b4213bf91fd4d4e0", null ],

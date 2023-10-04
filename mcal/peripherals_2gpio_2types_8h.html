@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('peripherals_2gpio_2types_8h.html','');
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="peripherals_2gpio_2defs_8h_source.html">pcf/peripherals/gpio/defs.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="peripherals_2types_8h_source.html">pcf/peripherals/types.h</a>&gt;</code><br />
-<code>#include &lt;pcf/entity/types.h&gt;</code><br />
+<code>#include &lt;pcf/command/types.h&gt;</code><br />
 </div>
 <p><a href="peripherals_2gpio_2types_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -110,9 +110,9 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga1d5a5184cb5e35bab59fb7e6166a28e1"><td class="memItemLeft" align="right" valign="top">typedef struct _pcf_peripheral_gpio&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__gpio.html#ga1d5a5184cb5e35bab59fb7e6166a28e1">Gpio_t</a></td></tr>
-<tr class="memdesc:ga1d5a5184cb5e35bab59fb7e6166a28e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gpio Entity Object.  <br /></td></tr>
-<tr class="separator:ga1d5a5184cb5e35bab59fb7e6166a28e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc7e129b5931e1ac22913e2cc88b7b32"><td class="memItemLeft" align="right" valign="top">typedef struct _pcf_peripheral_gpio_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__gpio.html#gabc7e129b5931e1ac22913e2cc88b7b32">Gpio_t</a></td></tr>
+<tr class="memdesc:gabc7e129b5931e1ac22913e2cc88b7b32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gpio Entity Object.  <br /></td></tr>
+<tr class="separator:gabc7e129b5931e1ac22913e2cc88b7b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -130,7 +130,7 @@ Enumerations</h2></td></tr>
 <tr class="memitem:ga19b70c7c6f1585593332e5b2fe9b28f3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__gpio.html#ga19b70c7c6f1585593332e5b2fe9b28f3">EnGpioOutputType_t</a> { <a class="el" href="group__pcf__mcal__peripherals__gpio.html#gga19b70c7c6f1585593332e5b2fe9b28f3a7b0f4d379d95975095a5373894a50af5">enGpioOutputType_PushPull</a> = 0
 , <a class="el" href="group__pcf__mcal__peripherals__gpio.html#gga19b70c7c6f1585593332e5b2fe9b28f3a2532fdd3a1756081be43d79def8ea7c2">enGpioOutputType_OpenDrain</a>
  }</td></tr>
-<tr class="memdesc:ga19b70c7c6f1585593332e5b2fe9b28f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">GPIO Output Type.  <a href="group__pcf__mcal__peripherals__gpio.html#ga19b70c7c6f1585593332e5b2fe9b28f3">More...</a><br /></td></tr>
+<tr class="memdesc:ga19b70c7c6f1585593332e5b2fe9b28f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the type of Output: Push-Pull or Open Drain.  <a href="group__pcf__mcal__peripherals__gpio.html#ga19b70c7c6f1585593332e5b2fe9b28f3">More...</a><br /></td></tr>
 <tr class="separator:ga19b70c7c6f1585593332e5b2fe9b28f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga02ac17ddc2943837bb432dad7112f9b2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__gpio.html#ga02ac17ddc2943837bb432dad7112f9b2">EnGpioSpeed_t</a> { <br />
 &#160;&#160;<a class="el" href="group__pcf__mcal__peripherals__gpio.html#gga02ac17ddc2943837bb432dad7112f9b2ae914d1715703e3fb5d28bf77c046e3f3">enGpioSpeed_Default</a> = 0

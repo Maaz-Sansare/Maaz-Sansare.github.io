@@ -97,11 +97,13 @@ $(document).ready(function(){initNavTree('peripherals_2pwm_2config_8h_source.htm
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;<a class="code" href="peripheral_8h.html">pcf/peripherals/peripheral.h</a>&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="peripherals_2pwm_2config_8h.html#a3a95022b9000fd2368a976e067cfcf51">    6</a></span><span class="preprocessor">#define __PCF_PWM_INCLUDE PCF_CONDITIONAL_INCLUDE_FILE(pcf/peripherals/,pwm/,PCF_ARCH_NAME/PCF_ARCH_VARIANT_NAME/PCF_ARCH_DEVICE_VENDOR_NAME/PCF_ARCH_DEVICE_SERIES_NAME,/PCF_ARCH_DEVICE_SERIES_NAME.h)</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include __PCF_PWM_INCLUDE</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#undef __PCF_PWM_INCLUDE</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#endif      </span><span class="comment">//__PCF_INCLUDES_PCF_PERIPHERALS_PWM_CONFIG_H__</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#if PCF_HAS_INCLUDE(PCF_CONDITIONAL_INCLUDE_FILE(pcf/peripherals/,pwm/,PCF_ARCH_NAME/PCF_ARCH_VARIANT_NAME/PCF_ARCH_DEVICE_VENDOR_NAME/PCF_ARCH_DEVICE_SERIES_NAME,/PCF_ARCH_DEVICE_SERIES_NAME.h))</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#   define __PCF_PWM_INCLUDE PCF_CONDITIONAL_INCLUDE_FILE(pcf/peripherals/,pwm/,PCF_ARCH_NAME/PCF_ARCH_VARIANT_NAME/PCF_ARCH_DEVICE_VENDOR_NAME/PCF_ARCH_DEVICE_SERIES_NAME,/PCF_ARCH_DEVICE_SERIES_NAME.h)</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#   include __PCF_PWM_INCLUDE</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#   undef __PCF_PWM_INCLUDE</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#endif  </span><span class="comment">//__PCF_INCLUDES_PCF_PERIPHERALS_PWM_CONFIG_H__</span></div>
 <div class="ttc" id="aperipheral_8h_html"><div class="ttname"><a href="peripheral_8h.html">peripheral.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

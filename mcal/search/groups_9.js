@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uart_0',['UART',['../group__pcf__mcal__peripherals__uart.html',1,'']]]
+  ['rtc_0',['RTC',['../group__pcf__mcal__peripherals__rtc.html',1,'']]]
 ];

@@ -1,6 +1,6 @@
 var peripherals_2gpio_2types_8h =
 [
-    [ "Gpio_t", "group__pcf__mcal__peripherals__gpio.html#ga1d5a5184cb5e35bab59fb7e6166a28e1", null ],
+    [ "Gpio_t", "group__pcf__mcal__peripherals__gpio.html#gabc7e129b5931e1ac22913e2cc88b7b32", null ],
     [ "EnGpioDirection_t", "group__pcf__mcal__peripherals__gpio.html#gab4a182063309fa8ed182a65f77034323", [
       [ "enGpioDirection_Input", "group__pcf__mcal__peripherals__gpio.html#ggab4a182063309fa8ed182a65f77034323ae64475103b05b33fb1ad51a5f91db37f", null ],
       [ "enGpioDirection_Output", "group__pcf__mcal__peripherals__gpio.html#ggab4a182063309fa8ed182a65f77034323a8fcea115e7d991314751fb817a7c15c4", null ]

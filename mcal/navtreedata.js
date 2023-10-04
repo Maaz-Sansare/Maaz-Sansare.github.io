@@ -41,22 +41,24 @@ var NAVTREE =
       [ "Globals", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", "globals_func" ],
+        [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Enumerator", "globals_eval.html", null ],
-        [ "Macros", "globals_defs.html", "globals_defs" ]
+        [ "Macros", "globals_defs.html", null ]
       ] ]
-    ] ]
+    ] ],
+    [ "Examples", "examples.html", "examples" ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
 "adc_8h.html",
-"group__pcf__mcal__peripherals__dac.html#gab8c18af217755d9bdbc5f67ac63c3c8b",
-"group__pcf__mcal__peripherals__spi.html#gae9e4c355e1c6524f6749a9efcc51c0c2",
-"peripherals_2defs_8h.html#a3650f02cac421d212dc58b0331f7e054",
-"struct_pwm_config__t.html"
+"group__pcf__mcal__peripherals__can.html#ga04e47cbd9d2912847c58c7112f2150ec",
+"group__pcf__mcal__peripherals__pwm.html#gga4b176c8cfc80c4c6730e31af20b4d026a14359a542b3feb3115b35d9172dc162f",
+"group__pcf__mcal__peripherals__spi.html#gaff477227fdba6f83c6fb1f4eaa4d7831",
+"peripherals_2defs_8h.html#a5e2c636ce86382be5105d01a59cc829f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uart_5ft_0',['Uart_t',['../group__pcf__mcal__peripherals__uart.html#gac1825aa91009f8f633dba43267fa6c84',1,'types.h']]]
+  ['rtccallback_5ffp_0',['RtcCallback_fp',['../group__pcf__mcal__peripherals__rtc.html#gaeb04bc932788d59e1c4e7260cfaa2fc1',1,'types.h']]]
 ];

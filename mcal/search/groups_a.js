@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wdt_0',['WDT',['../group__pcf__mcal__peripherals__wdt.html',1,'']]]
+  ['spi_0',['SPI',['../group__pcf__mcal__peripherals__spi.html',1,'']]]
 ];

@@ -94,54 +94,23 @@ $(document).ready(function(){initNavTree('peripherals_2i2c_2defs_8h.html',''); i
   <div class="headertitle"><div class="title">defs.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;pcf/communication/i2c/config.h&gt;</code><br />
-<code>#include &lt;pcf/communication/defs.h&gt;</code><br />
-<code>#include &lt;pcf/core/status/status.h&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="peripherals_2i2c_2config_8h_source.html">pcf/peripherals/i2c/config.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="peripherals_2defs_8h_source.html">pcf/peripherals/defs.h</a>&gt;</code><br />
 </div>
 <p><a href="peripherals_2i2c_2defs_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a5d7c0d2e215a8659432c0894f0cecf69"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="peripherals_2i2c_2defs_8h.html#a5d7c0d2e215a8659432c0894f0cecf69">ITEM_ID_I2C</a>&#160;&#160;&#160;(3)</td></tr>
-<tr class="memdesc:a5d7c0d2e215a8659432c0894f0cecf69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Item ID of I2C Entity within Communication Package///.  <br /></td></tr>
-<tr class="separator:a5d7c0d2e215a8659432c0894f0cecf69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1dc119040bd314bb8e3693f66c0f221"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="peripherals_2i2c_2defs_8h.html#aa1dc119040bd314bb8e3693f66c0f221">PCF_ENTITY_TYPE_I2C</a>&#160;&#160;&#160;((uint32_t)(0x43433249))</td></tr>
-<tr class="memdesc:aa1dc119040bd314bb8e3693f66c0f221"><td class="mdescLeft">&#160;</td><td class="mdescRight">The following defines the EntityType_t.id for I2C Entities///.  <br /></td></tr>
-<tr class="separator:aa1dc119040bd314bb8e3693f66c0f221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1dc119040bd314bb8e3693f66c0f221"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__i2c.html#gaa1dc119040bd314bb8e3693f66c0f221">PCF_ENTITY_TYPE_I2C</a>&#160;&#160;&#160;((uint32_t)(0x43433249))</td></tr>
+<tr class="memdesc:gaa1dc119040bd314bb8e3693f66c0f221"><td class="mdescLeft">&#160;</td><td class="mdescRight">EntityType_t.id, corresponds to EntityType_t.name = "I2CC".  <br /></td></tr>
+<tr class="separator:gaa1dc119040bd314bb8e3693f66c0f221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga977c5b8304a7ddcaa807bf3adaabb113"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__i2c.html#ga977c5b8304a7ddcaa807bf3adaabb113">PCF_S_ARBLOST</a>&#160;&#160;&#160;(PCF_S_ERROR_BASE_UCODE + 1)</td></tr>
+<tr class="separator:ga977c5b8304a7ddcaa807bf3adaabb113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27622fda797c5b9266301418ef1f0b36"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__i2c.html#ga27622fda797c5b9266301418ef1f0b36">PCF_S_BERR</a>&#160;&#160;&#160;(<a class="el" href="group__pcf__mcal__peripherals__i2c.html#ga977c5b8304a7ddcaa807bf3adaabb113">PCF_S_ARBLOST</a> + 1)</td></tr>
+<tr class="separator:ga27622fda797c5b9266301418ef1f0b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d5d591b5bf3a9e940ed1cc939d2081a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__i2c.html#ga2d5d591b5bf3a9e940ed1cc939d2081a">PCF_S_ACK_ERROR</a>&#160;&#160;&#160;(<a class="el" href="group__pcf__mcal__peripherals__i2c.html#ga27622fda797c5b9266301418ef1f0b36">PCF_S_BERR</a> + 1)</td></tr>
+<tr class="separator:ga2d5d591b5bf3a9e940ed1cc939d2081a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a5d7c0d2e215a8659432c0894f0cecf69" name="a5d7c0d2e215a8659432c0894f0cecf69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d7c0d2e215a8659432c0894f0cecf69">&#9670;&#160;</a></span>ITEM_ID_I2C</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ITEM_ID_I2C&#160;&#160;&#160;(3)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Item ID of I2C Entity within Communication Package///. </p>
-
-</div>
-</div>
-<a id="aa1dc119040bd314bb8e3693f66c0f221" name="aa1dc119040bd314bb8e3693f66c0f221"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1dc119040bd314bb8e3693f66c0f221">&#9670;&#160;</a></span>PCF_ENTITY_TYPE_I2C</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_ENTITY_TYPE_I2C&#160;&#160;&#160;((uint32_t)(0x43433249))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The following defines the EntityType_t.id for I2C Entities///. </p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

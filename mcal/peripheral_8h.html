@@ -100,21 +100,21 @@ $(document).ready(function(){initNavTree('peripheral_8h.html',''); initResizable
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gad258c32f091086097bb14eab5fcb738e"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals.html#gad258c32f091086097bb14eab5fcb738e">pcf_PortPin_setUsage</a> (const uint8_t port, const uint8_t pin)</td></tr>
-<tr class="memdesc:gad258c32f091086097bb14eab5fcb738e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the usage of a specific port and pin of a uC.  <br /></td></tr>
-<tr class="separator:gad258c32f091086097bb14eab5fcb738e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga85e353231231f189454d3741422eed73"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals.html#ga85e353231231f189454d3741422eed73">pcf_PortPin_clearUsage</a> (const uint8_t port, const uint8_t pin)</td></tr>
-<tr class="memdesc:ga85e353231231f189454d3741422eed73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the usage of a specific port and pin of a uC.  <br /></td></tr>
-<tr class="separator:ga85e353231231f189454d3741422eed73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga23dbe23b6242083caa7e8b3e926566c6"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals.html#ga23dbe23b6242083caa7e8b3e926566c6">pcf_PortPin_isUsed</a> (const uint8_t port, const uint8_t pin)</td></tr>
-<tr class="memdesc:ga23dbe23b6242083caa7e8b3e926566c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to check if a specified port pin is already in use.  <br /></td></tr>
-<tr class="separator:ga23dbe23b6242083caa7e8b3e926566c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab429725ec51b46e57179743ec8a07ed9"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals.html#gab429725ec51b46e57179743ec8a07ed9">pcf_PortPin_isPortUsed</a> (const uint8_t port)</td></tr>
-<tr class="memdesc:gab429725ec51b46e57179743ec8a07ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to check if a specified port is already in use.  <br /></td></tr>
-<tr class="separator:gab429725ec51b46e57179743ec8a07ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7291d5c39ebea54fa7c014da8b3f5ca0"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals.html#ga7291d5c39ebea54fa7c014da8b3f5ca0">pcf_PortPin_setAlternateFunction</a> (const uint8_t port, const uint8_t pin, const uint8_t af)</td></tr>
-<tr class="memdesc:ga7291d5c39ebea54fa7c014da8b3f5ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets port pin to a specified alernative function value.  <br /></td></tr>
-<tr class="separator:ga7291d5c39ebea54fa7c014da8b3f5ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga029da8b31aa46d6a24a503cf38e69fe9"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals.html#ga029da8b31aa46d6a24a503cf38e69fe9">pcf_Peripheral_configure</a> (const <a class="el" href="struct_peripheral_config__t.html">PeripheralConfig_t</a> *const config)</td></tr>
+<tr class="memdesc:ga029da8b31aa46d6a24a503cf38e69fe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the peripheral package to use the specified configuration.  <br /></td></tr>
+<tr class="separator:ga029da8b31aa46d6a24a503cf38e69fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga304e3d6c23becf72de4e3b4cf2b53780"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals.html#ga304e3d6c23becf72de4e3b4cf2b53780">pcf_Peripheral_setPortPinUsed</a> (const <a class="el" href="struct_port_pin__t.html">PortPin_t</a> *const portpin, const EnPCFBoolean_t used)</td></tr>
+<tr class="memdesc:ga304e3d6c23becf72de4e3b4cf2b53780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets/Clears the usage of a specific port and pin of a microcontroller.  <br /></td></tr>
+<tr class="separator:ga304e3d6c23becf72de4e3b4cf2b53780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8df9409a7efa6ac8c242a686a9e6f35"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals.html#gad8df9409a7efa6ac8c242a686a9e6f35">pcf_Peripheral_isPortPinUsed</a> (const <a class="el" href="struct_port_pin__t.html">PortPin_t</a> *const portpin)</td></tr>
+<tr class="memdesc:gad8df9409a7efa6ac8c242a686a9e6f35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to check if a specified port pin is already in use.  <br /></td></tr>
+<tr class="separator:gad8df9409a7efa6ac8c242a686a9e6f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c5e94872c553a33f0724e6c4f22208b"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals.html#ga8c5e94872c553a33f0724e6c4f22208b">pcf_Peripheral_isPortUsed</a> (const uint8_t port)</td></tr>
+<tr class="memdesc:ga8c5e94872c553a33f0724e6c4f22208b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to check if a specified port is already in use.  <br /></td></tr>
+<tr class="separator:ga8c5e94872c553a33f0724e6c4f22208b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c6203e9fc5175b8220f24ab3ca9a725"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals.html#ga8c6203e9fc5175b8220f24ab3ca9a725">pcf_Peripheral_setPortPinAlternateFunction</a> (const <a class="el" href="struct_port_pin__t.html">PortPin_t</a> *const portpin, const uint8_t af)</td></tr>
+<tr class="memdesc:ga8c6203e9fc5175b8220f24ab3ca9a725"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets port pin to a specified alernative function value.  <br /></td></tr>
+<tr class="separator:ga8c6203e9fc5175b8220f24ab3ca9a725"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

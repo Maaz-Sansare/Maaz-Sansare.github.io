@@ -1,6 +1,6 @@
 var peripherals_2uart_2types_8h =
 [
-    [ "Uart_t", "group__pcf__mcal__peripherals__uart.html#gac1825aa91009f8f633dba43267fa6c84", null ],
+    [ "Uart_t", "group__pcf__mcal__peripherals__uart.html#gaf7bf300b3c468d9620d6aca062f72ebc", null ],
     [ "EnUartMode_t", "group__pcf__mcal__peripherals__uart.html#ga052a53e7294fd77fd55390ad637a627e", [
       [ "enUartMode_Tx", "group__pcf__mcal__peripherals__uart.html#gga052a53e7294fd77fd55390ad637a627eab89d3474fc78c256302c4dcb9a20f4b0", null ],
       [ "enUartMode_Rx", "group__pcf__mcal__peripherals__uart.html#gga052a53e7294fd77fd55390ad637a627eadc8ba636b4f531c97905b7b0130bb5dd", null ],

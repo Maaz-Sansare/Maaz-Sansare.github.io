@@ -91,11 +91,11 @@ $(document).ready(function(){initNavTree('struct_can_message__t.html',''); initR
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
-  <div class="headertitle"><div class="title">CanMessage_t Struct Reference</div></div>
+  <div class="headertitle"><div class="title">CanMessage_t Struct Reference<div class="ingroups"><a class="el" href="group__pcf__mcal.html">Mcal</a> &raquo; <a class="el" href="group__pcf__mcal__peripherals.html">Peripherals</a> &raquo; <a class="el" href="group__pcf__mcal__peripherals__can.html">CAN</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>CAN message structure ///.  
+<p>CAN message structure.  
  <a href="struct_can_message__t.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="peripherals_2can_2types_8h_source.html">types.h</a>&gt;</code></p>
@@ -103,14 +103,14 @@ $(document).ready(function(){initNavTree('struct_can_message__t.html',''); initR
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:ae92a96753b176fadd4cdebf6e824199e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_can_message_header__t.html">CanMessageHeader_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_message__t.html#ae92a96753b176fadd4cdebf6e824199e">header</a></td></tr>
-<tr class="memdesc:ae92a96753b176fadd4cdebf6e824199e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Message header. *&zwj;/.  <br /></td></tr>
 <tr class="separator:ae92a96753b176fadd4cdebf6e824199e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4485da5d82bf27bb2e899775974635b"><td class="memItemLeft" align="right" valign="top">pcf_byte_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_message__t.html#ae4485da5d82bf27bb2e899775974635b">data</a> [8]</td></tr>
-<tr class="memdesc:ae4485da5d82bf27bb2e899775974635b"><td class="mdescLeft">&#160;</td><td class="mdescRight">8 byte payload data for the message.  <br /></td></tr>
 <tr class="separator:ae4485da5d82bf27bb2e899775974635b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>CAN message structure ///. </p>
+<div class="textblock"><p>CAN message structure. </p>
+<p><br  />
+ </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="ae92a96753b176fadd4cdebf6e824199e" name="ae92a96753b176fadd4cdebf6e824199e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae92a96753b176fadd4cdebf6e824199e">&#9670;&#160;</a></span>header</h2>
@@ -123,8 +123,8 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Message header. *&zwj;/. </p>
+<p>Message header. <br  />
+ </p>
 
 </div>
 </div>
@@ -139,8 +139,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>8 byte payload data for the message. </p>
+<p>8 byte payload data for the message. If header-&gt;frameType is a remote frame this field is ignored. </p>
 
 </div>
 </div>

@@ -95,24 +95,14 @@ $(document).ready(function(){initNavTree('peripherals_2dac_2defs_8h_source.html'
 <a href="peripherals_2dac_2defs_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __PCF_INCLUDES_PCF_PERIPHERALS_DAC_DEFS_H__</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __PCF_INCLUDES_PCF_PERIPHERALS_DAC_DEFS_H__</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;pcf/peripheral/dac/config.h&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;pcf/peripheral/defs.h&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="group__pcf__mcal__peripherals__dac.html#gae04a629fae5046a9d3b91da0b3f4d82a">   15</a></span><span class="preprocessor">#define ITEM_ID_DAC (7)</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="group__pcf__mcal__peripherals__dac.html#ga4caa9428f6b346ac5c1afda8d7274011">   20</a></span><span class="preprocessor">#define PCF_ENTITY_TYPE_DAC (0x43414450) </span><span class="comment">// uint32 representation of EntityType_t.name = PDAC </span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="group__pcf__mcal__peripherals__dac.html#ga554b94f98204194382a6bcd9ec4d3fe8">   25</a></span><span class="preprocessor">#define PCF_DAC_S_SUCCESS           GENERATE_PCF_STATUS_SUCCESS(PKG_ID_MCAL,ITEM_ID_DAC)</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="group__pcf__mcal__peripherals__dac.html#ga3cc00c71d00374ba6aa446455b43200a">   26</a></span><span class="preprocessor">#define PCF_DAC_S_ALLOCATION_FAILED GENERATE_PCF_ERROR_ALLOCATION_FAILED(PKG_ID_MCAL,ITEM_ID_DAC)</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="group__pcf__mcal__peripherals__dac.html#ga37d9e6e69114dc8876ae348cdf538ec4">   27</a></span><span class="preprocessor">#define PCF_DAC_S_INVALID_ARG       GENERATE_PCF_ERROR_INVALID_ARG(PKG_ID_MCAL,ITEM_ID_DAC)</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="group__pcf__mcal__peripherals__dac.html#ga92533e7b9bf2de69a01b55abe73ca827">   28</a></span><span class="preprocessor">#define PCF_DAC_S_NULL_ARG          GENERATE_PCF_ERROR_NULL_ARG(PKG_ID_MCAL,ITEM_ID_DAC)</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="group__pcf__mcal__peripherals__dac.html#gab8c18af217755d9bdbc5f67ac63c3c8b">   29</a></span><span class="preprocessor">#define PCF_DAC_S_NOT_IMPLEMENTED   GENERATE_PCF_ERROR_NOT_IMPLEMENTED(PKG_ID_MCAL, ITEM_ID_DAC)</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="group__pcf__mcal__peripherals__dac.html#ga1870b31ffcc4a2dd2367e5ab463130e8">   30</a></span><span class="preprocessor">#define PCF_DAC_S_ALREADY_IN_USE    GENERATE_PCF_ERROR_ALREADY_IN_USE(PKG_ID_MCAL, ITEM_ID_DAC)</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="group__pcf__mcal__peripherals__dac.html#ga45ecc4485b542f8debd98f0067ab9ead">   31</a></span><span class="preprocessor">#define PCF_DAC_S_INVALID_OPERATION GENERATE_PCF_ERROR_INVALID_OPERATION(PKG_ID_MCAL, ITEM_ID_DAC)</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#endif </span><span class="comment">//__PCF_INCLUDES_PCF_PERIPHERALS_DAC_DEFS_H__</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;<a class="code" href="peripherals_2dac_2config_8h.html">pcf/peripherals/dac/config.h</a>&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="group__pcf__mcal__peripherals__dac.html#ga4caa9428f6b346ac5c1afda8d7274011">   14</a></span><span class="preprocessor">#define PCF_ENTITY_TYPE_DAC (0x43414450) </span><span class="comment">// uint32 representation of EntityType_t.name = PDAC </span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif </span><span class="comment">//__PCF_INCLUDES_PCF_PERIPHERALS_DAC_DEFS_H__</span></div>
+<div class="ttc" id="aperipherals_2dac_2config_8h_html"><div class="ttname"><a href="peripherals_2dac_2config_8h.html">config.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

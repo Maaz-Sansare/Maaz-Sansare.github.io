@@ -96,27 +96,12 @@ $(document).ready(function(){initNavTree('peripherals_2wdt_2defs_8h_source.html'
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __PCF_INCLUDES_PCF_PERIPHERALS_WDT_DEFS_H__</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;pcf/peripheral/wdt/config.h&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;pcf/core/status/defs.h&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="group__pcf__mcal__peripherals__wdt.html#ga1cffaf060bb8dca483fbdc2546ee8f8b">   15</a></span><span class="preprocessor">#define ITEM_ID_WDT (12)</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="group__pcf__mcal__peripherals__wdt.html#ga3b3476732a4d59ed042cf0bdff6652aa">   20</a></span><span class="preprocessor">#define PCF_ENTITY_TYPE_WDT (0x84688780) </span><span class="comment">// EntityType_t.name = PWDT </span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// Status codes that can be returned by functions of GPIO package item</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="group__pcf__mcal__peripherals__wdt.html#gab6c8907d3f71da963109e0910f05ea2f">   23</a></span><span class="preprocessor">#define PCF_WDT_S_SUCCESS           GENERATE_PCF_STATUS_SUCCESS(PKG_ID_MCAL,ITEM_ID_WDT)</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="group__pcf__mcal__peripherals__wdt.html#gaf0690de0dd49f2a8f5b68c8308f0acea">   24</a></span><span class="preprocessor">#define PCF_WDT_S_FATAL_ERROR       GENERATE_PCF_ERROR_FATAL(PKG_ID_MCAL,ITEM_ID_WDT)</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="group__pcf__mcal__peripherals__wdt.html#ga3eb8b5901350b1746de3850ec9c034e8">   25</a></span><span class="preprocessor">#define PCF_WDT_S_INTERNAL_ERROR    GENERATE_PCF_ERROR_INTERNAL_ERROR(PKG_ID_MCAL,ITEM_ID_WDT)</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="group__pcf__mcal__peripherals__wdt.html#ga4129d873d7e232fbb5c4351ba75ac0ba">   26</a></span><span class="preprocessor">#define PCF_WDT_S_INVALID_ARG       GENERATE_PCF_ERROR_INVALID_ARG(PKG_ID_MCAL,ITEM_ID_WDT)</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="group__pcf__mcal__peripherals__wdt.html#gab04c93bc6cd5dd07398b304fa8b05592">   27</a></span><span class="preprocessor">#define PCF_WDT_S_NULL_ARG          GENERATE_PCF_ERROR_NULL_ARG(PKG_ID_MCAL,ITEM_ID_WDT)</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="group__pcf__mcal__peripherals__wdt.html#gab17f2c4496cb9b717c06f1c0c41d9f28">   28</a></span><span class="preprocessor">#define PCF_WDT_S_NOT_IMPLEMENTED   GENERATE_PCF_ERROR_NOT_IMPLEMENTED(PKG_ID_MCAL, ITEM_ID_WDT)</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="group__pcf__mcal__peripherals__wdt.html#ga9ed157f8b6943bbbf8ef6bd094c91be2">   29</a></span><span class="preprocessor">#define PCF_WDT_S_NOT_SUPPORTED     GENERATE_PCF_ERROR_NOT_SUPPORTED(PKG_ID_MCAL, ITEM_ID_WDT)</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="group__pcf__mcal__peripherals__wdt.html#gab034e04a650994ea37963c1c844a6e65">   30</a></span><span class="preprocessor">#define PCF_WDT_S_NOT_CONFIGURED    GENERATE_PCF_ERROR_NOT_CONFIGURED(PKG_ID_MCAL, ITEM_ID_WDT)</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="group__pcf__mcal__peripherals__wdt.html#gaded90b0fd7bf55e4fb9e119788fff263">   32</a></span><span class="preprocessor">#define PCF_WDT_S_ERROR             GENERATE_PCF_ERROR_BASE_UCODE(PKG_ID_MCAL, ITEM_ID_WDT)</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#endif </span><span class="comment">//__PCF_INCLUDES_PCF_PERIPHERALS_WDT_DEFS_H__</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="group__pcf__mcal__peripherals__wdt.html#ga3b3476732a4d59ed042cf0bdff6652aa">   14</a></span><span class="preprocessor">#define PCF_ENTITY_TYPE_WDT (0x84688780) </span><span class="comment">// EntityType_t.name = PWDT </span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif </span><span class="comment">//__PCF_INCLUDES_PCF_PERIPHERALS_WDT_DEFS_H__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

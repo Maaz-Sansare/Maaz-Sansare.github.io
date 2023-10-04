@@ -95,11 +95,16 @@ $(document).ready(function(){initNavTree('peripherals_2adc_2config_8h_source.htm
 <a href="peripherals_2adc_2config_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef __PCF_INCLUDES_PCF_PERIPHERALS_ADC_CONFIG_H__</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define __PCF_INCLUDES_PCF_PERIPHERALS_ADC_CONFIG_H__</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="peripherals_2adc_2config_8h.html#a0af8b2f919b24d8a561adbb13844d9b9">    4</a></span><span class="preprocessor">#define __PCF_ADC_INCLUDE PCF_CONDITIONAL_INCLUDE_FILE(pcf/peripherals/,adc/,PCF_ARCH_NAME,/PCF_ARCH_NAME.h)</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include __PCF_ADC_INCLUDE</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#undef __PCF_ADC_INCLUDE</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#endif  </span><span class="comment">//__PCF_INCLUDES_PCF_PERIPHERALS_ADC_CONFIG_H__</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;<a class="code" href="mcu_2config_8h.html">pcf/mcu/config.h</a>&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#if PCF_HAS_INCLUDE(PCF_CONDITIONAL_INCLUDE_FILE(pcf/peripherals/,adc/,PCF_ARCH_NAME/PCF_ARCH_VARIANT_NAME/PCF_ARCH_DEVICE_VENDOR_NAME/PCF_ARCH_DEVICE_SERIES_NAME,/PCF_ARCH_DEVICE_SERIES_NAME.h))</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#   define __PCF_ADC_INCLUDE PCF_CONDITIONAL_INCLUDE_FILE(pcf/peripherals/,adc/,PCF_ARCH_NAME/PCF_ARCH_VARIANT_NAME/PCF_ARCH_DEVICE_VENDOR_NAME/PCF_ARCH_DEVICE_SERIES_NAME,/PCF_ARCH_DEVICE_SERIES_NAME.h)</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#   include __PCF_ADC_INCLUDE</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#   undef __PCF_ADC_INCLUDE</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#endif  </span><span class="comment">//__PCF_INCLUDES_PCF_PERIPHERALS_ADC_CONFIG_H__</span></div>
+<div class="ttc" id="amcu_2config_8h_html"><div class="ttname"><a href="mcu_2config_8h.html">config.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

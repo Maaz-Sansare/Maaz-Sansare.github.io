@@ -92,12 +92,15 @@ $(document).ready(function(){initNavTree('group__pcf__mcal__peripherals__adc.htm
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#enumval-members">Enumerator</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">ADC<div class="ingroups"><a class="el" href="group__pcf__mcal.html">Mcal</a> &raquo; <a class="el" href="group__pcf__mcal__peripherals.html">Peripherals</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>ADC refers to analog to digital converter which is a device that converts continuously changing analog signals into discrete digital signals.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -110,151 +113,117 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga1c674b9e0dff1699d94982b86794c646"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>&#160;&#160;&#160;(6)</td></tr>
-<tr class="memdesc:ga1c674b9e0dff1699d94982b86794c646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Item ID of ADC Entity within Mcal Package.  <br /></td></tr>
-<tr class="separator:ga1c674b9e0dff1699d94982b86794c646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3ddf38ea38900dc2bb8ecd4f4f43340a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga3ddf38ea38900dc2bb8ecd4f4f43340a">PCF_ENTITY_TYPE_ADC</a>&#160;&#160;&#160;(0x43444150)</td></tr>
 <tr class="memdesc:ga3ddf38ea38900dc2bb8ecd4f4f43340a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The following defines the EntityType_t.id for ADC Entities.  <br /></td></tr>
 <tr class="separator:ga3ddf38ea38900dc2bb8ecd4f4f43340a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga107a6aead1457d29ac03ea98afd4cf51"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>&#160;&#160;&#160;GENERATE_PCF_STATUS_SUCCESS(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td></tr>
-<tr class="separator:ga107a6aead1457d29ac03ea98afd4cf51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1ec17c44200ae4c2d351d9fb9dc4ec5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1ec17c44200ae4c2d351d9fb9dc4ec5d">PCF_ADC_S_FATAL_ERROR</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_FATAL(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td></tr>
-<tr class="separator:ga1ec17c44200ae4c2d351d9fb9dc4ec5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2c6e0fe75704f6542db5d55a851a60fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga2c6e0fe75704f6542db5d55a851a60fc">PCF_ADC_S_INTERNAL_ERROR</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_INTERNAL_ERROR(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td></tr>
-<tr class="separator:ga2c6e0fe75704f6542db5d55a851a60fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga077ed86bb5fd6efeff0fa5227ef2910d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga077ed86bb5fd6efeff0fa5227ef2910d">PCF_ADC_S_INVALID_ARG</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_INVALID_ARG(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td></tr>
-<tr class="separator:ga077ed86bb5fd6efeff0fa5227ef2910d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6c590c5a6e6bf7be82464f3388a6de19"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NULL_ARG(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td></tr>
-<tr class="separator:ga6c590c5a6e6bf7be82464f3388a6de19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0619f456f5faf22ba361588cd56734e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga0619f456f5faf22ba361588cd56734e1">PCF_ADC_S_NOT_CONFIGURED</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_CONFIGURED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td></tr>
-<tr class="separator:ga0619f456f5faf22ba361588cd56734e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab9689441a18c937a1331bc8fcca2b149"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#gab9689441a18c937a1331bc8fcca2b149">PCF_ADC_S_ALREADY_IN_USE</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_ALREADY_IN_USE(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td></tr>
-<tr class="separator:gab9689441a18c937a1331bc8fcca2b149"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae59a17856c2b8120c8e8fd0979802c82"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#gae59a17856c2b8120c8e8fd0979802c82">PCF_ADC_S_INVALID_OPERATION</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_INVALID_OPERATION(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td></tr>
-<tr class="separator:gae59a17856c2b8120c8e8fd0979802c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga284de30fbf83b4b2062ac278f087660b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga284de30fbf83b4b2062ac278f087660b">PCF_ADC_S_ALLOCATION_FAILED</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_ALLOCATION_FAILED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td></tr>
-<tr class="separator:ga284de30fbf83b4b2062ac278f087660b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac1776a091ed1ba6b5aac2c0bbab1c4ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#gac1776a091ed1ba6b5aac2c0bbab1c4ad">PCF_ADC_S_BUSY</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_BUSY(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td></tr>
-<tr class="separator:gac1776a091ed1ba6b5aac2c0bbab1c4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7495c2f478003188b834918c3dc7be3f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga7495c2f478003188b834918c3dc7be3f">PCF_ADC_S_ERROR</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_BASE_UCODE(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td></tr>
-<tr class="separator:ga7495c2f478003188b834918c3dc7be3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga86ffeab5ee5e88e0fccba9f39ae08d07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga86ffeab5ee5e88e0fccba9f39ae08d07">PCF_ADC_S_NOT_IMPLEMENTED</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_IMPLEMENTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td></tr>
-<tr class="separator:ga86ffeab5ee5e88e0fccba9f39ae08d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga18179a8e571ba215ac0523cd15c25b5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga18179a8e571ba215ac0523cd15c25b5e">PCF_ADC_S_NOT_SUPPORTED</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_SUPPORTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td></tr>
-<tr class="separator:ga18179a8e571ba215ac0523cd15c25b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga75cbe5b529f3640224dbb33852fc818e"><td class="memItemLeft" align="right" valign="top">typedef struct _pcf_peripheral_adc&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a></td></tr>
-<tr class="memdesc:ga75cbe5b529f3640224dbb33852fc818e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adc Entity object.  <br /></td></tr>
-<tr class="separator:ga75cbe5b529f3640224dbb33852fc818e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gae28f8ef3d10ba5192da1a877d4ee303c"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#gae28f8ef3d10ba5192da1a877d4ee303c">pcf_Adc_getEntityType</a> (EntityType_t *const type)</td></tr>
+<tr class="memdesc:gae28f8ef3d10ba5192da1a877d4ee303c"><td class="mdescLeft">&#160;</td><td class="mdescRight">It is a class static function which returns EntityType_t  <br /></td></tr>
+<tr class="separator:gae28f8ef3d10ba5192da1a877d4ee303c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3adafd8af54f22170d4bfa45644711d"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#gae3adafd8af54f22170d4bfa45644711d">pcf_Adc_getTotal</a> (pcf_size_t *const count)</td></tr>
+<tr class="memdesc:gae3adafd8af54f22170d4bfa45644711d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the total number of ADC supported by the microcontroller.  <br /></td></tr>
+<tr class="separator:gae3adafd8af54f22170d4bfa45644711d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46822aadd9f6141e46d959bdb4b86eea"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga46822aadd9f6141e46d959bdb4b86eea">pcf_Adc_getAvailable</a> (pcf_size_t *const count)</td></tr>
+<tr class="memdesc:ga46822aadd9f6141e46d959bdb4b86eea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of available/unused ADC.  <br /></td></tr>
+<tr class="separator:ga46822aadd9f6141e46d959bdb4b86eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e8143d7a1e306d074e976aaf426db03"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6e8143d7a1e306d074e976aaf426db03">pcf_Adc_new</a> (const <a class="el" href="struct_adc_config__t.html">AdcConfig_t</a> *config, pcf_status_t *status)</td></tr>
+<tr class="memdesc:ga6e8143d7a1e306d074e976aaf426db03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new instance of <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> based on the configuration provided by <a class="el" href="struct_adc_config__t.html" title="ADC config struct.">AdcConfig_t</a> <em>config</em> .  <br /></td></tr>
+<tr class="separator:ga6e8143d7a1e306d074e976aaf426db03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1a50654603a7705d9e136bfb6fc7f00"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#gaa1a50654603a7705d9e136bfb6fc7f00">pcf_Adc_delete</a> (<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> **adc)</td></tr>
+<tr class="memdesc:gaa1a50654603a7705d9e136bfb6fc7f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes/destroys <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> entity returned from <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6e8143d7a1e306d074e976aaf426db03" title="Creates a new instance of Adc_t based on the configuration provided by AdcConfig_t config .">pcf_Adc_new</a>.  <br /></td></tr>
+<tr class="separator:gaa1a50654603a7705d9e136bfb6fc7f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6486457c59d5750d8ef723ec83b3efd8"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6486457c59d5750d8ef723ec83b3efd8">pcf_Adc_setPriority</a> (<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *adc, const uint32_t priority, const uint32_t sub_priority)</td></tr>
+<tr class="memdesc:ga6486457c59d5750d8ef723ec83b3efd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the global interrupt priority, of the adc.  <br /></td></tr>
+<tr class="separator:ga6486457c59d5750d8ef723ec83b3efd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga934cfaadf3ec3b81b4b032ffd4d7ce53"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga934cfaadf3ec3b81b4b032ffd4d7ce53">pcf_Adc_getPriority</a> (<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *adc, uint32_t *priority, uint32_t *sub_priority)</td></tr>
+<tr class="memdesc:ga934cfaadf3ec3b81b4b032ffd4d7ce53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the global interrupt priority &amp; sub-priority level of given adc.  <br /></td></tr>
+<tr class="separator:ga934cfaadf3ec3b81b4b032ffd4d7ce53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16131b2c87bc05a792f323ca2d0594fc"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga16131b2c87bc05a792f323ca2d0594fc">pcf_Adc_on</a> (<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const adc, const EnPCFBoolean_t on)</td></tr>
+<tr class="memdesc:ga16131b2c87bc05a792f323ca2d0594fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Powers on/off the Adc.  <br /></td></tr>
+<tr class="separator:ga16131b2c87bc05a792f323ca2d0594fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70f022be57eefd5206ec5f026c237565"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga70f022be57eefd5206ec5f026c237565">pcf_Adc_isOn</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const adc, EnPCFBoolean_t *const isOn)</td></tr>
+<tr class="memdesc:ga70f022be57eefd5206ec5f026c237565"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the adc is powered on or off.  <br /></td></tr>
+<tr class="separator:ga70f022be57eefd5206ec5f026c237565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15da98840ea1564bc8ce9e66d10c8929"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga15da98840ea1564bc8ce9e66d10c8929">pcf_Adc_getChannelCount</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const adc, pcf_size_t *const count)</td></tr>
+<tr class="memdesc:ga15da98840ea1564bc8ce9e66d10c8929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the total number of channels in an ADC.  <br /></td></tr>
+<tr class="separator:ga15da98840ea1564bc8ce9e66d10c8929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga565c8bbcdcd68a5b43da0c0821549a2c"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga565c8bbcdcd68a5b43da0c0821549a2c">pcf_Adc_addChannel</a> (<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const adc, const uint8_t channel_id, const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga8bf81af52ba8205bf862e50e5428f1ed">EnAdcGroupType_t</a> group, const uint32_t conv_cycles)</td></tr>
+<tr class="memdesc:ga565c8bbcdcd68a5b43da0c0821549a2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a channel into a ADC group.  <br /></td></tr>
+<tr class="separator:ga565c8bbcdcd68a5b43da0c0821549a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3854776457ea4bca4226fa02c70d2d58"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga3854776457ea4bca4226fa02c70d2d58">pcf_Adc_getChannelsInGroup</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const adc, const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga8bf81af52ba8205bf862e50e5428f1ed">EnAdcGroupType_t</a> group, pcf_size_t *const count)</td></tr>
+<tr class="memdesc:ga3854776457ea4bca4226fa02c70d2d58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the total number of channels added into an ADC group.  <br /></td></tr>
+<tr class="separator:ga3854776457ea4bca4226fa02c70d2d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab0710ef66398a4403a7dc6c2e2ca222b"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#gab0710ef66398a4403a7dc6c2e2ca222b">pcf_Adc_getChannelRank</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const adc, const uint8_t channel_id, uint8_t *rank)</td></tr>
+<tr class="memdesc:gab0710ef66398a4403a7dc6c2e2ca222b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the rank of the channel in an ADC group.  <br /></td></tr>
+<tr class="separator:gab0710ef66398a4403a7dc6c2e2ca222b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa54c88969ad026960e1b37f911b396d7"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#gaa54c88969ad026960e1b37f911b396d7">pcf_Adc_getChannelConversionCycle</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const adc, const uint8_t channel_id, uint32_t *conv_cycle)</td></tr>
+<tr class="memdesc:gaa54c88969ad026960e1b37f911b396d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the conversion cycles (in number of clock cycles) of the channel in an ADC group.  <br /></td></tr>
+<tr class="separator:gaa54c88969ad026960e1b37f911b396d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacfbad219475caa2c8471155ff7588dd0"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#gacfbad219475caa2c8471155ff7588dd0">pcf_Adc_doSingleConversion</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const adc, const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga8bf81af52ba8205bf862e50e5428f1ed">EnAdcGroupType_t</a> group)</td></tr>
+<tr class="memdesc:gacfbad219475caa2c8471155ff7588dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to trigger a single conversion of a particular ADC group.  <br /></td></tr>
+<tr class="separator:gacfbad219475caa2c8471155ff7588dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa036d19f3ec9153755f6548d99b18bf9"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#gaa036d19f3ec9153755f6548d99b18bf9">pcf_Adc_startContinuousConversion</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const adc, const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga8bf81af52ba8205bf862e50e5428f1ed">EnAdcGroupType_t</a> group, const EnPCFBoolean_t start)</td></tr>
+<tr class="memdesc:gaa036d19f3ec9153755f6548d99b18bf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start/Stop continuous conversion of a particular ADC group.  <br /></td></tr>
+<tr class="separator:gaa036d19f3ec9153755f6548d99b18bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a70ca5ebe930073c951298f2bbf9380"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga7a70ca5ebe930073c951298f2bbf9380">pcf_Adc_isRunning</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const adc, const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga8bf81af52ba8205bf862e50e5428f1ed">EnAdcGroupType_t</a> group, EnPCFBoolean_t *const isRunning)</td></tr>
+<tr class="memdesc:ga7a70ca5ebe930073c951298f2bbf9380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if continuous conversion is on for an ADC group.  <br /></td></tr>
+<tr class="separator:ga7a70ca5ebe930073c951298f2bbf9380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga812bb1400c92b16d5e4308ee8820ef78"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga812bb1400c92b16d5e4308ee8820ef78">pcf_Adc_getValue</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const adc, const uint8_t channel_id, <a class="el" href="struct_adc_data__t.html">AdcData_t</a> *const data)</td></tr>
+<tr class="memdesc:ga812bb1400c92b16d5e4308ee8820ef78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the converted output value of a particular ADC channel.  <br /></td></tr>
+<tr class="separator:ga812bb1400c92b16d5e4308ee8820ef78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga77d7bfeac6b36ac1f17a3c33c18243f4"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga77d7bfeac6b36ac1f17a3c33c18243f4">pcf_Adc_getVoltage</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const adc, const uint8_t channel_id, <a class="el" href="struct_adc_data__t.html">AdcData_t</a> *const millivolt)</td></tr>
+<tr class="memdesc:ga77d7bfeac6b36ac1f17a3c33c18243f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the voltage value in mv of a particular ADC channel.  <br /></td></tr>
+<tr class="separator:ga77d7bfeac6b36ac1f17a3c33c18243f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga956a380fec319325b55cc3c44a1b41e4"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga956a380fec319325b55cc3c44a1b41e4">pcf_Adc_getReferenceVoltage</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const adc, uint32_t *const millivolt)</td></tr>
+<tr class="memdesc:ga956a380fec319325b55cc3c44a1b41e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the reference voltage value in milivolt of a particular ADC, set during creation.  <br /></td></tr>
+<tr class="separator:ga956a380fec319325b55cc3c44a1b41e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa533dd7bb842da1ee3ad362f23982de5"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#gaa533dd7bb842da1ee3ad362f23982de5">pcf_Adc_getResolution</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const adc, uint8_t *const resolution)</td></tr>
+<tr class="memdesc:gaa533dd7bb842da1ee3ad362f23982de5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the resolution of the ADC, set during creation.  <br /></td></tr>
+<tr class="separator:gaa533dd7bb842da1ee3ad362f23982de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga865f53cb0add0f6871d8c6f93bccc225"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga865f53cb0add0f6871d8c6f93bccc225">pcf_Adc_getMaxValue</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const adc, uint32_t *const max)</td></tr>
+<tr class="memdesc:ga865f53cb0add0f6871d8c6f93bccc225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the maximum value that can be read by the ADC.  <br /></td></tr>
+<tr class="separator:ga865f53cb0add0f6871d8c6f93bccc225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1de096f4448881aa326202690ede60a1"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1de096f4448881aa326202690ede60a1">pcf_Adc_getClockFrequency</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const adc, <a class="el" href="struct_frequency__t.html">Frequency_t</a> *const frequency)</td></tr>
+<tr class="memdesc:ga1de096f4448881aa326202690ede60a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the ADC clock frequency.  <br /></td></tr>
+<tr class="separator:ga1de096f4448881aa326202690ede60a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e83b69835756f282fec9c973a645e4f"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1e83b69835756f282fec9c973a645e4f">pcf_Adc_customCommand</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *adc, pcf_command_t command, pcf_generic_t data)</td></tr>
+<tr class="memdesc:ga1e83b69835756f282fec9c973a645e4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can be used to extend the functionality provided by the ADC package item.  <br /></td></tr>
+<tr class="separator:ga1e83b69835756f282fec9c973a645e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gadb0a5fc204e924c54dcaef288b881e82"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#gadb0a5fc204e924c54dcaef288b881e82">AdcData_t::value</a></td></tr>
+<tr class="separator:gadb0a5fc204e924c54dcaef288b881e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae594e53312ca359b955f018a99b10317"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#gae594e53312ca359b955f018a99b10317">AdcData_t::timeStamp_ms</a></td></tr>
+<tr class="separator:gae594e53312ca359b955f018a99b10317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66176adb7f7bdbfea2ec4292f4aa8ae1"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga66176adb7f7bdbfea2ec4292f4aa8ae1">AdcConfig_t::id</a></td></tr>
+<tr class="separator:ga66176adb7f7bdbfea2ec4292f4aa8ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ef153c5b23b82649ce7b5a665617976"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga3ef153c5b23b82649ce7b5a665617976">AdcConfig_t::referenceVoltage</a></td></tr>
+<tr class="separator:ga3ef153c5b23b82649ce7b5a665617976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8183298baa05f400afbf46c652c1a51b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga8183298baa05f400afbf46c652c1a51b">AdcConfig_t::resolution</a></td></tr>
+<tr class="separator:ga8183298baa05f400afbf46c652c1a51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga068403db2449283d9a5034ef94c3ab83"><td class="memItemLeft" align="right" valign="top">Frequencyu32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga068403db2449283d9a5034ef94c3ab83">AdcConfig_t::frequency</a></td></tr>
+<tr class="separator:ga068403db2449283d9a5034ef94c3ab83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8aa0293aed9c5681889092b852c17176"><td class="memItemLeft" align="right" valign="top">pcf_generic_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga8aa0293aed9c5681889092b852c17176">AdcConfig_t::hardwareCfg</a></td></tr>
+<tr class="separator:ga8aa0293aed9c5681889092b852c17176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">ADC types</h2></td></tr>
 <tr class="memitem:ga8bf81af52ba8205bf862e50e5428f1ed"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga8bf81af52ba8205bf862e50e5428f1ed">EnAdcGroupType_t</a> { <a class="el" href="group__pcf__mcal__peripherals__adc.html#gga8bf81af52ba8205bf862e50e5428f1eda7eb90e5c764c94db15980f4615fb44ac">enAdcGroupType_Regular</a> = 0
 , <a class="el" href="group__pcf__mcal__peripherals__adc.html#gga8bf81af52ba8205bf862e50e5428f1edace58e8de2f14d7a7a207739eb4e812c1">enAdcGroupType_Injected</a>
  }</td></tr>
 <tr class="memdesc:ga8bf81af52ba8205bf862e50e5428f1ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Group type.  <a href="group__pcf__mcal__peripherals__adc.html#ga8bf81af52ba8205bf862e50e5428f1ed">More...</a><br /></td></tr>
 <tr class="separator:ga8bf81af52ba8205bf862e50e5428f1ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga70256752bf1f6848bc0b2a74e5f2a82d"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga70256752bf1f6848bc0b2a74e5f2a82d">pcf_Adc_getAvailableIds</a> (uint8_t *count)</td></tr>
-<tr class="memdesc:ga70256752bf1f6848bc0b2a74e5f2a82d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves currently available ADCs count.  <br /></td></tr>
-<tr class="separator:ga70256752bf1f6848bc0b2a74e5f2a82d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab64a8fa43f53127c8f5cc7707252b770"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#gab64a8fa43f53127c8f5cc7707252b770">pcf_Adc_getTotalIds</a> (uint8_t *count)</td></tr>
-<tr class="memdesc:gab64a8fa43f53127c8f5cc7707252b770"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves max ADCs ids available on uC.  <br /></td></tr>
-<tr class="separator:gab64a8fa43f53127c8f5cc7707252b770"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6e8143d7a1e306d074e976aaf426db03"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6e8143d7a1e306d074e976aaf426db03">pcf_Adc_new</a> (const <a class="el" href="struct_adc_config__t.html">AdcConfig_t</a> *config, pcf_status_t *status)</td></tr>
-<tr class="memdesc:ga6e8143d7a1e306d074e976aaf426db03"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is used to create a new Adc_t Object.  <br /></td></tr>
-<tr class="separator:ga6e8143d7a1e306d074e976aaf426db03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa1a50654603a7705d9e136bfb6fc7f00"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#gaa1a50654603a7705d9e136bfb6fc7f00">pcf_Adc_delete</a> (<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> **adc)</td></tr>
-<tr class="memdesc:gaa1a50654603a7705d9e136bfb6fc7f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes/destroys Adc_t object.  <br /></td></tr>
-<tr class="separator:gaa1a50654603a7705d9e136bfb6fc7f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6486457c59d5750d8ef723ec83b3efd8"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6486457c59d5750d8ef723ec83b3efd8">pcf_Adc_setPriority</a> (<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *adc, const uint32_t priority, const uint32_t sub_priority)</td></tr>
-<tr class="memdesc:ga6486457c59d5750d8ef723ec83b3efd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the NVIC interrupt priority &amp; sub-priority level of given Adc_t object.  <br /></td></tr>
-<tr class="separator:ga6486457c59d5750d8ef723ec83b3efd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga934cfaadf3ec3b81b4b032ffd4d7ce53"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga934cfaadf3ec3b81b4b032ffd4d7ce53">pcf_Adc_getPriority</a> (<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *adc, uint32_t *priority, uint32_t *sub_priority)</td></tr>
-<tr class="memdesc:ga934cfaadf3ec3b81b4b032ffd4d7ce53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NVIC interrupt priority &amp; sub-priority level of given Adc_t object.  <br /></td></tr>
-<tr class="separator:ga934cfaadf3ec3b81b4b032ffd4d7ce53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga969c043efb2676df42eeb58682278c57"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga969c043efb2676df42eeb58682278c57">pcf_Adc_on</a> (<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *adc)</td></tr>
-<tr class="memdesc:ga969c043efb2676df42eeb58682278c57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Power on the Adc peripheral.  <br /></td></tr>
-<tr class="separator:ga969c043efb2676df42eeb58682278c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa474e9c88924a084db266162f097d77c"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#gaa474e9c88924a084db266162f097d77c">pcf_Adc_off</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const adc)</td></tr>
-<tr class="memdesc:gaa474e9c88924a084db266162f097d77c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Power off the Adc peripheral.  <br /></td></tr>
-<tr class="separator:gaa474e9c88924a084db266162f097d77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3f3600a423c38934cd084913837a8418"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga3f3600a423c38934cd084913837a8418">pcf_Adc_isOn</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const adc)</td></tr>
-<tr class="memdesc:ga3f3600a423c38934cd084913837a8418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current state of adc.  <br /></td></tr>
-<tr class="separator:ga3f3600a423c38934cd084913837a8418"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7b38922e5e4b67d031f9caf45fc1b10a"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga7b38922e5e4b67d031f9caf45fc1b10a">pcf_Adc_getChannelCount</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const adc, uint8_t *count)</td></tr>
-<tr class="memdesc:ga7b38922e5e4b67d031f9caf45fc1b10a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total number of channels in an ADC.  <br /></td></tr>
-<tr class="separator:ga7b38922e5e4b67d031f9caf45fc1b10a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7fafe552b182bac90563c9c6d9038b71"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga7fafe552b182bac90563c9c6d9038b71">pcf_Adc_addChannel</a> (<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const adc, const uint8_t channel_id, const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga8bf81af52ba8205bf862e50e5428f1ed">EnAdcGroupType_t</a> group, const uint16_t sample_time)</td></tr>
-<tr class="memdesc:ga7fafe552b182bac90563c9c6d9038b71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a channel into a ADC group.  <br /></td></tr>
-<tr class="separator:ga7fafe552b182bac90563c9c6d9038b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga99b9fb9db22b2cde234850f3a41e86c7"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga99b9fb9db22b2cde234850f3a41e86c7">pcf_Adc_getChannelsInGroup</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const adc, const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga8bf81af52ba8205bf862e50e5428f1ed">EnAdcGroupType_t</a> group, uint8_t *count)</td></tr>
-<tr class="memdesc:ga99b9fb9db22b2cde234850f3a41e86c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the total channels added into an ADC group.  <br /></td></tr>
-<tr class="separator:ga99b9fb9db22b2cde234850f3a41e86c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab0710ef66398a4403a7dc6c2e2ca222b"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#gab0710ef66398a4403a7dc6c2e2ca222b">pcf_Adc_getChannelRank</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const adc, const uint8_t channel_id, uint8_t *rank)</td></tr>
-<tr class="memdesc:gab0710ef66398a4403a7dc6c2e2ca222b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the rank of the channel in an ADC group.  <br /></td></tr>
-<tr class="separator:gab0710ef66398a4403a7dc6c2e2ca222b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabcf0f7547045a6526ae80e4633955557"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#gabcf0f7547045a6526ae80e4633955557">pcf_Adc_getChannelSampleTime</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const adc, const uint8_t channel_id, uint16_t *sample)</td></tr>
-<tr class="memdesc:gabcf0f7547045a6526ae80e4633955557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the sample time (in number of clock cycles) of the channel in an ADC group.  <br /></td></tr>
-<tr class="separator:gabcf0f7547045a6526ae80e4633955557"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacfbad219475caa2c8471155ff7588dd0"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#gacfbad219475caa2c8471155ff7588dd0">pcf_Adc_doSingleConversion</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const adc, const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga8bf81af52ba8205bf862e50e5428f1ed">EnAdcGroupType_t</a> group)</td></tr>
-<tr class="memdesc:gacfbad219475caa2c8471155ff7588dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to trigger a single conversion of a particular ADC group.  <br /></td></tr>
-<tr class="separator:gacfbad219475caa2c8471155ff7588dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga04ddf7d354a8211d64e1493a5574ed17"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga04ddf7d354a8211d64e1493a5574ed17">pcf_Adc_startContinuousConversion</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const adc, const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga8bf81af52ba8205bf862e50e5428f1ed">EnAdcGroupType_t</a> group)</td></tr>
-<tr class="memdesc:ga04ddf7d354a8211d64e1493a5574ed17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to start continuous conversion of a particular ADC group.  <br /></td></tr>
-<tr class="separator:ga04ddf7d354a8211d64e1493a5574ed17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabf2b99c6fd59327acd674f667bf65be6"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#gabf2b99c6fd59327acd674f667bf65be6">pcf_Adc_stopContinuousConversion</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const adc, const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga8bf81af52ba8205bf862e50e5428f1ed">EnAdcGroupType_t</a> group)</td></tr>
-<tr class="memdesc:gabf2b99c6fd59327acd674f667bf65be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to stop continuous conversion of a particular ADC group.  <br /></td></tr>
-<tr class="separator:gabf2b99c6fd59327acd674f667bf65be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga894b1dfe352f49a602b388cad30dad26"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga894b1dfe352f49a602b388cad30dad26">pcf_Adc_isRunning</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const adc, const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga8bf81af52ba8205bf862e50e5428f1ed">EnAdcGroupType_t</a> group)</td></tr>
-<tr class="memdesc:ga894b1dfe352f49a602b388cad30dad26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to check if continuous conversion is on for a ADC group.  <br /></td></tr>
-<tr class="separator:ga894b1dfe352f49a602b388cad30dad26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga812bb1400c92b16d5e4308ee8820ef78"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga812bb1400c92b16d5e4308ee8820ef78">pcf_Adc_getValue</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const adc, const uint8_t channel_id, <a class="el" href="struct_adc_data__t.html">AdcData_t</a> *const data)</td></tr>
-<tr class="memdesc:ga812bb1400c92b16d5e4308ee8820ef78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the converted output value of a particular ADC channel.  <br /></td></tr>
-<tr class="separator:ga812bb1400c92b16d5e4308ee8820ef78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga77d7bfeac6b36ac1f17a3c33c18243f4"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga77d7bfeac6b36ac1f17a3c33c18243f4">pcf_Adc_getVoltage</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const adc, const uint8_t channel_id, <a class="el" href="struct_adc_data__t.html">AdcData_t</a> *const millivolt)</td></tr>
-<tr class="memdesc:ga77d7bfeac6b36ac1f17a3c33c18243f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the voltage value in mv of a particular ADC channel.  <br /></td></tr>
-<tr class="separator:ga77d7bfeac6b36ac1f17a3c33c18243f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0cde62c65495ff8fb57bfcef832137a6"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga0cde62c65495ff8fb57bfcef832137a6">pcf_Adc_getReferenceVoltage</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const adc, uint32_t *millivolt)</td></tr>
-<tr class="memdesc:ga0cde62c65495ff8fb57bfcef832137a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the reference voltage value in mv of a particular ADC, set during creation.  <br /></td></tr>
-<tr class="separator:ga0cde62c65495ff8fb57bfcef832137a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gada21f88d75a56f101a59b6b465da3645"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#gada21f88d75a56f101a59b6b465da3645">pcf_Adc_getResolution</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const adc, uint8_t *resolution)</td></tr>
-<tr class="memdesc:gada21f88d75a56f101a59b6b465da3645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the resolution of the ADC, set during creation of Adc_t object.  <br /></td></tr>
-<tr class="separator:gada21f88d75a56f101a59b6b465da3645"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga830281edce587a773549457187c3ea55"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga830281edce587a773549457187c3ea55">pcf_Adc_getMaxValue</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const adc, uint32_t *max)</td></tr>
-<tr class="memdesc:ga830281edce587a773549457187c3ea55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the maximum value that can be read by the ADC.  <br /></td></tr>
-<tr class="separator:ga830281edce587a773549457187c3ea55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga48bca8ffc06c506508fe6fd3484c7338"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga48bca8ffc06c506508fe6fd3484c7338">pcf_Adc_getClockFrequency</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const adc, <a class="el" href="struct_frequency__t.html">Frequency_t</a> *frequency)</td></tr>
-<tr class="memdesc:ga48bca8ffc06c506508fe6fd3484c7338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the ADC clock frequency.  <br /></td></tr>
-<tr class="separator:ga48bca8ffc06c506508fe6fd3484c7338"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1e83b69835756f282fec9c973a645e4f"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1e83b69835756f282fec9c973a645e4f">pcf_Adc_customCommand</a> (const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *adc, pcf_command_t command, pcf_generic_t data)</td></tr>
-<tr class="memdesc:ga1e83b69835756f282fec9c973a645e4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is used to implement custom commands for hardware specific implementation.  <br /></td></tr>
-<tr class="separator:ga1e83b69835756f282fec9c973a645e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79a54c713fdc1096d5d7eb2793d9e64d"><td class="memItemLeft" align="right" valign="top">typedef struct _pcf_peripheral_adc_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a></td></tr>
+<tr class="memdesc:ga79a54c713fdc1096d5d7eb2793d9e64d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adc Entity object.  <br /></td></tr>
+<tr class="separator:ga79a54c713fdc1096d5d7eb2793d9e64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<dl class="section note"><dt>Note</dt><dd>Input validation is done only when package is built in debug mode. <br  />
+<p>ADC refers to analog to digital converter which is a device that converts continuously changing analog signals into discrete digital signals. </p>
+<p>Analog signals, such as temperature, pressure, sound, or images, need to be converted into digital forms that are easier to be stored, processed, and transmitted. </p><dl class="section note"><dt>Note</dt><dd>Input validation is done only when package is built in debug mode. <br  />
  </dd></dl>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ga1c674b9e0dff1699d94982b86794c646" name="ga1c674b9e0dff1699d94982b86794c646"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1c674b9e0dff1699d94982b86794c646">&#9670;&#160;</a></span>ITEM_ID_ADC</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ITEM_ID_ADC&#160;&#160;&#160;(6)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Item ID of ADC Entity within Mcal Package. </p>
-
-</div>
-</div>
 <a id="ga3ddf38ea38900dc2bb8ecd4f4f43340a" name="ga3ddf38ea38900dc2bb8ecd4f4f43340a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3ddf38ea38900dc2bb8ecd4f4f43340a">&#9670;&#160;</a></span>PCF_ENTITY_TYPE_ADC</h2>
 
@@ -271,197 +240,15 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga107a6aead1457d29ac03ea98afd4cf51" name="ga107a6aead1457d29ac03ea98afd4cf51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga107a6aead1457d29ac03ea98afd4cf51">&#9670;&#160;</a></span>PCF_ADC_S_SUCCESS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_ADC_S_SUCCESS&#160;&#160;&#160;GENERATE_PCF_STATUS_SUCCESS(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga1ec17c44200ae4c2d351d9fb9dc4ec5d" name="ga1ec17c44200ae4c2d351d9fb9dc4ec5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1ec17c44200ae4c2d351d9fb9dc4ec5d">&#9670;&#160;</a></span>PCF_ADC_S_FATAL_ERROR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_ADC_S_FATAL_ERROR&#160;&#160;&#160;GENERATE_PCF_ERROR_FATAL(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga2c6e0fe75704f6542db5d55a851a60fc" name="ga2c6e0fe75704f6542db5d55a851a60fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2c6e0fe75704f6542db5d55a851a60fc">&#9670;&#160;</a></span>PCF_ADC_S_INTERNAL_ERROR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_ADC_S_INTERNAL_ERROR&#160;&#160;&#160;GENERATE_PCF_ERROR_INTERNAL_ERROR(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga077ed86bb5fd6efeff0fa5227ef2910d" name="ga077ed86bb5fd6efeff0fa5227ef2910d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga077ed86bb5fd6efeff0fa5227ef2910d">&#9670;&#160;</a></span>PCF_ADC_S_INVALID_ARG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_ADC_S_INVALID_ARG&#160;&#160;&#160;GENERATE_PCF_ERROR_INVALID_ARG(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga6c590c5a6e6bf7be82464f3388a6de19" name="ga6c590c5a6e6bf7be82464f3388a6de19"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6c590c5a6e6bf7be82464f3388a6de19">&#9670;&#160;</a></span>PCF_ADC_S_NULL_ARG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_ADC_S_NULL_ARG&#160;&#160;&#160;GENERATE_PCF_ERROR_NULL_ARG(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga0619f456f5faf22ba361588cd56734e1" name="ga0619f456f5faf22ba361588cd56734e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0619f456f5faf22ba361588cd56734e1">&#9670;&#160;</a></span>PCF_ADC_S_NOT_CONFIGURED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_ADC_S_NOT_CONFIGURED&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_CONFIGURED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gab9689441a18c937a1331bc8fcca2b149" name="gab9689441a18c937a1331bc8fcca2b149"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab9689441a18c937a1331bc8fcca2b149">&#9670;&#160;</a></span>PCF_ADC_S_ALREADY_IN_USE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_ADC_S_ALREADY_IN_USE&#160;&#160;&#160;GENERATE_PCF_ERROR_ALREADY_IN_USE(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gae59a17856c2b8120c8e8fd0979802c82" name="gae59a17856c2b8120c8e8fd0979802c82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae59a17856c2b8120c8e8fd0979802c82">&#9670;&#160;</a></span>PCF_ADC_S_INVALID_OPERATION</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_ADC_S_INVALID_OPERATION&#160;&#160;&#160;GENERATE_PCF_ERROR_INVALID_OPERATION(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga284de30fbf83b4b2062ac278f087660b" name="ga284de30fbf83b4b2062ac278f087660b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga284de30fbf83b4b2062ac278f087660b">&#9670;&#160;</a></span>PCF_ADC_S_ALLOCATION_FAILED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_ADC_S_ALLOCATION_FAILED&#160;&#160;&#160;GENERATE_PCF_ERROR_ALLOCATION_FAILED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gac1776a091ed1ba6b5aac2c0bbab1c4ad" name="gac1776a091ed1ba6b5aac2c0bbab1c4ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac1776a091ed1ba6b5aac2c0bbab1c4ad">&#9670;&#160;</a></span>PCF_ADC_S_BUSY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_ADC_S_BUSY&#160;&#160;&#160;GENERATE_PCF_ERROR_BUSY(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga7495c2f478003188b834918c3dc7be3f" name="ga7495c2f478003188b834918c3dc7be3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7495c2f478003188b834918c3dc7be3f">&#9670;&#160;</a></span>PCF_ADC_S_ERROR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_ADC_S_ERROR&#160;&#160;&#160;GENERATE_PCF_ERROR_BASE_UCODE(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga86ffeab5ee5e88e0fccba9f39ae08d07" name="ga86ffeab5ee5e88e0fccba9f39ae08d07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga86ffeab5ee5e88e0fccba9f39ae08d07">&#9670;&#160;</a></span>PCF_ADC_S_NOT_IMPLEMENTED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_ADC_S_NOT_IMPLEMENTED&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_IMPLEMENTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga18179a8e571ba215ac0523cd15c25b5e" name="ga18179a8e571ba215ac0523cd15c25b5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga18179a8e571ba215ac0523cd15c25b5e">&#9670;&#160;</a></span>PCF_ADC_S_NOT_SUPPORTED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_ADC_S_NOT_SUPPORTED&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_SUPPORTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga1c674b9e0dff1699d94982b86794c646">ITEM_ID_ADC</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga75cbe5b529f3640224dbb33852fc818e" name="ga75cbe5b529f3640224dbb33852fc818e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga75cbe5b529f3640224dbb33852fc818e">&#9670;&#160;</a></span>Adc_t</h2>
+<a id="ga79a54c713fdc1096d5d7eb2793d9e64d" name="ga79a54c713fdc1096d5d7eb2793d9e64d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga79a54c713fdc1096d5d7eb2793d9e64d">&#9670;&#160;</a></span>Adc_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct _pcf_peripheral_adc <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a></td>
+          <td class="memname">typedef struct _pcf_peripheral_adc_t <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -496,67 +283,102 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga70256752bf1f6848bc0b2a74e5f2a82d" name="ga70256752bf1f6848bc0b2a74e5f2a82d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga70256752bf1f6848bc0b2a74e5f2a82d">&#9670;&#160;</a></span>pcf_Adc_getAvailableIds()</h2>
+<a id="gae28f8ef3d10ba5192da1a877d4ee303c" name="gae28f8ef3d10ba5192da1a877d4ee303c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae28f8ef3d10ba5192da1a877d4ee303c">&#9670;&#160;</a></span>pcf_Adc_getEntityType()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_getAvailableIds </td>
+          <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_getEntityType </td>
           <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
-          <td class="paramname"><em>count</em></td><td>)</td>
+          <td class="paramtype">EntityType_t *const&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves currently available ADCs count. </p>
+<p>It is a class static function which returns EntityType_t </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">count</td><td>[OUT] - Set to the number of unused ADCs. </td></tr>
+    <tr><td class="paramname">type</td><td>[OUT] - Pointer to EntityType_t, stores the entity type of the ADC. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
+PCF_S_NULL_ARG : <em>type</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="gab64a8fa43f53127c8f5cc7707252b770" name="gab64a8fa43f53127c8f5cc7707252b770"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab64a8fa43f53127c8f5cc7707252b770">&#9670;&#160;</a></span>pcf_Adc_getTotalIds()</h2>
+<a id="gae3adafd8af54f22170d4bfa45644711d" name="gae3adafd8af54f22170d4bfa45644711d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae3adafd8af54f22170d4bfa45644711d">&#9670;&#160;</a></span>pcf_Adc_getTotal()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_getTotalIds </td>
+          <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_getTotal </td>
           <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramtype">pcf_size_t *const&#160;</td>
           <td class="paramname"><em>count</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves max ADCs ids available on uC. </p>
+<p>Gets the total number of ADC supported by the microcontroller. </p>
+<p><br  />
+ The value returned will be same throughout runtime.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">count</td><td>[OUT] - Set to the total number of ADC ids available. </td></tr>
+    <tr><td class="paramname">count</td><td>[OUT] - Pointer to pcf_size_t, stores the total number of ADC IDs available. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>count</em>  is PCF_NULL. (Checked only in debug mode) </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ga46822aadd9f6141e46d959bdb4b86eea" name="ga46822aadd9f6141e46d959bdb4b86eea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga46822aadd9f6141e46d959bdb4b86eea">&#9670;&#160;</a></span>pcf_Adc_getAvailable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_getAvailable </td>
+          <td>(</td>
+          <td class="paramtype">pcf_size_t *const&#160;</td>
+          <td class="paramname"><em>count</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the number of available/unused ADC. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">count</td><td>[OUT] - Pointer to pcf_size_t, stores the number of unused ADCs. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
+<li>
+PCF_S_SUCCESS  : On success. </li>
+<li>
+PCF_S_NULL_ARG  : <em>count</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
@@ -569,7 +391,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_MCAL_API <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> * pcf_Adc_new </td>
+          <td class="memname">PCF_MCAL_API <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> * pcf_Adc_new </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_adc_config__t.html">AdcConfig_t</a> *&#160;</td>
           <td class="paramname"><em>config</em>, </td>
@@ -588,28 +410,35 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This function is used to create a new Adc_t Object. </p>
-<p>It creates and initializes Adc_t according to the configuration structure and returns a pointer to Adc_t.</p>
+<p>Creates a new instance of <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> based on the configuration provided by <a class="el" href="struct_adc_config__t.html" title="ADC config struct.">AdcConfig_t</a> <em>config</em> . </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">config</td><td>[IN] - Pointer to the adc configuration structure. </td></tr>
-    <tr><td class="paramname">status</td><td>[OUT] - <ul>
+    <tr><td class="paramname">config</td><td>[IN] - Pointer to the adc configuration structure <a class="el" href="struct_adc_config__t.html" title="ADC config struct.">AdcConfig_t</a>. </td></tr>
+    <tr><td class="paramname">status</td><td>[OUT] - Pointer to pcf_status_t <br  />
+ (Optional parameter, pass PCF_NULL if not required.) <br  />
+ Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Null config or config member has null. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>config</em>  is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga077ed86bb5fd6efeff0fa5227ef2910d">PCF_ADC_S_INVALID_ARG</a>  : Invalid ADCs id or resolution or invalid frequency was passed. (Checked only in debug mode) </li>
+PCF_S_INVALID_ARG  : config.id or config.resolution or config.frequency is invalid. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#gab9689441a18c937a1331bc8fcca2b149">PCF_ADC_S_ALREADY_IN_USE</a>  : Specified id is already in use. </li>
+PCF_S_ALREADY_IN_USE  : config.id is already in use. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga284de30fbf83b4b2062ac278f087660b">PCF_ADC_S_ALLOCATION_FAILED</a>  : Memory allocation failed. </li>
+PCF_S_NOT_ENOUGH_MEMORY  :Not enough memory to create the Adc entity. </li>
 </ul>
 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer of the Adc_t object or PCF_NULL in case of error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>valid values: <ul>
+<li>
+On success - Pointer to <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a>.  </li>
+<li>
+On failure - PCF_NULL.  </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
@@ -622,26 +451,29 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_delete </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> **&#160;</td>
+          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> **&#160;</td>
           <td class="paramname"><em>adc</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Deletes/destroys Adc_t object. </p>
+<p>Deletes/destroys <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> entity returned from <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6e8143d7a1e306d074e976aaf426db03" title="Creates a new instance of Adc_t based on the configuration provided by AdcConfig_t config .">pcf_Adc_new</a>. </p>
+<p><br  />
+ <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> entity cannot be used after a call to this function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adc</td><td>[IN] - Pointer to Adc_t object. </td></tr>
+    <tr><td class="paramname">adc</td><td>[IN] - Double Pointer to <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> entity object. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : &lt;see cref="adc'/&gt; is PCF_NULL. (Checked only in debug mode)
-&lt;item&gt; &lt;see cref="PCF_ADC_S_INVALID_ARG"/&gt;  : Invalid Adc_t object was passed. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>adc</em>  is PCF_NULL. (Checked only in debug mode) </li>
+<li>
+PCF_S_INVALID_ARG  : <em>adc</em>  is invalid. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
@@ -656,7 +488,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_setPriority </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *&#160;</td>
           <td class="paramname"><em>adc</em>, </td>
         </tr>
         <tr>
@@ -679,22 +511,23 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set the NVIC interrupt priority &amp; sub-priority level of given Adc_t object. </p>
+<p>Sets the global interrupt priority, of the adc. </p>
+<p>The priority is set across all entities which are interrupt based.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adc</td><td>[IN] - Pointer to Adc_t object. </td></tr>
-    <tr><td class="paramname">priority</td><td>[IN] - NVIC priority level, lower value indicates higher priority. </td></tr>
-    <tr><td class="paramname">sub_priority</td><td>[IN] - NVIC sub-priority level, lower value indicates higher sub-priority. </td></tr>
+    <tr><td class="paramname">adc</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> entity object. </td></tr>
+    <tr><td class="paramname">priority</td><td>[IN] - The priority level, lower priority value means higher priority. </td></tr>
+    <tr><td class="paramname">sub_priority</td><td>[IN] - The sub priority level, This fields validity is dependant on value of PCF_CONF_CPU_IC_PRIORITY_GROUP configured in mcal package, if two interrupts have the same priorities then the interrupt with higher sub-priority will be triggered first.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Adc_t object was PCF_NULL. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>adc</em>  is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga077ed86bb5fd6efeff0fa5227ef2910d">PCF_ADC_S_INVALID_ARG</a>  : Invalid Adc_t object was passed. (Checked only in debug mode) </li>
+PCF_S_INVALID_ARG  : <em>adc</em>  is invalid. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
@@ -709,7 +542,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_getPriority </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *&#160;</td>
           <td class="paramname"><em>adc</em>, </td>
         </tr>
         <tr>
@@ -732,29 +565,29 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the NVIC interrupt priority &amp; sub-priority level of given Adc_t object. </p>
+<p>Gets the global interrupt priority &amp; sub-priority level of given adc. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adc</td><td>[IN] - Pointer to Adc_t object. </td></tr>
-    <tr><td class="paramname">priority</td><td>[IN] - NVIC priority level, lower value indicates higher priority </td></tr>
-    <tr><td class="paramname">sub_priority</td><td>[IN] - NVIC sub-priority level, lower value indicates higher sub-priority </td></tr>
+    <tr><td class="paramname">adc</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> entity object. </td></tr>
+    <tr><td class="paramname">priority</td><td>[OUT] - Pointer to uint32_t, stores the priority value. </td></tr>
+    <tr><td class="paramname">sub_priority</td><td>[OUT] - Pointer to uint32_t, stores the the sub-priority value. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Priority or sub_priority was PCF_NULL. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>adc</em>  or <em>priority</em>  or <em>sub_priority</em>  is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga077ed86bb5fd6efeff0fa5227ef2910d">PCF_ADC_S_INVALID_ARG</a>  : Invalid Adc_t object was passed. (Checked only in debug mode) </li>
+PCF_S_INVALID_ARG  : <em>adc</em>  is invalid. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga969c043efb2676df42eeb58682278c57" name="ga969c043efb2676df42eeb58682278c57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga969c043efb2676df42eeb58682278c57">&#9670;&#160;</a></span>pcf_Adc_on()</h2>
+<a id="ga16131b2c87bc05a792f323ca2d0594fc" name="ga16131b2c87bc05a792f323ca2d0594fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga16131b2c87bc05a792f323ca2d0594fc">&#9670;&#160;</a></span>pcf_Adc_on()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -762,69 +595,45 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_on </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *&#160;</td>
-          <td class="paramname"><em>adc</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const&#160;</td>
+          <td class="paramname"><em>adc</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Power on the Adc peripheral. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">adc</td><td>[IN] - Pointer to Adc_t object. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
-<li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
-<li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Adc_t object was PCF_NULL. (Checked only in debug mode) </li>
-<li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga077ed86bb5fd6efeff0fa5227ef2910d">PCF_ADC_S_INVALID_ARG</a>  : Invalid Adc_t object was passed. (Checked only in debug mode) </li>
-</ul>
-</dd></dl>
-
-</div>
-</div>
-<a id="gaa474e9c88924a084db266162f097d77c" name="gaa474e9c88924a084db266162f097d77c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa474e9c88924a084db266162f097d77c">&#9670;&#160;</a></span>pcf_Adc_off()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_off </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const&#160;</td>
-          <td class="paramname"><em>adc</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const EnPCFBoolean_t&#160;</td>
+          <td class="paramname"><em>on</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Power off the Adc peripheral. </p>
+<p>Powers on/off the Adc. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adc</td><td>[IN] - Pointer to Adc_t object. </td></tr>
+    <tr><td class="paramname">adc</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> entity object. </td></tr>
+    <tr><td class="paramname">on</td><td>[IN] - <em>adc</em>  is powered on if EnPCFBoolean_t is enPCFBoolean_True or powered off if enPCFBoolean_False </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Adc_t object was PCF_NULL. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>adc</em>  is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga077ed86bb5fd6efeff0fa5227ef2910d">PCF_ADC_S_INVALID_ARG</a>  : Invalid Adc_t object was passed. (Checked only in debug mode) </li>
+PCF_S_INVALID_ARG  : <em>adc</em>  is invalid. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga3f3600a423c38934cd084913837a8418" name="ga3f3600a423c38934cd084913837a8418"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3f3600a423c38934cd084913837a8418">&#9670;&#160;</a></span>pcf_Adc_isOn()</h2>
+<a id="ga70f022be57eefd5206ec5f026c237565" name="ga70f022be57eefd5206ec5f026c237565"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga70f022be57eefd5206ec5f026c237565">&#9670;&#160;</a></span>pcf_Adc_isOn()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -832,38 +641,45 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_isOn </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const&#160;</td>
-          <td class="paramname"><em>adc</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const&#160;</td>
+          <td class="paramname"><em>adc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">EnPCFBoolean_t *const&#160;</td>
+          <td class="paramname"><em>isOn</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Current state of adc. </p>
+<p>Checks if the adc is powered on or off. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adc</td><td>[IN] - Pointer to Adc_t object. </td></tr>
+    <tr><td class="paramname">adc</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> entity object. </td></tr>
+    <tr><td class="paramname">isOn</td><td>[OUT] - Pointer to EnPCFBoolean_t, stores the state of adc is set to enPCFBoolean_True if power is on else set to enPCFBoolean_False. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Adc_t object was PCF_NULL. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>adc</em>  or <em>isOn</em>  is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga077ed86bb5fd6efeff0fa5227ef2910d">PCF_ADC_S_INVALID_ARG</a>  : Invalid Adc_t object was passed. (Checked only in debug mode) </li>
-<li>
-PCF_ADC_S_YES  : Adc is ON. </li>
-<li>
-PCF_ADC_S_NO  : Adc is OFF. </li>
+PCF_S_INVALID_ARG  : <em>adc</em>  is invalid. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga7b38922e5e4b67d031f9caf45fc1b10a" name="ga7b38922e5e4b67d031f9caf45fc1b10a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7b38922e5e4b67d031f9caf45fc1b10a">&#9670;&#160;</a></span>pcf_Adc_getChannelCount()</h2>
+<a id="ga15da98840ea1564bc8ce9e66d10c8929" name="ga15da98840ea1564bc8ce9e66d10c8929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga15da98840ea1564bc8ce9e66d10c8929">&#9670;&#160;</a></span>pcf_Adc_getChannelCount()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -871,13 +687,13 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_getChannelCount </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const&#160;</td>
           <td class="paramname"><em>adc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramtype">pcf_size_t *const&#160;</td>
           <td class="paramname"><em>count</em>&#160;</td>
         </tr>
         <tr>
@@ -888,28 +704,28 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
       </table>
 </div><div class="memdoc">
 
-<p>Get the total number of channels in an ADC. </p>
+<p>Gets the total number of channels in an ADC. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adc</td><td>[IN] - Pointer to Adc_t object. </td></tr>
-    <tr><td class="paramname">count</td><td>[OUT] - Pointer to uint8_t. Sets this variable to the total number of channels under this ADC. </td></tr>
+    <tr><td class="paramname">adc</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> entity object. </td></tr>
+    <tr><td class="paramname">count</td><td>[OUT] - Pointer to pcf_size_t, stores the total number of channels under this ADC. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Count was PCF_NULL. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>adc</em>  or <em>count</em>  is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga077ed86bb5fd6efeff0fa5227ef2910d">PCF_ADC_S_INVALID_ARG</a>  : Invalid Adc_t object was passed. (Checked only in debug mode) </li>
+PCF_S_INVALID_ARG  : <em>adc</em>  is invalid. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga7fafe552b182bac90563c9c6d9038b71" name="ga7fafe552b182bac90563c9c6d9038b71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7fafe552b182bac90563c9c6d9038b71">&#9670;&#160;</a></span>pcf_Adc_addChannel()</h2>
+<a id="ga565c8bbcdcd68a5b43da0c0821549a2c" name="ga565c8bbcdcd68a5b43da0c0821549a2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga565c8bbcdcd68a5b43da0c0821549a2c">&#9670;&#160;</a></span>pcf_Adc_addChannel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -917,7 +733,7 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_addChannel </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const&#160;</td>
           <td class="paramname"><em>adc</em>, </td>
         </tr>
         <tr>
@@ -935,8 +751,8 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint16_t&#160;</td>
-          <td class="paramname"><em>sample_time</em>&#160;</td>
+          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramname"><em>conv_cycles</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -946,33 +762,33 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
       </table>
 </div><div class="memdoc">
 
-<p>Add a channel into a ADC group. </p>
+<p>Adds a channel into a ADC group. </p>
 <p>If a particular channel is added to a group (regular or injected) it cannot be added to another group.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adc</td><td>[IN] - Pointer to Adc_t object. </td></tr>
+    <tr><td class="paramname">adc</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> entity object. </td></tr>
     <tr><td class="paramname">channel_id</td><td>[IN] - Channel id. </td></tr>
     <tr><td class="paramname">group</td><td>[IN] - The group to which the channel should be added. Regular or Injected. </td></tr>
-    <tr><td class="paramname">sample_time</td><td>[IN] - The sampling time in number of clock cycles. </td></tr>
+    <tr><td class="paramname">conv_cycles</td><td>[IN] - The conversion cycles in number of clock cycles depending on the frequency set during configuration. conversion cycles (conv_cycles) = conversion time * Adc frequency eg adc freq = 14MHz, conversion time = 1us hence conversion cycles = 14Mhz * 1us = 14. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Adc_t object was PCF_NULL. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>adc</em>  is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga077ed86bb5fd6efeff0fa5227ef2910d">PCF_ADC_S_INVALID_ARG</a>  : Invalid Adc_t object or channel_id (or group (based on uC)) was passed. (Checked only in debug mode) </li>
+PCF_S_INVALID_ARG  : <em>adc</em>  or <em>channel_id</em>  (or <em>group</em>  (based on uC)) is invalid. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#gab9689441a18c937a1331bc8fcca2b149">PCF_ADC_S_ALREADY_IN_USE</a>  : Specified channel_id is already in use. </li>
+PCF_S_ALREADY_IN_USE  : Specified <em>channel_id</em>  is already in use. </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga99b9fb9db22b2cde234850f3a41e86c7" name="ga99b9fb9db22b2cde234850f3a41e86c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga99b9fb9db22b2cde234850f3a41e86c7">&#9670;&#160;</a></span>pcf_Adc_getChannelsInGroup()</h2>
+<a id="ga3854776457ea4bca4226fa02c70d2d58" name="ga3854776457ea4bca4226fa02c70d2d58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3854776457ea4bca4226fa02c70d2d58">&#9670;&#160;</a></span>pcf_Adc_getChannelsInGroup()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -980,7 +796,7 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_getChannelsInGroup </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const&#160;</td>
           <td class="paramname"><em>adc</em>, </td>
         </tr>
         <tr>
@@ -992,7 +808,7 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramtype">pcf_size_t *const&#160;</td>
           <td class="paramname"><em>count</em>&#160;</td>
         </tr>
         <tr>
@@ -1003,22 +819,22 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
       </table>
 </div><div class="memdoc">
 
-<p>Get the total channels added into an ADC group. </p>
+<p>Gets the total number of channels added into an ADC group. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adc</td><td>[IN] - Pointer to Adc_t object. </td></tr>
+    <tr><td class="paramname">adc</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> entity object. </td></tr>
     <tr><td class="paramname">group</td><td>[IN] - The group to which the channel has been added. Regular or Injected. </td></tr>
-    <tr><td class="paramname">count</td><td>[OUT] - Pointer to uint8_t. Sets to the total number of channels added to this ADC. </td></tr>
+    <tr><td class="paramname">count</td><td>[OUT] - Pointer to pcf_size_t, stores the total number of channels added to this ADC group. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Adc_t object was PCF_NULL. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>adc</em>  is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga077ed86bb5fd6efeff0fa5227ef2910d">PCF_ADC_S_INVALID_ARG</a>  : Invalid Adc_t object or group was passed. (Checked only in debug mode) </li>
+PCF_S_INVALID_ARG  : <em>adc</em>  (or <em>group</em>  (based on uC)) is invalid. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
@@ -1033,7 +849,7 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_getChannelRank </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const&#160;</td>
           <td class="paramname"><em>adc</em>, </td>
         </tr>
         <tr>
@@ -1056,37 +872,37 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
       </table>
 </div><div class="memdoc">
 
-<p>Get the rank of the channel in an ADC group. </p>
+<p>Gets the rank of the channel in an ADC group. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adc</td><td>[IN] - Pointer to Adc_t object. </td></tr>
+    <tr><td class="paramname">adc</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> entity object. </td></tr>
     <tr><td class="paramname">channel_id</td><td>[IN] - id of the channel </td></tr>
-    <tr><td class="paramname">rank</td><td>[OUT] - Pointer to uint8_t. Sets to the rank of the channel in an ADC. </td></tr>
+    <tr><td class="paramname">rank</td><td>[OUT] - Pointer to uint8_t, stores the rank of the channel in an ADC. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Adc_t object was PCF_NULL. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>adc</em>  is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga077ed86bb5fd6efeff0fa5227ef2910d">PCF_ADC_S_INVALID_ARG</a>  : Invalid Adc_t object or channel_id was passed. (Checked only in debug mode) </li>
+PCF_S_INVALID_ARG  : <em>adc</em>  or <em>channel_id</em>  is invalid. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="gabcf0f7547045a6526ae80e4633955557" name="gabcf0f7547045a6526ae80e4633955557"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabcf0f7547045a6526ae80e4633955557">&#9670;&#160;</a></span>pcf_Adc_getChannelSampleTime()</h2>
+<a id="gaa54c88969ad026960e1b37f911b396d7" name="gaa54c88969ad026960e1b37f911b396d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa54c88969ad026960e1b37f911b396d7">&#9670;&#160;</a></span>pcf_Adc_getChannelConversionCycle()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_getChannelSampleTime </td>
+          <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_getChannelConversionCycle </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const&#160;</td>
           <td class="paramname"><em>adc</em>, </td>
         </tr>
         <tr>
@@ -1098,8 +914,8 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t *&#160;</td>
-          <td class="paramname"><em>sample</em>&#160;</td>
+          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramname"><em>conv_cycle</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1109,22 +925,22 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
       </table>
 </div><div class="memdoc">
 
-<p>Get the sample time (in number of clock cycles) of the channel in an ADC group. </p>
+<p>Gets the conversion cycles (in number of clock cycles) of the channel in an ADC group. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adc</td><td>[IN] - Pointer to Adc_t object. </td></tr>
+    <tr><td class="paramname">adc</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> entity object. </td></tr>
     <tr><td class="paramname">channel_id</td><td>[IN] - Channel id. </td></tr>
-    <tr><td class="paramname">sample_time</td><td>[OUT] - Pointer to uint16_t. Sets to the sample_time of the channel in an ADC. </td></tr>
+    <tr><td class="paramname">conv_cycle</td><td>[OUT] - Pointer to uint32_t, stores the conv_cycle of the channel in an ADC. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Adc_t object or sample was PCF_NULL. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>adc</em>  or <em>conv_cycle</em>  is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga077ed86bb5fd6efeff0fa5227ef2910d">PCF_ADC_S_INVALID_ARG</a>  : Invalid Adc_t object or channel_id was passed. (Checked only in debug mode) </li>
+PCF_S_INVALID_ARG  : <em>adc</em>  or <em>channel_id</em>  is invalid. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
@@ -1139,7 +955,7 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_doSingleConversion </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const&#160;</td>
           <td class="paramname"><em>adc</em>, </td>
         </tr>
         <tr>
@@ -1160,27 +976,27 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
 <p>If continuous conversion is already started then the function will not do a conversion and return the relevant status.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adc</td><td>[IN] - Pointer to Adc_t object. </td></tr>
+    <tr><td class="paramname">adc</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> entity object. </td></tr>
     <tr><td class="paramname">group</td><td>[IN] - The group value can be Regular or Injected. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Adc_t object or sample was PCF_NULL. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>adc</em>  is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#gac1776a091ed1ba6b5aac2c0bbab1c4ad">PCF_ADC_S_BUSY</a>  : ADC is busy. </li>
+PCF_S_INVALID_ARG  : <em>adc</em>  or <em>group</em>  is invalid. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga077ed86bb5fd6efeff0fa5227ef2910d">PCF_ADC_S_INVALID_ARG</a>  : Invalid Adc_t object or group was passed. (Checked only in debug mode) </li>
+PCF_S_BUSY  : ADC is busy. </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga04ddf7d354a8211d64e1493a5574ed17" name="ga04ddf7d354a8211d64e1493a5574ed17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga04ddf7d354a8211d64e1493a5574ed17">&#9670;&#160;</a></span>pcf_Adc_startContinuousConversion()</h2>
+<a id="gaa036d19f3ec9153755f6548d99b18bf9" name="gaa036d19f3ec9153755f6548d99b18bf9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa036d19f3ec9153755f6548d99b18bf9">&#9670;&#160;</a></span>pcf_Adc_startContinuousConversion()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1188,14 +1004,20 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_startContinuousConversion </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const&#160;</td>
           <td class="paramname"><em>adc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga8bf81af52ba8205bf862e50e5428f1ed">EnAdcGroupType_t</a>&#160;</td>
-          <td class="paramname"><em>group</em>&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const EnPCFBoolean_t&#160;</td>
+          <td class="paramname"><em>start</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1205,81 +1027,33 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
       </table>
 </div><div class="memdoc">
 
-<p>Used to start continuous conversion of a particular ADC group. </p>
-<p><a class="el" href="group__pcf__mcal__peripherals__adc.html#gae59a17856c2b8120c8e8fd0979802c82">PCF_ADC_S_INVALID_OPERATION</a>  : (Checked only in debug mode)</p>
+<p>Start/Stop continuous conversion of a particular ADC group. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adc</td><td>[IN] - Pointer to Adc_t object. </td></tr>
+    <tr><td class="paramname">adc</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> entity object. </td></tr>
     <tr><td class="paramname">group</td><td>[IN] - The group value can be Regular or Injected. </td></tr>
+    <tr><td class="paramname">start</td><td>[IN] - <em>adc</em>  starts continous conversion if EnPCFBoolean_t <em>start</em>  is enPCFBoolean_True and stops continous conversion if enPCFBoolean_False </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Adc_t object was PCF_NULL. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>adc</em>  is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#gac1776a091ed1ba6b5aac2c0bbab1c4ad">PCF_ADC_S_BUSY</a>  : ADC is busy. </li>
+PCF_S_INVALID_ARG  : <em>adc</em>  or <em>group</em>  is invalid. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga077ed86bb5fd6efeff0fa5227ef2910d">PCF_ADC_S_INVALID_ARG</a>  : Invalid Adc_t object or group was passed. (Checked only in debug mode) </li>
+PCF_S_INVALID_OPERATION  : Value assign to the <em>group</em>  does not support continuous conversion. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#gae59a17856c2b8120c8e8fd0979802c82">PCF_ADC_S_INVALID_OPERATION</a>  : Value assign to the group does not support continuous conversion. </li>
+PCF_S_BUSY  : ADC is busy. </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="gabf2b99c6fd59327acd674f667bf65be6" name="gabf2b99c6fd59327acd674f667bf65be6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabf2b99c6fd59327acd674f667bf65be6">&#9670;&#160;</a></span>pcf_Adc_stopContinuousConversion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_stopContinuousConversion </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const&#160;</td>
-          <td class="paramname"><em>adc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga8bf81af52ba8205bf862e50e5428f1ed">EnAdcGroupType_t</a>&#160;</td>
-          <td class="paramname"><em>group</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Used to stop continuous conversion of a particular ADC group. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">adc</td><td>[IN] - Pointer to Adc_t object. </td></tr>
-    <tr><td class="paramname">group</td><td>[IN] - The group value can be Regular or Injected. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
-<li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
-<li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Adc_t object was PCF_NULL. (Checked only in debug mode) </li>
-<li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga077ed86bb5fd6efeff0fa5227ef2910d">PCF_ADC_S_INVALID_ARG</a>  : Invalid Adc_t object or group was passed. (Checked only in debug mode) </li>
-<li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#gae59a17856c2b8120c8e8fd0979802c82">PCF_ADC_S_INVALID_OPERATION</a>  : Value assign to the group does not support continuous conversion. </li>
-</ul>
-</dd></dl>
-
-</div>
-</div>
-<a id="ga894b1dfe352f49a602b388cad30dad26" name="ga894b1dfe352f49a602b388cad30dad26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga894b1dfe352f49a602b388cad30dad26">&#9670;&#160;</a></span>pcf_Adc_isRunning()</h2>
+<a id="ga7a70ca5ebe930073c951298f2bbf9380" name="ga7a70ca5ebe930073c951298f2bbf9380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7a70ca5ebe930073c951298f2bbf9380">&#9670;&#160;</a></span>pcf_Adc_isRunning()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1287,14 +1061,20 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_isRunning </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const&#160;</td>
           <td class="paramname"><em>adc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga8bf81af52ba8205bf862e50e5428f1ed">EnAdcGroupType_t</a>&#160;</td>
-          <td class="paramname"><em>group</em>&#160;</td>
+          <td class="paramname"><em>group</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EnPCFBoolean_t *const&#160;</td>
+          <td class="paramname"><em>isRunning</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1304,23 +1084,26 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
       </table>
 </div><div class="memdoc">
 
-<p>Used to check if continuous conversion is on for a ADC group. </p>
+<p>Checks if continuous conversion is on for an ADC group. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adc</td><td>[IN] - Pointer to Adc_t object. </td></tr>
+    <tr><td class="paramname">adc</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> entity object. </td></tr>
     <tr><td class="paramname">group</td><td>[IN] - The group </td></tr>
+    <tr><td class="paramname">isRunning</td><td>[OUT] - Pointer to EnPCFBoolean_t, stores the running status of adc is set to enPCFBoolean_True if adc is running else set to enPCFBoolean_False. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_YES  : Adc continuous conversion is ON. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Adc_t object was PCF_NULL. (Checked only in debug mode) </li>
+PCF_S_NO  : Adc continuous conversion is OFF. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga077ed86bb5fd6efeff0fa5227ef2910d">PCF_ADC_S_INVALID_ARG</a>  : Invalid Adc_t object or group was passed. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>adc</em>  is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#gae59a17856c2b8120c8e8fd0979802c82">PCF_ADC_S_INVALID_OPERATION</a>  : Value assign to the group is incorrect. </li>
+PCF_S_INVALID_ARG  : <em>adc</em>  or <em>group</em>  is invalid. (Checked only in debug mode) </li>
+<li>
+PCF_S_INVALID_OPERATION  : Value assign to the <em>group</em>  does not support continuous conversion. </li>
 </ul>
 </dd></dl>
 
@@ -1335,7 +1118,7 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_getValue </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const&#160;</td>
           <td class="paramname"><em>adc</em>, </td>
         </tr>
         <tr>
@@ -1358,22 +1141,22 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
       </table>
 </div><div class="memdoc">
 
-<p>Read the converted output value of a particular ADC channel. </p>
+<p>Gets the converted output value of a particular ADC channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adc</td><td>[IN] - Pointer to Adc_t object. </td></tr>
-    <tr><td class="paramname">channel_id</td><td>[IN] - channel_id </td></tr>
-    <tr><td class="paramname">data</td><td>[OUT] - output data </td></tr>
+    <tr><td class="paramname">adc</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> entity object. </td></tr>
+    <tr><td class="paramname">channel_id</td><td>[IN] - Channel id. </td></tr>
+    <tr><td class="paramname">data</td><td>[OUT] - Pointer to <a class="el" href="struct_adc_data__t.html" title="ADC data.">AdcData_t</a>, stores the output data with the time stamp. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Adc_t object was PCF_NULL. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>adc</em>  or &lt;paramref name="data"&gt; is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga077ed86bb5fd6efeff0fa5227ef2910d">PCF_ADC_S_INVALID_ARG</a>  : Invalid Adc_t object or channel_id was passed. (Checked only in debug mode) </li>
+PCF_S_INVALID_ARG  : <em>adc</em>  or <em>channel_id</em>  is invalid. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
@@ -1388,7 +1171,7 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_getVoltage </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const&#160;</td>
           <td class="paramname"><em>adc</em>, </td>
         </tr>
         <tr>
@@ -1411,29 +1194,29 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
       </table>
 </div><div class="memdoc">
 
-<p>Read the voltage value in mv of a particular ADC channel. </p>
+<p>Gets the voltage value in mv of a particular ADC channel. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adc</td><td>[IN] - Pointer to Adc_t object. </td></tr>
+    <tr><td class="paramname">adc</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> entity object. </td></tr>
     <tr><td class="paramname">channel_id</td><td>[IN] - channel_id </td></tr>
-    <tr><td class="paramname">millivolt</td><td>[OUT] - Pointer to output data in millivolt. </td></tr>
+    <tr><td class="paramname">millivolt</td><td>[OUT] - Pointer to <a class="el" href="struct_adc_data__t.html" title="ADC data.">AdcData_t</a>, stores the output data in millivolt with the time stamp. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Adc_t object was PCF_NULL. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>adc</em>  or &lt;paramref name="millivolt"&gt; is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga077ed86bb5fd6efeff0fa5227ef2910d">PCF_ADC_S_INVALID_ARG</a>  : Invalid Adc_t object or channel_id was passed. (Checked only in debug mode) </li>
+PCF_S_INVALID_ARG  : <em>adc</em>  or <em>channel_id</em>  is invalid. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga0cde62c65495ff8fb57bfcef832137a6" name="ga0cde62c65495ff8fb57bfcef832137a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0cde62c65495ff8fb57bfcef832137a6">&#9670;&#160;</a></span>pcf_Adc_getReferenceVoltage()</h2>
+<a id="ga956a380fec319325b55cc3c44a1b41e4" name="ga956a380fec319325b55cc3c44a1b41e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga956a380fec319325b55cc3c44a1b41e4">&#9670;&#160;</a></span>pcf_Adc_getReferenceVoltage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1441,13 +1224,13 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_getReferenceVoltage </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const&#160;</td>
           <td class="paramname"><em>adc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramtype">uint32_t *const&#160;</td>
           <td class="paramname"><em>millivolt</em>&#160;</td>
         </tr>
         <tr>
@@ -1458,28 +1241,28 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
       </table>
 </div><div class="memdoc">
 
-<p>Read the reference voltage value in mv of a particular ADC, set during creation. </p>
+<p>Gets the reference voltage value in milivolt of a particular ADC, set during creation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adc</td><td>[IN] - Pointer to Adc_t object. </td></tr>
-    <tr><td class="paramname">millivolt</td><td>[OUT] - Pointer to reference voltage in millivolt. </td></tr>
+    <tr><td class="paramname">adc</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> entity object. </td></tr>
+    <tr><td class="paramname">millivolt</td><td>[OUT] - Pointer to uint32_t, stores the reference voltage in millivolt. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Adc_t object or millivolt was PCF_NULL. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>adc</em>  or &lt;paramref name="millivolt"&gt; is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga077ed86bb5fd6efeff0fa5227ef2910d">PCF_ADC_S_INVALID_ARG</a>  : Invalid Adc_t object was passed. (Checked only in debug mode) </li>
+PCF_S_INVALID_ARG  : <em>adc</em>  is invalid. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="gada21f88d75a56f101a59b6b465da3645" name="gada21f88d75a56f101a59b6b465da3645"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gada21f88d75a56f101a59b6b465da3645">&#9670;&#160;</a></span>pcf_Adc_getResolution()</h2>
+<a id="gaa533dd7bb842da1ee3ad362f23982de5" name="gaa533dd7bb842da1ee3ad362f23982de5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa533dd7bb842da1ee3ad362f23982de5">&#9670;&#160;</a></span>pcf_Adc_getResolution()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1487,13 +1270,13 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_getResolution </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const&#160;</td>
           <td class="paramname"><em>adc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramtype">uint8_t *const&#160;</td>
           <td class="paramname"><em>resolution</em>&#160;</td>
         </tr>
         <tr>
@@ -1504,28 +1287,28 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
       </table>
 </div><div class="memdoc">
 
-<p>Read the resolution of the ADC, set during creation of Adc_t object. </p>
+<p>Gets the resolution of the ADC, set during creation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adc</td><td>[IN] - Pointer to Adc_t object. </td></tr>
-    <tr><td class="paramname">resolution</td><td>[OUT] - Pointer to resolution of the ADC in bits. </td></tr>
+    <tr><td class="paramname">adc</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> entity object. </td></tr>
+    <tr><td class="paramname">resolution</td><td>[OUT] - Pointer to uint8_t, stores the resolution of the ADC in bits. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Adc_t object or resolution was PCF_NULL. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>adc</em>  or &lt;paramref name="resolution"&gt; is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga077ed86bb5fd6efeff0fa5227ef2910d">PCF_ADC_S_INVALID_ARG</a>  : Invalid Adc_t object was passed. (Checked only in debug mode) </li>
+PCF_S_INVALID_ARG  : <em>adc</em>  is invalid. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga830281edce587a773549457187c3ea55" name="ga830281edce587a773549457187c3ea55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga830281edce587a773549457187c3ea55">&#9670;&#160;</a></span>pcf_Adc_getMaxValue()</h2>
+<a id="ga865f53cb0add0f6871d8c6f93bccc225" name="ga865f53cb0add0f6871d8c6f93bccc225"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga865f53cb0add0f6871d8c6f93bccc225">&#9670;&#160;</a></span>pcf_Adc_getMaxValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1533,13 +1316,13 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_getMaxValue </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const&#160;</td>
           <td class="paramname"><em>adc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramtype">uint32_t *const&#160;</td>
           <td class="paramname"><em>max</em>&#160;</td>
         </tr>
         <tr>
@@ -1550,28 +1333,28 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
       </table>
 </div><div class="memdoc">
 
-<p>Read the maximum value that can be read by the ADC. </p>
+<p>Gets the maximum value that can be read by the ADC. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adc</td><td>[IN] - Pointer to Adc_t object. </td></tr>
-    <tr><td class="paramname">max</td><td>[OUT] - Pointer to max value. </td></tr>
+    <tr><td class="paramname">adc</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> entity object. </td></tr>
+    <tr><td class="paramname">max</td><td>[OUT] - Pointer to uint32_t, stores the max value. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Adc_t object or max was PCF_NULL. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>adc</em>  or &lt;paramref name="max"&gt; is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga077ed86bb5fd6efeff0fa5227ef2910d">PCF_ADC_S_INVALID_ARG</a>  : Invalid Adc_t object was passed. (Checked only in debug mode) </li>
+PCF_S_INVALID_ARG  : <em>adc</em>  is invalid. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga48bca8ffc06c506508fe6fd3484c7338" name="ga48bca8ffc06c506508fe6fd3484c7338"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga48bca8ffc06c506508fe6fd3484c7338">&#9670;&#160;</a></span>pcf_Adc_getClockFrequency()</h2>
+<a id="ga1de096f4448881aa326202690ede60a1" name="ga1de096f4448881aa326202690ede60a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1de096f4448881aa326202690ede60a1">&#9670;&#160;</a></span>pcf_Adc_getClockFrequency()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1579,13 +1362,13 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_getClockFrequency </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *const&#160;</td>
           <td class="paramname"><em>adc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_frequency__t.html">Frequency_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_frequency__t.html">Frequency_t</a> *const&#160;</td>
           <td class="paramname"><em>frequency</em>&#160;</td>
         </tr>
         <tr>
@@ -1596,22 +1379,22 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
       </table>
 </div><div class="memdoc">
 
-<p>Read the ADC clock frequency. </p>
+<p>Gets the ADC clock frequency. </p>
 <p>This may be different from the value configured by the user.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adc</td><td>[IN] - Pointer to Adc_t object. </td></tr>
-    <tr><td class="paramname">freuency</td><td>[OUT] - ADC Clock Frequency </td></tr>
+    <tr><td class="paramname">adc</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> entity object. </td></tr>
+    <tr><td class="paramname">frequency</td><td>[OUT] - Pointer to <a class="el" href="struct_frequency__t.html" title="MCU frequency struct.">Frequency_t</a>, stores the ADC Clock Frequency </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Adc_t object or max was PCF_NULL. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>adc</em>  or &lt;paramref name="frequency"&gt; is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga077ed86bb5fd6efeff0fa5227ef2910d">PCF_ADC_S_INVALID_ARG</a>  : Invalid Adc_t object was passed. (Checked only in debug mode) </li>
+PCF_S_INVALID_ARG  : <em>adc</em>  is invalid. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
@@ -1626,7 +1409,7 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Adc_customCommand </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga75cbe5b529f3640224dbb33852fc818e">Adc_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d">Adc_t</a> *&#160;</td>
           <td class="paramname"><em>adc</em>, </td>
         </tr>
         <tr>
@@ -1649,24 +1432,125 @@ PCF_ADC_S_NO  : Adc is OFF. </li>
       </table>
 </div><div class="memdoc">
 
-<p>This function is used to implement custom commands for hardware specific implementation. </p>
+<p>Can be used to extend the functionality provided by the ADC package item. </p>
+<dl class="section note"><dt>Note</dt><dd>Refer to platform specific implementation header file (if they exists) under pcf/peripherals/adc/&lt;platform specific path&gt;/commands for more details.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">adc</td><td>[IN] - Pointer to Adc device structure. </td></tr>
+    <tr><td class="paramname">adc</td><td>- Pointer to <a class="el" href="group__pcf__mcal__peripherals__adc.html#ga79a54c713fdc1096d5d7eb2793d9e64d" title="Adc Entity object.">Adc_t</a> entity object </td></tr>
+    <tr><td class="paramname">command</td><td>- The custom command to send. </td></tr>
+    <tr><td class="paramname">data</td><td>- The data associated with the custom command. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga107a6aead1457d29ac03ea98afd4cf51">PCF_ADC_S_SUCCESS</a>  : Successful operation. </li>
-<li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga6c590c5a6e6bf7be82464f3388a6de19">PCF_ADC_S_NULL_ARG</a>  : Adc_t object or max was PCF_NULL. (Checked only in debug mode) </li>
-<li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga077ed86bb5fd6efeff0fa5227ef2910d">PCF_ADC_S_INVALID_ARG</a>  : Invalid Adc_t object was passed. (Checked only in debug mode) </li>
-<li>
-<a class="el" href="group__pcf__mcal__peripherals__adc.html#ga86ffeab5ee5e88e0fccba9f39ae08d07">PCF_ADC_S_NOT_IMPLEMENTED</a>  : Not implemented for the specific uC. </li>
+PCF_S_NOT_IMPLEMENTED : The function is not implemented. </li>
 </ul>
 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="gadb0a5fc204e924c54dcaef288b881e82" name="gadb0a5fc204e924c54dcaef288b881e82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadb0a5fc204e924c54dcaef288b881e82">&#9670;&#160;</a></span>value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t AdcData_t::value</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae594e53312ca359b955f018a99b10317" name="gae594e53312ca359b955f018a99b10317"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae594e53312ca359b955f018a99b10317">&#9670;&#160;</a></span>timeStamp_ms</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t AdcData_t::timeStamp_ms</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga66176adb7f7bdbfea2ec4292f4aa8ae1" name="ga66176adb7f7bdbfea2ec4292f4aa8ae1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga66176adb7f7bdbfea2ec4292f4aa8ae1">&#9670;&#160;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t AdcConfig_t::id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adc Id. Refer to native defs.h file for appropriate adc id </p>
+
+</div>
+</div>
+<a id="ga3ef153c5b23b82649ce7b5a665617976" name="ga3ef153c5b23b82649ce7b5a665617976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3ef153c5b23b82649ce7b5a665617976">&#9670;&#160;</a></span>referenceVoltage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t AdcConfig_t::referenceVoltage</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adc reference voltage in millivolt </p>
+
+</div>
+</div>
+<a id="ga8183298baa05f400afbf46c652c1a51b" name="ga8183298baa05f400afbf46c652c1a51b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8183298baa05f400afbf46c652c1a51b">&#9670;&#160;</a></span>resolution</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t AdcConfig_t::resolution</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The resolution of the ADC. (ADC width in number of bits) </p>
+
+</div>
+</div>
+<a id="ga068403db2449283d9a5034ef94c3ab83" name="ga068403db2449283d9a5034ef94c3ab83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga068403db2449283d9a5034ef94c3ab83">&#9670;&#160;</a></span>frequency</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Frequencyu32_t AdcConfig_t::frequency</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The freuency of the ADC clock. The actual value set may be different from the value provided by user The value set can be read by calling pcf_Adc_getClockFrequency </p>
+
+</div>
+</div>
+<a id="ga8aa0293aed9c5681889092b852c17176" name="ga8aa0293aed9c5681889092b852c17176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8aa0293aed9c5681889092b852c17176">&#9670;&#160;</a></span>hardwareCfg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcf_generic_t AdcConfig_t::hardwareCfg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Hardware platform specific configuration. Refer to native types.h file. </p>
 
 </div>
 </div>

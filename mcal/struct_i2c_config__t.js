@@ -1,13 +1,12 @@
 var struct_i2c_config__t =
 [
-    [ "id", "struct_i2c_config__t.html#a529397d7a798fee26f1872ec238f0041", null ],
-    [ "baudrate", "struct_i2c_config__t.html#ab9112274d274b9da9211e70f7a500fc1", null ],
-    [ "addressType", "struct_i2c_config__t.html#a2bbace4037550379597e998a7f582529", null ],
-    [ "ownAddress", "struct_i2c_config__t.html#a0ac759f54ef1325767a83a9bbdbed790", null ],
-    [ "example", "struct_i2c_config__t.html#a4c2bf3237a7f3e343d55ce2494d0b4c1", null ],
-    [ "example", "struct_i2c_config__t.html#aa43785657bbb4d0abd13a5e83e6f4a4f", null ],
-    [ "device", "struct_i2c_config__t.html#aab0abd2068f2f4498d99d876330bd944", null ],
-    [ "generalCallEnable", "struct_i2c_config__t.html#ad26cda81c85636e329f50e76b39f3fa9", null ],
-    [ "rxBufferSize", "struct_i2c_config__t.html#a83c1b4d96b448bebf118dfd6d256f06a", null ],
-    [ "hardwareCfg", "struct_i2c_config__t.html#a9498a15da28e192fa52bd5eba501befa", null ]
+    [ "id", "group__pcf__mcal__peripherals__i2c.html#ga529397d7a798fee26f1872ec238f0041", null ],
+    [ "baudrate", "group__pcf__mcal__peripherals__i2c.html#gab9112274d274b9da9211e70f7a500fc1", null ],
+    [ "addressType", "group__pcf__mcal__peripherals__i2c.html#ga2bbace4037550379597e998a7f582529", null ],
+    [ "ownAddress", "group__pcf__mcal__peripherals__i2c.html#ga0ac759f54ef1325767a83a9bbdbed790", null ],
+    [ "ownAddressMask", "group__pcf__mcal__peripherals__i2c.html#ga3785e7bc0bf5e4b4181c5df242e3d702", null ],
+    [ "generalCallEnable", "group__pcf__mcal__peripherals__i2c.html#gafaebbfc2e6dfa1c3ee12df6d458d2f7e", null ],
+    [ "txBufferSize", "group__pcf__mcal__peripherals__i2c.html#gafe7f46a24307e2f158bc087f2082311b", null ],
+    [ "rxBufferSize", "group__pcf__mcal__peripherals__i2c.html#gae80263dd6717b8b5a43094f5d8f56e7a", null ],
+    [ "hardwareCfg", "group__pcf__mcal__peripherals__i2c.html#ga3c0e1653d9895946855bcb907db0a252", null ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['spi_5ft_0',['Spi_t',['../group__pcf__mcal__peripherals__spi.html#ga15afdb4cfb77570bcf3ad39d68d72354',1,'types.h']]]
+  ['qei_5ft_0',['Qei_t',['../group__pcf__mcal__peripherals__qei.html#gacce657c469c853342f25c7881ea895fe',1,'types.h']]]
 ];

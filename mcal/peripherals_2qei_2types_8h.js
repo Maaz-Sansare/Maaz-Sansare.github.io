@@ -1,6 +1,6 @@
 var peripherals_2qei_2types_8h =
 [
-    [ "Qei_t", "group__pcf__mcal__peripherals__qei.html#gad2709151680338340233b62da3cc7947", null ],
+    [ "Qei_t", "group__pcf__mcal__peripherals__qei.html#gacce657c469c853342f25c7881ea895fe", null ],
     [ "EnQeiEncoding_t", "group__pcf__mcal__peripherals__qei.html#ga3f0f48416ea1279194798bfe13914fcf", [
       [ "enQeiEncoding_2x", "group__pcf__mcal__peripherals__qei.html#gga3f0f48416ea1279194798bfe13914fcfa95c7e1617b3a1c9e49b02554665f69e7", null ],
       [ "enQeiEncoding_4x", "group__pcf__mcal__peripherals__qei.html#gga3f0f48416ea1279194798bfe13914fcfa4466adf192b785e100c97ea5ccade5f3", null ],

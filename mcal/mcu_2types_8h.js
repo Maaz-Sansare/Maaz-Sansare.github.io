@@ -1,10 +1,14 @@
 var mcu_2types_8h =
 [
-    [ "EnFrequencyUnit_t", "group__pcf__mcal__mcu.html#ga8113bc5673a34eb212104582dd203846", [
-      [ "enFrequencyUnit_Hz", "group__pcf__mcal__mcu.html#gga8113bc5673a34eb212104582dd203846aa47b752a492bf3ebd20b1c632c1e8056", null ],
-      [ "enFrequencyUnit_KHz", "group__pcf__mcal__mcu.html#gga8113bc5673a34eb212104582dd203846aba0308ecc3b9b29e44bd1adc1f1d9a2b", null ],
-      [ "enFrequencyUnit_MHz", "group__pcf__mcal__mcu.html#gga8113bc5673a34eb212104582dd203846a7da22597d08717e80c569fd9e1d0c922", null ],
-      [ "enFrequencyUnit_GHz", "group__pcf__mcal__mcu.html#gga8113bc5673a34eb212104582dd203846a0ed220b79416ae678b27498ab448d45a", null ]
+    [ "McuCallback_fp", "group__pcf__mcal__mcu.html#ga57976ad1c4d7cc739dbfa87a4b35c02b", null ],
+    [ "EnMcuPowerMode_t", "group__pcf__mcal__mcu.html#ga800e3854b73ffe026d1d3376deae428d", [
+      [ "enMcuPowerMode_Sleep", "group__pcf__mcal__mcu.html#gga800e3854b73ffe026d1d3376deae428da14a36d31199f959ddb1261a2e4674dce", null ],
+      [ "enMcuPowerMode_DeepSleep", "group__pcf__mcal__mcu.html#gga800e3854b73ffe026d1d3376deae428da779db8c69b5e8ad84c94b6c379849bd6", null ],
+      [ "enMcuPowerMode_StandBy", "group__pcf__mcal__mcu.html#gga800e3854b73ffe026d1d3376deae428da2b23adea7681abfc5bad89f76265bd9c", null ]
+    ] ],
+    [ "EnMcuWaitFor_t", "group__pcf__mcal__mcu.html#ga19b3ba1caedf7343bd7a30f0ae8bf592", [
+      [ "EnMcuWaitFor_Event", "group__pcf__mcal__mcu.html#gga19b3ba1caedf7343bd7a30f0ae8bf592a4488ecd7e948de24774b4361824dfc65", null ],
+      [ "EnMcuWaitFor_Interrupt", "group__pcf__mcal__mcu.html#gga19b3ba1caedf7343bd7a30f0ae8bf592a36a6e49dadc3a77cbc10f3365aae7adb", null ]
     ] ],
     [ "EnMcuClkSource_t", "group__pcf__mcal__mcu.html#gad2e9518488912c3373654ad2a5d97529", [
       [ "enMcuClkSource_Internal", "group__pcf__mcal__mcu.html#ggad2e9518488912c3373654ad2a5d97529a64ea533ddbbfa8747bcf8583b7f5da75", null ],

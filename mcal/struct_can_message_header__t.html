@@ -91,38 +91,30 @@ $(document).ready(function(){initNavTree('struct_can_message_header__t.html','')
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
-  <div class="headertitle"><div class="title">CanMessageHeader_t Struct Reference</div></div>
+  <div class="headertitle"><div class="title">CanMessageHeader_t Struct Reference<div class="ingroups"><a class="el" href="group__pcf__mcal.html">Mcal</a> &raquo; <a class="el" href="group__pcf__mcal__peripherals.html">Peripherals</a> &raquo; <a class="el" href="group__pcf__mcal__peripherals__can.html">CAN</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>CAN message header structure///.  
+<p>CAN message header structure.  
  <a href="struct_can_message_header__t.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="peripherals_2can_2types_8h_source.html">types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ae1045ffbfb9e279f848400a386a859fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="peripherals_2can_2types_8h.html#ab84c96ce766c9190fde17697f8314e8b">EnCanFrameFormat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_message_header__t.html#ae1045ffbfb9e279f848400a386a859fd">frameFormat</a></td></tr>
-<tr class="memdesc:ae1045ffbfb9e279f848400a386a859fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enum describes identifier frame format ///.  <br /></td></tr>
+<tr class="memitem:ae1045ffbfb9e279f848400a386a859fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__pcf__mcal__peripherals__can.html#gab84c96ce766c9190fde17697f8314e8b">EnCanFrameFormat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_message_header__t.html#ae1045ffbfb9e279f848400a386a859fd">frameFormat</a></td></tr>
 <tr class="separator:ae1045ffbfb9e279f848400a386a859fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a758f99d3428bf840670a344a2f68c33c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="peripherals_2can_2types_8h.html#a4ffb679dc6bf42351adf6fd216620028">canId_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_message_header__t.html#a758f99d3428bf840670a344a2f68c33c">id</a></td></tr>
-<tr class="memdesc:a758f99d3428bf840670a344a2f68c33c"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAN identifier value, it depends on "EnCanFrameFormat_t" value.  <br /></td></tr>
+<tr class="memitem:a758f99d3428bf840670a344a2f68c33c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__pcf__mcal__peripherals__can.html#ga4ffb679dc6bf42351adf6fd216620028">canId_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_message_header__t.html#a758f99d3428bf840670a344a2f68c33c">id</a></td></tr>
 <tr class="separator:a758f99d3428bf840670a344a2f68c33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a220ecee367d19aea4ac7517f20dc6907"><td class="memItemLeft" align="right" valign="top">for&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_message_header__t.html#a220ecee367d19aea4ac7517f20dc6907">enCanFrameFormat_Standard</a></td></tr>
-<tr class="separator:a220ecee367d19aea4ac7517f20dc6907"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33af9d8ac2d095ac8ff8e7f4a02340a6"><td class="memItemLeft" align="right" valign="top">for bit identifier for&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_message_header__t.html#a33af9d8ac2d095ac8ff8e7f4a02340a6">enCanFrameFormat_Extended</a></td></tr>
-<tr class="separator:a33af9d8ac2d095ac8ff8e7f4a02340a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a642ce414e703ce8bc156f863c69c0f97"><td class="memItemLeft" align="right" valign="top">for bit identifier for bit identifier&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_message_header__t.html#a642ce414e703ce8bc156f863c69c0f97">Note</a>: Donot misinterprete term '<a class="el" href="struct_can_message_header__t.html#a758f99d3428bf840670a344a2f68c33c">id</a>' with Id from <a class="el" href="struct_can_config__t.html">CanConfig_t</a></td></tr>
-<tr class="separator:a642ce414e703ce8bc156f863c69c0f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a1a6dfd9d48782660535ba938b3f1c3"><td class="memItemLeft" align="right" valign="top">for bit identifier for bit identifier here <a class="el" href="struct_can_message_header__t.html#a758f99d3428bf840670a344a2f68c33c">id</a> represents arbitration identifier which is part of CAN bus frame <a class="el" href="peripherals_2can_2types_8h.html#a5fce28cf1c8844d4b27f6898480f1a2a">EnCanFrameType_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_message_header__t.html#a1a1a6dfd9d48782660535ba938b3f1c3">frameType</a></td></tr>
-<tr class="memdesc:a1a1a6dfd9d48782660535ba938b3f1c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enum describes the type of the CAN frame ///.  <br /></td></tr>
-<tr class="separator:a1a1a6dfd9d48782660535ba938b3f1c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a18a06f08f0d96824801a2c1082de40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="peripherals_2can_2types_8h.html#a7c4dcc7493db571360d069abc98b9507">EnCanDataLength_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_message_header__t.html#a0a18a06f08f0d96824801a2c1082de40">length</a></td></tr>
-<tr class="memdesc:a0a18a06f08f0d96824801a2c1082de40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of data field in bytes, ///.  <br /></td></tr>
+<tr class="memitem:a49c2539e09e1a65be8115c02267d31c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__pcf__mcal__peripherals__can.html#ga5fce28cf1c8844d4b27f6898480f1a2a">EnCanFrameType_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_message_header__t.html#a49c2539e09e1a65be8115c02267d31c0">frameType</a></td></tr>
+<tr class="separator:a49c2539e09e1a65be8115c02267d31c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a18a06f08f0d96824801a2c1082de40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__pcf__mcal__peripherals__can.html#ga7c4dcc7493db571360d069abc98b9507">EnCanDataLength_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_can_message_header__t.html#a0a18a06f08f0d96824801a2c1082de40">length</a></td></tr>
 <tr class="separator:a0a18a06f08f0d96824801a2c1082de40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>CAN message header structure///. </p>
+<div class="textblock"><p>CAN message header structure. </p>
+<p><br  />
+ </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="ae1045ffbfb9e279f848400a386a859fd" name="ae1045ffbfb9e279f848400a386a859fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae1045ffbfb9e279f848400a386a859fd">&#9670;&#160;</a></span>frameFormat</h2>
@@ -131,12 +123,12 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="peripherals_2can_2types_8h.html#ab84c96ce766c9190fde17697f8314e8b">EnCanFrameFormat_t</a> CanMessageHeader_t::frameFormat</td>
+          <td class="memname"><a class="el" href="group__pcf__mcal__peripherals__can.html#gab84c96ce766c9190fde17697f8314e8b">EnCanFrameFormat_t</a> CanMessageHeader_t::frameFormat</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>This enum describes identifier frame format ///. </p>
+<p>This enum describes identifier frame format <br  />
+ </p>
 
 </div>
 </div>
@@ -147,70 +139,30 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="peripherals_2can_2types_8h.html#a4ffb679dc6bf42351adf6fd216620028">canId_t</a> CanMessageHeader_t::id</td>
+          <td class="memname"><a class="el" href="group__pcf__mcal__peripherals__can.html#ga4ffb679dc6bf42351adf6fd216620028">canId_t</a> CanMessageHeader_t::id</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>CAN identifier value, it depends on "EnCanFrameFormat_t" value. </p>
+<p>CAN identifier value, it depends on "EnCanFrameFormat_t" value</p><ul>
+<li>for enCanFrameFormat_Standard, 11 bit identifier</li>
+<li>for enCanFrameFormat_Extended, 29 bit identifier Note: Donot misinterprete term 'id' with Id from <a class="el" href="struct_can_config__t.html" title="Can configuration structure.">CanConfig_t</a>, here id represents arbitration identifier which is part of CAN bus frame. <br  />
+ </li>
+</ul>
 
 </div>
 </div>
-<a id="a220ecee367d19aea4ac7517f20dc6907" name="a220ecee367d19aea4ac7517f20dc6907"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a220ecee367d19aea4ac7517f20dc6907">&#9670;&#160;</a></span>enCanFrameFormat_Standard</h2>
+<a id="a49c2539e09e1a65be8115c02267d31c0" name="a49c2539e09e1a65be8115c02267d31c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49c2539e09e1a65be8115c02267d31c0">&#9670;&#160;</a></span>frameType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">for CanMessageHeader_t::enCanFrameFormat_Standard</td>
+          <td class="memname"><a class="el" href="group__pcf__mcal__peripherals__can.html#ga5fce28cf1c8844d4b27f6898480f1a2a">EnCanFrameType_t</a> CanMessageHeader_t::frameType</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a33af9d8ac2d095ac8ff8e7f4a02340a6" name="a33af9d8ac2d095ac8ff8e7f4a02340a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33af9d8ac2d095ac8ff8e7f4a02340a6">&#9670;&#160;</a></span>enCanFrameFormat_Extended</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">for bit identifier for CanMessageHeader_t::enCanFrameFormat_Extended</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a642ce414e703ce8bc156f863c69c0f97" name="a642ce414e703ce8bc156f863c69c0f97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a642ce414e703ce8bc156f863c69c0f97">&#9670;&#160;</a></span>Note</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">for bit identifier for bit identifier CanMessageHeader_t::Note</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1a1a6dfd9d48782660535ba938b3f1c3" name="a1a1a6dfd9d48782660535ba938b3f1c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a1a6dfd9d48782660535ba938b3f1c3">&#9670;&#160;</a></span>frameType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">for bit identifier for bit identifier here <a class="el" href="struct_can_message_header__t.html#a758f99d3428bf840670a344a2f68c33c">id</a> represents arbitration identifier which is part of CAN bus frame <a class="el" href="peripherals_2can_2types_8h.html#a5fce28cf1c8844d4b27f6898480f1a2a">EnCanFrameType_t</a> CanMessageHeader_t::frameType</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This enum describes the type of the CAN frame ///. </p>
+<p>This enum describes the type of the CAN frame </p>
 
 </div>
 </div>
@@ -221,12 +173,12 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="peripherals_2can_2types_8h.html#a7c4dcc7493db571360d069abc98b9507">EnCanDataLength_t</a> CanMessageHeader_t::length</td>
+          <td class="memname"><a class="el" href="group__pcf__mcal__peripherals__can.html#ga7c4dcc7493db571360d069abc98b9507">EnCanDataLength_t</a> CanMessageHeader_t::length</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Length of data field in bytes, ///. </p>
+<p>Length of data field in bytes, <br  />
+ </p>
 
 </div>
 </div>

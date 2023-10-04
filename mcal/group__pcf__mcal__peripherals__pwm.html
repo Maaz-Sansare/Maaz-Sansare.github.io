@@ -92,12 +92,15 @@ $(document).ready(function(){initNavTree('group__pcf__mcal__peripherals__pwm.htm
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#enumval-members">Enumerator</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">PWM<div class="ingroups"><a class="el" href="group__pcf__mcal.html">Mcal</a> &raquo; <a class="el" href="group__pcf__mcal__peripherals.html">Peripherals</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>PWM refers to Pulse-Width Modulation is a technique used to generate analog-like signals by varying the duty cycle of digital pulses.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -107,112 +110,72 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga593f7cc6a94c7dc351f121c01801e49b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>&#160;&#160;&#160;(9)</td></tr>
-<tr class="memdesc:ga593f7cc6a94c7dc351f121c01801e49b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Item ID of PWM Entity within Mcal Package.  <br /></td></tr>
-<tr class="separator:ga593f7cc6a94c7dc351f121c01801e49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1107a8f042c47496c0bf6beff5dcdd14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga1107a8f042c47496c0bf6beff5dcdd14">PCF_PWM_ENTITY_TYPE</a>&#160;&#160;&#160;(0x4F4D5750)</td></tr>
 <tr class="memdesc:ga1107a8f042c47496c0bf6beff5dcdd14"><td class="mdescLeft">&#160;</td><td class="mdescRight">The following defines the EntityType_t.id for PWM Entities.  <br /></td></tr>
 <tr class="separator:ga1107a8f042c47496c0bf6beff5dcdd14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8a2bcdb1918b06d183927afa2168ea0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga8a2bcdb1918b06d183927afa2168ea0a">PCF_PWM_S_SUCCESS</a>&#160;&#160;&#160;GENERATE_PCF_STATUS_SUCCESS(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td></tr>
-<tr class="separator:ga8a2bcdb1918b06d183927afa2168ea0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3ecb38338211c4334e9f79279a311504"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3ecb38338211c4334e9f79279a311504">PCF_PWM_S_YES</a>&#160;&#160;&#160;GENERATE_PCF_STATUS_YES(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td></tr>
-<tr class="separator:ga3ecb38338211c4334e9f79279a311504"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9639c88455921589632f57828f6bcbb6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga9639c88455921589632f57828f6bcbb6">PCF_PWM_S_NO</a>&#160;&#160;&#160;GENERATE_PCF_STATUS_NO(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td></tr>
-<tr class="separator:ga9639c88455921589632f57828f6bcbb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad52f14dad77373a180e33bbe119ee933"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#gad52f14dad77373a180e33bbe119ee933">PCF_PWM_S_FATAL_ERROR</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_FATAL(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td></tr>
-<tr class="separator:gad52f14dad77373a180e33bbe119ee933"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1b034d6d3e1de43bf4ed909613444f0f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga1b034d6d3e1de43bf4ed909613444f0f">PCF_PWM_S_INTERNAL_ERROR</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_INTERNAL_ERROR(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td></tr>
-<tr class="separator:ga1b034d6d3e1de43bf4ed909613444f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4b5eea7ed70f92b172aa9082868c30a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga4b5eea7ed70f92b172aa9082868c30a7">PCF_PWM_S_INVALID_ARG</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_INVALID_ARG(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td></tr>
-<tr class="separator:ga4b5eea7ed70f92b172aa9082868c30a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga64ec654e6b6916abb5bee1b5dd2182b9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga64ec654e6b6916abb5bee1b5dd2182b9">PCF_PWM_S_NULL_ARG</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NULL_ARG(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td></tr>
-<tr class="separator:ga64ec654e6b6916abb5bee1b5dd2182b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1f7077e1e098f9e214e00fb46a700bdb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga1f7077e1e098f9e214e00fb46a700bdb">PCF_PWM_S_NOT_IMPLEMENTED</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_IMPLEMENTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td></tr>
-<tr class="separator:ga1f7077e1e098f9e214e00fb46a700bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1f7077e1e098f9e214e00fb46a700bdb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga1f7077e1e098f9e214e00fb46a700bdb">PCF_PWM_S_NOT_IMPLEMENTED</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_IMPLEMENTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td></tr>
-<tr class="separator:ga1f7077e1e098f9e214e00fb46a700bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafff0d8d88304126684cc50e652028944"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#gafff0d8d88304126684cc50e652028944">PCF_PWM_S_NOT_CONFIGURED</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_CONFIGURED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td></tr>
-<tr class="separator:gafff0d8d88304126684cc50e652028944"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacd256d9f13712016b8f83d8cf7962324"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#gacd256d9f13712016b8f83d8cf7962324">PCF_PWM_S_ALREADY_IN_USE</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_ALREADY_IN_USE(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td></tr>
-<tr class="separator:gacd256d9f13712016b8f83d8cf7962324"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4c5fa8617ab5c39dccdb88fd5c6c47a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga4c5fa8617ab5c39dccdb88fd5c6c47a5">PCF_PWM_S_NOT_SUPPORTED</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_SUPPORTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td></tr>
-<tr class="separator:ga4c5fa8617ab5c39dccdb88fd5c6c47a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4d369bd37f589ec1b2fdeb6b01d00351"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga4d369bd37f589ec1b2fdeb6b01d00351">PCF_PWM_S_ERROR</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_BASE_UCODE(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td></tr>
-<tr class="separator:ga4d369bd37f589ec1b2fdeb6b01d00351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gabd5ee3ae51fccaa48cc9f6489e967bb5"><td class="memItemLeft" align="right" valign="top">typedef struct _pcf_peripheral_pwm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#gabd5ee3ae51fccaa48cc9f6489e967bb5">Pwm_t</a></td></tr>
-<tr class="memdesc:gabd5ee3ae51fccaa48cc9f6489e967bb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWM Entity Object.  <br /></td></tr>
-<tr class="separator:gabd5ee3ae51fccaa48cc9f6489e967bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga4cecdd011e3ce39e407f2ca5909f753a"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga4cecdd011e3ce39e407f2ca5909f753a">pcf_Pwm_getEntityType</a> (EntityType_t *const entity_type)</td></tr>
+<tr class="memdesc:ga4cecdd011e3ce39e407f2ca5909f753a"><td class="mdescLeft">&#160;</td><td class="mdescRight">It is a class static function which returns EntityType_t  <br /></td></tr>
+<tr class="separator:ga4cecdd011e3ce39e407f2ca5909f753a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e205675d53261b2299bb3d4f7d026ad"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga8e205675d53261b2299bb3d4f7d026ad">pcf_Pwm_getTotal</a> (pcf_size_t *const count)</td></tr>
+<tr class="memdesc:ga8e205675d53261b2299bb3d4f7d026ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the total number of PWM supported by the microcontroller.  <br /></td></tr>
+<tr class="separator:ga8e205675d53261b2299bb3d4f7d026ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga33365ef3654c571cd0a187d76b0df364"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga33365ef3654c571cd0a187d76b0df364">pcf_Pwm_getAvailable</a> (pcf_size_t *const count)</td></tr>
+<tr class="memdesc:ga33365ef3654c571cd0a187d76b0df364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of available/unused ADC.  <br /></td></tr>
+<tr class="separator:ga33365ef3654c571cd0a187d76b0df364"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga01697d7f1248460056e4d3072303ce9c"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53">Pwm_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga01697d7f1248460056e4d3072303ce9c">pcf_Pwm_new</a> (const <a class="el" href="struct_pwm_config__t.html">PwmConfig_t</a> *const config, pcf_status_t *const status)</td></tr>
+<tr class="memdesc:ga01697d7f1248460056e4d3072303ce9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new instance of <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53" title="PWM Entity Object.">Pwm_t</a> based on the configuration provided by <a class="el" href="struct_pwm_config__t.html" title="Pwm config structure.">PwmConfig_t</a> <em>config</em> .  <br /></td></tr>
+<tr class="separator:ga01697d7f1248460056e4d3072303ce9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga175407746b269a46fd652176018b394b"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga175407746b269a46fd652176018b394b">pcf_Pwm_delete</a> (<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53">Pwm_t</a> **pwm)</td></tr>
+<tr class="memdesc:ga175407746b269a46fd652176018b394b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes/destroys <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53" title="PWM Entity Object.">Pwm_t</a> entity returned from <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga01697d7f1248460056e4d3072303ce9c" title="Creates a new instance of Pwm_t based on the configuration provided by PwmConfig_t config .">pcf_Pwm_new</a>.  <br /></td></tr>
+<tr class="separator:ga175407746b269a46fd652176018b394b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa27690c80970ffc66907a0c6791b032e"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#gaa27690c80970ffc66907a0c6791b032e">pcf_Pwm_start</a> (const <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53">Pwm_t</a> *const pwm, const EnPCFBoolean_t start)</td></tr>
+<tr class="memdesc:gaa27690c80970ffc66907a0c6791b032e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts/Stops the PWM output signal.  <br /></td></tr>
+<tr class="separator:gaa27690c80970ffc66907a0c6791b032e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae231212df7ac4f388e0ffc7b2c9302f1"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#gae231212df7ac4f388e0ffc7b2c9302f1">pcf_Pwm_isRunning</a> (const <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53">Pwm_t</a> *const pwm, EnPCFBoolean_t *const isRunning)</td></tr>
+<tr class="memdesc:gae231212df7ac4f388e0ffc7b2c9302f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the PWM is running.  <br /></td></tr>
+<tr class="separator:gae231212df7ac4f388e0ffc7b2c9302f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga54af184abaf9de2071276301d26bf255"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga54af184abaf9de2071276301d26bf255">pcf_Pwm_getTimePeriod</a> (const <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53">Pwm_t</a> *const pwm, <a class="el" href="struct_time_interval__t.html">TimeInterval_t</a> *const period)</td></tr>
+<tr class="memdesc:ga54af184abaf9de2071276301d26bf255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the PWM period.  <br /></td></tr>
+<tr class="separator:ga54af184abaf9de2071276301d26bf255"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec7b40bc3a4ed81d015b388b7945bf50"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#gaec7b40bc3a4ed81d015b388b7945bf50">pcf_Pwm_setDutyCycle</a> (const <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53">Pwm_t</a> *const pwm, const Fractioni16_t dutyCycle)</td></tr>
+<tr class="memdesc:gaec7b40bc3a4ed81d015b388b7945bf50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the PWM Output Duty Cycle.  <br /></td></tr>
+<tr class="separator:gaec7b40bc3a4ed81d015b388b7945bf50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe9db39485c4aff0122e23e04f172234"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#gafe9db39485c4aff0122e23e04f172234">pcf_Pwm_getDutyCycle</a> (const <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53">Pwm_t</a> *const pwm, Fractioni16_t *const dutyCycle)</td></tr>
+<tr class="memdesc:gafe9db39485c4aff0122e23e04f172234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the PWM Output Duty Cycle.  <br /></td></tr>
+<tr class="separator:gafe9db39485c4aff0122e23e04f172234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae703117d46d699585230d53934841dcf"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#gae703117d46d699585230d53934841dcf">pcf_Pwm_customCommand</a> (<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53">Pwm_t</a> *pwm, pcf_command_t command, pcf_generic_t data)</td></tr>
+<tr class="memdesc:gae703117d46d699585230d53934841dcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can be used to extend the functionality provided by the PWM package item.  <br /></td></tr>
+<tr class="separator:gae703117d46d699585230d53934841dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga4cbec6069849fee6fd863b20a721d476"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_port_pin__t.html">PortPin_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga4cbec6069849fee6fd863b20a721d476">PwmConfig_t::portPin</a></td></tr>
+<tr class="separator:ga4cbec6069849fee6fd863b20a721d476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43c8a581df31deb8908ae86e8624a8ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_time_interval__t.html">TimeInterval_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga43c8a581df31deb8908ae86e8624a8ef">PwmConfig_t::period</a></td></tr>
+<tr class="separator:ga43c8a581df31deb8908ae86e8624a8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ed25c798fb64c0e44b531973fdf90fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga4b176c8cfc80c4c6730e31af20b4d026">EnPwmOutputSignal_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga2ed25c798fb64c0e44b531973fdf90fc">PwmConfig_t::outputSignal</a></td></tr>
+<tr class="separator:ga2ed25c798fb64c0e44b531973fdf90fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf36d998952d1939afe9866fbb05ccc2d"><td class="memItemLeft" align="right" valign="top">pcf_generic_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#gaf36d998952d1939afe9866fbb05ccc2d">PwmConfig_t::hardwareCfg</a></td></tr>
+<tr class="separator:gaf36d998952d1939afe9866fbb05ccc2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Pwm types</h2></td></tr>
 <tr class="memitem:ga4b176c8cfc80c4c6730e31af20b4d026"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga4b176c8cfc80c4c6730e31af20b4d026">EnPwmOutputSignal_t</a> { <a class="el" href="group__pcf__mcal__peripherals__pwm.html#gga4b176c8cfc80c4c6730e31af20b4d026aa78e09e91207875455d9f8b16149f0df">enPwmOutputSignal_Normal</a>
 , <a class="el" href="group__pcf__mcal__peripherals__pwm.html#gga4b176c8cfc80c4c6730e31af20b4d026a14359a542b3feb3115b35d9172dc162f">enPwmOutputSignal_Inverted</a>
  }</td></tr>
 <tr class="memdesc:ga4b176c8cfc80c4c6730e31af20b4d026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pwm Output type.  <a href="group__pcf__mcal__peripherals__pwm.html#ga4b176c8cfc80c4c6730e31af20b4d026">More...</a><br /></td></tr>
 <tr class="separator:ga4b176c8cfc80c4c6730e31af20b4d026"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:gafec86bf09dbf0516d55c8f16daa10dc2"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#gafec86bf09dbf0516d55c8f16daa10dc2">pcf_Pwm_getEntityType</a> (EntityType_t *type)</td></tr>
-<tr class="memdesc:gafec86bf09dbf0516d55c8f16daa10dc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the entity type EntityType_t for PWM Entity.  <br /></td></tr>
-<tr class="separator:gafec86bf09dbf0516d55c8f16daa10dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab0ad1f82299dda980396f08dabd998dd"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#gab0ad1f82299dda980396f08dabd998dd">pcf_Pwm_getAvailableCount</a> (pcf_size_t *count)</td></tr>
-<tr class="memdesc:gab0ad1f82299dda980396f08dabd998dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get how many unused PWM Entities are available for use.  <br /></td></tr>
-<tr class="separator:gab0ad1f82299dda980396f08dabd998dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0d92c1059b339735e745899fb1b3cfb5"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga0d92c1059b339735e745899fb1b3cfb5">pcf_Pwm_getTotalCount</a> (pcf_size_t *count)</td></tr>
-<tr class="memdesc:ga0d92c1059b339735e745899fb1b3cfb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get total number of PWM Entities available on the platform.  <br /></td></tr>
-<tr class="separator:ga0d92c1059b339735e745899fb1b3cfb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad57ce023bbc831c7b4aa63bd002d6461"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API <a class="el" href="group__pcf__mcal__peripherals__pwm.html#gabd5ee3ae51fccaa48cc9f6489e967bb5">Pwm_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#gad57ce023bbc831c7b4aa63bd002d6461">pcf_Pwm_new</a> (const <a class="el" href="struct_pwm_config__t.html">PwmConfig_t</a> *const config, pcf_status_t *status)</td></tr>
-<tr class="memdesc:gad57ce023bbc831c7b4aa63bd002d6461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a PWM Entity Object.  <br /></td></tr>
-<tr class="separator:gad57ce023bbc831c7b4aa63bd002d6461"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga175407746b269a46fd652176018b394b"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga175407746b269a46fd652176018b394b">pcf_Pwm_delete</a> (<a class="el" href="group__pcf__mcal__peripherals__pwm.html#gabd5ee3ae51fccaa48cc9f6489e967bb5">Pwm_t</a> **pwm)</td></tr>
-<tr class="memdesc:ga175407746b269a46fd652176018b394b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete/destroy the PWM Entity Object.  <br /></td></tr>
-<tr class="separator:ga175407746b269a46fd652176018b394b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae5393eeac11b0c2a8ce6d8ea36a15a64"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#gae5393eeac11b0c2a8ce6d8ea36a15a64">pcf_Pwm_start</a> (const <a class="el" href="group__pcf__mcal__peripherals__pwm.html#gabd5ee3ae51fccaa48cc9f6489e967bb5">Pwm_t</a> *const pwm)</td></tr>
-<tr class="memdesc:gae5393eeac11b0c2a8ce6d8ea36a15a64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the PWM output signal.  <br /></td></tr>
-<tr class="separator:gae5393eeac11b0c2a8ce6d8ea36a15a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5d9c2e48e65bc8cf9240bf42b0a2ebf2"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga5d9c2e48e65bc8cf9240bf42b0a2ebf2">pcf_Pwm_stop</a> (const <a class="el" href="group__pcf__mcal__peripherals__pwm.html#gabd5ee3ae51fccaa48cc9f6489e967bb5">Pwm_t</a> *const pwm)</td></tr>
-<tr class="memdesc:ga5d9c2e48e65bc8cf9240bf42b0a2ebf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the PWM output signal.  <br /></td></tr>
-<tr class="separator:ga5d9c2e48e65bc8cf9240bf42b0a2ebf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga75ffb4301945ae9d5665a121388b304d"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga75ffb4301945ae9d5665a121388b304d">pcf_Pwm_isRunning</a> (const <a class="el" href="group__pcf__mcal__peripherals__pwm.html#gabd5ee3ae51fccaa48cc9f6489e967bb5">Pwm_t</a> *const pwm)</td></tr>
-<tr class="memdesc:ga75ffb4301945ae9d5665a121388b304d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the PWM Entity Object is running or not.  <br /></td></tr>
-<tr class="separator:ga75ffb4301945ae9d5665a121388b304d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga95d1e8d22500fc0f3c92c2fab4292dc6"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga95d1e8d22500fc0f3c92c2fab4292dc6">pcf_Pwm_getTimePeriod</a> (const <a class="el" href="group__pcf__mcal__peripherals__pwm.html#gabd5ee3ae51fccaa48cc9f6489e967bb5">Pwm_t</a> *const pwm, <a class="el" href="struct_time_interval__t.html">TimeInterval_t</a> *period)</td></tr>
-<tr class="memdesc:ga95d1e8d22500fc0f3c92c2fab4292dc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the PWM period.  <br /></td></tr>
-<tr class="separator:ga95d1e8d22500fc0f3c92c2fab4292dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga52b79116eeb06a4c52f676f8c7028fd1"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga52b79116eeb06a4c52f676f8c7028fd1">pcf_Pwm_setDutyCycle</a> (const <a class="el" href="group__pcf__mcal__peripherals__pwm.html#gabd5ee3ae51fccaa48cc9f6489e967bb5">Pwm_t</a> *const pwm, const pcf_percentage_t dutyCycle)</td></tr>
-<tr class="memdesc:ga52b79116eeb06a4c52f676f8c7028fd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set PWM Output Duty Cycle.  <br /></td></tr>
-<tr class="separator:ga52b79116eeb06a4c52f676f8c7028fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1804cc59dd68bc2d1e528ee725cf2172"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga1804cc59dd68bc2d1e528ee725cf2172">pcf_Pwm_getDutyCycle</a> (const <a class="el" href="group__pcf__mcal__peripherals__pwm.html#gabd5ee3ae51fccaa48cc9f6489e967bb5">Pwm_t</a> *const pwm, pcf_percentage_t *dutyCycle)</td></tr>
-<tr class="memdesc:ga1804cc59dd68bc2d1e528ee725cf2172"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the PWM Output Duty Cycle.  <br /></td></tr>
-<tr class="separator:ga1804cc59dd68bc2d1e528ee725cf2172"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae703117d46d699585230d53934841dcf"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#gae703117d46d699585230d53934841dcf">pcf_Pwm_customCommand</a> (<a class="el" href="group__pcf__mcal__peripherals__pwm.html#gabd5ee3ae51fccaa48cc9f6489e967bb5">Pwm_t</a> *pwm, pcf_command_t command, pcf_generic_t data)</td></tr>
-<tr class="memdesc:gae703117d46d699585230d53934841dcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to extend functionality of PWM Entity.  <br /></td></tr>
-<tr class="separator:gae703117d46d699585230d53934841dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a456e713d0a142bcf0dc8071f5fee53"><td class="memItemLeft" align="right" valign="top">typedef struct _pcf_peripheral_pwm_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53">Pwm_t</a></td></tr>
+<tr class="memdesc:ga3a456e713d0a142bcf0dc8071f5fee53"><td class="mdescLeft">&#160;</td><td class="mdescRight">PWM Entity Object.  <br /></td></tr>
+<tr class="separator:ga3a456e713d0a142bcf0dc8071f5fee53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<dl class="section note"><dt>Note</dt><dd>Input validation is done only when package is built in debug mode. <br  />
+<p>PWM refers to Pulse-Width Modulation is a technique used to generate analog-like signals by varying the duty cycle of digital pulses. </p>
+<p>It is commonly utilized in microcontrollers for applications such as motor control, LED brightness adjustment, and audio generation, allowing precise control over output voltage or current levels. </p><dl class="section note"><dt>Note</dt><dd>Input validation is done only when package is built in debug mode. <br  />
  </dd></dl>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ga593f7cc6a94c7dc351f121c01801e49b" name="ga593f7cc6a94c7dc351f121c01801e49b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga593f7cc6a94c7dc351f121c01801e49b">&#9670;&#160;</a></span>ITEM_ID_PWM</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ITEM_ID_PWM&#160;&#160;&#160;(9)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Item ID of PWM Entity within Mcal Package. </p>
-
-</div>
-</div>
 <a id="ga1107a8f042c47496c0bf6beff5dcdd14" name="ga1107a8f042c47496c0bf6beff5dcdd14"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga1107a8f042c47496c0bf6beff5dcdd14">&#9670;&#160;</a></span>PCF_PWM_ENTITY_TYPE</h2>
 
@@ -229,197 +192,15 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga8a2bcdb1918b06d183927afa2168ea0a" name="ga8a2bcdb1918b06d183927afa2168ea0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8a2bcdb1918b06d183927afa2168ea0a">&#9670;&#160;</a></span>PCF_PWM_S_SUCCESS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_PWM_S_SUCCESS&#160;&#160;&#160;GENERATE_PCF_STATUS_SUCCESS(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga3ecb38338211c4334e9f79279a311504" name="ga3ecb38338211c4334e9f79279a311504"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3ecb38338211c4334e9f79279a311504">&#9670;&#160;</a></span>PCF_PWM_S_YES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_PWM_S_YES&#160;&#160;&#160;GENERATE_PCF_STATUS_YES(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga9639c88455921589632f57828f6bcbb6" name="ga9639c88455921589632f57828f6bcbb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9639c88455921589632f57828f6bcbb6">&#9670;&#160;</a></span>PCF_PWM_S_NO</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_PWM_S_NO&#160;&#160;&#160;GENERATE_PCF_STATUS_NO(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gad52f14dad77373a180e33bbe119ee933" name="gad52f14dad77373a180e33bbe119ee933"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad52f14dad77373a180e33bbe119ee933">&#9670;&#160;</a></span>PCF_PWM_S_FATAL_ERROR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_PWM_S_FATAL_ERROR&#160;&#160;&#160;GENERATE_PCF_ERROR_FATAL(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga1b034d6d3e1de43bf4ed909613444f0f" name="ga1b034d6d3e1de43bf4ed909613444f0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1b034d6d3e1de43bf4ed909613444f0f">&#9670;&#160;</a></span>PCF_PWM_S_INTERNAL_ERROR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_PWM_S_INTERNAL_ERROR&#160;&#160;&#160;GENERATE_PCF_ERROR_INTERNAL_ERROR(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga4b5eea7ed70f92b172aa9082868c30a7" name="ga4b5eea7ed70f92b172aa9082868c30a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4b5eea7ed70f92b172aa9082868c30a7">&#9670;&#160;</a></span>PCF_PWM_S_INVALID_ARG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_PWM_S_INVALID_ARG&#160;&#160;&#160;GENERATE_PCF_ERROR_INVALID_ARG(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga64ec654e6b6916abb5bee1b5dd2182b9" name="ga64ec654e6b6916abb5bee1b5dd2182b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga64ec654e6b6916abb5bee1b5dd2182b9">&#9670;&#160;</a></span>PCF_PWM_S_NULL_ARG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_PWM_S_NULL_ARG&#160;&#160;&#160;GENERATE_PCF_ERROR_NULL_ARG(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga1f7077e1e098f9e214e00fb46a700bdb" name="ga1f7077e1e098f9e214e00fb46a700bdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1f7077e1e098f9e214e00fb46a700bdb">&#9670;&#160;</a></span>PCF_PWM_S_NOT_IMPLEMENTED <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_PWM_S_NOT_IMPLEMENTED&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_IMPLEMENTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga1f7077e1e098f9e214e00fb46a700bdb" name="ga1f7077e1e098f9e214e00fb46a700bdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1f7077e1e098f9e214e00fb46a700bdb">&#9670;&#160;</a></span>PCF_PWM_S_NOT_IMPLEMENTED <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_PWM_S_NOT_IMPLEMENTED&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_IMPLEMENTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gafff0d8d88304126684cc50e652028944" name="gafff0d8d88304126684cc50e652028944"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafff0d8d88304126684cc50e652028944">&#9670;&#160;</a></span>PCF_PWM_S_NOT_CONFIGURED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_PWM_S_NOT_CONFIGURED&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_CONFIGURED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gacd256d9f13712016b8f83d8cf7962324" name="gacd256d9f13712016b8f83d8cf7962324"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacd256d9f13712016b8f83d8cf7962324">&#9670;&#160;</a></span>PCF_PWM_S_ALREADY_IN_USE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_PWM_S_ALREADY_IN_USE&#160;&#160;&#160;GENERATE_PCF_ERROR_ALREADY_IN_USE(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga4c5fa8617ab5c39dccdb88fd5c6c47a5" name="ga4c5fa8617ab5c39dccdb88fd5c6c47a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4c5fa8617ab5c39dccdb88fd5c6c47a5">&#9670;&#160;</a></span>PCF_PWM_S_NOT_SUPPORTED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_PWM_S_NOT_SUPPORTED&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_SUPPORTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga4d369bd37f589ec1b2fdeb6b01d00351" name="ga4d369bd37f589ec1b2fdeb6b01d00351"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4d369bd37f589ec1b2fdeb6b01d00351">&#9670;&#160;</a></span>PCF_PWM_S_ERROR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_PWM_S_ERROR&#160;&#160;&#160;GENERATE_PCF_ERROR_BASE_UCODE(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga593f7cc6a94c7dc351f121c01801e49b">ITEM_ID_PWM</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="gabd5ee3ae51fccaa48cc9f6489e967bb5" name="gabd5ee3ae51fccaa48cc9f6489e967bb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabd5ee3ae51fccaa48cc9f6489e967bb5">&#9670;&#160;</a></span>Pwm_t</h2>
+<a id="ga3a456e713d0a142bcf0dc8071f5fee53" name="ga3a456e713d0a142bcf0dc8071f5fee53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3a456e713d0a142bcf0dc8071f5fee53">&#9670;&#160;</a></span>Pwm_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct _pcf_peripheral_pwm <a class="el" href="group__pcf__mcal__peripherals__pwm.html#gabd5ee3ae51fccaa48cc9f6489e967bb5">Pwm_t</a></td>
+          <td class="memname">typedef struct _pcf_peripheral_pwm_t <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53">Pwm_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -455,8 +236,8 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gafec86bf09dbf0516d55c8f16daa10dc2" name="gafec86bf09dbf0516d55c8f16daa10dc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafec86bf09dbf0516d55c8f16daa10dc2">&#9670;&#160;</a></span>pcf_Pwm_getEntityType()</h2>
+<a id="ga4cecdd011e3ce39e407f2ca5909f753a" name="ga4cecdd011e3ce39e407f2ca5909f753a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4cecdd011e3ce39e407f2ca5909f753a">&#9670;&#160;</a></span>pcf_Pwm_getEntityType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -464,104 +245,106 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Pwm_getEntityType </td>
           <td>(</td>
-          <td class="paramtype">EntityType_t *&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
+          <td class="paramtype">EntityType_t *const&#160;</td>
+          <td class="paramname"><em>entity_type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the entity type EntityType_t for PWM Entity. </p>
+<p>It is a class static function which returns EntityType_t </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td>[IN] - Pointer to EntityType_t. Will set this variable with value of PWM entity type </td></tr>
+    <tr><td class="paramname">type</td><td>[OUT] - Pointer to EntityType_t, stores the entity type of the PWM. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga8a2bcdb1918b06d183927afa2168ea0a">PCF_PWM_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga64ec654e6b6916abb5bee1b5dd2182b9">PCF_PWM_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
+PCF_S_NULL_ARG : <em>entity_type</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="gab0ad1f82299dda980396f08dabd998dd" name="gab0ad1f82299dda980396f08dabd998dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab0ad1f82299dda980396f08dabd998dd">&#9670;&#160;</a></span>pcf_Pwm_getAvailableCount()</h2>
+<a id="ga8e205675d53261b2299bb3d4f7d026ad" name="ga8e205675d53261b2299bb3d4f7d026ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e205675d53261b2299bb3d4f7d026ad">&#9670;&#160;</a></span>pcf_Pwm_getTotal()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_MCAL_API pcf_status_t pcf_Pwm_getAvailableCount </td>
+          <td class="memname">PCF_MCAL_API pcf_status_t pcf_Pwm_getTotal </td>
           <td>(</td>
-          <td class="paramtype">pcf_size_t *&#160;</td>
+          <td class="paramtype">pcf_size_t *const&#160;</td>
           <td class="paramname"><em>count</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get how many unused PWM Entities are available for use. </p>
+<p>Gets the total number of PWM supported by the microcontroller. </p>
+<p><br  />
+ The value returned will be same throughout runtime.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">count</td><td>[IN] - Pointer to pcf_size_t. Will set this variable with number of unused PWM entities </td></tr>
+    <tr><td class="paramname">count</td><td>[OUT] - Pointer to pcf_size_t, stores the total number of PWM entities. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga8a2bcdb1918b06d183927afa2168ea0a">PCF_PWM_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga64ec654e6b6916abb5bee1b5dd2182b9">PCF_PWM_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>count</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga0d92c1059b339735e745899fb1b3cfb5" name="ga0d92c1059b339735e745899fb1b3cfb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0d92c1059b339735e745899fb1b3cfb5">&#9670;&#160;</a></span>pcf_Pwm_getTotalCount()</h2>
+<a id="ga33365ef3654c571cd0a187d76b0df364" name="ga33365ef3654c571cd0a187d76b0df364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga33365ef3654c571cd0a187d76b0df364">&#9670;&#160;</a></span>pcf_Pwm_getAvailable()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_MCAL_API pcf_status_t pcf_Pwm_getTotalCount </td>
+          <td class="memname">PCF_MCAL_API pcf_status_t pcf_Pwm_getAvailable </td>
           <td>(</td>
-          <td class="paramtype">pcf_size_t *&#160;</td>
+          <td class="paramtype">pcf_size_t *const&#160;</td>
           <td class="paramname"><em>count</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get total number of PWM Entities available on the platform. </p>
+<p>Gets the number of available/unused ADC. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">count</td><td>[IN] - Pointer to pcf_size_t. Function will set this variable with total number of PWM entities </td></tr>
+    <tr><td class="paramname">count</td><td>[OUT] - Pointer to pcf_size_t, stores the number of unused PWMs. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga8a2bcdb1918b06d183927afa2168ea0a">PCF_PWM_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga64ec654e6b6916abb5bee1b5dd2182b9">PCF_PWM_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>count</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="gad57ce023bbc831c7b4aa63bd002d6461" name="gad57ce023bbc831c7b4aa63bd002d6461"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad57ce023bbc831c7b4aa63bd002d6461">&#9670;&#160;</a></span>pcf_Pwm_new()</h2>
+<a id="ga01697d7f1248460056e4d3072303ce9c" name="ga01697d7f1248460056e4d3072303ce9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga01697d7f1248460056e4d3072303ce9c">&#9670;&#160;</a></span>pcf_Pwm_new()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_MCAL_API <a class="el" href="group__pcf__mcal__peripherals__pwm.html#gabd5ee3ae51fccaa48cc9f6489e967bb5">Pwm_t</a> * pcf_Pwm_new </td>
+          <td class="memname">PCF_MCAL_API <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53">Pwm_t</a> * pcf_Pwm_new </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_pwm_config__t.html">PwmConfig_t</a> *const&#160;</td>
           <td class="paramname"><em>config</em>, </td>
@@ -569,7 +352,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">pcf_status_t *&#160;</td>
+          <td class="paramtype">pcf_status_t *const&#160;</td>
           <td class="paramname"><em>status</em>&#160;</td>
         </tr>
         <tr>
@@ -580,28 +363,35 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create a PWM Entity Object. </p>
-<p>It creates and initializes PWM Entity according to the configuration structure <a class="el" href="struct_pwm_config__t.html" title="Pwm config structure.">PwmConfig_t</a> and returns a pointer to Pwm_t.</p>
+<p>Creates a new instance of <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53" title="PWM Entity Object.">Pwm_t</a> based on the configuration provided by <a class="el" href="struct_pwm_config__t.html" title="Pwm config structure.">PwmConfig_t</a> <em>config</em> . </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">config</td><td>[IN] - Pointer to the pwm configuration structure. </td></tr>
-    <tr><td class="paramname">status</td><td>[OUT] - <ul>
+    <tr><td class="paramname">config</td><td>[IN] - Pointer to <a class="el" href="struct_pwm_config__t.html" title="Pwm config structure.">PwmConfig_t</a> structure. </td></tr>
+    <tr><td class="paramname">status</td><td>[OUT] - Pointer to pcf_status_t, stores the status of the function call. <br  />
+ (Optional parameter, pass PCF_NULL if not required.) <br  />
+ Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga8a2bcdb1918b06d183927afa2168ea0a">PCF_PWM_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga64ec654e6b6916abb5bee1b5dd2182b9">PCF_PWM_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>config</em>  is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga4b5eea7ed70f92b172aa9082868c30a7">PCF_PWM_S_INVALID_ARG</a>  : Invalid config member value was passed.(Checked only in debug mode) </li>
+PCF_S_INVALID_ARG  : <em>config</em>  is invalid.(Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#gacd256d9f13712016b8f83d8cf7962324">PCF_PWM_S_ALREADY_IN_USE</a>  : Specified pwm is already in use. </li>
+PCF_S_ALREADY_IN_USE  : Specified pwm is already in use. </li>
 <li>
-PCF_PWM_S_ALLOCATION_FAILED  : Memory allocation failed. </li>
+PCF_S_NOT_ENOUGH_MEMORY  :Not enough memory to create the PWM entity. </li>
 </ul>
 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer of the Pwm_t object or PCF_NULL in case of error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>
+On success : Pointer to <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53" title="PWM Entity Object.">Pwm_t</a> </li>
+<li>
+On failure : PCF_NULL </li>
+</ul>
+/// </dd></dl>
 
 </div>
 </div>
@@ -614,32 +404,34 @@ PCF_PWM_S_ALLOCATION_FAILED  : Memory allocation failed. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Pwm_delete </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#gabd5ee3ae51fccaa48cc9f6489e967bb5">Pwm_t</a> **&#160;</td>
+          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53">Pwm_t</a> **&#160;</td>
           <td class="paramname"><em>pwm</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Delete/destroy the PWM Entity Object. </p>
+<p>Deletes/destroys <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53" title="PWM Entity Object.">Pwm_t</a> entity returned from <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga01697d7f1248460056e4d3072303ce9c" title="Creates a new instance of Pwm_t based on the configuration provided by PwmConfig_t config .">pcf_Pwm_new</a>. </p>
+<p><br  />
+ <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53" title="PWM Entity Object.">Pwm_t</a> entity cannot be used after a call to this function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pwm</td><td>[IN] - Pointer to the PWM Entity Object. </td></tr>
+    <tr><td class="paramname">pwm</td><td>[IN] - Double Pointer to <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53" title="PWM Entity Object.">Pwm_t</a> entity object. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga8a2bcdb1918b06d183927afa2168ea0a">PCF_PWM_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga64ec654e6b6916abb5bee1b5dd2182b9">PCF_PWM_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>pwm</em>  or <em>*pwm</em>  is passed.(Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="gae5393eeac11b0c2a8ce6d8ea36a15a64" name="gae5393eeac11b0c2a8ce6d8ea36a15a64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae5393eeac11b0c2a8ce6d8ea36a15a64">&#9670;&#160;</a></span>pcf_Pwm_start()</h2>
+<a id="gaa27690c80970ffc66907a0c6791b032e" name="gaa27690c80970ffc66907a0c6791b032e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa27690c80970ffc66907a0c6791b032e">&#9670;&#160;</a></span>pcf_Pwm_start()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -647,65 +439,43 @@ PCF_PWM_S_ALLOCATION_FAILED  : Memory allocation failed. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Pwm_start </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__pwm.html#gabd5ee3ae51fccaa48cc9f6489e967bb5">Pwm_t</a> *const&#160;</td>
-          <td class="paramname"><em>pwm</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53">Pwm_t</a> *const&#160;</td>
+          <td class="paramname"><em>pwm</em>, </td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Start the PWM output signal. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pwm</td><td>[IN] - Pointer to the PWM Entity Object. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
-<li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga8a2bcdb1918b06d183927afa2168ea0a">PCF_PWM_S_SUCCESS</a>  : Successful operation. </li>
-<li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga64ec654e6b6916abb5bee1b5dd2182b9">PCF_PWM_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
-</ul>
-</dd></dl>
-
-</div>
-</div>
-<a id="ga5d9c2e48e65bc8cf9240bf42b0a2ebf2" name="ga5d9c2e48e65bc8cf9240bf42b0a2ebf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5d9c2e48e65bc8cf9240bf42b0a2ebf2">&#9670;&#160;</a></span>pcf_Pwm_stop()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">PCF_MCAL_API pcf_status_t pcf_Pwm_stop </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__pwm.html#gabd5ee3ae51fccaa48cc9f6489e967bb5">Pwm_t</a> *const&#160;</td>
-          <td class="paramname"><em>pwm</em></td><td>)</td>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const EnPCFBoolean_t&#160;</td>
+          <td class="paramname"><em>start</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Stop the PWM output signal. </p>
+<p>Starts/Stops the PWM output signal. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pwm</td><td>[IN] - Pointer to the PWM Entity Object. </td></tr>
+    <tr><td class="paramname">pwm</td><td>[IN] - A pointer to the <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53" title="PWM Entity Object.">Pwm_t</a> Object. </td></tr>
+    <tr><td class="paramname">on</td><td>[IN] - <em>pwm</em>  is started if EnPCFBoolean_t is enPCFBoolean_True or stopped if enPCFBoolean_False </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga8a2bcdb1918b06d183927afa2168ea0a">PCF_PWM_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga64ec654e6b6916abb5bee1b5dd2182b9">PCF_PWM_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>pwm</em>  is PCF_NULL.(Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga75ffb4301945ae9d5665a121388b304d" name="ga75ffb4301945ae9d5665a121388b304d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga75ffb4301945ae9d5665a121388b304d">&#9670;&#160;</a></span>pcf_Pwm_isRunning()</h2>
+<a id="gae231212df7ac4f388e0ffc7b2c9302f1" name="gae231212df7ac4f388e0ffc7b2c9302f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae231212df7ac4f388e0ffc7b2c9302f1">&#9670;&#160;</a></span>pcf_Pwm_isRunning()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -713,34 +483,43 @@ PCF_PWM_S_ALLOCATION_FAILED  : Memory allocation failed. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Pwm_isRunning </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__pwm.html#gabd5ee3ae51fccaa48cc9f6489e967bb5">Pwm_t</a> *const&#160;</td>
-          <td class="paramname"><em>pwm</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53">Pwm_t</a> *const&#160;</td>
+          <td class="paramname"><em>pwm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">EnPCFBoolean_t *const&#160;</td>
+          <td class="paramname"><em>isRunning</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check if the PWM Entity Object is running or not. </p>
+<p>Checks the PWM is running. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pwm</td><td>[IN] - Pointer to the PWM Entity Object. </td></tr>
+    <tr><td class="paramname">pwm</td><td>[IN] - A pointer to the <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53" title="PWM Entity Object.">Pwm_t</a> Object. </td></tr>
+    <tr><td class="paramname">isRunning</td><td>[OUT] - Pointer to EnPCFBoolean_t, stores the state of pwm is set to enPCFBoolean_True if running else set to enPCFBoolean_False. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3ecb38338211c4334e9f79279a311504">PCF_PWM_S_YES</a>  : Pwm_t running. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga9639c88455921589632f57828f6bcbb6">PCF_PWM_S_NO</a>  : Pwm_t not running. </li>
-<li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga64ec654e6b6916abb5bee1b5dd2182b9">PCF_PWM_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>pwm</em>  is PCF_NULL.(Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga95d1e8d22500fc0f3c92c2fab4292dc6" name="ga95d1e8d22500fc0f3c92c2fab4292dc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga95d1e8d22500fc0f3c92c2fab4292dc6">&#9670;&#160;</a></span>pcf_Pwm_getTimePeriod()</h2>
+<a id="ga54af184abaf9de2071276301d26bf255" name="ga54af184abaf9de2071276301d26bf255"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga54af184abaf9de2071276301d26bf255">&#9670;&#160;</a></span>pcf_Pwm_getTimePeriod()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -748,13 +527,13 @@ PCF_PWM_S_ALLOCATION_FAILED  : Memory allocation failed. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Pwm_getTimePeriod </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__pwm.html#gabd5ee3ae51fccaa48cc9f6489e967bb5">Pwm_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53">Pwm_t</a> *const&#160;</td>
           <td class="paramname"><em>pwm</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_time_interval__t.html">TimeInterval_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_time_interval__t.html">TimeInterval_t</a> *const&#160;</td>
           <td class="paramname"><em>period</em>&#160;</td>
         </tr>
         <tr>
@@ -765,26 +544,26 @@ PCF_PWM_S_ALLOCATION_FAILED  : Memory allocation failed. </li>
       </table>
 </div><div class="memdoc">
 
-<p>Get the PWM period. </p>
+<p>Gets the PWM period. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pwm</td><td>[IN] - Pointer to the PWM Entity Object. </td></tr>
-    <tr><td class="paramname">period</td><td>[OUT] - Pointer to <a class="el" href="struct_time_interval__t.html" title="Time value.">TimeInterval_t</a>. Set this variable with the PWM period </td></tr>
+    <tr><td class="paramname">pwm</td><td>[IN] - A pointer to the <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53" title="PWM Entity Object.">Pwm_t</a> Object. </td></tr>
+    <tr><td class="paramname">period</td><td>[OUT] - Pointer to <a class="el" href="struct_time_interval__t.html" title="Time value.">TimeInterval_t</a>, stores the PWM period. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga8a2bcdb1918b06d183927afa2168ea0a">PCF_PWM_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga64ec654e6b6916abb5bee1b5dd2182b9">PCF_PWM_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>pwm</em>  or <em>period</em>  is PCF_NULL.(Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga52b79116eeb06a4c52f676f8c7028fd1" name="ga52b79116eeb06a4c52f676f8c7028fd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga52b79116eeb06a4c52f676f8c7028fd1">&#9670;&#160;</a></span>pcf_Pwm_setDutyCycle()</h2>
+<a id="gaec7b40bc3a4ed81d015b388b7945bf50" name="gaec7b40bc3a4ed81d015b388b7945bf50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaec7b40bc3a4ed81d015b388b7945bf50">&#9670;&#160;</a></span>pcf_Pwm_setDutyCycle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -792,13 +571,13 @@ PCF_PWM_S_ALLOCATION_FAILED  : Memory allocation failed. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Pwm_setDutyCycle </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__pwm.html#gabd5ee3ae51fccaa48cc9f6489e967bb5">Pwm_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53">Pwm_t</a> *const&#160;</td>
           <td class="paramname"><em>pwm</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const pcf_percentage_t&#160;</td>
+          <td class="paramtype">const Fractioni16_t&#160;</td>
           <td class="paramname"><em>dutyCycle</em>&#160;</td>
         </tr>
         <tr>
@@ -809,29 +588,29 @@ PCF_PWM_S_ALLOCATION_FAILED  : Memory allocation failed. </li>
       </table>
 </div><div class="memdoc">
 
-<p>Set PWM Output Duty Cycle. </p>
+<p>Sets the PWM Output Duty Cycle. </p>
 <p>The value is specified as a percentage.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pwm</td><td>[IN] - Pointer to the PWM Entity Object. </td></tr>
-    <tr><td class="paramname">dutyCycle</td><td>[IN] - Duty Cycle in % form value between 0 and 1 </td></tr>
+    <tr><td class="paramname">pwm</td><td>[IN] - A pointer to the <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53" title="PWM Entity Object.">Pwm_t</a> Object. </td></tr>
+    <tr><td class="paramname">dutyCycle</td><td>[IN] - A fraction value representing the duty cycle, specified as a percentage. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga8a2bcdb1918b06d183927afa2168ea0a">PCF_PWM_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga64ec654e6b6916abb5bee1b5dd2182b9">PCF_PWM_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>pwm</em>  is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga4b5eea7ed70f92b172aa9082868c30a7">PCF_PWM_S_INVALID_ARG</a>  : Invalid dutyCycle value was passed.(Checked only in debug mode) </li>
+PCF_S_INVALID_ARG  : <em>dutyCycle</em>  is invalid.(Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga1804cc59dd68bc2d1e528ee725cf2172" name="ga1804cc59dd68bc2d1e528ee725cf2172"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1804cc59dd68bc2d1e528ee725cf2172">&#9670;&#160;</a></span>pcf_Pwm_getDutyCycle()</h2>
+<a id="gafe9db39485c4aff0122e23e04f172234" name="gafe9db39485c4aff0122e23e04f172234"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafe9db39485c4aff0122e23e04f172234">&#9670;&#160;</a></span>pcf_Pwm_getDutyCycle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -839,13 +618,13 @@ PCF_PWM_S_ALLOCATION_FAILED  : Memory allocation failed. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Pwm_getDutyCycle </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__pwm.html#gabd5ee3ae51fccaa48cc9f6489e967bb5">Pwm_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53">Pwm_t</a> *const&#160;</td>
           <td class="paramname"><em>pwm</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">pcf_percentage_t *&#160;</td>
+          <td class="paramtype">Fractioni16_t *const&#160;</td>
           <td class="paramname"><em>dutyCycle</em>&#160;</td>
         </tr>
         <tr>
@@ -856,19 +635,19 @@ PCF_PWM_S_ALLOCATION_FAILED  : Memory allocation failed. </li>
       </table>
 </div><div class="memdoc">
 
-<p>Get the PWM Output Duty Cycle. </p>
+<p>Gets the PWM Output Duty Cycle. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pwm</td><td>[IN] - Pointer to the PWM Entity Object. </td></tr>
-    <tr><td class="paramname">period</td><td>[OUT] - Pointer to pcf_percentage_t. Set this variable with the PWM Duty Cycle </td></tr>
+    <tr><td class="paramname">pwm</td><td>[IN] - A pointer to the <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53" title="PWM Entity Object.">Pwm_t</a> Object. </td></tr>
+    <tr><td class="paramname">dutyCycle</td><td>[OUT] - Pointer to Fractioni16_t, stores the PWM Duty Cycle </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga8a2bcdb1918b06d183927afa2168ea0a">PCF_PWM_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga64ec654e6b6916abb5bee1b5dd2182b9">PCF_PWM_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>pwm</em>  or <em>dutyCycle</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
@@ -883,7 +662,7 @@ PCF_PWM_S_ALLOCATION_FAILED  : Memory allocation failed. </li>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_Pwm_customCommand </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#gabd5ee3ae51fccaa48cc9f6489e967bb5">Pwm_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53">Pwm_t</a> *&#160;</td>
           <td class="paramname"><em>pwm</em>, </td>
         </tr>
         <tr>
@@ -906,26 +685,82 @@ PCF_PWM_S_ALLOCATION_FAILED  : Memory allocation failed. </li>
       </table>
 </div><div class="memdoc">
 
-<p>Used to extend functionality of PWM Entity. </p>
+<p>Can be used to extend the functionality provided by the PWM package item. </p>
+<dl class="section note"><dt>Note</dt><dd>Refer to platform specific implementation header file (if they exists) under pcf/peripherals/pwm/&lt;platform specific folder&gt;/commands for more details.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pwm</td><td>[IN] - Pointer to the PWM Entity Object. </td></tr>
-    <tr><td class="paramname">command</td><td>[IN] - Represents the command/function to be executed. </td></tr>
-    <tr><td class="paramname">data</td><td>[IN/OUT] - A generic pointer to hold the Input and/or Output data related to the command/function. </td></tr>
+    <tr><td class="paramname">pwm</td><td>- Pointer to <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga3a456e713d0a142bcf0dc8071f5fee53" title="PWM Entity Object.">Pwm_t</a> entity object </td></tr>
+    <tr><td class="paramname">command</td><td>- The custom command to send. </td></tr>
+    <tr><td class="paramname">data</td><td>- The data associated with the custom command. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga8a2bcdb1918b06d183927afa2168ea0a">PCF_PWM_S_SUCCESS</a>  : Successful operation. </li>
-<li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga64ec654e6b6916abb5bee1b5dd2182b9">PCF_PWM_S_NULL_ARG</a>  : Null argument was passed.(Checked only in debug mode) </li>
-<li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga1f7077e1e098f9e214e00fb46a700bdb">PCF_PWM_S_NOT_IMPLEMENTED</a>  : Not implemented. </li>
-<li>
-<a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga4c5fa8617ab5c39dccdb88fd5c6c47a5">PCF_PWM_S_NOT_SUPPORTED</a>  : Specified command not supported. </li>
+PCF_S_NOT_IMPLEMENTED : The function is not implemented. </li>
 </ul>
 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga4cbec6069849fee6fd863b20a721d476" name="ga4cbec6069849fee6fd863b20a721d476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4cbec6069849fee6fd863b20a721d476">&#9670;&#160;</a></span>portPin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_port_pin__t.html">PortPin_t</a> PwmConfig_t::portPin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The Port Pin on which pwm output will be generated. </p>
+
+</div>
+</div>
+<a id="ga43c8a581df31deb8908ae86e8624a8ef" name="ga43c8a581df31deb8908ae86e8624a8ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga43c8a581df31deb8908ae86e8624a8ef">&#9670;&#160;</a></span>period</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_time_interval__t.html">TimeInterval_t</a> PwmConfig_t::period</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Period of the PWM signal. The system may not support the period requested. To get actual value configured use function <a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga54af184abaf9de2071276301d26bf255">pcf_Pwm_getTimePeriod()</a> </p>
+
+</div>
+</div>
+<a id="ga2ed25c798fb64c0e44b531973fdf90fc" name="ga2ed25c798fb64c0e44b531973fdf90fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2ed25c798fb64c0e44b531973fdf90fc">&#9670;&#160;</a></span>outputSignal</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__pcf__mcal__peripherals__pwm.html#ga4b176c8cfc80c4c6730e31af20b4d026">EnPwmOutputSignal_t</a> PwmConfig_t::outputSignal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Output signal type of the PWM. </p>
+
+</div>
+</div>
+<a id="gaf36d998952d1939afe9866fbb05ccc2d" name="gaf36d998952d1939afe9866fbb05ccc2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf36d998952d1939afe9866fbb05ccc2d">&#9670;&#160;</a></span>hardwareCfg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcf_generic_t PwmConfig_t::hardwareCfg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Hardware specific configuration structure. Refer to native specific header file (if they exists) under pcf/peripherals/pwm/&lt;native specific folder&gt; for details. Set to PCF_NULL if native specific file does not exist </p>
 
 </div>
 </div>

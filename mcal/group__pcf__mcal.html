@@ -91,10 +91,14 @@ $(document).ready(function(){initNavTree('group__pcf__mcal.html',''); initResiza
 <div class="header">
   <div class="summary">
 <a href="#groups">Modules</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">Mcal</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The "mcal" is a header only library that provides API definitions for microcontroller (MCU) and peripheral operations.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
 Modules</h2></td></tr>
@@ -103,24 +107,49 @@ Modules</h2></td></tr>
 <tr class="memitem:group__pcf__mcal__peripherals"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals.html">Peripherals</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gac4cbd49517d544e5f824bd78866824aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:gac4cbd49517d544e5f824bd78866824aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_frequency__t.html">Frequency_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">MCU frequency struct.  <a href="struct_frequency__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga8113bc5673a34eb212104582dd203846"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal.html#ga8113bc5673a34eb212104582dd203846">EnFrequencyUnit_t</a> { <a class="el" href="group__pcf__mcal.html#gga8113bc5673a34eb212104582dd203846aa47b752a492bf3ebd20b1c632c1e8056">enFrequencyUnit_Hz</a>
+, <a class="el" href="group__pcf__mcal.html#gga8113bc5673a34eb212104582dd203846aba0308ecc3b9b29e44bd1adc1f1d9a2b">enFrequencyUnit_KHz</a>
+, <a class="el" href="group__pcf__mcal.html#gga8113bc5673a34eb212104582dd203846a7da22597d08717e80c569fd9e1d0c922">enFrequencyUnit_MHz</a>
+, <a class="el" href="group__pcf__mcal.html#gga8113bc5673a34eb212104582dd203846a0ed220b79416ae678b27498ab448d45a">enFrequencyUnit_GHz</a>
+ }</td></tr>
+<tr class="memdesc:ga8113bc5673a34eb212104582dd203846"><td class="mdescLeft">&#160;</td><td class="mdescRight">MCU frequency unit enum.  <a href="group__pcf__mcal.html#ga8113bc5673a34eb212104582dd203846">More...</a><br /></td></tr>
+<tr class="separator:ga8113bc5673a34eb212104582dd203846"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="gac4cbd49517d544e5f824bd78866824aa" name="gac4cbd49517d544e5f824bd78866824aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac4cbd49517d544e5f824bd78866824aa">&#9670;&#160;</a></span>PKG_ID_MCAL</h2>
+<p>The "mcal" is a header only library that provides API definitions for microcontroller (MCU) and peripheral operations. </p>
+<p>It serves as an abstraction layer, simplifying the interaction with hardware components. </p>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga8113bc5673a34eb212104582dd203846" name="ga8113bc5673a34eb212104582dd203846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8113bc5673a34eb212104582dd203846">&#9670;&#160;</a></span>EnFrequencyUnit_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PKG_ID_MCAL&#160;&#160;&#160;2</td>
+          <td class="memname">enum <a class="el" href="group__pcf__mcal.html#ga8113bc5673a34eb212104582dd203846">EnFrequencyUnit_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>MCU frequency unit enum. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga8113bc5673a34eb212104582dd203846aa47b752a492bf3ebd20b1c632c1e8056" name="gga8113bc5673a34eb212104582dd203846aa47b752a492bf3ebd20b1c632c1e8056"></a>enFrequencyUnit_Hz&#160;</td><td class="fielddoc"><p>Frequency in Hertz </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8113bc5673a34eb212104582dd203846aba0308ecc3b9b29e44bd1adc1f1d9a2b" name="gga8113bc5673a34eb212104582dd203846aba0308ecc3b9b29e44bd1adc1f1d9a2b"></a>enFrequencyUnit_KHz&#160;</td><td class="fielddoc"><p>Frequency in Kilo Hertz </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8113bc5673a34eb212104582dd203846a7da22597d08717e80c569fd9e1d0c922" name="gga8113bc5673a34eb212104582dd203846a7da22597d08717e80c569fd9e1d0c922"></a>enFrequencyUnit_MHz&#160;</td><td class="fielddoc"><p>Frequency in Mega Hertz </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga8113bc5673a34eb212104582dd203846a0ed220b79416ae678b27498ab448d45a" name="gga8113bc5673a34eb212104582dd203846a0ed220b79416ae678b27498ab448d45a"></a>enFrequencyUnit_GHz&#160;</td><td class="fielddoc"><p>Frequency in Giga Hertz </p>
+</td></tr>
+</table>
 
 </div>
 </div>

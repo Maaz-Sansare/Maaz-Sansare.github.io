@@ -98,6 +98,9 @@ $(document).ready(function(){initNavTree('group__pcf__mcal__peripherals__ext__in
   <div class="headertitle"><div class="title">External Interrupt<div class="ingroups"><a class="el" href="group__pcf__mcal.html">Mcal</a> &raquo; <a class="el" href="group__pcf__mcal__peripherals.html">Peripherals</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The External Interrupt interface is used to trigger an event when a digital input pin changes.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -107,31 +110,18 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gafad5d15ab44a37f936cc52f45399a0cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gafad5d15ab44a37f936cc52f45399a0cb">ITEM_ID_EXTI</a>&#160;&#160;&#160;(10)</td></tr>
-<tr class="memdesc:gafad5d15ab44a37f936cc52f45399a0cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Item ID of External Interrupt (EXTI) Entity within Peripheral Package.  <br /></td></tr>
-<tr class="separator:gafad5d15ab44a37f936cc52f45399a0cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab7d1e9c14b29c068aa383b8f624123dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab7d1e9c14b29c068aa383b8f624123dc">PCF_ENTITY_TYPE_EXTI</a>&#160;&#160;&#160;(0x49545845)</td></tr>
 <tr class="memdesc:gab7d1e9c14b29c068aa383b8f624123dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The following defines the EntityType_t.id for External Interrupt (EXTI) Entities.  <br /></td></tr>
 <tr class="separator:gab7d1e9c14b29c068aa383b8f624123dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga982e9d1bd538265c3d8e259bc07203f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga982e9d1bd538265c3d8e259bc07203f9">PCF_EXTI_S_SUCCESS</a>&#160;&#160;&#160;GENERATE_PCF_STATUS_SUCCESS(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gafad5d15ab44a37f936cc52f45399a0cb">ITEM_ID_EXTI</a>)</td></tr>
-<tr class="memdesc:ga982e9d1bd538265c3d8e259bc07203f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status codes that can be returned by functions of EXTI package item.  <br /></td></tr>
-<tr class="separator:ga982e9d1bd538265c3d8e259bc07203f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab35a520aef6b7f9d001375c7a87a8b2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab35a520aef6b7f9d001375c7a87a8b2a">PCF_EXTI_S_ALLOCATION_FAILED</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_ALLOCATION_FAILED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gafad5d15ab44a37f936cc52f45399a0cb">ITEM_ID_EXTI</a>)</td></tr>
-<tr class="separator:gab35a520aef6b7f9d001375c7a87a8b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga20a9f80a831d49761ec2a39d615766f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga20a9f80a831d49761ec2a39d615766f6">PCF_EXTI_S_INVALID_ARG</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_INVALID_ARG(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gafad5d15ab44a37f936cc52f45399a0cb">ITEM_ID_EXTI</a>)</td></tr>
-<tr class="separator:ga20a9f80a831d49761ec2a39d615766f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga80630bb8e804c1cedc818c1ac93acbf6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga80630bb8e804c1cedc818c1ac93acbf6">PCF_EXTI_S_NULL_ARG</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NULL_ARG(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gafad5d15ab44a37f936cc52f45399a0cb">ITEM_ID_EXTI</a>)</td></tr>
-<tr class="separator:ga80630bb8e804c1cedc818c1ac93acbf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad5be3e5a3345af8c616329b682ddaf3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gad5be3e5a3345af8c616329b682ddaf3a">PCF_EXTI_S_NOT_IMPLEMENTED</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_IMPLEMENTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gafad5d15ab44a37f936cc52f45399a0cb">ITEM_ID_EXTI</a>)</td></tr>
-<tr class="separator:gad5be3e5a3345af8c616329b682ddaf3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1e060da75bccf7a0ea2d9d42a8a74f65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga1e060da75bccf7a0ea2d9d42a8a74f65">PCF_EXTI_S_ALREADY_IN_USE</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_ALREADY_IN_USE(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gafad5d15ab44a37f936cc52f45399a0cb">ITEM_ID_EXTI</a>)</td></tr>
-<tr class="separator:ga1e060da75bccf7a0ea2d9d42a8a74f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gab015b9a5db0152d209f43e31b262adbe"><td class="memItemLeft" align="right" valign="top">typedef struct _pcf_peripheral_ext_int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a></td></tr>
-<tr class="memdesc:gab015b9a5db0152d209f43e31b262adbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">External interrupt (EXTI) Entity Object/Structure.  <br /></td></tr>
-<tr class="separator:gab015b9a5db0152d209f43e31b262adbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab75b9197e03a09fb3afff1a60ac59c6"><td class="memItemLeft" align="right" valign="top">typedef struct _pcf_peripheral_ext_int_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a></td></tr>
+<tr class="memdesc:gaab75b9197e03a09fb3afff1a60ac59c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">External interrupt (EXTI) Entity Object/Structure.  <br /></td></tr>
+<tr class="separator:gaab75b9197e03a09fb3afff1a60ac59c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga529baefdde0f11db82f8ff55606cd74c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__pcf__mcal__peripherals__gpio.html#gab1e00750889df4b7505f47b895a2c5d7">EnGpioPinState_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga529baefdde0f11db82f8ff55606cd74c">EnExtInPinState_t</a></td></tr>
+<tr class="memdesc:ga529baefdde0f11db82f8ff55606cd74c"><td class="mdescLeft">&#160;</td><td class="mdescRight">External interrupt Pin state.  <br /></td></tr>
+<tr class="separator:ga529baefdde0f11db82f8ff55606cd74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5990a2b50b57c40f20206fc6837756f3"><td class="memItemLeft" align="right" valign="top">typedef pcf_status_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga5990a2b50b57c40f20206fc6837756f3">ExtIntCallback_fp</a>) (pcf_generic_t)</td></tr>
 <tr class="memdesc:ga5990a2b50b57c40f20206fc6837756f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">External interrupt callback function pointer.  <br /></td></tr>
 <tr class="separator:ga5990a2b50b57c40f20206fc6837756f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,74 +136,59 @@ Enumerations</h2></td></tr>
 , <br />
 &#160;&#160;<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gga1a902573923bb67984394c41f339aa1ca673f83a2c28889cb70c0be2bcc5f6aea">enExtIntTrigger_HighLevel</a>
 , <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gga1a902573923bb67984394c41f339aa1ca7bca73005a84bc982571f48a2c3f76de">enExtIntTrigger_BothLevel</a>
-, <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gga1a902573923bb67984394c41f339aa1caf7121148a45fbf9f934b089ebb8a2bd4">enExtIntTrigger_BoundSize</a> = PCF_ENUM_MAXVALUE
 <br />
  }</td></tr>
-<tr class="memdesc:ga1a902573923bb67984394c41f339aa1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for external interrupt trigger selection What will cause the interrupt to be triggered.  <a href="group__pcf__mcal__peripherals__ext__int.html#ga1a902573923bb67984394c41f339aa1c">More...</a><br /></td></tr>
+<tr class="memdesc:ga1a902573923bb67984394c41f339aa1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for external interrupt trigger mode selection, i.e.  <a href="group__pcf__mcal__peripherals__ext__int.html#ga1a902573923bb67984394c41f339aa1c">More...</a><br /></td></tr>
 <tr class="separator:ga1a902573923bb67984394c41f339aa1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaa837bb98f2d61f412f08db30bdb01382"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaa837bb98f2d61f412f08db30bdb01382">pcf_ExtInt_getTotalIds</a> (uint8_t *count)</td></tr>
-<tr class="memdesc:gaa837bb98f2d61f412f08db30bdb01382"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the total number of available external interrupt IDs.  <br /></td></tr>
-<tr class="separator:gaa837bb98f2d61f412f08db30bdb01382"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga97e9d1ec79c11307a05c0a0593e61f71"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga97e9d1ec79c11307a05c0a0593e61f71">pcf_ExtInt_getAvailableIds</a> (uint8_t *count)</td></tr>
-<tr class="memdesc:ga97e9d1ec79c11307a05c0a0593e61f71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the number of available external interrupt IDs.  <br /></td></tr>
-<tr class="separator:ga97e9d1ec79c11307a05c0a0593e61f71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac08dac0af00c92b54948a03e455d9e9c"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gac08dac0af00c92b54948a03e455d9e9c">pcf_ExtInt_new</a> (const <a class="el" href="struct_ext_int_config__t.html">ExtIntConfig_t</a> *const config, pcf_status_t *status)</td></tr>
-<tr class="memdesc:gac08dac0af00c92b54948a03e455d9e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new instance of the <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a> structure based on the configuration structure <a class="el" href="struct_ext_int_config__t.html" title="External interrupt configuration structure.">ExtIntConfig_t</a> and returns a pointer to <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a>.  <br /></td></tr>
+<tr class="memitem:gab8ceab10bb7e31cee38a6671a070c009"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab8ceab10bb7e31cee38a6671a070c009">pcf_ExtInt_getTotal</a> (pcf_size_t *count)</td></tr>
+<tr class="memdesc:gab8ceab10bb7e31cee38a6671a070c009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the total number of external interrupts supported by the microcontroller.  <br /></td></tr>
+<tr class="separator:gab8ceab10bb7e31cee38a6671a070c009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f91ee0e6c456bf636795db2fe6d27d9"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga8f91ee0e6c456bf636795db2fe6d27d9">pcf_ExtInt_getAvailable</a> (pcf_size_t *count)</td></tr>
+<tr class="memdesc:ga8f91ee0e6c456bf636795db2fe6d27d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of available/unused external interrupts.  <br /></td></tr>
+<tr class="separator:ga8f91ee0e6c456bf636795db2fe6d27d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac08dac0af00c92b54948a03e455d9e9c"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gac08dac0af00c92b54948a03e455d9e9c">pcf_ExtInt_new</a> (const <a class="el" href="struct_ext_int_config__t.html">ExtIntConfig_t</a> *const config, pcf_status_t *status)</td></tr>
+<tr class="memdesc:gac08dac0af00c92b54948a03e455d9e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new instance of <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a> based on the configuration provided by <a class="el" href="struct_ext_int_config__t.html" title="External interrupt configuration structure.">ExtIntConfig_t</a> <em>config</em> .  <br /></td></tr>
 <tr class="separator:gac08dac0af00c92b54948a03e455d9e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaa8bd163e5ce968921c82c6b637fe824"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaaa8bd163e5ce968921c82c6b637fe824">pcf_ExtInt_delete</a> (<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a> **ext_int)</td></tr>
-<tr class="memdesc:gaaa8bd163e5ce968921c82c6b637fe824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes/destroys ext int entity object and deinitializes ext_int.  <br /></td></tr>
+<tr class="memitem:gaaa8bd163e5ce968921c82c6b637fe824"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaaa8bd163e5ce968921c82c6b637fe824">pcf_ExtInt_delete</a> (<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a> **ext_int)</td></tr>
+<tr class="memdesc:gaaa8bd163e5ce968921c82c6b637fe824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes/destroys the <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a> entity returned from <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gac08dac0af00c92b54948a03e455d9e9c" title="Creates a new instance of ExtInt_t based on the configuration provided by ExtIntConfig_t config .">pcf_ExtInt_new</a>.  <br /></td></tr>
 <tr class="separator:gaaa8bd163e5ce968921c82c6b637fe824"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad20d316f21337b22c4a30104af4676f1"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gad20d316f21337b22c4a30104af4676f1">pcf_ExtInt_enable</a> (const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a> *const ext_int)</td></tr>
-<tr class="memdesc:gad20d316f21337b22c4a30104af4676f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables the specified ExtInt instance to start generating interrupts.  <br /></td></tr>
-<tr class="separator:gad20d316f21337b22c4a30104af4676f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa9f83d8a1cd0e8564509f5215116df93"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaa9f83d8a1cd0e8564509f5215116df93">pcf_ExtInt_disable</a> (const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a> *const ext_int)</td></tr>
-<tr class="memdesc:gaa9f83d8a1cd0e8564509f5215116df93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables the specified ExtInt instance from generating interrupts.  <br /></td></tr>
-<tr class="separator:gaa9f83d8a1cd0e8564509f5215116df93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga169986e0e9938101504201af96316192"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga169986e0e9938101504201af96316192">pcf_ExtInt_attachCallback</a> (const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a> *const ext_int, const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga5990a2b50b57c40f20206fc6837756f3">ExtIntCallback_fp</a> callback, const pcf_generic_t user_args, <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga5990a2b50b57c40f20206fc6837756f3">ExtIntCallback_fp</a> *const old_callback, pcf_generic_t *const old_userArgs)</td></tr>
-<tr class="memdesc:ga169986e0e9938101504201af96316192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches a callback to the external interrupt.  <br /></td></tr>
-<tr class="separator:ga169986e0e9938101504201af96316192"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4658f139322a854eb58380506562099e"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga4658f139322a854eb58380506562099e">pcf_ExtInt_detachCallback</a> (const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a> *const ext_int, <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga5990a2b50b57c40f20206fc6837756f3">ExtIntCallback_fp</a> *const callback, pcf_generic_t *const user_args)</td></tr>
-<tr class="memdesc:ga4658f139322a854eb58380506562099e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detaches the callback function from the specified external interrupt.  <br /></td></tr>
-<tr class="separator:ga4658f139322a854eb58380506562099e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf5981adece699118a9372bf1c88b3b43"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaf5981adece699118a9372bf1c88b3b43">pcf_ExtInt_getPortPin</a> (const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a> *const ext_int, <a class="el" href="struct_port_pin__t.html">PortPin_t</a> *const portPin)</td></tr>
-<tr class="memdesc:gaf5981adece699118a9372bf1c88b3b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the GPIO port and pin configuration of the specified ExtInt instance and stores them in the provided <a class="el" href="struct_port_pin__t.html" title="Port pin struct.">PortPin_t</a> structure.  <br /></td></tr>
+<tr class="memitem:ga5235fdbb368acd99c94d4077d1cb06c4"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga5235fdbb368acd99c94d4077d1cb06c4">pcf_ExtInt_enable</a> (<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a> *const ext_int, const EnPCFBoolean_t enable)</td></tr>
+<tr class="memdesc:ga5235fdbb368acd99c94d4077d1cb06c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables/Disables the <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a> instance to start/stop generating interrupts.  <br /></td></tr>
+<tr class="separator:ga5235fdbb368acd99c94d4077d1cb06c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga40d86c91ec71ff1fa12d89da451f0a89"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga40d86c91ec71ff1fa12d89da451f0a89">pcf_ExtInt_isEnabled</a> (const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a> *const ext_int, EnPCFBoolean_t *const isEnabled)</td></tr>
+<tr class="memdesc:ga40d86c91ec71ff1fa12d89da451f0a89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the external interrupt is enabled or disabled.  <br /></td></tr>
+<tr class="separator:ga40d86c91ec71ff1fa12d89da451f0a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac44866ffc3ca2d7d25fa1f89c5bb13d2"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gac44866ffc3ca2d7d25fa1f89c5bb13d2">pcf_ExtInt_read</a> (const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a> *const ext_int, <a class="el" href="group__pcf__mcal__peripherals__gpio.html#gab1e00750889df4b7505f47b895a2c5d7">EnExtInPinState_t</a> *const state)</td></tr>
+<tr class="memdesc:gac44866ffc3ca2d7d25fa1f89c5bb13d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the state of the port pin mapped to the external interrupt.  <br /></td></tr>
+<tr class="separator:gac44866ffc3ca2d7d25fa1f89c5bb13d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15d8c8270904b2cac0f23d6f70b65193"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga15d8c8270904b2cac0f23d6f70b65193">pcf_ExtInt_attachCallback</a> (<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a> *const ext_int, const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga5990a2b50b57c40f20206fc6837756f3">ExtIntCallback_fp</a> callback, const pcf_generic_t user_args, <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga5990a2b50b57c40f20206fc6837756f3">ExtIntCallback_fp</a> *const old_callback, pcf_generic_t *const old_userArgs)</td></tr>
+<tr class="memdesc:ga15d8c8270904b2cac0f23d6f70b65193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches/Detaches a callback to the external interrupt.  <br /></td></tr>
+<tr class="separator:ga15d8c8270904b2cac0f23d6f70b65193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5981adece699118a9372bf1c88b3b43"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaf5981adece699118a9372bf1c88b3b43">pcf_ExtInt_getPortPin</a> (const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a> *const ext_int, <a class="el" href="struct_port_pin__t.html">PortPin_t</a> *const portPin)</td></tr>
+<tr class="memdesc:gaf5981adece699118a9372bf1c88b3b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the port and pin configuration mapped to the <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a> instance and stores them in the provided <a class="el" href="struct_port_pin__t.html" title="Port pin struct.">PortPin_t</a> structure.  <br /></td></tr>
 <tr class="separator:gaf5981adece699118a9372bf1c88b3b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga72426b937bcde527aab0b582a1c320c9"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga72426b937bcde527aab0b582a1c320c9">pcf_ExtInt_getTrigger</a> (const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a> *const ext_int, <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga1a902573923bb67984394c41f339aa1c">EnExtIntTrigger_t</a> *trigger)</td></tr>
-<tr class="memdesc:ga72426b937bcde527aab0b582a1c320c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the trigger mode (rising edge, falling edge, both edges, etc) of the specified external interrupt.  <br /></td></tr>
-<tr class="separator:ga72426b937bcde527aab0b582a1c320c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga60b58701b4c62c38cb4a4fdf73e28273"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga60b58701b4c62c38cb4a4fdf73e28273">pcf_ExtInt_setPriority</a> (const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a> *const ext_int, const uint32_t priority, const uint32_t sub_priority)</td></tr>
-<tr class="memdesc:ga60b58701b4c62c38cb4a4fdf73e28273"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the global interrupt priority, of the external interrupt, across all entities which are interrupt based.  <br /></td></tr>
-<tr class="separator:ga60b58701b4c62c38cb4a4fdf73e28273"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga64c0f7467b38021f9ff321527c2d0e79"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga64c0f7467b38021f9ff321527c2d0e79">pcf_ExtInt_getPriority</a> (const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a> *const ext_int, uint32_t *priority, uint32_t *sub_priority)</td></tr>
-<tr class="memdesc:ga64c0f7467b38021f9ff321527c2d0e79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrives the global interrupt priority &amp; sub-priority level of given ExtInt_t object.  <br /></td></tr>
-<tr class="separator:ga64c0f7467b38021f9ff321527c2d0e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2ff6200bed59b8d8f83957d8164ff409"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga2ff6200bed59b8d8f83957d8164ff409">pcf_ExtInt_customCommand</a> (<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a> *ext_int, pcf_command_t command, pcf_generic_t data)</td></tr>
-<tr class="memdesc:ga2ff6200bed59b8d8f83957d8164ff409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can be used to extend the functionality of the external interrupt entity for a particular platform.  <br /></td></tr>
+<tr class="memitem:gaf539633919742092437bbb30b7a48957"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaf539633919742092437bbb30b7a48957">pcf_ExtInt_getTrigger</a> (const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a> *const ext_int, <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga1a902573923bb67984394c41f339aa1c">EnExtIntTrigger_t</a> *const trigger)</td></tr>
+<tr class="memdesc:gaf539633919742092437bbb30b7a48957"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the trigger mode (rising edge, falling edge, both edges, etc) configured.  <br /></td></tr>
+<tr class="separator:gaf539633919742092437bbb30b7a48957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e01345fc28c362bde4461f2bac2a67a"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga9e01345fc28c362bde4461f2bac2a67a">pcf_ExtInt_setPriority</a> (<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a> *const ext_int, const uint32_t priority, const uint32_t sub_priority)</td></tr>
+<tr class="memdesc:ga9e01345fc28c362bde4461f2bac2a67a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the global interrupt priority, of the external interrupt.  <br /></td></tr>
+<tr class="separator:ga9e01345fc28c362bde4461f2bac2a67a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace2a267b51b4ed7ab371eb13d1802de0"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gace2a267b51b4ed7ab371eb13d1802de0">pcf_ExtInt_getPriority</a> (const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a> *const ext_int, uint32_t *const priority, uint32_t *const sub_priority)</td></tr>
+<tr class="memdesc:gace2a267b51b4ed7ab371eb13d1802de0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the global interrupt priority &amp; sub-priority level of given external interrupt.  <br /></td></tr>
+<tr class="separator:gace2a267b51b4ed7ab371eb13d1802de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ff6200bed59b8d8f83957d8164ff409"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga2ff6200bed59b8d8f83957d8164ff409">pcf_ExtInt_customCommand</a> (<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a> *ext_int, pcf_command_t command, pcf_generic_t data)</td></tr>
+<tr class="memdesc:ga2ff6200bed59b8d8f83957d8164ff409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to extend the functionality of the <em>ext_int</em> .  <br /></td></tr>
 <tr class="separator:ga2ff6200bed59b8d8f83957d8164ff409"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<dl class="section note"><dt>Note</dt><dd>Input validation is done only when package is built in debug mode. <br  />
+<p>The External Interrupt interface is used to trigger an event when a digital input pin changes. </p>
+<p>You can trigger interrupts on the rising edge (change from 0 to 1) or falling edge (change from 1 to 0) of signals or both.</p>
+<p>External interrupts are hardware-triggered events that allow a microcontroller or microprocessor to respond to external signals or events, providing a mechanism for real-time event-driven processing in embedded systems. These interrupts enable the processor to momentarily suspend its current task and execute a specific interrupt service routine, making them crucial for handling time-sensitive events in embedded applications. </p><dl class="section note"><dt>Note</dt><dd>Input validation is done only when package is built in debug mode. <br  />
  </dd></dl>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="gafad5d15ab44a37f936cc52f45399a0cb" name="gafad5d15ab44a37f936cc52f45399a0cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafad5d15ab44a37f936cc52f45399a0cb">&#9670;&#160;</a></span>ITEM_ID_EXTI</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ITEM_ID_EXTI&#160;&#160;&#160;(10)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Item ID of External Interrupt (EXTI) Entity within Peripheral Package. </p>
-
-</div>
-</div>
 <a id="gab7d1e9c14b29c068aa383b8f624123dc" name="gab7d1e9c14b29c068aa383b8f624123dc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab7d1e9c14b29c068aa383b8f624123dc">&#9670;&#160;</a></span>PCF_ENTITY_TYPE_EXTI</h2>
 
@@ -230,106 +205,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga982e9d1bd538265c3d8e259bc07203f9" name="ga982e9d1bd538265c3d8e259bc07203f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga982e9d1bd538265c3d8e259bc07203f9">&#9670;&#160;</a></span>PCF_EXTI_S_SUCCESS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_EXTI_S_SUCCESS&#160;&#160;&#160;GENERATE_PCF_STATUS_SUCCESS(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gafad5d15ab44a37f936cc52f45399a0cb">ITEM_ID_EXTI</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Status codes that can be returned by functions of EXTI package item. </p>
-
-</div>
-</div>
-<a id="gab35a520aef6b7f9d001375c7a87a8b2a" name="gab35a520aef6b7f9d001375c7a87a8b2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab35a520aef6b7f9d001375c7a87a8b2a">&#9670;&#160;</a></span>PCF_EXTI_S_ALLOCATION_FAILED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_EXTI_S_ALLOCATION_FAILED&#160;&#160;&#160;GENERATE_PCF_ERROR_ALLOCATION_FAILED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gafad5d15ab44a37f936cc52f45399a0cb">ITEM_ID_EXTI</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga20a9f80a831d49761ec2a39d615766f6" name="ga20a9f80a831d49761ec2a39d615766f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga20a9f80a831d49761ec2a39d615766f6">&#9670;&#160;</a></span>PCF_EXTI_S_INVALID_ARG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_EXTI_S_INVALID_ARG&#160;&#160;&#160;GENERATE_PCF_ERROR_INVALID_ARG(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gafad5d15ab44a37f936cc52f45399a0cb">ITEM_ID_EXTI</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga80630bb8e804c1cedc818c1ac93acbf6" name="ga80630bb8e804c1cedc818c1ac93acbf6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga80630bb8e804c1cedc818c1ac93acbf6">&#9670;&#160;</a></span>PCF_EXTI_S_NULL_ARG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_EXTI_S_NULL_ARG&#160;&#160;&#160;GENERATE_PCF_ERROR_NULL_ARG(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>,<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gafad5d15ab44a37f936cc52f45399a0cb">ITEM_ID_EXTI</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gad5be3e5a3345af8c616329b682ddaf3a" name="gad5be3e5a3345af8c616329b682ddaf3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad5be3e5a3345af8c616329b682ddaf3a">&#9670;&#160;</a></span>PCF_EXTI_S_NOT_IMPLEMENTED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_EXTI_S_NOT_IMPLEMENTED&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_IMPLEMENTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gafad5d15ab44a37f936cc52f45399a0cb">ITEM_ID_EXTI</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga1e060da75bccf7a0ea2d9d42a8a74f65" name="ga1e060da75bccf7a0ea2d9d42a8a74f65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1e060da75bccf7a0ea2d9d42a8a74f65">&#9670;&#160;</a></span>PCF_EXTI_S_ALREADY_IN_USE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_EXTI_S_ALREADY_IN_USE&#160;&#160;&#160;GENERATE_PCF_ERROR_ALREADY_IN_USE(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gafad5d15ab44a37f936cc52f45399a0cb">ITEM_ID_EXTI</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="gab015b9a5db0152d209f43e31b262adbe" name="gab015b9a5db0152d209f43e31b262adbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab015b9a5db0152d209f43e31b262adbe">&#9670;&#160;</a></span>ExtInt_t</h2>
+<a id="gaab75b9197e03a09fb3afff1a60ac59c6" name="gaab75b9197e03a09fb3afff1a60ac59c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab75b9197e03a09fb3afff1a60ac59c6">&#9670;&#160;</a></span>ExtInt_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct _pcf_peripheral_ext_int <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a></td>
+          <td class="memname">typedef struct _pcf_peripheral_ext_int_t <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>External interrupt (EXTI) Entity Object/Structure. </p>
+
+</div>
+</div>
+<a id="ga529baefdde0f11db82f8ff55606cd74c" name="ga529baefdde0f11db82f8ff55606cd74c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga529baefdde0f11db82f8ff55606cd74c">&#9670;&#160;</a></span>EnExtInPinState_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="group__pcf__mcal__peripherals__gpio.html#gab1e00750889df4b7505f47b895a2c5d7">EnGpioPinState_t</a> <a class="el" href="group__pcf__mcal__peripherals__gpio.html#gab1e00750889df4b7505f47b895a2c5d7">EnExtInPinState_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>External interrupt Pin state. </p>
 
 </div>
 </div>
@@ -364,62 +269,55 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enumeration for external interrupt trigger selection What will cause the interrupt to be triggered. </p>
+<p>Enumeration for external interrupt trigger mode selection, i.e. </p>
+<p>what will cause the interrupt to be triggered.</p>
 <p>Note: All options may not be applicable to a microcontroller/platform. Refer microcontroller/platform documentation/datasheet/reference manuals to know which triggers are applicable. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga1a902573923bb67984394c41f339aa1ca385d6664caf5f90ecae7822bbb1cf275" name="gga1a902573923bb67984394c41f339aa1ca385d6664caf5f90ecae7822bbb1cf275"></a>enExtIntTrigger_FallingEdge&#160;</td><td class="fielddoc"><p>Falling edge triggered interrupt. </p>
-<p><br  />
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga1a902573923bb67984394c41f339aa1ca385d6664caf5f90ecae7822bbb1cf275" name="gga1a902573923bb67984394c41f339aa1ca385d6664caf5f90ecae7822bbb1cf275"></a>enExtIntTrigger_FallingEdge&#160;</td><td class="fielddoc"><p>Falling edge triggered interrupt. <br  />
  Interrupt will be triggered when signal on the pin transitions from high to low </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga1a902573923bb67984394c41f339aa1ca93d7556b9193e258ca458811784bf771" name="gga1a902573923bb67984394c41f339aa1ca93d7556b9193e258ca458811784bf771"></a>enExtIntTrigger_RisingEdge&#160;</td><td class="fielddoc"><p>Rising edge triggered interrupt. </p>
-<p>Interrupt will be triggered when signal on the pin transitions from high to low </p>
+<tr><td class="fieldname"><a id="gga1a902573923bb67984394c41f339aa1ca93d7556b9193e258ca458811784bf771" name="gga1a902573923bb67984394c41f339aa1ca93d7556b9193e258ca458811784bf771"></a>enExtIntTrigger_RisingEdge&#160;</td><td class="fielddoc"><p>Rising edge triggered interrupt. Interrupt will be triggered when signal on the pin transitions from high to low </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga1a902573923bb67984394c41f339aa1ca12c33746bd15894cd4164fd3ee0a5b1b" name="gga1a902573923bb67984394c41f339aa1ca12c33746bd15894cd4164fd3ee0a5b1b"></a>enExtIntTrigger_BothEdge&#160;</td><td class="fielddoc"><p>Interrupt on both edge. </p>
-<p>Interrupt will be triggered when signal on the pin transitions from high to low and from low to high </p>
+<tr><td class="fieldname"><a id="gga1a902573923bb67984394c41f339aa1ca12c33746bd15894cd4164fd3ee0a5b1b" name="gga1a902573923bb67984394c41f339aa1ca12c33746bd15894cd4164fd3ee0a5b1b"></a>enExtIntTrigger_BothEdge&#160;</td><td class="fielddoc"><p>Interrupt on both edge. Interrupt will be triggered when signal on the pin transitions from high to low and from low to high </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga1a902573923bb67984394c41f339aa1ca45b77f54af56fa0326e33958f551caa0" name="gga1a902573923bb67984394c41f339aa1ca45b77f54af56fa0326e33958f551caa0"></a>enExtIntTrigger_LowLevel&#160;</td><td class="fielddoc"><p>Low level triggered interrupt. </p>
-<p>Interrupt is triggered if Pin state is OFF/Low </p>
+<tr><td class="fieldname"><a id="gga1a902573923bb67984394c41f339aa1ca45b77f54af56fa0326e33958f551caa0" name="gga1a902573923bb67984394c41f339aa1ca45b77f54af56fa0326e33958f551caa0"></a>enExtIntTrigger_LowLevel&#160;</td><td class="fielddoc"><p>Low level triggered interrupt. Interrupt is triggered if Pin state is OFF/Low </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga1a902573923bb67984394c41f339aa1ca673f83a2c28889cb70c0be2bcc5f6aea" name="gga1a902573923bb67984394c41f339aa1ca673f83a2c28889cb70c0be2bcc5f6aea"></a>enExtIntTrigger_HighLevel&#160;</td><td class="fielddoc"><p>High level triggered interrupt. </p>
-<p>Interrupt is triggered if Pin state is ON/High </p>
+<tr><td class="fieldname"><a id="gga1a902573923bb67984394c41f339aa1ca673f83a2c28889cb70c0be2bcc5f6aea" name="gga1a902573923bb67984394c41f339aa1ca673f83a2c28889cb70c0be2bcc5f6aea"></a>enExtIntTrigger_HighLevel&#160;</td><td class="fielddoc"><p>High level triggered interrupt. Interrupt is triggered if Pin state is ON/High </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga1a902573923bb67984394c41f339aa1ca7bca73005a84bc982571f48a2c3f76de" name="gga1a902573923bb67984394c41f339aa1ca7bca73005a84bc982571f48a2c3f76de"></a>enExtIntTrigger_BothLevel&#160;</td><td class="fielddoc"><p>Interrupt on both level. </p>
-<p>Interrupt is triggered if Pin state is either On or Off </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga1a902573923bb67984394c41f339aa1caf7121148a45fbf9f934b089ebb8a2bd4" name="gga1a902573923bb67984394c41f339aa1caf7121148a45fbf9f934b089ebb8a2bd4"></a>enExtIntTrigger_BoundSize&#160;</td><td class="fielddoc"><p>To ensure sizeof(EnExtIntTrigger_t) == 4 bytes </p>
+<tr><td class="fieldname"><a id="gga1a902573923bb67984394c41f339aa1ca7bca73005a84bc982571f48a2c3f76de" name="gga1a902573923bb67984394c41f339aa1ca7bca73005a84bc982571f48a2c3f76de"></a>enExtIntTrigger_BothLevel&#160;</td><td class="fielddoc"><p>Interrupt on both level. Interrupt is triggered if Pin state is either On or Off </p>
 </td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaa837bb98f2d61f412f08db30bdb01382" name="gaa837bb98f2d61f412f08db30bdb01382"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa837bb98f2d61f412f08db30bdb01382">&#9670;&#160;</a></span>pcf_ExtInt_getTotalIds()</h2>
+<a id="gab8ceab10bb7e31cee38a6671a070c009" name="gab8ceab10bb7e31cee38a6671a070c009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab8ceab10bb7e31cee38a6671a070c009">&#9670;&#160;</a></span>pcf_ExtInt_getTotal()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_MCAL_API pcf_status_t pcf_ExtInt_getTotalIds </td>
+          <td class="memname">PCF_MCAL_API pcf_status_t pcf_ExtInt_getTotal </td>
           <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramtype">pcf_size_t *&#160;</td>
           <td class="paramname"><em>count</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves the total number of available external interrupt IDs. </p>
+<p>Gets the total number of external interrupts supported by the microcontroller. </p>
 <p>The value returned will be same throughout runtime.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">count</td><td>[OUT] - Pointer to uint8_t. Function will set this variable with the total ExtInt available. </td></tr>
+    <tr><td class="paramname">count</td><td>[OUT] - Pointer to pcf_size_t. Function will set this variable with the total ExtInt available. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values: <ul>
 <li>
-PCF_EXT_INT_S_SUCCESS : Successful operation. </li>
+PCF_EXT_INT_S_SUCCESS : On success. </li>
 <li>
 PCF_EXT_INT_S_NULL_ARG : Null count pointer is passed.(Checked only in debug mode) </li>
 </ul>
@@ -427,23 +325,23 @@ PCF_EXT_INT_S_NULL_ARG : Null count pointer is passed.(Checked only in debug mod
 
 </div>
 </div>
-<a id="ga97e9d1ec79c11307a05c0a0593e61f71" name="ga97e9d1ec79c11307a05c0a0593e61f71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga97e9d1ec79c11307a05c0a0593e61f71">&#9670;&#160;</a></span>pcf_ExtInt_getAvailableIds()</h2>
+<a id="ga8f91ee0e6c456bf636795db2fe6d27d9" name="ga8f91ee0e6c456bf636795db2fe6d27d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8f91ee0e6c456bf636795db2fe6d27d9">&#9670;&#160;</a></span>pcf_ExtInt_getAvailable()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_MCAL_API pcf_status_t pcf_ExtInt_getAvailableIds </td>
+          <td class="memname">PCF_MCAL_API pcf_status_t pcf_ExtInt_getAvailable </td>
           <td>(</td>
-          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramtype">pcf_size_t *&#160;</td>
           <td class="paramname"><em>count</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves the number of available external interrupt IDs. </p>
+<p>Gets the number of available/unused external interrupts. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">count</td><td>[OUT] - Pointer to a variable where the number of available external interrupt IDs will be stored. </td></tr>
@@ -452,9 +350,9 @@ PCF_EXT_INT_S_NULL_ARG : Null count pointer is passed.(Checked only in debug mod
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values: <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga982e9d1bd538265c3d8e259bc07203f9" title="Status codes that can be returned by functions of EXTI package item.">PCF_EXTI_S_SUCCESS</a> : Successful operation. </li>
+PCF_S_SUCCESS : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga80630bb8e804c1cedc818c1ac93acbf6">PCF_EXTI_S_NULL_ARG</a> : Null count pointer is passed.(Checked only in debug mode) </li>
+PCF_S_NULL_ARG : Null count pointer is passed.(Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
@@ -467,7 +365,7 @@ PCF_EXT_INT_S_NULL_ARG : Null count pointer is passed.(Checked only in debug mod
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_MCAL_API <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a> * pcf_ExtInt_new </td>
+          <td class="memname">PCF_MCAL_API <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a> * pcf_ExtInt_new </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_ext_int_config__t.html">ExtIntConfig_t</a> *const&#160;</td>
           <td class="paramname"><em>config</em>, </td>
@@ -486,27 +384,34 @@ PCF_EXT_INT_S_NULL_ARG : Null count pointer is passed.(Checked only in debug mod
       </table>
 </div><div class="memdoc">
 
-<p>Creates a new instance of the <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a> structure based on the configuration structure <a class="el" href="struct_ext_int_config__t.html" title="External interrupt configuration structure.">ExtIntConfig_t</a> and returns a pointer to <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a>. </p>
+<p>Creates a new instance of <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a> based on the configuration provided by <a class="el" href="struct_ext_int_config__t.html" title="External interrupt configuration structure.">ExtIntConfig_t</a> <em>config</em> . </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">config</td><td>[IN] - Pointer to the external interrupt configuration structure. </td></tr>
-    <tr><td class="paramname">status</td><td>[OUT] - Pointer to pcf_status_t Valid values: <ul>
+    <tr><td class="paramname">config</td><td>[IN] - Pointer to the external interrupt configuration structure <a class="el" href="struct_ext_int_config__t.html" title="External interrupt configuration structure.">ExtIntConfig_t</a>. </td></tr>
+    <tr><td class="paramname">status</td><td>[OUT] - Pointer to pcf_status_t (Optional parameter, pass PCF_NULL if not required.) <br  />
+ Valid values: <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga982e9d1bd538265c3d8e259bc07203f9" title="Status codes that can be returned by functions of EXTI package item.">PCF_EXTI_S_SUCCESS</a> : Successful operation. </li>
+PCF_S_SUCCESS : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga80630bb8e804c1cedc818c1ac93acbf6">PCF_EXTI_S_NULL_ARG</a> : Null config is passed. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG : Null config is passed. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga20a9f80a831d49761ec2a39d615766f6">PCF_EXTI_S_INVALID_ARG</a> : Invalid config.port, config.pin, config.pupd or config.trigger is passed. (Checked only in debug mode) </li>
+PCF_S_INVALID_ARG : Invalid config.port, config.pin, config.pupd or config.trigger is passed. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga1e060da75bccf7a0ea2d9d42a8a74f65">PCF_EXTI_S_ALREADY_IN_USE</a> : Peripheral pin already in use or the given external int is already in use. </li>
+PCF_S_ALREADY_IN_USE : Peripheral pin already in use or the given external int is already in use. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab35a520aef6b7f9d001375c7a87a8b2a">PCF_EXTI_S_ALLOCATION_FAILED</a> : Memory allocation failure. </li>
+PCF_S_NOT_ENOUGH_MEMORY  :Not enough memory to create the ExtInt entity. </li>
 </ul>
 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>On success, returns a valid pointer to <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a>. On error, returns PCF_NULL. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>valid values: <ul>
+<li>
+On Success: A pointer to the newly created <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a> object.  </li>
+<li>
+On Failure: PCF_NULL  : The cause of the error can be identified by examining the value of the status variable. </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
@@ -519,32 +424,34 @@ PCF_EXT_INT_S_NULL_ARG : Null count pointer is passed.(Checked only in debug mod
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_ExtInt_delete </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a> **&#160;</td>
+          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a> **&#160;</td>
           <td class="paramname"><em>ext_int</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Deletes/destroys ext int entity object and deinitializes ext_int. </p>
+<p>Deletes/destroys the <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a> entity returned from <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gac08dac0af00c92b54948a03e455d9e9c" title="Creates a new instance of ExtInt_t based on the configuration provided by ExtIntConfig_t config .">pcf_ExtInt_new</a>. </p>
+<p><br  />
+ <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a> entity cannot be used after a call to this function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ext_int</td><td>[IN] - Double pointer to the ext_int entity object. </td></tr>
+    <tr><td class="paramname">ext_int</td><td>[IN] - Double pointer to the <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a> entity object. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values: <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga982e9d1bd538265c3d8e259bc07203f9" title="Status codes that can be returned by functions of EXTI package item.">PCF_EXTI_S_SUCCESS</a> : Successful operation. </li>
+PCF_S_SUCCESS : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga80630bb8e804c1cedc818c1ac93acbf6">PCF_EXTI_S_NULL_ARG</a> : Null ext_int pointer is passed. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG : <em>ext_int</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="gad20d316f21337b22c4a30104af4676f1" name="gad20d316f21337b22c4a30104af4676f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad20d316f21337b22c4a30104af4676f1">&#9670;&#160;</a></span>pcf_ExtInt_enable()</h2>
+<a id="ga5235fdbb368acd99c94d4077d1cb06c4" name="ga5235fdbb368acd99c94d4077d1cb06c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5235fdbb368acd99c94d4077d1cb06c4">&#9670;&#160;</a></span>pcf_ExtInt_enable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -552,67 +459,132 @@ PCF_EXT_INT_S_NULL_ARG : Null count pointer is passed.(Checked only in debug mod
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_ExtInt_enable </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a> *const&#160;</td>
-          <td class="paramname"><em>ext_int</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a> *const&#160;</td>
+          <td class="paramname"><em>ext_int</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const EnPCFBoolean_t&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enables the specified ExtInt instance to start generating interrupts. </p>
-<p>After the external interrupt is enabled, the user callback attached will be called when the status of pin changes according to trigger of the device. It can be disabled by a call to the function <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaa9f83d8a1cd0e8564509f5215116df93" title="Disables the specified ExtInt instance from generating interrupts.">pcf_ExtInt_disable()</a>.</p>
+<p>Enables/Disables the <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a> instance to start/stop generating interrupts. </p>
+<p>After the external interrupt is enabled, the user callback attached using <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga15d8c8270904b2cac0f23d6f70b65193" title="Attaches/Detaches a callback to the external interrupt.">pcf_ExtInt_attachCallback</a> will be called when the status of pin changes according to the trigger mode configured.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ext_int</td><td>[IN] - Pointer to ext_int entity object </td></tr>
+    <tr><td class="paramname">ext_int</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a> entity object </td></tr>
+    <tr><td class="paramname">enable</td><td>[IN] - <em>ext_int</em>  is enabled if EnPCFBoolean_t <em>enable</em>  is enPCFBoolean_True and disabled if enPCFBoolean_False </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values: <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga982e9d1bd538265c3d8e259bc07203f9" title="Status codes that can be returned by functions of EXTI package item.">PCF_EXTI_S_SUCCESS</a> : Successful operation. </li>
+PCF_S_SUCCESS : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga80630bb8e804c1cedc818c1ac93acbf6">PCF_EXTI_S_NULL_ARG</a> : Null ext_int pointer is passed. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG : <em>ext_int</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="gaa9f83d8a1cd0e8564509f5215116df93" name="gaa9f83d8a1cd0e8564509f5215116df93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa9f83d8a1cd0e8564509f5215116df93">&#9670;&#160;</a></span>pcf_ExtInt_disable()</h2>
+<a id="ga40d86c91ec71ff1fa12d89da451f0a89" name="ga40d86c91ec71ff1fa12d89da451f0a89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga40d86c91ec71ff1fa12d89da451f0a89">&#9670;&#160;</a></span>pcf_ExtInt_isEnabled()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PCF_MCAL_API pcf_status_t pcf_ExtInt_disable </td>
+          <td class="memname">PCF_MCAL_API pcf_status_t pcf_ExtInt_isEnabled </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a> *const&#160;</td>
-          <td class="paramname"><em>ext_int</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a> *const&#160;</td>
+          <td class="paramname"><em>ext_int</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">EnPCFBoolean_t *const&#160;</td>
+          <td class="paramname"><em>isEnabled</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Disables the specified ExtInt instance from generating interrupts. </p>
-<p>. After the external interrupt has been disabled, the user callback attached will not get called. It can be enabled again by a call to the function <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gad20d316f21337b22c4a30104af4676f1" title="Enables the specified ExtInt instance to start generating interrupts.">pcf_ExtInt_enable()</a>.</p>
+<p>Checks if the external interrupt is enabled or disabled. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ext_int</td><td>[IN] - Pointer to ext_int entity object </td></tr>
+    <tr><td class="paramname">ext_int</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a> entity object </td></tr>
+    <tr><td class="paramname">isEnabled</td><td>[OUT] - Pointer to EnPCFBoolean_t, stores the state of external interrupt is set to enPCFBoolean_True if enabled else set to enPCFBoolean_False. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values: <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga982e9d1bd538265c3d8e259bc07203f9" title="Status codes that can be returned by functions of EXTI package item.">PCF_EXTI_S_SUCCESS</a> : Successful operation. </li>
+PCF_S_SUCCESS : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga80630bb8e804c1cedc818c1ac93acbf6">PCF_EXTI_S_NULL_ARG</a> : Null ext_int pointer is passed. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG : <em>ext_int</em>  or <em>isEnabled</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga169986e0e9938101504201af96316192" name="ga169986e0e9938101504201af96316192"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga169986e0e9938101504201af96316192">&#9670;&#160;</a></span>pcf_ExtInt_attachCallback()</h2>
+<a id="gac44866ffc3ca2d7d25fa1f89c5bb13d2" name="gac44866ffc3ca2d7d25fa1f89c5bb13d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac44866ffc3ca2d7d25fa1f89c5bb13d2">&#9670;&#160;</a></span>pcf_ExtInt_read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PCF_MCAL_API pcf_status_t pcf_ExtInt_read </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a> *const&#160;</td>
+          <td class="paramname"><em>ext_int</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__gpio.html#gab1e00750889df4b7505f47b895a2c5d7">EnExtInPinState_t</a> *const&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the state of the port pin mapped to the external interrupt. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ext_int</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a> entity object. </td></tr>
+    <tr><td class="paramname">state</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga529baefdde0f11db82f8ff55606cd74c" title="External interrupt Pin state.">EnExtInPinState_t</a>, stores the state of port pin. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values: <ul>
+<li>
+PCF_S_SUCCESS : On success. </li>
+<li>
+PCF_S_NULL_ARG : <em>ext_int</em>  or <em>state</em>  is PCF_NULL. (Checked only in debug mode) </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="ga15d8c8270904b2cac0f23d6f70b65193" name="ga15d8c8270904b2cac0f23d6f70b65193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga15d8c8270904b2cac0f23d6f70b65193">&#9670;&#160;</a></span>pcf_ExtInt_attachCallback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -620,7 +592,7 @@ PCF_EXT_INT_S_NULL_ARG : Null count pointer is passed.(Checked only in debug mod
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_ExtInt_attachCallback </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a> *const&#160;</td>
           <td class="paramname"><em>ext_int</em>, </td>
         </tr>
         <tr>
@@ -655,81 +627,32 @@ PCF_EXT_INT_S_NULL_ARG : Null count pointer is passed.(Checked only in debug mod
       </table>
 </div><div class="memdoc">
 
-<p>Attaches a callback to the external interrupt. </p>
-<p>This callback will be called whenever the interrupt is fired.</p>
-<dl class="section note"><dt>Note</dt><dd>Call this function before enabling the external interrupt device. To attach a callback if external interrupt has already been enabled do the following<ol type="1">
-<li>Disable external interrupt <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaa9f83d8a1cd0e8564509f5215116df93" title="Disables the specified ExtInt instance from generating interrupts.">pcf_ExtInt_disable()</a></li>
-<li>Attach a callback <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga169986e0e9938101504201af96316192" title="Attaches a callback to the external interrupt.">pcf_ExtInt_attachCallback()</a></li>
-<li>Enable external interrupt device again <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gad20d316f21337b22c4a30104af4676f1" title="Enables the specified ExtInt instance to start generating interrupts.">pcf_ExtInt_enable()</a></li>
+<p>Attaches/Detaches a callback to the external interrupt. </p>
+<p>This callback will be called whenever the interrupt is fired. </p><dl class="section note"><dt>Note</dt><dd>if <em>callback</em>  &amp; <em>user_arg</em>  is PCF_NULL then api will detach the previously attached callback.</dd>
+<dd>
+Call this function before enabling the external interrupt device. To attach a callback if external interrupt has already been enabled do the following<ol type="1">
+<li>Disable external interrupt using <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga5235fdbb368acd99c94d4077d1cb06c4" title="Enables/Disables the ExtInt_t instance to start/stop generating interrupts.">pcf_ExtInt_enable</a></li>
+<li>Attach a callback <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga15d8c8270904b2cac0f23d6f70b65193" title="Attaches/Detaches a callback to the external interrupt.">pcf_ExtInt_attachCallback</a></li>
+<li>Enable external interrupt using <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga5235fdbb368acd99c94d4077d1cb06c4" title="Enables/Disables the ExtInt_t instance to start/stop generating interrupts.">pcf_ExtInt_enable</a></li>
 </ol>
 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ext_int</td><td>[IN] - Pointer to ext_int entity object. </td></tr>
-    <tr><td class="paramname">callback</td><td>[IN] - Pointer to the callback function to be attached. </td></tr>
+    <tr><td class="paramname">ext_int</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a> entity object. </td></tr>
+    <tr><td class="paramname">callback</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga5990a2b50b57c40f20206fc6837756f3" title="External interrupt callback function pointer.">ExtIntCallback_fp</a>, callback function to be attached. </td></tr>
     <tr><td class="paramname">user_args</td><td>[IN] - User-defined arguments to be passed to the callback function. </td></tr>
-    <tr><td class="paramname">old_callback</td><td>[OUT] - The previous callback registered with the external interrupt. Optional parameter, pass PCF_NULL if you do not want the callback previously registered. </td></tr>
-    <tr><td class="paramname">old_userArgs</td><td>[OUT] - The previous user arguments registered with the external interrupt. Optional parameter, pass PCF_NULL if you do not want the older user defined data. </td></tr>
+    <tr><td class="paramname">old_callback</td><td>[OUT] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga5990a2b50b57c40f20206fc6837756f3" title="External interrupt callback function pointer.">ExtIntCallback_fp</a>, previous callback registered with the external interrupt. <br  />
+ (Optional parameter, pass PCF_NULL if you do not want the previous callback registered.) </td></tr>
+    <tr><td class="paramname">old_userArgs</td><td>[OUT] - The previous user arguments registered with the external interrupt. <br  />
+ (Optional parameter, pass PCF_NULL if you do not want the previous value registered.) </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values: <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga982e9d1bd538265c3d8e259bc07203f9" title="Status codes that can be returned by functions of EXTI package item.">PCF_EXTI_S_SUCCESS</a> : Successful operation. </li>
+PCF_S_SUCCESS : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga80630bb8e804c1cedc818c1ac93acbf6">PCF_EXTI_S_NULL_ARG</a> : Null ext_int pointer is passed. (Checked only in debug mode) </li>
-</ul>
-</dd></dl>
-
-</div>
-</div>
-<a id="ga4658f139322a854eb58380506562099e" name="ga4658f139322a854eb58380506562099e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4658f139322a854eb58380506562099e">&#9670;&#160;</a></span>pcf_ExtInt_detachCallback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PCF_MCAL_API pcf_status_t pcf_ExtInt_detachCallback </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a> *const&#160;</td>
-          <td class="paramname"><em>ext_int</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga5990a2b50b57c40f20206fc6837756f3">ExtIntCallback_fp</a> *const&#160;</td>
-          <td class="paramname"><em>callback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">pcf_generic_t *const&#160;</td>
-          <td class="paramname"><em>user_args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Detaches the callback function from the specified external interrupt. </p>
-<dl class="section note"><dt>Note</dt><dd>Disable the external interrupt using <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaa9f83d8a1cd0e8564509f5215116df93" title="Disables the specified ExtInt instance from generating interrupts.">pcf_ExtInt_disable()</a> before detaching a callback.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ext_int</td><td>[IN] - Pointer to ext_int entity object. </td></tr>
-    <tr><td class="paramname">callback</td><td>[OUT] - The previous callback registered with the external interrupt. </td></tr>
-    <tr><td class="paramname">user_args</td><td>[OUT] - The previous user arguments registered with the external interrupt. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values: <ul>
-<li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga982e9d1bd538265c3d8e259bc07203f9" title="Status codes that can be returned by functions of EXTI package item.">PCF_EXTI_S_SUCCESS</a> : Successful operation. </li>
-<li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga80630bb8e804c1cedc818c1ac93acbf6">PCF_EXTI_S_NULL_ARG</a> : Null ext_int pointer is passed. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG : <em>ext_int</em>  or <em>callback</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
@@ -744,7 +667,7 @@ PCF_EXT_INT_S_NULL_ARG : Null count pointer is passed.(Checked only in debug mod
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_ExtInt_getPortPin </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a> *const&#160;</td>
           <td class="paramname"><em>ext_int</em>, </td>
         </tr>
         <tr>
@@ -761,28 +684,28 @@ PCF_EXT_INT_S_NULL_ARG : Null count pointer is passed.(Checked only in debug mod
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves the GPIO port and pin configuration of the specified ExtInt instance and stores them in the provided <a class="el" href="struct_port_pin__t.html" title="Port pin struct.">PortPin_t</a> structure. </p>
+<p>Gets the port and pin configuration mapped to the <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a> instance and stores them in the provided <a class="el" href="struct_port_pin__t.html" title="Port pin struct.">PortPin_t</a> structure. </p>
 <p><br  />
 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ext_int</td><td>[IN] - Pointer to ext_int entity object. </td></tr>
-    <tr><td class="paramname">portPin</td><td>[OUT] - Pointer to <a class="el" href="struct_port_pin__t.html" title="Port pin struct.">PortPin_t</a>. Function will set this variable with the Port and Pin number associated with ext_int. </td></tr>
+    <tr><td class="paramname">ext_int</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a> entity object. </td></tr>
+    <tr><td class="paramname">portPin</td><td>[OUT] - Pointer to <a class="el" href="struct_port_pin__t.html" title="Port pin struct.">PortPin_t</a>. Function will set this variable with the Port and Pin number associated with <em>ext_int</em> . </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values: <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga982e9d1bd538265c3d8e259bc07203f9" title="Status codes that can be returned by functions of EXTI package item.">PCF_EXTI_S_SUCCESS</a> : Successful operation. </li>
+PCF_S_SUCCESS : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga80630bb8e804c1cedc818c1ac93acbf6">PCF_EXTI_S_NULL_ARG</a> : Null ext_int pointer is passed. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG : <em>ext_int</em>  or <em>portPin</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga72426b937bcde527aab0b582a1c320c9" name="ga72426b937bcde527aab0b582a1c320c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga72426b937bcde527aab0b582a1c320c9">&#9670;&#160;</a></span>pcf_ExtInt_getTrigger()</h2>
+<a id="gaf539633919742092437bbb30b7a48957" name="gaf539633919742092437bbb30b7a48957"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf539633919742092437bbb30b7a48957">&#9670;&#160;</a></span>pcf_ExtInt_getTrigger()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -790,13 +713,13 @@ PCF_EXT_INT_S_NULL_ARG : Null count pointer is passed.(Checked only in debug mod
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_ExtInt_getTrigger </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a> *const&#160;</td>
           <td class="paramname"><em>ext_int</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga1a902573923bb67984394c41f339aa1c">EnExtIntTrigger_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga1a902573923bb67984394c41f339aa1c">EnExtIntTrigger_t</a> *const&#160;</td>
           <td class="paramname"><em>trigger</em>&#160;</td>
         </tr>
         <tr>
@@ -807,26 +730,26 @@ PCF_EXT_INT_S_NULL_ARG : Null count pointer is passed.(Checked only in debug mod
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves the trigger mode (rising edge, falling edge, both edges, etc) of the specified external interrupt. </p>
+<p>Gets the trigger mode (rising edge, falling edge, both edges, etc) configured. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ext_int</td><td>[IN] - Pointer to ext_int entity object. </td></tr>
-    <tr><td class="paramname">trigger</td><td>[OUT] - Pointer to the <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga1a902573923bb67984394c41f339aa1c" title="Enumeration for external interrupt trigger selection What will cause the interrupt to be triggered.">EnExtIntTrigger_t</a> variable that will store the trigger mode. </td></tr>
+    <tr><td class="paramname">ext_int</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a> entity object. </td></tr>
+    <tr><td class="paramname">trigger</td><td>[OUT] - Pointer to the <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga1a902573923bb67984394c41f339aa1c" title="Enumeration for external interrupt trigger mode selection, i.e.">EnExtIntTrigger_t</a>, stores the trigger mode. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values: <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga982e9d1bd538265c3d8e259bc07203f9" title="Status codes that can be returned by functions of EXTI package item.">PCF_EXTI_S_SUCCESS</a> : Successful operation. </li>
+PCF_S_SUCCESS : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga80630bb8e804c1cedc818c1ac93acbf6">PCF_EXTI_S_NULL_ARG</a> : Null ext_int pointer or null trigger pointer is passed. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG : <em>ext_int</em>  or <em>trigger</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga60b58701b4c62c38cb4a4fdf73e28273" name="ga60b58701b4c62c38cb4a4fdf73e28273"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga60b58701b4c62c38cb4a4fdf73e28273">&#9670;&#160;</a></span>pcf_ExtInt_setPriority()</h2>
+<a id="ga9e01345fc28c362bde4461f2bac2a67a" name="ga9e01345fc28c362bde4461f2bac2a67a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9e01345fc28c362bde4461f2bac2a67a">&#9670;&#160;</a></span>pcf_ExtInt_setPriority()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -834,7 +757,7 @@ PCF_EXT_INT_S_NULL_ARG : Null count pointer is passed.(Checked only in debug mod
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_ExtInt_setPriority </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a> *const&#160;</td>
           <td class="paramname"><em>ext_int</em>, </td>
         </tr>
         <tr>
@@ -857,29 +780,29 @@ PCF_EXT_INT_S_NULL_ARG : Null count pointer is passed.(Checked only in debug mod
       </table>
 </div><div class="memdoc">
 
-<p>Sets the global interrupt priority, of the external interrupt, across all entities which are interrupt based. </p>
+<p>Sets the global interrupt priority, of the external interrupt. </p>
+<p>The priority is set across all entities which are interrupt based.</p>
 <dl class="section note"><dt>Note</dt><dd>lower the priority value, higher the priority.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ext_int</td><td>[IN] - Pointer to ext_int entity object </td></tr>
+    <tr><td class="paramname">ext_int</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a> entity object </td></tr>
     <tr><td class="paramname">priority</td><td>[IN] - The priority level, lower priority value means higher priority </td></tr>
-    <tr><td class="paramname">sub_priority</td><td>[IN] - The sub priority level, This fields validity is dependant on value of </td></tr>
+    <tr><td class="paramname">sub_priority</td><td>[IN] - The sub priority level, This fields validity is dependant on value of PCF_CONF_CPU_IC_PRIORITY_GROUP configured in mcal package, if two interrupts have the same priorities then the interrupt with higher sub-priority will be triggered first.</td></tr>
   </table>
   </dd>
 </dl>
-<p>PCF_CONF_CPU_IC_PRIORITY_GROUP configured in cpu package, if two interrupts have the same priorities then the interrupt with higher sub-priority will be triggered first.</p>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values: <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga982e9d1bd538265c3d8e259bc07203f9" title="Status codes that can be returned by functions of EXTI package item.">PCF_EXTI_S_SUCCESS</a> : Successful operation. </li>
+PCF_S_SUCCESS : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga80630bb8e804c1cedc818c1ac93acbf6">PCF_EXTI_S_NULL_ARG</a> : Null ext_int pointer is passed. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG : <em>ext_int</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga64c0f7467b38021f9ff321527c2d0e79" name="ga64c0f7467b38021f9ff321527c2d0e79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga64c0f7467b38021f9ff321527c2d0e79">&#9670;&#160;</a></span>pcf_ExtInt_getPriority()</h2>
+<a id="gace2a267b51b4ed7ab371eb13d1802de0" name="gace2a267b51b4ed7ab371eb13d1802de0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gace2a267b51b4ed7ab371eb13d1802de0">&#9670;&#160;</a></span>pcf_ExtInt_getPriority()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -887,19 +810,19 @@ PCF_EXT_INT_S_NULL_ARG : Null count pointer is passed.(Checked only in debug mod
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_ExtInt_getPriority </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a> *const&#160;</td>
           <td class="paramname"><em>ext_int</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramtype">uint32_t *const&#160;</td>
           <td class="paramname"><em>priority</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramtype">uint32_t *const&#160;</td>
           <td class="paramname"><em>sub_priority</em>&#160;</td>
         </tr>
         <tr>
@@ -910,20 +833,20 @@ PCF_EXT_INT_S_NULL_ARG : Null count pointer is passed.(Checked only in debug mod
       </table>
 </div><div class="memdoc">
 
-<p>Retrives the global interrupt priority &amp; sub-priority level of given ExtInt_t object. </p>
+<p>Gets the global interrupt priority &amp; sub-priority level of given external interrupt. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ext_int</td><td>[IN] - Pointer to ext_int entity object. </td></tr>
-    <tr><td class="paramname">priority</td><td>[OUT] - Pointer to priority level, the function sets this variable with the priority value. </td></tr>
-    <tr><td class="paramname">sub_priority</td><td>[OUT] - Pointer to sub-priority level, The function sets this variable with the sub-priority value. </td></tr>
+    <tr><td class="paramname">ext_int</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a> entity object. </td></tr>
+    <tr><td class="paramname">priority</td><td>[OUT] - Pointer to uint32_t, stores the priority value. </td></tr>
+    <tr><td class="paramname">sub_priority</td><td>[OUT] - Pointer to uint32_t, stores the the sub-priority value. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values: <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga982e9d1bd538265c3d8e259bc07203f9" title="Status codes that can be returned by functions of EXTI package item.">PCF_EXTI_S_SUCCESS</a> : Successful operation. </li>
+PCF_S_SUCCESS : On success. </li>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#ga80630bb8e804c1cedc818c1ac93acbf6">PCF_EXTI_S_NULL_ARG</a> : Null ext_int pointer, null priority or sub_priority is passed. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG : <em>ext_int</em>  or <em>priority</em>  or <em>sub_priority</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
@@ -938,7 +861,7 @@ PCF_EXT_INT_S_NULL_ARG : Null count pointer is passed.(Checked only in debug mod
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_ExtInt_customCommand </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gab015b9a5db0152d209f43e31b262adbe">ExtInt_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6">ExtInt_t</a> *&#160;</td>
           <td class="paramname"><em>ext_int</em>, </td>
         </tr>
         <tr>
@@ -961,18 +884,25 @@ PCF_EXT_INT_S_NULL_ARG : Null count pointer is passed.(Checked only in debug mod
       </table>
 </div><div class="memdoc">
 
-<p>Can be used to extend the functionality of the external interrupt entity for a particular platform. </p>
+<p>Used to extend the functionality of the <em>ext_int</em> . </p>
+<dl class="section note"><dt>Note</dt><dd>Refer to platform specific implementation header file (if they exists) under pcf/peripherals/ext_int/&lt;platform specific path&gt;/commands for more details.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ext_int</td><td>[IN] - Pointer to ext_int entity object. </td></tr>
+    <tr><td class="paramname">ext_int</td><td>[IN] - Pointer to <a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gaab75b9197e03a09fb3afff1a60ac59c6" title="External interrupt (EXTI) Entity Object/Structure.">ExtInt_t</a> entity object. </td></tr>
     <tr><td class="paramname">command</td><td>[IN] - Represents the command/function to be executed. </td></tr>
     <tr><td class="paramname">data</td><td>[IN] - A generic pointer to hold the Input and/or Output data related to the command/function. (Input/Output) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values: <ul>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__peripherals__ext__int.html#gad5be3e5a3345af8c616329b682ddaf3a">PCF_EXTI_S_NOT_IMPLEMENTED</a> : The function is not implemented. </li>
+PCF_S_SUCCESS  : On success. </li>
+<li>
+PCF_S_NULL_ARG  : Null argument was passed.(Checked only in debug mode) </li>
+<li>
+PCF_S_NOT_IMPLEMENTED  : Not implemented. </li>
+<li>
+PCF_S_NOT_SUPPORTED  : Specified command not supported. </li>
 </ul>
 </dd></dl>
 

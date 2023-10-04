@@ -90,45 +90,29 @@ $(document).ready(function(){initNavTree('group__pcf__mcal__interrupt__controlle
 
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Interrupt controller<div class="ingroups"><a class="el" href="group__pcf__mcal.html">Mcal</a> &raquo; <a class="el" href="group__pcf__mcal__mcu.html">Mcu</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The "Interrupt controller" provides a set of functions that assist users in enabling, disabling, clearing pending status, setting, and getting the priority of interrupts.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ga5dd2aa7f3ab568ca73ac66dc70b6c160"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__interrupt__controller.html#ga5dd2aa7f3ab568ca73ac66dc70b6c160">ITEM_ID_INTERRUPT_CONTROLLER</a>&#160;&#160;&#160;(2)</td></tr>
-<tr class="memdesc:ga5dd2aa7f3ab568ca73ac66dc70b6c160"><td class="mdescLeft">&#160;</td><td class="mdescRight">Item ID of Interrupt controller Entity within Mcal Package.  <br /></td></tr>
-<tr class="separator:ga5dd2aa7f3ab568ca73ac66dc70b6c160"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae1652d39ef5e668c22cfc67b41681b33"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__interrupt__controller.html#gae1652d39ef5e668c22cfc67b41681b33">PCF_INTERRUPT_CONTROLLER_S_SUCCESS</a>&#160;&#160;&#160;GENERATE_PCF_STATUS_SUCCESS(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__interrupt__controller.html#ga5dd2aa7f3ab568ca73ac66dc70b6c160">ITEM_ID_INTERRUPT_CONTROLLER</a>)</td></tr>
-<tr class="separator:gae1652d39ef5e668c22cfc67b41681b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaeab48a301c319f13b33db12999a669f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__interrupt__controller.html#gaeab48a301c319f13b33db12999a669f9">PCF_INTERRUPT_CONTROLLER_S_NOT_IMPLEMENTED</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_IMPLEMENTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__interrupt__controller.html#ga5dd2aa7f3ab568ca73ac66dc70b6c160">ITEM_ID_INTERRUPT_CONTROLLER</a>)</td></tr>
-<tr class="separator:gaeab48a301c319f13b33db12999a669f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6948753c12fc41c031375529e58794c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__interrupt__controller.html#ga6948753c12fc41c031375529e58794c1">PCF_INTERRUPT_CONTROLLER_S_NOT_SUPPORTED</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_SUPPORTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__interrupt__controller.html#ga5dd2aa7f3ab568ca73ac66dc70b6c160">ITEM_ID_INTERRUPT_CONTROLLER</a>)</td></tr>
-<tr class="separator:ga6948753c12fc41c031375529e58794c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gac478d2bc3140e19ef27f32009eee00cb"><td class="memItemLeft" align="right" valign="top">typedef int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__interrupt__controller.html#gac478d2bc3140e19ef27f32009eee00cb">interrupt_t</a></td></tr>
-<tr class="separator:gac478d2bc3140e19ef27f32009eee00cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga005425a44c55063d724f01d2e182bce6"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__interrupt__controller.html#ga005425a44c55063d724f01d2e182bce6">pcf_InterruptController_getPriorityGroup</a> (uint32_t *priority_group)</td></tr>
-<tr class="memdesc:ga005425a44c55063d724f01d2e182bce6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the priority group configuration of the interrupt controller.  <br /></td></tr>
-<tr class="separator:ga005425a44c55063d724f01d2e182bce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabff8a016fc3c3815ccab69fbb298202e"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__interrupt__controller.html#gabff8a016fc3c3815ccab69fbb298202e">pcf_InterruptController_setPriority</a> (const <a class="el" href="group__pcf__mcal__interrupt__controller.html#gac478d2bc3140e19ef27f32009eee00cb">interrupt_t</a> interrupt, const uint32_t priority, const uint32_t sub_priority)</td></tr>
+<tr class="memitem:ga2697e3db1544f7a31e96910de0e0e115"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__interrupt__controller.html#ga2697e3db1544f7a31e96910de0e0e115">pcf_InterruptController_getPriorityGroup</a> (uint32_t *const priority_group)</td></tr>
+<tr class="memdesc:ga2697e3db1544f7a31e96910de0e0e115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the priority group configuration of the interrupt controller.  <br /></td></tr>
+<tr class="separator:ga2697e3db1544f7a31e96910de0e0e115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabff8a016fc3c3815ccab69fbb298202e"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__interrupt__controller.html#gabff8a016fc3c3815ccab69fbb298202e">pcf_InterruptController_setPriority</a> (const <a class="el" href="group__pcf__mcal__interrupt__controller.html#ga45b61ed9b8f6821af8b5ee26603bcb63">interrupt_t</a> interrupt, const uint32_t priority, const uint32_t sub_priority)</td></tr>
 <tr class="memdesc:gabff8a016fc3c3815ccab69fbb298202e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the priority and sub-priority of a specific interrupt.  <br /></td></tr>
 <tr class="separator:gabff8a016fc3c3815ccab69fbb298202e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga576f4ff0abfb758a231ae23927763329"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__interrupt__controller.html#ga576f4ff0abfb758a231ae23927763329">pcf_InterruptController_getPriority</a> (const <a class="el" href="group__pcf__mcal__interrupt__controller.html#gac478d2bc3140e19ef27f32009eee00cb">interrupt_t</a> interrupt, uint32_t *priority, uint32_t *sub_priority)</td></tr>
-<tr class="memdesc:ga576f4ff0abfb758a231ae23927763329"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the priority and sub-priority of a specific interrupt.  <br /></td></tr>
-<tr class="separator:ga576f4ff0abfb758a231ae23927763329"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafecef12b3299ce2c4badf335e0e3f8ce"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__interrupt__controller.html#gafecef12b3299ce2c4badf335e0e3f8ce">pcf_InterruptController_enableInterrupt</a> (const <a class="el" href="group__pcf__mcal__interrupt__controller.html#gac478d2bc3140e19ef27f32009eee00cb">interrupt_t</a> interrupt)</td></tr>
+<tr class="memitem:ga5e769aac278ec01bca4a26c24b488cf3"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__interrupt__controller.html#ga5e769aac278ec01bca4a26c24b488cf3">pcf_InterruptController_getPriority</a> (const <a class="el" href="group__pcf__mcal__interrupt__controller.html#ga45b61ed9b8f6821af8b5ee26603bcb63">interrupt_t</a> interrupt, uint32_t *const priority, uint32_t *const sub_priority)</td></tr>
+<tr class="memdesc:ga5e769aac278ec01bca4a26c24b488cf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the priority and sub-priority of a specific interrupt.  <br /></td></tr>
+<tr class="separator:ga5e769aac278ec01bca4a26c24b488cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafecef12b3299ce2c4badf335e0e3f8ce"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__interrupt__controller.html#gafecef12b3299ce2c4badf335e0e3f8ce">pcf_InterruptController_enableInterrupt</a> (const <a class="el" href="group__pcf__mcal__interrupt__controller.html#ga45b61ed9b8f6821af8b5ee26603bcb63">interrupt_t</a> interrupt)</td></tr>
 <tr class="memdesc:gafecef12b3299ce2c4badf335e0e3f8ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables a specific interrupt.  <br /></td></tr>
 <tr class="separator:gafecef12b3299ce2c4badf335e0e3f8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga05b839e604cc6cb5c5d2d1c4d1da22a0"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__interrupt__controller.html#ga05b839e604cc6cb5c5d2d1c4d1da22a0">pcf_InterruptController_disableInterrupt</a> (const <a class="el" href="group__pcf__mcal__interrupt__controller.html#gac478d2bc3140e19ef27f32009eee00cb">interrupt_t</a> interrupt)</td></tr>
+<tr class="memitem:ga05b839e604cc6cb5c5d2d1c4d1da22a0"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__interrupt__controller.html#ga05b839e604cc6cb5c5d2d1c4d1da22a0">pcf_InterruptController_disableInterrupt</a> (const <a class="el" href="group__pcf__mcal__interrupt__controller.html#ga45b61ed9b8f6821af8b5ee26603bcb63">interrupt_t</a> interrupt)</td></tr>
 <tr class="memdesc:ga05b839e604cc6cb5c5d2d1c4d1da22a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables a specific interrupt.  <br /></td></tr>
 <tr class="separator:ga05b839e604cc6cb5c5d2d1c4d1da22a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad0e030d395cd8c233fd09e47826b4a2d"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__interrupt__controller.html#gad0e030d395cd8c233fd09e47826b4a2d">pcf_InterruptController_enableAllInterrupts</a> (void)</td></tr>
@@ -137,9 +121,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ga90f4100f21d65a5bbe76b8e68e5d376c"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__interrupt__controller.html#ga90f4100f21d65a5bbe76b8e68e5d376c">pcf_InterruptController_disableAllInterrupts</a> (void)</td></tr>
 <tr class="memdesc:ga90f4100f21d65a5bbe76b8e68e5d376c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables all interrupts managed by the interrupt controller.  <br /></td></tr>
 <tr class="separator:ga90f4100f21d65a5bbe76b8e68e5d376c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2b1b0c7424662a77ce245d66d857fb98"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__interrupt__controller.html#ga2b1b0c7424662a77ce245d66d857fb98">pcf_InterruptController_clearInterrupt</a> (const <a class="el" href="group__pcf__mcal__interrupt__controller.html#gac478d2bc3140e19ef27f32009eee00cb">interrupt_t</a> interrupt)</td></tr>
+<tr class="memitem:ga2b1b0c7424662a77ce245d66d857fb98"><td class="memItemLeft" align="right" valign="top">PCF_MCAL_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__interrupt__controller.html#ga2b1b0c7424662a77ce245d66d857fb98">pcf_InterruptController_clearInterrupt</a> (const <a class="el" href="group__pcf__mcal__interrupt__controller.html#ga45b61ed9b8f6821af8b5ee26603bcb63">interrupt_t</a> interrupt)</td></tr>
 <tr class="memdesc:ga2b1b0c7424662a77ce245d66d857fb98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the pending status of a specific interrupt.  <br /></td></tr>
 <tr class="separator:ga2b1b0c7424662a77ce245d66d857fb98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Interrupt Controller types</h2></td></tr>
+<tr class="memitem:ga45b61ed9b8f6821af8b5ee26603bcb63"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__interrupt__controller.html#ga45b61ed9b8f6821af8b5ee26603bcb63">interrupt_t</a></td></tr>
+<tr class="memdesc:ga45b61ed9b8f6821af8b5ee26603bcb63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt type.  <br /></td></tr>
+<tr class="separator:ga45b61ed9b8f6821af8b5ee26603bcb63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Interrupt Controller Priority Groups</h2></td></tr>
 <tr class="memitem:ga272de33054d872b051004f24efbf8c9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__interrupt__controller.html#ga272de33054d872b051004f24efbf8c9f">PCF_IC_PRIORITYGROUP_0</a>&#160;&#160;&#160;0x00000007U</td></tr>
@@ -162,67 +151,11 @@ Functions</h2></td></tr>
 <tr class="separator:gae6daab05b805e680dc1cd6675cb3d922"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>The "Interrupt controller" provides a set of functions that assist users in enabling, disabling, clearing pending status, setting, and getting the priority of interrupts. </p>
+<p>These functions allow users to effectively manage and configure interrupt behavior within a system.</p>
 <dl class="section note"><dt>Note</dt><dd>Input validation is done only when package is built in debug mode. <br  />
  </dd></dl>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ga5dd2aa7f3ab568ca73ac66dc70b6c160" name="ga5dd2aa7f3ab568ca73ac66dc70b6c160"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5dd2aa7f3ab568ca73ac66dc70b6c160">&#9670;&#160;</a></span>ITEM_ID_INTERRUPT_CONTROLLER</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ITEM_ID_INTERRUPT_CONTROLLER&#160;&#160;&#160;(2)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Item ID of Interrupt controller Entity within Mcal Package. </p>
-
-</div>
-</div>
-<a id="gae1652d39ef5e668c22cfc67b41681b33" name="gae1652d39ef5e668c22cfc67b41681b33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae1652d39ef5e668c22cfc67b41681b33">&#9670;&#160;</a></span>PCF_INTERRUPT_CONTROLLER_S_SUCCESS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_INTERRUPT_CONTROLLER_S_SUCCESS&#160;&#160;&#160;GENERATE_PCF_STATUS_SUCCESS(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__interrupt__controller.html#ga5dd2aa7f3ab568ca73ac66dc70b6c160">ITEM_ID_INTERRUPT_CONTROLLER</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="gaeab48a301c319f13b33db12999a669f9" name="gaeab48a301c319f13b33db12999a669f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaeab48a301c319f13b33db12999a669f9">&#9670;&#160;</a></span>PCF_INTERRUPT_CONTROLLER_S_NOT_IMPLEMENTED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_INTERRUPT_CONTROLLER_S_NOT_IMPLEMENTED&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_IMPLEMENTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__interrupt__controller.html#ga5dd2aa7f3ab568ca73ac66dc70b6c160">ITEM_ID_INTERRUPT_CONTROLLER</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga6948753c12fc41c031375529e58794c1" name="ga6948753c12fc41c031375529e58794c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6948753c12fc41c031375529e58794c1">&#9670;&#160;</a></span>PCF_INTERRUPT_CONTROLLER_S_NOT_SUPPORTED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define PCF_INTERRUPT_CONTROLLER_S_NOT_SUPPORTED&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_SUPPORTED(<a class="el" href="group__pcf__mcal.html#gac4cbd49517d544e5f824bd78866824aa">PKG_ID_MCAL</a>, <a class="el" href="group__pcf__mcal__interrupt__controller.html#ga5dd2aa7f3ab568ca73ac66dc70b6c160">ITEM_ID_INTERRUPT_CONTROLLER</a>)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga272de33054d872b051004f24efbf8c9f" name="ga272de33054d872b051004f24efbf8c9f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga272de33054d872b051004f24efbf8c9f">&#9670;&#160;</a></span>PCF_IC_PRIORITYGROUP_0</h2>
 
@@ -366,35 +299,37 @@ Functions</h2></td></tr>
 <div class="line">                                         ((GROUP) == <a class="code hl_define" href="group__pcf__mcal__interrupt__controller.html#ga7a3aa34d04df7fa2fc2b3e8ecbbceeb2">PCF_IC_PRIORITYGROUP_5</a>) || \</div>
 <div class="line">                                         ((GROUP) == <a class="code hl_define" href="group__pcf__mcal__interrupt__controller.html#ga97088a2b0316109879687496e0289cc0">PCF_IC_PRIORITYGROUP_6</a>) || \</div>
 <div class="line">                                         ((GROUP) == <a class="code hl_define" href="group__pcf__mcal__interrupt__controller.html#gab5ad09aeff05490127f422263a79825e">PCF_IC_PRIORITYGROUP_7</a>))</div>
-<div class="ttc" id="agroup__pcf__mcal__interrupt__controller_html_ga10aba8d524c14e2f0f2105bc8f794a88"><div class="ttname"><a href="group__pcf__mcal__interrupt__controller.html#ga10aba8d524c14e2f0f2105bc8f794a88">PCF_IC_PRIORITYGROUP_1</a></div><div class="ttdeci">#define PCF_IC_PRIORITYGROUP_1</div><div class="ttdef"><b>Definition:</b> defs.h:23</div></div>
-<div class="ttc" id="agroup__pcf__mcal__interrupt__controller_html_ga135573496484c705df127b8c051dfa22"><div class="ttname"><a href="group__pcf__mcal__interrupt__controller.html#ga135573496484c705df127b8c051dfa22">PCF_IC_PRIORITYGROUP_3</a></div><div class="ttdeci">#define PCF_IC_PRIORITYGROUP_3</div><div class="ttdef"><b>Definition:</b> defs.h:25</div></div>
-<div class="ttc" id="agroup__pcf__mcal__interrupt__controller_html_ga272de33054d872b051004f24efbf8c9f"><div class="ttname"><a href="group__pcf__mcal__interrupt__controller.html#ga272de33054d872b051004f24efbf8c9f">PCF_IC_PRIORITYGROUP_0</a></div><div class="ttdeci">#define PCF_IC_PRIORITYGROUP_0</div><div class="ttdef"><b>Definition:</b> defs.h:22</div></div>
-<div class="ttc" id="agroup__pcf__mcal__interrupt__controller_html_ga6383b0f5326cf589d4a08817fdcffb41"><div class="ttname"><a href="group__pcf__mcal__interrupt__controller.html#ga6383b0f5326cf589d4a08817fdcffb41">PCF_IC_PRIORITYGROUP_4</a></div><div class="ttdeci">#define PCF_IC_PRIORITYGROUP_4</div><div class="ttdef"><b>Definition:</b> defs.h:26</div></div>
-<div class="ttc" id="agroup__pcf__mcal__interrupt__controller_html_ga7a3aa34d04df7fa2fc2b3e8ecbbceeb2"><div class="ttname"><a href="group__pcf__mcal__interrupt__controller.html#ga7a3aa34d04df7fa2fc2b3e8ecbbceeb2">PCF_IC_PRIORITYGROUP_5</a></div><div class="ttdeci">#define PCF_IC_PRIORITYGROUP_5</div><div class="ttdef"><b>Definition:</b> defs.h:27</div></div>
-<div class="ttc" id="agroup__pcf__mcal__interrupt__controller_html_ga97088a2b0316109879687496e0289cc0"><div class="ttname"><a href="group__pcf__mcal__interrupt__controller.html#ga97088a2b0316109879687496e0289cc0">PCF_IC_PRIORITYGROUP_6</a></div><div class="ttdeci">#define PCF_IC_PRIORITYGROUP_6</div><div class="ttdef"><b>Definition:</b> defs.h:28</div></div>
-<div class="ttc" id="agroup__pcf__mcal__interrupt__controller_html_gab5ad09aeff05490127f422263a79825e"><div class="ttname"><a href="group__pcf__mcal__interrupt__controller.html#gab5ad09aeff05490127f422263a79825e">PCF_IC_PRIORITYGROUP_7</a></div><div class="ttdeci">#define PCF_IC_PRIORITYGROUP_7</div><div class="ttdef"><b>Definition:</b> defs.h:29</div></div>
-<div class="ttc" id="agroup__pcf__mcal__interrupt__controller_html_gaeed3af26a088ce3d6360ee346ba18417"><div class="ttname"><a href="group__pcf__mcal__interrupt__controller.html#gaeed3af26a088ce3d6360ee346ba18417">PCF_IC_PRIORITYGROUP_2</a></div><div class="ttdeci">#define PCF_IC_PRIORITYGROUP_2</div><div class="ttdef"><b>Definition:</b> defs.h:24</div></div>
+<div class="ttc" id="agroup__pcf__mcal__interrupt__controller_html_ga10aba8d524c14e2f0f2105bc8f794a88"><div class="ttname"><a href="group__pcf__mcal__interrupt__controller.html#ga10aba8d524c14e2f0f2105bc8f794a88">PCF_IC_PRIORITYGROUP_1</a></div><div class="ttdeci">#define PCF_IC_PRIORITYGROUP_1</div><div class="ttdef"><b>Definition:</b> defs.h:13</div></div>
+<div class="ttc" id="agroup__pcf__mcal__interrupt__controller_html_ga135573496484c705df127b8c051dfa22"><div class="ttname"><a href="group__pcf__mcal__interrupt__controller.html#ga135573496484c705df127b8c051dfa22">PCF_IC_PRIORITYGROUP_3</a></div><div class="ttdeci">#define PCF_IC_PRIORITYGROUP_3</div><div class="ttdef"><b>Definition:</b> defs.h:15</div></div>
+<div class="ttc" id="agroup__pcf__mcal__interrupt__controller_html_ga272de33054d872b051004f24efbf8c9f"><div class="ttname"><a href="group__pcf__mcal__interrupt__controller.html#ga272de33054d872b051004f24efbf8c9f">PCF_IC_PRIORITYGROUP_0</a></div><div class="ttdeci">#define PCF_IC_PRIORITYGROUP_0</div><div class="ttdef"><b>Definition:</b> defs.h:12</div></div>
+<div class="ttc" id="agroup__pcf__mcal__interrupt__controller_html_ga6383b0f5326cf589d4a08817fdcffb41"><div class="ttname"><a href="group__pcf__mcal__interrupt__controller.html#ga6383b0f5326cf589d4a08817fdcffb41">PCF_IC_PRIORITYGROUP_4</a></div><div class="ttdeci">#define PCF_IC_PRIORITYGROUP_4</div><div class="ttdef"><b>Definition:</b> defs.h:16</div></div>
+<div class="ttc" id="agroup__pcf__mcal__interrupt__controller_html_ga7a3aa34d04df7fa2fc2b3e8ecbbceeb2"><div class="ttname"><a href="group__pcf__mcal__interrupt__controller.html#ga7a3aa34d04df7fa2fc2b3e8ecbbceeb2">PCF_IC_PRIORITYGROUP_5</a></div><div class="ttdeci">#define PCF_IC_PRIORITYGROUP_5</div><div class="ttdef"><b>Definition:</b> defs.h:17</div></div>
+<div class="ttc" id="agroup__pcf__mcal__interrupt__controller_html_ga97088a2b0316109879687496e0289cc0"><div class="ttname"><a href="group__pcf__mcal__interrupt__controller.html#ga97088a2b0316109879687496e0289cc0">PCF_IC_PRIORITYGROUP_6</a></div><div class="ttdeci">#define PCF_IC_PRIORITYGROUP_6</div><div class="ttdef"><b>Definition:</b> defs.h:18</div></div>
+<div class="ttc" id="agroup__pcf__mcal__interrupt__controller_html_gab5ad09aeff05490127f422263a79825e"><div class="ttname"><a href="group__pcf__mcal__interrupt__controller.html#gab5ad09aeff05490127f422263a79825e">PCF_IC_PRIORITYGROUP_7</a></div><div class="ttdeci">#define PCF_IC_PRIORITYGROUP_7</div><div class="ttdef"><b>Definition:</b> defs.h:19</div></div>
+<div class="ttc" id="agroup__pcf__mcal__interrupt__controller_html_gaeed3af26a088ce3d6360ee346ba18417"><div class="ttname"><a href="group__pcf__mcal__interrupt__controller.html#gaeed3af26a088ce3d6360ee346ba18417">PCF_IC_PRIORITYGROUP_2</a></div><div class="ttdeci">#define PCF_IC_PRIORITYGROUP_2</div><div class="ttdef"><b>Definition:</b> defs.h:14</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="gac478d2bc3140e19ef27f32009eee00cb" name="gac478d2bc3140e19ef27f32009eee00cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac478d2bc3140e19ef27f32009eee00cb">&#9670;&#160;</a></span>interrupt_t</h2>
+<a id="ga45b61ed9b8f6821af8b5ee26603bcb63" name="ga45b61ed9b8f6821af8b5ee26603bcb63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga45b61ed9b8f6821af8b5ee26603bcb63">&#9670;&#160;</a></span>interrupt_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int32_t <a class="el" href="group__pcf__mcal__interrupt__controller.html#gac478d2bc3140e19ef27f32009eee00cb">interrupt_t</a></td>
+          <td class="memname">typedef uint32_t <a class="el" href="group__pcf__mcal__interrupt__controller.html#ga45b61ed9b8f6821af8b5ee26603bcb63">interrupt_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Interrupt type. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga005425a44c55063d724f01d2e182bce6" name="ga005425a44c55063d724f01d2e182bce6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga005425a44c55063d724f01d2e182bce6">&#9670;&#160;</a></span>pcf_InterruptController_getPriorityGroup()</h2>
+<a id="ga2697e3db1544f7a31e96910de0e0e115" name="ga2697e3db1544f7a31e96910de0e0e115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2697e3db1544f7a31e96910de0e0e115">&#9670;&#160;</a></span>pcf_InterruptController_getPriorityGroup()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -402,23 +337,25 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_InterruptController_getPriorityGroup </td>
           <td>(</td>
-          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramtype">uint32_t *const&#160;</td>
           <td class="paramname"><em>priority_group</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves the priority group configuration of the interrupt controller. </p>
+<p>Gets the priority group configuration of the interrupt controller. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">priority_group</td><td>[OUT] - The priority group value will be stored. </td></tr>
+    <tr><td class="paramname">priority_group</td><td>[OUT] - Pointer to uint32_t, stores the priority group value. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__interrupt__controller.html#gae1652d39ef5e668c22cfc67b41681b33">PCF_INTERRUPT_CONTROLLER_S_SUCCESS</a>  : Successful operation. </li>
+PCF_INTERRUPT_CONTROLLER_S_SUCCESS  : On success. </li>
+<li>
+PCF_INTERRUPT_CONTROLLER_S_NULL_ARG  : <em>priority_group</em>  is PCF_NULL.(Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
@@ -433,7 +370,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_InterruptController_setPriority </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__interrupt__controller.html#gac478d2bc3140e19ef27f32009eee00cb">interrupt_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__interrupt__controller.html#ga45b61ed9b8f6821af8b5ee26603bcb63">interrupt_t</a>&#160;</td>
           <td class="paramname"><em>interrupt</em>, </td>
         </tr>
         <tr>
@@ -460,21 +397,21 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">interrupt</td><td>[IN] - The interrupt for which the priority is being set. </td></tr>
-    <tr><td class="paramname">priority</td><td>[IN] - The priority value to be set. </td></tr>
-    <tr><td class="paramname">sub_priority</td><td>[IN] - The sub-priority value to be set. </td></tr>
+    <tr><td class="paramname">priority</td><td>[IN] - The priority value. </td></tr>
+    <tr><td class="paramname">sub_priority</td><td>[IN] - The sub-priority value. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__interrupt__controller.html#gae1652d39ef5e668c22cfc67b41681b33">PCF_INTERRUPT_CONTROLLER_S_SUCCESS</a>  : Successful operation. </li>
+PCF_INTERRUPT_CONTROLLER_S_SUCCESS  : On success. </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga576f4ff0abfb758a231ae23927763329" name="ga576f4ff0abfb758a231ae23927763329"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga576f4ff0abfb758a231ae23927763329">&#9670;&#160;</a></span>pcf_InterruptController_getPriority()</h2>
+<a id="ga5e769aac278ec01bca4a26c24b488cf3" name="ga5e769aac278ec01bca4a26c24b488cf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5e769aac278ec01bca4a26c24b488cf3">&#9670;&#160;</a></span>pcf_InterruptController_getPriority()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -482,19 +419,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_InterruptController_getPriority </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__interrupt__controller.html#gac478d2bc3140e19ef27f32009eee00cb">interrupt_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__interrupt__controller.html#ga45b61ed9b8f6821af8b5ee26603bcb63">interrupt_t</a>&#160;</td>
           <td class="paramname"><em>interrupt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramtype">uint32_t *const&#160;</td>
           <td class="paramname"><em>priority</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint32_t *&#160;</td>
+          <td class="paramtype">uint32_t *const&#160;</td>
           <td class="paramname"><em>sub_priority</em>&#160;</td>
         </tr>
         <tr>
@@ -505,18 +442,20 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves the priority and sub-priority of a specific interrupt. </p>
+<p>Gets the priority and sub-priority of a specific interrupt. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">interrupt</td><td>[IN] - The interrupt for which the priority is being retrieved. </td></tr>
-    <tr><td class="paramname">priority</td><td>[OUT] - The priority value will be stored. </td></tr>
-    <tr><td class="paramname">sub_priority</td><td>[OUT] - The sub-priority value will be stored. </td></tr>
+    <tr><td class="paramname">priority</td><td>[OUT] - Pointer to uint32_t, stores the priority value. </td></tr>
+    <tr><td class="paramname">sub_priority</td><td>[OUT] - Pointer to uint32_t, stores the sub-priority value. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__interrupt__controller.html#gae1652d39ef5e668c22cfc67b41681b33">PCF_INTERRUPT_CONTROLLER_S_SUCCESS</a>  : Successful operation. </li>
+PCF_INTERRUPT_CONTROLLER_S_SUCCESS  : On success. </li>
+<li>
+PCF_INTERRUPT_CONTROLLER_S_NULL_ARG  : <em>priority</em>  or <em>sub_priority</em>  is PCF_NULL.(Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
@@ -531,7 +470,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_InterruptController_enableInterrupt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__interrupt__controller.html#gac478d2bc3140e19ef27f32009eee00cb">interrupt_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__interrupt__controller.html#ga45b61ed9b8f6821af8b5ee26603bcb63">interrupt_t</a>&#160;</td>
           <td class="paramname"><em>interrupt</em></td><td>)</td>
           <td></td>
         </tr>
@@ -547,7 +486,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__interrupt__controller.html#gae1652d39ef5e668c22cfc67b41681b33">PCF_INTERRUPT_CONTROLLER_S_SUCCESS</a>  : Successful operation. </li>
+PCF_INTERRUPT_CONTROLLER_S_SUCCESS  : On success. </li>
 </ul>
 </dd></dl>
 
@@ -562,7 +501,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_InterruptController_disableInterrupt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__interrupt__controller.html#gac478d2bc3140e19ef27f32009eee00cb">interrupt_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__interrupt__controller.html#ga45b61ed9b8f6821af8b5ee26603bcb63">interrupt_t</a>&#160;</td>
           <td class="paramname"><em>interrupt</em></td><td>)</td>
           <td></td>
         </tr>
@@ -578,7 +517,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__interrupt__controller.html#gae1652d39ef5e668c22cfc67b41681b33">PCF_INTERRUPT_CONTROLLER_S_SUCCESS</a>  : Successful operation. </li>
+PCF_INTERRUPT_CONTROLLER_S_SUCCESS  : On success. </li>
 </ul>
 </dd></dl>
 
@@ -603,7 +542,7 @@ Functions</h2></td></tr>
 <p>Enables all interrupts managed by the interrupt controller. </p>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__interrupt__controller.html#gae1652d39ef5e668c22cfc67b41681b33">PCF_INTERRUPT_CONTROLLER_S_SUCCESS</a>  : Successful operation. </li>
+PCF_INTERRUPT_CONTROLLER_S_SUCCESS  : On success. </li>
 </ul>
 </dd></dl>
 
@@ -628,7 +567,7 @@ Functions</h2></td></tr>
 <p>Disables all interrupts managed by the interrupt controller. </p>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__interrupt__controller.html#gae1652d39ef5e668c22cfc67b41681b33">PCF_INTERRUPT_CONTROLLER_S_SUCCESS</a>  : Successful operation. </li>
+PCF_INTERRUPT_CONTROLLER_S_SUCCESS  : On success. </li>
 </ul>
 </dd></dl>
 
@@ -643,7 +582,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">PCF_MCAL_API pcf_status_t pcf_InterruptController_clearInterrupt </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__mcal__interrupt__controller.html#gac478d2bc3140e19ef27f32009eee00cb">interrupt_t</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__mcal__interrupt__controller.html#ga45b61ed9b8f6821af8b5ee26603bcb63">interrupt_t</a>&#160;</td>
           <td class="paramname"><em>interrupt</em></td><td>)</td>
           <td></td>
         </tr>
@@ -659,7 +598,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__mcal__interrupt__controller.html#gae1652d39ef5e668c22cfc67b41681b33">PCF_INTERRUPT_CONTROLLER_S_SUCCESS</a>  : Successful operation. </li>
+PCF_INTERRUPT_CONTROLLER_S_SUCCESS  : On success. </li>
 </ul>
 </dd></dl>
 

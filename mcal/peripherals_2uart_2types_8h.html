@@ -90,15 +90,15 @@ $(document).ready(function(){initNavTree('peripherals_2uart_2types_8h.html','');
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#nested-classes">Data Structures</a>  </div>
   <div class="headertitle"><div class="title">types.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="peripherals_2uart_2defs_8h_source.html">pcf/peripherals/uart/defs.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="peripherals_2types_8h_source.html">pcf/peripherals/types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="mcu_2interrupt__controller_2types_8h_source.html">pcf/mcu/interrupt_controller/types.h</a>&gt;</code><br />
 <code>#include &lt;pcf/entity/types.h&gt;</code><br />
+<code>#include &lt;pcf/command/types.h&gt;</code><br />
 </div>
 <p><a href="peripherals_2uart_2types_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -108,14 +108,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uart configuration structure.  <a href="struct_uart_config__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gac1825aa91009f8f633dba43267fa6c84"><td class="memItemLeft" align="right" valign="top">typedef struct _pcf_communication_uart&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__uart.html#gac1825aa91009f8f633dba43267fa6c84">Uart_t</a></td></tr>
-<tr class="memdesc:gac1825aa91009f8f633dba43267fa6c84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uart Entity Object.  <br /></td></tr>
-<tr class="separator:gac1825aa91009f8f633dba43267fa6c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Uart types</h2></td></tr>
 <tr class="memitem:ga052a53e7294fd77fd55390ad637a627e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__uart.html#ga052a53e7294fd77fd55390ad637a627e">EnUartMode_t</a> { <a class="el" href="group__pcf__mcal__peripherals__uart.html#gga052a53e7294fd77fd55390ad637a627eab89d3474fc78c256302c4dcb9a20f4b0">enUartMode_Tx</a> = 0
 , <a class="el" href="group__pcf__mcal__peripherals__uart.html#gga052a53e7294fd77fd55390ad637a627eadc8ba636b4f531c97905b7b0130bb5dd">enUartMode_Rx</a>
 , <a class="el" href="group__pcf__mcal__peripherals__uart.html#gga052a53e7294fd77fd55390ad637a627eac11773165a4e72dab73c97475ffe07f3">enUartMode_Both</a>
@@ -153,6 +146,9 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:ga84ec1b55a8ccee0ccb094d44850e503a"><td class="mdescLeft">&#160;</td><td class="mdescRight">UART Flow Control.  <a href="group__pcf__mcal__peripherals__uart.html#ga84ec1b55a8ccee0ccb094d44850e503a">More...</a><br /></td></tr>
 <tr class="separator:ga84ec1b55a8ccee0ccb094d44850e503a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7bf300b3c468d9620d6aca062f72ebc"><td class="memItemLeft" align="right" valign="top">typedef struct _pcf_peripheral_uart_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__uart.html#gaf7bf300b3c468d9620d6aca062f72ebc">Uart_t</a></td></tr>
+<tr class="memdesc:gaf7bf300b3c468d9620d6aca062f72ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uart Entity Object.  <br /></td></tr>
+<tr class="separator:gaf7bf300b3c468d9620d6aca062f72ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

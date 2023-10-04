@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('struct_i2c_config__t.html',''); initRe
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
-  <div class="headertitle"><div class="title">I2cConfig_t Struct Reference</div></div>
+  <div class="headertitle"><div class="title">I2cConfig_t Struct Reference<div class="ingroups"><a class="el" href="group__pcf__mcal.html">Mcal</a> &raquo; <a class="el" href="group__pcf__mcal__peripherals.html">Peripherals</a> &raquo; <a class="el" href="group__pcf__mcal__peripherals__i2c.html">I2C</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -99,193 +99,25 @@ $(document).ready(function(){initNavTree('struct_i2c_config__t.html',''); initRe
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a529397d7a798fee26f1872ec238f0041"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i2c_config__t.html#a529397d7a798fee26f1872ec238f0041">id</a></td></tr>
-<tr class="memdesc:a529397d7a798fee26f1872ec238f0041"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2c Id. Refer to native defs.h file for appropriate i2c id ///.  <br /></td></tr>
-<tr class="separator:a529397d7a798fee26f1872ec238f0041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9112274d274b9da9211e70f7a500fc1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i2c_config__t.html#ab9112274d274b9da9211e70f7a500fc1">baudrate</a></td></tr>
-<tr class="memdesc:ab9112274d274b9da9211e70f7a500fc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">clock speed for i2c communication in Hz ///  <br /></td></tr>
-<tr class="separator:ab9112274d274b9da9211e70f7a500fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bbace4037550379597e998a7f582529"><td class="memItemLeft" align="right" valign="top"><a class="el" href="peripherals_2i2c_2types_8h.html#a4dc94555d8d00ba1f70bc4caeec91d88">EnI2cAddressType_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i2c_config__t.html#a2bbace4037550379597e998a7f582529">addressType</a></td></tr>
-<tr class="memdesc:a2bbace4037550379597e998a7f582529"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2c address type ///.  <br /></td></tr>
-<tr class="separator:a2bbace4037550379597e998a7f582529"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ac759f54ef1325767a83a9bbdbed790"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i2c_config__t.html#a0ac759f54ef1325767a83a9bbdbed790">ownAddress</a></td></tr>
-<tr class="memdesc:a0ac759f54ef1325767a83a9bbdbed790"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2c address. It is used to filter packets on the I2c bus.  <br /></td></tr>
-<tr class="separator:a0ac759f54ef1325767a83a9bbdbed790"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c2bf3237a7f3e343d55ce2494d0b4c1"><td class="memItemLeft" align="right" valign="top">For&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i2c_config__t.html#a4c2bf3237a7f3e343d55ce2494d0b4c1">example</a>: To configure own address as 5 and using 7bit addressing. Set <a class="el" href="struct_i2c_config__t.html#a2bbace4037550379597e998a7f582529">addressType</a> as <a class="el" href="peripherals_2i2c_2types_8h.html#a4dc94555d8d00ba1f70bc4caeec91d88ad8cb2df8f2b6ac5df2cbc1a5d912cb89">enI2cAddress_7bit</a> and value = 0x0005. uint16_t ownAddressMask</td></tr>
-<tr class="memdesc:a4c2bf3237a7f3e343d55ce2494d0b4c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2c device address mask. Bits in the mask value set as 1 will not be.  <br /></td></tr>
-<tr class="separator:a4c2bf3237a7f3e343d55ce2494d0b4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa43785657bbb4d0abd13a5e83e6f4a4f"><td class="memItemLeft" align="right" valign="top">taken into account in determining an address match For&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i2c_config__t.html#aa43785657bbb4d0abd13a5e83e6f4a4f">example</a>: Consider a <a class="el" href="struct_i2c_config__t.html#aab0abd2068f2f4498d99d876330bd944">device</a> with address = 0x0005. Now</td></tr>
-<tr class="separator:aa43785657bbb4d0abd13a5e83e6f4a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab0abd2068f2f4498d99d876330bd944"><td class="memItemLeft" align="right" valign="top">taken into account in determining an address match For if ownAddressMask is set to for the&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i2c_config__t.html#aab0abd2068f2f4498d99d876330bd944">device</a></td></tr>
-<tr class="separator:aab0abd2068f2f4498d99d876330bd944"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad26cda81c85636e329f50e76b39f3fa9"><td class="memItemLeft" align="right" valign="top">taken into account in determining an address match For if ownAddressMask is set to for the then it will respond to address value and EnPCFBoolean_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i2c_config__t.html#ad26cda81c85636e329f50e76b39f3fa9">generalCallEnable</a></td></tr>
-<tr class="memdesc:ad26cda81c85636e329f50e76b39f3fa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies to enable general call or not. Messages with address 0x00 will.  <br /></td></tr>
-<tr class="separator:ad26cda81c85636e329f50e76b39f3fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83c1b4d96b448bebf118dfd6d256f06a"><td class="memItemLeft" align="right" valign="top">If size is then write will happen in polling mode pcf_size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i2c_config__t.html#a83c1b4d96b448bebf118dfd6d256f06a">rxBufferSize</a></td></tr>
-<tr class="memdesc:a83c1b4d96b448bebf118dfd6d256f06a"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Specifies transmit buffer size in bytes.  <br /></td></tr>
-<tr class="separator:a83c1b4d96b448bebf118dfd6d256f06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9498a15da28e192fa52bd5eba501befa"><td class="memItemLeft" align="right" valign="top">Value should be greater than if it is zero default value will be set pcf_generic_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_i2c_config__t.html#a9498a15da28e192fa52bd5eba501befa">hardwareCfg</a></td></tr>
-<tr class="memdesc:a9498a15da28e192fa52bd5eba501befa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardware platform specific configuration. Refer to native types.h file ///.  <br /></td></tr>
-<tr class="separator:a9498a15da28e192fa52bd5eba501befa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga529397d7a798fee26f1872ec238f0041"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__i2c.html#ga529397d7a798fee26f1872ec238f0041">id</a></td></tr>
+<tr class="separator:ga529397d7a798fee26f1872ec238f0041"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab9112274d274b9da9211e70f7a500fc1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__i2c.html#gab9112274d274b9da9211e70f7a500fc1">baudrate</a></td></tr>
+<tr class="separator:gab9112274d274b9da9211e70f7a500fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2bbace4037550379597e998a7f582529"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__pcf__mcal__peripherals__i2c.html#ga4dc94555d8d00ba1f70bc4caeec91d88">EnI2cAddressType_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__i2c.html#ga2bbace4037550379597e998a7f582529">addressType</a></td></tr>
+<tr class="separator:ga2bbace4037550379597e998a7f582529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ac759f54ef1325767a83a9bbdbed790"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__i2c.html#ga0ac759f54ef1325767a83a9bbdbed790">ownAddress</a></td></tr>
+<tr class="separator:ga0ac759f54ef1325767a83a9bbdbed790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3785e7bc0bf5e4b4181c5df242e3d702"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__i2c.html#ga3785e7bc0bf5e4b4181c5df242e3d702">ownAddressMask</a></td></tr>
+<tr class="separator:ga3785e7bc0bf5e4b4181c5df242e3d702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafaebbfc2e6dfa1c3ee12df6d458d2f7e"><td class="memItemLeft" align="right" valign="top">EnPCFBoolean_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__i2c.html#gafaebbfc2e6dfa1c3ee12df6d458d2f7e">generalCallEnable</a></td></tr>
+<tr class="separator:gafaebbfc2e6dfa1c3ee12df6d458d2f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe7f46a24307e2f158bc087f2082311b"><td class="memItemLeft" align="right" valign="top">pcf_size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__i2c.html#gafe7f46a24307e2f158bc087f2082311b">txBufferSize</a></td></tr>
+<tr class="separator:gafe7f46a24307e2f158bc087f2082311b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae80263dd6717b8b5a43094f5d8f56e7a"><td class="memItemLeft" align="right" valign="top">pcf_size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__i2c.html#gae80263dd6717b8b5a43094f5d8f56e7a">rxBufferSize</a></td></tr>
+<tr class="separator:gae80263dd6717b8b5a43094f5d8f56e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c0e1653d9895946855bcb907db0a252"><td class="memItemLeft" align="right" valign="top">pcf_generic_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__mcal__peripherals__i2c.html#ga3c0e1653d9895946855bcb907db0a252">hardwareCfg</a></td></tr>
+<tr class="separator:ga3c0e1653d9895946855bcb907db0a252"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="a529397d7a798fee26f1872ec238f0041" name="a529397d7a798fee26f1872ec238f0041"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a529397d7a798fee26f1872ec238f0041">&#9670;&#160;</a></span>id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t I2cConfig_t::id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>I2c Id. Refer to native defs.h file for appropriate i2c id ///. </p>
-
-</div>
-</div>
-<a id="ab9112274d274b9da9211e70f7a500fc1" name="ab9112274d274b9da9211e70f7a500fc1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9112274d274b9da9211e70f7a500fc1">&#9670;&#160;</a></span>baudrate</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t I2cConfig_t::baudrate</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>clock speed for i2c communication in Hz /// </p>
-
-</div>
-</div>
-<a id="a2bbace4037550379597e998a7f582529" name="a2bbace4037550379597e998a7f582529"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bbace4037550379597e998a7f582529">&#9670;&#160;</a></span>addressType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="peripherals_2i2c_2types_8h.html#a4dc94555d8d00ba1f70bc4caeec91d88">EnI2cAddressType_t</a> I2cConfig_t::addressType</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>I2c address type ///. </p>
-
-</div>
-</div>
-<a id="a0ac759f54ef1325767a83a9bbdbed790" name="a0ac759f54ef1325767a83a9bbdbed790"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ac759f54ef1325767a83a9bbdbed790">&#9670;&#160;</a></span>ownAddress</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t I2cConfig_t::ownAddress</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>I2c address. It is used to filter packets on the I2c bus. </p>
-
-</div>
-</div>
-<a id="a4c2bf3237a7f3e343d55ce2494d0b4c1" name="a4c2bf3237a7f3e343d55ce2494d0b4c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c2bf3237a7f3e343d55ce2494d0b4c1">&#9670;&#160;</a></span>example <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">For I2cConfig_t::example</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>I2c device address mask. Bits in the mask value set as 1 will not be. </p>
-
-</div>
-</div>
-<a id="aa43785657bbb4d0abd13a5e83e6f4a4f" name="aa43785657bbb4d0abd13a5e83e6f4a4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa43785657bbb4d0abd13a5e83e6f4a4f">&#9670;&#160;</a></span>example <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">taken into account in determining an address match For I2cConfig_t::example</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aab0abd2068f2f4498d99d876330bd944" name="aab0abd2068f2f4498d99d876330bd944"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab0abd2068f2f4498d99d876330bd944">&#9670;&#160;</a></span>device</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">taken into account in determining an address match For if ownAddressMask is set to for the I2cConfig_t::device</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad26cda81c85636e329f50e76b39f3fa9" name="ad26cda81c85636e329f50e76b39f3fa9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad26cda81c85636e329f50e76b39f3fa9">&#9670;&#160;</a></span>generalCallEnable</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">taken into account in determining an address match For if ownAddressMask is set to for the then it will respond to address value and EnPCFBoolean_t I2cConfig_t::generalCallEnable</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Specifies to enable general call or not. Messages with address 0x00 will. </p>
-
-</div>
-</div>
-<a id="a83c1b4d96b448bebf118dfd6d256f06a" name="a83c1b4d96b448bebf118dfd6d256f06a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83c1b4d96b448bebf118dfd6d256f06a">&#9670;&#160;</a></span>rxBufferSize</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">If size is then write will happen in polling mode pcf_size_t I2cConfig_t::rxBufferSize</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>&lt; Specifies transmit buffer size in bytes. </p>
-<p>Specifies receive buffer size in bytes </p>
-
-</div>
-</div>
-<a id="a9498a15da28e192fa52bd5eba501befa" name="a9498a15da28e192fa52bd5eba501befa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9498a15da28e192fa52bd5eba501befa">&#9670;&#160;</a></span>hardwareCfg</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Value should be greater than if it is zero default value will be set pcf_generic_t I2cConfig_t::hardwareCfg</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Hardware platform specific configuration. Refer to native types.h file ///. </p>
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/pcf/peripherals/i2c/<a class="el" href="peripherals_2i2c_2types_8h_source.html">types.h</a></li>
 </ul>
