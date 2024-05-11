@@ -107,17 +107,29 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga55ef6f1c099558bb5aaf27de8aa19223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts float value to a string with the given precision.  <br /></td></tr>
 <tr class="separator:ga55ef6f1c099558bb5aaf27de8aa19223"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5cf878b1d1beb4ec5d8131058b73a09a"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils.html#ga5cf878b1d1beb4ec5d8131058b73a09a">pcf_Utils_fToA_exp</a> (float value, pcf_string_t buffer, int prec, const EnPCFBoolean_t upperExp, const EnPCFBoolean_t explicit_exp_sign)</td></tr>
-<tr class="memdesc:ga5cf878b1d1beb4ec5d8131058b73a09a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts float value to a string with the given precision.  <br /></td></tr>
+<tr class="memdesc:ga5cf878b1d1beb4ec5d8131058b73a09a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts exponent float value to a string with the given precision.  <br /></td></tr>
 <tr class="separator:ga5cf878b1d1beb4ec5d8131058b73a09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadedf3c6cb3fd7fc89b700fe308231902"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils.html#gadedf3c6cb3fd7fc89b700fe308231902">pcf_Utils_dToA</a> (double value, pcf_string_t buffer, int prec, uint64_t overflow)</td></tr>
 <tr class="memdesc:gadedf3c6cb3fd7fc89b700fe308231902"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the double value to string.  <br /></td></tr>
 <tr class="separator:gadedf3c6cb3fd7fc89b700fe308231902"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad396dc2b4f3b0e3ade8cbff4aa025353"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils.html#gad396dc2b4f3b0e3ade8cbff4aa025353">pcf_Utils_dToA_exp</a> (double value, pcf_string_t buffer, int prec, const EnPCFBoolean_t upperExp, const EnPCFBoolean_t explicit_exp_sign)</td></tr>
-<tr class="memdesc:gad396dc2b4f3b0e3ade8cbff4aa025353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the double exponent value to string.  <br /></td></tr>
+<tr class="memdesc:gad396dc2b4f3b0e3ade8cbff4aa025353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the exponent double value to string.  <br /></td></tr>
 <tr class="separator:gad396dc2b4f3b0e3ade8cbff4aa025353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab5ebbce6674224227f3399847cac50da"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils.html#gab5ebbce6674224227f3399847cac50da">pcf_Utils_uToA</a> (uint64_t value, pcf_string_t buffer, const int buffer_size, int base, const EnPCFBoolean_t ptr)</td></tr>
 <tr class="memdesc:gab5ebbce6674224227f3399847cac50da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an unsigned 64-bit integer value to a string representation.  <br /></td></tr>
 <tr class="separator:gab5ebbce6674224227f3399847cac50da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga64cb95be046c209bf51226797f83b2bf"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils.html#ga64cb95be046c209bf51226797f83b2bf">pcf_Utils_crc7</a> (pcf_byte_t *buffer, pcf_size_t size)</td></tr>
+<tr class="memdesc:ga64cb95be046c209bf51226797f83b2bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the CRC-7 checksum for the given buffer.  <br /></td></tr>
+<tr class="separator:ga64cb95be046c209bf51226797f83b2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf9f5562f7319e92c0c480bc96335d1e1"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils.html#gaf9f5562f7319e92c0c480bc96335d1e1">pcf_Utils_validateCrc7</a> (uint8_t crc, pcf_byte_t *buffer, pcf_size_t size)</td></tr>
+<tr class="memdesc:gaf9f5562f7319e92c0c480bc96335d1e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the CRC-7 checksum for the given buffer.  <br /></td></tr>
+<tr class="separator:gaf9f5562f7319e92c0c480bc96335d1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac136df334f184633ccc9f36ef21cb76f"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils.html#gac136df334f184633ccc9f36ef21cb76f">pcf_Utils_crc16</a> (pcf_byte_t *buffer, pcf_size_t size)</td></tr>
+<tr class="memdesc:gac136df334f184633ccc9f36ef21cb76f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the CRC-16 checksum for the given buffer.  <br /></td></tr>
+<tr class="separator:gac136df334f184633ccc9f36ef21cb76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8202ad6cfc4a4280608435b1f866e18b"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils.html#ga8202ad6cfc4a4280608435b1f866e18b">pcf_Utils_validateCrc16</a> (uint16_t crc, pcf_byte_t *buffer, pcf_size_t size)</td></tr>
+<tr class="memdesc:ga8202ad6cfc4a4280608435b1f866e18b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the CRC-16 checksum for the given buffer.  <br /></td></tr>
+<tr class="separator:ga8202ad6cfc4a4280608435b1f866e18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('group__pcf__core__assert.html',''); in
 </div><!--header-->
 <div class="contents">
 
-<p>The "assert" entity provide wide range of assert macros and functionalities.  
+<p>The "assert" entity provide wide range of assertions macros and functionalities.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -115,14 +115,14 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gabdee962712fb7ac63bb49a1cc0b35e3c"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__assert.html#gabdee962712fb7ac63bb49a1cc0b35e3c">pcf_Assert_init</a> (const <a class="el" href="struct_assert_config__t.html">AssertConfig_t</a> *config)</td></tr>
-<tr class="memdesc:gabdee962712fb7ac63bb49a1cc0b35e3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use to assign custom fault handler specified in <a class="el" href="struct_assert_config__t.html" title="Assert config struct.">AssertConfig_t</a>.  <br /></td></tr>
-<tr class="separator:gabdee962712fb7ac63bb49a1cc0b35e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9e29f84ad3f3fc787a9a19cca2d59ae4"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__assert.html#ga9e29f84ad3f3fc787a9a19cca2d59ae4">pcf_Assert_faultHandler</a> ()</td></tr>
-<tr class="memdesc:ga9e29f84ad3f3fc787a9a19cca2d59ae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles assertion failures.  <br /></td></tr>
-<tr class="separator:ga9e29f84ad3f3fc787a9a19cca2d59ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef0ba6650067e759e3e9d884f5949a09"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__assert.html#gaef0ba6650067e759e3e9d884f5949a09">pcf_Assert_init</a> (const <a class="el" href="struct_assert_config__t.html">AssertConfig_t</a> *const config)</td></tr>
+<tr class="memdesc:gaef0ba6650067e759e3e9d884f5949a09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use to overwrite the default fault handler.  <br /></td></tr>
+<tr class="separator:gaef0ba6650067e759e3e9d884f5949a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7516743b2ea8e6a7f8d29cb8b05ca3a"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__assert.html#gaa7516743b2ea8e6a7f8d29cb8b05ca3a">pcf_Assert_faultHandler</a> (void)</td></tr>
+<tr class="memdesc:gaa7516743b2ea8e6a7f8d29cb8b05ca3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles assertion failures.  <br /></td></tr>
+<tr class="separator:gaa7516743b2ea8e6a7f8d29cb8b05ca3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaed6e42b8dc43dfb2ebf58018ed5e46b"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__assert.html#gaaed6e42b8dc43dfb2ebf58018ed5e46b">pcf_Assert_write</a> (pcf_cstring_t message, pcf_cstring_t file, const uint32_t line)</td></tr>
-<tr class="memdesc:gaaed6e42b8dc43dfb2ebf58018ed5e46b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the passed <em>message</em> , <em>file</em>  and line <em>number</em>  at which the assertion happened.  <br /></td></tr>
+<tr class="memdesc:gaaed6e42b8dc43dfb2ebf58018ed5e46b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Debug log the <em>message</em> , <em>file</em>  and line <em>number</em>  at which the assertion happened.  <br /></td></tr>
 <tr class="separator:gaaed6e42b8dc43dfb2ebf58018ed5e46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa64bb9cd0303eafcf497b642597fdf23"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API EnPCFBoolean_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__assert.html#gaa64bb9cd0303eafcf497b642597fdf23">pcf_Assert_withIn</a> (const int64_t delta, const int64_t expected, const int64_t actual)</td></tr>
 <tr class="memdesc:gaa64bb9cd0303eafcf497b642597fdf23"><td class="mdescLeft">&#160;</td><td class="mdescRight">To exert assertion if the value is not in range.  <br /></td></tr>
@@ -397,8 +397,8 @@ Variables</h2></td></tr>
 <tr class="separator:ga1de277e22c3c8055760b09ef02ee8bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>The "assert" entity provide wide range of assert macros and functionalities. </p>
-<p>It allows user to check the value of an expression that expect to be true under normal circumstances. It includes functions such as initializing the assert entity, writing assert messages, assert macros and many more. The entity returns status codes indicating the success or failure of the operations. </p>
+<p>The "assert" entity provide wide range of assertions macros and functionalities. </p>
+<p>It allows user to check the value of an expression that expect to be true under normal circumstances. If expression is false than an error message is write using debug logger and jumps to assert fault handler. It includes functions such as initializing the assert entity, writing assert messages, assert macros and many more. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga13f475d7a0300e4f64c6f3e4d8d4b15a" name="ga13f475d7a0300e4f64c6f3e4d8d4b15a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga13f475d7a0300e4f64c6f3e4d8d4b15a">&#9670;&#160;</a></span>ITEM_ID_ASSERT</h2>
@@ -473,8 +473,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="string_example_8c-example.html#a9">string_example.c</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -529,8 +527,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="string_example_8c-example.html#a11">string_example.c</a>.</dd>
-</dl>
 
 </div>
 </div>
@@ -3774,8 +3770,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gabdee962712fb7ac63bb49a1cc0b35e3c" name="gabdee962712fb7ac63bb49a1cc0b35e3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabdee962712fb7ac63bb49a1cc0b35e3c">&#9670;&#160;</a></span>pcf_Assert_init()</h2>
+<a id="gaef0ba6650067e759e3e9d884f5949a09" name="gaef0ba6650067e759e3e9d884f5949a09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaef0ba6650067e759e3e9d884f5949a09">&#9670;&#160;</a></span>pcf_Assert_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3783,14 +3779,15 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">PCF_CORE_API pcf_status_t pcf_Assert_init </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_assert_config__t.html">AssertConfig_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_assert_config__t.html">AssertConfig_t</a> *const&#160;</td>
           <td class="paramname"><em>config</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Use to assign custom fault handler specified in <a class="el" href="struct_assert_config__t.html" title="Assert config struct.">AssertConfig_t</a>. </p>
+<p>Use to overwrite the default fault handler. </p>
+<dl class="section note"><dt>Note</dt><dd>The call is optional, and in case of assertion failure, the default fault handler will halt the execution of the code.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">config</td><td>[IN] - Assert configuration. </td></tr>
@@ -3799,9 +3796,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values: <ul>
 <li>
-<a class="el" href="group__pcf__core__assert.html#ga3d7e12700d0a98c2ef3adc842f98b3b1">PCF_ASSERT_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On Success. </li>
 <li>
-<a class="el" href="group__pcf__core__assert.html#gade2643106030a1ab11a0eb11af71fbfc">PCF_ASSERT_S_NULL_ARG</a>  : The config parameter was PCF_NULL or contained PCF_NULL values. </li>
+PCF_S_NULL_ARG  : The config or config.faultHandler is PCF_NULL. </li>
 </ul>
 </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="assert_example_8c-example.html#a5">assert_example.c</a>.</dd>
@@ -3809,8 +3806,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ga9e29f84ad3f3fc787a9a19cca2d59ae4" name="ga9e29f84ad3f3fc787a9a19cca2d59ae4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9e29f84ad3f3fc787a9a19cca2d59ae4">&#9670;&#160;</a></span>pcf_Assert_faultHandler()</h2>
+<a id="gaa7516743b2ea8e6a7f8d29cb8b05ca3a" name="gaa7516743b2ea8e6a7f8d29cb8b05ca3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa7516743b2ea8e6a7f8d29cb8b05ca3a">&#9670;&#160;</a></span>pcf_Assert_faultHandler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3818,6 +3815,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">PCF_CORE_API void pcf_Assert_faultHandler </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -3860,22 +3858,22 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Writes the passed <em>message</em> , <em>file</em>  and line <em>number</em>  at which the assertion happened. </p>
+<p>Debug log the <em>message</em> , <em>file</em>  and line <em>number</em>  at which the assertion happened. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">message</td><td>[IN] - The text of type pcf_cstring_t to be displayed on console for the following assertion. </td></tr>
-    <tr><td class="paramname">file</td><td>[IN] - The file name of type pcf_cstring_t in which the assertion happened. </td></tr>
-    <tr><td class="paramname">line</td><td>[IN] - The line number of type const uint32_t at which the assertion happened. </td></tr>
+    <tr><td class="paramname">message</td><td>[IN] - The string to be debug log when assertion expression evaluates to false. </td></tr>
+    <tr><td class="paramname">file</td><td>[IN] - Name of the file in which assertion expression evaluates to false. </td></tr>
+    <tr><td class="paramname">line</td><td>[IN] - Line number at which assertion expression evaluates to false. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values: <ul>
 <li>
-<a class="el" href="group__pcf__core__assert.html#ga3d7e12700d0a98c2ef3adc842f98b3b1">PCF_ASSERT_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On Success. </li>
 <li>
-<a class="el" href="group__pcf__core__assert.html#gade2643106030a1ab11a0eb11af71fbfc">PCF_ASSERT_S_NULL_ARG</a>  : Null argument was passed. </li>
+PCF_S_NULL_ARG  : <em>message</em>  or <em>file</em>  is PCF_NULL. </li>
 <li>
-<a class="el" href="group__pcf__core__assert.html#ga9218c5a68b7a1812c753f65fe622bad0">PCF_ASSERT_S_INTERNAL_ERROR</a>  : Debug was not configured or message was PCF_NULL. </li>
+PCF_S_INTERNAL_ERROR  : Debug is not configured. </li>
 </ul>
 </dd></dl>
 
@@ -3916,17 +3914,17 @@ Variables</h2></td></tr>
 <p>To exert assertion if the value is not in range. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">delta</td><td>[IN] - The range value that is acceptable from the expected value. </td></tr>
-    <tr><td class="paramname">expected</td><td>[IN] - The expected value of type const int64_t. </td></tr>
-    <tr><td class="paramname">actual</td><td>[IN] - The actual value of type const int64_t read from the input. </td></tr>
+    <tr><td class="paramname">delta</td><td>[IN] - The accepted difference between expected value and actual value i.e. | expected - actual | &lt;= delta. </td></tr>
+    <tr><td class="paramname">expected</td><td>[IN] - The expected value. </td></tr>
+    <tr><td class="paramname">actual</td><td>[IN] - The actual value. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>EnPCFBoolean_t Valid values: <ul>
 <li>
-enPCFBoolean_True  : Lie Within the range </li>
+enPCFBoolean_True  : <em>actual</em>  is within the range. </li>
 <li>
-enPCFBoolean_False  : Does not lie within the range </li>
+enPCFBoolean_False  : Does not lie within the range. </li>
 </ul>
 </dd></dl>
 

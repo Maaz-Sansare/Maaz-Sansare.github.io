@@ -92,7 +92,98 @@ $(document).ready(function(){initNavTree('entity_manager_example_8c-example.html
   <div class="headertitle"><div class="title">entity_manager_example.c</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"></div><!-- fragment --> </div><!-- contents -->
+<div class="fragment"><div class="line"> </div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="entity__manager_8h.html">pcf/entity_manager/entity_manager.h</a>&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="memory_8h.html">pcf/memory/memory.h</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>){</div>
+<div class="line">    pcf_status_t status;</div>
+<div class="line">    pcf_size_t num_entities;</div>
+<div class="line">    <a id="_a0" name="_a0"></a><a class="code hl_struct" href="struct_entity__t.html">Entity_t</a>* entity = PCF_NULL;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keyword">typedef</span> <span class="keyword">struct</span>{</div>
+<div class="line">        uint16_t rpm;</div>
+<div class="line">        uint16_t power;</div>
+<div class="line">    } Motor_data;</div>
+<div class="line"> </div>
+<div class="line">    Motor_data* data = <a id="a1" name="a1"></a><a class="code hl_function" href="group__pcf__core__memory.html#ga2cb37527c33c58cf548ae5ce3e750f0b">pcf_Memory_alloc</a>(<span class="keyword">sizeof</span>(Motor_data), &amp;status);</div>
+<div class="line">    <span class="keywordflow">if</span>(!PCF_S_IS_SUCCESS(status)){</div>
+<div class="line">        <span class="keywordflow">return</span> -1;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">if</span>(data == PCF_NULL){</div>
+<div class="line">        <span class="keywordflow">return</span> -1;</div>
+<div class="line">    }</div>
+<div class="line">    data-&gt;rpm = 100;</div>
+<div class="line">    data-&gt;power = 500;</div>
+<div class="line"> </div>
+<div class="line">    <a id="_a2" name="_a2"></a><a class="code hl_struct" href="struct_entity_manager_config__t.html">EntityManagerConfig_t</a> config;</div>
+<div class="line">    config.<a id="a3" name="a3"></a><a class="code hl_variable" href="struct_entity_manager_config__t.html#a166ecb67a24d57bb2059da8d96e9f853">max_entities</a> = 2;    <span class="comment">//Configuring Entity manager to have maximum capacity of 2</span></div>
+<div class="line">    config.<a id="a4" name="a4"></a><a class="code hl_variable" href="struct_entity_manager_config__t.html#aee24f61131fc686520b1034515baabed">memAlloc</a>     = <a class="code hl_function" href="group__pcf__core__memory.html#ga2cb37527c33c58cf548ae5ce3e750f0b">pcf_Memory_alloc</a>;</div>
+<div class="line">    config.<a id="a5" name="a5"></a><a class="code hl_variable" href="struct_entity_manager_config__t.html#a7abf32b1d2d5027dd5df1babe645cef9">memRealloc</a>   = <a id="a6" name="a6"></a><a class="code hl_function" href="group__pcf__core__memory.html#ga0af8795072d7dc4b81f4d56cf70b8a3a">pcf_Memory_realloc</a>;</div>
+<div class="line">    config.<a id="a7" name="a7"></a><a class="code hl_variable" href="struct_entity_manager_config__t.html#ac2428fd4ef7803ba65fe0d536fae7411">memFree</a>      = <a id="a8" name="a8"></a><a class="code hl_function" href="group__pcf__core__memory.html#gaa31bde95db6c9d7ed3f42b38c89139d1">pcf_Memory_free</a>;</div>
+<div class="line">    </div>
+<div class="line">    <span class="comment">//Initializing Entity manager with the configurations</span></div>
+<div class="line">    status = <a id="a9" name="a9"></a><a class="code hl_function" href="group__pcf__core__entity__manager.html#ga3a7b74ac9a0c95ec31aedf7b6adcce1c">pcf_EntityManager_init</a>(&amp;config);</div>
+<div class="line">    <span class="keywordflow">if</span>(!PCF_S_IS_SUCCESS(status)){</div>
+<div class="line">        <span class="keywordflow">return</span> -1;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <a class="code hl_struct" href="struct_entity__t.html">Entity_t</a> motor1;</div>
+<div class="line">    motor1.<a id="a10" name="a10"></a><a class="code hl_variable" href="group__pcf__core__entity.html#ga3c5805fe724d1b0fb5bb142739c85984">id</a> = 1;</div>
+<div class="line">    motor1.<a id="a11" name="a11"></a><a class="code hl_variable" href="group__pcf__core__entity.html#gae81ebf1ac99dfde272234285a5481cb7">type</a> = (<a id="_a12" name="_a12"></a><a class="code hl_union" href="union_entity_type__t.html">EntityType_t</a>)((uint32_t)0x7A697344);</div>
+<div class="line">    motor1.<a id="a13" name="a13"></a><a class="code hl_variable" href="group__pcf__core__entity.html#ga8a50d5c4955faa9df13a8188e4ca7c58">base</a> = (pcf_generic_t)data;</div>
+<div class="line">    motor1.<a id="a14" name="a14"></a><a class="code hl_variable" href="group__pcf__core__entity.html#ga614cfb73f4338f6f9500d1e10d4bd206">messageHandler</a> = PCF_NULL;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">//Adding entity to the entity manager</span></div>
+<div class="line">    status = <a id="a15" name="a15"></a><a class="code hl_function" href="group__pcf__core__entity__manager.html#gad7738f0eccb58ddf14aaf117c50ee1f0">pcf_EntityManager_addEntity</a>(&amp;motor1);</div>
+<div class="line">    <span class="keywordflow">if</span>(!PCF_S_IS_SUCCESS(status)){</div>
+<div class="line">        <span class="keywordflow">return</span> -1;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">//Getting number of entity present in the entity manager</span></div>
+<div class="line">    status = <a id="a16" name="a16"></a><a class="code hl_function" href="group__pcf__core__entity__manager.html#gacf0cdc6bb2ade66e50f02c3702af307a">pcf_EntityManager_getEntityCount</a>(&amp;num_entities);</div>
+<div class="line">    <span class="keywordflow">if</span>(!PCF_S_IS_SUCCESS(status)){</div>
+<div class="line">        <span class="keywordflow">return</span> -1;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">//Getting the entity from the manager of given type and at given index</span></div>
+<div class="line">    entity = <a id="a17" name="a17"></a><a class="code hl_function" href="group__pcf__core__entity__manager.html#ga70241fdf0bb05c0c9511383000c33d08">pcf_EntityManager_getEntity</a>((<a class="code hl_union" href="union_entity_type__t.html">EntityType_t</a>)((uint32_t)0x7A697344), 1, &amp;status);</div>
+<div class="line">    <span class="keywordflow">if</span>(entity == PCF_NULL){</div>
+<div class="line">        <span class="keywordflow">return</span> -1;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">if</span>(!PCF_S_IS_SUCCESS(status)){</div>
+<div class="line">        <span class="keywordflow">return</span> -1;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">//Deinitialising the entity manager</span></div>
+<div class="line">    status = <a id="a18" name="a18"></a><a class="code hl_function" href="group__pcf__core__entity__manager.html#gaa0410bd002590a0d172009d935a329d3">pcf_EntityManager_deInit</a>();</div>
+<div class="line">    <span class="keywordflow">if</span>(!PCF_S_IS_SUCCESS(status)){</div>
+<div class="line">        <span class="keywordflow">return</span> -1;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="aentity__manager_8h_html"><div class="ttname"><a href="entity__manager_8h.html">entity_manager.h</a></div></div>
+<div class="ttc" id="agroup__pcf__core__entity__manager_html_ga3a7b74ac9a0c95ec31aedf7b6adcce1c"><div class="ttname"><a href="group__pcf__core__entity__manager.html#ga3a7b74ac9a0c95ec31aedf7b6adcce1c">pcf_EntityManager_init</a></div><div class="ttdeci">PCF_CORE_API pcf_status_t pcf_EntityManager_init(const EntityManagerConfig_t *const config)</div><div class="ttdoc">Initialises the entity manager.</div></div>
+<div class="ttc" id="agroup__pcf__core__entity__manager_html_ga70241fdf0bb05c0c9511383000c33d08"><div class="ttname"><a href="group__pcf__core__entity__manager.html#ga70241fdf0bb05c0c9511383000c33d08">pcf_EntityManager_getEntity</a></div><div class="ttdeci">PCF_CORE_API Entity_t * pcf_EntityManager_getEntity(const EntityType_t type, const pcf_entityId_t id, pcf_status_t *const status)</div><div class="ttdoc">Gets the entity with the specified type and id from the Entity manager.</div></div>
+<div class="ttc" id="agroup__pcf__core__entity__manager_html_gaa0410bd002590a0d172009d935a329d3"><div class="ttname"><a href="group__pcf__core__entity__manager.html#gaa0410bd002590a0d172009d935a329d3">pcf_EntityManager_deInit</a></div><div class="ttdeci">PCF_CORE_API pcf_status_t pcf_EntityManager_deInit()</div><div class="ttdoc">De-initialises the entity manager.</div></div>
+<div class="ttc" id="agroup__pcf__core__entity__manager_html_gacf0cdc6bb2ade66e50f02c3702af307a"><div class="ttname"><a href="group__pcf__core__entity__manager.html#gacf0cdc6bb2ade66e50f02c3702af307a">pcf_EntityManager_getEntityCount</a></div><div class="ttdeci">PCF_CORE_API pcf_status_t pcf_EntityManager_getEntityCount(pcf_size_t *const num_entities)</div><div class="ttdoc">Gets the total number of entities managed by/added to the entity manager.</div></div>
+<div class="ttc" id="agroup__pcf__core__entity__manager_html_gad7738f0eccb58ddf14aaf117c50ee1f0"><div class="ttname"><a href="group__pcf__core__entity__manager.html#gad7738f0eccb58ddf14aaf117c50ee1f0">pcf_EntityManager_addEntity</a></div><div class="ttdeci">PCF_CORE_API pcf_status_t pcf_EntityManager_addEntity(const Entity_t *const entity)</div><div class="ttdoc">Adds a new entity to the entity manager.</div></div>
+<div class="ttc" id="agroup__pcf__core__entity_html_ga3c5805fe724d1b0fb5bb142739c85984"><div class="ttname"><a href="group__pcf__core__entity.html#ga3c5805fe724d1b0fb5bb142739c85984">Entity_t::id</a></div><div class="ttdeci">pcf_entityId_t id</div><div class="ttdef"><b>Definition:</b> types.h:62</div></div>
+<div class="ttc" id="agroup__pcf__core__entity_html_ga614cfb73f4338f6f9500d1e10d4bd206"><div class="ttname"><a href="group__pcf__core__entity.html#ga614cfb73f4338f6f9500d1e10d4bd206">Entity_t::messageHandler</a></div><div class="ttdeci">EMPMessageHandler_fp messageHandler</div><div class="ttdef"><b>Definition:</b> types.h:64</div></div>
+<div class="ttc" id="agroup__pcf__core__entity_html_ga8a50d5c4955faa9df13a8188e4ca7c58"><div class="ttname"><a href="group__pcf__core__entity.html#ga8a50d5c4955faa9df13a8188e4ca7c58">Entity_t::base</a></div><div class="ttdeci">pcf_generic_t base</div><div class="ttdef"><b>Definition:</b> types.h:63</div></div>
+<div class="ttc" id="agroup__pcf__core__entity_html_gae81ebf1ac99dfde272234285a5481cb7"><div class="ttname"><a href="group__pcf__core__entity.html#gae81ebf1ac99dfde272234285a5481cb7">Entity_t::type</a></div><div class="ttdeci">EntityType_t type</div><div class="ttdef"><b>Definition:</b> types.h:61</div></div>
+<div class="ttc" id="agroup__pcf__core__memory_html_ga0af8795072d7dc4b81f4d56cf70b8a3a"><div class="ttname"><a href="group__pcf__core__memory.html#ga0af8795072d7dc4b81f4d56cf70b8a3a">pcf_Memory_realloc</a></div><div class="ttdeci">PCF_CORE_API pcf_generic_t pcf_Memory_realloc(const pcf_generic_t ptr, const pcf_size_t size, pcf_status_t *status)</div><div class="ttdoc">Dynamically re-allocate the memory.</div></div>
+<div class="ttc" id="agroup__pcf__core__memory_html_ga2cb37527c33c58cf548ae5ce3e750f0b"><div class="ttname"><a href="group__pcf__core__memory.html#ga2cb37527c33c58cf548ae5ce3e750f0b">pcf_Memory_alloc</a></div><div class="ttdeci">PCF_CORE_API pcf_generic_t pcf_Memory_alloc(const pcf_size_t size, pcf_status_t *status)</div><div class="ttdoc">Dynamically allocate the memory and initializes it to 0.</div></div>
+<div class="ttc" id="agroup__pcf__core__memory_html_gaa31bde95db6c9d7ed3f42b38c89139d1"><div class="ttname"><a href="group__pcf__core__memory.html#gaa31bde95db6c9d7ed3f42b38c89139d1">pcf_Memory_free</a></div><div class="ttdeci">PCF_CORE_API pcf_status_t pcf_Memory_free(const pcf_generic_t memory)</div><div class="ttdoc">Free dynamically allocated memory.</div></div>
+<div class="ttc" id="amemory_8h_html"><div class="ttname"><a href="memory_8h.html">memory.h</a></div></div>
+<div class="ttc" id="astruct_entity__t_html"><div class="ttname"><a href="struct_entity__t.html">Entity_t</a></div><div class="ttdoc">Entity.</div><div class="ttdef"><b>Definition:</b> types.h:60</div></div>
+<div class="ttc" id="astruct_entity_manager_config__t_html"><div class="ttname"><a href="struct_entity_manager_config__t.html">EntityManagerConfig_t</a></div><div class="ttdoc">Entity manager types.</div><div class="ttdef"><b>Definition:</b> types.h:16</div></div>
+<div class="ttc" id="astruct_entity_manager_config__t_html_a166ecb67a24d57bb2059da8d96e9f853"><div class="ttname"><a href="struct_entity_manager_config__t.html#a166ecb67a24d57bb2059da8d96e9f853">EntityManagerConfig_t::max_entities</a></div><div class="ttdeci">pcf_size_t max_entities</div><div class="ttdoc">Maximum number of entities.</div><div class="ttdef"><b>Definition:</b> types.h:17</div></div>
+<div class="ttc" id="astruct_entity_manager_config__t_html_a7abf32b1d2d5027dd5df1babe645cef9"><div class="ttname"><a href="struct_entity_manager_config__t.html#a7abf32b1d2d5027dd5df1babe645cef9">EntityManagerConfig_t::memRealloc</a></div><div class="ttdeci">MemoryReallocate_fp memRealloc</div><div class="ttdoc">Function pointer for dynamic memory reallocation.</div><div class="ttdef"><b>Definition:</b> types.h:19</div></div>
+<div class="ttc" id="astruct_entity_manager_config__t_html_ac2428fd4ef7803ba65fe0d536fae7411"><div class="ttname"><a href="struct_entity_manager_config__t.html#ac2428fd4ef7803ba65fe0d536fae7411">EntityManagerConfig_t::memFree</a></div><div class="ttdeci">MemoryFree_fp memFree</div><div class="ttdoc">Function pointer for dynamic memory free.</div><div class="ttdef"><b>Definition:</b> types.h:20</div></div>
+<div class="ttc" id="astruct_entity_manager_config__t_html_aee24f61131fc686520b1034515baabed"><div class="ttname"><a href="struct_entity_manager_config__t.html#aee24f61131fc686520b1034515baabed">EntityManagerConfig_t::memAlloc</a></div><div class="ttdeci">MemoryAllocate_fp memAlloc</div><div class="ttdoc">Function pointer for dynamic memory allocation.</div><div class="ttdef"><b>Definition:</b> types.h:18</div></div>
+<div class="ttc" id="aunion_entity_type__t_html"><div class="ttname"><a href="union_entity_type__t.html">EntityType_t</a></div><div class="ttdoc">Entity type.</div><div class="ttdef"><b>Definition:</b> types.h:23</div></div>
+</div><!-- fragment --> </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

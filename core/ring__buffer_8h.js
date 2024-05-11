@@ -1,19 +1,18 @@
 var ring__buffer_8h =
 [
-    [ "pcf_RingBuffer_new", "group__pcf__core__collections__ring_buffer.html#ga01c25f40649963875315931e42710d08", null ],
+    [ "pcf_RingBuffer_new", "group__pcf__core__collections__ring_buffer.html#ga8670ac630fda67180ae155d48ebe982e", null ],
     [ "pcf_RingBuffer_delete", "group__pcf__core__collections__ring_buffer.html#ga9e691217836c453742b59cf2692ad377", null ],
-    [ "pcf_RingBuffer_getSize", "group__pcf__core__collections__ring_buffer.html#ga3912b6289191f96e4a8f8a6457da0706", null ],
-    [ "pcf_RingBuffer_write", "group__pcf__core__collections__ring_buffer.html#gad687843345c31c3b50e5f2117e286d0c", null ],
-    [ "pcf_RingBuffer_read", "group__pcf__core__collections__ring_buffer.html#ga0255023758b4a2c63ba62cb335e1f11f", null ],
-    [ "pcf_RingBuffer_peek", "group__pcf__core__collections__ring_buffer.html#gaa56b350ba14690dd4b4165ab86e6208a", null ],
-    [ "pcf_RingBuffer_flush", "group__pcf__core__collections__ring_buffer.html#ga9dc941e81e1e1a54b05be338d500bf51", null ],
-    [ "pcf_RingBuffer_isEmpty", "group__pcf__core__collections__ring_buffer.html#ga5f4d3834084f030287b205a43fbf48a7", null ],
-    [ "pcf_RingBuffer_isFull", "group__pcf__core__collections__ring_buffer.html#ga4a4ff638c74e9102190a4de16ccf966e", null ],
-    [ "pcf_RingBuffer_getFullCount", "group__pcf__core__collections__ring_buffer.html#ga8f29f629a3467489c572863f965381c1", null ],
-    [ "pcf_RingBuffer_getFreeCount", "group__pcf__core__collections__ring_buffer.html#ga81facf6b5c08558ae3163fe58c34de75", null ],
-    [ "pcf_RingBuffer_skip", "group__pcf__core__collections__ring_buffer.html#ga5a49d11f26c1eabc6c477a5a5cf3d24e", null ],
-    [ "pcf_RingBuffer_advance", "group__pcf__core__collections__ring_buffer.html#ga34af4d12f46bca445f847449484fa244", null ],
-    [ "pcf_RingBuffer_getBaseAddress", "group__pcf__core__collections__ring_buffer.html#ga9ad332df63ad52ed8d91ead2a4dcf79b", null ],
-    [ "pcf_RingBuffer_getReadAddress", "group__pcf__core__collections__ring_buffer.html#ga6b5848546c39a535e0ba75396c899d85", null ],
-    [ "pcf_RingBuffer_getWriteAddress", "group__pcf__core__collections__ring_buffer.html#ga3f43bd1747593f38af8f0a004b5bdc93", null ]
+    [ "pcf_RingBuffer_getSize", "group__pcf__core__collections__ring_buffer.html#ga089c8df8e6320f8ae6236b5c0b92e5a8", null ],
+    [ "pcf_RingBuffer_getFullCount", "group__pcf__core__collections__ring_buffer.html#ga48f973f64c2313a9132c07d52431e104", null ],
+    [ "pcf_RingBuffer_getFreeCount", "group__pcf__core__collections__ring_buffer.html#ga674e8cf5060fdd100823bb1667e994d1", null ],
+    [ "pcf_RingBuffer_write", "group__pcf__core__collections__ring_buffer.html#gaf248893f3457a7562936a7d3be6c9600", null ],
+    [ "pcf_RingBuffer_read", "group__pcf__core__collections__ring_buffer.html#ga7a9974afeb8909b1ab1d1cae7c5452e5", null ],
+    [ "pcf_RingBuffer_flush", "group__pcf__core__collections__ring_buffer.html#gad90bd889d6ea8a43ac2bd22592e62c86", null ],
+    [ "pcf_RingBuffer_isEmpty", "group__pcf__core__collections__ring_buffer.html#gadc49d5b08a84ab9d8f454ba432d25b7d", null ],
+    [ "pcf_RingBuffer_isFull", "group__pcf__core__collections__ring_buffer.html#ga056efacffdc110979f2111b3645cbdb0", null ],
+    [ "pcf_RingBuffer_getBaseAddress", "group__pcf__core__collections__ring_buffer.html#ga80b8373ba0bb9252b8b6fa3ed081dc54", null ],
+    [ "pcf_RingBuffer_getReadAddress", "group__pcf__core__collections__ring_buffer.html#ga035846d7a1bfde30b69a743e52eb18f3", null ],
+    [ "pcf_RingBuffer_getWriteAddress", "group__pcf__core__collections__ring_buffer.html#ga48fb50776f43032c3cf074dc06a98823", null ],
+    [ "pcf_RingBuffer_skip", "group__pcf__core__collections__ring_buffer.html#ga9adbeb20732e0782d32873f412a72da8", null ],
+    [ "pcf_RingBuffer_advance", "group__pcf__core__collections__ring_buffer.html#ga17e586ef49431430de7812a3cdef593f", null ]
 ];

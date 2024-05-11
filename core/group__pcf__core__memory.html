@@ -90,14 +90,21 @@ $(document).ready(function(){initNavTree('group__pcf__core__memory.html',''); in
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Memory<div class="ingroups"><a class="el" href="group__pcf__core.html">Core</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>The "memory" entity provide memory functionalities.  
+<p>The "memory" entity provide memory management functions.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga460355679f60e28f2d2618d971601eb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#ga460355679f60e28f2d2618d971601eb9">ITEM_ID_MEMORY</a>&#160;&#160;&#160;(3)</td></tr>
+<tr class="memdesc:ga460355679f60e28f2d2618d971601eb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Item ID of Memory Entity within core Package.  <br /></td></tr>
+<tr class="separator:ga460355679f60e28f2d2618d971601eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga2cb37527c33c58cf548ae5ce3e750f0b"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_generic_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#ga2cb37527c33c58cf548ae5ce3e750f0b">pcf_Memory_alloc</a> (const pcf_size_t size, pcf_status_t *status)</td></tr>
@@ -107,13 +114,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga0af8795072d7dc4b81f4d56cf70b8a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamically re-allocate the memory.  <br /></td></tr>
 <tr class="separator:ga0af8795072d7dc4b81f4d56cf70b8a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa31bde95db6c9d7ed3f42b38c89139d1"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#gaa31bde95db6c9d7ed3f42b38c89139d1">pcf_Memory_free</a> (const pcf_generic_t memory)</td></tr>
-<tr class="memdesc:gaa31bde95db6c9d7ed3f42b38c89139d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamically de-allocate the memory.  <br /></td></tr>
+<tr class="memdesc:gaa31bde95db6c9d7ed3f42b38c89139d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free dynamically allocated memory.  <br /></td></tr>
 <tr class="separator:gaa31bde95db6c9d7ed3f42b38c89139d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2bb3f700342a9f076c785acf31b77767"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#ga2bb3f700342a9f076c785acf31b77767">pcf_Memory_copy</a> (pcf_generic_t dest, const pcf_generic_t src, const pcf_size_t size)</td></tr>
 <tr class="memdesc:ga2bb3f700342a9f076c785acf31b77767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies <em>size</em>  bytes from memory area <em>src</em>  to memory area <em>dest</em> .  <br /></td></tr>
 <tr class="separator:ga2bb3f700342a9f076c785acf31b77767"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacda0912c9201ea79606f3496145b70a1"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#gacda0912c9201ea79606f3496145b70a1">pcf_Memory_move</a> (pcf_generic_t dest, pcf_generic_t src, const pcf_size_t size)</td></tr>
-<tr class="memdesc:gacda0912c9201ea79606f3496145b70a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies <em>size</em>  bytes from the location pointed by <em>src</em>  to the memory block pointed by <em>dest</em> .  <br /></td></tr>
+<tr class="memdesc:gacda0912c9201ea79606f3496145b70a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="group__pcf__core__memory.html#ga2bb3f700342a9f076c785acf31b77767" title="Copies size  bytes from memory area src  to memory area dest .">pcf_Memory_copy</a> and also allows memory overlap.  <br /></td></tr>
 <tr class="separator:gacda0912c9201ea79606f3496145b70a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa22b25578bbbd29628146b8e5ba26284"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#gaa22b25578bbbd29628146b8e5ba26284">pcf_Memory_set</a> (pcf_generic_t memory, const pcf_byte_t value, const pcf_size_t size)</td></tr>
 <tr class="memdesc:gaa22b25578bbbd29628146b8e5ba26284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills the first <em>size</em>  bytes of the memory area pointed to by <em>memory</em>  with the constant byte <em>value</em> .  <br /></td></tr>
@@ -121,14 +128,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8d6ac5a225620c01d8ec1bc07d281897"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#ga8d6ac5a225620c01d8ec1bc07d281897">pcf_Memory_compare</a> (const pcf_generic_t mem1, const pcf_generic_t mem2, const pcf_size_t size)</td></tr>
 <tr class="memdesc:ga8d6ac5a225620c01d8ec1bc07d281897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the first <em>size</em>  bytes of the memory area <em>mem1</em>  and <em>mem2</em> .  <br /></td></tr>
 <tr class="separator:ga8d6ac5a225620c01d8ec1bc07d281897"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga56a689053cf7131c3bd489a041774fd8"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_generic_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#ga56a689053cf7131c3bd489a041774fd8">pcf_Memory_chr</a> (const pcf_generic_t memory, const pcf_byte_t value, const pcf_size_t size)</td></tr>
-<tr class="memdesc:ga56a689053cf7131c3bd489a041774fd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scans the initial <em>size</em>  bytes of the memory area pointed to by <em>memory</em>  for the first instance of <em>value</em> .  <br /></td></tr>
-<tr class="separator:ga56a689053cf7131c3bd489a041774fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Memory item ID</h2></td></tr>
-<tr class="memitem:ga460355679f60e28f2d2618d971601eb9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#ga460355679f60e28f2d2618d971601eb9">ITEM_ID_MEMORY</a>&#160;&#160;&#160;(3)</td></tr>
-<tr class="memdesc:ga460355679f60e28f2d2618d971601eb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Item ID of Memory Entity within core Package.  <br /></td></tr>
-<tr class="separator:ga460355679f60e28f2d2618d971601eb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f07c1fc52406c45ae8f65d81398e3f7"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_generic_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#ga3f07c1fc52406c45ae8f65d81398e3f7">pcf_Memory_chr</a> (const pcf_generic_t memory, const pcf_byte_t value, const pcf_size_t size, pcf_status_t *status)</td></tr>
+<tr class="memdesc:ga3f07c1fc52406c45ae8f65d81398e3f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scans the initial <em>size</em>  bytes of the memory area pointed to by <em>memory</em>  for the first instance of <em>value</em> .  <br /></td></tr>
+<tr class="separator:ga3f07c1fc52406c45ae8f65d81398e3f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Memory status code</h2></td></tr>
 <tr class="memitem:gaf7025005c523b8b6cc098a1580d91383"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#gaf7025005c523b8b6cc098a1580d91383">PCF_MEMORY_S_SUCCESS</a>&#160;&#160;&#160;GENERATE_PCF_STATUS_SUCCESS(<a class="el" href="group__pcf__core.html#ga880ffcc1a33a50a689ef8819eb8e4f42">PKG_ID_CORE</a>, <a class="el" href="group__pcf__core__memory.html#ga460355679f60e28f2d2618d971601eb9">ITEM_ID_MEMORY</a>)</td></tr>
@@ -145,10 +147,12 @@ Functions</h2></td></tr>
 <tr class="separator:gae02e8ef37c19401426322b679a1f8d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gade32e0614da46df66d247d815eba8ffc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#gade32e0614da46df66d247d815eba8ffc">PCF_MEMORY_S_ALLOCATION_FAILED</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_ALLOCATION_FAILED(<a class="el" href="group__pcf__core.html#ga880ffcc1a33a50a689ef8819eb8e4f42">PKG_ID_CORE</a>, <a class="el" href="group__pcf__core__memory.html#ga460355679f60e28f2d2618d971601eb9">ITEM_ID_MEMORY</a>)</td></tr>
 <tr class="separator:gade32e0614da46df66d247d815eba8ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaebc19bfc60f0143b2720b73304ef4ca4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__memory.html#gaebc19bfc60f0143b2720b73304ef4ca4">PCF_MEMORY_S_DATA_NOT_FOUND</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_DATA_NOT_FOUND(<a class="el" href="group__pcf__core.html#ga880ffcc1a33a50a689ef8819eb8e4f42">PKG_ID_CORE</a>, <a class="el" href="group__pcf__core__memory.html#ga460355679f60e28f2d2618d971601eb9">ITEM_ID_MEMORY</a>)</td></tr>
+<tr class="separator:gaebc19bfc60f0143b2720b73304ef4ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>The "memory" entity provide memory functionalities. </p>
-<p>It allows user to allocate and manipulate memory. It includes functions such as memory allocation, deallocation, copying, comparison, etc. The entity returns status codes indicating the success or failure of the operations.</p>
+<p>The "memory" entity provide memory management functions. </p>
+<p>It allows user to allocate and manipulate memory. It provides functions such as memory allocation, deallocation, copying, comparison, etc.</p>
 <dl class="section note"><dt>Note</dt><dd>Input validation is done only when package is built in debug mode. </dd></dl>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga460355679f60e28f2d2618d971601eb9" name="ga460355679f60e28f2d2618d971601eb9"></a>
@@ -265,6 +269,20 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gaebc19bfc60f0143b2720b73304ef4ca4" name="gaebc19bfc60f0143b2720b73304ef4ca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaebc19bfc60f0143b2720b73304ef4ca4">&#9670;&#160;</a></span>PCF_MEMORY_S_DATA_NOT_FOUND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PCF_MEMORY_S_DATA_NOT_FOUND&#160;&#160;&#160;GENERATE_PCF_ERROR_DATA_NOT_FOUND(<a class="el" href="group__pcf__core.html#ga880ffcc1a33a50a689ef8819eb8e4f42">PKG_ID_CORE</a>, <a class="el" href="group__pcf__core__memory.html#ga460355679f60e28f2d2618d971601eb9">ITEM_ID_MEMORY</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga2cb37527c33c58cf548ae5ce3e750f0b" name="ga2cb37527c33c58cf548ae5ce3e750f0b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga2cb37527c33c58cf548ae5ce3e750f0b">&#9670;&#160;</a></span>pcf_Memory_alloc()</h2>
@@ -296,14 +314,13 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>[IN] - Size of the memory to be allocated of type pcf_size_t. </td></tr>
-    <tr><td class="paramname">status</td><td>[OUT] - Pointer to pcf_status_t (Optional parameter, pass PCF_NULL if not required.) <br  />
- Valid values: <ul>
+    <tr><td class="paramname">status</td><td>[OUT] - Pointer to pcf_status_t, stores the status of the function call. (Optional parameter, pass PCF_NULL if not required.) Valid values: <ul>
 <li>
-<a class="el" href="group__pcf__core__memory.html#gaf7025005c523b8b6cc098a1580d91383">PCF_MEMORY_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On Success. </li>
 <li>
-<a class="el" href="group__pcf__core__memory.html#ga5dee15527df803c4b982682dd94708e1">PCF_MEMORY_S_INVALID_ARG</a>  : Size was equal or less than zero. (Checked only in debug mode) </li>
+PCF_S_INVALID_ARG  : <em>size</em>  is 0. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__core__memory.html#gae02e8ef37c19401426322b679a1f8d76">PCF_MEMORY_S_NOT_ENOUGH_MEMORY</a>  : Unable to allocated specified size memory. </li>
+PCF_S_NOT_ENOUGH_MEMORY  : Failed to allocate specified size of memory. </li>
 </ul>
 </td></tr>
   </table>
@@ -316,6 +333,8 @@ On success - The pointer to the allocated memory.  </li>
 On Failure - PCF_NULL.  </li>
 </ul>
 </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="array_example_8c-example.html#a6">array_example.c</a>, <a class="el" href="entity_manager_example_8c-example.html#a1">entity_manager_example.c</a>, <a class="el" href="linear_buffer_example_8c-example.html#a3">linear_buffer_example.c</a>, and <a class="el" href="ring_buffer_example_8c-example.html#a3">ring_buffer_example.c</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -356,14 +375,16 @@ On Failure - PCF_NULL.  </li>
   <table class="params">
     <tr><td class="paramname">ptr</td><td>[IN] - Pointer to memory which has to be re-allocated. </td></tr>
     <tr><td class="paramname">size</td><td>[IN] - Size of the memory of type pcf_size_t. </td></tr>
-    <tr><td class="paramname">status</td><td>[OUT] - Pointer to pcf_status_t (Optional parameter, pass PCF_NULL if not required.) <br  />
+    <tr><td class="paramname">status</td><td>[OUT] - Pointer to pcf_status_t, stores the status of the function call. (Optional parameter, pass PCF_NULL if not required.) <br  />
  Valid values: <ul>
 <li>
-<a class="el" href="group__pcf__core__memory.html#gaf7025005c523b8b6cc098a1580d91383">PCF_MEMORY_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On Success. </li>
 <li>
-<a class="el" href="group__pcf__core__memory.html#ga5dee15527df803c4b982682dd94708e1">PCF_MEMORY_S_INVALID_ARG</a>  : Memory pointer was null or size was equal or less than zero.. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>ptr</em>  is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__core__memory.html#gae02e8ef37c19401426322b679a1f8d76">PCF_MEMORY_S_NOT_ENOUGH_MEMORY</a>  : Unable to allocated specified size memory. </li>
+PCF_S_INVALID_ARG  : <em>size</em>  is 0. (Checked only in debug mode) </li>
+<li>
+PCF_S_NOT_ENOUGH_MEMORY  : Failed to allocate specified size of memory. </li>
 </ul>
 </td></tr>
   </table>
@@ -373,9 +394,11 @@ On Failure - PCF_NULL.  </li>
 <li>
 On success - The pointer to the re-allocated memory.  </li>
 <li>
-On Failure - The pointer to the memory area.  </li>
+On Failure - The pointer to the memory area.  : The cause of the error can be identified by examining the value of the status variable. </li>
 </ul>
 </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="entity_manager_example_8c-example.html#a6">entity_manager_example.c</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -395,7 +418,7 @@ On Failure - The pointer to the memory area.  </li>
       </table>
 </div><div class="memdoc">
 
-<p>Dynamically de-allocate the memory. </p>
+<p>Free dynamically allocated memory. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">memory</td><td>[IN] - Memory pointer which has to be de-allocated. </td></tr>
@@ -404,12 +427,12 @@ On Failure - The pointer to the memory area.  </li>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__core__memory.html#gaf7025005c523b8b6cc098a1580d91383">PCF_MEMORY_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On Success. </li>
 <li>
-<a class="el" href="group__pcf__core__memory.html#ga67045586ecda8583b651d096641ea43b">PCF_MEMORY_S_NULL_ARG</a>  : Null argument was passed. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>memory</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="array_example_8c-example.html#a1">array_example.c</a>, <a class="el" href="buffer_example_8c-example.html#a0">buffer_example.c</a>, <a class="el" href="memory_example_8c-example.html#a2">memory_example.c</a>, <a class="el" href="ring_buffer_example_8c-example.html#a0">ring_buffer_example.c</a>, and <a class="el" href="string_example_8c-example.html#a1">string_example.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="array_example_8c-example.html#a8">array_example.c</a>, <a class="el" href="entity_manager_example_8c-example.html#a8">entity_manager_example.c</a>, <a class="el" href="linear_buffer_example_8c-example.html#a5">linear_buffer_example.c</a>, <a class="el" href="memory_example_8c-example.html#a2">memory_example.c</a>, and <a class="el" href="ring_buffer_example_8c-example.html#a5">ring_buffer_example.c</a>.</dd>
 </dl>
 
 </div>
@@ -450,22 +473,22 @@ On Failure - The pointer to the memory area.  </li>
 <dl class="section note"><dt>Note</dt><dd>Overlapping areas produces error.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dest</td><td>[OUT] - Pointer to the destination memory where the content is to be copied. </td></tr>
+    <tr><td class="paramname">dest</td><td>[IN/OUT] - Pointer to the destination memory where the content is to be copied. </td></tr>
     <tr><td class="paramname">src</td><td>[IN] - Pointer to the source memory from where data is to be copied. </td></tr>
-    <tr><td class="paramname">size</td><td>[IN] - Number of bytes to copy of type pcf_size_t. </td></tr>
+    <tr><td class="paramname">size</td><td>[IN] - Number of bytes to copy. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>pcf_status_t valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__core__memory.html#gaf7025005c523b8b6cc098a1580d91383">PCF_MEMORY_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On Success. </li>
 <li>
-<a class="el" href="group__pcf__core__memory.html#ga67045586ecda8583b651d096641ea43b">PCF_MEMORY_S_NULL_ARG</a>  : Null argument was passed. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>dest</em>  or <em>src</em>  is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__core__memory.html#ga5dee15527df803c4b982682dd94708e1">PCF_MEMORY_S_INVALID_ARG</a>  : Was due to memory range overlap or invalid size. (Checked only in debug mode) </li>
+PCF_S_INVALID_ARG  : Is due to memory range overlap or <em>size</em>  is 0. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="array_example_8c-example.html#a2">array_example.c</a>, <a class="el" href="buffer_example_8c-example.html#a1">buffer_example.c</a>, <a class="el" href="ring_buffer_example_8c-example.html#a1">ring_buffer_example.c</a>, and <a class="el" href="string_example_8c-example.html#a2">string_example.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="array_example_8c-example.html#a10">array_example.c</a>.</dd>
 </dl>
 
 </div>
@@ -502,28 +525,28 @@ On Failure - The pointer to the memory area.  </li>
       </table>
 </div><div class="memdoc">
 
-<p>Copies <em>size</em>  bytes from the location pointed by <em>src</em>  to the memory block pointed by <em>dest</em> . </p>
-<dl class="section note"><dt>Note</dt><dd>The copy is not done directly the data from <em>src</em>  is copied into a temporary buffer and then copied into <em>dest</em> . Hence, even if <em>src</em>  and <em>dest</em>  overlap there will be no problem.</dd></dl>
+<p>Same as <a class="el" href="group__pcf__core__memory.html#ga2bb3f700342a9f076c785acf31b77767" title="Copies size  bytes from memory area src  to memory area dest .">pcf_Memory_copy</a> and also allows memory overlap. </p>
+<p>Copies <em>size</em>  bytes from the location pointed by <em>src</em>  to the memory block pointed by <em>dest</em> . </p><dl class="section note"><dt>Note</dt><dd>The copy is not done directly the data from <em>src</em>  is copied into a temporary buffer and then copied into <em>dest</em> . Hence, even if <em>src</em>  and <em>dest</em>  overlap there will be no problem.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dest</td><td>[OUT] - Pointer to the destination memory where the content is to be copied. </td></tr>
+    <tr><td class="paramname">dest</td><td>[IN/OUT] - Pointer to the destination memory where the content is to be copied. </td></tr>
     <tr><td class="paramname">src</td><td>[IN] - Pointer to the source memory from where data is to be copied. </td></tr>
     <tr><td class="paramname">size</td><td>[IN] - Number of bytes to copy of type pcf_size_t. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>pcf_status_t valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__core__memory.html#gaf7025005c523b8b6cc098a1580d91383">PCF_MEMORY_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On Success. </li>
 <li>
-<a class="el" href="group__pcf__core__memory.html#ga67045586ecda8583b651d096641ea43b">PCF_MEMORY_S_NULL_ARG</a>  : Null argument was passed. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>dest</em>  or <em>src</em>  is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__core__memory.html#ga5dee15527df803c4b982682dd94708e1">PCF_MEMORY_S_INVALID_ARG</a>  : Size was equal or less than zero. (Checked only in debug mode) </li>
+PCF_S_INVALID_ARG  : <em>size</em>  is 0. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__core__memory.html#gade32e0614da46df66d247d815eba8ffc">PCF_MEMORY_S_ALLOCATION_FAILED</a>  : Memory Allocation failed. </li>
+PCF_S_NOT_ENOUGH_MEMORY  : Failed to allocate memory. </li>
 </ul>
 </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="array_example_8c-example.html#a3">array_example.c</a>, <a class="el" href="buffer_example_8c-example.html#a2">buffer_example.c</a>, <a class="el" href="ring_buffer_example_8c-example.html#a2">ring_buffer_example.c</a>, and <a class="el" href="string_example_8c-example.html#a6">string_example.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="array_example_8c-example.html#a12">array_example.c</a>.</dd>
 </dl>
 
 </div>
@@ -563,22 +586,22 @@ On Failure - The pointer to the memory area.  </li>
 <p>Fills the first <em>size</em>  bytes of the memory area pointed to by <em>memory</em>  with the constant byte <em>value</em> . </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">memory</td><td>[OUT] - Pointer to the block of memory to fill. </td></tr>
-    <tr><td class="paramname">value</td><td>[IN] - Value to be set of type pcf_byte_t. </td></tr>
-    <tr><td class="paramname">size</td><td>[IN] - Number of bytes to be set to the value of type pcf_size_t. </td></tr>
+    <tr><td class="paramname">memory</td><td>[IN/OUT] - Pointer to the block of memory to fill. </td></tr>
+    <tr><td class="paramname">value</td><td>[IN] - Value to be set. </td></tr>
+    <tr><td class="paramname">size</td><td>[IN] - Number of bytes to be set to the value. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>pcf_status_t valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__core__memory.html#gaf7025005c523b8b6cc098a1580d91383">PCF_MEMORY_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On Success. </li>
 <li>
-<a class="el" href="group__pcf__core__memory.html#ga67045586ecda8583b651d096641ea43b">PCF_MEMORY_S_NULL_ARG</a>  : Null argument was passed. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>memory</em>  is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__core__memory.html#ga5dee15527df803c4b982682dd94708e1">PCF_MEMORY_S_INVALID_ARG</a>  : Size was equal or less than zero. (Checked only in debug mode) </li>
+PCF_S_INVALID_ARG  : <em>size</em>  is 0. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="memory_example_8c-example.html#a0">memory_example.c</a>, and <a class="el" href="string_example_8c-example.html#a5">string_example.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="memory_example_8c-example.html#a0">memory_example.c</a>.</dd>
 </dl>
 
 </div>
@@ -620,28 +643,28 @@ On Failure - The pointer to the memory area.  </li>
   <table class="params">
     <tr><td class="paramname">mem1</td><td>[IN] - Pointer to block of memory. </td></tr>
     <tr><td class="paramname">mem2</td><td>[IN] - Pointer to block of memory. </td></tr>
-    <tr><td class="paramname">size</td><td>[IN] - Number of bytes to compare of type pcf_size_t. </td></tr>
+    <tr><td class="paramname">size</td><td>[IN] - Number of bytes to compare. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>pcf_status_t valid values : <ul>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__core__memory.html#ga6d7b16f172424f53c565e3276ca935c8">PCF_MEMORY_S_YES</a>  : Compared value was same. </li>
+PCF_S_YES  : Compared value is same. </li>
 <li>
-<a class="el" href="group__pcf__core__memory.html#ga6d4ce93c2b5571e6f1db9a374aea282e">PCF_MEMORY_S_NO</a>  : Compared value was different. </li>
+PCF_S_NO  : Compared value is different. </li>
 <li>
-<a class="el" href="group__pcf__core__memory.html#ga67045586ecda8583b651d096641ea43b">PCF_MEMORY_S_NULL_ARG</a>  : Null argument was passed. (Checked only in debug mode) </li>
+PCF_S_NULL_ARG  : <em>mem1</em>  or <em>mem2</em>  is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__core__memory.html#ga5dee15527df803c4b982682dd94708e1">PCF_MEMORY_S_INVALID_ARG</a>  : Size was equal or less than zero. (Checked only in debug mode) </li>
+PCF_S_INVALID_ARG  : <em>size</em>  is 0. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="memory_example_8c-example.html#a1">memory_example.c</a>, and <a class="el" href="string_example_8c-example.html#a4">string_example.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="memory_example_8c-example.html#a1">memory_example.c</a>.</dd>
 </dl>
 
 </div>
 </div>
-<a id="ga56a689053cf7131c3bd489a041774fd8" name="ga56a689053cf7131c3bd489a041774fd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga56a689053cf7131c3bd489a041774fd8">&#9670;&#160;</a></span>pcf_Memory_chr()</h2>
+<a id="ga3f07c1fc52406c45ae8f65d81398e3f7" name="ga3f07c1fc52406c45ae8f65d81398e3f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3f07c1fc52406c45ae8f65d81398e3f7">&#9670;&#160;</a></span>pcf_Memory_chr()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -662,7 +685,13 @@ On Failure - The pointer to the memory area.  </li>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const pcf_size_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">pcf_status_t *&#160;</td>
+          <td class="paramname"><em>status</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -676,8 +705,21 @@ On Failure - The pointer to the memory area.  </li>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">memory</td><td>[IN] - Pointer to block of memory. </td></tr>
-    <tr><td class="paramname">value</td><td>[IN] - Character value of type pcf_byte_t. </td></tr>
-    <tr><td class="paramname">size</td><td>[IN] - Number of bytes to analyzed of type pcf_size_t. </td></tr>
+    <tr><td class="paramname">value</td><td>[IN] - Character value. </td></tr>
+    <tr><td class="paramname">size</td><td>[IN] - Number of bytes to analyzed. </td></tr>
+    <tr><td class="paramname">status</td><td>[OUT] - Pointer to pcf_status_t, stores the status of the function call. <br  />
+ (Optional parameter, pass PCF_NULL if not required.) <br  />
+ Valid values: <ul>
+<li>
+PCF_S_SUCCESS  : On Success. </li>
+<li>
+PCF_S_NULL_ARG  : <em>memory</em>  is PCF_NULL. (Checked only in debug mode) </li>
+<li>
+PCF_S_INVALID_ARG  : <em>size</em>  is 0. (Checked only in debug mode) </li>
+<li>
+PCF_S_DATA_NOT_FOUND  : <em>value</em>  not found. </li>
+</ul>
+</td></tr>
   </table>
   </dd>
 </dl>
@@ -688,8 +730,6 @@ On success - The pointer to the matching byte.  </li>
 On Failure - PCF_NULL if the character does not occur.  </li>
 </ul>
 </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="string_example_8c-example.html#a3">string_example.c</a>.</dd>
-</dl>
 
 </div>
 </div>

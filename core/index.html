@@ -92,36 +92,37 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
   <div class="headertitle"><div class="title">Introduction </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_docs_MAINPAGE"></a> @pcf/core library package provides core functionality for the following: <br  />
+<div class="textblock"><p><a class="anchor" id="md_docs_MAINPAGE"></a> The @pcf/core C library package provides functionality for the following: <br  />
 </p><ul>
-<li>Debug <br  />
+<li>Debug logging <br  />
 </li>
-<li>Assert <br  />
+<li>Assertions <br  />
 </li>
-<li>strings manipulation <br  />
+<li>Memory management <br  />
 </li>
-<li>memory manipulation <br  />
+<li>Strings manipulation <br  />
 </li>
-<li>collections <br  />
+<li>Collections <br  />
 </li>
-<li>utils <br  />
+<li>TexttoNum NumToTex Utils <br  />
 </li>
-<li>bit operation <br  />
+<li>Bit operations <br  />
 </li>
-<li>entity <br  />
+<li>Entity <br  />
 </li>
-<li>entity manager <br  />
+<li>Entity management <br  />
 </li>
-<li>command <br  />
+<li>Command IO Design pattern and base types <br  />
 </li>
 </ul>
 <h2><a class="anchor" id="autotoc_md1"></a>
 How to use</h2>
-<p>To use the package item include the pcf/&lt;package_item_name&gt;/&lt;package_item_name&gt;.h in your application. <br  />
+<p>To use whole core package...</p>
+<p>To use the individual package item include the pcf/&lt;package_item_name&gt;/&lt;package_item_name&gt;.h in your application. <br  />
  Eg.: #include &lt;<a class="el" href="assert_8h.html">pcf/assert/assert.h</a>&gt;</p>
 <h3><a class="anchor" id="autotoc_md2"></a>
 Required compile macros:</h3>
-<p><b>Following macros are only required while building for arm with no operating system:</b> <br  />
+<p><b>Following macros are only required while building for devices with no operating system:</b> <br  />
  <b>PCF_CONF_ARCH_DEVICE_VENDOR</b> - Valid values stm, nxp or infineon <br  />
  <b>PCF_CONF_ARCH_DEVICE_SERIES</b> - Valid values stm32f3, stm32f4, lpc1700 or xmc4000 <br  />
  <b>PCF_CONF_ARCH_DEVICE</b> - Valid values stm32f302r8, stm32f405rg, lpc1768 or xmc4700 <br  />

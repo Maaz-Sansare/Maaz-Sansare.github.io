@@ -8,6 +8,7 @@ var group__pcf__core__memory =
     [ "PCF_MEMORY_S_INVALID_ARG", "group__pcf__core__memory.html#ga5dee15527df803c4b982682dd94708e1", null ],
     [ "PCF_MEMORY_S_NOT_ENOUGH_MEMORY", "group__pcf__core__memory.html#gae02e8ef37c19401426322b679a1f8d76", null ],
     [ "PCF_MEMORY_S_ALLOCATION_FAILED", "group__pcf__core__memory.html#gade32e0614da46df66d247d815eba8ffc", null ],
+    [ "PCF_MEMORY_S_DATA_NOT_FOUND", "group__pcf__core__memory.html#gaebc19bfc60f0143b2720b73304ef4ca4", null ],
     [ "pcf_Memory_alloc", "group__pcf__core__memory.html#ga2cb37527c33c58cf548ae5ce3e750f0b", null ],
     [ "pcf_Memory_realloc", "group__pcf__core__memory.html#ga0af8795072d7dc4b81f4d56cf70b8a3a", null ],
     [ "pcf_Memory_free", "group__pcf__core__memory.html#gaa31bde95db6c9d7ed3f42b38c89139d1", null ],
@@ -15,5 +16,5 @@ var group__pcf__core__memory =
     [ "pcf_Memory_move", "group__pcf__core__memory.html#gacda0912c9201ea79606f3496145b70a1", null ],
     [ "pcf_Memory_set", "group__pcf__core__memory.html#gaa22b25578bbbd29628146b8e5ba26284", null ],
     [ "pcf_Memory_compare", "group__pcf__core__memory.html#ga8d6ac5a225620c01d8ec1bc07d281897", null ],
-    [ "pcf_Memory_chr", "group__pcf__core__memory.html#ga56a689053cf7131c3bd489a041774fd8", null ]
+    [ "pcf_Memory_chr", "group__pcf__core__memory.html#ga3f07c1fc52406c45ae8f65d81398e3f7", null ]
 ];

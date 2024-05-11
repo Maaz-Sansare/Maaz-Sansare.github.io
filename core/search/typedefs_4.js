@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['empmessagehandler_5ffp_0',['EMPMessageHandler_fp',['../group__pcf__core__entity.html#gaa5b31b8db8bf043af26cc0a179ed8aec',1,'types.h']]]
+  ['linearbuffer_5ft_0',['LinearBuffer_t',['../group__pcf__core__collections__linear_buffer.html#ga5215414b8a6b78c9c257e836398bbc17',1,'types.h']]]
 ];

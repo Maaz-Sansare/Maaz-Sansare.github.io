@@ -2,7 +2,7 @@ var examples =
 [
     [ "assert_example.c", "assert_example_8c-example.html", null ],
     [ "array_example.c", "array_example_8c-example.html", null ],
-    [ "buffer_example.c", "buffer_example_8c-example.html", null ],
+    [ "linear_buffer_example.c", "linear_buffer_example_8c-example.html", null ],
     [ "ring_buffer_example.c", "ring_buffer_example_8c-example.html", null ],
     [ "debug_example.c", "debug_example_8c-example.html", null ],
     [ "entity_manager_example.c", "entity_manager_example_8c-example.html", null ],

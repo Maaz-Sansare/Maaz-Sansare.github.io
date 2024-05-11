@@ -124,8 +124,8 @@ var group__pcf__core__assert =
     [ "PCF_ASSERT_HEX64_WITHIN", "group__pcf__core__assert.html#gab9d02b6f0790594901cc55dbf38936ae", null ],
     [ "PCF_ASSERT_CHAR_WITHIN", "group__pcf__core__assert.html#ga1de277e22c3c8055760b09ef02ee8bfd", null ],
     [ "AssertFaultHandler_fp", "group__pcf__core__assert.html#ga34e227753a3c1e139710f2eace737990", null ],
-    [ "pcf_Assert_init", "group__pcf__core__assert.html#gabdee962712fb7ac63bb49a1cc0b35e3c", null ],
-    [ "pcf_Assert_faultHandler", "group__pcf__core__assert.html#ga9e29f84ad3f3fc787a9a19cca2d59ae4", null ],
+    [ "pcf_Assert_init", "group__pcf__core__assert.html#gaef0ba6650067e759e3e9d884f5949a09", null ],
+    [ "pcf_Assert_faultHandler", "group__pcf__core__assert.html#gaa7516743b2ea8e6a7f8d29cb8b05ca3a", null ],
     [ "pcf_Assert_write", "group__pcf__core__assert.html#gaaed6e42b8dc43dfb2ebf58018ed5e46b", null ],
     [ "pcf_Assert_withIn", "group__pcf__core__assert.html#gaa64bb9cd0303eafcf497b642597fdf23", null ],
     [ "AssertConfig_t::faultHandler", "group__pcf__core__assert.html#ga8086d91c805a2ed2c7e9f69a0174e2f2", null ]

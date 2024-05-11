@@ -95,14 +95,14 @@ $(document).ready(function(){initNavTree('group__pcf__core__entity.html',''); in
   <div class="headertitle"><div class="title">Entity<div class="ingroups"><a class="el" href="group__pcf__core.html">Core</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The “entity” refers to a fundamental object or element that represents a distinct and identifiable entity within a system.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union_entity_type__t.html">EntityType_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entity type.  <a href="union_entity_type__t.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_entity__t.html">Entity_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entity.  <a href="struct_entity__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_entity_property__t.html">EntityProperty_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entity property.  <a href="struct_entity_property__t.html#details">More...</a><br /></td></tr>
@@ -113,6 +113,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union_entity_property_command__t.html">EntityPropertyCommand_t</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entity property command.  <a href="union_entity_property_command__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_entity__t.html">Entity_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entity.  <a href="struct_entity__t.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -120,32 +123,37 @@ Variables</h2></td></tr>
 <tr class="separator:ga948b29782a5c8411b22ee8db64f1eb89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga98f472eb7bef36ccb6a99524afb61984"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__entity.html#ga98f472eb7bef36ccb6a99524afb61984">EntityType_t::name</a> [4]</td></tr>
 <tr class="separator:ga98f472eb7bef36ccb6a99524afb61984"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae81ebf1ac99dfde272234285a5481cb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="union_entity_type__t.html">EntityType_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__entity.html#gae81ebf1ac99dfde272234285a5481cb7">Entity_t::type</a></td></tr>
-<tr class="separator:gae81ebf1ac99dfde272234285a5481cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3c5805fe724d1b0fb5bb142739c85984"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__pcf__core__entity.html#gab7beef4f8e61c56fd3c40d5933f13203">pcf_entityId_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__entity.html#ga3c5805fe724d1b0fb5bb142739c85984">Entity_t::id</a></td></tr>
-<tr class="separator:ga3c5805fe724d1b0fb5bb142739c85984"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad30b59938e98216edd3ca60f6faa6bdb"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__entity.html#gad30b59938e98216edd3ca60f6faa6bdb">EntityProperty_t::id</a></td></tr>
 <tr class="separator:gad30b59938e98216edd3ca60f6faa6bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga244383f10c8251f3e4df834d8b64b4cb"><td class="memItemLeft" align="right" valign="top">Data_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__entity.html#ga244383f10c8251f3e4df834d8b64b4cb">EntityProperty_t::data</a></td></tr>
-<tr class="separator:ga244383f10c8251f3e4df834d8b64b4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36f02f07ed048d92be61e47807f3b323"><td class="memItemLeft" align="right" valign="top">Buffer_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__entity.html#ga36f02f07ed048d92be61e47807f3b323">EntityProperty_t::data</a></td></tr>
+<tr class="separator:ga36f02f07ed048d92be61e47807f3b323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa9ae46d20c3142db9922516ed857bbec"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__entity.html#gaa9ae46d20c3142db9922516ed857bbec">EntityCommand_t::id</a></td></tr>
 <tr class="separator:gaa9ae46d20c3142db9922516ed857bbec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaece364004c86008913c14c9f44bda131"><td class="memItemLeft" align="right" valign="top">Data_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__entity.html#gaece364004c86008913c14c9f44bda131">EntityCommand_t::data</a></td></tr>
-<tr class="separator:gaece364004c86008913c14c9f44bda131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga91538f2f62f55b43b05f7e23f1352ab6"><td class="memItemLeft" align="right" valign="top">Buffer_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__entity.html#ga91538f2f62f55b43b05f7e23f1352ab6">EntityCommand_t::data</a></td></tr>
+<tr class="separator:ga91538f2f62f55b43b05f7e23f1352ab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabaeb08f9fea4e3f886d08df8fc74fc9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_entity_property__t.html">EntityProperty_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__entity.html#gabaeb08f9fea4e3f886d08df8fc74fc9b">EntityPropertyCommand_t::property</a></td></tr>
 <tr class="separator:gabaeb08f9fea4e3f886d08df8fc74fc9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1e3c2596ccbb1d0cf0148f9f59e82211"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_entity_command__t.html">EntityCommand_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__entity.html#ga1e3c2596ccbb1d0cf0148f9f59e82211">EntityPropertyCommand_t::command</a></td></tr>
 <tr class="separator:ga1e3c2596ccbb1d0cf0148f9f59e82211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae81ebf1ac99dfde272234285a5481cb7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="union_entity_type__t.html">EntityType_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__entity.html#gae81ebf1ac99dfde272234285a5481cb7">Entity_t::type</a></td></tr>
+<tr class="separator:gae81ebf1ac99dfde272234285a5481cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c5805fe724d1b0fb5bb142739c85984"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__pcf__core__entity.html#gab7beef4f8e61c56fd3c40d5933f13203">pcf_entityId_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__entity.html#ga3c5805fe724d1b0fb5bb142739c85984">Entity_t::id</a></td></tr>
+<tr class="separator:ga3c5805fe724d1b0fb5bb142739c85984"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a50d5c4955faa9df13a8188e4ca7c58"><td class="memItemLeft" align="right" valign="top">pcf_generic_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__entity.html#ga8a50d5c4955faa9df13a8188e4ca7c58">Entity_t::base</a></td></tr>
+<tr class="separator:ga8a50d5c4955faa9df13a8188e4ca7c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga614cfb73f4338f6f9500d1e10d4bd206"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__pcf__core__entity.html#gaa5b31b8db8bf043af26cc0a179ed8aec">EMPMessageHandler_fp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__entity.html#ga614cfb73f4338f6f9500d1e10d4bd206">Entity_t::messageHandler</a></td></tr>
+<tr class="separator:ga614cfb73f4338f6f9500d1e10d4bd206"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">Entity type</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Entity types.</h2></td></tr>
 <tr class="memitem:gab7beef4f8e61c56fd3c40d5933f13203"><td class="memItemLeft" align="right" valign="top">typedef int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__entity.html#gab7beef4f8e61c56fd3c40d5933f13203">pcf_entityId_t</a></td></tr>
 <tr class="memdesc:gab7beef4f8e61c56fd3c40d5933f13203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entity ID.  <br /></td></tr>
 <tr class="separator:gab7beef4f8e61c56fd3c40d5933f13203"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa5b31b8db8bf043af26cc0a179ed8aec"><td class="memItemLeft" align="right" valign="top">typedef pcf_status_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__entity.html#gaa5b31b8db8bf043af26cc0a179ed8aec">EMPMessageHandler_fp</a>) (pcf_generic_t entity, uint8_t message_type, <a class="el" href="union_entity_property_command__t.html">EntityPropertyCommand_t</a> *pc)</td></tr>
-<tr class="memdesc:gaa5b31b8db8bf043af26cc0a179ed8aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entity Management Protocol.  <br /></td></tr>
+<tr class="memdesc:gaa5b31b8db8bf043af26cc0a179ed8aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entity Manager protocol message handler.  <br /></td></tr>
 <tr class="separator:gaa5b31b8db8bf043af26cc0a179ed8aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>The “entity” refers to a fundamental object or element that represents a distinct and identifiable entity within a system. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gab7beef4f8e61c56fd3c40d5933f13203" name="gab7beef4f8e61c56fd3c40d5933f13203"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab7beef4f8e61c56fd3c40d5933f13203">&#9670;&#160;</a></span>pcf_entityId_t</h2>
@@ -175,7 +183,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Entity Management Protocol. </p>
+<p>Entity Manager protocol message handler. </p>
 
 </div>
 </div>
@@ -208,36 +216,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="gae81ebf1ac99dfde272234285a5481cb7" name="gae81ebf1ac99dfde272234285a5481cb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae81ebf1ac99dfde272234285a5481cb7">&#9670;&#160;</a></span>type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="union_entity_type__t.html">EntityType_t</a> Entity_t::type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ga3c5805fe724d1b0fb5bb142739c85984" name="ga3c5805fe724d1b0fb5bb142739c85984"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3c5805fe724d1b0fb5bb142739c85984">&#9670;&#160;</a></span>id <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__pcf__core__entity.html#gab7beef4f8e61c56fd3c40d5933f13203">pcf_entityId_t</a> Entity_t::id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="gad30b59938e98216edd3ca60f6faa6bdb" name="gad30b59938e98216edd3ca60f6faa6bdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad30b59938e98216edd3ca60f6faa6bdb">&#9670;&#160;</a></span>id <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gad30b59938e98216edd3ca60f6faa6bdb">&#9670;&#160;</a></span>id <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -250,14 +230,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ga244383f10c8251f3e4df834d8b64b4cb" name="ga244383f10c8251f3e4df834d8b64b4cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga244383f10c8251f3e4df834d8b64b4cb">&#9670;&#160;</a></span>data <span class="overload">[1/2]</span></h2>
+<a id="ga36f02f07ed048d92be61e47807f3b323" name="ga36f02f07ed048d92be61e47807f3b323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga36f02f07ed048d92be61e47807f3b323">&#9670;&#160;</a></span>data <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Data_t EntityProperty_t::data</td>
+          <td class="memname">Buffer_t EntityProperty_t::data</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -265,7 +245,7 @@ Variables</h2></td></tr>
 </div>
 </div>
 <a id="gaa9ae46d20c3142db9922516ed857bbec" name="gaa9ae46d20c3142db9922516ed857bbec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa9ae46d20c3142db9922516ed857bbec">&#9670;&#160;</a></span>id <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9ae46d20c3142db9922516ed857bbec">&#9670;&#160;</a></span>id <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,14 +258,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="gaece364004c86008913c14c9f44bda131" name="gaece364004c86008913c14c9f44bda131"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaece364004c86008913c14c9f44bda131">&#9670;&#160;</a></span>data <span class="overload">[2/2]</span></h2>
+<a id="ga91538f2f62f55b43b05f7e23f1352ab6" name="ga91538f2f62f55b43b05f7e23f1352ab6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga91538f2f62f55b43b05f7e23f1352ab6">&#9670;&#160;</a></span>data <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Data_t EntityCommand_t::data</td>
+          <td class="memname">Buffer_t EntityCommand_t::data</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -317,6 +297,70 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae81ebf1ac99dfde272234285a5481cb7" name="gae81ebf1ac99dfde272234285a5481cb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae81ebf1ac99dfde272234285a5481cb7">&#9670;&#160;</a></span>type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="union_entity_type__t.html">EntityType_t</a> Entity_t::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="entity_manager_example_8c-example.html#a11">entity_manager_example.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ga3c5805fe724d1b0fb5bb142739c85984" name="ga3c5805fe724d1b0fb5bb142739c85984"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3c5805fe724d1b0fb5bb142739c85984">&#9670;&#160;</a></span>id <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__pcf__core__entity.html#gab7beef4f8e61c56fd3c40d5933f13203">pcf_entityId_t</a> Entity_t::id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="entity_manager_example_8c-example.html#a10">entity_manager_example.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ga8a50d5c4955faa9df13a8188e4ca7c58" name="ga8a50d5c4955faa9df13a8188e4ca7c58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8a50d5c4955faa9df13a8188e4ca7c58">&#9670;&#160;</a></span>base</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pcf_generic_t Entity_t::base</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="entity_manager_example_8c-example.html#a13">entity_manager_example.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ga614cfb73f4338f6f9500d1e10d4bd206" name="ga614cfb73f4338f6f9500d1e10d4bd206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga614cfb73f4338f6f9500d1e10d4bd206">&#9670;&#160;</a></span>messageHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__pcf__core__entity.html#gaa5b31b8db8bf043af26cc0a179ed8aec">EMPMessageHandler_fp</a> Entity_t::messageHandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="entity_manager_example_8c-example.html#a14">entity_manager_example.c</a>.</dd>
+</dl>
 
 </div>
 </div>

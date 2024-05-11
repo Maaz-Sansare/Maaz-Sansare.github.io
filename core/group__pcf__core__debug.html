@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('group__pcf__core__debug.html',''); ini
 </div><!--header-->
 <div class="contents">
 
-<p>The "debug" entity allows for debugging functionality in an application.  
+<p>The “debug” provides debugging logging functionality.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -108,14 +108,14 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga1380fb80a443b030459b788536c594fc"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga1380fb80a443b030459b788536c594fc">pcf_Debug_init</a> (const <a class="el" href="struct_debug_config__t.html">DebugConfig_t</a> *config)</td></tr>
-<tr class="memdesc:ga1380fb80a443b030459b788536c594fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the debug entity object according to config structure <a class="el" href="struct_debug_config__t.html" title="Debug config struct.">DebugConfig_t</a>.  <br /></td></tr>
-<tr class="separator:ga1380fb80a443b030459b788536c594fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1a4d7fa1e9126dcb58f07f3b509d49c2"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga1a4d7fa1e9126dcb58f07f3b509d49c2">pcf_Debug_init</a> (const <a class="el" href="struct_debug_config__t.html">DebugConfig_t</a> *const config)</td></tr>
+<tr class="memdesc:ga1a4d7fa1e9126dcb58f07f3b509d49c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the debug logger.  <br /></td></tr>
+<tr class="separator:ga1a4d7fa1e9126dcb58f07f3b509d49c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga97e74217af33652a9aef8f61f53cc5e9"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga97e74217af33652a9aef8f61f53cc5e9">pcf_Debug_write</a> (pcf_cstring_t message)</td></tr>
-<tr class="memdesc:ga97e74217af33652a9aef8f61f53cc5e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a null terminated (\0) string using <a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100" title="Put character function pointer.">DebugPutchar_fp</a> which was configured during initialization.  <br /></td></tr>
+<tr class="memdesc:ga97e74217af33652a9aef8f61f53cc5e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a null terminated (\0) string to debug output interface using the <a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100" title="Pointer to a function that writes the character passed as argument to the debug output interface.">DebugPutchar_fp</a> fuction pointer configured during initialization.  <br /></td></tr>
 <tr class="separator:ga97e74217af33652a9aef8f61f53cc5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0e60e8eb885a3b3bf15d6cda5b42abad"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga0e60e8eb885a3b3bf15d6cda5b42abad">pcf_Debug_deinit</a> ()</td></tr>
-<tr class="memdesc:ga0e60e8eb885a3b3bf15d6cda5b42abad"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-Initialize the debug entity object.  <br /></td></tr>
+<tr class="memdesc:ga0e60e8eb885a3b3bf15d6cda5b42abad"><td class="mdescLeft">&#160;</td><td class="mdescRight">De-Initialize the debug logger.  <br /></td></tr>
 <tr class="separator:ga0e60e8eb885a3b3bf15d6cda5b42abad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -125,7 +125,7 @@ Variables</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Debug types</h2></td></tr>
 <tr class="memitem:ga4da2c905a9d3c81e8c8257c33bee3100"><td class="memItemLeft" align="right" valign="top">typedef pcf_status_t(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100">DebugPutchar_fp</a>) (uint8_t)</td></tr>
-<tr class="memdesc:ga4da2c905a9d3c81e8c8257c33bee3100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Put character function pointer.  <br /></td></tr>
+<tr class="memdesc:ga4da2c905a9d3c81e8c8257c33bee3100"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to a function that writes the character passed as argument to the debug output interface.  <br /></td></tr>
 <tr class="separator:ga4da2c905a9d3c81e8c8257c33bee3100"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Debug item ID</h2></td></tr>
@@ -142,8 +142,8 @@ Variables</h2></td></tr>
 <tr class="separator:gae2e63cb25d7ee2be6a3ae57cd39bd206"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>The "debug" entity allows for debugging functionality in an application. </p>
-<p>It allows user to output debug information during program execution, aiding in the identification and resolution of issues. It includes functions such as initializing the debug entity, writing debug messages, and de-initializing the debug entity. It utilizes a configured character output function to write debug messages. The entity returns status codes indicating the success or failure of the operations. </p>
+<p>The “debug” provides debugging logging functionality. </p>
+<p>User can output debug information during program execution, aiding in the identification and resolution of issues. The debug logger uses the putchar function provided by the user, during configuration, to write messages to the standard debug output interface. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga807b157db74fbb41eb866b98ce6efd6d" name="ga807b157db74fbb41eb866b98ce6efd6d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga807b157db74fbb41eb866b98ce6efd6d">&#9670;&#160;</a></span>ITEM_ID_DEBUG</h2>
@@ -216,13 +216,13 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Put character function pointer. </p>
+<p>Pointer to a function that writes the character passed as argument to the debug output interface. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga1380fb80a443b030459b788536c594fc" name="ga1380fb80a443b030459b788536c594fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1380fb80a443b030459b788536c594fc">&#9670;&#160;</a></span>pcf_Debug_init()</h2>
+<a id="ga1a4d7fa1e9126dcb58f07f3b509d49c2" name="ga1a4d7fa1e9126dcb58f07f3b509d49c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1a4d7fa1e9126dcb58f07f3b509d49c2">&#9670;&#160;</a></span>pcf_Debug_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,14 +230,14 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">PCF_CORE_API pcf_status_t pcf_Debug_init </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_debug_config__t.html">DebugConfig_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_debug_config__t.html">DebugConfig_t</a> *const&#160;</td>
           <td class="paramname"><em>config</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize the debug entity object according to config structure <a class="el" href="struct_debug_config__t.html" title="Debug config struct.">DebugConfig_t</a>. </p>
+<p>Initialize the debug logger. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">config</td><td>[IN] - Debug configuration. </td></tr>
@@ -246,9 +246,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values: <ul>
 <li>
-<a class="el" href="group__pcf__core__debug.html#ga69a7e9fdf1d3053314b1b7cb6d6e22ce">PCF_DEBUG_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On Success. </li>
 <li>
-<a class="el" href="group__pcf__core__debug.html#gacf2b9991ec374e1cb04a45bad7a1fad1">PCF_DEBUG_S_NULL_ARG</a>  : The config parameter was PCF_NULL or contained PCF_NULL values. </li>
+PCF_S_NULL_ARG  : <em>config</em>  or config.putchar is PCF_NULL. </li>
 </ul>
 </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="assert_example_8c-example.html#a2">assert_example.c</a>, and <a class="el" href="debug_example_8c-example.html#a2">debug_example.c</a>.</dd>
@@ -272,20 +272,20 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Write a null terminated (\0) string using <a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100" title="Put character function pointer.">DebugPutchar_fp</a> which was configured during initialization. </p>
+<p>Write a null terminated (\0) string to debug output interface using the <a class="el" href="group__pcf__core__debug.html#ga4da2c905a9d3c81e8c8257c33bee3100" title="Pointer to a function that writes the character passed as argument to the debug output interface.">DebugPutchar_fp</a> fuction pointer configured during initialization. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">message</td><td>[IN] - pcf_cstring_t String to write. </td></tr>
+    <tr><td class="paramname">message</td><td>[IN] - Null terminated string. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values: <ul>
 <li>
-<a class="el" href="group__pcf__core__debug.html#ga69a7e9fdf1d3053314b1b7cb6d6e22ce">PCF_DEBUG_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On Success. </li>
 <li>
-<a class="el" href="group__pcf__core__debug.html#gae2e63cb25d7ee2be6a3ae57cd39bd206">PCF_DEBUG_S_NOT_CONFIGURED</a>  : Debug was not configured. </li>
+PCF_S_NOT_CONFIGURED  : Debug logger is not initialize. </li>
 <li>
-<a class="el" href="group__pcf__core__debug.html#gacf2b9991ec374e1cb04a45bad7a1fad1">PCF_DEBUG_S_NULL_ARG</a>  : Null argument was passed. </li>
+PCF_S_NULL_ARG  : If <em>message</em>  is PCF_NULL. </li>
 </ul>
 </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="debug_example_8c-example.html#a3">debug_example.c</a>.</dd>
@@ -308,12 +308,12 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>De-Initialize the debug entity object. </p>
+<p>De-Initialize the debug logger. </p>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values: <ul>
 <li>
-<a class="el" href="group__pcf__core__debug.html#ga69a7e9fdf1d3053314b1b7cb6d6e22ce">PCF_DEBUG_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On Success. </li>
 <li>
-<a class="el" href="group__pcf__core__debug.html#gae2e63cb25d7ee2be6a3ae57cd39bd206">PCF_DEBUG_S_NOT_CONFIGURED</a>  : Debug was not configured. </li>
+PCF_S_NOT_CONFIGURED  : Debug logger is not initialize. </li>
 </ul>
 </dd></dl>
 
@@ -331,6 +331,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Pointer to write function. </p>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="assert_example_8c-example.html#a1">assert_example.c</a>, and <a class="el" href="debug_example_8c-example.html#a1">debug_example.c</a>.</dd>
 </dl>
 

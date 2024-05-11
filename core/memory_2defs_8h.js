@@ -7,5 +7,6 @@ var memory_2defs_8h =
     [ "PCF_MEMORY_S_NULL_ARG", "group__pcf__core__memory.html#ga67045586ecda8583b651d096641ea43b", null ],
     [ "PCF_MEMORY_S_INVALID_ARG", "group__pcf__core__memory.html#ga5dee15527df803c4b982682dd94708e1", null ],
     [ "PCF_MEMORY_S_NOT_ENOUGH_MEMORY", "group__pcf__core__memory.html#gae02e8ef37c19401426322b679a1f8d76", null ],
-    [ "PCF_MEMORY_S_ALLOCATION_FAILED", "group__pcf__core__memory.html#gade32e0614da46df66d247d815eba8ffc", null ]
+    [ "PCF_MEMORY_S_ALLOCATION_FAILED", "group__pcf__core__memory.html#gade32e0614da46df66d247d815eba8ffc", null ],
+    [ "PCF_MEMORY_S_DATA_NOT_FOUND", "group__pcf__core__memory.html#gaebc19bfc60f0143b2720b73304ef4ca4", null ]
 ];

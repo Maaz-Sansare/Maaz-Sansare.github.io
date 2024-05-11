@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Core: include/pcf/collections/buffer/types.h File Reference</title>
+<title>Core: include/pcf/collections/linear_buffer/types.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('collections_2buffer_2types_8h.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('collections_2linear__buffer_2types_8h.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -90,43 +90,33 @@ $(document).ready(function(){initNavTree('collections_2buffer_2types_8h.html',''
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#nested-classes">Data Structures</a>  </div>
   <div class="headertitle"><div class="title">types.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="collections_2buffer_2defs_8h_source.html">pcf/collections/buffer/defs.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="collections_2linear__buffer_2defs_8h_source.html">pcf/collections/linear_buffer/defs.h</a>&gt;</code><br />
 </div>
-<p><a href="collections_2buffer_2types_8h_source.html">Go to the source code of this file.</a></p>
+<p><a href="collections_2linear__buffer_2types_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_buffer_config__t.html">BufferConfig_t</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer configuration entity object.  <a href="struct_buffer_config__t.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_linear_buffer_config__t.html">LinearBufferConfig_t</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linear Buffer configuration entity object.  <a href="struct_linear_buffer_config__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gadc30f8aad1c4f1f87bab5f841c451892"><td class="memItemLeft" align="right" valign="top">typedef struct _pcf_collections_buffer_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892">Buffer_t</a></td></tr>
-<tr class="memdesc:gadc30f8aad1c4f1f87bab5f841c451892"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer entity object.  <br /></td></tr>
-<tr class="separator:gadc30f8aad1c4f1f87bab5f841c451892"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:gacaee563d74ae8c6ea95c00e0f08927a1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__buffer.html#gacaee563d74ae8c6ea95c00e0f08927a1">EnBufferElementSize_t</a> { <a class="el" href="group__pcf__core__collections__buffer.html#ggacaee563d74ae8c6ea95c00e0f08927a1a938e213b2132e063ecbdb3b54d2d8340">enBufferElementSize_Byte</a> = 0
-, <a class="el" href="group__pcf__core__collections__buffer.html#ggacaee563d74ae8c6ea95c00e0f08927a1af94e6a1f9405a5cef3df82a77146e4bc">enBufferElementSize_HalfWord</a>
-, <a class="el" href="group__pcf__core__collections__buffer.html#ggacaee563d74ae8c6ea95c00e0f08927a1a239b4abaf5ea4cff8ef0e8df0263bd52">enBufferElementSize_Word</a>
- }</td></tr>
-<tr class="memdesc:gacaee563d74ae8c6ea95c00e0f08927a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Buffer element size enum.  <a href="group__pcf__core__collections__buffer.html#gacaee563d74ae8c6ea95c00e0f08927a1">More...</a><br /></td></tr>
-<tr class="separator:gacaee563d74ae8c6ea95c00e0f08927a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Linear buffer types</div></td></tr>
+<tr class="memitem:ga5215414b8a6b78c9c257e836398bbc17"><td class="memItemLeft" align="right" valign="top">typedef struct _pcf_collections_linear_buffer_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__linear_buffer.html#ga5215414b8a6b78c9c257e836398bbc17">LinearBuffer_t</a></td></tr>
+<tr class="memdesc:ga5215414b8a6b78c9c257e836398bbc17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linear Buffer entity object.  <br /></td></tr>
+<tr class="separator:ga5215414b8a6b78c9c257e836398bbc17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e3470cd7b363cf62c5671c03f5d194cf.html">pcf</a></li><li class="navelem"><a class="el" href="dir_763ac83a0f42254d04f1aba25c9efcb8.html">collections</a></li><li class="navelem"><a class="el" href="dir_c5f94e9a24b93dfb295309e30c4465ef.html">buffer</a></li><li class="navelem"><a class="el" href="collections_2buffer_2types_8h.html">types.h</a></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_e3470cd7b363cf62c5671c03f5d194cf.html">pcf</a></li><li class="navelem"><a class="el" href="dir_763ac83a0f42254d04f1aba25c9efcb8.html">collections</a></li><li class="navelem"><a class="el" href="dir_91b05f035e96eeab71b89b5414088abb.html">linear_buffer</a></li><li class="navelem"><a class="el" href="collections_2linear__buffer_2types_8h.html">types.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>

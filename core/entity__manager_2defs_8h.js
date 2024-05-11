@@ -2,7 +2,7 @@ var entity__manager_2defs_8h =
 [
     [ "ITEM_ID_ENTITY_MANAGER", "entity__manager_2defs_8h.html#a2151da381ac10d3c88b2936460e29388", null ],
     [ "PCF_ENTITYMANAGER_S_SUCCESS", "entity__manager_2defs_8h.html#a538e4e1fb7bbb6a1b2049c123098fce6", null ],
-    [ "PCF_ENTITYMANAGER_S_ALLOCATION_FAILED", "entity__manager_2defs_8h.html#a5ede5ed97f1ac87d4fefefbff54b933d", null ],
+    [ "PCF_ENTITYMANAGER_S_NOT_ENOUGH_MEMORY", "entity__manager_2defs_8h.html#a2595d78b8118ccc80e22fa8c122b39b3", null ],
     [ "PCF_ENTITYMANAGER_S_INVALID_ARG", "entity__manager_2defs_8h.html#a2a6dc7198d94368df119756bde5d90a3", null ],
     [ "PCF_ENTITYMANAGER_S_NULL_ARG", "entity__manager_2defs_8h.html#a32cc629c9bd165ddde06bddfbade2e87", null ],
     [ "PCF_ENTITYMANAGER_S_NOT_CONFIGURED", "entity__manager_2defs_8h.html#a0856e9bbd8049b27ad926930e91951bc", null ],

@@ -90,55 +90,58 @@ $(document).ready(function(){initNavTree('group__pcf__core__string__list.html','
 
 <div class="header">
   <div class="summary">
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">List<div class="ingroups"><a class="el" href="group__pcf__core.html">Core</a> &raquo; <a class="el" href="group__pcf__core__string.html">String</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The "string list" entity provide String_t object management functionalities.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ga0d2b717812af1f9a82f62e9db9ab3ac2"><td class="memItemLeft" align="right" valign="top">typedef struct _pcf_core_stringlist_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2">StringList_t</a></td></tr>
-<tr class="memdesc:ga0d2b717812af1f9a82f62e9db9ab3ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">String list struct.  <br /></td></tr>
-<tr class="separator:ga0d2b717812af1f9a82f62e9db9ab3ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga509b367b6e2bc9ca8e14d9c44cc7e92f"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2">StringList_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__string__list.html#ga509b367b6e2bc9ca8e14d9c44cc7e92f">pcf_String_List_new</a> (void)</td></tr>
-<tr class="memdesc:ga509b367b6e2bc9ca8e14d9c44cc7e92f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a String List Entity Object.  <br /></td></tr>
+<tr class="memdesc:ga509b367b6e2bc9ca8e14d9c44cc7e92f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new empty <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object.  <br /></td></tr>
 <tr class="separator:ga509b367b6e2bc9ca8e14d9c44cc7e92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad09f92ab94494eac3968a3805a3a2bf5"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__string__list.html#gad09f92ab94494eac3968a3805a3a2bf5">pcf_String_List_delete</a> (<a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2">StringList_t</a> *stringList)</td></tr>
-<tr class="memdesc:gad09f92ab94494eac3968a3805a3a2bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes String List Entity Object.  <br /></td></tr>
+<tr class="memdesc:gad09f92ab94494eac3968a3805a3a2bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object.  <br /></td></tr>
 <tr class="separator:gad09f92ab94494eac3968a3805a3a2bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga976addf768a696d95cc2422fbc3d8134"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__string__list.html#ga976addf768a696d95cc2422fbc3d8134">pcf_String_List_reserve</a> (<a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2">StringList_t</a> *stringList, pcf_size_t entries)</td></tr>
-<tr class="memdesc:ga976addf768a696d95cc2422fbc3d8134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserves number of entries for a given String List Entity Object.  <br /></td></tr>
+<tr class="memdesc:ga976addf768a696d95cc2422fbc3d8134"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reserves number of entries for a given <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object.  <br /></td></tr>
 <tr class="separator:ga976addf768a696d95cc2422fbc3d8134"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga05661014310e92c925cb6dc6f8749922"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__string__list.html#ga05661014310e92c925cb6dc6f8749922">pcf_String_List_size</a> (<a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2">StringList_t</a> *stringList, pcf_size_t *result)</td></tr>
-<tr class="memdesc:ga05661014310e92c925cb6dc6f8749922"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get size of a given String List Entity Object.  <br /></td></tr>
+<tr class="memdesc:ga05661014310e92c925cb6dc6f8749922"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get size of a given <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object.  <br /></td></tr>
 <tr class="separator:ga05661014310e92c925cb6dc6f8749922"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac718ff4b495e2757ba5e8f2be55fed89"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__string__list.html#gac718ff4b495e2757ba5e8f2be55fed89">pcf_String_List_capacity</a> (<a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2">StringList_t</a> *stringList, pcf_size_t *result)</td></tr>
-<tr class="memdesc:gac718ff4b495e2757ba5e8f2be55fed89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get capacity of a given String List Entity Object.  <br /></td></tr>
+<tr class="memdesc:gac718ff4b495e2757ba5e8f2be55fed89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get capacity of a given <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object.  <br /></td></tr>
 <tr class="separator:gac718ff4b495e2757ba5e8f2be55fed89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8565626740da880b6c93ff4ade809d20"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__string__list.html#ga8565626740da880b6c93ff4ade809d20">pcf_String_List_append</a> (<a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2">StringList_t</a> *stringList, pcf_cstring_t cstr)</td></tr>
-<tr class="memdesc:ga8565626740da880b6c93ff4ade809d20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a string to a given String List Entity Object.  <br /></td></tr>
+<tr class="memdesc:ga8565626740da880b6c93ff4ade809d20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a null terminated string to a given <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object.  <br /></td></tr>
 <tr class="separator:ga8565626740da880b6c93ff4ade809d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabbdf5e440169db956edbf76b9d2b28e8"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__string__list.html#gabbdf5e440169db956edbf76b9d2b28e8">pcf_String_List_append2</a> (<a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2">StringList_t</a> *stringList, <a class="el" href="string_2types_8h.html#ae1103fbc61e8cd85c6f7dcab694e89b9">String_t</a> *iostr)</td></tr>
-<tr class="memdesc:gabbdf5e440169db956edbf76b9d2b28e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a String Entity Object to a given String List Entity Object.  <br /></td></tr>
+<tr class="memdesc:gabbdf5e440169db956edbf76b9d2b28e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a <a class="el" href="string_2types_8h.html#ae1103fbc61e8cd85c6f7dcab694e89b9" title="String Entity object.">String_t</a> object to a given <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object.  <br /></td></tr>
 <tr class="separator:gabbdf5e440169db956edbf76b9d2b28e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab85c27d30bd11be10874b68f6e49dc27"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__string__list.html#gab85c27d30bd11be10874b68f6e49dc27">pcf_String_List_at</a> (<a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2">StringList_t</a> *stringList, pcf_size_t index, <a class="el" href="string_2types_8h.html#ae1103fbc61e8cd85c6f7dcab694e89b9">String_t</a> **ptrStr)</td></tr>
-<tr class="memdesc:gab85c27d30bd11be10874b68f6e49dc27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a String Entity Object to a given String List Entity Object at given index.  <br /></td></tr>
+<tr class="memdesc:gab85c27d30bd11be10874b68f6e49dc27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a <a class="el" href="string_2types_8h.html#ae1103fbc61e8cd85c6f7dcab694e89b9" title="String Entity object.">String_t</a> object at the given index of <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object.  <br /></td></tr>
 <tr class="separator:gab85c27d30bd11be10874b68f6e49dc27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf228a5b4da4d6e78d2e7d97bfe5a1c51"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__string__list.html#gaf228a5b4da4d6e78d2e7d97bfe5a1c51">pcf_String_List_removeAt</a> (<a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2">StringList_t</a> *stringList, pcf_size_t index)</td></tr>
-<tr class="memdesc:gaf228a5b4da4d6e78d2e7d97bfe5a1c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a String Entity Object from a given String List Entity Object from a given index.  <br /></td></tr>
+<tr class="memdesc:gaf228a5b4da4d6e78d2e7d97bfe5a1c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a <a class="el" href="string_2types_8h.html#ae1103fbc61e8cd85c6f7dcab694e89b9" title="String Entity object.">String_t</a> object from a given <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object from a given index.  <br /></td></tr>
 <tr class="separator:gaf228a5b4da4d6e78d2e7d97bfe5a1c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa2d5ff2164c0b22ec798f049d7a666b2"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__string__list.html#gaa2d5ff2164c0b22ec798f049d7a666b2">pcf_String_List_insert</a> (<a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2">StringList_t</a> *stringList, pcf_cstring_t cstr, pcf_size_t index)</td></tr>
-<tr class="memdesc:gaa2d5ff2164c0b22ec798f049d7a666b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a String Entity Object to the given String List Entity Object at a given index.  <br /></td></tr>
+<tr class="memdesc:gaa2d5ff2164c0b22ec798f049d7a666b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a <a class="el" href="string_2types_8h.html#ae1103fbc61e8cd85c6f7dcab694e89b9" title="String Entity object.">String_t</a> object to the given <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object at a given index.  <br /></td></tr>
 <tr class="separator:gaa2d5ff2164c0b22ec798f049d7a666b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2353c60d3df1b08cc2a6e2f8c1653579"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2">StringList_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__string__list.html#ga2353c60d3df1b08cc2a6e2f8c1653579">pcf_String_List_clone</a> (<a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2">StringList_t</a> *stringList)</td></tr>
-<tr class="memdesc:ga2353c60d3df1b08cc2a6e2f8c1653579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clones a String List Entity Object.  <br /></td></tr>
+<tr class="memdesc:ga2353c60d3df1b08cc2a6e2f8c1653579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clones a <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object.  <br /></td></tr>
 <tr class="separator:ga2353c60d3df1b08cc2a6e2f8c1653579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">List types</h2></td></tr>
+<tr class="memitem:ga0d2b717812af1f9a82f62e9db9ab3ac2"><td class="memItemLeft" align="right" valign="top">typedef struct _pcf_core_stringlist_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2">StringList_t</a></td></tr>
+<tr class="memdesc:ga0d2b717812af1f9a82f62e9db9ab3ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">String list struct.  <br /></td></tr>
+<tr class="separator:ga0d2b717812af1f9a82f62e9db9ab3ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>The "string list" entity provide String_t object management functionalities. </p>
+<p>It includes functions such as append, insert, remove string objects and many more. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga0d2b717812af1f9a82f62e9db9ab3ac2" name="ga0d2b717812af1f9a82f62e9db9ab3ac2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0d2b717812af1f9a82f62e9db9ab3ac2">&#9670;&#160;</a></span>StringList_t</h2>
@@ -173,12 +176,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a String List Entity Object. </p>
+<p>Creates a new empty <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object. </p>
 <dl class="section return"><dt>Returns</dt><dd>valid values: <ul>
 <li>
-Pointer to <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a>  </li>
+On Success: A pointer to the newly created <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a>  </li>
 <li>
-PCF_NULL  </li>
+On Failure: PCF_NULL  : Memory allocation failure. </li>
 </ul>
 </dd></dl>
 
@@ -200,18 +203,18 @@ PCF_NULL  </li>
       </table>
 </div><div class="memdoc">
 
-<p>Deletes String List Entity Object. </p>
+<p>Deletes <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">stringList</td><td>[IN] - Pointer to String List Entity Object. </td></tr>
+    <tr><td class="paramname">stringList</td><td>[IN] - Pointer to <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>valid values: <ul>
 <li>
-<a class="el" href="string_2defs_8h.html#aef34c4884b7b23c17088829a97886442">PCF_STRING_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On Success. </li>
 <li>
-<a class="el" href="string_2defs_8h.html#a1429c94c611812f1fcb6b3d6d556b967">PCF_STRING_S_NULL_ARG</a>  : Null argument was passed. </li>
+PCF_S_NULL_ARG  : <em>stringList</em>  is PCF_NULL. </li>
 </ul>
 </dd></dl>
 
@@ -243,23 +246,23 @@ PCF_NULL  </li>
       </table>
 </div><div class="memdoc">
 
-<p>Reserves number of entries for a given String List Entity Object. </p>
+<p>Reserves number of entries for a given <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">stringList</td><td>[IN] - Pointer to String List Entity Object. </td></tr>
-    <tr><td class="paramname">entries</td><td>[IN] - Entry to be reserved of type pcf_size_t. </td></tr>
+    <tr><td class="paramname">stringList</td><td>[IN] - Pointer to <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object. </td></tr>
+    <tr><td class="paramname">entries</td><td>[IN] - Entry to be reserved. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>valid values: <ul>
 <li>
-<a class="el" href="string_2defs_8h.html#aef34c4884b7b23c17088829a97886442">PCF_STRING_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On Success. </li>
 <li>
-<a class="el" href="string_2defs_8h.html#a1429c94c611812f1fcb6b3d6d556b967">PCF_STRING_S_NULL_ARG</a>  : Null argument was passed. </li>
+PCF_S_NULL_ARG  : <em>stringList</em>  is PCF_NULL. </li>
 <li>
-<a class="el" href="string_2defs_8h.html#a932be7347696938d7e7d9c0ec003da4f">PCF_STRING_S_INVALID_ARG</a>  : Passed 'entries' value was zero. </li>
+PCF_S_INVALID_ARG  : Passed 'entries' is zero. </li>
 <li>
-<a class="el" href="string_2defs_8h.html#a045c07939078a175a892bb97cb06dd12">PCF_STRING_S_FATAL</a>  : Memory allocation failed. </li>
+PCF_S_NOT_ENOUGH_MEMORY  : Memory allocation failed. </li>
 </ul>
 </dd></dl>
 
@@ -291,19 +294,19 @@ PCF_NULL  </li>
       </table>
 </div><div class="memdoc">
 
-<p>Get size of a given String List Entity Object. </p>
+<p>Get size of a given <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">stringList</td><td>[IN] - Pointer to String List Entity Object. </td></tr>
-    <tr><td class="paramname">result</td><td>[OUT] - Pointer to size of type pcf_size_t. </td></tr>
+    <tr><td class="paramname">stringList</td><td>[IN] - Pointer to <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object. </td></tr>
+    <tr><td class="paramname">result</td><td>[OUT] - Pointer to size, to store <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object size. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>valid values: <ul>
 <li>
-<a class="el" href="string_2defs_8h.html#aef34c4884b7b23c17088829a97886442">PCF_STRING_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On Success. </li>
 <li>
-<a class="el" href="string_2defs_8h.html#a1429c94c611812f1fcb6b3d6d556b967">PCF_STRING_S_NULL_ARG</a>  : Null argument was passed. </li>
+PCF_S_NULL_ARG  : <em>stringList</em>  or <em>result</em>  is PCF_NULL. </li>
 </ul>
 </dd></dl>
 
@@ -335,19 +338,19 @@ PCF_NULL  </li>
       </table>
 </div><div class="memdoc">
 
-<p>Get capacity of a given String List Entity Object. </p>
+<p>Get capacity of a given <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">stringList</td><td>[IN] - Pointer to String List Entity Object. </td></tr>
-    <tr><td class="paramname">result</td><td>[OUT] - Pointer to capacity of type pcf_size_t. </td></tr>
+    <tr><td class="paramname">stringList</td><td>[IN] - Pointer to <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object. </td></tr>
+    <tr><td class="paramname">result</td><td>[OUT] - Pointer to capacity, to store <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object capacity. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>valid values: <ul>
 <li>
-<a class="el" href="string_2defs_8h.html#aef34c4884b7b23c17088829a97886442">PCF_STRING_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On Success. </li>
 <li>
-<a class="el" href="string_2defs_8h.html#a1429c94c611812f1fcb6b3d6d556b967">PCF_STRING_S_NULL_ARG</a>  : Null argument was passed. </li>
+PCF_S_NULL_ARG  : <em>stringList</em>  or <em>result</em>  is PCF_NULL. </li>
 </ul>
 </dd></dl>
 
@@ -379,21 +382,21 @@ PCF_NULL  </li>
       </table>
 </div><div class="memdoc">
 
-<p>Appends a string to a given String List Entity Object. </p>
+<p>Appends a null terminated string to a given <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">stringList</td><td>[IN] - Pointer to String List Entity Object. </td></tr>
-    <tr><td class="paramname">cstr</td><td>[IN] - Pointer to a string of type char. </td></tr>
+    <tr><td class="paramname">stringList</td><td>[OUT] - Pointer to <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object. </td></tr>
+    <tr><td class="paramname">cstr</td><td>[IN] - Pointer to a string. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>valid values: <ul>
 <li>
-<a class="el" href="string_2defs_8h.html#aef34c4884b7b23c17088829a97886442">PCF_STRING_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On Success. </li>
 <li>
-<a class="el" href="string_2defs_8h.html#a1429c94c611812f1fcb6b3d6d556b967">PCF_STRING_S_NULL_ARG</a>  : Null argument was passed. </li>
+PCF_S_NULL_ARG  : <em>stringList</em>  or <em>cstr</em>  is PCF_NULL. </li>
 <li>
-<a class="el" href="string_2defs_8h.html#a045c07939078a175a892bb97cb06dd12">PCF_STRING_S_FATAL</a>  : Memory allocation failed. </li>
+PCF_S_NOT_ENOUGH_MEMORY  : Memory allocation failed. </li>
 </ul>
 </dd></dl>
 
@@ -425,21 +428,21 @@ PCF_NULL  </li>
       </table>
 </div><div class="memdoc">
 
-<p>Appends a String Entity Object to a given String List Entity Object. </p>
+<p>Appends a <a class="el" href="string_2types_8h.html#ae1103fbc61e8cd85c6f7dcab694e89b9" title="String Entity object.">String_t</a> object to a given <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">stringList</td><td>[IN] - Pointer to String List Entity Object. </td></tr>
-    <tr><td class="paramname">iostr</td><td>[IN] - Pointer to String Entity Object. </td></tr>
+    <tr><td class="paramname">stringList</td><td>[OUT] - Pointer to <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object. </td></tr>
+    <tr><td class="paramname">iostr</td><td>[IN] - Pointer to <a class="el" href="string_2types_8h.html#ae1103fbc61e8cd85c6f7dcab694e89b9" title="String Entity object.">String_t</a> object. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>valid values: <ul>
 <li>
-<a class="el" href="string_2defs_8h.html#aef34c4884b7b23c17088829a97886442">PCF_STRING_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On Success. </li>
 <li>
-<a class="el" href="string_2defs_8h.html#a1429c94c611812f1fcb6b3d6d556b967">PCF_STRING_S_NULL_ARG</a>  : Null argument was passed. </li>
+PCF_S_NULL_ARG  : <em>stringList</em>  or <em>iostr</em>  is PCF_NULL. </li>
 <li>
-<a class="el" href="string_2defs_8h.html#a045c07939078a175a892bb97cb06dd12">PCF_STRING_S_FATAL</a>  : Memory allocation failed. </li>
+PCF_S_NOT_ENOUGH_MEMORY  : Memory allocation failed. </li>
 </ul>
 </dd></dl>
 
@@ -477,22 +480,22 @@ PCF_NULL  </li>
       </table>
 </div><div class="memdoc">
 
-<p>Appends a String Entity Object to a given String List Entity Object at given index. </p>
+<p>Gets a <a class="el" href="string_2types_8h.html#ae1103fbc61e8cd85c6f7dcab694e89b9" title="String Entity object.">String_t</a> object at the given index of <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">stringList</td><td>[IN] - Pointer to String List Entity Object. </td></tr>
-    <tr><td class="paramname">index</td><td>[IN] - Get String_t at index of type pcf_size_t. </td></tr>
-    <tr><td class="paramname">ptrStr</td><td>[OUT] - Double pointer to String Entity Object. </td></tr>
+    <tr><td class="paramname">stringList</td><td>[IN] - Pointer to <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object. </td></tr>
+    <tr><td class="paramname">index</td><td>[IN] - Get index. </td></tr>
+    <tr><td class="paramname">ptrStr</td><td>[OUT] - Double pointer to <a class="el" href="string_2types_8h.html#ae1103fbc61e8cd85c6f7dcab694e89b9" title="String Entity object.">String_t</a> object. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>valid values: <ul>
 <li>
-<a class="el" href="string_2defs_8h.html#aef34c4884b7b23c17088829a97886442">PCF_STRING_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On Success. </li>
 <li>
-<a class="el" href="string_2defs_8h.html#a1429c94c611812f1fcb6b3d6d556b967">PCF_STRING_S_NULL_ARG</a>  : Null argument was passed. </li>
+PCF_S_NULL_ARG  : <em>stringList</em>  or <em>ptrStr</em>  is PCF_NULL. </li>
 <li>
-<a class="el" href="string_2defs_8h.html#a932be7347696938d7e7d9c0ec003da4f">PCF_STRING_S_INVALID_ARG</a>  : Passed 'index' value was greater than StringList_t object size. </li>
+PCF_S_INVALID_ARG  : Passed 'index' value is greater than StringList_t object size. </li>
 </ul>
 </dd></dl>
 
@@ -524,21 +527,21 @@ PCF_NULL  </li>
       </table>
 </div><div class="memdoc">
 
-<p>Removes a String Entity Object from a given String List Entity Object from a given index. </p>
+<p>Removes a <a class="el" href="string_2types_8h.html#ae1103fbc61e8cd85c6f7dcab694e89b9" title="String Entity object.">String_t</a> object from a given <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object from a given index. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">stringList</td><td>[IN] - Pointer to String List Entity Object. </td></tr>
-    <tr><td class="paramname">index</td><td>[IN] - Remove String_t at index of type pcf_size_t. </td></tr>
+    <tr><td class="paramname">stringList</td><td>[OUT] - Pointer to <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object. </td></tr>
+    <tr><td class="paramname">index</td><td>[IN] - Remove index. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>valid values: <ul>
 <li>
-<a class="el" href="string_2defs_8h.html#aef34c4884b7b23c17088829a97886442">PCF_STRING_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On Success. </li>
 <li>
-<a class="el" href="string_2defs_8h.html#a1429c94c611812f1fcb6b3d6d556b967">PCF_STRING_S_NULL_ARG</a>  : Null argument was passed. </li>
+PCF_S_NULL_ARG  : <em>stringList</em>  is PCF_NULL. </li>
 <li>
-<a class="el" href="string_2defs_8h.html#a932be7347696938d7e7d9c0ec003da4f">PCF_STRING_S_INVALID_ARG</a>  : Passed 'index' value was greater than StringList_t object size. </li>
+PCF_S_INVALID_ARG  : Passed 'index' value is greater than StringList_t object size. </li>
 </ul>
 </dd></dl>
 
@@ -576,24 +579,24 @@ PCF_NULL  </li>
       </table>
 </div><div class="memdoc">
 
-<p>Insert a String Entity Object to the given String List Entity Object at a given index. </p>
+<p>Insert a <a class="el" href="string_2types_8h.html#ae1103fbc61e8cd85c6f7dcab694e89b9" title="String Entity object.">String_t</a> object to the given <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object at a given index. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">stringList</td><td>[IN] - Pointer to String List Entity Object. </td></tr>
-    <tr><td class="paramname">cstr</td><td>[IN] - Pointer to a string of type char. </td></tr>
-    <tr><td class="paramname">index</td><td>[IN] - Insert index of type pcf_size_t. </td></tr>
+    <tr><td class="paramname">stringList</td><td>[OUT] - Pointer to <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object. </td></tr>
+    <tr><td class="paramname">cstr</td><td>[IN] - Pointer to a string. </td></tr>
+    <tr><td class="paramname">index</td><td>[IN] - Insert index. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>valid values: <ul>
 <li>
-<a class="el" href="string_2defs_8h.html#aef34c4884b7b23c17088829a97886442">PCF_STRING_S_SUCCESS</a>  : Successful operation. </li>
+PCF_S_SUCCESS  : On Success. </li>
 <li>
-<a class="el" href="string_2defs_8h.html#a1429c94c611812f1fcb6b3d6d556b967">PCF_STRING_S_NULL_ARG</a>  : Null argument was passed. </li>
+PCF_S_NULL_ARG  : <em>stringList</em>  or <em>cstr</em>  is PCF_NULL. </li>
 <li>
-<a class="el" href="string_2defs_8h.html#a932be7347696938d7e7d9c0ec003da4f">PCF_STRING_S_INVALID_ARG</a>  : Passed 'index' value was greater than StringList_t object size. </li>
+PCF_S_INVALID_ARG  : Passed 'index' value is greater than StringList_t object size. </li>
 <li>
-<a class="el" href="string_2defs_8h.html#a045c07939078a175a892bb97cb06dd12">PCF_STRING_S_FATAL</a>  : Memory allocation failed. </li>
+PCF_S_NOT_ENOUGH_MEMORY  : Memory allocation failed. </li>
 </ul>
 </dd></dl>
 
@@ -615,18 +618,18 @@ PCF_NULL  </li>
       </table>
 </div><div class="memdoc">
 
-<p>Clones a String List Entity Object. </p>
+<p>Clones a <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">stringList</td><td>[IN] - Pointer to String List Entity Object. </td></tr>
+    <tr><td class="paramname">stringList</td><td>[IN] - Pointer to <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a> object. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>valid values: <ul>
 <li>
-Pointer to <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a>  </li>
+On Success: A pointer to the newly cloned <a class="el" href="group__pcf__core__string__list.html#ga0d2b717812af1f9a82f62e9db9ab3ac2" title="String list struct.">StringList_t</a>  </li>
 <li>
-PCF_NULL  </li>
+On Failure: PCF_NULL  : Memory allocation failure or <em>stringList</em>  is PCF_NULL. </li>
 </ul>
 </dd></dl>
 

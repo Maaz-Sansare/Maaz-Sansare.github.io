@@ -95,38 +95,31 @@ $(document).ready(function(){initNavTree('struct_entity_manager_config__t.html',
 </div><!--header-->
 <div class="contents">
 
-<p>Entity manager config struct.  
+<p>Entity manager types.  
  <a href="struct_entity_manager_config__t.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="entity__manager_2types_8h_source.html">types.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a24f82dd24a8a05073db850032dc0da57"><td class="memItemLeft" align="right" valign="top">MemoryConfig_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_entity_manager_config__t.html#a24f82dd24a8a05073db850032dc0da57">memoryConfig</a></td></tr>
-<tr class="separator:a24f82dd24a8a05073db850032dc0da57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a166ecb67a24d57bb2059da8d96e9f853"><td class="memItemLeft" align="right" valign="top">pcf_size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_entity_manager_config__t.html#a166ecb67a24d57bb2059da8d96e9f853">max_entities</a></td></tr>
+<tr class="memdesc:a166ecb67a24d57bb2059da8d96e9f853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of entities.  <br /></td></tr>
 <tr class="separator:a166ecb67a24d57bb2059da8d96e9f853"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee24f61131fc686520b1034515baabed"><td class="memItemLeft" align="right" valign="top">MemoryAllocate_fp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_entity_manager_config__t.html#aee24f61131fc686520b1034515baabed">memAlloc</a></td></tr>
+<tr class="memdesc:aee24f61131fc686520b1034515baabed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function pointer for dynamic memory allocation.  <br /></td></tr>
+<tr class="separator:aee24f61131fc686520b1034515baabed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7abf32b1d2d5027dd5df1babe645cef9"><td class="memItemLeft" align="right" valign="top">MemoryReallocate_fp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_entity_manager_config__t.html#a7abf32b1d2d5027dd5df1babe645cef9">memRealloc</a></td></tr>
+<tr class="memdesc:a7abf32b1d2d5027dd5df1babe645cef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function pointer for dynamic memory reallocation.  <br /></td></tr>
+<tr class="separator:a7abf32b1d2d5027dd5df1babe645cef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2428fd4ef7803ba65fe0d536fae7411"><td class="memItemLeft" align="right" valign="top">MemoryFree_fp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_entity_manager_config__t.html#ac2428fd4ef7803ba65fe0d536fae7411">memFree</a></td></tr>
+<tr class="memdesc:ac2428fd4ef7803ba65fe0d536fae7411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function pointer for dynamic memory free.  <br /></td></tr>
+<tr class="separator:ac2428fd4ef7803ba65fe0d536fae7411"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Entity manager config struct. </p>
-<p><br  />
- </p>
+<div class="textblock"><p>Entity manager types. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="entity_manager_example_8c-example.html#_a2">entity_manager_example.c</a>.</dd>
+</dl>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a24f82dd24a8a05073db850032dc0da57" name="a24f82dd24a8a05073db850032dc0da57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24f82dd24a8a05073db850032dc0da57">&#9670;&#160;</a></span>memoryConfig</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MemoryConfig_t* EntityManagerConfig_t::memoryConfig</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Memory configurations </p>
-
-</div>
-</div>
 <a id="a166ecb67a24d57bb2059da8d96e9f853" name="a166ecb67a24d57bb2059da8d96e9f853"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a166ecb67a24d57bb2059da8d96e9f853">&#9670;&#160;</a></span>max_entities</h2>
 
@@ -138,7 +131,64 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Maximum number of entities </p>
+
+<p>Maximum number of entities. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="entity_manager_example_8c-example.html#a3">entity_manager_example.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="aee24f61131fc686520b1034515baabed" name="aee24f61131fc686520b1034515baabed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee24f61131fc686520b1034515baabed">&#9670;&#160;</a></span>memAlloc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MemoryAllocate_fp EntityManagerConfig_t::memAlloc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function pointer for dynamic memory allocation. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="entity_manager_example_8c-example.html#a4">entity_manager_example.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a7abf32b1d2d5027dd5df1babe645cef9" name="a7abf32b1d2d5027dd5df1babe645cef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7abf32b1d2d5027dd5df1babe645cef9">&#9670;&#160;</a></span>memRealloc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MemoryReallocate_fp EntityManagerConfig_t::memRealloc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function pointer for dynamic memory reallocation. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="entity_manager_example_8c-example.html#a5">entity_manager_example.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ac2428fd4ef7803ba65fe0d536fae7411" name="ac2428fd4ef7803ba65fe0d536fae7411"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2428fd4ef7803ba65fe0d536fae7411">&#9670;&#160;</a></span>memFree</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MemoryFree_fp EntityManagerConfig_t::memFree</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function pointer for dynamic memory free. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="entity_manager_example_8c-example.html#a7">entity_manager_example.c</a>.</dd>
+</dl>
 
 </div>
 </div>

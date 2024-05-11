@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['commandowner_5ft_0',['CommandOwner_t',['../struct_command_owner__t.html',1,'']]]
+  ['debugconfig_5ft_0',['DebugConfig_t',['../struct_debug_config__t.html',1,'']]]
 ];

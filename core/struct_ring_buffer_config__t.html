@@ -103,18 +103,18 @@ $(document).ready(function(){initNavTree('struct_ring_buffer_config__t.html','')
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a4f0beb666687bf8fd89694254c44a54f"><td class="memItemLeft" align="right" valign="top">pcf_size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ring_buffer_config__t.html#a4f0beb666687bf8fd89694254c44a54f">size</a></td></tr>
-<tr class="memdesc:a4f0beb666687bf8fd89694254c44a54f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the ring buffer i.e.  <br /></td></tr>
+<tr class="memdesc:a4f0beb666687bf8fd89694254c44a54f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the ring buffer in bytes.  <br /></td></tr>
 <tr class="separator:a4f0beb666687bf8fd89694254c44a54f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b78bfc54d29302b4c013441f179489c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga137aeb8a024d1c7f6fe3352964b6525e">EnRingBufferElementSize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ring_buffer_config__t.html#a1b78bfc54d29302b4c013441f179489c">elementSize</a></td></tr>
-<tr class="memdesc:a1b78bfc54d29302b4c013441f179489c"><td class="mdescLeft">&#160;</td><td class="mdescRight">elementSize  <br /></td></tr>
-<tr class="separator:a1b78bfc54d29302b4c013441f179489c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d5d49631029e3464ee325b7611ee9f9"><td class="memItemLeft" align="right" valign="top">MemoryConfig_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ring_buffer_config__t.html#a9d5d49631029e3464ee325b7611ee9f9">memoryConfig</a></td></tr>
-<tr class="memdesc:a9d5d49631029e3464ee325b7611ee9f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory configurations  <br /></td></tr>
-<tr class="separator:a9d5d49631029e3464ee325b7611ee9f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92bf39f3551e729109083f0732f34f59"><td class="memItemLeft" align="right" valign="top">MemoryAllocate_fp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ring_buffer_config__t.html#a92bf39f3551e729109083f0732f34f59">memAlloc</a></td></tr>
+<tr class="memdesc:a92bf39f3551e729109083f0732f34f59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function pointer for dynamic memory allocation.  <br /></td></tr>
+<tr class="separator:a92bf39f3551e729109083f0732f34f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad85867b81e890161f4073d4de7ef538a"><td class="memItemLeft" align="right" valign="top">MemoryFree_fp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ring_buffer_config__t.html#ad85867b81e890161f4073d4de7ef538a">memFree</a></td></tr>
+<tr class="memdesc:ad85867b81e890161f4073d4de7ef538a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function pointer for dynamic memory free.  <br /></td></tr>
+<tr class="separator:ad85867b81e890161f4073d4de7ef538a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>RingBuffer configuration entity object. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ring_buffer_example_8c-example.html#_a3">ring_buffer_example.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ring_buffer_example_8c-example.html#_a0">ring_buffer_example.c</a>.</dd>
 </dl>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a4f0beb666687bf8fd89694254c44a54f" name="a4f0beb666687bf8fd89694254c44a54f"></a>
@@ -129,44 +129,44 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Size of the ring buffer i.e. </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ring_buffer_example_8c-example.html#a6">ring_buffer_example.c</a>.</dd>
+<p>Size of the ring buffer in bytes. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ring_buffer_example_8c-example.html#a1">ring_buffer_example.c</a>.</dd>
 </dl>
 
 </div>
 </div>
-<a id="a1b78bfc54d29302b4c013441f179489c" name="a1b78bfc54d29302b4c013441f179489c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b78bfc54d29302b4c013441f179489c">&#9670;&#160;</a></span>elementSize</h2>
+<a id="a92bf39f3551e729109083f0732f34f59" name="a92bf39f3551e729109083f0732f34f59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92bf39f3551e729109083f0732f34f59">&#9670;&#160;</a></span>memAlloc</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga137aeb8a024d1c7f6fe3352964b6525e">EnRingBufferElementSize_t</a> RingBufferConfig_t::elementSize</td>
+          <td class="memname">MemoryAllocate_fp RingBufferConfig_t::memAlloc</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>elementSize </p>
+<p>Function pointer for dynamic memory allocation. </p>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ring_buffer_example_8c-example.html#a2">ring_buffer_example.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ad85867b81e890161f4073d4de7ef538a" name="ad85867b81e890161f4073d4de7ef538a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad85867b81e890161f4073d4de7ef538a">&#9670;&#160;</a></span>memFree</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MemoryFree_fp RingBufferConfig_t::memFree</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function pointer for dynamic memory free. </p>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ring_buffer_example_8c-example.html#a4">ring_buffer_example.c</a>.</dd>
-</dl>
-
-</div>
-</div>
-<a id="a9d5d49631029e3464ee325b7611ee9f9" name="a9d5d49631029e3464ee325b7611ee9f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d5d49631029e3464ee325b7611ee9f9">&#9670;&#160;</a></span>memoryConfig</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">MemoryConfig_t* RingBufferConfig_t::memoryConfig</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Memory configurations </p>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ring_buffer_example_8c-example.html#a7">ring_buffer_example.c</a>.</dd>
 </dl>
 
 </div>

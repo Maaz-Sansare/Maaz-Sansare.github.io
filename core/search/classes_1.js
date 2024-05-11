@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bufferconfig_5ft_0',['BufferConfig_t',['../struct_buffer_config__t.html',1,'']]]
+  ['commandowner_5ft_0',['CommandOwner_t',['../struct_command_owner__t.html',1,'']]]
 ];

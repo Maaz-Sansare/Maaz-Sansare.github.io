@@ -95,10 +95,14 @@ $(document).ready(function(){initNavTree('group__pcf__core__utils.html',''); ini
   <div class="headertitle"><div class="title">Utils<div class="ingroups"><a class="el" href="group__pcf__core.html">Core</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The "utils" offers a range of utility functionalities, including conversions such as integer to string, string to integer, float to string, string to float, and more.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
 Modules</h2></td></tr>
 <tr class="memitem:group__pcf__core__utils__bit__operation"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils__bit__operation.html">Bit operation</a></td></tr>
+<tr class="memdesc:group__pcf__core__utils__bit__operation"><td class="mdescLeft">&#160;</td><td class="mdescRight">The "bit operation" provides a set of macros for performing various bit manipulation operations. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -110,19 +114,32 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga55ef6f1c099558bb5aaf27de8aa19223"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts float value to a string with the given precision.  <br /></td></tr>
 <tr class="separator:ga55ef6f1c099558bb5aaf27de8aa19223"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5cf878b1d1beb4ec5d8131058b73a09a"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils.html#ga5cf878b1d1beb4ec5d8131058b73a09a">pcf_Utils_fToA_exp</a> (float value, pcf_string_t buffer, int prec, const EnPCFBoolean_t upperExp, const EnPCFBoolean_t explicit_exp_sign)</td></tr>
-<tr class="memdesc:ga5cf878b1d1beb4ec5d8131058b73a09a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts float value to a string with the given precision.  <br /></td></tr>
+<tr class="memdesc:ga5cf878b1d1beb4ec5d8131058b73a09a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts exponent float value to a string with the given precision.  <br /></td></tr>
 <tr class="separator:ga5cf878b1d1beb4ec5d8131058b73a09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadedf3c6cb3fd7fc89b700fe308231902"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils.html#gadedf3c6cb3fd7fc89b700fe308231902">pcf_Utils_dToA</a> (double value, pcf_string_t buffer, int prec, uint64_t overflow)</td></tr>
 <tr class="memdesc:gadedf3c6cb3fd7fc89b700fe308231902"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the double value to string.  <br /></td></tr>
 <tr class="separator:gadedf3c6cb3fd7fc89b700fe308231902"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad396dc2b4f3b0e3ade8cbff4aa025353"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils.html#gad396dc2b4f3b0e3ade8cbff4aa025353">pcf_Utils_dToA_exp</a> (double value, pcf_string_t buffer, int prec, const EnPCFBoolean_t upperExp, const EnPCFBoolean_t explicit_exp_sign)</td></tr>
-<tr class="memdesc:gad396dc2b4f3b0e3ade8cbff4aa025353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the double exponent value to string.  <br /></td></tr>
+<tr class="memdesc:gad396dc2b4f3b0e3ade8cbff4aa025353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the exponent double value to string.  <br /></td></tr>
 <tr class="separator:gad396dc2b4f3b0e3ade8cbff4aa025353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab5ebbce6674224227f3399847cac50da"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils.html#gab5ebbce6674224227f3399847cac50da">pcf_Utils_uToA</a> (uint64_t value, pcf_string_t buffer, const int buffer_size, int base, const EnPCFBoolean_t ptr)</td></tr>
 <tr class="memdesc:gab5ebbce6674224227f3399847cac50da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an unsigned 64-bit integer value to a string representation.  <br /></td></tr>
 <tr class="separator:gab5ebbce6674224227f3399847cac50da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga64cb95be046c209bf51226797f83b2bf"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils.html#ga64cb95be046c209bf51226797f83b2bf">pcf_Utils_crc7</a> (pcf_byte_t *buffer, pcf_size_t size)</td></tr>
+<tr class="memdesc:ga64cb95be046c209bf51226797f83b2bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the CRC-7 checksum for the given buffer.  <br /></td></tr>
+<tr class="separator:ga64cb95be046c209bf51226797f83b2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf9f5562f7319e92c0c480bc96335d1e1"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils.html#gaf9f5562f7319e92c0c480bc96335d1e1">pcf_Utils_validateCrc7</a> (uint8_t crc, pcf_byte_t *buffer, pcf_size_t size)</td></tr>
+<tr class="memdesc:gaf9f5562f7319e92c0c480bc96335d1e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the CRC-7 checksum for the given buffer.  <br /></td></tr>
+<tr class="separator:gaf9f5562f7319e92c0c480bc96335d1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac136df334f184633ccc9f36ef21cb76f"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils.html#gac136df334f184633ccc9f36ef21cb76f">pcf_Utils_crc16</a> (pcf_byte_t *buffer, pcf_size_t size)</td></tr>
+<tr class="memdesc:gac136df334f184633ccc9f36ef21cb76f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the CRC-16 checksum for the given buffer.  <br /></td></tr>
+<tr class="separator:gac136df334f184633ccc9f36ef21cb76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8202ad6cfc4a4280608435b1f866e18b"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__utils.html#ga8202ad6cfc4a4280608435b1f866e18b">pcf_Utils_validateCrc16</a> (uint16_t crc, pcf_byte_t *buffer, pcf_size_t size)</td></tr>
+<tr class="memdesc:ga8202ad6cfc4a4280608435b1f866e18b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the CRC-16 checksum for the given buffer.  <br /></td></tr>
+<tr class="separator:ga8202ad6cfc4a4280608435b1f866e18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>The "utils" offers a range of utility functionalities, including conversions such as integer to string, string to integer, float to string, string to float, and more. </p>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga0020c8da1a8ce6ce8309592f30872a45" name="ga0020c8da1a8ce6ce8309592f30872a45"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0020c8da1a8ce6ce8309592f30872a45">&#9670;&#160;</a></span>pcf_Utils_iToA()</h2>
@@ -159,9 +176,9 @@ Functions</h2></td></tr>
 <p>Converts the integer value to string. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">num</td><td>[IN] - The integer value of type int64_t to be converted to string. </td></tr>
+    <tr><td class="paramname">num</td><td>[IN] - The integer value to be converted to string. </td></tr>
     <tr><td class="paramname">str</td><td>[OUT] - The pcf_string_t to which the converted value is saved. </td></tr>
-    <tr><td class="paramname">digits</td><td>[IN] - Required number of digits of type int64_t in the output string. </td></tr>
+    <tr><td class="paramname">digits</td><td>[IN] - Required number of digits in the output string. </td></tr>
   </table>
   </dd>
 </dl>
@@ -212,10 +229,10 @@ Functions</h2></td></tr>
 <p>Converts float value to a string with the given precision. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td>[IN] - The float value of type float to be converted to a string. </td></tr>
-    <tr><td class="paramname">buffer</td><td>[OUT] - The buffer of type pcf_string_t where the converted string will be stored. </td></tr>
-    <tr><td class="paramname">prec</td><td>[IN] - The desired precision of type int for the conversion. It must be a positive integer value. </td></tr>
-    <tr><td class="paramname">overflow</td><td>[IN] - The maximum number of digits of type uint32_t allowed in the output string. </td></tr>
+    <tr><td class="paramname">value</td><td>[IN] - The float value to be converted to a string. </td></tr>
+    <tr><td class="paramname">buffer</td><td>[OUT] - The pcf_string_t to which the converted value is saved. </td></tr>
+    <tr><td class="paramname">prec</td><td>[IN] - The desired precision for the conversion. It must be a positive integer value. </td></tr>
+    <tr><td class="paramname">overflow</td><td>[IN] - The maximum number of digits allowed in the output string. </td></tr>
   </table>
   </dd>
 </dl>
@@ -267,16 +284,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Converts float value to a string with the given precision. </p>
+<p>Converts exponent float value to a string with the given precision. </p>
 <p><br  />
 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td>[IN] - The float value of type float to be converted to a string. </td></tr>
-    <tr><td class="paramname">buffer</td><td>[OUT] - The buffer of type pcf_string_t where the converted string will be stored. </td></tr>
-    <tr><td class="paramname">prec</td><td>[IN] - The desired precision of type int for the conversion. It must be a positive integer value. </td></tr>
-    <tr><td class="paramname">upperExp</td><td>[IN] - Whether to show the exponent in uppercase or lowercase of type EnPCFBoolean_t. </td></tr>
-    <tr><td class="paramname">explicit_exp_sign</td><td>[IN] - Whether to explicitly show the exponent's sign of type EnPCFBoolean_t. </td></tr>
+    <tr><td class="paramname">value</td><td>[IN] - The float value to be converted to a string. </td></tr>
+    <tr><td class="paramname">buffer</td><td>[OUT] - The pcf_string_t to which the converted value is saved. </td></tr>
+    <tr><td class="paramname">prec</td><td>[IN] - The desired precision for the conversion. It must be a positive integer value. </td></tr>
+    <tr><td class="paramname">upperExp</td><td>[IN] - Whether to show the exponent in uppercase or lowercase. </td></tr>
+    <tr><td class="paramname">explicit_exp_sign</td><td>[IN] - Whether to explicitly show the exponent's sign. </td></tr>
   </table>
   </dd>
 </dl>
@@ -327,10 +344,10 @@ Functions</h2></td></tr>
 <p>Converts the double value to string. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td>[IN] - The double value of type double to convert to a string representation. </td></tr>
-    <tr><td class="paramname">buffer</td><td>[OUT] - The character buffer of type pcf_string_t to store the resulting string. </td></tr>
-    <tr><td class="paramname">prec</td><td>[IN] - The number of decimal places of type int to display. </td></tr>
-    <tr><td class="paramname">overflow</td><td>[IN] - The maximum number of digits of type uint64_t in the output string. </td></tr>
+    <tr><td class="paramname">value</td><td>[IN] - The double value to convert to a string representation. </td></tr>
+    <tr><td class="paramname">buffer</td><td>[OUT] - The pcf_string_t to which the converted value is saved. </td></tr>
+    <tr><td class="paramname">prec</td><td>[IN] - The number of decimal places to display. </td></tr>
+    <tr><td class="paramname">overflow</td><td>[IN] - The maximum number of digits in the output string. </td></tr>
   </table>
   </dd>
 </dl>
@@ -382,14 +399,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Converts the double exponent value to string. </p>
+<p>Converts the exponent double value to string. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td>[IN] - The double value of type double to convert to a string representation. </td></tr>
-    <tr><td class="paramname">buffer</td><td>[OUT] - The character buffer of type pcf_string_t to store the resulting string. </td></tr>
-    <tr><td class="paramname">prec</td><td>[IN] - The number of decimal places of type int to display. </td></tr>
-    <tr><td class="paramname">upperExp</td><td>[IN] - Whether to show the exponent in uppercase or lowercase of type EnPCFBoolean_t. </td></tr>
-    <tr><td class="paramname">explicit_exp_sign</td><td>[IN] - Whether to explicitly show the exponent's sign of type EnPCFBoolean_t. </td></tr>
+    <tr><td class="paramname">value</td><td>[IN] - The double value to convert to a string representation. </td></tr>
+    <tr><td class="paramname">buffer</td><td>[OUT] - The pcf_string_t to which the converted value is saved. </td></tr>
+    <tr><td class="paramname">prec</td><td>[IN] - The number of decimal places to display. </td></tr>
+    <tr><td class="paramname">upperExp</td><td>[IN] - Whether to show the exponent in uppercase or lowercase. </td></tr>
+    <tr><td class="paramname">explicit_exp_sign</td><td>[IN] - Whether to explicitly show the exponent's sign. </td></tr>
   </table>
   </dd>
 </dl>
@@ -447,17 +464,195 @@ Functions</h2></td></tr>
 <p>Converts an unsigned 64-bit integer value to a string representation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td>[IN] - An unsigned 64-bit integer value of type uint64_t that needs to be converted to a string representation. </td></tr>
-    <tr><td class="paramname">buffer</td><td>[OUT] - A pointer to the buffer of type pcf_string_t where the converted string will be stored. </td></tr>
-    <tr><td class="paramname">buffer_size</td><td>[IN] - The size of type int of the buffer in bytes. </td></tr>
-    <tr><td class="paramname">base</td><td>[IN] - The base of type int to be used for the conversion. The valid values for base are 2 to 36. </td></tr>
-    <tr><td class="paramname">ptr</td><td>[IN] - A flag of type EnPCFBoolean_t indicating whether to represent the value as a hexadecimal string. </td></tr>
+    <tr><td class="paramname">value</td><td>[IN] - An unsigned 64-bit integer value that needs to be converted to a string representation. </td></tr>
+    <tr><td class="paramname">buffer</td><td>[OUT] - The pcf_string_t to which the converted value is saved. </td></tr>
+    <tr><td class="paramname">buffer_size</td><td>[IN] - The size of the buffer in bytes. </td></tr>
+    <tr><td class="paramname">base</td><td>[IN] - The base to be used for the conversion. The valid values for base are 2 to 36. </td></tr>
+    <tr><td class="paramname">ptr</td><td>[IN] - A flag indicating whether to represent the value as a hexadecimal string. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The number of characters written to the buffer. </dd></dl>
 <dl class="section examples"><dt>Examples</dt><dd><a class="el" href="utils_example_8c-example.html#a3">utils_example.c</a>.</dd>
 </dl>
+
+</div>
+</div>
+<a id="ga64cb95be046c209bf51226797f83b2bf" name="ga64cb95be046c209bf51226797f83b2bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga64cb95be046c209bf51226797f83b2bf">&#9670;&#160;</a></span>pcf_Utils_crc7()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PCF_CORE_API uint8_t pcf_Utils_crc7 </td>
+          <td>(</td>
+          <td class="paramtype">pcf_byte_t *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">pcf_size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the CRC-7 checksum for the given buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>[IN] - Pointer to the buffer containing data to calculate the CRC for. </td></tr>
+    <tr><td class="paramname">size</td><td>[IN] - Size of the buffer in bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The calculated CRC value. </dd></dl>
+
+</div>
+</div>
+<a id="gaf9f5562f7319e92c0c480bc96335d1e1" name="gaf9f5562f7319e92c0c480bc96335d1e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf9f5562f7319e92c0c480bc96335d1e1">&#9670;&#160;</a></span>pcf_Utils_validateCrc7()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PCF_CORE_API pcf_status_t pcf_Utils_validateCrc7 </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>crc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">pcf_byte_t *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">pcf_size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Validates the CRC-7 checksum for the given buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">crc</td><td>[IN] - The CRC value to validate against. </td></tr>
+    <tr><td class="paramname">buffer</td><td>[IN] - Pointer to the buffer containing data to validate the CRC for. </td></tr>
+    <tr><td class="paramname">size</td><td>[IN] - Size of the buffer in bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
+<li>
+PCF_S_YES  : Given CRC is valid. </li>
+<li>
+PCF_S_NO  : Given CRC is not valid. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="gac136df334f184633ccc9f36ef21cb76f" name="gac136df334f184633ccc9f36ef21cb76f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac136df334f184633ccc9f36ef21cb76f">&#9670;&#160;</a></span>pcf_Utils_crc16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PCF_CORE_API uint16_t pcf_Utils_crc16 </td>
+          <td>(</td>
+          <td class="paramtype">pcf_byte_t *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">pcf_size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculates the CRC-16 checksum for the given buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>[IN] - Pointer to the buffer containing data to calculate the CRC for. </td></tr>
+    <tr><td class="paramname">size</td><td>[IN] - Size of the buffer in bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The calculated CRC value. </dd></dl>
+
+</div>
+</div>
+<a id="ga8202ad6cfc4a4280608435b1f866e18b" name="ga8202ad6cfc4a4280608435b1f866e18b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8202ad6cfc4a4280608435b1f866e18b">&#9670;&#160;</a></span>pcf_Utils_validateCrc16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PCF_CORE_API pcf_status_t pcf_Utils_validateCrc16 </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>crc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">pcf_byte_t *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">pcf_size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Validates the CRC-16 checksum for the given buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">crc</td><td>[IN] - The CRC value to validate against. </td></tr>
+    <tr><td class="paramname">buffer</td><td>[IN] - Pointer to the buffer containing data to validate the CRC for. </td></tr>
+    <tr><td class="paramname">size</td><td>[IN] - Size of the buffer in bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
+<li>
+PCF_S_YES  : Given CRC is valid. </li>
+<li>
+PCF_S_NO  : Given CRC is not valid. </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>

@@ -91,13 +91,14 @@ $(document).ready(function(){initNavTree('group__pcf__core__collections__ring_bu
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">Ring Buffer<div class="ingroups"><a class="el" href="group__pcf__core.html">Core</a> &raquo; <a class="el" href="group__pcf__core__collections.html">Collections</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The "Ring buffer" entity is a fixed-size data structure that efficiently manages a sequence of bytes with a wrap-around behavior.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -105,11 +106,66 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">RingBuffer configuration entity object.  <a href="struct_ring_buffer_config__t.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gacfa4b1176604336fab61d957525700f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gacfa4b1176604336fab61d957525700f4">ITEM_ID_RING_BUFFER</a>&#160;&#160;&#160;4</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:gaff52f5eaf6651f69e69f0a24ca10857c"><td class="memItemLeft" align="right" valign="top">typedef struct _pcf_collections_ring_buffer_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a></td></tr>
+<tr class="memdesc:gaff52f5eaf6651f69e69f0a24ca10857c"><td class="mdescLeft">&#160;</td><td class="mdescRight">RingBuffer entity object.  <br /></td></tr>
+<tr class="separator:gaff52f5eaf6651f69e69f0a24ca10857c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga8670ac630fda67180ae155d48ebe982e"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga8670ac630fda67180ae155d48ebe982e">pcf_RingBuffer_new</a> (const <a class="el" href="struct_ring_buffer_config__t.html">RingBufferConfig_t</a> *const config, pcf_status_t *const status)</td></tr>
+<tr class="memdesc:ga8670ac630fda67180ae155d48ebe982e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a ring buffer entity object.  <br /></td></tr>
+<tr class="separator:ga8670ac630fda67180ae155d48ebe982e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e691217836c453742b59cf2692ad377"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga9e691217836c453742b59cf2692ad377">pcf_RingBuffer_delete</a> (<a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> **buffer)</td></tr>
+<tr class="memdesc:ga9e691217836c453742b59cf2692ad377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete/Destroy Ring buffer entity object.  <br /></td></tr>
+<tr class="separator:ga9e691217836c453742b59cf2692ad377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga089c8df8e6320f8ae6236b5c0b92e5a8"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga089c8df8e6320f8ae6236b5c0b92e5a8">pcf_RingBuffer_getSize</a> (const <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const buffer, pcf_size_t *const size)</td></tr>
+<tr class="memdesc:ga089c8df8e6320f8ae6236b5c0b92e5a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the size of the ring buffer in bytes.  <br /></td></tr>
+<tr class="separator:ga089c8df8e6320f8ae6236b5c0b92e5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga48f973f64c2313a9132c07d52431e104"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga48f973f64c2313a9132c07d52431e104">pcf_RingBuffer_getFullCount</a> (const <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const buffer, pcf_size_t *const count)</td></tr>
+<tr class="memdesc:ga48f973f64c2313a9132c07d52431e104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the number of bytes present in the Ring buffer.  <br /></td></tr>
+<tr class="separator:ga48f973f64c2313a9132c07d52431e104"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga674e8cf5060fdd100823bb1667e994d1"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga674e8cf5060fdd100823bb1667e994d1">pcf_RingBuffer_getFreeCount</a> (const <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const buffer, pcf_size_t *const count)</td></tr>
+<tr class="memdesc:ga674e8cf5060fdd100823bb1667e994d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the total free space present in the Ring buffer in bytes.  <br /></td></tr>
+<tr class="separator:ga674e8cf5060fdd100823bb1667e994d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf248893f3457a7562936a7d3be6c9600"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gaf248893f3457a7562936a7d3be6c9600">pcf_RingBuffer_write</a> (<a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const buffer, const Buffer_t *const write_data, pcf_size_t *const actual)</td></tr>
+<tr class="memdesc:gaf248893f3457a7562936a7d3be6c9600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes data to the Ring buffer for a given size.  <br /></td></tr>
+<tr class="separator:gaf248893f3457a7562936a7d3be6c9600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a9974afeb8909b1ab1d1cae7c5452e5"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga7a9974afeb8909b1ab1d1cae7c5452e5">pcf_RingBuffer_read</a> (<a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const buffer, Buffer_t *const read_data, pcf_size_t *const actual)</td></tr>
+<tr class="memdesc:ga7a9974afeb8909b1ab1d1cae7c5452e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads data from the Ring buffer of a given size.  <br /></td></tr>
+<tr class="separator:ga7a9974afeb8909b1ab1d1cae7c5452e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad90bd889d6ea8a43ac2bd22592e62c86"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gad90bd889d6ea8a43ac2bd22592e62c86">pcf_RingBuffer_flush</a> (<a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const buffer)</td></tr>
+<tr class="memdesc:gad90bd889d6ea8a43ac2bd22592e62c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the Ring buffer.  <br /></td></tr>
+<tr class="separator:gad90bd889d6ea8a43ac2bd22592e62c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc49d5b08a84ab9d8f454ba432d25b7d"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gadc49d5b08a84ab9d8f454ba432d25b7d">pcf_RingBuffer_isEmpty</a> (const <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const buffer)</td></tr>
+<tr class="memdesc:gadc49d5b08a84ab9d8f454ba432d25b7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the Ring buffer is empty.  <br /></td></tr>
+<tr class="separator:gadc49d5b08a84ab9d8f454ba432d25b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga056efacffdc110979f2111b3645cbdb0"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga056efacffdc110979f2111b3645cbdb0">pcf_RingBuffer_isFull</a> (const <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const buffer)</td></tr>
+<tr class="memdesc:ga056efacffdc110979f2111b3645cbdb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the Ring buffer is full.  <br /></td></tr>
+<tr class="separator:ga056efacffdc110979f2111b3645cbdb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga80b8373ba0bb9252b8b6fa3ed081dc54"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga80b8373ba0bb9252b8b6fa3ed081dc54">pcf_RingBuffer_getBaseAddress</a> (const <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const buffer, pcf_generic_t *const address)</td></tr>
+<tr class="memdesc:ga80b8373ba0bb9252b8b6fa3ed081dc54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current base address of the Ring buffer.  <br /></td></tr>
+<tr class="separator:ga80b8373ba0bb9252b8b6fa3ed081dc54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga035846d7a1bfde30b69a743e52eb18f3"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga035846d7a1bfde30b69a743e52eb18f3">pcf_RingBuffer_getReadAddress</a> (const <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const buffer, pcf_generic_t *const address)</td></tr>
+<tr class="memdesc:ga035846d7a1bfde30b69a743e52eb18f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current read pointer of the buffer.  <br /></td></tr>
+<tr class="separator:ga035846d7a1bfde30b69a743e52eb18f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga48fb50776f43032c3cf074dc06a98823"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga48fb50776f43032c3cf074dc06a98823">pcf_RingBuffer_getWriteAddress</a> (const <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const buffer, pcf_generic_t *const address)</td></tr>
+<tr class="memdesc:ga48fb50776f43032c3cf074dc06a98823"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current write pointer of th buffer.  <br /></td></tr>
+<tr class="separator:ga48fb50776f43032c3cf074dc06a98823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9adbeb20732e0782d32873f412a72da8"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga9adbeb20732e0782d32873f412a72da8">pcf_RingBuffer_skip</a> (<a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const buffer, const pcf_size_t len, pcf_size_t *const actual_len)</td></tr>
+<tr class="memdesc:ga9adbeb20732e0782d32873f412a72da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skips bytes and also advances the read pointer of the buffer.  <br /></td></tr>
+<tr class="separator:ga9adbeb20732e0782d32873f412a72da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga17e586ef49431430de7812a3cdef593f"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga17e586ef49431430de7812a3cdef593f">pcf_RingBuffer_advance</a> (<a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const buffer, const pcf_size_t len, pcf_size_t *const actual_len)</td></tr>
+<tr class="memdesc:ga17e586ef49431430de7812a3cdef593f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advances write pointer of the Ring buffer.  <br /></td></tr>
+<tr class="separator:ga17e586ef49431430de7812a3cdef593f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Ring buffer item ID</h2></td></tr>
+<tr class="memitem:gacfa4b1176604336fab61d957525700f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gacfa4b1176604336fab61d957525700f4">ITEM_ID_RING_BUFFER</a>&#160;&#160;&#160;(8)</td></tr>
 <tr class="memdesc:gacfa4b1176604336fab61d957525700f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ring Buffer item ID.  <br /></td></tr>
 <tr class="separator:gacfa4b1176604336fab61d957525700f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader">Ring buffer status code</h2></td></tr>
 <tr class="memitem:gabb5e6996fe457c1a18b6bafe1b51a1dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gabb5e6996fe457c1a18b6bafe1b51a1dc">PCF_RING_BUFFER_S_SUCCESS</a>&#160;&#160;&#160;GENERATE_PCF_STATUS_SUCCESS(<a class="el" href="group__pcf__core.html#ga880ffcc1a33a50a689ef8819eb8e4f42">PKG_ID_CORE</a>, <a class="el" href="group__pcf__core__collections__ring_buffer.html#gacfa4b1176604336fab61d957525700f4">ITEM_ID_RING_BUFFER</a>)</td></tr>
 <tr class="separator:gabb5e6996fe457c1a18b6bafe1b51a1dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1d2d07afd75fb954e1f4f224c8652cee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga1d2d07afd75fb954e1f4f224c8652cee">PCF_RING_BUFFER_S_NULL_ARG</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NULL_ARG(<a class="el" href="group__pcf__core.html#ga880ffcc1a33a50a689ef8819eb8e4f42">PKG_ID_CORE</a>, <a class="el" href="group__pcf__core__collections__ring_buffer.html#gacfa4b1176604336fab61d957525700f4">ITEM_ID_RING_BUFFER</a>)</td></tr>
@@ -122,77 +178,14 @@ Macros</h2></td></tr>
 <tr class="separator:gaf54682be0780f4e99ba424022a94e3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaac9d855c13682c4690c63760ed6e4979"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gaac9d855c13682c4690c63760ed6e4979">PCF_RING_BUFFER_S_EMPTY</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_EMPTY(<a class="el" href="group__pcf__core.html#ga880ffcc1a33a50a689ef8819eb8e4f42">PKG_ID_CORE</a>, <a class="el" href="group__pcf__core__collections__ring_buffer.html#gacfa4b1176604336fab61d957525700f4">ITEM_ID_RING_BUFFER</a>);</td></tr>
 <tr class="separator:gaac9d855c13682c4690c63760ed6e4979"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga55c5380956734b65652efbedf73df285"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga55c5380956734b65652efbedf73df285">PCF_RING_BUFFER_S_ALLOCATION_FAILED</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_ALLOCATION_FAILED(<a class="el" href="group__pcf__core.html#ga880ffcc1a33a50a689ef8819eb8e4f42">PKG_ID_CORE</a>, <a class="el" href="group__pcf__core__collections__ring_buffer.html#gacfa4b1176604336fab61d957525700f4">ITEM_ID_RING_BUFFER</a>);</td></tr>
-<tr class="separator:ga55c5380956734b65652efbedf73df285"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:gaff52f5eaf6651f69e69f0a24ca10857c"><td class="memItemLeft" align="right" valign="top">typedef struct _pcf_collections_ring_buffer_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a></td></tr>
-<tr class="memdesc:gaff52f5eaf6651f69e69f0a24ca10857c"><td class="mdescLeft">&#160;</td><td class="mdescRight">RingBuffer entity object.  <br /></td></tr>
-<tr class="separator:gaff52f5eaf6651f69e69f0a24ca10857c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ga137aeb8a024d1c7f6fe3352964b6525e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga137aeb8a024d1c7f6fe3352964b6525e">EnRingBufferElementSize_t</a> { <a class="el" href="group__pcf__core__collections__ring_buffer.html#gga137aeb8a024d1c7f6fe3352964b6525ea8817d5e3eb329709a7273478f4b6e95e">enRingBufferElementSize_Byte</a> = 0
-, <a class="el" href="group__pcf__core__collections__ring_buffer.html#gga137aeb8a024d1c7f6fe3352964b6525ea084ccf922d0a251a0ccd8108e2f4859e">enRingBufferElementSize_HalfWord</a>
-, <a class="el" href="group__pcf__core__collections__ring_buffer.html#gga137aeb8a024d1c7f6fe3352964b6525ea6120f71a0ec2afc8860e87e35e9e2520">enRingBufferElementSize_Word</a>
- }</td></tr>
-<tr class="memdesc:ga137aeb8a024d1c7f6fe3352964b6525e"><td class="mdescLeft">&#160;</td><td class="mdescRight">RingBuffer element size enum.  <a href="group__pcf__core__collections__ring_buffer.html#ga137aeb8a024d1c7f6fe3352964b6525e">More...</a><br /></td></tr>
-<tr class="separator:ga137aeb8a024d1c7f6fe3352964b6525e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga01c25f40649963875315931e42710d08"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga01c25f40649963875315931e42710d08">pcf_RingBuffer_new</a> (const <a class="el" href="struct_ring_buffer_config__t.html">RingBufferConfig_t</a> *config, pcf_status_t *status)</td></tr>
-<tr class="memdesc:ga01c25f40649963875315931e42710d08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a ring buffer object.  <br /></td></tr>
-<tr class="separator:ga01c25f40649963875315931e42710d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9e691217836c453742b59cf2692ad377"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga9e691217836c453742b59cf2692ad377">pcf_RingBuffer_delete</a> (<a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> **buffer)</td></tr>
-<tr class="memdesc:ga9e691217836c453742b59cf2692ad377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete/Destroy Ring buffer entity object.  <br /></td></tr>
-<tr class="separator:ga9e691217836c453742b59cf2692ad377"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3912b6289191f96e4a8f8a6457da0706"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga3912b6289191f96e4a8f8a6457da0706">pcf_RingBuffer_getSize</a> (<a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *buffer, pcf_size_t *size)</td></tr>
-<tr class="memdesc:ga3912b6289191f96e4a8f8a6457da0706"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets ring buffer size.  <br /></td></tr>
-<tr class="separator:ga3912b6289191f96e4a8f8a6457da0706"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad687843345c31c3b50e5f2117e286d0c"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gad687843345c31c3b50e5f2117e286d0c">pcf_RingBuffer_write</a> (<a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *buffer, const pcf_byte_t *data, pcf_size_t size, pcf_size_t *actual)</td></tr>
-<tr class="memdesc:gad687843345c31c3b50e5f2117e286d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes data to the buffer for a given size.  <br /></td></tr>
-<tr class="separator:gad687843345c31c3b50e5f2117e286d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0255023758b4a2c63ba62cb335e1f11f"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga0255023758b4a2c63ba62cb335e1f11f">pcf_RingBuffer_read</a> (<a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *buffer, pcf_byte_t *data, pcf_size_t size, pcf_size_t *actual)</td></tr>
-<tr class="memdesc:ga0255023758b4a2c63ba62cb335e1f11f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from the buffer of a given size.  <br /></td></tr>
-<tr class="separator:ga0255023758b4a2c63ba62cb335e1f11f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa56b350ba14690dd4b4165ab86e6208a"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gaa56b350ba14690dd4b4165ab86e6208a">pcf_RingBuffer_peek</a> (<a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *buffer, pcf_byte_t *data, pcf_size_t size, pcf_size_t *actual)</td></tr>
-<tr class="memdesc:gaa56b350ba14690dd4b4165ab86e6208a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peeks element from the buffer.  <br /></td></tr>
-<tr class="separator:gaa56b350ba14690dd4b4165ab86e6208a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9dc941e81e1e1a54b05be338d500bf51"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga9dc941e81e1e1a54b05be338d500bf51">pcf_RingBuffer_flush</a> (<a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *buffer)</td></tr>
-<tr class="memdesc:ga9dc941e81e1e1a54b05be338d500bf51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the Ring buffer.  <br /></td></tr>
-<tr class="separator:ga9dc941e81e1e1a54b05be338d500bf51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5f4d3834084f030287b205a43fbf48a7"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga5f4d3834084f030287b205a43fbf48a7">pcf_RingBuffer_isEmpty</a> (const <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *buffer)</td></tr>
-<tr class="memdesc:ga5f4d3834084f030287b205a43fbf48a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the Ring buffer is empty.  <br /></td></tr>
-<tr class="separator:ga5f4d3834084f030287b205a43fbf48a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4a4ff638c74e9102190a4de16ccf966e"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga4a4ff638c74e9102190a4de16ccf966e">pcf_RingBuffer_isFull</a> (const <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *buffer)</td></tr>
-<tr class="memdesc:ga4a4ff638c74e9102190a4de16ccf966e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the Ring buffer is full.  <br /></td></tr>
-<tr class="separator:ga4a4ff638c74e9102190a4de16ccf966e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8f29f629a3467489c572863f965381c1"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga8f29f629a3467489c572863f965381c1">pcf_RingBuffer_getFullCount</a> (<a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *buffer, pcf_size_t *count)</td></tr>
-<tr class="memdesc:ga8f29f629a3467489c572863f965381c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to the number of elements present in the buffer.  <br /></td></tr>
-<tr class="separator:ga8f29f629a3467489c572863f965381c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga81facf6b5c08558ae3163fe58c34de75"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga81facf6b5c08558ae3163fe58c34de75">pcf_RingBuffer_getFreeCount</a> (<a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *buffer, pcf_size_t *count)</td></tr>
-<tr class="memdesc:ga81facf6b5c08558ae3163fe58c34de75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets to the total free space present in the buffer.  <br /></td></tr>
-<tr class="separator:ga81facf6b5c08558ae3163fe58c34de75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5a49d11f26c1eabc6c477a5a5cf3d24e"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga5a49d11f26c1eabc6c477a5a5cf3d24e">pcf_RingBuffer_skip</a> (<a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *buffer, pcf_size_t len, pcf_size_t *actual_len)</td></tr>
-<tr class="memdesc:ga5a49d11f26c1eabc6c477a5a5cf3d24e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skips element and also advances the read pointer of the buffer.  <br /></td></tr>
-<tr class="separator:ga5a49d11f26c1eabc6c477a5a5cf3d24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga34af4d12f46bca445f847449484fa244"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga34af4d12f46bca445f847449484fa244">pcf_RingBuffer_advance</a> (<a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *buffer, pcf_size_t len, pcf_size_t *actual_len)</td></tr>
-<tr class="memdesc:ga34af4d12f46bca445f847449484fa244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advances write pointer of the buffer.  <br /></td></tr>
-<tr class="separator:ga34af4d12f46bca445f847449484fa244"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9ad332df63ad52ed8d91ead2a4dcf79b"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga9ad332df63ad52ed8d91ead2a4dcf79b">pcf_RingBuffer_getBaseAddress</a> (<a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *buffer, pcf_generic_t *address)</td></tr>
-<tr class="memdesc:ga9ad332df63ad52ed8d91ead2a4dcf79b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets to the current base address of the buffer.  <br /></td></tr>
-<tr class="separator:ga9ad332df63ad52ed8d91ead2a4dcf79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6b5848546c39a535e0ba75396c899d85"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga6b5848546c39a535e0ba75396c899d85">pcf_RingBuffer_getReadAddress</a> (<a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *buffer, pcf_generic_t *address)</td></tr>
-<tr class="memdesc:ga6b5848546c39a535e0ba75396c899d85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets to the current read pointer of the buffer.  <br /></td></tr>
-<tr class="separator:ga6b5848546c39a535e0ba75396c899d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3f43bd1747593f38af8f0a004b5bdc93"><td class="memItemLeft" align="right" valign="top">PCF_CORE_API pcf_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#ga3f43bd1747593f38af8f0a004b5bdc93">pcf_RingBuffer_getWriteAddress</a> (<a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *buffer, pcf_generic_t *address)</td></tr>
-<tr class="memdesc:ga3f43bd1747593f38af8f0a004b5bdc93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets to the current write pointer of th buffer.  <br /></td></tr>
-<tr class="separator:ga3f43bd1747593f38af8f0a004b5bdc93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7ca5d77901854f018a008e00df64a84"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gad7ca5d77901854f018a008e00df64a84">PCF_RING_BUFFER_S_NOT_ENOUGH_MEMORY</a>&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_ENOUGH_MEMORY(<a class="el" href="group__pcf__core.html#ga880ffcc1a33a50a689ef8819eb8e4f42">PKG_ID_CORE</a>, <a class="el" href="group__pcf__core__collections__ring_buffer.html#gacfa4b1176604336fab61d957525700f4">ITEM_ID_RING_BUFFER</a>);</td></tr>
+<tr class="separator:gad7ca5d77901854f018a008e00df64a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<dl class="section note"><dt>Note</dt><dd>Input validation is done only when package is built in debug mode. </dd></dl>
+<p>The "Ring buffer" entity is a fixed-size data structure that efficiently manages a sequence of bytes with a wrap-around behavior. </p>
+<p>In a ring buffer, the bytes are arranged sequentially in memory with a fixed size and can be accessed using provided apis. </p><dl class="section note"><dt>Note</dt><dd>Ring buffer is not thread-safe. If multiple threads access and modify the same Ring buffer instance concurrently then appropriate synchronization mechanisms should be implemented by the user to ensure thread safety.</dd>
+<dd>
+Input validation is done only when package is built in debug mode. </dd></dl>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="gacfa4b1176604336fab61d957525700f4" name="gacfa4b1176604336fab61d957525700f4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gacfa4b1176604336fab61d957525700f4">&#9670;&#160;</a></span>ITEM_ID_RING_BUFFER</h2>
@@ -201,7 +194,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define ITEM_ID_RING_BUFFER&#160;&#160;&#160;4</td>
+          <td class="memname">#define ITEM_ID_RING_BUFFER&#160;&#160;&#160;(8)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -294,14 +287,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga55c5380956734b65652efbedf73df285" name="ga55c5380956734b65652efbedf73df285"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga55c5380956734b65652efbedf73df285">&#9670;&#160;</a></span>PCF_RING_BUFFER_S_ALLOCATION_FAILED</h2>
+<a id="gad7ca5d77901854f018a008e00df64a84" name="gad7ca5d77901854f018a008e00df64a84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad7ca5d77901854f018a008e00df64a84">&#9670;&#160;</a></span>PCF_RING_BUFFER_S_NOT_ENOUGH_MEMORY</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PCF_RING_BUFFER_S_ALLOCATION_FAILED&#160;&#160;&#160;GENERATE_PCF_ERROR_ALLOCATION_FAILED(<a class="el" href="group__pcf__core.html#ga880ffcc1a33a50a689ef8819eb8e4f42">PKG_ID_CORE</a>, <a class="el" href="group__pcf__core__collections__ring_buffer.html#gacfa4b1176604336fab61d957525700f4">ITEM_ID_RING_BUFFER</a>);</td>
+          <td class="memname">#define PCF_RING_BUFFER_S_NOT_ENOUGH_MEMORY&#160;&#160;&#160;GENERATE_PCF_ERROR_NOT_ENOUGH_MEMORY(<a class="el" href="group__pcf__core.html#ga880ffcc1a33a50a689ef8819eb8e4f42">PKG_ID_CORE</a>, <a class="el" href="group__pcf__core__collections__ring_buffer.html#gacfa4b1176604336fab61d957525700f4">ITEM_ID_RING_BUFFER</a>);</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -325,31 +318,9 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ga137aeb8a024d1c7f6fe3352964b6525e" name="ga137aeb8a024d1c7f6fe3352964b6525e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga137aeb8a024d1c7f6fe3352964b6525e">&#9670;&#160;</a></span>EnRingBufferElementSize_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__pcf__core__collections__ring_buffer.html#ga137aeb8a024d1c7f6fe3352964b6525e">EnRingBufferElementSize_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>RingBuffer element size enum. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga137aeb8a024d1c7f6fe3352964b6525ea8817d5e3eb329709a7273478f4b6e95e" name="gga137aeb8a024d1c7f6fe3352964b6525ea8817d5e3eb329709a7273478f4b6e95e"></a>enRingBufferElementSize_Byte&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga137aeb8a024d1c7f6fe3352964b6525ea084ccf922d0a251a0ccd8108e2f4859e" name="gga137aeb8a024d1c7f6fe3352964b6525ea084ccf922d0a251a0ccd8108e2f4859e"></a>enRingBufferElementSize_HalfWord&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga137aeb8a024d1c7f6fe3352964b6525ea6120f71a0ec2afc8860e87e35e9e2520" name="gga137aeb8a024d1c7f6fe3352964b6525ea6120f71a0ec2afc8860e87e35e9e2520"></a>enRingBufferElementSize_Word&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga01c25f40649963875315931e42710d08" name="ga01c25f40649963875315931e42710d08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga01c25f40649963875315931e42710d08">&#9670;&#160;</a></span>pcf_RingBuffer_new()</h2>
+<a id="ga8670ac630fda67180ae155d48ebe982e" name="ga8670ac630fda67180ae155d48ebe982e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8670ac630fda67180ae155d48ebe982e">&#9670;&#160;</a></span>pcf_RingBuffer_new()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -357,13 +328,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">PCF_CORE_API <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> * pcf_RingBuffer_new </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_ring_buffer_config__t.html">RingBufferConfig_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_ring_buffer_config__t.html">RingBufferConfig_t</a> *const&#160;</td>
           <td class="paramname"><em>config</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">pcf_status_t *&#160;</td>
+          <td class="paramtype">pcf_status_t *const&#160;</td>
           <td class="paramname"><em>status</em>&#160;</td>
         </tr>
         <tr>
@@ -374,26 +345,34 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a ring buffer object. </p>
+<p>Creates a ring buffer entity object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">config</td><td>[IN] - Ring buffer configuration. </td></tr>
-    <tr><td class="paramname">status</td><td>[OUT] - Pointer to pcf_status_t Valid values : <ul>
+    <tr><td class="paramname">status</td><td>[OUT] - Pointer to pcf_status_t, stores the status of the function call. <br  />
+ (Optional parameter, pass PCF_NULL if not required.) <br  />
+ Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#gabb5e6996fe457c1a18b6bafe1b51a1dc">PCF_RING_BUFFER_S_SUCCESS</a> : Successful operation </li>
+PCF_S_SUCCESS : On success. </li>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#ga55c5380956734b65652efbedf73df285">PCF_RING_BUFFER_S_ALLOCATION_FAILED</a> : Memory allocation failure </li>
+PCF_S_NOT_ENOUGH_MEMORY : Not enough memory to create the Ring buffer entity. </li>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#ga719d4950918e9caa2e6ac56069ee6a50">PCF_RING_BUFFER_S_INVALID_ARG</a> : Invalid value is passed: Invalid value for size (Checked only in debug mode) or elementSize is passed </li>
+PCF_S_INVALID_ARG : config.size is 0. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#ga1d2d07afd75fb954e1f4f224c8652cee">PCF_RING_BUFFER_S_NULL_ARG</a> : Null config or config member is passed (Checked only in debug mode) </li>
+PCF_S_NULL_ARG : <em>config</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Ring buffer entity object of type <a class="el" href="group__pcf__core__collections__buffer.html#gadc30f8aad1c4f1f87bab5f841c451892" title="Buffer entity object.">Buffer_t</a> </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ring_buffer_example_8c-example.html#a8">ring_buffer_example.c</a>.</dd>
+<dl class="section return"><dt>Returns</dt><dd><ul>
+<li>
+On success - Pointer to <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c" title="RingBuffer entity object.">RingBuffer_t</a>.  </li>
+<li>
+On failure - PCF_NULL.  </li>
+</ul>
+</dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ring_buffer_example_8c-example.html#a6">ring_buffer_example.c</a>.</dd>
 </dl>
 
 </div>
@@ -417,22 +396,22 @@ Functions</h2></td></tr>
 <p>Delete/Destroy Ring buffer entity object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buffer</td><td>[IN] - Ring buffer entity object. </td></tr>
+    <tr><td class="paramname">buffer</td><td>[IN] - Double pointer to the Ring buffer entity object. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#gabb5e6996fe457c1a18b6bafe1b51a1dc">PCF_RING_BUFFER_S_SUCCESS</a> : Successful operation </li>
+PCF_S_SUCCESS : On success. </li>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#ga1d2d07afd75fb954e1f4f224c8652cee">PCF_RING_BUFFER_S_NULL_ARG</a> : Null buffer pointer or buffer pointer address is passed (Checked only in debug mode) </li>
+PCF_S_NULL_ARG : <em>buffer</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga3912b6289191f96e4a8f8a6457da0706" name="ga3912b6289191f96e4a8f8a6457da0706"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3912b6289191f96e4a8f8a6457da0706">&#9670;&#160;</a></span>pcf_RingBuffer_getSize()</h2>
+<a id="ga089c8df8e6320f8ae6236b5c0b92e5a8" name="ga089c8df8e6320f8ae6236b5c0b92e5a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga089c8df8e6320f8ae6236b5c0b92e5a8">&#9670;&#160;</a></span>pcf_RingBuffer_getSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -440,13 +419,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">PCF_CORE_API pcf_status_t pcf_RingBuffer_getSize </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">pcf_size_t *&#160;</td>
+          <td class="paramtype">pcf_size_t *const&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
@@ -457,26 +436,116 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets ring buffer size. </p>
+<p>Gets the size of the ring buffer in bytes. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffer</td><td>[IN] - Ring buffer entity object. </td></tr>
-    <tr><td class="paramname">size</td><td>[OUT] - Set to the size of the buffer. </td></tr>
+    <tr><td class="paramname">size</td><td>[OUT] - Pointer to pcf_size_t, stores the size of the buffer. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#gabb5e6996fe457c1a18b6bafe1b51a1dc">PCF_RING_BUFFER_S_SUCCESS</a> : Successful operation </li>
+PCF_S_SUCCESS : On success. </li>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#ga1d2d07afd75fb954e1f4f224c8652cee">PCF_RING_BUFFER_S_NULL_ARG</a> : Null buffer pointer or size pointer is passed (Checked only in debug mode) </li>
+PCF_S_NULL_ARG : <em>buffer</em>  or <em>size</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="gad687843345c31c3b50e5f2117e286d0c" name="gad687843345c31c3b50e5f2117e286d0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad687843345c31c3b50e5f2117e286d0c">&#9670;&#160;</a></span>pcf_RingBuffer_write()</h2>
+<a id="ga48f973f64c2313a9132c07d52431e104" name="ga48f973f64c2313a9132c07d52431e104"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga48f973f64c2313a9132c07d52431e104">&#9670;&#160;</a></span>pcf_RingBuffer_getFullCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PCF_CORE_API pcf_status_t pcf_RingBuffer_getFullCount </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">pcf_size_t *const&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the number of bytes present in the Ring buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>[IN] - Ring buffer entity object. </td></tr>
+    <tr><td class="paramname">count</td><td>[OUT] - Pointer to pcf_size_t, stores number of bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
+<li>
+PCF_S_SUCCESS : On success. </li>
+<li>
+PCF_S_NULL_ARG : <em>buffer</em>  or <em>count</em>  is PCF_NULL. (Checked only in debug mode) </li>
+</ul>
+</dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ring_buffer_example_8c-example.html#a12">ring_buffer_example.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ga674e8cf5060fdd100823bb1667e994d1" name="ga674e8cf5060fdd100823bb1667e994d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga674e8cf5060fdd100823bb1667e994d1">&#9670;&#160;</a></span>pcf_RingBuffer_getFreeCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PCF_CORE_API pcf_status_t pcf_RingBuffer_getFreeCount </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">pcf_size_t *const&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the total free space present in the Ring buffer in bytes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>[IN] - Ring buffer entity object. </td></tr>
+    <tr><td class="paramname">count</td><td>[OUT] - Pointer to pcf_size_t, stores number of bytes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
+<li>
+PCF_S_SUCCESS : On success. </li>
+<li>
+PCF_S_NULL_ARG : <em>buffer</em>  or <em>count</em>  is PCF_NULL. (Checked only in debug mode) </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="gaf248893f3457a7562936a7d3be6c9600" name="gaf248893f3457a7562936a7d3be6c9600"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf248893f3457a7562936a7d3be6c9600">&#9670;&#160;</a></span>pcf_RingBuffer_write()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -484,25 +553,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">PCF_CORE_API pcf_status_t pcf_RingBuffer_write </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const pcf_byte_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
+          <td class="paramtype">const Buffer_t *const&#160;</td>
+          <td class="paramname"><em>write_data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">pcf_size_t&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">pcf_size_t *&#160;</td>
+          <td class="paramtype">pcf_size_t *const&#160;</td>
           <td class="paramname"><em>actual</em>&#160;</td>
         </tr>
         <tr>
@@ -513,34 +576,34 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Writes data to the buffer for a given size. </p>
+<p>Writes data to the Ring buffer for a given size. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffer</td><td>[IN] - Ring buffer entity object. </td></tr>
-    <tr><td class="paramname">data</td><td>[IN] - Pointer to data to be written into the buffer. </td></tr>
-    <tr><td class="paramname">size</td><td>[IN] - Number of bytes to be written into the buffer. </td></tr>
-    <tr><td class="paramname">actual</td><td>[OUT] - Actual number of bytes written. </td></tr>
+    <tr><td class="paramname">write_data</td><td>[IN] - Data structure containing data and it's length in bytes. </td></tr>
+    <tr><td class="paramname">actual</td><td>[OUT] - Pointer to pcf_size_t, stores the actual number of bytes written. <br  />
+ (Optional parameter, pass PCF_NULL if not required.) </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#gabb5e6996fe457c1a18b6bafe1b51a1dc">PCF_RING_BUFFER_S_SUCCESS</a> : Successful operation </li>
+PCF_S_SUCCESS : On success. </li>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#ga1d2d07afd75fb954e1f4f224c8652cee">PCF_RING_BUFFER_S_NULL_ARG</a> : Null buffer pointer or data pointer is passed (Checked only in debug mode) </li>
+PCF_S_NULL_ARG : <em>buffer</em>  or <em>write_data.data</em>  is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#ga719d4950918e9caa2e6ac56069ee6a50">PCF_RING_BUFFER_S_INVALID_ARG</a> : Invalid size value is passed (Checked only in debug mode) </li>
+PCF_S_INVALID_ARG : <em>write_data.length</em>  is 0. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#gaf54682be0780f4e99ba424022a94e3d5">PCF_RING_BUFFER_S_NO_SPACE</a> : Buffer is full </li>
+PCF_S_NO_SPACE : If there is not enough space in the buffer. </li>
 </ul>
 </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ring_buffer_example_8c-example.html#a9">ring_buffer_example.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ring_buffer_example_8c-example.html#a7">ring_buffer_example.c</a>.</dd>
 </dl>
 
 </div>
 </div>
-<a id="ga0255023758b4a2c63ba62cb335e1f11f" name="ga0255023758b4a2c63ba62cb335e1f11f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0255023758b4a2c63ba62cb335e1f11f">&#9670;&#160;</a></span>pcf_RingBuffer_read()</h2>
+<a id="ga7a9974afeb8909b1ab1d1cae7c5452e5" name="ga7a9974afeb8909b1ab1d1cae7c5452e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7a9974afeb8909b1ab1d1cae7c5452e5">&#9670;&#160;</a></span>pcf_RingBuffer_read()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -548,25 +611,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">PCF_CORE_API pcf_status_t pcf_RingBuffer_read </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">pcf_byte_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
+          <td class="paramtype">Buffer_t *const&#160;</td>
+          <td class="paramname"><em>read_data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">pcf_size_t&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">pcf_size_t *&#160;</td>
+          <td class="paramtype">pcf_size_t *const&#160;</td>
           <td class="paramname"><em>actual</em>&#160;</td>
         </tr>
         <tr>
@@ -577,92 +634,34 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Read data from the buffer of a given size. </p>
+<p>Reads data from the Ring buffer of a given size. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffer</td><td>[IN] - Ring buffer entity object. </td></tr>
-    <tr><td class="paramname">data</td><td>[OUT] - Pointer to output data array where data will be written. </td></tr>
-    <tr><td class="paramname">size</td><td>[IN] - Number of bytes to read. </td></tr>
-    <tr><td class="paramname">actual</td><td>[OUT] - Actual number of bytes read. </td></tr>
+    <tr><td class="paramname">read_data</td><td>[OUT] - Data structure containing the buffer to store the read data and length of data to be read in bytes. </td></tr>
+    <tr><td class="paramname">actual</td><td>[OUT] - Pointer to pcf_size_t, stores the actual number of bytes read. <br  />
+ (Optional parameter, pass PCF_NULL if not required.) </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#gabb5e6996fe457c1a18b6bafe1b51a1dc">PCF_RING_BUFFER_S_SUCCESS</a> : Successful operation </li>
+PCF_S_SUCCESS : On success. </li>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#ga1d2d07afd75fb954e1f4f224c8652cee">PCF_RING_BUFFER_S_NULL_ARG</a> : Null buffer pointer or data pointer is passed (Checked only in debug mode) </li>
+PCF_S_NULL_ARG : <em>buffer</em>  or <em>read_data.data</em>  is PCF_NULL. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#ga719d4950918e9caa2e6ac56069ee6a50">PCF_RING_BUFFER_S_INVALID_ARG</a> : Invalid size value is passed (Checked only in debug mode) </li>
+PCF_S_INVALID_ARG : <em>read_data.length</em>  is 0. (Checked only in debug mode) </li>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#gaac9d855c13682c4690c63760ed6e4979">PCF_RING_BUFFER_S_EMPTY</a> : Buffer has no element to be read </li>
+PCF_S_EMPTY : Ring buffer has no data to be read. </li>
 </ul>
 </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ring_buffer_example_8c-example.html#a15">ring_buffer_example.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ring_buffer_example_8c-example.html#a13">ring_buffer_example.c</a>.</dd>
 </dl>
 
 </div>
 </div>
-<a id="gaa56b350ba14690dd4b4165ab86e6208a" name="gaa56b350ba14690dd4b4165ab86e6208a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa56b350ba14690dd4b4165ab86e6208a">&#9670;&#160;</a></span>pcf_RingBuffer_peek()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PCF_CORE_API pcf_status_t pcf_RingBuffer_peek </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">pcf_byte_t *&#160;</td>
-          <td class="paramname"><em>data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">pcf_size_t&#160;</td>
-          <td class="paramname"><em>size</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">pcf_size_t *&#160;</td>
-          <td class="paramname"><em>actual</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Peeks element from the buffer. </p>
-<p>It reads the data but does not advance the read pointer.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buffer</td><td>[IN] - Ring buffer entity object. </td></tr>
-    <tr><td class="paramname">skip_count</td><td>[IN] - Number of bytes to skip before peeking data. </td></tr>
-    <tr><td class="paramname">data</td><td>[IN] - Pointer to output data array where data will be written. </td></tr>
-    <tr><td class="paramname">size</td><td>[IN] - Number of bytes to peek. </td></tr>
-    <tr><td class="paramname">actual</td><td>[OUT] - Actual number of bytes read. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
-<li>
-PCF_RING_BUFFER_S_NOT_IMPLEMENTED : Function is not implemented </li>
-</ul>
-</dd></dl>
-
-</div>
-</div>
-<a id="ga9dc941e81e1e1a54b05be338d500bf51" name="ga9dc941e81e1e1a54b05be338d500bf51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9dc941e81e1e1a54b05be338d500bf51">&#9670;&#160;</a></span>pcf_RingBuffer_flush()</h2>
+<a id="gad90bd889d6ea8a43ac2bd22592e62c86" name="gad90bd889d6ea8a43ac2bd22592e62c86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad90bd889d6ea8a43ac2bd22592e62c86">&#9670;&#160;</a></span>pcf_RingBuffer_flush()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -670,7 +669,7 @@ PCF_RING_BUFFER_S_NOT_IMPLEMENTED : Function is not implemented </li>
         <tr>
           <td class="memname">PCF_CORE_API pcf_status_t pcf_RingBuffer_flush </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const&#160;</td>
           <td class="paramname"><em>buffer</em></td><td>)</td>
           <td></td>
         </tr>
@@ -680,22 +679,22 @@ PCF_RING_BUFFER_S_NOT_IMPLEMENTED : Function is not implemented </li>
 <p>Clears the Ring buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buffer</td><td>[IN] - Ring buffer entity object. </td></tr>
+    <tr><td class="paramname">buffer</td><td>[OUT] - Ring buffer entity object. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#gabb5e6996fe457c1a18b6bafe1b51a1dc">PCF_RING_BUFFER_S_SUCCESS</a> : Successful operation </li>
+PCF_S_SUCCESS : On success. </li>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#ga1d2d07afd75fb954e1f4f224c8652cee">PCF_RING_BUFFER_S_NULL_ARG</a> : Null buffer pointer is passed (Checked only in debug mode) </li>
+PCF_S_NULL_ARG : <em>buffer</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga5f4d3834084f030287b205a43fbf48a7" name="ga5f4d3834084f030287b205a43fbf48a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5f4d3834084f030287b205a43fbf48a7">&#9670;&#160;</a></span>pcf_RingBuffer_isEmpty()</h2>
+<a id="gadc49d5b08a84ab9d8f454ba432d25b7d" name="gadc49d5b08a84ab9d8f454ba432d25b7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadc49d5b08a84ab9d8f454ba432d25b7d">&#9670;&#160;</a></span>pcf_RingBuffer_isEmpty()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -703,7 +702,7 @@ PCF_RING_BUFFER_S_NOT_IMPLEMENTED : Function is not implemented </li>
         <tr>
           <td class="memname">PCF_CORE_API pcf_status_t pcf_RingBuffer_isEmpty </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const&#160;</td>
           <td class="paramname"><em>buffer</em></td><td>)</td>
           <td></td>
         </tr>
@@ -719,18 +718,18 @@ PCF_RING_BUFFER_S_NOT_IMPLEMENTED : Function is not implemented </li>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-PCF_S_YES : Buffer is empty </li>
+PCF_S_YES : Ring buffer is empty </li>
 <li>
-PCF_S_NO : Buffer is not empty </li>
+PCF_S_NO : Ring buffer is not empty </li>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#ga1d2d07afd75fb954e1f4f224c8652cee">PCF_RING_BUFFER_S_NULL_ARG</a> : Null buffer pointer is passed (Checked only in debug mode) </li>
+PCF_S_NULL_ARG : <em>buffer</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga4a4ff638c74e9102190a4de16ccf966e" name="ga4a4ff638c74e9102190a4de16ccf966e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4a4ff638c74e9102190a4de16ccf966e">&#9670;&#160;</a></span>pcf_RingBuffer_isFull()</h2>
+<a id="ga056efacffdc110979f2111b3645cbdb0" name="ga056efacffdc110979f2111b3645cbdb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga056efacffdc110979f2111b3645cbdb0">&#9670;&#160;</a></span>pcf_RingBuffer_isFull()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -738,7 +737,7 @@ PCF_S_NO : Buffer is not empty </li>
         <tr>
           <td class="memname">PCF_CORE_API pcf_status_t pcf_RingBuffer_isFull </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const&#160;</td>
           <td class="paramname"><em>buffer</em></td><td>)</td>
           <td></td>
         </tr>
@@ -754,222 +753,18 @@ PCF_S_NO : Buffer is not empty </li>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-PCF_S_YES : Buffer is full </li>
+PCF_S_YES : Ring buffer is full. </li>
 <li>
-PCF_S_NO : Buffer is not full </li>
+PCF_S_NO : Ring buffer is not full. </li>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#ga1d2d07afd75fb954e1f4f224c8652cee">PCF_RING_BUFFER_S_NULL_ARG</a> : Null buffer pointer is passed (Checked only in debug mode) </li>
+PCF_S_NULL_ARG : <em>buffer</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga8f29f629a3467489c572863f965381c1" name="ga8f29f629a3467489c572863f965381c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8f29f629a3467489c572863f965381c1">&#9670;&#160;</a></span>pcf_RingBuffer_getFullCount()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PCF_CORE_API pcf_status_t pcf_RingBuffer_getFullCount </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">pcf_size_t *&#160;</td>
-          <td class="paramname"><em>count</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set to the number of elements present in the buffer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buffer</td><td>[IN] - Ring buffer entity object. </td></tr>
-    <tr><td class="paramname">count</td><td>[OUT] - Number of elements. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
-<li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#gabb5e6996fe457c1a18b6bafe1b51a1dc">PCF_RING_BUFFER_S_SUCCESS</a> : Successful operation </li>
-<li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#ga1d2d07afd75fb954e1f4f224c8652cee">PCF_RING_BUFFER_S_NULL_ARG</a> : Null buffer pointer or count pointer is passed (Checked only in debug mode) </li>
-</ul>
-</dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ring_buffer_example_8c-example.html#a14">ring_buffer_example.c</a>.</dd>
-</dl>
-
-</div>
-</div>
-<a id="ga81facf6b5c08558ae3163fe58c34de75" name="ga81facf6b5c08558ae3163fe58c34de75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga81facf6b5c08558ae3163fe58c34de75">&#9670;&#160;</a></span>pcf_RingBuffer_getFreeCount()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PCF_CORE_API pcf_status_t pcf_RingBuffer_getFreeCount </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">pcf_size_t *&#160;</td>
-          <td class="paramname"><em>count</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets to the total free space present in the buffer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buffer</td><td>[IN] - Ring buffer entity object. </td></tr>
-    <tr><td class="paramname">count</td><td>[OUT] - Number of elements. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
-<li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#gabb5e6996fe457c1a18b6bafe1b51a1dc">PCF_RING_BUFFER_S_SUCCESS</a> : Successful operation </li>
-<li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#ga1d2d07afd75fb954e1f4f224c8652cee">PCF_RING_BUFFER_S_NULL_ARG</a> : Null buffer pointer or count pointer is passed (Checked only in debug mode) </li>
-</ul>
-</dd></dl>
-
-</div>
-</div>
-<a id="ga5a49d11f26c1eabc6c477a5a5cf3d24e" name="ga5a49d11f26c1eabc6c477a5a5cf3d24e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5a49d11f26c1eabc6c477a5a5cf3d24e">&#9670;&#160;</a></span>pcf_RingBuffer_skip()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PCF_CORE_API pcf_status_t pcf_RingBuffer_skip </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">pcf_size_t&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">pcf_size_t *&#160;</td>
-          <td class="paramname"><em>actual_len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Skips element and also advances the read pointer of the buffer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buffer</td><td>[IN] - Ring buffer entity object. </td></tr>
-    <tr><td class="paramname">len</td><td>[IN] - The number of bytes to skip. </td></tr>
-    <tr><td class="paramname">actual_len</td><td>[OUT] - The actual bytes skipped. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
-<li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#gabb5e6996fe457c1a18b6bafe1b51a1dc">PCF_RING_BUFFER_S_SUCCESS</a> : Successful operation </li>
-<li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#ga1d2d07afd75fb954e1f4f224c8652cee">PCF_RING_BUFFER_S_NULL_ARG</a> : Null buffer pointer is passed (Checked only in debug mode) </li>
-<li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#ga719d4950918e9caa2e6ac56069ee6a50">PCF_RING_BUFFER_S_INVALID_ARG</a> : Invalid len value is passed (Checked only in debug mode) </li>
-<li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#gaac9d855c13682c4690c63760ed6e4979">PCF_RING_BUFFER_S_EMPTY</a> : Buffer has no elements to be skipped </li>
-</ul>
-</dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ring_buffer_example_8c-example.html#a11">ring_buffer_example.c</a>.</dd>
-</dl>
-
-</div>
-</div>
-<a id="ga34af4d12f46bca445f847449484fa244" name="ga34af4d12f46bca445f847449484fa244"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga34af4d12f46bca445f847449484fa244">&#9670;&#160;</a></span>pcf_RingBuffer_advance()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PCF_CORE_API pcf_status_t pcf_RingBuffer_advance </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *&#160;</td>
-          <td class="paramname"><em>buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">pcf_size_t&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">pcf_size_t *&#160;</td>
-          <td class="paramname"><em>actual_len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Advances write pointer of the buffer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buffer</td><td>[IN] - Ring buffer entity object. </td></tr>
-    <tr><td class="paramname">len</td><td>[IN] - The number of bytes to advance </td></tr>
-    <tr><td class="paramname">actual_len</td><td>[OUT] - The actual bytes advanced </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
-<li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#gabb5e6996fe457c1a18b6bafe1b51a1dc">PCF_RING_BUFFER_S_SUCCESS</a> : Successful operation </li>
-<li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#ga1d2d07afd75fb954e1f4f224c8652cee">PCF_RING_BUFFER_S_NULL_ARG</a> : Null buffer pointer is passed (Checked only in debug mode) </li>
-<li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#ga719d4950918e9caa2e6ac56069ee6a50">PCF_RING_BUFFER_S_INVALID_ARG</a> : Invalid len value is passed (Checked only in debug mode) </li>
-<li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#gaf54682be0780f4e99ba424022a94e3d5">PCF_RING_BUFFER_S_NO_SPACE</a> : Buffer is full </li>
-</ul>
-</dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ring_buffer_example_8c-example.html#a13">ring_buffer_example.c</a>.</dd>
-</dl>
-
-</div>
-</div>
-<a id="ga9ad332df63ad52ed8d91ead2a4dcf79b" name="ga9ad332df63ad52ed8d91ead2a4dcf79b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9ad332df63ad52ed8d91ead2a4dcf79b">&#9670;&#160;</a></span>pcf_RingBuffer_getBaseAddress()</h2>
+<a id="ga80b8373ba0bb9252b8b6fa3ed081dc54" name="ga80b8373ba0bb9252b8b6fa3ed081dc54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga80b8373ba0bb9252b8b6fa3ed081dc54">&#9670;&#160;</a></span>pcf_RingBuffer_getBaseAddress()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -977,13 +772,13 @@ PCF_S_NO : Buffer is not full </li>
         <tr>
           <td class="memname">PCF_CORE_API pcf_status_t pcf_RingBuffer_getBaseAddress </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">pcf_generic_t *&#160;</td>
+          <td class="paramtype">pcf_generic_t *const&#160;</td>
           <td class="paramname"><em>address</em>&#160;</td>
         </tr>
         <tr>
@@ -994,26 +789,26 @@ PCF_S_NO : Buffer is not full </li>
       </table>
 </div><div class="memdoc">
 
-<p>Sets to the current base address of the buffer. </p>
+<p>Gets the current base address of the Ring buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffer</td><td>[IN] - Ring buffer entity object. </td></tr>
-    <tr><td class="paramname">address</td><td>[OUT] - Address of the underlying byte buffer. </td></tr>
+    <tr><td class="paramname">address</td><td>[OUT] - Pointer to pcf_generic_t, stores address of the underlying byte buffer. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#gabb5e6996fe457c1a18b6bafe1b51a1dc">PCF_RING_BUFFER_S_SUCCESS</a> : Successful operation </li>
+PCF_S_SUCCESS : On success. </li>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#ga1d2d07afd75fb954e1f4f224c8652cee">PCF_RING_BUFFER_S_NULL_ARG</a> : Null buffer pointer or address pointer is passed (Checked only in debug mode) </li>
+PCF_S_NULL_ARG : <em>buffer</em>  or <em>address</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
 
 </div>
 </div>
-<a id="ga6b5848546c39a535e0ba75396c899d85" name="ga6b5848546c39a535e0ba75396c899d85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6b5848546c39a535e0ba75396c899d85">&#9670;&#160;</a></span>pcf_RingBuffer_getReadAddress()</h2>
+<a id="ga035846d7a1bfde30b69a743e52eb18f3" name="ga035846d7a1bfde30b69a743e52eb18f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga035846d7a1bfde30b69a743e52eb18f3">&#9670;&#160;</a></span>pcf_RingBuffer_getReadAddress()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1021,13 +816,13 @@ PCF_S_NO : Buffer is not full </li>
         <tr>
           <td class="memname">PCF_CORE_API pcf_status_t pcf_RingBuffer_getReadAddress </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">pcf_generic_t *&#160;</td>
+          <td class="paramtype">pcf_generic_t *const&#160;</td>
           <td class="paramname"><em>address</em>&#160;</td>
         </tr>
         <tr>
@@ -1038,29 +833,29 @@ PCF_S_NO : Buffer is not full </li>
       </table>
 </div><div class="memdoc">
 
-<p>Sets to the current read pointer of the buffer. </p>
+<p>Gets the current read pointer of the buffer. </p>
 <p>The address from where read will start.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffer</td><td>[IN] - Ring buffer entity object. </td></tr>
-    <tr><td class="paramname">address</td><td>[OUT] - Read pointer of the underlying byte buffer. </td></tr>
+    <tr><td class="paramname">address</td><td>[OUT] - Pointer to pcf_generic_t, stores the address where the next read will be performed on the underlying byte buffer. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#gabb5e6996fe457c1a18b6bafe1b51a1dc">PCF_RING_BUFFER_S_SUCCESS</a> : Successful operation </li>
+PCF_S_SUCCESS : On success. </li>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#ga1d2d07afd75fb954e1f4f224c8652cee">PCF_RING_BUFFER_S_NULL_ARG</a> : Null buffer pointer or address pointer is passed (Checked only in debug mode) </li>
+PCF_S_NULL_ARG : <em>buffer</em>  or <em>address</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ring_buffer_example_8c-example.html#a10">ring_buffer_example.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ring_buffer_example_8c-example.html#a8">ring_buffer_example.c</a>.</dd>
 </dl>
 
 </div>
 </div>
-<a id="ga3f43bd1747593f38af8f0a004b5bdc93" name="ga3f43bd1747593f38af8f0a004b5bdc93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3f43bd1747593f38af8f0a004b5bdc93">&#9670;&#160;</a></span>pcf_RingBuffer_getWriteAddress()</h2>
+<a id="ga48fb50776f43032c3cf074dc06a98823" name="ga48fb50776f43032c3cf074dc06a98823"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga48fb50776f43032c3cf074dc06a98823">&#9670;&#160;</a></span>pcf_RingBuffer_getWriteAddress()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1068,13 +863,13 @@ PCF_S_NO : Buffer is not full </li>
         <tr>
           <td class="memname">PCF_CORE_API pcf_status_t pcf_RingBuffer_getWriteAddress </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const&#160;</td>
           <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">pcf_generic_t *&#160;</td>
+          <td class="paramtype">pcf_generic_t *const&#160;</td>
           <td class="paramname"><em>address</em>&#160;</td>
         </tr>
         <tr>
@@ -1085,23 +880,137 @@ PCF_S_NO : Buffer is not full </li>
       </table>
 </div><div class="memdoc">
 
-<p>Sets to the current write pointer of th buffer. </p>
+<p>Gets the current write pointer of th buffer. </p>
 <p>The address from where write will start.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buffer</td><td>[IN] - Ring buffer entity object. </td></tr>
-    <tr><td class="paramname">address</td><td>[OUT] - Write pointer of the underlying byte buffer. </td></tr>
+    <tr><td class="paramname">address</td><td>[OUT] - Pointer to pcf_generic_t, stores the address where the next write will be performed on the underlying byte buffer. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#gabb5e6996fe457c1a18b6bafe1b51a1dc">PCF_RING_BUFFER_S_SUCCESS</a> : Successful operation </li>
+PCF_S_SUCCESS : On success. </li>
 <li>
-<a class="el" href="group__pcf__core__collections__ring_buffer.html#ga1d2d07afd75fb954e1f4f224c8652cee">PCF_RING_BUFFER_S_NULL_ARG</a> : Null buffer pointer or address pointer is passed (Checked only in debug mode) </li>
+PCF_S_NULL_ARG : <em>buffer</em>  or <em>address</em>  is PCF_NULL. (Checked only in debug mode) </li>
 </ul>
 </dd></dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ring_buffer_example_8c-example.html#a12">ring_buffer_example.c</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ring_buffer_example_8c-example.html#a10">ring_buffer_example.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ga9adbeb20732e0782d32873f412a72da8" name="ga9adbeb20732e0782d32873f412a72da8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9adbeb20732e0782d32873f412a72da8">&#9670;&#160;</a></span>pcf_RingBuffer_skip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PCF_CORE_API pcf_status_t pcf_RingBuffer_skip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const pcf_size_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">pcf_size_t *const&#160;</td>
+          <td class="paramname"><em>actual_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Skips bytes and also advances the read pointer of the buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>[IN] - Ring buffer entity object. </td></tr>
+    <tr><td class="paramname">len</td><td>[IN] - The number of bytes to skip. </td></tr>
+    <tr><td class="paramname">actual_len</td><td>[OUT] - Pointer to pcf_size_t, stores the actual bytes skipped. (Optional parameter, pass PCF_NULL if not required.) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
+<li>
+PCF_S_SUCCESS : On success. </li>
+<li>
+PCF_S_NULL_ARG : <em>buffer</em>  is PCF_NULL. (Checked only in debug mode) </li>
+<li>
+PCF_S_INVALID_ARG : <em>len</em>  is 0. (Checked only in debug mode) </li>
+<li>
+PCF_S_EMPTY : Ring buffer has no bytes to be skipped. </li>
+</ul>
+</dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ring_buffer_example_8c-example.html#a9">ring_buffer_example.c</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="ga17e586ef49431430de7812a3cdef593f" name="ga17e586ef49431430de7812a3cdef593f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga17e586ef49431430de7812a3cdef593f">&#9670;&#160;</a></span>pcf_RingBuffer_advance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PCF_CORE_API pcf_status_t pcf_RingBuffer_advance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__pcf__core__collections__ring_buffer.html#gaff52f5eaf6651f69e69f0a24ca10857c">RingBuffer_t</a> *const&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const pcf_size_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">pcf_size_t *const&#160;</td>
+          <td class="paramname"><em>actual_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Advances write pointer of the Ring buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>[IN] - Ring buffer entity object. </td></tr>
+    <tr><td class="paramname">len</td><td>[IN] - The number of bytes to advance </td></tr>
+    <tr><td class="paramname">actual_len</td><td>[OUT] - Pointer to pcf_size_t, stores the actual bytes advanced (Optional parameter, pass PCF_NULL if not required.) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pcf_status_t Valid values : <ul>
+<li>
+PCF_S_SUCCESS : On success. </li>
+<li>
+PCF_S_NULL_ARG : <em>buffer</em>  is PCF_NULL. (Checked only in debug mode) </li>
+<li>
+PCF_S_INVALID_ARG : <em>len</em>  is 0. (Checked only in debug mode) </li>
+<li>
+PCF_S_NO_SPACE : Ring buffer is full. </li>
+</ul>
+</dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="ring_buffer_example_8c-example.html#a11">ring_buffer_example.c</a>.</dd>
 </dl>
 
 </div>
